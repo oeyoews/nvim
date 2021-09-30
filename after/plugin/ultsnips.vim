@@ -1,5 +1,5 @@
 " mappings
-nnoremap <silent> <SPACE>ee :UltiSnipsEdit<CR>
+nnoremap <silent> <SPACE>ee :UltiSnipsEdit<CR>G
 nnoremap <silent> <SPACE>ea :UltiSnipsEdit all<CR>
 
 " have some bug for enter keys
