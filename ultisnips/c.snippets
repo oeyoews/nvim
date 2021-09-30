@@ -29,14 +29,9 @@ int main(void) {
 }
 endsnippet
 
-snippet pr "printf"
-printf("${1:%s}\n"${1/([^%]|%%)*(%.)?.*/(?2:, :\);)/}$2${1/([^%]|%%)*(%.)?.*/(?2:\);)/}
-endsnippet
-
 snippet prr "printf(%d)"
 printf("%${1:d}\n", $2);
 endsnippet
-
 
 snippet if "#if #endif" b
 #if ${1:0}

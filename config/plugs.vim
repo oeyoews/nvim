@@ -23,6 +23,7 @@ Plug 'nvim-treesitter/nvim-treesitter', { ' do ' : ' :TSUpdate ' }
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/playground'
+Plug 'onsails/lspkind-nvim'
 
 " markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }

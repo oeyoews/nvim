@@ -1,6 +1,6 @@
-" colorscheme tokyonight
+colorscheme tokyonight
 
-colorscheme zephyr
+" colorscheme zephyr
 
 " :lua require('vscode').change_style("light")
 " :lua require('vscode').change_style("dark")
