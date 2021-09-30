@@ -19,4 +19,3 @@ nnoremap <silent><SPACE>2 <Cmd>Goto 2<CR>
 nnoremap <silent><SPACE>3 <Cmd>Goto 3<CR>
 nnoremap <silent><SPACE>4 <Cmd>Goto 4<CR>
 nnoremap <silent><SPACE>5 <Cmd>Goto 5<CR>
-"

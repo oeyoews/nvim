@@ -59,6 +59,18 @@ end,
     capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
   }
 
+
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+vim.lsp.diagnostic.on_publish_diagnostics, {
+  underline = true,
+  virtual_text = {
+    spacing = 4,
+    prefix = ''
+    }
+  }
+)
+
+
 EOF
 
 autocmd FileType TelescopePrompt lua require('cmp').setup.buffer { enabled = false }
