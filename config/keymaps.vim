@@ -74,4 +74,3 @@ nnoremap <silent><SPACE>fs :w<CR>
 nnoremap <silent> <SPACE>fS <Cmd>wa<CR>
 
 nnoremap <silent> <SPACE>fmt :tabnew ~/.config/nvim/todo.md<CR>
-

@@ -1,4 +1,4 @@
-set completeopt=menuone,noinsert,noselect
+set completeopt=menuone,noinsert,noselect,menu
 set virtualedit=onemore
 set cursorline
 set matchtime=2

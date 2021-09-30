@@ -2,7 +2,8 @@
 nnoremap <silent> <SPACE>ee :UltiSnipsEdit<CR>
 nnoremap <silent> <SPACE>ea :UltiSnipsEdit all<CR>
 
-let g:UltiSnipsExpandTrigger="\<CR>"
+" have some bug for enter keys
+let g:UltiSnipsExpandTrigger="<C-e>"
 let g:UltiSnipsJumpForwardTrigger="<C-J>"
 let g:UltiSnipsJumpBackwardTrigger="<C-K>"
 let g:UltiSnipsSnippetDirectories = [
@@ -11,4 +12,3 @@ let g:UltiSnipsSnippetDirectories = [
       \ ]
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsRemoveSelectModeMappings = 1
-

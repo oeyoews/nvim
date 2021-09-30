@@ -7,30 +7,22 @@ endif
 " dont modify it easyle, it related to UltiSnips's path
 call plug#begin('$HOME/.cache/nvim/plug')
 
+" completion
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+Plug 'SirVer/ultisnips'
+Plug 'oeyoews/vim-snippets'
 Plug 'folke/trouble.nvim'
 Plug 'folke/lua-dev.nvim'
-
-" lsp
-Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/nvim-lsp-installer'
 Plug 'oeyoews/lspsaga.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', { ' do ' : ' :TSUpdate ' }
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-lua/completion-nvim'
-Plug 'steelsojka/completion-buffers'
-Plug 'SirVer/ultisnips'
-Plug 'oeyoews/vim-snippets'
-" Plug 'tamago324/nlsp-settings.nvim'
 Plug 'nvim-treesitter/playground'
-" Plug 'p00f/nvim-ts-rainbow'
-" Plug 'nvim-treesitter/nvim-treesitter-textobjects'
-Plug 'nvim-treesitter/completion-treesitter'
-" Plug 'nvim-treesitter/nvim-treesitter-refactor'
-" run
-Plug 'michaelb/sniprun', {'do': 'bash install.sh'}
-Plug 'thinca/vim-quickrun'
-
 
 " markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
@@ -61,10 +53,10 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'Chiel92/vim-autoformat'
 Plug 'rcarriga/nvim-notify'
 Plug 'lukas-reineke/indent-blankline.nvim'
-" easymotion
 Plug 'blackcauldron7/surround.nvim'
 Plug 'phaazon/hop.nvim'
-
+Plug 'michaelb/sniprun', {'do': 'bash install.sh'}
+Plug 'thinca/vim-quickrun'
 
 " icons
 Plug 'ryanoasis/vim-devicons'
