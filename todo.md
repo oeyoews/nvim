@@ -24,5 +24,5 @@ Lua
 - [X] in plug config ,plus if logo Variable
 - [X] modify some rainbow color
 - [X] config nvimtree
-- [ ] icon for lspkind or lspconfig doesn't work
-- [ ] treesitter query highlight is error
+- [X] treesitter query highlight is error
+- [X] icon for lspkind or lspconfig doesn't work

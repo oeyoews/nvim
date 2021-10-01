@@ -56,9 +56,11 @@ nnoremap <SPACE>wl <C-w>l
 noremap L $
 noremap H ^
 
+" demo
 " copy and yank with system
 noremap <SPACE>yy "*y
 noremap <SPACE>pp "*p
+noremap <SPACE>pP "*P
 
 " select all
 nnoremap <C-a> ggVG
