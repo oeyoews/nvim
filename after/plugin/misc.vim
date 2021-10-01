@@ -147,7 +147,6 @@ defaults = {
   },
 }
 }
-
 EOF
 
 " 24. trouble.vim
@@ -155,22 +154,13 @@ lua << EOF
   require("trouble").setup {}
 EOF
 
-
-" notify
+" 25. notify
 lua << EOF
 vim.notify = require("notify")
-
 require("notify").setup({
-  -- Animation style (see below for details)
   stages = "slide",
-
-  -- Default timeout for notifications
   timeout = 1000,
-
-  -- For stages that change opacity this is treated as the highlight behind the window
   background_colour = "Normal",
-
-  -- Icons for the different levels
   icons = {
     ERROR = "",
     WARN = "",
@@ -181,4 +171,10 @@ require("notify").setup({
 })
 EOF
 nnoremap <silent> <leader>so :<C-U>silent update $MYVIMRC <bar> source $MYVIMRC  <bar>
-      \ call v:lua.vim.notify("Nvim config successfully reloaded!", 'info', {'title': 'nvim-config', 'timeout': 1000, 'stages': 'slide'})<cr>
+      \ call v:lua.vim.notify("Nvim config successfully reloaded!", 'info', 
+      \ {'title': 'nvim-config', 'timeout': 1000, 'stages': 'slide'})<cr>
+
+" 26. vimtex
+autocmd FileType tex nnoremap <leader>ltt <cmd>VimtexCompile<cr>
+autocmd FileType tex nnoremap <leader>ltc <cmd>VimtexClean<cr>
+autocmd FileType tex nnoremap <leader>ltv <cmd>VimtexView<cr>

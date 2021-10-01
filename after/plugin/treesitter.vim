@@ -36,6 +36,7 @@ require'nvim-treesitter.configs'.setup {
     "python",
     },
 
+  -- todo
   highlight = {
   enable = true,
   disable = {}

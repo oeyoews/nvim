@@ -33,13 +33,15 @@ end,
 },
 
     sources = {
+
       { name = 'nvim_lsp' },
-
-      -- For ultisnips user.
-      { name = 'ultisnips' },
-
+      { name = 'path' },
+      { name = 'emoji' },
       { name = 'buffer' },
-    }
+      { name = 'ultisnips' },
+      { name = "latex_symbols" },
+
+      }
 
   })
 
@@ -80,3 +82,15 @@ autocmd FileType TelescopePrompt lua require('cmp').setup.buffer { enabled = fal
 " " must in this file
 " inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 " inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" mappings
+nnoremap <silent> <SPACE>ee :UltiSnipsEdit<CR>G
+nnoremap <silent> <SPACE>ea :UltiSnipsEdit all<CR>
+let g:UltiSnipsJumpForwardTrigger="<C-J>"
+let g:UltiSnipsJumpBackwardTrigger="<C-K>"
+let g:UltiSnipsSnippetDirectories = [
+			\ $HOME.'/.config/nvim/ultisnips/',
+			\ $HOME.'/.cache/nvim/plug/vim-snippets/UltiSnips/',
+      \ ]
+let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsRemoveSelectModeMappings = 1

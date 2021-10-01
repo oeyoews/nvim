@@ -5,3 +5,5 @@ command! Scripts enew|pu=execute('scriptnames')
 " TODO
 autocmd! FileType help,qf,startuptime,quickrun,snippets nnoremap <silent> q <Cmd>q<CR>
 " autocmd FileType markdown colorscheme zephyr
+
+autocmd BufRead,BufNewFile *.tex set filetype=tex

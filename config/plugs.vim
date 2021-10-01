@@ -7,12 +7,17 @@ endif
 " dont modify it easyle, it related to UltiSnips's path
 call plug#begin('$HOME/.cache/nvim/plug')
 
+Plug 'lervag/vimtex'
+
 " completion
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-emoji'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+Plug 'kdheepak/cmp-latex-symbols'
 Plug 'SirVer/ultisnips'
 Plug 'oeyoews/vim-snippets'
 Plug 'folke/trouble.nvim'

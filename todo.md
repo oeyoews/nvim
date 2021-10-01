@@ -25,3 +25,4 @@ Lua
 - [X] modify some rainbow color
 - [X] config nvimtree
 - [ ] icon for lspkind or lspconfig doesn't work
+- [ ] treesitter query highlight is error
