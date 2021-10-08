@@ -1,4 +1,24 @@
-require("which-key").setup {
+local which_configs = require("which-key")
+
+which_configs.setup {
+
+  plugins = {
+    marks = false,
+    registers = false,
+    spelling = {
+      enabled = false,
+      suggestions = 20,
+    },
+    presets = {
+      operators = false,
+      motions = false,
+      text_objects = false,
+      windows = false,
+      nav = false,
+      z = false,
+      g = false,
+    },
+  },
 
   layout = {
     height = { min = 4, max = 25 }, -- min and max height of the columns
@@ -20,16 +40,6 @@ require("which-key").setup {
     group = "+", -- symbol prepended to a group
   },
 
-  presets = {
-    operators = false, -- adds help for operators like d, y, ... and registers them for motion / text object completion
-    motions = false,  -- adds help for motions
-    text_objects = false, -- help for text objects triggered after entering an operator
-    windows = false, -- default bindings on <c-w>
-    nav = false, -- misc bindings to work with windows
-    z = false, -- bindings for folds, spelling and others prefixed with z
-    g = false, -- bindings for prefixed with g
-  },
-
   key_labels = {
     ["<space>"] = "SPC",
     ["<cr>"] = "RET",
@@ -40,23 +50,11 @@ require("which-key").setup {
   ignore_missing = false, -- not modify it
 }
 
--- TODO
-require("which-key").register({
+which_configs.register({
 
   f = { name = "+file" },
-  ff = { "<cmd>Telescope find_files theme=dropdown prompt_prefix=🔍<cr>", "Find File" },
-  fr = { "<cmd>Telescope oldfiles theme=dropdown <prompt_prefix=🔍cr>", "Open Recent File" },
-
   b = { name = "+buffer" },
-  bn = { "<cmd>enew<cr>", "New File" },
-  bh = { "<cmd>Startify<cr>", "Home" },
-  bb = { "<cmd>Telescope buffers theme=dropdown <prompt_prefix=🔍<cr>", "Buffers" },
-
   w = { name = "+winnow" },
-
   l = { name = "+lang" },
-
   t = { name = "+toggle" },
-
-  -- ["<space>"] = { ":h<space>", "help" },
 }, { prefix = "<space>" })

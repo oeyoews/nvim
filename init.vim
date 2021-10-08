@@ -1,2 +1,2 @@
-" 2021-09-27 21:11
-runtime! ./config/*.vim
+" vim: set nomodifiable:
+runtime! config/*.vim

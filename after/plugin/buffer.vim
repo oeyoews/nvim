@@ -2,7 +2,7 @@ lua << EOF
 require('bufferline').setup {
   options = {
     numbers = "ordinal",
-    left_mouse_command = "buffer %d",
+    right_mouse_command = "buffer %d",
     separator_style = "thin",
     offsets = {{filetype = "NvimTree", text = "File Explorer" }},
     }

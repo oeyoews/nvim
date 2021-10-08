@@ -1,0 +1,21 @@
+snippet inc "include" bA
+#include <stdio.h>
+
+$0
+endsnippet
+
+snippet hello "A example Hello"
+#include <stdio.h>
+
+int main(void)
+{
+	// A hello example
+	printf("Hello, linux!\n");
+	$1
+	return 0;
+}
+endsnippet
+
+snippet prr "printf(%d)" bA
+printf($1);
+endsnippet
