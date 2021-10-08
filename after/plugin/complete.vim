@@ -58,7 +58,6 @@ mapping = {
     nvim_lsp = "[LSP]",
     nvim_lua = "[LUA]",
     ultisnips = "[USN]",
-    neorg = "[ORG]",
     })}),
   },
 
@@ -71,7 +70,6 @@ sources = {
   { name = 'emoji' },
   { name = 'path' },
   { name = 'look' },
-  { name = 'neorg' }
   }
     })
 

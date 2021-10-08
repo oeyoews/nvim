@@ -24,9 +24,6 @@ Plug 'nvim-treesitter/nvim-treesitter', { ' do ' : ' :TSUpdate ' }
 Plug 'nvim-treesitter/nvim-treesitter-refactor'
 Plug 'romgrk/nvim-treesitter-context'
 
-" norg
-Plug 'nvim-neorg/neorg', { 'for': ' norg ' }
-
 " markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'mzlogin/vim-markdown-toc'
@@ -50,7 +47,6 @@ Plug 'MattesGroeger/vim-bookmarks'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'oeyoews/nvim-tree.lua'
-Plug 'danilamihailov/vim-tips-wiki'
 Plug 'lewis6991/gitsigns.nvim'
 
 " theme

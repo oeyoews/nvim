@@ -64,6 +64,4 @@ nnoremap <silent> <leader>fb <cmd>edit ~/.config/nvim/config/binds.vim<cr>
 " save file
 nnoremap <silent> <SPACE>fs :w<CR>
 
-nnoremap <silent> <SPACE>fmt :tabnew ~/.config/nvim/todo.norg<CR>
-
 nnoremap <leader>wm <cmd>MaximizerToggle!<cr> 
