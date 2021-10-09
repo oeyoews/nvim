@@ -1,5 +1,3 @@
-if !exists('g:loaded_nvimtree') | finish | endif
-
 " ===
 " === nvimtree
 " ===
@@ -42,5 +40,7 @@ let g:nvim_tree_show_icons = {
     \ 'files': 1,
     \ 'folders': 1,  
     \ }
+" better directory
+let g:nvim_tree_respect_buf_cwd = 1
 
 nnoremap <leader>ft <cmd>NvimTreeToggle<cr> 

@@ -1,24 +1,26 @@
+" set mapleader
 let g:mapleader = " "
 
-" creat blankline
+" creat blankline no formatoptions
 nnoremap <silent> <leader>] :set paste<cr>o<esc>:set nopaste<cr>
 nnoremap <silent> <leader>[ :set paste<cr>O<esc>:set nopaste<cr>
 
 " load current file
-"nnoremap <leader>so <cmd>so %<cr><cmd>echohl Title<cr> <cmd>echo "Finished refresh current file."<cr>
-nnoremap <leader>so <cmd>so %<cr><cmd>echohl Title <bar> echo "Finished refresh current file."<cr>
+nnoremap <leader>so <cmd>so % <bar> echohl Search <bar>
+            \ echo "Finished refresh current file."<cr>
 
 " disable macro for q
 nnoremap q <nop>
 
-" clean minimal buffer
+" redraw screen
 nnoremap <ESC> <ESC><C-L>
 
 " quit insert mode fastly
 inoremap jk <ESC>
 
 " copy path to clipboard
-nnoremap <silent> <leader>fyp :<C-U>let @+=expand('%:p') <ce>
+nnoremap <silent> <leader>yp :<C-U>let @+=expand('%:p') <bar> echohl Search <bar>
+            \ echo "Finished file path to clipboard."<cr>
 
 " continue indent
 vnoremap >> >gv
@@ -26,13 +28,13 @@ vnoremap << <gv
 
 " command mode
 noremap <leader><leader> :
-nnoremap <SPACE>ss /
+nnoremap <leader>ss /
 
 " buffer
-nnoremap <silent> <SPACE><tab> :bp<CR>
-nnoremap <silent> <SPACE>bn :bn<CR>
-nnoremap <silent> <SPACE>bd :bd<CR><C-L>
-nnoremap <silent> <SPACE>bm :messages<CR>
+nnoremap <silent> <leader><tab> :bp<CR>
+nnoremap <silent> <leader>bn :bn<CR>
+nnoremap <silent> <leader>bd :bd<CR><C-L>
+nnoremap <silent> <leader>bm :messages<CR>
 nnoremap <silent> <leader>bx <cmd>enew<cr> 
 
 " quit window
@@ -47,7 +49,7 @@ nnoremap <SPACE>w/ :vsplit<CR>
 noremap L $
 
 " copy and yank with system
-vnoremap <SPACE>yy "*yy
+vnoremap <leader>yy "*y
 noremap <SPACE>pp "*p
 noremap <SPACE>pP "*P
 
@@ -61,6 +63,6 @@ nnoremap <silent> <SPACE>fo <cmd>edit ~/.config/nvim/config/opts.vim<cr>
 nnoremap <silent> <leader>fb <cmd>edit ~/.config/nvim/config/binds.vim<cr>
 
 " save file
-nnoremap <silent> <SPACE>fs :w<CR>
+nnoremap <silent> <leader>fs <cmd>w<cr>
 
 nnoremap <leader>wm <cmd>MaximizerToggle!<cr> 

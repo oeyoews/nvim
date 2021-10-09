@@ -10,7 +10,6 @@ buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
 
 -- cmp_lsp
 local cmp = require('cmp')
-
 cmp.setup({
 snippet = {
   expand = function(args)
@@ -19,15 +18,13 @@ end,
 },
 
 -- cmp_menu
-completion = {
-  completeopt = 'menu,menuone,noinsert,noselect',
-  },
+completion = { completeopt = 'menu,menuone,noinsert,noselect' },
 
 -- mappings
 mapping = {
   ['<S-Tab>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 's' }), -- switch item
   ['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' }), -- switch item
-  ['<CR>'] = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true, }),  -- confirm complete
+  ['<CR>'] = cmp.mapping.confirm({ select = true, }),  -- confirm complete
   ['<C-e>'] = cmp.mapping.complete(), -- complete
   ['<C-c>'] = cmp.mapping.close(), -- close complete
   },
@@ -132,3 +129,5 @@ end
 
 vim.lsp.handlers["textDocument/definition"] = goto_definition('split')
 EOF
+
+set completeopt=menuone,noinsert,noselect

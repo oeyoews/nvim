@@ -441,7 +441,7 @@ unlet s:color256 s:colors s:bg
 set background=dark
 
 " hi Comment cterm=italic
-hi Comment guifg=#5C6370 ctermfg=59
+"hi Comment guifg=#5C6370 ctermfg=59
 hi Normal     ctermbg=NONE guibg=NONE
 hi SignColumn ctermbg=NONE guibg=NONE
 hi LineNr     ctermbg=NONE guibg=NONE

@@ -9,14 +9,6 @@ local parser_configs = require('nvim-treesitter.parsers').get_parser_configs()
 local tree_configs = require('nvim-treesitter.configs')
 
 -- add some parsers
--- for norg complete
-parser_configs.norg = {
-  install_info = {
-    url = "https://github.com/nvim-neorg/tree-sitter-norg",
-    files = { "src/parser.c", "src/scanner.cc" },
-    branch = "main"
-    },
-  }
 
 -- for markdown title highlight
 parser_configs.markdown = {
@@ -42,10 +34,8 @@ tree_configs.setup {
     "html",
     "css",
     "bash",
-    "norg", -- must in local after
     "toml",
     "vue",
-    "latex",
     "json",
     "markdown",
     "lua",

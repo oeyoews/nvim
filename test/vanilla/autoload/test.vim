@@ -1,5 +1,5 @@
 function test#echo() abort
-  echohl Title
+  echohl Search
   echo "this is a demo."
 endfunction
 

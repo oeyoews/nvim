@@ -47,9 +47,8 @@ Plug 'thinca/vim-quickrun'
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'norcalli/nvim-colorizer.lua'
-Plug 'oeyoews/nvim-tree.lua'
 Plug 'lewis6991/gitsigns.nvim'
-Plug 'vim-autoformat/vim-autoformat'
+Plug 'kyazdani42/nvim-tree.lua'
 
 " theme
 Plug 'windwp/windline.nvim'
