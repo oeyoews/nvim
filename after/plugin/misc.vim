@@ -22,27 +22,9 @@ lua require'hop'.setup()
 nnoremap <SPACE>jj <Cmd>HopWord<CR>
 nnoremap <SPACE>jl <Cmd>HopLine<CR>
 
-" 25. notify
-lua << EOF
-vim.notify = require("notify")
-vim.notify.setup({
-  stages = "slide",
-  timeout = 3000,
-  background_colour = "Normal",
-  icons = {
-    ERROR = "",
-    WARN = "",
-    INFO = "",
-    DEBUG = "",
-    TRACE = "✎",
-  },
-})
-EOF
-
 " StartupTime
 command! Time StartupTime
 
 " gitsigns
 lua require('gitsigns').setup()
-
 lua require'colorizer'.setup()

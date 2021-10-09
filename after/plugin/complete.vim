@@ -5,23 +5,6 @@ local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
 local nvim_lsp = require('lspconfig')
 local cmp_lsp = require('cmp_nvim_lsp')
 
--- LSP settings
-local border = {
-      {"🭽", "FloatBorder"},
-      {"▔", "FloatBorder"},
-      {"🭾", "FloatBorder"},
-      {"▕", "FloatBorder"},
-      {"🭿", "FloatBorder"},
-      {"▁", "FloatBorder"},
-      {"🭼", "FloatBorder"},
-      {"▏", "FloatBorder"},
-}
-
-local on_attach = function(client, bufnr)
-  vim.lsp.handlers["textDocument/hover"] =  vim.lsp.with(vim.lsp.handlers.hover, {border = border})
-  vim.lsp.handlers["textDocument/signatureHelp"] =  vim.lsp.with(vim.lsp.handlers.signature_help, {border = border})
-end
-
 -- Enable completion triggered by <c-x><c-o>
 buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
 
@@ -42,8 +25,6 @@ completion = {
 
 -- mappings
 mapping = {
-  ['<C-d>'] = cmp.mapping.scroll_docs(-4),
-  ['<C-f>'] = cmp.mapping.scroll_docs(4),
   ['<S-Tab>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 's' }), -- switch item
   ['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' }), -- switch item
   ['<CR>'] = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true, }),  -- confirm complete
@@ -75,9 +56,7 @@ sources = {
 
   -- automatically connect language server protocol
   local servers = { 'vimls', 'clangd', 'bashls', 'pyright', 'sumneko_lua' }
-
   local capabilities = vim.lsp.protocol.make_client_capabilities()
-
   capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
   for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {
@@ -88,31 +67,11 @@ sources = {
   -- in current line show diagnostic info
   vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
-    update_in_insert = true,
+    update_in_insert = false,  -- reduce some Error tips
     signs = true,
     underline = true,
-    virtual_text = false
+    virtual_text = true
     })
-  vim.o.updatetime = 250
-  vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.lsp.diagnostic.show_line_diagnostics({focusable=false})]]
-
-  vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(
-  vim.lsp.handlers.signature_help, { border = "single" })
-
-  vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
-  vim.lsp.handlers.hover, { border = "rounded", focusable = false })
-
-  -- highlight border
-vim.cmd [[autocmd ColorScheme * highlight NormalFloat guibg=#1f2335]]
-vim.cmd [[autocmd ColorScheme * highlight FloatBorder guifg=white guibg=#1f2335]]
-
-
-local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
-for type, icon in pairs(signs) do
-  local hl = "DiagnosticSign" .. type
-  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
-end
-
 
 EOF
 
@@ -172,34 +131,4 @@ local function goto_definition(split_cmd)
 end
 
 vim.lsp.handlers["textDocument/definition"] = goto_definition('split')
-EOF
-
-lua << EOF
-vim.cmd [[
-  highlight LspDiagnosticsLineNrError guibg=#51202A guifg=#FF0000 gui=bold
-  highlight LspDiagnosticsLineNrWarning guibg=#51412A guifg=#FFA500 gui=bold
-  highlight LspDiagnosticsLineNrInformation guibg=#1E535D guifg=#00FFFF gui=bold
-  highlight LspDiagnosticsLineNrHint guibg=#1E205D guifg=#0000FF gui=bold
-
-  sign define DiagnosticSignError text= texthl=LspDiagnosticsSignError linehl= numhl=LspDiagnosticsLineNrError
-  sign define DiagnosticSignWarn text= texthl=LspDiagnosticsSignWarning linehl= numhl=LspDiagnosticsLineNrWarning
-  sign define DiagnosticSignInfo text= texthl=LspDiagnosticsSignInformation linehl= numhl=LspDiagnosticsLineNrInformation
-  sign define DiagnosticSignHint text= texthl=LspDiagnosticsSignHint linehl= numhl=LspDiagnosticsLineNrHint
-]]
-EOF
-
-lua << EOF
-function format_range_operator()
-  local old_func = vim.go.operatorfunc
-  _G.op_func_formatting = function()
-    local start = vim.api.nvim_buf_get_mark(0, '[')
-    local finish = vim.api.nvim_buf_get_mark(0, ']')
-    vim.lsp.buf.range_formatting({}, start, finish)
-    vim.go.operatorfunc = old_func
-    _G.op_func_formatting = nil
-  end
-  vim.go.operatorfunc = 'v:lua.op_func_formatting'
-  vim.api.nvim_feedkeys('g@', 'n', false)
-end
-vim.api.nvim_set_keymap("n", "gm", "<cmd>lua format_range_operator()<CR>", {noremap = true})
 EOF

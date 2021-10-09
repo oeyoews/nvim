@@ -24,7 +24,7 @@ set shiftwidth=2
 set tabstop=2
 set softtabstop=2 " tab == 2 column truly
 set guifont=Droid\ Sans\ Mono
-set list
+set nolist
 set listchars=tab:→\ ,eol:↵,trail:▫,extends:↷,precedes:↶
 set lazyredraw
 set vb t_vb=

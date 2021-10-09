@@ -5,7 +5,8 @@ nnoremap <silent> <leader>] :set paste<cr>o<esc>:set nopaste<cr>
 nnoremap <silent> <leader>[ :set paste<cr>O<esc>:set nopaste<cr>
 
 " load current file
-nnoremap <leader>so <cmd>so %<cr>
+"nnoremap <leader>so <cmd>so %<cr><cmd>echohl Title<cr> <cmd>echo "Finished refresh current file."<cr>
+nnoremap <leader>so <cmd>so %<cr><cmd>echohl Title <bar> echo "Finished refresh current file."<cr>
 
 " disable macro for q
 nnoremap q <nop>
@@ -17,9 +18,7 @@ nnoremap <ESC> <ESC><C-L>
 inoremap jk <ESC>
 
 " copy path to clipboard
-nnoremap <silent> <leader>fyp :<C-U>silent update  <bar> let @+=expand('%:p') <bar>
-      \ call v:lua.vim.notify("Copy file path finished", 'info', 
-      \ {'title': 'nvim-config', 'timeout': 1000, 'stages': 'slide'})<cr>
+nnoremap <silent> <leader>fyp :<C-U>let @+=expand('%:p') <ce>
 
 " continue indent
 vnoremap >> >gv

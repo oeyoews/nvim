@@ -27,15 +27,13 @@ EOF
 let g:nvim_tree_group_empty = 1
 " make folder is color
 let g:nvim_tree_highlight_opened_files = 1
-" let g:nvim_tree_disable_window_picker = 1
-let g:nvim_tree_respect_buf_cwd = 1
 " show indent line
 let g:nvim_tree_indent_markers = 0 
 " add slash in folder
 let g:nvim_tree_add_trailing = 0 
 let g:nvim_tree_icon_padding = ' '
 " open a file, to close this nvimtree
-let g:nvim_tree_quit_on_open = 1
+let g:nvim_tree_quit_on_open = 0
 let g:nvim_tree_refresh_wait = 500
 " show arrows
 let g:nvim_tree_show_icons = {

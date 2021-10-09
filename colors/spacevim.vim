@@ -446,12 +446,7 @@ hi Normal     ctermbg=NONE guibg=NONE
 hi SignColumn ctermbg=NONE guibg=NONE
 hi LineNr     ctermbg=NONE guibg=NONE
 
-" hi NonText ctermbg=NONE ctermfg=NONE
-
 " cursor color
 hi Cursor guifg=#86af5d guibg=#86af5d
 hi Cursor2 guifg=red guibg=red
-
-" hi StatusLine ctermbg=NONE ctermfg=NONE
-
 set guicursor=n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor2/lCursor2,r-cr:hor20,o:hor50

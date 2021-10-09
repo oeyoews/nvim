@@ -1,8 +1,11 @@
 call plug#begin('$HOME/.cache/nvim/plug')
 
+"libs
+Plug 'nvim-lua/plenary.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
+
 " lsp
 Plug 'neovim/nvim-lspconfig'
-Plug 'nvim-lua/plenary.nvim'
 Plug 'SirVer/ultisnips'
 Plug 'oeyoews/vim-snippets'
 Plug 'onsails/lspkind-nvim'
@@ -36,11 +39,9 @@ Plug 'dstein64/vim-startuptime'
 Plug 'rhysd/clever-f.vim'
 Plug 'yianwillis/vimcdoc'
 Plug 'akinsho/bufferline.nvim'
-Plug 'lambdalisue/suda.vim'
 Plug 'preservim/nerdcommenter'
 Plug 'folke/which-key.nvim'
 Plug 'jiangmiao/auto-pairs'
-Plug 'rcarriga/nvim-notify'
 Plug 'phaazon/hop.nvim'
 Plug 'thinca/vim-quickrun'
 Plug 'MattesGroeger/vim-bookmarks'
@@ -48,9 +49,15 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'oeyoews/nvim-tree.lua'
 Plug 'lewis6991/gitsigns.nvim'
+Plug 'vim-autoformat/vim-autoformat'
 
 " theme
-Plug 'kyazdani42/nvim-web-devicons'
 Plug 'windwp/windline.nvim'
+Plug 'glepnir/zephyr-nvim'
+Plug 'Th3Whit3Wolf/one-nvim'
+
+" test vimscript and lua plugin 
+Plug '~/.config/nvim/test/vanilla'
+Plug '~/.config/nvim/test/osfoew'
 
 call plug#end()
