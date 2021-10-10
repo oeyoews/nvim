@@ -3,6 +3,7 @@ call plug#begin('$HOME/.cache/nvim/plug')
 " libs
 Plug 'nvim-lua/plenary.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'ryanoasis/vim-devicons'
 
 " == completion ==
 Plug 'neovim/nvim-lspconfig'
@@ -26,7 +27,7 @@ Plug 'nvim-treesitter/nvim-treesitter-refactor'
 " == markdown ==
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'mzlogin/vim-markdown-toc'
-Plug 'dhruvasagar/vim-table-mode'
+Plug 'dhruvasagar/vim-table-mode', { 'for' : 'markdown' }
 
 " == search ==
 Plug 'nvim-telescope/telescope.nvim'
@@ -46,10 +47,11 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'thinca/vim-quickrun'
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'norcalli/nvim-colorizer.lua'
-Plug 'kyazdani42/nvim-tree.lua'
+Plug 'preservim/nerdtree'
 
 " == ui ==
-Plug 'windwp/windline.nvim'
+"Plug 'windwp/windline.nvim'
+Plug 'shadmansaleh/lualine.nvim'
 Plug 'glepnir/zephyr-nvim'
 Plug 'Th3Whit3Wolf/one-nvim'
 

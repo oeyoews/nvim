@@ -13,3 +13,8 @@ function test#date() abort
   echo strftime("%Y-%m-%d %H:%M:%S")
 endfunction
 
+function! test#FixLastSpellingError()
+  set spell
+  normal! mm[s1z=`m"
+  set nospell
+endfunction

@@ -23,7 +23,7 @@ nnoremap <SPACE>jj <Cmd>HopWord<CR>
 nnoremap <SPACE>jl <Cmd>HopLine<CR>
 
 " StartupTime
-command! Time StartupTime
+command! Time StartupTime --tries 3
 
 " gitsigns
 lua require('gitsigns').setup()

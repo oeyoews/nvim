@@ -9,9 +9,6 @@ nnoremap <silent> <leader>[ :set paste<cr>O<esc>:set nopaste<cr>
 nnoremap <leader>so <cmd>so % <bar> echohl Search <bar>
             \ echo "Finished refresh current file."<cr>
 
-" disable macro for q
-nnoremap q <nop>
-
 " redraw screen
 nnoremap <ESC> <ESC><C-L>
 
@@ -57,7 +54,7 @@ noremap <SPACE>pP "*P
 nnoremap <silent> <SPACE>sc :set<SPACE>hlsearch!<CR>
 
 " open config file
-nnoremap <silent> <SPACE>fe <cmd>edit $MYVIMRC <bar> NvimTreeOpen<cr>
+nnoremap <silent> <SPACE>fe <cmd>edit $MYVIMRC <cr>
 nnoremap <silent> <SPACE>fv <cmd>edit ~/.config/nvim/config/plugs.vim<cr>
 nnoremap <silent> <SPACE>fo <cmd>edit ~/.config/nvim/config/opts.vim<cr>
 nnoremap <silent> <leader>fb <cmd>edit ~/.config/nvim/config/binds.vim<cr>
@@ -66,3 +63,5 @@ nnoremap <silent> <leader>fb <cmd>edit ~/.config/nvim/config/binds.vim<cr>
 nnoremap <silent> <leader>fs <cmd>w<cr>
 
 nnoremap <leader>wm <cmd>MaximizerToggle!<cr> 
+
+nnoremap <leader>bs   <cmd>edit /tmp/scratch.txt <cr> 

@@ -10,3 +10,6 @@ command! Hi   call test#name('neovim')
 let &cpo = s:save_cpo
 unlet s:save_cpo
 let g:test_vanilla = 1
+
+
+nnoremap <silent> <leader>sp :call test#FixLastSpellingError()<cr>
