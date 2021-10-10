@@ -62,6 +62,6 @@ nnoremap <silent> <leader>fb <cmd>edit ~/.config/nvim/config/binds.vim<cr>
 " save file
 nnoremap <silent> <leader>fs <cmd>w<cr>
 
-nnoremap <leader>wm <cmd>MaximizerToggle!<cr> 
+nnoremap <leader>wm <cmd>on<cr> 
 
 nnoremap <leader>bs   <cmd>edit /tmp/scratch.txt <cr> 

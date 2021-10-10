@@ -4,6 +4,7 @@ call plug#begin('$HOME/.cache/nvim/plug')
 Plug 'nvim-lua/plenary.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
+Plug 'williamboman/nvim-lsp-installer'
 
 " == completion ==
 Plug 'neovim/nvim-lspconfig'
@@ -50,14 +51,11 @@ Plug 'norcalli/nvim-colorizer.lua'
 Plug 'preservim/nerdtree'
 
 " == ui ==
-"Plug 'windwp/windline.nvim'
 Plug 'shadmansaleh/lualine.nvim'
-Plug 'glepnir/zephyr-nvim'
 Plug 'Th3Whit3Wolf/one-nvim'
 
 " local test plugin
 Plug '~/.config/nvim/test/vanilla'
 Plug '~/.config/nvim/test/osfoew'
 
-Plug 'williamboman/nvim-lsp-installer'
 call plug#end()
