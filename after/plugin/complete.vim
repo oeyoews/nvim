@@ -18,7 +18,10 @@ end,
 },
 
 -- cmp_menu
-completion = { completeopt = 'menu,menuone,noinsert,noselect' },
+completion = { 
+  autocomplete = false,
+  completeopt = 'menu,menuone,noinsert,noselect'
+  },
 
 -- mappings
 mapping = {

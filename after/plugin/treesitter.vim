@@ -1,22 +1,7 @@
-if !exists('g:loaded_nvim_treesitter')
-  echom "Not loaded treesitter"
-  finish
-endif
-
 lua << EOF
 
 local parser_configs = require('nvim-treesitter.parsers').get_parser_configs()
 local tree_configs = require('nvim-treesitter.configs')
-
--- add some parsers
-
--- for markdown title highlight
-parser_configs.markdown = {
-  install_info = {
-    url = "https://github.com/ikatyang/tree-sitter-markdown",
-    files = {"src/parser.c", "src/scanner.cc"},
-    },
-  }
 
 tree_configs.setup {
   refactor = {
@@ -30,14 +15,12 @@ tree_configs.setup {
   ensure_installed = {
     "c",
     "python",
-    "go",
     "html",
     "css",
     "bash",
     "toml",
     "vue",
     "json",
-    "markdown",
     "lua",
     "vim",
     "query",
@@ -45,15 +28,11 @@ tree_configs.setup {
     "javascript",
     "typescript",
     "comment",
-    "cmake",
     },
 
-  highlight = {
-  enable = true,
-  disable = {}
-  },
+  highlight = { enable = true, disable = {} },
 
- -- ??
+ -- 增量选择 ??
  incremental_selection = {
     enable = true,
     keymaps = {
@@ -64,7 +43,6 @@ tree_configs.setup {
     },
   },
 
-  -- debug for code
   playground = {
     enable = true,
     disable = {},
