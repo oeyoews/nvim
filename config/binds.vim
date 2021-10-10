@@ -57,7 +57,7 @@ noremap <SPACE>pP "*P
 nnoremap <silent> <SPACE>sc :set<SPACE>hlsearch!<CR>
 
 " open config file
-nnoremap <silent> <SPACE>fe :edit $MYVIMRC<CR>
+nnoremap <silent> <SPACE>fe <cmd>edit $MYVIMRC <bar> NvimTreeOpen<cr>
 nnoremap <silent> <SPACE>fv <cmd>edit ~/.config/nvim/config/plugs.vim<cr>
 nnoremap <silent> <SPACE>fo <cmd>edit ~/.config/nvim/config/opts.vim<cr>
 nnoremap <silent> <leader>fb <cmd>edit ~/.config/nvim/config/binds.vim<cr>

@@ -1,15 +1,13 @@
-if !exists('g:lspconfig') | finish | endif
+" note this order
+set completeopt=menu,menuone,noselect,noinsert
 
 lua <<EOF
-local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
+-- local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
 local nvim_lsp = require('lspconfig')
 local cmp_lsp = require('cmp_nvim_lsp')
 
--- Enable completion triggered by <c-x><c-o>
-buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
-
 -- cmp_lsp
-local cmp = require('cmp')
+local cmp = require'cmp'
 cmp.setup({
 snippet = {
   expand = function(args)
@@ -17,45 +15,35 @@ snippet = {
 end,
 },
 
--- cmp_menu
-completion = { 
-  autocomplete = false,
-  completeopt = 'menu,menuone,noinsert,noselect'
-  },
-
 -- mappings
 mapping = {
-  ['<S-Tab>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 's' }), -- switch item
-  ['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' }), -- switch item
-  ['<CR>'] = cmp.mapping.confirm({ select = true, }),  -- confirm complete
-  ['<C-e>'] = cmp.mapping.complete(), -- complete
-  ['<C-c>'] = cmp.mapping.close(), -- close complete
+  ['<S-Tab>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 's' }),
+  ['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' }),
+  ['<CR>'] = cmp.mapping.confirm({ select = true, }),
+  ['<C-e>'] = cmp.mapping.complete(),
+  ['<C-c>'] = cmp.mapping.close(),
   },
 
--- config LSP UI menu
-  formatting = {
-    format = require("lspkind").cmp_format({with_text = true, menu = ({
-    buffer = "[BUF]",
-    nvim_lsp = "[LSP]",
-    nvim_lua = "[LUA]",
-    ultisnips = "[USN]",
-    })}),
-  },
+formatting = {
+  format = require("lspkind").cmp_format({with_text = true, menu = ({
+  ultisnips = "[Ult]",
+  nvim_lsp = "[Lsp]",
+  buffer = "[Buf]",
+  })}),
+},
 
--- add complete sources
 sources = {
-  { name = 'nvim_lsp' },
-  { name = 'nvim_lua' },
   { name = 'ultisnips' },
+  { name = 'nvim_lsp' },
   { name = 'buffer' },
   { name = 'emoji' },
   { name = 'path' },
-  { name = 'look' },
   }
-    })
+})
 
   -- automatically connect language server protocol
-  local servers = { 'vimls', 'clangd', 'bashls', 'pyright', 'sumneko_lua' }
+  local servers = { 'vimls', 'clangd', 'bashls', 'pyright'}
+
   local capabilities = vim.lsp.protocol.make_client_capabilities()
   capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
   for _, lsp in ipairs(servers) do
@@ -75,20 +63,15 @@ sources = {
 
 EOF
 
-" ===
-" === ultisnips
-" ===
-" jump in place holder
+" === ultisnips ===
 let g:UltiSnipsJumpForwardTrigger="<C-J>"
 let g:UltiSnipsJumpBackwardTrigger="<C-K>"
-" add path for snips
 let g:UltiSnipsSnippetDirectories = [
 			\ $HOME.'/.config/nvim/Ultisnips/',
-			\ $HOME.'/.cache/nvim/plug/vim-snippets/UltiSnips/',
       \ ]
 let g:UltiSnipsEditSplit="vertical"
 
-" mappings
+" == mappings ==
 nnoremap <silent> <SPACE>ee :UltiSnipsEdit<CR>G
 nnoremap <silent> <SPACE>ea :UltiSnipsEdit all<CR>
 
@@ -97,7 +80,7 @@ nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>
 
 
 lua << EOF
--- go-to definition
+--  == go-to definition  ==
 local function goto_definition(split_cmd)
   local util = vim.lsp.util
   local log = require("vim.lsp.log")
@@ -132,5 +115,3 @@ end
 
 vim.lsp.handlers["textDocument/definition"] = goto_definition('split')
 EOF
-
-set completeopt=menuone,noinsert,noselect

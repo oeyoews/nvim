@@ -4,24 +4,19 @@ call plug#begin('$HOME/.cache/nvim/plug')
 Plug 'nvim-lua/plenary.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 
-" lsp-mode
-Plug 'neovim/nvim-lspconfig'
-Plug 'onsails/lspkind-nvim'
-Plug 'folke/lua-dev.nvim'
-
 " == completion ==
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-emoji'
+Plug 'hrsh7th/cmp-path'
+
+" == snips ==
 Plug 'SirVer/ultisnips'
 Plug 'oeyoews/vim-snippets'
-
-" == cmp ==
-Plug 'hrsh7th/cmp-nvim-lua'
-Plug 'hrsh7th/cmp-path'
-Plug 'hrsh7th/cmp-emoji'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'octaltree/cmp-look'
+Plug 'onsails/lspkind-nvim'
 
 " == highlight ==
 Plug 'nvim-treesitter/playground', { 'on' : 'TSPlaygroundToggle' }
@@ -62,4 +57,5 @@ Plug 'Th3Whit3Wolf/one-nvim'
 Plug '~/.config/nvim/test/vanilla'
 Plug '~/.config/nvim/test/osfoew'
 
+Plug 'williamboman/nvim-lsp-installer'
 call plug#end()
