@@ -1,7 +1,3 @@
-" vim: set nomodifiable:
-
-runtime config/binds.vim
-runtime config/cmd.vim
-runtime config/opts.vim
-runtime config/plugs.vim
-runtime config/theme.vim
+" vim: set noma:
+runtime! config/*.vim
+" Date: 2021-10-11T00:54:16

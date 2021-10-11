@@ -38,6 +38,7 @@ sources = {
   { name = 'buffer' },
   { name = 'emoji' },
   { name = 'path' },
+  { name = 'nvim-lua' },
   }
 })
 
@@ -52,6 +53,15 @@ sources = {
       }
   end
 
+
+  -- for lua dev cmd
+  local luadev = require("lua-dev").setup({
+  lspconfig = {
+    cmd = {"lua-language-server"}
+    },
+  })
+  nvim_lsp.sumneko_lua.setup(luadev)
+
   -- in current line show diagnostic info
   vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
@@ -60,7 +70,6 @@ sources = {
     underline = true,
     virtual_text = true
     })
-
 EOF
 
 " === ultisnips ===
