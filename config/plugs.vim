@@ -12,6 +12,7 @@ Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-emoji'
+", { 'for': ['markdown', 'gitcommit'] }
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-nvim-lua'
 Plug 'folke/lua-dev.nvim'
@@ -22,13 +23,13 @@ Plug 'oeyoews/vim-snippets'
 Plug 'onsails/lspkind-nvim'
 
 " == highlight ==
-Plug 'nvim-treesitter/playground', { 'on' : 'TSPlaygroundToggle' }
-Plug 'nvim-treesitter/nvim-treesitter', { ' do ' : ' :TSUpdate ' }
+Plug 'nvim-treesitter/playground', { 'on': 'TSPlaygroundToggle' }
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ' :TSUpdate ' }
 Plug 'nvim-treesitter/nvim-treesitter-refactor'
 
 " == markdown ==
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'markdown' }
-Plug 'mzlogin/vim-markdown-toc', { 'for': 'markdown' }
+Plug 'mzlogin/vim-markdown-toc'
 Plug 'dhruvasagar/vim-table-mode', { 'for' : 'markdown' }
 
 " == search ==
@@ -45,10 +46,13 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'thinca/vim-quickrun', { 'on': 'QuickRun' }
 
 " == ui ==
-Plug 'shadmansaleh/lualine.nvim'
+"Plug 'shadmansaleh/lualine.nvim'
 
 " local test plugin
 Plug '~/.config/nvim/test/vanilla'
 Plug '~/.config/nvim/test/osfoew'
+Plug 'famiu/feline.nvim'
+Plug 'NvChad/nvim-base16.lua'
+Plug 'gcmt/wildfire.vim'
 
 call plug#end()

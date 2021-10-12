@@ -1,10 +1,8 @@
-" note this order
-set completeopt=menu,menuone,noselect,noinsert
+-- note this order
+vim.cmd [[set completeopt=menu,menuone,noselect,noinsert]]
 
-lua <<EOF
 -- local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
 local nvim_lsp = require('lspconfig')
-local cmp_lsp = require('cmp_nvim_lsp')
 
 -- cmp_lsp
 local cmp = require'cmp'
@@ -42,6 +40,15 @@ sources = {
   }
 })
 
+local function lspSymbol(name, icon)
+   vim.fn.sign_define("LspDiagnosticsSign" .. name, { text = icon, numhl = "LspDiagnosticsDefault" .. name })
+end
+-- 
+lspSymbol("Error", "✖")
+lspSymbol("Information", "")
+lspSymbol("Hint", "")
+lspSymbol("Warning", "")
+
   -- automatically connect language server protocol
   local servers = { 'vimls', 'clangd', 'bashls', 'pyright'}
 
@@ -70,9 +77,23 @@ sources = {
     underline = true,
     virtual_text = true
     })
-EOF
 
-" === ultisnips ===
+
+-- icon note this order in last
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+  vim.lsp.diagnostic.on_publish_diagnostics, {
+    underline = true,
+    -- This sets the spacing and the prefix, obviously.
+    virtual_text = {
+      spacing = 4,
+      prefix = ''
+    }
+  }
+)
+
+
+--" === ultisnips ===
+vim.cmd [[
 let g:UltiSnipsJumpForwardTrigger="<C-J>"
 let g:UltiSnipsJumpBackwardTrigger="<C-K>"
 let g:UltiSnipsSnippetDirectories = [
@@ -86,9 +107,8 @@ nnoremap <silent> <SPACE>ea :UltiSnipsEdit all<CR>
 
 nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
 nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>
+]]
 
-
-lua << EOF
 --  == go-to definition  ==
 local function goto_definition(split_cmd)
   local util = vim.lsp.util
@@ -123,4 +143,3 @@ local function goto_definition(split_cmd)
 end
 
 vim.lsp.handlers["textDocument/definition"] = goto_definition('split')
-EOF

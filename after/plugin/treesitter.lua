@@ -1,5 +1,3 @@
-lua << EOF
-
 local parser_configs = require('nvim-treesitter.parsers').get_parser_configs()
 local tree_configs = require('nvim-treesitter.configs')
 
@@ -69,4 +67,3 @@ tree_configs.setup {
 	},
 
 }
-EOF

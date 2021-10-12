@@ -1,4 +1,5 @@
 language messages en_US.utf8
+set cursorline
 set termguicolors
 set undofile
 set signcolumn=yes

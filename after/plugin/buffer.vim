@@ -4,7 +4,6 @@ require('bufferline').setup {
     numbers = "ordinal",
     right_mouse_command = "buffer %d",
     separator_style = "thin",
-    offsets = {{filetype = "NvimTree", text = "File Explorer" }},
     }
   }
 EOF
