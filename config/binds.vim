@@ -29,7 +29,7 @@ nnoremap <silent> <leader>bn :bn<CR>
 nnoremap <silent> <leader>bx <cmd>enew<cr> 
 
 " quit window
-nnoremap <silent><SPACE>qq :q<CR>
+nnoremap <silent> <SPACE>qq :q<CR>
 
 " window split
 nnoremap <SPACE>ww <C-w>w
@@ -51,6 +51,7 @@ nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>
 nnoremap <silent> <SPACE>fv <cmd>edit ~/.config/nvim/config/plugs.vim<cr>
 nnoremap <silent> <leader>fb <cmd>edit ~/.config/nvim/config/binds.vim<cr>
 
-nnoremap <leader>bs   <cmd>edit /tmp/scratch.txt <cr> 
+nnoremap <leader> bs   <cmd>edit /tmp/scratch.txt<cr> 
 
-nnoremap <leader>fs <cmd>w<cr> 
+" note this <cr> not have virtual space
+nnoremap <leader>fs :w<cr>
