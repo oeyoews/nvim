@@ -1,6 +1,6 @@
-let g:mapleader = " "
+let g:mapleader = "\<Space>"
 
-nmap q <Nop>
+nnoremap q <Nop>
 " creat blankline no formatoptions
 nnoremap <silent> <leader>] :set paste<cr>o<esc>:set nopaste<cr>
 nnoremap <silent> <leader>[ :set paste<cr>O<esc>:set nopaste<cr>
@@ -51,7 +51,7 @@ nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>
 nnoremap <silent> <SPACE>fv <cmd>edit ~/.config/nvim/config/plugs.vim<cr>
 nnoremap <silent> <leader>fb <cmd>edit ~/.config/nvim/config/binds.vim<cr>
 
-nnoremap <leader> bs   <cmd>edit /tmp/scratch.txt<cr> 
+nnoremap <leader>bs  <Cmd>edit /tmp/scratch.txt <CR> 
 
 " note this <cr> not have virtual space
 nnoremap <leader>fs :w<cr>
