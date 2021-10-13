@@ -1,9 +1,6 @@
 -- note this order
 vim.cmd [[set completeopt=menu,menuone,noselect,noinsert]]
 
--- local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
-local nvim_lsp = require('lspconfig')
-
 -- cmp_lsp
 local cmp = require'cmp'
 cmp.setup({
@@ -22,44 +19,43 @@ mapping = {
   ['<C-c>'] = cmp.mapping.close(),
   },
 
-formatting = {
-  format = require("lspkind").cmp_format({with_text = true, menu = ({
-  ultisnips = "[Ult]",
-  nvim_lsp = "[Lsp]",
-  buffer = "[Buf]",
-  })}),
-},
+  formatting = {
+    format = require("lspkind").cmp_format({with_text = true, menu = ({
+    nvim_lsp = "[Lsp]",
+    ultisnips = "[Ult]",
+    buffer = "[Buf]",
+    })}),
+  },
 
-sources = {
-  { name = 'ultisnips' },
-  { name = 'nvim_lsp' },
-  { name = 'buffer' },
-  { name = 'emoji' },
-  { name = 'path' },
-  { name = 'nvim-lua' },
-  }
-})
+  sources = {
+    { name = 'nvim_lsp' },
+    { name = 'ultisnips' },
+    { name = 'nvim-lua' },
+    { name = 'buffer' },
+    { name = 'path' },
+    { name = 'emoji' },
+    }
+  })
 
-local function lspSymbol(name, icon)
-   vim.fn.sign_define("LspDiagnosticsSign" .. name, { text = icon, numhl = "LspDiagnosticsDefault" .. name })
-end
--- 
-lspSymbol("Error", "✖")
-lspSymbol("Information", "")
-lspSymbol("Hint", "")
-lspSymbol("Warning", "")
+  local function lspSymbol(name, icon)
+     vim.fn.sign_define("LspDiagnosticsSign" .. name, { text = icon, numhl = "LspDiagnosticsDefault" .. name })
+  end
+  lspSymbol("Error", "✖")
+  lspSymbol("Information", "")
+  lspSymbol("Hint", "")
+  lspSymbol("Warning", "")
 
+
+  local nvim_lsp = require('lspconfig')
   -- automatically connect language server protocol
   local servers = { 'vimls', 'clangd', 'bashls', 'pyright'}
-
   local capabilities = vim.lsp.protocol.make_client_capabilities()
   capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
   for _, lsp in ipairs(servers) do
-    nvim_lsp[lsp].setup {
+      nvim_lsp[lsp].setup {
       capabilities = capabilities,
       }
   end
-
 
   -- for lua dev cmd
   local luadev = require("lua-dev").setup({
