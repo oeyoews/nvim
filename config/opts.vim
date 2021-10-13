@@ -26,7 +26,7 @@ set scrolloff=3
 set updatetime=200	" ??
 set foldmethod=marker  " set foldmethod
 set conceallevel=0
-" tab
+" == tab ==
 set timeoutlen=1000
 set expandtab  " disable expand tab to whitespace
 set shiftwidth=2
