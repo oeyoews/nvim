@@ -26,7 +26,7 @@ nnoremap <leader>ss /
 " buffer
 nnoremap <silent> <leader><tab> :bp<CR>
 nnoremap <silent> <leader>bn :bn<CR>
-nnoremap <silent> <leader>bx <cmd>enew<cr> 
+nnoremap <silent> <leader>bx <cmd>enew<cr>
 
 " quit window
 nnoremap <silent> <SPACE>qq :q<CR>
@@ -49,10 +49,10 @@ nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>
 
 " open config file
 nnoremap <silent> <SPACE>fv <cmd>edit ~/.config/nvim/config/plugs.vim<cr>
-nnoremap <silent> <leader>fb <cmd>edit ~/.config/nvim/config/binds.vim<cr>
-nnoremap <silent> <leader>fl <cmd>edit ~/.config/nvim/after/plugin/lspconfig.lua<Cr>
+" todo
+"nnoremap <silent> <leader>fn <Cmd>cd ~/.config/nvim <bar> Ranger<Cr>
 
-nnoremap <leader>bs  <Cmd>edit /tmp/scratch.txt <CR> 
+nnoremap <leader>bs  <Cmd>edit /tmp/scratch.txt <CR>
 
 " note this <cr> not have virtual space
 nnoremap <leader>fs :w<cr>

@@ -12,6 +12,8 @@ end,
 
 -- mappings
 mapping = {
+ ['<C-d>'] = cmp.mapping.scroll_docs(-4),
+ ['<C-f>'] = cmp.mapping.scroll_docs(4),
   ['<S-Tab>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 's' }),
   ['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' }),
   ['<CR>'] = cmp.mapping.confirm({ select = true, }),
@@ -82,7 +84,6 @@ mapping = {
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
     underline = true,
-    -- This sets the spacing and the prefix, obviously.
     virtual_text = {
       spacing = 4,
       prefix = ''

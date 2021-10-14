@@ -44,13 +44,8 @@ Plug 'folke/which-key.nvim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'thinca/vim-quickrun', { 'on': 'QuickRun' }
 
-" local test plugin
-Plug '~/.config/nvim/test/vanilla'
-Plug '~/.config/nvim/test/osfoew'
 Plug 'famiu/feline.nvim'
 Plug 'NvChad/nvim-base16.lua'
 Plug 'gcmt/wildfire.vim'
-Plug 'folke/tokyonight.nvim'
-Plug 'navarasu/onedark.nvim'
 
 call plug#end()
