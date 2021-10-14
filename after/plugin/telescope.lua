@@ -5,7 +5,10 @@ require('telescope').setup{
     mappings = {
       n = { ["q"] = actions.close },
     },
-    prompt_prefix = "   ",
+    prompt_prefix = "  ",
+    -- 
+    selection_caret = " ➤ ",
+    entry_prefix = "  ",
   },
   pickers = {
     find_files = {

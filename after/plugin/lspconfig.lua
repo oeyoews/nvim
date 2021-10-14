@@ -27,20 +27,32 @@ mapping = {
     })}),
   },
 
+  experimental = {
+    --ghost_text = true,
+    --native_menu = true;
+  },
+
+--completion = { autocomplete = true, },
+
+ documentation = {
+   border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+    },
+
   sources = {
-    { name = 'nvim_lsp' },
     { name = 'ultisnips' },
     { name = 'nvim-lua' },
-    { name = 'buffer' },
+    { name = 'nvim_lsp' },
+    { name = 'buffer', keyword_length = 2 },
     { name = 'path' },
     { name = 'emoji' },
     }
   })
 
   local function lspSymbol(name, icon)
-     vim.fn.sign_define("LspDiagnosticsSign" .. name, { text = icon, numhl = "LspDiagnosticsDefault" .. name })
+     vim.fn.sign_define("LspDiagnosticsSign"..name, { text = icon, numhl = "LspDiagnosticsDefault"..name })
   end
-  lspSymbol("Error", "✖")
+  -- ✖
+  lspSymbol("Error", "")
   lspSymbol("Information", "")
   lspSymbol("Hint", "")
   lspSymbol("Warning", "")
@@ -65,16 +77,6 @@ mapping = {
   })
   nvim_lsp.sumneko_lua.setup(luadev)
 
-  -- in current line show diagnostic info
-  vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
-  vim.lsp.diagnostic.on_publish_diagnostics, {
-    update_in_insert = false,  -- reduce some Error tips
-    signs = true,
-    underline = true,
-    virtual_text = true
-    })
-
-
 -- icon note this order in last
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
@@ -87,6 +89,15 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   }
 )
 
+vim.lsp.handlers["textDocument/hover"] =  vim.lsp.with(
+vim.lsp.handlers.hover, {
+  border = border
+})
+
+vim.lsp.handlers["textDocument/signatureHelp"] =  vim.lsp.with(
+vim.lsp.handlers.signature_help, {
+  border = border
+})
 
 --" === ultisnips ===
 vim.cmd [[

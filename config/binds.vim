@@ -50,6 +50,7 @@ nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>
 " open config file
 nnoremap <silent> <SPACE>fv <cmd>edit ~/.config/nvim/config/plugs.vim<cr>
 nnoremap <silent> <leader>fb <cmd>edit ~/.config/nvim/config/binds.vim<cr>
+nnoremap <silent> <leader>fl <cmd>edit ~/.config/nvim/after/plugin/lspconfig.lua<Cr>
 
 nnoremap <leader>bs  <Cmd>edit /tmp/scratch.txt <CR> 
 

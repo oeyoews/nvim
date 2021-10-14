@@ -12,7 +12,6 @@ Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-emoji'
-", { 'for': ['markdown', 'gitcommit'] }
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-nvim-lua'
 Plug 'folke/lua-dev.nvim'
@@ -51,6 +50,7 @@ Plug '~/.config/nvim/test/osfoew'
 Plug 'famiu/feline.nvim'
 Plug 'NvChad/nvim-base16.lua'
 Plug 'gcmt/wildfire.vim'
-"Plug 'ray-x/lsp_signature.nvim'
+Plug 'folke/tokyonight.nvim'
+Plug 'navarasu/onedark.nvim'
 
 call plug#end()
