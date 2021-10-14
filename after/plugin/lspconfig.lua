@@ -21,15 +21,16 @@ mapping = {
 
   formatting = {
     format = require("lspkind").cmp_format({with_text = true, menu = ({
-    nvim_lsp = "[Lsp]",
+    nvim_lsp = "ﲳ",
     ultisnips = "[Ult]",
+    nvim_lua = "",
     buffer = "[Buf]",
     })}),
   },
 
   experimental = {
-    --ghost_text = true,
-    --native_menu = true;
+   ghost_text = true,
+   native_menu = true;
   },
 
 --completion = { autocomplete = true, },
@@ -88,16 +89,6 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
     }
   }
 )
-
-vim.lsp.handlers["textDocument/hover"] =  vim.lsp.with(
-vim.lsp.handlers.hover, {
-  border = border
-})
-
-vim.lsp.handlers["textDocument/signatureHelp"] =  vim.lsp.with(
-vim.lsp.handlers.signature_help, {
-  border = border
-})
 
 --" === ultisnips ===
 vim.cmd [[
