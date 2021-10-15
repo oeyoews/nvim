@@ -1,6 +1,18 @@
 -- note this order
 vim.cmd [[set completeopt=menu,menuone,noselect,noinsert]]
 
+-- ui
+vim.cmd [[highlight default Fs guifg=#3bb6c4 guibg=NONE]]
+local border = {
+      {"╭", "Fs"},
+      {"─", "Fs"},
+      {"╮", "Fs"},
+      {"│", "Fs"},
+      {"╯", "Fs"},
+      {"─", "Fs"},
+      {"╰", "Fs"},
+      {"│", "Fs"},
+}
 -- cmp_lsp
 local cmp = require'cmp'
 cmp.setup({
@@ -24,21 +36,20 @@ mapping = {
   formatting = {
     format = require("lspkind").cmp_format({with_text = true, menu = ({
     nvim_lsp = "ﲳ",
-    ultisnips = "[Ult]",
+    ultisnips = "",
     nvim_lua = "",
-    buffer = "[Buf]",
+    buffer = "",
     })}),
   },
 
   experimental = {
-   ghost_text = true,
-   native_menu = true;
+   --ghost_text = true,
+   --native_menu = true;
   },
 
 --completion = { autocomplete = true, },
-
  documentation = {
-   border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+   border = border,
     },
 
   sources = {

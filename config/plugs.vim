@@ -47,5 +47,7 @@ Plug 'thinca/vim-quickrun', { 'on': 'QuickRun' }
 Plug 'famiu/feline.nvim'
 Plug 'NvChad/nvim-base16.lua'
 Plug 'gcmt/wildfire.vim'
+Plug 'oeyoews/nvim-deus'
+Plug 'norcalli/nvim-colorizer.lua'
 
 call plug#end()

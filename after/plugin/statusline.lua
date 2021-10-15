@@ -62,7 +62,8 @@ local comps = {
     vi_mode = {
         left = {
             provider = function()
-              return '  ' .. vi_mode_utils.get_vim_mode()
+              --return '  ' .. vi_mode_utils.get_vim_mode()
+              return '  ' .. vi_mode_utils.get_vim_mode()
             end,
             hl = function()
                 local val = {
@@ -75,8 +76,8 @@ local comps = {
             right_sep = ' '
         },
         right = {
-            -- provider = '▊',
-            provider = '' ,
+            provider = '',
+            --provider = '' ,
             hl = function()
                 local val = {
                     name = vi_mode_utils.get_mode_highlight_name(),
@@ -198,9 +199,10 @@ local comps = {
             provider = 'lsp_client_names',
             -- left_sep = ' ',
             right_sep = ' ',
-            icon = '  ',
+            --icon = '  ',
+            icon = ' ',
             hl = {
-                fg = colors.yellow
+                fg = colors.green
             }
         }
     },
@@ -289,10 +291,10 @@ require'feline'.setup {
     vi_mode_colors = vi_mode_colors,
     force_inactive = {
         filetypes = {
-            'packer',
-            'NvimTree',
-            'fugitive',
-            'fugitiveblame'
+            --'packer',
+            --'NvimTree',
+            --'fugitive',
+            --'fugitiveblame'
         },
         buftypes = {'terminal'},
         bufnames = {}

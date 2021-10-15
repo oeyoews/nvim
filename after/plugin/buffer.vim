@@ -3,7 +3,7 @@ require('bufferline').setup {
   options = {
     numbers = "ordinal",
     right_mouse_command = "buffer %d",
-    separator_style = "thin",
+    separator_style = "thick",
     }
   }
 EOF

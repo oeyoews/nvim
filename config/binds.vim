@@ -2,8 +2,8 @@ let g:mapleader = "\<Space>"
 
 nnoremap q <Nop>
 " creat blankline no formatoptions
-nnoremap <silent> <leader>] :set paste<cr>o<esc>:set nopaste<cr>
-nnoremap <silent> <leader>[ :set paste<cr>O<esc>:set nopaste<cr>
+nnoremap <silent> <leader>o :set paste<cr>o<esc>:set nopaste<cr>
+nnoremap <silent> <leader>O :set paste<cr>O<esc>:set nopaste<cr>
 
 " load current file
 nnoremap <leader>so <cmd>so % <bar> echo "Finished refresh current file."<cr>
@@ -40,7 +40,11 @@ nnoremap <SPACE>w/ :vsplit<CR>
 noremap L $
 
 " copy and yank with system
+" selsct some text, copy it ro system clipboard
 vnoremap <leader>yy "*y
+" in normal mode, like Y to copy current line,
+" but copy it to system clipboard
+nnoremap <leader>yy "*Y
 noremap <SPACE>pp "*p
 noremap <SPACE>pP "*P
 

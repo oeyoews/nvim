@@ -24,3 +24,5 @@ let g:strip_whitespace_confirm=0
 "autocmd FileType * EnableStripWhitespaceOnSave
 let g:strip_max_file_size = 1000
 nnoremap <leader>tw <Cmd>StripWhitespace<Cr>
+
+lua require'colorizer'.setup()
