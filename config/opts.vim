@@ -10,15 +10,15 @@ set wrap
 set linebreak
 set hidden
 set ignorecase
-set noshowcmd  
-set noshowmode 
+set noshowcmd
+set noshowmode
 set textwidth=80
 set shortmess+=aIc  " atI clear advertise
 set lazyredraw
 set vb t_vb=
 set novisualbell
 set noerrorbells
-set nobackup 
+set nobackup
 set noswapfile
 set nofoldenable
 set confirm
@@ -33,4 +33,4 @@ set shiftwidth=2
 set tabstop=2
 set softtabstop=2 " tab == 2 column truly
 set listchars=tab:→\ ,eol:↵,trail:▫,extends:↷,precedes:↶
-
+set whichwrap+=<,>,[,]

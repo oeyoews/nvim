@@ -1,6 +1,6 @@
 let g:mapleader = "\<Space>"
 
-nnoremap q <Nop>
+"nnoremap q <Nop>
 " creat blankline no formatoptions
 nnoremap <silent> <leader>o :set paste<cr>o<esc>:set nopaste<cr>
 nnoremap <silent> <leader>O :set paste<cr>O<esc>:set nopaste<cr>
@@ -60,3 +60,5 @@ nnoremap <leader>bs  <Cmd>edit /tmp/scratch.txt <CR>
 
 " note this <cr> not have virtual space
 nnoremap <leader>fs :w<cr>
+
+nnoremap <leader>qh q:

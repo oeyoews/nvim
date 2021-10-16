@@ -24,13 +24,14 @@ end,
 
 -- mappings
 mapping = {
- ['<C-d>'] = cmp.mapping.scroll_docs(-4),
- ['<C-f>'] = cmp.mapping.scroll_docs(4),
+  ['<C-d>'] = cmp.mapping.scroll_docs(-4),
+  ['<C-f>'] = cmp.mapping.scroll_docs(4),
   ['<S-Tab>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 's' }),
   ['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' }),
-  ['<CR>'] = cmp.mapping.confirm({ select = true, }),
+  --['<CR>'] = cmp.mapping.confirm({ select = true, }),
+  ['<CR>'] = cmp.mapping.confirm(),
   ['<C-e>'] = cmp.mapping.complete(),
-  ['<C-c>'] = cmp.mapping.close(),
+  --['<C-c>'] = cmp.mapping.close(),
   },
 
   formatting = {
@@ -42,12 +43,6 @@ mapping = {
     })}),
   },
 
-  experimental = {
-   --ghost_text = true,
-   --native_menu = true;
-  },
-
---completion = { autocomplete = true, },
  documentation = {
    border = border,
     },
@@ -65,16 +60,16 @@ mapping = {
   local function lspSymbol(name, icon)
      vim.fn.sign_define("LspDiagnosticsSign"..name, { text = icon, numhl = "LspDiagnosticsDefault"..name })
   end
-  -- ✖
+
   lspSymbol("Error", "")
   lspSymbol("Information", "")
   lspSymbol("Hint", "")
   lspSymbol("Warning", "")
 
-
+  --jsonls: npm i -g vscode-langservers-extracted
   local nvim_lsp = require('lspconfig')
   -- automatically connect language server protocol
-  local servers = { 'vimls', 'clangd', 'bashls', 'pyright'}
+  local servers = { 'vimls', 'clangd', 'bashls', 'pyright', 'jsonls', 'tsserver'}
   local capabilities = vim.lsp.protocol.make_client_capabilities()
   capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
   for _, lsp in ipairs(servers) do
