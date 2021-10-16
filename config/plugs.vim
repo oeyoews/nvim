@@ -1,12 +1,18 @@
 call plug#begin('$HOME/.cache/nvim/plug')
 
-" libs
+" libs for some nvim plugins
 Plug 'nvim-lua/plenary.nvim'
+
+" icons for you ui
 Plug 'kyazdani42/nvim-web-devicons'
+
+" fast install you code lsp
 Plug 'williamboman/nvim-lsp-installer'
 
-" == completion ==
+" configure your lsp
 Plug 'neovim/nvim-lspconfig'
+
+" a completion framework
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
@@ -14,40 +20,76 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-emoji'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-nvim-lua'
+
+" config lua lsp
 Plug 'folke/lua-dev.nvim'
 
-" == snips ==
+"a snip engine
 Plug 'SirVer/ultisnips'
+
+" my snippets
 Plug 'oeyoews/vim-snippets'
+
+" support some icons for you menu
 Plug 'onsails/lspkind-nvim'
 
-" == highlight ==
+" debug your code
 Plug 'nvim-treesitter/playground', { 'on': 'TSPlaygroundToggle' }
+
+" better highlight
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ' :TSUpdate ' }
+
+" highligh your variable for refrence and define
 Plug 'nvim-treesitter/nvim-treesitter-refactor'
 
-" == markdown ==
+" preview your markdown in your brower
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'markdown' }
+
+" generate your markdown toc
 Plug 'mzlogin/vim-markdown-toc'
+
+" better markdown for your table
 Plug 'dhruvasagar/vim-table-mode', { 'for' : 'markdown' }
 
-" == search ==
+" it's rich
 Plug 'nvim-telescope/telescope.nvim'
+
+" fast jump you want jump
 Plug 'phaazon/hop.nvim'
 
-" tools
+" test your StartupTime
 Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime' }
+
+" chinese vimhelp
 Plug 'yianwillis/vimcdoc'
+
+" manage your buffers
 Plug 'akinsho/bufferline.nvim'
+
+" comment your code or txt
 Plug 'preservim/nerdcommenter'
+
+" show all keys
 Plug 'folke/which-key.nvim'
+
+" auto add another brackets
 Plug 'jiangmiao/auto-pairs'
+
+" quick run your code
 Plug 'thinca/vim-quickrun', { 'on': 'QuickRun' }
 
+" statusline
 Plug 'famiu/feline.nvim'
+
+" a theme for neovim color
 Plug 'NvChad/nvim-base16.lua'
+
+" select chunk txt
 Plug 'gcmt/wildfire.vim'
-Plug 'oeyoews/nvim-deus'
+
+" enable color for some files
 Plug 'norcalli/nvim-colorizer.lua'
+
+" tmp plugin
 
 call plug#end()
