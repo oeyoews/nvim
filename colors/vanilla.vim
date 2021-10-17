@@ -1,10 +1,3 @@
-" Vim color file
-"
-" Author: Liu-Cheng Xu
-" URL: https://github.com/liuchengxu/space-vim-dark
-"
-" Note: Inspired by spacemacs-dark theme
-
 hi clear
 
 if v:version > 580
@@ -16,7 +9,7 @@ if v:version > 580
     endif
 endif
 
-let g:colors_name='spacevim'
+let g:colors_name='vanilla'
 
 " refer to http://www.calmar.ws/vim/256-xterm-24bit-rgb-color-chart.html
 let s:color256 = {
