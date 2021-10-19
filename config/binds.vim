@@ -21,7 +21,6 @@ vnoremap << <gv
 
 " command mode
 noremap <leader><leader> :
-nnoremap <leader>ss /
 
 " buffer
 nnoremap <silent> <leader><tab> :bp<CR>
@@ -56,7 +55,7 @@ nnoremap <silent> <SPACE>fv <cmd>edit ~/.config/nvim/config/plugs.vim<cr>
 " todo
 "nnoremap <silent> <leader>fn <Cmd>cd ~/.config/nvim <bar> Ranger<Cr>
 
-nnoremap <leader>bs  <Cmd>edit /tmp/scratch.txt <CR>
+nnoremap <leader>bs  <Cmd>e /tmp/scratch.txt<CR>
 
 " note this <cr> not have virtual space
 nnoremap <leader>fs :w<cr>

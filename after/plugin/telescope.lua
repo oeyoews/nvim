@@ -11,6 +11,7 @@ require('telescope').setup{
     entry_prefix = "  ",
   },
   pickers = {
+
     find_files = {
       theme = "dropdown",
     },
@@ -25,6 +26,15 @@ require('telescope').setup{
     },
     colorscheme = {
       theme = "dropdown"
+    },
+    keymaps = {
+      theme = "dropdown"
+    },
+    filetypes = {
+      theme = "dropdown"
+    },
+    current_buffer_fuzzy_find = {
+      theme = "dropdown"
     }
   },
   extensions = {}
@@ -33,6 +43,21 @@ require('telescope').setup{
 vim.cmd [[
 nnoremap <leader>ff <cmd>Telescope find_files <cr>
 nnoremap <leader>fr <cmd>Telescope oldfiles <cr>
-nnoremap <leader>bb <cmd>Telescope buffers <cr> 
-nnoremap <leader>tt <Cmd>Telescope colorscheme <Cr>
+nnoremap <leader>bb <cmd>Telescope buffers <cr>
+nnoremap <leader>bc <Cmd>Telescope colorscheme <Cr>
+nnoremap <leader>bk <Cmd>Telescope keymaps<Cr>
+nnoremap <leader>bh <Cmd>Telescope highlights<Cr>
+nnoremap <leader>bf <Cmd>Telescope filetypes<Cr>
+nnoremap <leader>ss <Cmd>Telescope current_buffer_fuzzy_find<Cr>
+]]
+
+vim.cmd [[
+" Border highlight groups
+highlight TelescopeBorder         guifg=#bd93f9
+highlight TelescopePromptBorder   guifg=#bd93f9
+highlight TelescopeResultsBorder  guifg=#bd93f9
+highlight TelescopePreviewBorder  guifg=#bd93f9
+
+" Color the prompt prefix
+highlight TelescopePromptPrefix   guifg=green
 ]]

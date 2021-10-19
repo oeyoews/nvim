@@ -28,7 +28,7 @@ Plug 'folke/lua-dev.nvim'
 Plug 'SirVer/ultisnips'
 
 " my snippets
-Plug 'oeyoews/vim-snippets'
+Plug 'oeyoews/vim-snippets', { 'frozen': 1 }
 
 " support some icons for you menu
 Plug 'onsails/lspkind-nvim'
@@ -61,7 +61,7 @@ Plug 'phaazon/hop.nvim'
 Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime' }
 
 " chinese vimhelp
-Plug 'yianwillis/vimcdoc'
+Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
 
 " manage your buffers
 Plug 'akinsho/bufferline.nvim'
