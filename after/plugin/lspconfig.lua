@@ -1,8 +1,8 @@
 -- note this order
 vim.cmd [[set completeopt=menu,menuone,noselect,noinsert]]
 
--- ui
 vim.cmd [[highlight default Fs guifg=#3bb6c4 guibg=NONE]]
+
 local border = {
       {"╭", "Fs"},
       {"─", "Fs"},
@@ -13,6 +13,7 @@ local border = {
       {"╰", "Fs"},
       {"│", "Fs"},
 }
+
 -- cmp_lsp
 local cmp = require'cmp'
 cmp.setup({
@@ -24,14 +25,11 @@ end,
 
 -- mappings
 mapping = {
-  ['<C-d>'] = cmp.mapping.scroll_docs(-4),
-  ['<C-f>'] = cmp.mapping.scroll_docs(4),
   ['<S-Tab>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 's' }),
   ['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' }),
-  --['<CR>'] = cmp.mapping.confirm({ select = true, }),
   ['<CR>'] = cmp.mapping.confirm(),
   ['<C-e>'] = cmp.mapping.complete(),
-  --['<C-c>'] = cmp.mapping.close(),
+  ['<C-c>'] = cmp.mapping.close(),
   },
 
   formatting = {
@@ -97,30 +95,13 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   }
 )
 
---" === ultisnips ===
-vim.cmd [[
-let g:UltiSnipsJumpForwardTrigger="<C-J>"
-let g:UltiSnipsJumpBackwardTrigger="<C-K>"
-let g:UltiSnipsSnippetDirectories = [
-			\ $HOME.'/.config/nvim/Ultisnips/',
-      \ ]
-let g:UltiSnipsEditSplit="vertical"
-
-" == mappings ==
-nnoremap <silent> <SPACE>ee :UltiSnipsEdit<CR>G
-nnoremap <silent> <SPACE>ea :UltiSnipsEdit all<CR>
-
-nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
-nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>
-]]
-
---  == go-to definition  ==
+---[[
+--  == go-to definition split  ==
 local function goto_definition(split_cmd)
   local util = vim.lsp.util
   local log = require("vim.lsp.log")
   local api = vim.api
 
-  -- note, this handler style is for neovim 0.5.1/0.6, if on 0.5, call with function(_, method, result)
   local handler = function(_, result, ctx)
     if result == nil or vim.tbl_isempty(result) then
       local _ = log.info() and log.info(ctx.method, "No location found")
@@ -148,3 +129,21 @@ local function goto_definition(split_cmd)
 end
 
 vim.lsp.handlers["textDocument/definition"] = goto_definition('split')
+--]]
+
+---[[
+--" === ultisnips ===
+vim.cmd [[
+let g:UltiSnipsJumpForwardTrigger="<C-J>"
+let g:UltiSnipsJumpBackwardTrigger="<C-K>"
+let g:UltiSnipsSnippetDirectories = [
+			\ $HOME.'/.config/nvim/Ultisnips/',
+      \ ]
+let g:UltiSnipsEditSplit="vertical"
+" == mappings ==
+nnoremap <silent> <SPACE>ee :UltiSnipsEdit<CR>G
+nnoremap <silent> <SPACE>ea :UltiSnipsEdit all<CR>
+nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>
+]]
+--]]

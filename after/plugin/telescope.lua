@@ -49,9 +49,7 @@ nnoremap <leader>bk <Cmd>Telescope keymaps<Cr>
 nnoremap <leader>bh <Cmd>Telescope highlights<Cr>
 nnoremap <leader>bf <Cmd>Telescope filetypes<Cr>
 nnoremap <leader>ss <Cmd>Telescope current_buffer_fuzzy_find<Cr>
-]]
 
-vim.cmd [[
 " Border highlight groups
 highlight TelescopeBorder         guifg=#bd93f9
 highlight TelescopePromptBorder   guifg=#bd93f9

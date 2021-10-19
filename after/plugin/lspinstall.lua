@@ -9,6 +9,7 @@ local servers = {
   "jsonls"
 }
 
+---[[
 for _, name in pairs(servers) do
 	local ok, server = lsp_installer.get_server(name)
 	-- Check that the server is supported in nvim-lsp-installer
@@ -19,3 +20,4 @@ for _, name in pairs(servers) do
 		end
 	end
 end
+--]]

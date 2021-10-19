@@ -1,5 +1,14 @@
 call plug#begin('$HOME/.cache/nvim/plug')
 
+" completeion
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-emoji'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-nvim-lua'
+
 " libs for some nvim plugins
 Plug 'nvim-lua/plenary.nvim'
 
@@ -11,15 +20,6 @@ Plug 'williamboman/nvim-lsp-installer'
 
 " configure your lsp
 Plug 'neovim/nvim-lspconfig'
-
-" a completion framework
-Plug 'hrsh7th/nvim-cmp'
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'quangnguyen30192/cmp-nvim-ultisnips'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-emoji'
-Plug 'hrsh7th/cmp-path'
-Plug 'hrsh7th/cmp-nvim-lua'
 
 " config lua lsp
 Plug 'folke/lua-dev.nvim'
@@ -89,7 +89,5 @@ Plug 'gcmt/wildfire.vim'
 
 " enable color for some files
 Plug 'norcalli/nvim-colorizer.lua'
-
-" tmp plugin
 
 call plug#end()

@@ -1,4 +1,4 @@
-local parser_configs = require('nvim-treesitter.parsers').get_parser_configs()
+--local parser_configs = require('nvim-treesitter.parsers').get_parser_configs()
 local tree_configs = require('nvim-treesitter.configs')
 
 tree_configs.setup {
@@ -9,7 +9,7 @@ tree_configs.setup {
     highlight_definitions = { enable = true},
     },
 
-  -- install some different parsers automatically 
+  -- install some different parsers automatically
   ensure_installed = {
     "c",
     "python",

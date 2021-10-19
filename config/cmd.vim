@@ -1,6 +1,6 @@
-" command Sc redir @">|silent scriptnames|redir END|enew|put
 command! Scripts enew|pu=execute('scriptnames')
-command! -nargs=1 -complete=highlight Redir   enew|pu=execute('<args>')
+
+command! -nargs=1 -complete=highlight HI enew|pu=execute('<args>')
 
 " alias colorscheme to Theme
 command! -nargs=?  -complete=color Theme colorscheme <args>
