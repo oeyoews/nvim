@@ -1,6 +1,5 @@
 let g:mapleader = "\<Space>"
 
-"nnoremap q <Nop>
 " creat blankline no formatoptions
 nnoremap <silent> <leader>o :set paste<cr>o<esc>:set nopaste<cr>
 nnoremap <silent> <leader>O :set paste<cr>O<esc>:set nopaste<cr>
@@ -30,13 +29,9 @@ nnoremap <silent> <leader>bx <cmd>enew<cr>
 " quit window
 nnoremap <silent> <SPACE>qq :q<CR>
 
-" window split
-nnoremap <SPACE>ww <C-w>w
-nnoremap <SPACE>w- :split<CR>
-nnoremap <SPACE>w/ :vsplit<CR>
-
 " better jump
 noremap L $
+noremap H 0
 
 " copy and yank with system
 " selsct some text, copy it ro system clipboard
@@ -52,8 +47,6 @@ nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>
 
 " open config file
 nnoremap <silent> <SPACE>fv <cmd>edit ~/.config/nvim/config/plugs.vim<cr>
-" todo
-"nnoremap <silent> <leader>fn <Cmd>cd ~/.config/nvim <bar> Ranger<Cr>
 
 nnoremap <leader>bs  <Cmd>e /tmp/scratch.txt<CR>
 
@@ -61,3 +54,9 @@ nnoremap <leader>bs  <Cmd>e /tmp/scratch.txt<CR>
 nnoremap <leader>fs :w<cr>
 
 nnoremap <leader>qh q:
+
+nnoremap <leader>tt :terminal<cr>i
+
+nnoremap q <nop>
+
+nnoremap <leader>w <C-w>

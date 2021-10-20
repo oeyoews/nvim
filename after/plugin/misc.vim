@@ -4,7 +4,7 @@ nnoremap <Leader>vc <Cmd>PlugClean<CR>
 nnoremap <Leader>vu <Cmd>PlugUpdate<CR>
 
 " 14. quickrun
-nnoremap <silent> <SPACE>lr <Cmd>QuickRun<CR><C-w><C-w>G
+nnoremap <silent> <SPACE>ll <Cmd>QuickRun<CR><C-w>w
 
 " 17. hop.nvim
 lua require'hop'.setup()
