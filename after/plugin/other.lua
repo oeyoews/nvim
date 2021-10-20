@@ -1,3 +1,5 @@
+vim.cmd[[
+
 " 1. vim-pug
 nnoremap <Leader>vi <Cmd>PlugInstall<CR>
 nnoremap <Leader>vc <Cmd>PlugClean<CR>
@@ -32,3 +34,4 @@ let g:mkdp_open_to_the_world = 0
 let g:mkdp_filetypes = [ 'markdown', 'html' ]
 
 nnoremap <space>fmm :MarkdownPreviewToggle<CR>
+]]
