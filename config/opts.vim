@@ -1,9 +1,8 @@
 language messages en_US.utf8
-"set cursorline
 set termguicolors
 set undofile
 set signcolumn=yes
-set number relativenumber
+set nu rnu
 set autochdir
 set mouse+=a
 set wrap
@@ -26,7 +25,6 @@ set scrolloff=3
 set updatetime=200	" ??
 set foldmethod=marker  " set foldmethod
 set conceallevel=0
-" == tab ==
 set timeoutlen=1000
 set expandtab  " disable expand tab to whitespace
 set shiftwidth=2
