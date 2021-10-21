@@ -55,7 +55,7 @@ nnoremap <leader>fs :w<cr>
 
 nnoremap <leader>qh q:
 
-nnoremap <leader>tt :terminal<cr>i
+nnoremap <leader>tt <cmd> setlocal nonu nornu <bar> terminal <cr>i
 
 nnoremap q <nop>
 
