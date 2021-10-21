@@ -47,6 +47,7 @@ nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>
 
 " open config file
 nnoremap <silent> <SPACE>fv <cmd>edit ~/.config/nvim/vim/config/plugs.vim<cr>
+nnoremap <silent> <space>fi <cmd>edit ~/.config/nvim/init.lua<cr>
 
 nnoremap <leader>bs  <Cmd>e /tmp/scratch.txt<CR>
 
@@ -55,7 +56,7 @@ nnoremap <leader>fs :w<cr>
 
 nnoremap <leader>qh q:
 
-nnoremap <leader>tt <cmd> setlocal nonu nornu <bar> terminal <cr>i
+nnoremap <leader>tt <cmd> terminal<cr> <cmd>set nornu nonu<cr> i
 
 nnoremap q <nop>
 

@@ -1,13 +1,11 @@
-"colorscheme tokyonight
-
-" nvchad themes
-lua << EOF
+---[[
 local base16 = require 'base16'
 base16(base16.themes("tokyonight"), true)
-EOF
-
-" restore last cursor location
-autocmd! BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+--]]
+--
+--lua
+vim.cmd [[
+"colorscheme tokyonight
 
 " transparent background and float background
 hi Normal     guifg=#b9c0cd ctermbg=NONE guibg=NONE
@@ -34,3 +32,4 @@ hi CursorLineNr guifg=#c269fe guibg=black
 hi Cursor guifg=#86af5d guibg=#86af5d
 hi Cursor2 guifg=red guibg=red
 set guicursor=n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor2/lCursor2,r-cr:hor20,o:hor50
+]]

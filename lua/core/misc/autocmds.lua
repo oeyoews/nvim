@@ -15,4 +15,7 @@ autocmd BufRead,BufNewFile *.tex set filetype=tex
 " yank
 autocmd TextYankPost * lua vim.highlight.on_yank {higroup="IncSearch",
       \ timeout=150, on_visual=true}
+
+" restore last cursor location
+autocmd! BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 ]]
