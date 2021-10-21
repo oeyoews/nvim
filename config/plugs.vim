@@ -1,4 +1,4 @@
-call plug#begin('$HOME/.config/nvim/src')
+call plug#begin('$HOME/.config/nvim/.bundle')
 
 " completeion
 Plug 'hrsh7th/nvim-cmp'
