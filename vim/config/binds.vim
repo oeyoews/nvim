@@ -45,8 +45,18 @@ noremap <SPACE>pP "*P
 " clear all hlight words
 nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>
 
+" TODO
+function OpenPlugins()
+  let plugins="~/.config/nvim/vim/autoload/plugins.vim"
+  if exists('plugins')
+    exec "e ~/.config/nvim/vim/autoload/plugins.vim"
+  else
+    echom "Sorry, no this file"
+  end
+endfunction
+
 " open config file
-nnoremap <silent> <SPACE>fv <cmd>edit ~/.config/nvim/vim/config/plugs.vim<cr>
+nnoremap <silent> <SPACE>fv <cmd>call OpenPlugins()<cr>
 nnoremap <silent> <space>fi <cmd>edit ~/.config/nvim/init.lua<cr>
 
 nnoremap <leader>bs  <Cmd>e /tmp/scratch.txt<CR>
@@ -56,7 +66,14 @@ nnoremap <leader>fs :w<cr>
 
 nnoremap <leader>qh q:
 
-nnoremap <leader>tt <cmd> terminal<cr> <cmd>setlocal nornu nonu<cr> i
+function Termopen()
+  setlocal splitbelow
+  split
+  terminal
+  setlocal nornu nonu
+endfunction
+
+nnoremap <leader>tt <cmd>call Termopen()<cr>
 
 nnoremap q <nop>
 
