@@ -5,5 +5,5 @@ vim.cmd [[
 runtime! config/*.vim
 ]]
 
---require("core")
+require("core")
 require("plugins")

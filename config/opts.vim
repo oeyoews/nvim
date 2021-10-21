@@ -32,3 +32,5 @@ set tabstop=2
 set softtabstop=2 " tab == 2 column truly
 set listchars=tab:→\ ,eol:↵,trail:▫,extends:↷,precedes:↶
 set whichwrap+=<,>,[,]
+set spr
+set sb

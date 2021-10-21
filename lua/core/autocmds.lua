@@ -1,3 +1,4 @@
+vim.cmd [[
 command! Scripts enew|pu=execute('scriptnames')
 
 command! -nargs=1 -complete=highlight HI enew|pu=execute('<args>')
@@ -10,3 +11,4 @@ autocmd! FileType help,qf,startuptime,quickrun,snippets,tsplayground nnoremap <s
 
 " fix latex filetype
 autocmd BufRead,BufNewFile *.tex set filetype=tex
+]]
