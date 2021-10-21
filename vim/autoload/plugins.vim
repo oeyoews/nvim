@@ -95,6 +95,7 @@ Plug 'oeyoews/suda.vim', { 'frozen': 1 }
 
 Plug 'lewis6991/gitsigns.nvim'
 
-"Plug 'oeyoews/tokyonight.nvim'
+Plug 'oeyoews/tokyonight.nvim'
+"Plug 'nanotee/luv-vimdocs'
 
 call plug#end()

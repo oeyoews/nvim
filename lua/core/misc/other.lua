@@ -36,7 +36,7 @@ nnoremap <space>fmm :MarkdownPreviewToggle<CR>
 
 -- gitsigns
 require('gitsigns').setup {
-  signcolumn = false
+  -- signcolumn = false
 }
 
 require'colorizer'.setup()
