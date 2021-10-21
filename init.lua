@@ -6,4 +6,3 @@ runtime! config/*.vim
 ]]
 
 require("core")
-require("plugins")

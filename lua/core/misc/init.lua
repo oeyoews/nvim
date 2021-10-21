@@ -1,0 +1,5 @@
+require("core.misc.treesitter")
+require("core.misc.other")
+require("core.misc.telescope")
+require("core.misc.which-key")
+require("core.misc.autocmds")

@@ -11,4 +11,8 @@ autocmd! FileType help,qf,startuptime,quickrun,snippets,tsplayground nnoremap <s
 
 " fix latex filetype
 autocmd BufRead,BufNewFile *.tex set filetype=tex
+
+" yank
+autocmd TextYankPost * lua vim.highlight.on_yank {higroup="IncSearch",
+      \ timeout=150, on_visual=true}
 ]]
