@@ -1,4 +1,4 @@
-call plug#begin('$HOME/.cache/nvim/plug')
+call plug#begin('$HOME/.config/nvim/src')
 
 " completeion
 Plug 'hrsh7th/nvim-cmp'
@@ -89,5 +89,8 @@ Plug 'gcmt/wildfire.vim'
 
 " enable color for some files
 Plug 'norcalli/nvim-colorizer.lua'
+
+" use sudo to manage your files
+Plug 'oeyoews/suda.vim', { 'frozen': 1 }
 
 call plug#end()
