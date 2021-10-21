@@ -137,7 +137,7 @@ vim.cmd [[
 let g:UltiSnipsJumpForwardTrigger="<C-J>"
 let g:UltiSnipsJumpBackwardTrigger="<C-K>"
 let g:UltiSnipsSnippetDirectories = [
-			\ $HOME.'/.config/nvim/Ultisnips/',
+			\ $HOME.'/.config/nvim/vim/Ultisnips/',
       \ ]
 let g:UltiSnipsEditSplit="vertical"
 " == mappings ==

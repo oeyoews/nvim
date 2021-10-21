@@ -46,7 +46,7 @@ noremap <SPACE>pP "*P
 nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>
 
 " open config file
-nnoremap <silent> <SPACE>fv <cmd>edit ~/.config/nvim/config/plugs.vim<cr>
+nnoremap <silent> <SPACE>fv <cmd>edit ~/.config/nvim/vim/config/plugs.vim<cr>
 
 nnoremap <leader>bs  <Cmd>e /tmp/scratch.txt<CR>
 
