@@ -5,11 +5,10 @@ nnoremap <Leader>vi <Cmd>PlugInstall<CR>
 nnoremap <Leader>vc <Cmd>PlugClean<CR>
 nnoremap <Leader>vu <Cmd>PlugUpdate<CR>
 
-" 14. quickrun
+" quickrun
 nnoremap <silent> <SPACE>ll <Cmd>QuickRun<CR><C-w>w
 
 " 17. hop.nvim
-lua require'hop'.setup()
 nnoremap <SPACE>jj <Cmd>HopWord<CR>
 nnoremap <SPACE>jl <Cmd>HopLine<CR>
 
@@ -26,7 +25,6 @@ let g:strip_whitespace_confirm=0
 let g:strip_max_file_size = 1000
 nnoremap <leader>tw <Cmd>StripWhitespace<Cr>
 
-lua require'colorizer'.setup()
 
 " == markdown-preview ==
 let g:mkdp_echo_preview_url = 1
@@ -35,3 +33,12 @@ let g:mkdp_filetypes = [ 'markdown', 'html' ]
 
 nnoremap <space>fmm :MarkdownPreviewToggle<CR>
 ]]
+
+-- gitsigns
+require('gitsigns').setup {
+  signcolumn = false
+}
+
+require'colorizer'.setup()
+
+require'hop'.setup()

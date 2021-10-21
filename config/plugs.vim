@@ -93,4 +93,6 @@ Plug 'norcalli/nvim-colorizer.lua'
 " use sudo to manage your files
 Plug 'oeyoews/suda.vim', { 'frozen': 1 }
 
+Plug 'lewis6991/gitsigns.nvim'
+
 call plug#end()
