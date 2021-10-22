@@ -67,15 +67,11 @@ nnoremap <silent> <leader>fs :w<cr>
 nnoremap <leader>qh q:
 
 function Shell()
-  setlocal splitbelow
   split
   terminal
   setlocal nornu nonu
 endfunction
 
-
-au TermOpen * call feedkeys("i")
-au TermClose * call feedkeys("i")
 nnoremap <leader>tt <cmd>call Shell()<cr>
 
 nnoremap q <nop>
