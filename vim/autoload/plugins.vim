@@ -98,4 +98,6 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'oeyoews/tokyonight.nvim'
 "Plug 'nanotee/luv-vimdocs'
 
+"Plug '~/.config/nvim/.bundle/vanilla-lua'
+
 call plug#end()

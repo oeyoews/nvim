@@ -10,10 +10,10 @@ nnoremap <silent> <SPACE>ll <Cmd>QuickRun<CR><C-w>w
 
 " 17. hop.nvim
 nnoremap <SPACE>jj <Cmd>HopWord<CR>
-nnoremap <SPACE>jl <Cmd>HopLine<CR>
 
 " StartupTime
 command! Time StartupTime --tries 3
+nnoremap <leader>vt <cmd>StartupTime --tries 3<cr>
 
 " suda
 nnoremap <leader>fE <Cmd>SudaRead<Cr>

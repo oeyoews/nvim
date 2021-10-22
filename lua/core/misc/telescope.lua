@@ -13,28 +13,28 @@ require('telescope').setup{
   pickers = {
 
     find_files = {
-      theme = "dropdown",
+      theme = "ivy",
     },
     oldfiles = {
-      theme = "dropdown"
+      theme = "ivy"
     },
     buffers = {
-      theme = "dropdown"
+      theme = "ivy"
     },
     live_grep = {
-      theme = "dropdown"
+      theme = "ivy"
     },
     colorscheme = {
-      theme = "dropdown"
+      theme = "ivy"
     },
     keymaps = {
-      theme = "dropdown"
+      theme = "ivy"
     },
     filetypes = {
       theme = "dropdown"
     },
     current_buffer_fuzzy_find = {
-      theme = "dropdown"
+      theme = "ivy"
     }
   },
   extensions = {}

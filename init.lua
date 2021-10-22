@@ -1,7 +1,3 @@
---[[
-vim: set noma:
---]]
-
 ---[[
 -- use vimplug
 vim.cmd [[ runtime vim/autoload/plug.vim

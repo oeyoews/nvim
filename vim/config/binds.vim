@@ -73,7 +73,7 @@ function Termopen()
   setlocal nornu nonu
 endfunction
 
-nnoremap <leader>tt <cmd>call Termopen()<cr>
+nnoremap <leader>tt <cmd>call Termopen()<cr>i
 
 nnoremap q <nop>
 
