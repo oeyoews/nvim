@@ -62,18 +62,21 @@ nnoremap <silent> <space>fi <cmd>edit ~/.config/nvim/init.lua<cr>
 nnoremap <leader>bs  <Cmd>e /tmp/scratch.txt<CR>
 
 " note this <cr> not have virtual space
-nnoremap <leader>fs :w<cr>
+nnoremap <silent> <leader>fs :w<cr>
 
 nnoremap <leader>qh q:
 
-function Termopen()
+function Shell()
   setlocal splitbelow
   split
   terminal
   setlocal nornu nonu
 endfunction
 
-nnoremap <leader>tt <cmd>call Termopen()<cr>i
+
+au TermOpen * call feedkeys("i")
+au TermClose * call feedkeys("i")
+nnoremap <leader>tt <cmd>call Shell()<cr>
 
 nnoremap q <nop>
 

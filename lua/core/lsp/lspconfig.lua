@@ -67,7 +67,7 @@ mapping = {
   --jsonls: npm i -g vscode-langservers-extracted
   local nvim_lsp = require('lspconfig')
   -- automatically connect language server protocol
-  local servers = { 'vimls', 'clangd', 'bashls', 'pyright', 'jsonls', 'tsserver', 'html', 'cssls'}
+  local servers = { 'vimls', 'clangd', 'bashls', 'pyright', 'jsonls', 'tsserver', 'html', 'cssls', 'texlab'}
   local capabilities = vim.lsp.protocol.make_client_capabilities()
   capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
   for _, lsp in ipairs(servers) do
