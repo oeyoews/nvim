@@ -1,5 +1,5 @@
 vim.cmd [[
-command! Scripts enew|pu=execute('scriptnames')
+command! Scripts vsplit | enew|pu=execute('scriptnames')
 
 command! -nargs=1 -complete=highlight HI enew|pu=execute('hi <args>')
 

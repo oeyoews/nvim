@@ -72,7 +72,7 @@ function Shell()
   setlocal nornu nonu
 endfunction
 
-nnoremap <leader>tt <cmd>call Shell()<cr>
+nnoremap <leader>ts <cmd>call Shell()<cr>
 
 nnoremap q <nop>
 

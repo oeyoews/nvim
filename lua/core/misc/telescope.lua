@@ -49,6 +49,7 @@ nnoremap <leader>bk <Cmd>Telescope keymaps<Cr>
 nnoremap <leader>bh <Cmd>Telescope highlights<Cr>
 nnoremap <leader>bf <Cmd>Telescope filetypes<Cr>
 nnoremap <leader>ss <Cmd>Telescope current_buffer_fuzzy_find<Cr>
+nnoremap <leader>ps <Cmd>Telescope live_grep<Cr>
 
 " Border highlight groups
 highlight TelescopeBorder         guifg=#bd93f9
