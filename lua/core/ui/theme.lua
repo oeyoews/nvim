@@ -1,6 +1,6 @@
 vim.cmd [[ colorscheme tokyonight ]]
 
----[[
+--[[
 local base16 = require 'base16'
 base16(base16.themes("tokyonight"), true)
 --]]

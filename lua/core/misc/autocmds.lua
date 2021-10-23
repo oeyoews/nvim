@@ -9,6 +9,8 @@ command! -nargs=?  -complete=color Theme colorscheme <args>
 " smart quit netrw
 autocmd! FileType help,qf,startuptime,quickrun,snippets,tsplayground nnoremap <silent> q <Cmd>q<CR>
 
+autocmd! FileType vim-plug,startuptime, setlocal nornu nonu
+
 " fix latex filetype
 autocmd BufRead,BufNewFile *.tex set filetype=tex
 

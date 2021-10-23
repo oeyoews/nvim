@@ -67,8 +67,7 @@ nnoremap <silent> <leader>fs :w<cr>
 nnoremap <leader>qh q:
 
 function Shell()
-  split
-  terminal
+  split | terminal
   setlocal nornu nonu
 endfunction
 
@@ -77,3 +76,4 @@ nnoremap <leader>ts <cmd>call Shell()<cr>
 nnoremap q <nop>
 
 nnoremap <leader>w <C-w>
+nnoremap <leader>bm :messages<cr>
