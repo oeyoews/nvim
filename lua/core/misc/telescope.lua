@@ -51,6 +51,8 @@ nnoremap <leader>bf <Cmd>Telescope filetypes<Cr>
 nnoremap <leader>ss <Cmd>Telescope current_buffer_fuzzy_find<Cr>
 nnoremap <leader>ps <Cmd>Telescope live_grep<Cr>
 
+nnoremap <C-k> <cmd>lua vim.lsp.buf.signature_help() <cr>
+
 " Border highlight groups
 highlight TelescopeBorder         guifg=#bd93f9
 highlight TelescopePromptBorder   guifg=#bd93f9

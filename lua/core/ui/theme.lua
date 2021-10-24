@@ -1,6 +1,7 @@
 vim.cmd [[ colorscheme tokyonight ]]
 
 --[[
+-- how to change left sign color
 local base16 = require 'base16'
 base16(base16.themes("tokyonight"), true)
 --]]
@@ -19,6 +20,8 @@ hi NormalFloat  ctermbg=NONE guibg=NONE
 " search highlight
 hi IncSearch  cterm=bold ctermfg=16 ctermbg=167 gui=bold guifg=#292b2e guibg=#ce537a
 hi Search     cterm=bold ctermfg=16 ctermbg=76 gui=bold guifg=#292b2e guibg=#86dc2f
+" "highlight! link Visual Search
+
 
 hi PmenuSbar  ctermfg=28 ctermbg=233 guifg=#c269fe guibg=#303030
 hi PmenuSel    ctermfg=242 ctermbg=0 gui=bold guifg=#282c34 guibg=#73b8f1
@@ -34,6 +37,8 @@ hi LineNr     ctermfg=239 guifg=#44505c
 " highlight current number bg and fg
 hi CursorLineNr guifg=#c269fe guibg=black
 
+hi VertSplit guibg=#4f97d7
+" "hi StatusLine guibg=#4f97d7
 " cursor
 hi Cursor guifg=#86af5d guibg=#86af5d
 hi Cursor2 guifg=red guibg=red

@@ -97,6 +97,7 @@ Plug 'lewis6991/gitsigns.nvim'
 
 Plug 'oeyoews/tokyonight.nvim'
 
+Plug 'oeyoews/beacon.nvim'
 "Plug '~/.config/nvim/.bundle/vanilla-lua'
 
 call plug#end()

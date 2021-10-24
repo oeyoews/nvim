@@ -30,7 +30,9 @@ mapping = {
   ['<CR>'] = cmp.mapping.confirm(),
   ['<C-e>'] = cmp.mapping.complete(),
   ['<C-c>'] = cmp.mapping.close(),
-  },
+  ['<C-d>'] = cmp.mapping.scroll_docs(-4),
+  ['<C-f>'] = cmp.mapping.scroll_docs(4),
+},
 
   formatting = {
     format = require("lspkind").cmp_format({with_text = true, menu = ({
