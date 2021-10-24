@@ -45,11 +45,11 @@ noremap <SPACE>pP "*P
 " clear all hlight words
 nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>
 
-" TODO
+" TODO repeat path
 function OpenPlugins()
-  let plugins="~/.config/nvim/vim/autoload/plugins.vim"
+  let plugins="~/.config/nvim/vim/vimplug/plugins.vim"
   if exists('plugins')
-    exec "e ~/.config/nvim/vim/autoload/plugins.vim"
+    exec "e ~/.config/nvim/vim/vimplug/plugins.vim"
   else
     echom "Sorry, no this file"
   end
