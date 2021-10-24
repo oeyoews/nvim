@@ -1,23 +1,24 @@
-vim.cmd [[
+" command: Scripts
 command! Scripts vsplit | enew|pu=execute('scriptnames')
 
+" command: HI
 command! -nargs=1 -complete=highlight HI enew|pu=execute('hi <args>')
 
-" alias colorscheme to Theme
+" command: Theme
 command! -nargs=?  -complete=color Theme colorscheme <args>
 
-" smart quit netrw
-autocmd! FileType help,qf,startuptime,quickrun,snippets,tsplayground nnoremap <silent> q <Cmd>q<CR>
+" smart quit some window
+autocmd! FileType startuptime,help,qf,quickrun,snippets,tsplayground nnoremap <silent> q :q<cr>
 
-autocmd! FileType vim-plug,startuptime, setlocal nornu nonu
+" it's confict for last command to quit window fastly
+"autocmd! FileType vim-plug,startuptime, setlocal nornu nonu
 
-" fix latex filetype
+" fix latex filetype(plaintex)
 autocmd BufRead,BufNewFile *.tex set filetype=tex
 
 " yank
 autocmd TextYankPost * lua vim.highlight.on_yank {higroup="IncSearch",
       \ timeout=150, on_visual=true}
 
-" restore last cursor location
+" restore the cursor location
 autocmd! BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-]]

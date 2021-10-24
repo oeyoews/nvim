@@ -1,10 +1,9 @@
 ---[[
 local core_modules = {
   "core.misc.treesitter",
-  "core.misc.other",
+  "core.misc.plugins",
   "core.misc.telescope",
   "core.misc.which-key",
-  "core.misc.autocmds",
 }
 
 for _, module in ipairs(core_modules) do

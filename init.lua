@@ -1,7 +1,7 @@
 ---[[
 -- use vimplug
-vim.cmd [[ runtime vim/autoload/plug.vim
-runtime vim/autoload/plugins.vim ]]
+vim.cmd [[ runtime vim/vimplug/plug.vim
+runtime vim/vimplug/plugins.vim ]]
 
 -- use locla config
 vim.cmd [[ runtime! vim/config/*.vim ]]
