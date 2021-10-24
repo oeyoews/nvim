@@ -23,7 +23,7 @@ hi Search     cterm=bold ctermfg=16 ctermbg=76 gui=bold guifg=#292b2e guibg=#86d
 " "highlight! link Visual Search
 
 
-hi PmenuSbar  ctermfg=28 ctermbg=233 guifg=#c269fe guibg=#303030
+""hi PmenuSbar  ctermfg=28 ctermbg=233 guifg=#c269fe guibg=#303030
 hi PmenuSel    ctermfg=242 ctermbg=0 gui=bold guifg=#282c34 guibg=#73b8f1
 " sidebar second
 hi PmenuThumb ctermfg=160 ctermbg=97 guifg=#e0211d guibg=#73b8f1

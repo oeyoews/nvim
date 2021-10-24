@@ -1,4 +1,5 @@
 language messages en_US.utf8
+set ignorecase
 set termguicolors
 set undofile
 set signcolumn=yes
