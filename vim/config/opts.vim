@@ -12,7 +12,7 @@ set hidden
 set ignorecase
 set noshowcmd
 set noshowmode
-set textwidth=80
+set textwidth=120
 set shortmess+=aIc  " atI clear advertise
 set lazyredraw
 set vb t_vb=
