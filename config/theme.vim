@@ -1,12 +1,13 @@
 " must ins this hi file
 lua << EOF
---[[
+---[[
+-- noyice set up your terminal bg is similar vim's bg
 local base16 = require 'base16'
 base16(base16.themes("tokyonight"), true)
 --]]
 EOF
 
-colorscheme tokyonight
+"colorscheme tokyonight
 
 " transparent background and float background
 " hi Normal      guifg=#b9c0cd ctermbg=NONE guibg=NONE

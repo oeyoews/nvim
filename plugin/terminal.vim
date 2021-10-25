@@ -2,3 +2,10 @@
 " it's confict for ranger, maybe it's it terminal job
 au! TermOpen * call feedkeys("i")
 au! TermClose * call feedkeys("\<esc>")
+
+function Shell()
+  split | terminal
+  setlocal nornu nonu
+endfunction
+
+nnoremap <space>ts <cmd>call Shell()<cr>

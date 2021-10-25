@@ -465,3 +465,11 @@ endif
 let s:errmsg='please set g:current_line_whitespace_disabled_{soft,hard} and reload better whitespace'
 command! -nargs=* CurrentLineWhitespaceOff echoerr 'E492: Deprecated command CurrentLineWhitespaceOff: '.s:errmsg
 command! CurrentLineWhitespaceOn echoerr 'E492: Deprecated command CurrentLineWhitespaceOn: '.s:errmsg
+
+
+" whitespace
+let g:better_whitespace_enabled=0
+let g:strip_whitespace_on_save = 1
+let g:strip_whitespace_confirm=0
+let g:strip_max_file_size = 1000
+nnoremap <leader>tw <Cmd>StripWhitespace<Cr>

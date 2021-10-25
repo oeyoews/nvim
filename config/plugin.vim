@@ -16,7 +16,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 
 " fast install you code lsp
-"Plug 'williamboman/nvim-lsp-installer'
+Plug 'williamboman/nvim-lsp-installer'
 
 " configure your lsp
 Plug 'neovim/nvim-lspconfig'
@@ -100,5 +100,8 @@ Plug 'oeyoews/tokyonight.nvim'
 Plug 'oeyoews/beacon.nvim'
 
 Plug 'folke/persistence.nvim'
+
+"Plug 'yamatsum/nvim-cursorline'
+Plug 'oeyoews/nvim-cursorword'
 
 call plug#end()

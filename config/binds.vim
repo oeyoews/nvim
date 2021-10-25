@@ -33,15 +33,6 @@ nnoremap <silent> <SPACE>qq :q<CR>
 noremap L $
 noremap H 0
 
-" copy and yank with system
-" selsct some text, copy it ro system clipboard
-vnoremap <leader>yy "*y
-" in normal mode, like Y to copy current line,
-" but copy it to system clipboard
-nnoremap <leader>yy "*Y
-noremap <SPACE>pp "*p
-noremap <SPACE>pP "*P
-
 " clear all hlight words
 nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>
 
@@ -55,13 +46,6 @@ nnoremap <leader>bs  <Cmd>e /tmp/scratch.txt<CR>
 nnoremap <silent> <leader>fs :w<cr>
 
 nnoremap <leader>qh q:
-
-function Shell()
-  split | terminal
-  setlocal nornu nonu
-endfunction
-
-nnoremap <leader>ts <cmd>call Shell()<cr>
 
 nnoremap q <nop>
 
