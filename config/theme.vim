@@ -1,16 +1,19 @@
 " must ins this hi file
 lua << EOF
+--[[
 local base16 = require 'base16'
 base16(base16.themes("tokyonight"), true)
+--]]
 EOF
-"colorscheme tokyonight
+
+colorscheme tokyonight
 
 " transparent background and float background
 " hi Normal      guifg=#b9c0cd ctermbg=NONE guibg=NONE
 "hi Normal      guifg=#c0caf5 guibg=#24283b
 "hi Normal       guifg=#c0caf5 guibg=#24283b
 " black
-hi Normal       guifg=#a9b1d6 guibg=#1A1B26
+"hi Normal       guifg=#a9b1d6 guibg=#1A1B26
 hi NormalFloat  ctermbg=NONE guibg=NONE
 ""hi SignColumnSB guifg=#3b4261 guibg=#1f2335
 
