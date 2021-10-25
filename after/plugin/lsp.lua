@@ -13,7 +13,6 @@ local border = {
       {"╰", "Fs"},
       {"│", "Fs"},
 }
-
 -- cmp_lsp
 local cmp = require'cmp'
 cmp.setup({
@@ -97,7 +96,6 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   }
 )
 
----[[
 --  == go-to definition split  ==
 local function goto_definition(split_cmd)
   local util = vim.lsp.util
@@ -131,21 +129,3 @@ local function goto_definition(split_cmd)
 end
 
 vim.lsp.handlers["textDocument/definition"] = goto_definition('split')
---]]
-
----[[
---" === ultisnips ===
-vim.cmd [[
-let g:UltiSnipsJumpForwardTrigger="<C-J>"
-let g:UltiSnipsJumpBackwardTrigger="<C-K>"
-let g:UltiSnipsSnippetDirectories = [
-			\ $HOME.'/.config/nvim/vim/Ultisnips/',
-      \ ]
-let g:UltiSnipsEditSplit="vertical"
-" == mappings ==
-nnoremap <silent> <SPACE>ee :UltiSnipsEdit<CR>G
-nnoremap <silent> <SPACE>ea :UltiSnipsEdit all<CR>
-nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
-nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>
-]]
---]]

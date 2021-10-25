@@ -1,4 +1,3 @@
----[[
 require('bufferline').setup {
   options = {
     numbers = "none",
@@ -6,4 +5,3 @@ require('bufferline').setup {
     separator_style = "thick",
     }
   }
---]]

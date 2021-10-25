@@ -16,7 +16,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 
 " fast install you code lsp
-Plug 'williamboman/nvim-lsp-installer'
+"Plug 'williamboman/nvim-lsp-installer'
 
 " configure your lsp
 Plug 'neovim/nvim-lspconfig'
@@ -95,9 +95,10 @@ Plug 'oeyoews/suda.vim', { 'frozen': 1 }
 
 Plug 'lewis6991/gitsigns.nvim'
 
-Plug 'oeyoews/tokyonight.nvim'
+"Plug 'oeyoews/tokyonight.nvim'
 
 Plug 'oeyoews/beacon.nvim'
-"Plug '~/.config/nvim/.bundle/vanilla-lua'
+
+Plug 'folke/persistence.nvim'
 
 call plug#end()

@@ -1,19 +1,16 @@
-vim.cmd [[ colorscheme tokyonight ]]
-
---[[
--- how to change left sign color
+" must ins this hi file
+lua << EOF
 local base16 = require 'base16'
 base16(base16.themes("tokyonight"), true)
---]]
---
---lua
-vim.cmd [[
+EOF
 "colorscheme tokyonight
 
 " transparent background and float background
 " hi Normal      guifg=#b9c0cd ctermbg=NONE guibg=NONE
 "hi Normal      guifg=#c0caf5 guibg=#24283b
-hi Normal       guifg=#c0caf5 guibg=#24283b
+"hi Normal       guifg=#c0caf5 guibg=#24283b
+" black
+hi Normal       guifg=#a9b1d6 guibg=#1A1B26
 hi NormalFloat  ctermbg=NONE guibg=NONE
 ""hi SignColumnSB guifg=#3b4261 guibg=#1f2335
 
@@ -43,4 +40,3 @@ hi VertSplit guibg=#4f97d7
 hi Cursor guifg=#86af5d guibg=#86af5d
 hi Cursor2 guifg=red guibg=red
 set guicursor=n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor2/lCursor2,r-cr:hor20,o:hor50
-]]

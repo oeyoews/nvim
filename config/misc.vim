@@ -1,13 +1,5 @@
-" 1. vim-pug
-nnoremap <Leader>vi <Cmd>PlugInstall<CR>
-nnoremap <Leader>vc <Cmd>PlugClean<CR>
-nnoremap <Leader>vu <Cmd>PlugUpdate<CR>
-
 " quickrun
 nnoremap <silent> <SPACE>ll <Cmd>QuickRun<CR><C-w>w
-
-" 17. hop.nvim
-nnoremap <SPACE>jj <Cmd>HopWord<CR>
 
 " StartupTime
 command! Time StartupTime --tries 3
@@ -23,10 +15,11 @@ let g:strip_whitespace_confirm=0
 let g:strip_max_file_size = 1000
 nnoremap <leader>tw <Cmd>StripWhitespace<Cr>
 
-
 " == markdown-preview ==
 let g:mkdp_echo_preview_url = 1
 let g:mkdp_open_to_the_world = 0
-let g:mkdp_filetypes = [ 'markdown', 'html' ]
-
+let g:mkdp_filetypes = [ 'markdown' ]
 nnoremap <space>fmm :MarkdownPreviewToggle<CR>
+
+" hop(in lua folder it's nothing)
+nno <leader>jj :HopWord<cr>

@@ -45,18 +45,8 @@ noremap <SPACE>pP "*P
 " clear all hlight words
 nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>
 
-" TODO repeat path
-function OpenPlugins()
-  let plugins="~/.config/nvim/vim/vimplug/plugins.vim"
-  if exists('plugins')
-    exec "e ~/.config/nvim/vim/vimplug/plugins.vim"
-  else
-    echom "Sorry, no this file"
-  end
-endfunction
-
 " open config file
-nnoremap <silent> <SPACE>fv <cmd>call OpenPlugins()<cr>
+nnoremap <silent> <SPACE>fv <cmd>e ~/.config/nvim/config/plugin.vim<cr>
 nnoremap <silent> <space>fi <cmd>edit ~/.config/nvim/init.lua<cr>
 
 nnoremap <leader>bs  <Cmd>e /tmp/scratch.txt<CR>
@@ -77,3 +67,8 @@ nnoremap q <nop>
 
 nnoremap <leader>w <C-w>
 nnoremap <leader>bm :messages<cr>
+
+" vimplug
+nnoremap <Leader>vi <Cmd>PlugInstall<CR>
+nnoremap <Leader>vc <Cmd>PlugClean<CR>
+nnoremap <Leader>vu <Cmd>PlugUpdate<CR>
