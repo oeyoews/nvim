@@ -1,3 +1,7 @@
+if not pcall(require, "feline") then
+  return
+end
+
 local colors = {
     bg = '#282c34',
     fg = '#abb2bf',
@@ -56,14 +60,13 @@ local comps = {
     vi_mode = {
         left = {
             provider = function()
-              --return '  ' .. vi_mode_utils.get_vim_mode()
-              return '  ' .. vi_mode_utils.get_vim_mode()
+              return ' ' .. vi_mode_utils.get_vim_mode()
             end,
             hl = function()
                 local val = {
                     name = vi_mode_utils.get_mode_highlight_name(),
                     fg = vi_mode_utils.get_mode_color(),
-                    -- fg = colors.bg
+                    style = 'bold',
                 }
                 return val
             end,
@@ -116,7 +119,7 @@ local comps = {
             left_sep = ' ',
             hl = {
                 fg = colors.cyan,
-                -- style = 'bold'
+                style = 'bold',
             }
         },
     },
@@ -196,14 +199,15 @@ local comps = {
             --icon = '  ',
             icon = ' ',
             hl = {
-                fg = colors.green
+                fg = colors.green,
+                style = 'bold',
             }
         }
     },
     git = {
         branch = {
             provider = 'git_branch',
-            icon = ' ',
+            icon = '  ',
             left_sep = ' ',
             hl = {
                 fg = colors.violet,

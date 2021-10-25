@@ -47,9 +47,9 @@ mapping = {
     },
 
   sources = {
-    { name = 'ultisnips' },
     { name = 'nvim-lua' },
     { name = 'nvim_lsp' },
+    { name = 'ultisnips' },
     { name = 'buffer', keyword_length = 2 },
     { name = 'path' },
     { name = 'emoji' },
