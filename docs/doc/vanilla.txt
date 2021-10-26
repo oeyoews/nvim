@@ -1,6 +1,11 @@
-*vanilla.txt*
+                            *vanilla.txt*
+                                      _ _ _~
+                    __   ____ _ _ __ (_) | | __ _~
+                    \ \ / / _` | '_ \| | | |/ _` |~
+                     \ V / (_| | | | | | | | (_| |~
+                      \_/ \__,_|_| |_|_|_|_|\__,_|~
 
-This is my self documention for nvim(vim).
+                This is my self documention for nvim(vim).
 
                             VANILLA REFERENCE MANUAL
 
@@ -11,60 +16,31 @@ CONTENTS
     3. Documention............|documention|
 
 ================================================================================
-PREREQUISITES                                        *stylua-nvim-prerequisites*
+PREREQUISITES                                        *one*
 
 - Nvim v0.5.x
 - Make sure to have StyLua instaled. You can find instructions here:
   https://github.com/JohnnyMorganz/StyLua
 
 ================================================================================
-GETTING STARTED                                    *stylua-nvim-getting-started*
-
-Install via your favorite package manager.
->
-  use({"ckipp01/stylua-nvim"})
-<
+GETTING STARTED                                    *Two*
 
 ================================================================================
-LUA API                                                    *stylua-nvim-lua-api*
-
-
-                                                                 *format_file()*
-format_file()           Use to format the current buffer. If any issues are
-                        found, they will be opened in your loclist.
-
-================================================================================
-Example Usage                                              *stylua-nvim-lua-api*
-
-
-Via a mapping: >
-  local opts = { noremap=true, silent=true }
-  buf_set_keymap("n", "<leader>f", "<cmd>lua require("stylua-nvim").format_file()<CR>', opts)
-<
-
-Usage via nvim-lspconfig and sumneko_lua to be able to use `:Format`: >
-
-  local lsp_config = require("lspconfig")
-  lsp_config.sumneko_lua.setup({
-    commands = {
-      Format = {
-        function()
-          require("stylua-nvim").format_file()
-        end,
-      },
-    },
-    ...
-  })
-<
-
 *vanilla-tips*
 1. for better edit your vanilla.txt, first use <cmd> set filetype=help <cr>,
    to get help syntax highlight
 
-2. go              jump beginning of documention
+2. generate ascii use :r !figlet <txt>
 
-*questions*
+3. go              jump beginning of documention
+
+*vanilla-questions*
 1. how to use comment in help.txt ?
 
-*documention*
+*vanilla-documention*
 1. TODO: reinstall vanilla plugin to generate doc's tags temporary.
+2. add tidle  in the figlet ascii end, to prevent vim to highlight these ascii
+
+>
+ this is a comment
+<
