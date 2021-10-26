@@ -1,4 +1,5 @@
-let g:UltiSnipsJumpForwardTrigger="<C-J>"
+"let g:UltiSnipsJumpForwardTrigger="<C-J>"
+let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<C-K>"
 let g:UltiSnipsSnippetDirectories = [
 			\ $HOME.'/.config/nvim/Ultisnips/',

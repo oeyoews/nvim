@@ -85,16 +85,17 @@ mapping = {
   })
   nvim_lsp.sumneko_lua.setup(luadev)
 
--- icon note this order in last
-vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+  -- icon note this order in last
+  vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
     underline = true,
+    update_in_insert = false,
     virtual_text = {
       spacing = 4,
       prefix = ''
     }
   }
-)
+  )
 
 --  == go-to definition split  ==
 local function goto_definition(split_cmd)

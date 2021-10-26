@@ -14,4 +14,4 @@ let g:mkdp_filetypes = [ 'markdown' ]
 nnoremap <space>fmm :MarkdownPreviewToggle<CR>
 
 " hop(in lua folder it's nothing)
-nno <leader>jj :HopWord<cr>
+"nno <silent> <leader>jj :HopWord<cr>

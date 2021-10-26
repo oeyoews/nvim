@@ -1,0 +1,70 @@
+*vanilla.txt*
+
+This is my self documention for nvim(vim).
+
+                            VANILLA REFERENCE MANUAL
+
+CONTENTS
+
+    1. Tips...................|vanilla-tips|
+    2. Questions..............|questions|
+    3. Documention............|documention|
+
+================================================================================
+PREREQUISITES                                        *stylua-nvim-prerequisites*
+
+- Nvim v0.5.x
+- Make sure to have StyLua instaled. You can find instructions here:
+  https://github.com/JohnnyMorganz/StyLua
+
+================================================================================
+GETTING STARTED                                    *stylua-nvim-getting-started*
+
+Install via your favorite package manager.
+>
+  use({"ckipp01/stylua-nvim"})
+<
+
+================================================================================
+LUA API                                                    *stylua-nvim-lua-api*
+
+
+                                                                 *format_file()*
+format_file()           Use to format the current buffer. If any issues are
+                        found, they will be opened in your loclist.
+
+================================================================================
+Example Usage                                              *stylua-nvim-lua-api*
+
+
+Via a mapping: >
+  local opts = { noremap=true, silent=true }
+  buf_set_keymap("n", "<leader>f", "<cmd>lua require("stylua-nvim").format_file()<CR>', opts)
+<
+
+Usage via nvim-lspconfig and sumneko_lua to be able to use `:Format`: >
+
+  local lsp_config = require("lspconfig")
+  lsp_config.sumneko_lua.setup({
+    commands = {
+      Format = {
+        function()
+          require("stylua-nvim").format_file()
+        end,
+      },
+    },
+    ...
+  })
+<
+
+*vanilla-tips*
+1. for better edit your vanilla.txt, first use <cmd> set filetype=help <cr>,
+   to get help syntax highlight
+
+2. go              jump beginning of documention
+
+*questions*
+1. how to use comment in help.txt ?
+
+*documention*
+1. TODO: reinstall vanilla plugin to generate doc's tags temporary.
