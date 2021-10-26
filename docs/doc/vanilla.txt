@@ -1,46 +1,55 @@
-*vanilla.txt* This is my self documention for nvim(vim).
-                                      _ _ _~
-                    __   ____ _ _ __ (_) | | __ _~
-                    \ \ / / _` | '_ \| | | |/ _` |~
-                     \ V / (_| | | | | | | | (_| |~
-                      \_/ \__,_|_| |_|_|_|_|\__,_|~
+*vanilla.txt* This is my self documentation for nvim(vim).
+
+__     ___    _   _ ___ _     _        _~
+\ \   / / \  | \ | |_ _| |   | |      / \~
+ \ \ / / _ \ |  \| || || |   | |     / _ \~
+  \ V / ___ \| |\  || || |___| |___ / ___ \~
+   \_/_/   \_\_| \_|___|_____|_____/_/   \_\~
 
 
-                            VANILLA REFERENCE MANUAL
+                            VANILLA MANUAL
 
-CONTENTS                                                          *vanilla-txt*
+CONTENTS  *vanilla.txt*
 
-    1. Tips...................|vanilla-tips|
-    2. Questions..............|questions|
-    3. Documention............|documention|
-
+1. Tips...................|vanilla-tips|
+2. Questions..............|questions|
+3. Documentation..........|documentation|
 
 ================================================================================
-1.1 Tips                                                          *vanilla-tips*
-1. for better edit your vanilla.txt, first use <cmd> set filetype=help <cr>,
-   to get help syntax highlight
+1.1 Tips  *vanilla-tips*
 
-2. generate ascii use :r !figlet <txt>
+--  For better edit your vanilla.txt, first use <cmd> set filetype=help <cr>,
+    to get help syntax highlight
 
-3. go          jump beginning of documention
+2. Generate ASCII use :r !figlet <txt>
+
+3. 'go'          jump beginning of documentation
 4. <C-]> or K to jump current tags, like keyword
 
 ================================================================================
-1.2 FAQ                                                       *vanilla-questions*
-1. how to use comment in help.txt ?
-
-================================================================================
-1.3 DOCUMENTION                                             *vanilla-documention*
-1. TODO: reinstall vanilla plugin to generate doc's tags temporary.(seems not to reinstall,
-   it's just nothing to do)
-
-2. add tidle  in the figlet ascii end, to prevent vim to highlight these ascii
-
-3. open this file have some question.
-
-4. for comment, need use >  <space> demo <, NOTE: must have space
+1.2 FAQ  *vanilla-questions*
 
 >
+  1. - How to use comment in help.txt ?
+<
+
+================================================================================
+1.3 DOCUMENTATION  *vanilla-documentation*
+
+>
+ 1. - TODO: reinstall vanilla plugin to generate doc's tags temporary.(seems not to reinstall,
+   it's just nothing to do)
+<
+
+2. add tilde  in the figlet ASCII end, to prevent vim to highlight these ASCII
+
+3. Open this file have some question.
+
+4. For comment, need use >  <space> demo <, must have space
+
+
+1.4 TEST
+1. 'number' >
   Introduction
   Usage
   Mappings
@@ -51,3 +60,7 @@ CONTENTS                                                          *vanilla-txt*
   Changelog
   Credits
 <
+2. highlight
+'add'
+
+vim:tw=78:ts=8:noet:ft=help:norl:ma:nu:
