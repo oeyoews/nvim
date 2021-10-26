@@ -10,10 +10,6 @@ nnoremap <leader>so <cmd>so % <bar> echo "Finished refresh current file."<cr>
 " quit insert mode fastly
 inoremap jk <ESC>
 
-" copy path to clipboard
-nnoremap <silent> <leader>yp :<C-U>let @+=expand('%:p') <bar>
-            \ echom "Finished copy fpath."<cr>
-
 " continue indent
 vnoremap >> >gv
 vnoremap << <gv
@@ -35,10 +31,6 @@ noremap H 0
 
 " clear all hlight words
 nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>
-
-" open config file
-nnoremap <silent> <SPACE>fv <cmd>e ~/.config/nvim/config/plugin.vim<cr>
-nnoremap <silent> <space>fi <cmd>edit ~/.config/nvim/init.vim<cr>
 
 nnoremap <leader>bs  <Cmd>e /tmp/scratch.txt<CR>
 

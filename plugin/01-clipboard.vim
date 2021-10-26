@@ -6,3 +6,5 @@ vnoremap <space>yy "*y
 nnoremap <space>yy "*Y
 noremap <space>pp "*p
 noremap <space>pP "*P
+
+nnoremap <silent> <space>yp :<C-U>let @+=expand('%:p') <bar>  echom "Finished copy fpath."<cr>
