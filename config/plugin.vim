@@ -104,6 +104,6 @@ Plug 'folke/persistence.nvim'
 "Plug 'yamatsum/nvim-cursorline'
 Plug 'oeyoews/nvim-cursorword'
 
-Plug '~/.config/nvim/docs'
+"Plug '~/.config/nvim/docs'
 
 call plug#end()

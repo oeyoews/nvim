@@ -1,0 +1,68 @@
+*vanilla.txt* This is my self documentation for nvim(vim)
+
+__     ___    _   _ ___ _     _        _~
+\ \   / / \  | \ | |_ _| |   | |      / \~
+ \ \ / / _ \ |  \| || || |   | |     / _ \~
+  \ V / ___ \| |\  || || |___| |___ / ___ \~
+   \_/_/   \_\_| \_|___|_____|_____/_/   \_\~
+
+
+                            VANILLA MANUAL
+
+CONTENTS  *vanilla.txt*
+
+Tips...................|vanilla-tips|
+Questions..............|questions|
+Documentation..........|documentation|
+
+================================================================================
+TIPS  *vanilla-tips*
+
+-  For better edit your vanilla.txt, first use <cmd> set filetype=help <cr>,
+    to get help syntax highlight
+
+-  Generate ASCII use :r !figlet <txt>
+
+-  'go'          jump beginning of documentation
+-  <C-]> or K to jump current tags, like keyword
+
+-  'runtimepath' >
+    :h rtp
+<
+
+================================================================================
+FAQ  *vanilla-questions*
+
+>
+  - How to use comment in help.txt ?
+<
+
+================================================================================
+DOCUMENTATION  *vanilla-documentation*
+
+>
+  - TODO: reinstall vanilla plugin to generate doc's tags temporary.(seems not to reinstall,
+   it's just nothing to do)
+<
+
+- add tilde  in the figlet ASCII end, to prevent vim to highlight these ASCII
+
+- Open this file have some question.
+
+- For comment, need use >  <space> demo <, must have space
+
+
+================================================================================
+TEST
+>
+  Introduction
+  Usage
+  Mappings
+  Configuration
+  License
+  Bugs
+  Contributing
+  Changelog
+  Credits
+
+vim:tw=78:ts=8:noet:ft=help:norl:ma:nu:
