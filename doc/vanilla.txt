@@ -29,6 +29,8 @@ TIPS  *vanilla-tips*
 -  'runtimepath' >
     :h rtp
 <
+- 'window' :h window-moving :h window-resize
+- <C-W>x   move window
 
 ================================================================================
 FAQ  *vanilla-questions*

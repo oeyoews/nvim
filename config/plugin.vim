@@ -88,7 +88,7 @@ Plug 'NvChad/nvim-base16.lua'
 Plug 'gcmt/wildfire.vim'
 
 " enable color for some files
-Plug 'norcalli/nvim-colorizer.lua'
+"Plug 'norcalli/nvim-colorizer.lua'
 
 " use sudo to manage your files
 Plug 'oeyoews/suda.vim', { 'frozen': 1 }
@@ -102,8 +102,9 @@ Plug 'oeyoews/beacon.nvim'
 Plug 'folke/persistence.nvim'
 
 "Plug 'yamatsum/nvim-cursorline'
-Plug 'oeyoews/nvim-cursorword'
+"Plug 'oeyoews/nvim-cursorword'
 
 "Plug '~/.config/nvim/docs'
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
 call plug#end()

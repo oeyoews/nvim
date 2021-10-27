@@ -37,7 +37,7 @@ local function file_osinfo()
     local os = vim.bo.fileformat:upper()
     local icon
     if os == 'UNIX' then
-        icon = ' '
+        icon = ''
     elseif os == 'MAC' then
         icon = ' '
     else
@@ -197,7 +197,8 @@ local comps = {
             -- left_sep = ' ',
             right_sep = ' ',
             --icon = '  ',
-            icon = ' ',
+            icon = '🐭',
+
             hl = {
                 fg = colors.green,
                 style = 'bold',
@@ -207,7 +208,7 @@ local comps = {
     git = {
         branch = {
             provider = 'git_branch',
-            icon = '  ',
+            icon = ' ',
             left_sep = ' ',
             hl = {
                 fg = colors.violet,
