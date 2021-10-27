@@ -101,6 +101,7 @@ function! OpenRangerOnVimLoadDir(argv_path)
 
   " Open Ranger
   call OpenRangerIn(path, 'edit')
+  setlocal nornu nonu
 endfunction
 
 
@@ -111,7 +112,6 @@ if exists('g:ranger_replace_netrw') && g:ranger_replace_netrw
   augroup ReplaceNetrwByRangerVim
     autocmd VimEnter * silent! autocmd! FileExplorer
     autocmd BufEnter * if isdirectory(expand("%")) | call OpenRangerOnVimLoadDir("%") | endif
-    autocmd BufEnter * setlocal nornu nonu
   augroup END
 endif
 
