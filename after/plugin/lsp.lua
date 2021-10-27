@@ -35,22 +35,20 @@ mapping = {
 
   formatting = {
     format = require("lspkind").cmp_format({with_text = true, menu = ({
+    buffer = "",
     nvim_lsp = "ﲳ",
     ultisnips = "",
     nvim_lua = "",
-    buffer = "",
     })}),
   },
 
- documentation = {
-   border = border,
-    },
+ documentation = { border = border, },
 
   sources = {
-    { name = 'nvim-lua' },
-    { name = 'nvim_lsp' },
-    { name = 'ultisnips' },
     { name = 'buffer', keyword_length = 2 },
+    { name = 'nvim_lsp' },
+    { name = 'nvim-lua' },
+    { name = 'ultisnips' },
     { name = 'path' },
     { name = 'emoji' },
     }

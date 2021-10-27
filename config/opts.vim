@@ -1,5 +1,6 @@
 language messages en_US.utf8
 "set nocursorline
+set shell=zsh
 set ignorecase
 set termguicolors
 set undofile
