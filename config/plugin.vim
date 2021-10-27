@@ -72,8 +72,8 @@ Plug 'preservim/nerdcommenter'
 " show all keys
 Plug 'folke/which-key.nvim'
 
-" auto add another brackets
-Plug 'jiangmiao/auto-pairs'
+" autopairs
+Plug 'windwp/nvim-autopairs'
 
 " quick run your code
 Plug 'thinca/vim-quickrun', { 'on': 'QuickRun' }

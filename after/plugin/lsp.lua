@@ -26,11 +26,9 @@ end,
 mapping = {
   ['<S-Tab>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 's' }),
   ['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' }),
-  ['<space>'] = cmp.mapping.confirm(),
+  ['<CR>'] = cmp.mapping.confirm(),
   ['<C-e>'] = cmp.mapping.complete(),
   ['<C-c>'] = cmp.mapping.close(),
-  ['<C-d>'] = cmp.mapping.scroll_docs(-4),
-  ['<C-f>'] = cmp.mapping.scroll_docs(4),
 },
 
   formatting = {
@@ -53,6 +51,7 @@ mapping = {
     { name = 'emoji' },
     }
   })
+
 
   local function lspSymbol(name, icon)
      vim.fn.sign_define("LspDiagnosticsSign"..name, { text = icon, numhl = "LspDiagnosticsDefault"..name })
