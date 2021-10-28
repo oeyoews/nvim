@@ -1,3 +1,7 @@
+if not pcall(require, "which-key") then
+  return
+end
+
 local which_configs = require("which-key")
 
 which_configs.setup {

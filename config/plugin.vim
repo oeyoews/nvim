@@ -16,7 +16,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 
 " fast install you code lsp
-Plug 'williamboman/nvim-lsp-installer'
+"Plug 'williamboman/nvim-lsp-installer'
 
 " configure your lsp
 Plug 'neovim/nvim-lspconfig'
@@ -108,5 +108,7 @@ Plug 'folke/persistence.nvim'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
 "Plug 'github/copilot.vim'
+
+"Plug 'kyazdani42/nvim-tree.lua'
 
 call plug#end()

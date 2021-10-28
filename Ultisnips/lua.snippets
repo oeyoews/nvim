@@ -12,3 +12,9 @@ snippet cc "comment"
 $1--]]
 endsnippet
 
+snippet pp "adjust plugin"
+if not pcall(require, "$1") then
+	return
+end
+$2
+endsnippet

@@ -26,6 +26,7 @@ TIPS  *vanilla-tips*
 
   'go'          jump beginning of documentation
   <C-]> or K to jump current tags, like keyword
+  'rtp'  nvim -c "set+=./" [ file ]
 
   'runtimepath' >
    :h rtp

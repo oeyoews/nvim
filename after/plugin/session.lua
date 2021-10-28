@@ -1,3 +1,7 @@
+if not pcall(require, "persistence") then
+  return
+end
+
 require("persistence").setup {
   dir = vim.fn.expand(vim.fn.stdpath("config") .. "/.sessions/"),
 }
