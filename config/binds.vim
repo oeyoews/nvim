@@ -23,7 +23,7 @@ nnoremap <silent> <leader>bn :bn<CR>
 nnoremap <silent> <leader>bx <cmd>enew<cr>
 
 " quit window
-nnoremap <silent> <SPACE>qq :q<CR>
+nnoremap <silent> <space>qq :q<CR>
 
 " better jump
 noremap L $
