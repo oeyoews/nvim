@@ -82,7 +82,7 @@ Plug 'thinca/vim-quickrun', { 'on': 'QuickRun' }
 Plug 'famiu/feline.nvim'
 
 " a theme for neovim color
-Plug 'NvChad/nvim-base16.lua'
+"Plug 'NvChad/nvim-base16.lua'
 
 " select chunk txt
 Plug 'gcmt/wildfire.vim'
@@ -101,14 +101,12 @@ Plug 'oeyoews/beacon.nvim'
 
 Plug 'folke/persistence.nvim'
 
-"Plug 'yamatsum/nvim-cursorline'
-"Plug 'oeyoews/nvim-cursorword'
-
-"Plug '~/.config/nvim/docs'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
+"Plug '~/.config/nvim/docs'
+"Plug 'yamatsum/nvim-cursorline'
+"Plug 'oeyoews/nvim-cursorword'
 "Plug 'github/copilot.vim'
-
 "Plug 'kyazdani42/nvim-tree.lua'
 
 call plug#end()

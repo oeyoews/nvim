@@ -26,6 +26,7 @@ TIPS  *vanilla-tips*
 
   'go'          jump beginning of documentation
   <C-]> or K to jump current tags, like keyword
+  <C-o> in insert mode, can enter normal mode temporary
   'rtp'  nvim -c "set+=./" [ file ]
 
 'stdpath'

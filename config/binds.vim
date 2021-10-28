@@ -42,7 +42,7 @@ nnoremap <leader>qh q:
 nnoremap q <nop>
 
 nnoremap <leader>w <C-w>
-nnoremap <leader>bm :messages<cr>
+nnoremap <silent> <leader>bm :messages<cr>
 
 " vimplug
 nnoremap <Leader>vi <Cmd>PlugInstall<CR>

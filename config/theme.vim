@@ -30,17 +30,17 @@ hi Search     cterm=bold ctermfg=16 ctermbg=76 gui=bold guifg=#292b2e guibg=#86d
 hi PmenuSbar    ctermbg=248 guibg=#2A2E3F
 hi PmenuSel    ctermfg=242 ctermbg=0 gui=bold guifg=#282c34 guibg=#73b8f1
 " sidebar second
-"hi PmenuThumb ctermfg=160 ctermbg=97 guifg=#e0211d guibg=#73b8f1
 hi PmenuThumb ctermfg=160 ctermbg=97 guifg=#282c34 guibg=#73b8f1
 
 " keyword
 hi Keyword    cterm=bold ctermfg=68 gui=bold guifg=#4f97d7
 
 " number's color
-hi LineNr     ctermfg=239 guifg=#44505c
+"hi LineNr     ctermfg= guifg=#44505c
 
 " highlight current number bg and fg
-hi CursorLineNr guifg=#c269fe guibg=black
+hi CursorLineNr      guifg=#c269fe guibg=#000000
+"hi CursorLineNr guifg=green guibg=#24283b
 
 hi VertSplit guibg=#4f97d7
 " "hi StatusLine guibg=#4f97d7
@@ -48,9 +48,3 @@ hi VertSplit guibg=#4f97d7
 hi Cursor guifg=#86af5d guibg=#86af5d
 hi Cursor2 guifg=red guibg=red
 set guicursor=n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor2/lCursor2,r-cr:hor20,o:hor50
-
-"au VimEnter,VimResume * set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
-  "\,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
-  "\,sm:block-blinkwait175-blinkoff150-blinkon175
-
-"au VimLeave,VimSuspend * set guicursor=a:block-blinkon0
