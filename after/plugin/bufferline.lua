@@ -1,8 +1,10 @@
-if not pcall(require, "bufferline") then
-  return
+local ok, bufferline = pcall(require, "bufferline")
+
+if not ok then
+  return false
 end
 
-require('bufferline').setup {
+bufferline.setup {
   options = {
     numbers = "none",
     right_mouse_command = "buffer %d",

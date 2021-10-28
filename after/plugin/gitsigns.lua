@@ -1,5 +1,8 @@
-if not pcall(require, "gitsigns") then
-  return
+local ok, gitsings = pcall(require, "gitsigns")
+
+if not ok then
+  return false
 end
 
-require('gitsigns').setup()
+gitsings.setup()
+

@@ -1,14 +1,14 @@
-if not pcall(require, "which-key") then
-  return
-end
+local ok, which_configs = pcall(require, "which-key")
 
-local which_configs = require("which-key")
+if not ok then
+  return false
+end
 
 which_configs.setup {
 
   plugins = {
     marks = false,
-    registers = false,
+    registers =true,
     spelling = {
       enabled = false,
       suggestions = 20,

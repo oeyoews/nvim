@@ -1,5 +1,7 @@
-if not pcall(require, "nvim-tree") then
-  return
-else
-  require 'nvim-tree'.setup()
+local ok, nvimtree = pcall(require, "nvim-tree")
+
+if not ok then
+  return false
 end
+
+nvimtree.setup()

@@ -1,5 +1,8 @@
---local parser_configs = require('nvim-treesitter.parsers').get_parser_configs()
-local tree_configs = require('nvim-treesitter.configs')
+local ok, tree_configs = pcall(require, "nvim-treesitter.configs")
+
+if not ok then
+  return false
+end
 
 tree_configs.setup {
   refactor = {

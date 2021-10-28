@@ -13,8 +13,11 @@ $1--]]
 endsnippet
 
 snippet pp "adjust plugin"
-if not pcall(require, "$1") then
-	return
+local ok, ${1:name} = pcall(require, "${2:module}")
+
+if not ok then
+	return false
 end
-$2
+
+$1.setup()
 endsnippet

@@ -1,6 +1,12 @@
+local ok, telescope = pcall(require, "telescope")
+
+if not ok then
+  return false
+end
+
 local actions = require('telescope.actions')
 
-require('telescope').setup{
+telescope.setup{
   defaults = {
     mappings = {
       n = { ["q"] = actions.close },
