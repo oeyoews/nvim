@@ -107,4 +107,6 @@ Plug 'folke/persistence.nvim'
 "Plug '~/.config/nvim/docs'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
+"Plug 'github/copilot.vim'
+
 call plug#end()

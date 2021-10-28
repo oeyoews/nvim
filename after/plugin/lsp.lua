@@ -43,9 +43,9 @@ mapping = {
  documentation = { border = border, },
 
   sources = {
-    { name = 'buffer', keyword_length = 2 },
     { name = 'nvim_lsp' },
     { name = 'nvim-lua' },
+    { name = 'buffer', keyword_length = 2 },
     { name = 'ultisnips' },
     { name = 'path' },
     { name = 'emoji' },
@@ -86,7 +86,7 @@ mapping = {
   vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
     underline = true,
-    update_in_insert = false,
+    update_in_insert = true,
     virtual_text = {
       spacing = 4,
       prefix = ''

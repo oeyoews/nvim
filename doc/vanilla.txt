@@ -16,30 +16,29 @@ Questions..............|questions|
 Documentation..........|documentation|
 
 ================================================================================
+
 TIPS  *vanilla-tips*
 
--  For better edit your vanilla.txt, first use <cmd> set filetype=help <cr>,
-    to get help syntax highlight
+  For better edit your vanilla.txt, first use <cmd> set filetype=help <cr>,
+   to get help syntax highlight
 
--  Generate ASCII use :r !figlet <txt>
+  Generate ASCII use :r !figlet <txt>
 
--  'go'          jump beginning of documentation
--  <C-]> or K to jump current tags, like keyword
+  'go'          jump beginning of documentation
+  <C-]> or K to jump current tags, like keyword
 
--  'runtimepath' >
-    :h rtp
-<
-- 'window' :h window-moving :h window-resize
-- <C-W>x   move window
+  'runtimepath' >
+   :h rtp
 
-================================================================================
+ 'window' :h window-moving :h window-resize
+ <C-W>x   move window
+
 FAQ  *vanilla-questions*
 
 >
   - How to use comment in help.txt ?
 <
 
-================================================================================
 DOCUMENTATION  *vanilla-documentation*
 
 >
@@ -47,14 +46,13 @@ DOCUMENTATION  *vanilla-documentation*
    it's just nothing to do)
 <
 
-- add tilde  in the figlet ASCII end, to prevent vim to highlight these ASCII
+ add tilde  in the figlet ASCII end, to prevent vim to highlight these ASCII
 
-- Open this file have some question.
+ Open this file have some question.
 
-- For comment, need use >  <space> demo <, must have space
+ For comment, need use >  <space> demo <, must have space
 
 
-================================================================================
 TEST
 >
   Introduction
