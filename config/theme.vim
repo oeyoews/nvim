@@ -21,7 +21,8 @@ hi Search     cterm=bold ctermfg=16 ctermbg=76 gui=bold guifg=#292b2e guibg=#86d
 
 ""hi PmenuSbar  ctermfg=28 ctermbg=233 guifg=#c269fe guibg=#303030
 hi PmenuSbar    ctermbg=248 guibg=#2A2E3F
-hi PmenuSel    ctermfg=242 ctermbg=0 gui=bold guifg=#282c34 guibg=#73b8f1
+"hi PmenuSel    ctermfg=242 ctermbg=0 gui=bold guifg=#282c34 guibg=#73b8f1
+hi PmenuSel    ctermfg=242 ctermbg=0 gui=bold guifg=#282c34 guibg=#c269fe
 " sidebar second
 hi PmenuThumb ctermfg=160 ctermbg=97 guifg=#282c34 guibg=#73b8f1
 
