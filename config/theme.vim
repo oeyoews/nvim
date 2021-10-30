@@ -37,7 +37,7 @@ hi CursorLineNr      guifg=#c269fe guibg=#000000
 "hi CursorLineNr guifg=green guibg=#24283b
 
 hi VertSplit guibg=#4f97d7
-" "hi StatusLine guibg=#4f97d7
+hi StatusLine guibg=#24283b
 " cursor
 hi Cursor guifg=#86af5d guibg=#86af5d
 hi Cursor2 guifg=red guibg=red

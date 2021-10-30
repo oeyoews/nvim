@@ -75,16 +75,11 @@ Plug 'windwp/nvim-autopairs'
 " quick run your code
 Plug 'thinca/vim-quickrun', { 'on': 'QuickRun' }
 
-" statusline
-Plug 'famiu/feline.nvim'
-
 " select chunk txt
 Plug 'gcmt/wildfire.vim'
 
 " use sudo to manage your files
 Plug 'oeyoews/suda.vim', { 'frozen': 1 }
-
-Plug 'lewis6991/gitsigns.nvim'
 
 Plug 'oeyoews/tokyonight.nvim'
 
@@ -95,12 +90,14 @@ Plug 'folke/persistence.nvim'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
 "Plug 'NvChad/nvim-base16.lua'
+"Plug 'famiu/feline.nvim'
 "Plug 'norcalli/nvim-colorizer.lua'
 "Plug '~/.config/nvim/docs'
 "Plug 'yamatsum/nvim-cursorline'
 "Plug 'oeyoews/nvim-cursorword'
 "Plug 'github/copilot.vim'
 "Plug 'kyazdani42/nvim-tree.lua'
+"Plug 'lewis6991/gitsigns.nvim'
 "Plug 'williamboman/nvim-lsp-installer'
 
 call plug#end()
