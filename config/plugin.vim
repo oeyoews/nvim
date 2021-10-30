@@ -15,9 +15,6 @@ Plug 'nvim-lua/plenary.nvim'
 " icons for you ui
 Plug 'kyazdani42/nvim-web-devicons'
 
-" fast install you code lsp
-"Plug 'williamboman/nvim-lsp-installer'
-
 " configure your lsp
 Plug 'neovim/nvim-lspconfig'
 
@@ -81,14 +78,8 @@ Plug 'thinca/vim-quickrun', { 'on': 'QuickRun' }
 " statusline
 Plug 'famiu/feline.nvim'
 
-" a theme for neovim color
-"Plug 'NvChad/nvim-base16.lua'
-
 " select chunk txt
 Plug 'gcmt/wildfire.vim'
-
-" enable color for some files
-"Plug 'norcalli/nvim-colorizer.lua'
 
 " use sudo to manage your files
 Plug 'oeyoews/suda.vim', { 'frozen': 1 }
@@ -103,10 +94,13 @@ Plug 'folke/persistence.nvim'
 
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
+"Plug 'NvChad/nvim-base16.lua'
+"Plug 'norcalli/nvim-colorizer.lua'
 "Plug '~/.config/nvim/docs'
 "Plug 'yamatsum/nvim-cursorline'
 "Plug 'oeyoews/nvim-cursorword'
 "Plug 'github/copilot.vim'
 "Plug 'kyazdani42/nvim-tree.lua'
+"Plug 'williamboman/nvim-lsp-installer'
 
 call plug#end()
