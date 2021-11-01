@@ -1,9 +1,10 @@
-language messages en_US.utf8
+"language messages en_US.utf8
 set ignorecase
 set termguicolors
 set undofile
 set signcolumn=yes
-set nu rnu
+set nu
+"set rnu
 set autochdir
 set wrap
 set linebreak
