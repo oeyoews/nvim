@@ -1,4 +1,4 @@
-"language messages en_US.utf8
+language messages en_US.utf8
 set ignorecase
 set termguicolors
 set undofile
@@ -9,15 +9,18 @@ set wrap
 set linebreak
 set hidden
 set ignorecase
-set noshowcmd
-set noshowmode
 set textwidth=120
 set shortmess+=aIc  " atI clear advertise
 set lazyredraw
-set vb t_vb=
+set vb t_vb=  " no blinking no bells
+
+" disable some options
+set noshowcmd
+set noshowmode
 set nobackup
 set noswapfile
 set nofoldenable
+
 set confirm
 set scrolloff=3
 set updatetime=200	" ??

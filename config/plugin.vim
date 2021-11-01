@@ -99,5 +99,6 @@ Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 "Plug 'kyazdani42/nvim-tree.lua'
 "Plug 'lewis6991/gitsigns.nvim'
 "Plug 'williamboman/nvim-lsp-installer'
+"Plug 'mfussenegger/nvim-jdtls'
 
 call plug#end()

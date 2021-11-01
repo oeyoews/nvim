@@ -16,6 +16,7 @@ tree_configs.setup {
   ensure_installed = {
     "c",
     "python",
+    "java",
     "html",
     "css",
     "bash",
