@@ -1,6 +1,5 @@
 "colorscheme tokyonight
 
-" 0.6 have some bug for number cursor
 lua << EOF
 local base16 = require 'base16'
 base16(base16.themes("tokyonight"), true)
@@ -15,7 +14,6 @@ EOF
 " second float window
 hi NormalFloat  ctermbg=NONE guibg=NONE
 "hi NormalFloat  guifg=#c0caf5 guibg=#1f2335
-
 hi IncSearch  cterm=bold ctermfg=16 ctermbg=167 guifg=#292b2e guibg=#ce537a
 hi Search     ctermfg=16 ctermbg=76 guifg=#292b2e guibg=#86dc2f
 " float menu
@@ -27,12 +25,14 @@ hi PmenuThumb ctermfg=160 ctermbg=97 guifg=#282c34 guibg=#73b8f1
 " Visual"
 hi Visual         ctermbg=242 gui=reverse
 " keyword
-"#c269fe
 hi Keyword    cterm=bold ctermfg=68 guifg=#8167a3 gui=bold
-" current line"
+" if it's no rnu, you must enable cursor-line(highlight current line)
 hi CursorLineNr      guifg=#c269fe guibg=#000000
-
+" highlight cursor-line
+hi CursorLine        guibg=black
+" split line
 hi VertSplit guibg=#4f97d7
+" Status Line
 hi StatusLine guibg=#24283b
 " cursor
 hi Cursor guifg=#86af5d guibg=#86af5d

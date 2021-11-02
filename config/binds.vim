@@ -44,7 +44,8 @@ nnoremap q <nop>
 nnoremap <leader>w <C-w>
 nnoremap <silent> <leader>bm :messages<cr>
 
-" vimplug
+" vim plug
 nnoremap <Leader>vi <Cmd>PlugInstall<CR>
 nnoremap <Leader>vc <Cmd>PlugClean<CR>
 nnoremap <Leader>vu <Cmd>PlugUpdate<CR>
+nnoremap <space>qe z=

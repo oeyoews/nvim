@@ -5,8 +5,6 @@ set ignorecase
 set termguicolors
 set undofile
 set signcolumn=yes
-set nu
-set rnu
 set autochdir
 set wrap
 set linebreak
@@ -38,3 +36,5 @@ set listchars=tab:→\ ,eol:↵,trail:▫,extends:↷,precedes:↶
 set whichwrap+=<,>,[,]
 set splitright
 set splitbelow
+set cursorline
+set nu

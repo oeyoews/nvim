@@ -14,5 +14,4 @@ let g:mkdp_filetypes = [ 'markdown' ]
 nnoremap <space>fmm :MarkdownPreviewToggle<CR>
 
 " css
-let g:Hexokinase_highlighters = ['foregroundfull']
-
+let g:Hexokinase_highlighters = ['foreground']
