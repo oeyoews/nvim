@@ -1,4 +1,6 @@
 "language messages en_US.utf8
+set spell
+set spelllang=en_us
 set ignorecase
 set termguicolors
 set undofile

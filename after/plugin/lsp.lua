@@ -49,6 +49,7 @@ mapping = {
     { name = 'ultisnips' },
     { name = 'path' },
     { name = 'emoji' },
+    { name = 'spell' },
     }
   })
 
