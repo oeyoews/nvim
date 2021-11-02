@@ -4,7 +4,7 @@ set termguicolors
 set undofile
 set signcolumn=yes
 set nu
-"set rnu
+set rnu
 set autochdir
 set wrap
 set linebreak

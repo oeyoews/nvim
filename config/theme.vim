@@ -34,7 +34,7 @@ hi Keyword    cterm=bold ctermfg=68 gui=bold guifg=#4f97d7
 
 " highlight current number bg and fg
 hi CursorLineNr      guifg=#c269fe guibg=#000000
-"hi CursorLineNr guifg=green guibg=#24283b
+"hi LineNr      guifg=#c269fe guibg=#000000
 
 hi VertSplit guibg=#4f97d7
 hi StatusLine guibg=#24283b

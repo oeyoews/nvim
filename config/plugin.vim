@@ -34,7 +34,7 @@ Plug 'onsails/lspkind-nvim'
 Plug 'nvim-treesitter/playground', { 'on': 'TSPlaygroundToggle' }
 
 " better highlight
-Plug 'nvim-treesitter/nvim-treesitter', { 'do': ' :TSUpdate ' }
+Plug 'nvim-treesitter/nvim-treesitter'
 
 " highligh your variable for refrence and define
 Plug 'nvim-treesitter/nvim-treesitter-refactor'

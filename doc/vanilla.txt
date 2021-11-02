@@ -33,6 +33,14 @@ TIPS *vanilla-tips*
 	      - 'rtp'  nvim -c "set+=./" [ file ]
 
 	      - 'stdpath'
+
+	      - 'center [nu]' align text. use :formattin to see more info
+
+	      - z[hjkl][H L] when set nowrap, to scroll
+
+	      - 'gM' move cursor to middle of line
+
+	      - 'gq' merge multi lines to one line in visual mode, like 'J'
 	    >
 	      :echo  stdpath('config')
 

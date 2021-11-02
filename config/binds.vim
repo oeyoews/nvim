@@ -1,7 +1,5 @@
 let g:mapleader = "\<Space>"
 
-nmap <C-F> /
-
 " creat blankline no formatoptions
 nnoremap <silent> <leader>o :set paste<cr>o<esc>:set nopaste<cr>
 nnoremap <silent> <leader>O :set paste<cr>O<esc>:set nopaste<cr>
