@@ -15,3 +15,4 @@ nnoremap <space>fmm :MarkdownPreviewToggle<CR>
 
 " css
 let g:Hexokinase_highlighters = ['foreground']
+

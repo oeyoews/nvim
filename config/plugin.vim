@@ -1,6 +1,6 @@
 call plug#begin('$HOME/.config/nvim/.bundle')
 
-" completeion
+" completion
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
@@ -36,7 +36,7 @@ Plug 'nvim-treesitter/playground', { 'on': 'TSPlaygroundToggle' }
 " better highlight
 Plug 'nvim-treesitter/nvim-treesitter'
 
-" highligh your variable for refrence and define
+" highlight your variable for reference and define
 Plug 'nvim-treesitter/nvim-treesitter-refactor'
 
 " preview your markdown in your brower
@@ -54,10 +54,10 @@ Plug 'nvim-telescope/telescope.nvim'
 " fast jump you want jump
 Plug 'phaazon/hop.nvim'
 
-" test your StartupTime
+" test your Startup Time
 Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime' }
 
-" chinese vimhelp
+" Chinese vim help
 Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
 
 " manage your buffers
@@ -69,7 +69,7 @@ Plug 'preservim/nerdcommenter'
 " show all keys
 Plug 'folke/which-key.nvim'
 
-" autopairs
+" auto pairs
 Plug 'windwp/nvim-autopairs'
 
 " quick run your code
@@ -89,7 +89,7 @@ Plug 'folke/persistence.nvim'
 
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
-"Plug 'NvChad/nvim-base16.lua'
+Plug 'NvChad/nvim-base16.lua'
 "Plug 'famiu/feline.nvim'
 "Plug 'norcalli/nvim-colorizer.lua'
 "Plug '~/.config/nvim/docs'
@@ -100,5 +100,10 @@ Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 "Plug 'lewis6991/gitsigns.nvim'
 "Plug 'williamboman/nvim-lsp-installer'
 "Plug 'mfussenegger/nvim-jdtls'
+"Plug 'olimorris/onedarkpro.nvim'
+"Plug 'henriquehbr/nvim-startup.lua'
+Plug 'lewis6991/spellsitter.nvim'
+"Plug 'alec-gibson/nvim-tetris'
 
+Plug 'oeyoews/nvim-deus'
 call plug#end()
