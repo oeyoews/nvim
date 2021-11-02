@@ -2,7 +2,7 @@
 nnoremap <silent> <SPACE>ll <Cmd>QuickRun<CR><C-w>w
 
 " StartupTime
-nnoremap <leader>vt <cmd>StartupTime --tries 3<cr>
+nnoremap <leader>vt <cmd>StartupTime --tries 1<cr>
 
 " suda
 nnoremap <leader>fE <Cmd>SudaRead<Cr>
@@ -14,5 +14,5 @@ let g:mkdp_filetypes = [ 'markdown' ]
 nnoremap <space>fmm :MarkdownPreviewToggle<CR>
 
 " css
-let g:Hexokinase_highlighters = ['foreground']
+let g:Hexokinase_highlighters = ['foregroundfull']
 

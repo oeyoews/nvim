@@ -81,7 +81,7 @@ Plug 'gcmt/wildfire.vim'
 " use sudo to manage your files
 Plug 'oeyoews/suda.vim', { 'frozen': 1 }
 
-Plug 'oeyoews/tokyonight.nvim'
+"Plug 'oeyoews/tokyonight.nvim'
 
 Plug 'oeyoews/beacon.nvim'
 
@@ -89,6 +89,7 @@ Plug 'folke/persistence.nvim'
 
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
+Plug 'lewis6991/spellsitter.nvim'
 Plug 'NvChad/nvim-base16.lua'
 "Plug 'famiu/feline.nvim'
 "Plug 'norcalli/nvim-colorizer.lua'
@@ -102,8 +103,6 @@ Plug 'NvChad/nvim-base16.lua'
 "Plug 'mfussenegger/nvim-jdtls'
 "Plug 'olimorris/onedarkpro.nvim'
 "Plug 'henriquehbr/nvim-startup.lua'
-Plug 'lewis6991/spellsitter.nvim'
 "Plug 'alec-gibson/nvim-tetris'
-
-Plug 'oeyoews/nvim-deus'
+"Plug 'oeyoews/nvim-deus'
 call plug#end()
