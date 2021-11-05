@@ -1,5 +1,5 @@
 "language messages en_US.utf8
-set spell
+"setlocal spell  " for cmp-spell
 set spelllang=en_us
 set ignorecase
 set termguicolors

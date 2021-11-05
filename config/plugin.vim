@@ -89,7 +89,8 @@ Plug 'oeyoews/beacon.nvim', { 'frozen': 1 }
 Plug 'folke/persistence.nvim'
 
 " color
-Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+Plug 'norcalli/nvim-colorizer.lua'
+"Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
 " spell for nvim-tree sitter
 Plug 'lewis6991/spellsitter.nvim'
