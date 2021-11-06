@@ -1,5 +1,7 @@
 call plug#begin('$HOME/.config/nvim/.bundle')
 
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'nathom/filetype.nvim'
 Plug 'nvim-neorg/neorg', { 'for': 'norg' }
 
 " completion
@@ -49,7 +51,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'm
 Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
 
 " better markdown for your table
-Plug 'dhruvasagar/vim-table-mode', { 'for' : 'markdown' }
+Plug 'dhruvasagar/vim-table-mode', { 'for' : ['markdown', 'norg'] }
 
 " it's rich
 Plug 'nvim-telescope/telescope.nvim'
@@ -61,7 +63,7 @@ Plug 'phaazon/hop.nvim'
 Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1}
 
 " Chinese vim help
-Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
+"Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
 
 " manage your buffers
 Plug 'akinsho/bufferline.nvim'
@@ -79,10 +81,10 @@ Plug 'windwp/nvim-autopairs'
 Plug 'thinca/vim-quickrun', { 'on': 'QuickRun', 'frozen': 1 }
 
 " select chunk txt
-Plug 'gcmt/wildfire.vim', { 'frozen': 1 }
+"Plug 'gcmt/wildfire.vim', { 'frozen': 1 }
 
 " use sudo to manage your files
-Plug 'oeyoews/suda.vim', { 'frozen': 1 }
+"Plug 'oeyoews/suda.vim', { 'frozen': 1 }
 
 " shrink jump
 Plug 'oeyoews/beacon.nvim', { 'frozen': 1 }
@@ -95,7 +97,7 @@ Plug 'norcalli/nvim-colorizer.lua'
 "Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
 " spell for nvim-tree sitter
-Plug 'lewis6991/spellsitter.nvim'
+"Plug 'lewis6991/spellsitter.nvim'
 
 Plug 'NvChad/nvim-base16.lua'
 

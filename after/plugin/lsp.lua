@@ -33,8 +33,8 @@ mapping = {
 
   formatting = {
     format = require("lspkind").cmp_format({with_text = true, menu = ({
-    buffer = "",
     nvim_lsp = "ﲳ",
+    buffer = "",
     ultisnips = "",
     nvim_lua = "",
     })}),
