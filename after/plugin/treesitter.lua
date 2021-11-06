@@ -29,10 +29,15 @@ tree_configs.setup {
     "yaml",
     "javascript",
     "typescript",
+    "org",
+    "norg",
     "comment",
     },
 
-  highlight = { enable = true, disable = {} },
+  highlight = { enable = true,
+  disable = {'org'},
+  additional_vim_regex_highlighting = {'org'},
+},
 
  -- 增量选择 ??
  incremental_selection = {

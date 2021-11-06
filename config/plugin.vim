@@ -1,5 +1,7 @@
 call plug#begin('$HOME/.config/nvim/.bundle')
 
+Plug 'nvim-neorg/neorg', { 'for': 'norg' }
+
 " completion
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -112,4 +114,6 @@ Plug 'NvChad/nvim-base16.lua'
 "Plug 'alec-gibson/nvim-tetris'
 "Plug 'oeyoews/nvim-deus'
 "Plug 'oeyoews/tokyonight.nvim'
+"Plug 'kristijanhusak/orgmode.nvim'
+"Plug 'akinsho/org-bullets.nvim'
 call plug#end()

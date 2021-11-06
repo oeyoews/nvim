@@ -50,6 +50,8 @@ mapping = {
     { name = 'path' },
     { name = 'emoji' },
     { name = 'spell' },
+    { name = 'orgmode' },
+    { name = 'neorg' },
     }
   })
 
