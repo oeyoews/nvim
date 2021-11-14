@@ -57,7 +57,8 @@ Plug 'dhruvasagar/vim-table-mode', { 'for' : ['markdown', 'norg'] }
 Plug 'nvim-telescope/telescope.nvim'
 
 " fast jump you want jump
-Plug 'phaazon/hop.nvim'
+"Plug 'phaazon/hop.nvim'
+Plug 'ggandor/lightspeed.nvim'
 
 " test your Startup Time
 Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1}
@@ -87,7 +88,8 @@ Plug 'thinca/vim-quickrun', { 'on': 'QuickRun', 'frozen': 1 }
 "Plug 'oeyoews/suda.vim', { 'frozen': 1 }
 
 " shrink jump
-Plug 'oeyoews/beacon.nvim', { 'frozen': 1 }
+"Plug 'oeyoews/beacon.nvim', { 'frozen': 1 }
+Plug 'edluffy/specs.nvim'
 
 " save session
 Plug 'folke/persistence.nvim'

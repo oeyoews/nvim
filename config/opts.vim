@@ -36,5 +36,5 @@ set listchars=tab:→\ ,eol:↵,trail:▫,extends:↷,precedes:↶
 set whichwrap+=<,>,[,]
 set splitright
 set splitbelow
-set cursorline
+"set cursorline
 set nu

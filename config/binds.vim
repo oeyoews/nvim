@@ -1,6 +1,6 @@
 let g:mapleader = "\<Space>"
 
-" creat blankline no formatoptions
+" creat blankline nto formatoptions
 nnoremap <silent> <leader>o :set paste<cr>o<esc>:set nopaste<cr>
 nnoremap <silent> <leader>O :set paste<cr>O<esc>:set nopaste<cr>
 

@@ -54,7 +54,6 @@ nnoremap <leader>bc <Cmd>Telescope colorscheme <Cr>
 nnoremap <leader>bk <Cmd>Telescope keymaps<Cr>
 nnoremap <leader>bh <Cmd>Telescope highlights<Cr>
 nnoremap <leader>bf <Cmd>Telescope filetypes<Cr>
-nnoremap <leader>ss <Cmd>Telescope current_buffer_fuzzy_find<Cr>
 nnoremap <leader>ps <Cmd>Telescope live_grep<Cr>
 
 " nnoremap <C-k> <cmd>lua vim.lsp.buf.signature_help() <cr>
