@@ -12,7 +12,7 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-emoji'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-nvim-lua'
-Plug 'f3fora/cmp-spell'
+"Plug 'f3fora/cmp-spell'
 
 " libs for some nvim plugins
 Plug 'nvim-lua/plenary.nvim'

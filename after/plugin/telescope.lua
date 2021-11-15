@@ -47,14 +47,13 @@ telescope.setup{
 }
 
 vim.cmd [[
-nnoremap <leader>ff <cmd>Telescope find_files <cr>
-nnoremap <leader>fr <cmd>Telescope oldfiles <cr>
-nnoremap <leader>bb <cmd>Telescope buffers <cr>
-nnoremap <leader>bc <Cmd>Telescope colorscheme <Cr>
-nnoremap <leader>bk <Cmd>Telescope keymaps<Cr>
-nnoremap <leader>bh <Cmd>Telescope highlights<Cr>
-nnoremap <leader>bf <Cmd>Telescope filetypes<Cr>
+nnoremap <leader>tf <cmd>Telescope find_files <cr>
+nnoremap <leader>tr <cmd>Telescope oldfiles <cr>
+nnoremap <leader>tb <cmd>Telescope buffers <cr>
+nnoremap <leader>tc <Cmd>Telescope colorscheme <Cr>
 nnoremap <leader>ps <Cmd>Telescope live_grep<Cr>
+nnoremap <leader>tk <cmd>Telescope keymaps<cr>
+nnoremap <leader>tf <cmd>Telescope file_browse<cr>
 
 " nnoremap <C-k> <cmd>lua vim.lsp.buf.signature_help() <cr>
 

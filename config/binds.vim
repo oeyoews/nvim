@@ -30,7 +30,8 @@ noremap L $
 noremap H 0
 
 " clear all hlight words
-nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>
+"nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>
+nnoremap <silent> <esc> :noh<return><C-L><esc>
 
 nnoremap <leader>bs  <Cmd>e /tmp/scratch.txt<CR>
 
