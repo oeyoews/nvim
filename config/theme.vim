@@ -26,7 +26,7 @@ hi PmenuThumb ctermfg=160 ctermbg=97 guifg=#282c34 guibg=#73b8f1
 hi Visual         ctermbg=242 gui=reverse
 " keyword
 hi Keyword    cterm=bold ctermfg=68 guifg=#8167a3 gui=bold
-" if it's no rnu, you must enable cursor-line(highlight current line)
+" note: if it's no rnu, you must enable cursor-line(highlight current line)
 hi CursorLineNr      guifg=#c269fe guibg=#000000
 " highlight cursor-line
 hi CursorLine        guibg=black

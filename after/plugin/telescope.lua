@@ -47,7 +47,7 @@ telescope.setup{
 }
 
 vim.cmd [[
-nnoremap <leader>tf <cmd>Telescope find_files <cr>
+nnoremap <leader>ff <cmd>Telescope find_files <cr>
 nnoremap <leader>tr <cmd>Telescope oldfiles <cr>
 nnoremap <leader>tb <cmd>Telescope buffers <cr>
 nnoremap <leader>tc <Cmd>Telescope colorscheme <Cr>
