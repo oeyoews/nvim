@@ -36,7 +36,7 @@ Plug 'oeyoews/vim-snippets', { 'frozen': 1 }
 Plug 'onsails/lspkind-nvim'
 
 " debug your code
-Plug 'nvim-treesitter/playground', { 'on': 'TSPlaygroundToggle' }
+"Plug 'nvim-treesitter/playground', { 'on': 'TSPlaygroundToggle' }
 
 " better highlight
 Plug 'nvim-treesitter/nvim-treesitter'

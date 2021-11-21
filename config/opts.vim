@@ -1,4 +1,4 @@
-"language messages en_US.utf8
+"language messages en_US.utf8 " have bug
 "setlocal spell  " for cmp-spell
 set spelllang=en_us
 set ignorecase
