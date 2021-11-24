@@ -12,7 +12,8 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-emoji'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-nvim-lua'
-"Plug 'f3fora/cmp-spell'
+" for norg is no effects
+Plug 'f3fora/cmp-spell'
 
 " libs for some nvim plugins
 Plug 'nvim-lua/plenary.nvim'
@@ -99,7 +100,7 @@ Plug 'norcalli/nvim-colorizer.lua'
 "Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
 " spell for nvim-tree sitter
-"Plug 'lewis6991/spellsitter.nvim'
+Plug 'lewis6991/spellsitter.nvim'
 
 Plug 'NvChad/nvim-base16.lua'
 
@@ -120,4 +121,6 @@ Plug 'NvChad/nvim-base16.lua'
 "Plug 'oeyoews/tokyonight.nvim'
 "Plug 'kristijanhusak/orgmode.nvim'
 "Plug 'akinsho/org-bullets.nvim'
+"Plug 'xiyaowong/nvim-transparent'
+"Plug 'tribela/vim-transparent'
 call plug#end()

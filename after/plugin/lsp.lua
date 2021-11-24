@@ -49,7 +49,7 @@ mapping = {
     { name = 'ultisnips' },
     { name = 'path' },
     { name = 'emoji' },
-    --{ name = 'spell' },
+    { name = 'spell' },
     --{ name = 'orgmode' },
     { name = 'neorg' },
     }
