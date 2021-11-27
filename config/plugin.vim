@@ -2,18 +2,29 @@ call plug#begin('$HOME/.config/nvim/.bundle')
 
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'nathom/filetype.nvim'
+Plug 'lewis6991/impatient.nvim'
 Plug 'nvim-neorg/neorg', { 'for': 'norg' }
 
-" completion
+" Lsp config
+" support some icons for you menu
+Plug 'onsails/lspkind-nvim'
+"a snip engine
+Plug 'SirVer/ultisnips'
+" my snippets
+Plug 'oeyoews/vim-snippets', { 'frozen': 1 }
+" configure your lsp
+Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-emoji'
 Plug 'hrsh7th/cmp-path'
+" if you want not use more tip, maybe you can comment it
+Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/cmp-nvim-lua'
 " for norg is no effects
-Plug 'f3fora/cmp-spell'
+"Plug 'f3fora/cmp-spell'
 
 " libs for some nvim plugins
 Plug 'nvim-lua/plenary.nvim'
@@ -21,20 +32,8 @@ Plug 'nvim-lua/plenary.nvim'
 " icons for you ui
 Plug 'kyazdani42/nvim-web-devicons'
 
-" configure your lsp
-Plug 'neovim/nvim-lspconfig'
-
 " config lua lsp
 Plug 'folke/lua-dev.nvim'
-
-"a snip engine
-Plug 'SirVer/ultisnips'
-
-" my snippets
-Plug 'oeyoews/vim-snippets', { 'frozen': 1 }
-
-" support some icons for you menu
-Plug 'onsails/lspkind-nvim'
 
 " debug your code
 "Plug 'nvim-treesitter/playground', { 'on': 'TSPlaygroundToggle' }
@@ -65,7 +64,7 @@ Plug 'ggandor/lightspeed.nvim'
 Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1}
 
 " Chinese vim help
-"Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
+Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
 
 " manage your buffers
 Plug 'akinsho/bufferline.nvim'
@@ -100,7 +99,7 @@ Plug 'norcalli/nvim-colorizer.lua'
 "Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
 " spell for nvim-tree sitter
-Plug 'lewis6991/spellsitter.nvim'
+"Plug 'lewis6991/spellsitter.nvim'
 
 Plug 'NvChad/nvim-base16.lua'
 

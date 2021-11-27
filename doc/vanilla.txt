@@ -86,6 +86,16 @@ LSP
 >
     lua vim.cmd('e'..vim.lsp.get_log_path())
 <
+- foldmethod
+  - or set foldenable
+
+- creat fold
+|TMP|  - zfa{  in { to fold some text
+or use zfip
+or select some text and type zf
+
+- close and open fold
+  - zc zo
 
 PLUGIN
  |vim-table-mode| enter | twice to generate formatted horizontal line.

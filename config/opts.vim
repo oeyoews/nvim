@@ -1,5 +1,5 @@
 "language messages en_US.utf8 " have bug
-set spell  " for cmp-spell
+"set spell  " for cmp-spell
 set spelllang=en_us
 set ignorecase
 set termguicolors
@@ -22,6 +22,10 @@ set nobackup
 set noswapfile
 set nofoldenable
 
+" incease highlight
+set incsearch
+set hlsearch
+
 set confirm
 set scrolloff=3
 set updatetime=200	" ??
@@ -38,3 +42,6 @@ set splitright
 set splitbelow
 set cursorline
 set nu
+"set t_ti= t_te=
+"set shortmess=atI  " disable show welcome and no clear this ui to quit vim
+set foldenable

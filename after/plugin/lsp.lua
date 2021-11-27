@@ -52,7 +52,24 @@ mapping = {
     { name = 'spell' },
     --{ name = 'orgmode' },
     { name = 'neorg' },
+    { name = 'cmdline' }
+    },
+
+  -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
+  cmp.setup.cmdline('/', {
+    sources = {
+      { name = 'buffer' }
     }
+  }),
+
+  -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+  cmp.setup.cmdline(':', {
+    sources = cmp.config.sources({
+      { name = 'path' }
+    }, {
+      { name = 'cmdline' }
+    })
+  })
   })
 
 
@@ -65,17 +82,24 @@ mapping = {
   lspSymbol("Hint", "")
   lspSymbol("Warning", "")
 
+
   --jsonls: npm i -g vscode-langservers-extracted
   local nvim_lsp = require('lspconfig')
   -- automatically connect language server protocol
-  local servers = { 'vimls', 'clangd', 'bashls', 'pyright', 'jsonls', 'tsserver',
+  local servers = { 'vimls', 'clangd', 'bashls', 'pyright',
+  --'jdtls',
+  --'jsonls',
+  --'tsserver',
                     'html', 'cssls', }
   local capabilities = vim.lsp.protocol.make_client_capabilities()
   capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
   for _, lsp in ipairs(servers) do
-      nvim_lsp[lsp].setup {
+    nvim_lsp[lsp].setup {
+      flags = {
+        debounce_text_changes = 150,
+      },
       capabilities = capabilities,
-      }
+    }
   end
 
   -- for lua dev cmd
@@ -118,6 +142,7 @@ local function goto_definition(split_cmd)
       util.jump_to_location(result[1])
 
       if #result > 1 then
+        -- TODO
         util.set_qflist(util.locations_to_items(result))
         api.nvim_command("copen")
         api.nvim_command("wincmd p")
@@ -131,3 +156,7 @@ local function goto_definition(split_cmd)
 end
 
 vim.lsp.handlers["textDocument/definition"] = goto_definition('split')
+
+
+
+

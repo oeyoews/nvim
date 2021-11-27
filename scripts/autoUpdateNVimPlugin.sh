@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-nvim -c PluginUpdate
+nvim -c PlugUpdate
