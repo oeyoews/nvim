@@ -6,7 +6,7 @@ set termguicolors
 set undofile
 set signcolumn=yes
 set autochdir
-set wrap
+set nowrap
 set linebreak
 set hidden
 set ignorecase

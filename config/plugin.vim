@@ -1,8 +1,11 @@
 call plug#begin('$HOME/.config/nvim/.bundle')
 
 Plug 'lukas-reineke/indent-blankline.nvim'
+
+" improve Startup time
 Plug 'nathom/filetype.nvim'
 Plug 'lewis6991/impatient.nvim'
+
 Plug 'nvim-neorg/neorg', { 'for': 'norg' }
 
 " Lsp config
@@ -87,9 +90,9 @@ Plug 'thinca/vim-quickrun', { 'on': 'QuickRun', 'frozen': 1 }
 " use sudo to manage your files
 "Plug 'oeyoews/suda.vim', { 'frozen': 1 }
 
-" shrink jump
+" shrink jump cursor
 "Plug 'oeyoews/beacon.nvim', { 'frozen': 1 }
-Plug 'edluffy/specs.nvim'
+"Plug 'edluffy/specs.nvim'
 
 " save session
 Plug 'folke/persistence.nvim'
