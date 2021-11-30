@@ -1,14 +1,12 @@
 call plug#begin('$HOME/.config/nvim/.bundle')
 
-Plug 'lukas-reineke/indent-blankline.nvim'
-
+" @Improve
 " improve Startup time
 Plug 'nathom/filetype.nvim'
 Plug 'lewis6991/impatient.nvim'
 
-Plug 'nvim-neorg/neorg', { 'for': 'norg' }
 
-" Lsp config
+" @LspConfig
 " support some icons for you menu
 Plug 'onsails/lspkind-nvim'
 "a snip engine
@@ -26,64 +24,66 @@ Plug 'hrsh7th/cmp-path'
 " if you want not use more tip, maybe you can comment it
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/cmp-nvim-lua'
-" for norg is no effects
-"Plug 'f3fora/cmp-spell'
-
-" libs for some nvim plugins
-Plug 'nvim-lua/plenary.nvim'
-
-" icons for you ui
-Plug 'kyazdani42/nvim-web-devicons'
-
 " config lua lsp
 Plug 'folke/lua-dev.nvim'
 
-" debug your code
-"Plug 'nvim-treesitter/playground', { 'on': 'TSPlaygroundToggle' }
 
+" @Dependcies
+" libs for some nvim plugins
+Plug 'nvim-lua/plenary.nvim'
+" icons for you ui
+Plug 'kyazdani42/nvim-web-devicons'
+
+
+" @UI
 " better highlight
 Plug 'nvim-treesitter/nvim-treesitter'
-
 " highlight your variable for reference and define
 Plug 'nvim-treesitter/nvim-treesitter-refactor'
-
-" preview your markdown in your brower
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'markdown' }
-
-" generate your markdown toc
-Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
-
-" better markdown for your table
-Plug 'dhruvasagar/vim-table-mode', { 'for' : ['markdown', 'norg'] }
-
-" it's rich
-Plug 'nvim-telescope/telescope.nvim'
-
-" fast jump you want jump
-"Plug 'phaazon/hop.nvim'
-Plug 'ggandor/lightspeed.nvim'
-
-" test your Startup Time
-Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1}
-
-" Chinese vim help
-Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
-
 " manage your buffers
 Plug 'akinsho/bufferline.nvim'
+" color
+Plug 'norcalli/nvim-colorizer.lua'
+"Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+Plug 'NvChad/nvim-base16.lua'
 
+
+" @Editor
+" generate your markdown toc
+Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
+" preview your markdown in your brower
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'markdown' }
+" better markdown for your table
+Plug 'dhruvasagar/vim-table-mode', { 'for' : ['markdown', 'norg'] }
+Plug 'nvim-neorg/neorg', { 'for': 'norg' }
+
+
+" @Tools
+" it's rich
+Plug 'nvim-telescope/telescope.nvim'
+" fast jump you want jump
+Plug 'ggandor/lightspeed.nvim'
+" test your Startup Time
+Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1}
+" Chinese vim help
+Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
 " comment your code or txt
 Plug 'preservim/nerdcommenter'
-
 " show all keys
 Plug 'folke/which-key.nvim'
-
 " auto pairs
 Plug 'windwp/nvim-autopairs'
-
 " quick run your code
 Plug 'thinca/vim-quickrun', { 'on': 'QuickRun', 'frozen': 1 }
+" save session
+Plug 'folke/persistence.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim'
 
+
+call plug#end()
+
+
+" @Deprecated
 " select chunk txt
 "Plug 'gcmt/wildfire.vim', { 'frozen': 1 }
 
@@ -94,17 +94,8 @@ Plug 'thinca/vim-quickrun', { 'on': 'QuickRun', 'frozen': 1 }
 "Plug 'oeyoews/beacon.nvim', { 'frozen': 1 }
 "Plug 'edluffy/specs.nvim'
 
-" save session
-Plug 'folke/persistence.nvim'
-
-" color
-Plug 'norcalli/nvim-colorizer.lua'
-"Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
-
 " spell for nvim-tree sitter
 "Plug 'lewis6991/spellsitter.nvim'
-
-Plug 'NvChad/nvim-base16.lua'
 
 "Plug 'famiu/feline.nvim'  " to setup 04-statusline
 "Plug 'yamatsum/nvim-cursorline'
@@ -123,4 +114,8 @@ Plug 'NvChad/nvim-base16.lua'
 "Plug 'akinsho/org-bullets.nvim'
 "Plug 'xiyaowong/nvim-transparent'
 "Plug 'tribela/vim-transparent'
-call plug#end()
+" debug your code
+"Plug 'nvim-treesitter/playground', { 'on': 'TSPlaygroundToggle' }
+" for norg is no effects
+"Plug 'f3fora/cmp-spell'
+"Plug 'phaazon/hop.nvim'
