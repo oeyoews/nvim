@@ -106,9 +106,7 @@ Plug 'norcalli/nvim-colorizer.lua'
 
 Plug 'NvChad/nvim-base16.lua'
 
-"Plug 'famiu/feline.nvim'
-"Plug 'norcalli/nvim-colorizer.lua'
-"Plug '~/.config/nvim/docs'
+"Plug 'famiu/feline.nvim'  " to setup 04-statusline
 "Plug 'yamatsum/nvim-cursorline'
 "Plug 'oeyoews/nvim-cursorword'
 "Plug 'github/copilot.vim'
