@@ -26,6 +26,7 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/cmp-nvim-lua'
 " config lua lsp
 Plug 'folke/lua-dev.nvim'
+Plug 'tami5/lspsaga.nvim'
 
 
 " @Dependcies

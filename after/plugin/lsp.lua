@@ -73,14 +73,15 @@ mapping = {
   })
 
 
-  local function lspSymbol(name, icon)
-     vim.fn.sign_define("LspDiagnosticsSign"..name, { text = icon, numhl = "LspDiagnosticsDefault"..name })
-  end
+  -- TODO
+  --local function lspSymbol(name, icon)
+     --vim.fn.sign_define("LspDiagnosticsSign"..name, { text = icon, numhl = "LspDiagnosticsDefault"..name })
+  --end
 
-  lspSymbol("Error", "")
-  lspSymbol("Information", "")
-  lspSymbol("Hint", "")
-  lspSymbol("Warning", "")
+  --lspSymbol("Error", "")
+  --lspSymbol("Information", "")
+  --lspSymbol("Hint", "")
+  --lspSymbol("Warning", "")
 
 
   --jsonls: npm i -g vscode-langservers-extracted
@@ -117,7 +118,7 @@ mapping = {
     update_in_insert = true,
     virtual_text = {
       spacing = 4,
-      prefix = ''
+      prefix = ' '
     }
   }
   )
