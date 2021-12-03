@@ -22,7 +22,7 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-emoji'
 Plug 'hrsh7th/cmp-path'
 " if you want not use more tip, maybe you can comment it
-Plug 'hrsh7th/cmp-cmdline'
+"Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/cmp-nvim-lua'
 " config lua lsp
 Plug 'folke/lua-dev.nvim'
@@ -78,7 +78,7 @@ Plug 'windwp/nvim-autopairs'
 Plug 'thinca/vim-quickrun', { 'on': 'QuickRun', 'frozen': 1 }
 " save session
 Plug 'folke/persistence.nvim'
-Plug 'lukas-reineke/indent-blankline.nvim'
+"Plug 'lukas-reineke/indent-blankline.nvim'
 
 
 call plug#end()

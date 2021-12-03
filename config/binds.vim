@@ -52,3 +52,5 @@ nnoremap <Leader>vu <Cmd>PlugUpdate<CR>
 nnoremap <space>qe z=
 
 " test
+"
+"nnoremap <leader>ft <cmd>Ranger<CR>

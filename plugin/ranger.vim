@@ -115,6 +115,7 @@ if exists('g:ranger_replace_netrw') && g:ranger_replace_netrw
   augroup END
 endif
 
+" NOTE: it conflict to terminal.vim, feedkeys i
 if !exists('g:ranger_map_keys') || g:ranger_map_keys
-  map <leader>ft <cmd>Ranger<CR> <cmd>setlocal nornu nonu<cr>
+  nnoremap <silent> <leader>ft <cmd>Ranger<CR><cmd>setlocal nornu nonu<cr>
 endif
