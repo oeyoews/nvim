@@ -1,3 +1,5 @@
+--[=[
+
 local ok, hop = pcall(require, "hop")
 
 if not ok then
@@ -9,3 +11,4 @@ hop.setup()
 --  TODO this vim.cmd have some format question
 --  like [[ ]] in same line
 vim.cmd('nno <silent> <space>jj :HopWord<cr>')
+--]=]

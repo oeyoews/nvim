@@ -1,8 +1,11 @@
---local ok, gitsings = pcall(require, "gitsigns")
+--[[
 
---if not ok then
-  --return false
---end
+local ok, gitsings = pcall(require, "gitsigns")
 
---gitsings.setup()
+if not ok then
+  return false
+end
 
+gitsings.setup()
+
+--]]

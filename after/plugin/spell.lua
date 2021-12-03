@@ -1,3 +1,5 @@
+--[[
+
 local ok, spellsitter = pcall(require, "spellsitter")
 
 if not ok then
@@ -5,3 +7,4 @@ if not ok then
 end
 
 spellsitter.setup()
+--]]

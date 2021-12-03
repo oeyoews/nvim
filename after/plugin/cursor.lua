@@ -1,3 +1,4 @@
+--[[
 local ok, specs= pcall(require, "specs")
 
 if not ok then
@@ -21,3 +22,4 @@ show_jumps  = true,
         nofile = true,
     },
 }
+--]]

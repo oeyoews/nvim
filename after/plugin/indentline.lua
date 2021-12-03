@@ -1,4 +1,4 @@
----[[
+--[[
 --
 local ok, indent_blankline = pcall(require, "indent_blankline")
 
@@ -16,5 +16,5 @@ indent_blankline.setup({
       "IndentBlanklineIndent5",
     },
 })
---]]
 vim.cmd [[highlight IndentBlanklineIndent5 guifg=#61AFEF gui=nocombine]]
+--]]

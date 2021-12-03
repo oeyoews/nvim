@@ -1,3 +1,5 @@
+--[[
+
 local ok, nvimtree = pcall(require, "nvim-tree")
 
 if not ok then
@@ -5,3 +7,4 @@ if not ok then
 end
 
 nvimtree.setup()
+--]]

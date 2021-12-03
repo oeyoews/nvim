@@ -3,6 +3,7 @@ call plug#begin('$HOME/.config/nvim/.bundle')
 " @Improve
 " improve Startup time
 Plug 'nathom/filetype.nvim'
+" command: luacacheclear, luacachelog
 Plug 'lewis6991/impatient.nvim'
 
 

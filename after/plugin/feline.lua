@@ -1,3 +1,5 @@
+--[[
+
 if not pcall(require, "feline") then
   return
 end
@@ -282,3 +284,4 @@ require'feline'.setup {
         bufnames = {}
     }
 }
+--]]
