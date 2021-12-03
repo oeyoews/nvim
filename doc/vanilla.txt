@@ -100,4 +100,19 @@ or select some text and type zf
 PLUGIN
  |vim-table-mode| enter | twice to generate formatted horizontal line.
 
+
+- [vim-plug-tips](https://github.com/junegunn/vim-plug/wiki/tips)
+- [vimtutor](https://dxsm.github.io/books/vimL/z/20181219_3.html)
+- [replace](https://harttle.land/2016/08/08/vim-search-in-file.html)
+
+## mark
+- m{a-zA-Z}
+- use {a-zA-Z}' to jump line mark head
+- use `{a-zA-Z} to jump detail location mark
+- use :marks to respeck all marks
+
+## noTitle
+<!--delete-->
+- C-h/i/w
+
 vim:tw=78:ts=8:noet:ft=help:norl:ma:nu:
