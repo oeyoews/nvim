@@ -11,7 +11,7 @@ telescope.setup{
     mappings = {
       n = { ["q"] = actions.close },
     },
-    prompt_prefix = "  ",
+    prompt_prefix = "# ",
     -- 
     selection_caret = " ➤ ",
     entry_prefix = "  ",
@@ -43,17 +43,38 @@ telescope.setup{
       theme = "ivy"
     }
   },
-  extensions = {}
+
+  extensions = {
+    --fzf = {
+      --fuzzy = true,                    -- false will only do exact matching
+      --override_generic_sorter = true,  -- override the generic sorter
+      --override_file_sorter = true,     -- override the file sorter
+      --case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
+      ---- the default case_mode is "smart_case"
+    --},
+    --fzy_native = {
+            --override_generic_sorter = false,
+            --override_file_sorter = true,
+        --}
+
+      },
+
 }
+
+--require('telescope').load_extension('fzf')
+--require('telescope').load_extension('fzy_native')
 
 vim.cmd [[
 nnoremap <leader>ff <cmd>Telescope find_files <cr>
 nnoremap <leader>tr <cmd>Telescope oldfiles <cr>
 nnoremap <leader>tb <cmd>Telescope buffers <cr>
 nnoremap <leader>tc <Cmd>Telescope colorscheme <Cr>
+
+" search string in current dir
 nnoremap <leader>ps <Cmd>Telescope live_grep<Cr>
-nnoremap <leader>tk <cmd>Telescope keymaps<cr>
-nnoremap <leader>tf <cmd>Telescope file_browse<cr>
+
+nnoremap <leader>tm <cmd>Telescope keymaps<cr>
+nnoremap <leader>tf <cmd>Telescope file_browser<cr>
 " nnoremap <leader>ss <cmd>Telescope current_buffer_fuzzy_find<cr>
 
 " nnoremap <C-k> <cmd>lua vim.lsp.buf.signature_help() <cr>

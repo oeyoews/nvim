@@ -13,7 +13,7 @@ Plug 'onsails/lspkind-nvim'
 "a snip engine
 Plug 'SirVer/ultisnips'
 " my snippets
-Plug 'oeyoews/vim-snippets', { 'frozen': 1 }
+Plug 'oeyoews/vim-snippets'
 " configure your lsp
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-cmp'
@@ -80,6 +80,9 @@ Plug 'thinca/vim-quickrun', { 'on': 'QuickRun', 'frozen': 1 }
 " save session
 Plug 'folke/persistence.nvim'
 "Plug 'lukas-reineke/indent-blankline.nvim'
+"Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+"Plug 'nvim-telescope/telescope-fzy-native.nvim'
+Plug 'lervag/vimtex'
 
 
 call plug#end()

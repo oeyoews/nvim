@@ -44,14 +44,14 @@ mapping = {
 
   sources = {
     { name = 'nvim_lsp' },
-    { name = 'nvim-lua' },
-    { name = 'buffer', keyword_length = 2 },
     { name = 'ultisnips' },
+    { name = 'buffer', keyword_length = 2 },
     { name = 'path' },
+    { name = 'nvim-lua' },
     { name = 'emoji' },
-    { name = 'spell' },
-    --{ name = 'orgmode' },
     { name = 'neorg' },
+    --{ name = 'spell' },
+    --{ name = 'orgmode' },
     --{ name = 'cmdline' }
     },
 
