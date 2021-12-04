@@ -74,7 +74,7 @@ Plug 'preservim/nerdcommenter'
 " show all keys
 Plug 'folke/which-key.nvim'
 " auto pairs
-Plug 'windwp/nvim-autopairs'
+"Plug 'windwp/nvim-autopairs'
 " quick run your code
 Plug 'thinca/vim-quickrun', { 'on': 'QuickRun', 'frozen': 1 }
 " save session

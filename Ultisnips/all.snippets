@@ -1,5 +1,8 @@
-# [link]()https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt#:~:text=4.1.3%20Snippet%20Options%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20*UltiSnips%2Dsnippet%2Doptions*
+#https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt#:~:text=*UltiSnips%2Dsnippet%2Doptions*
 
+# default situation is at whiterspace or beginning, so add i or w symbol can improve this situation
+# w: after word, can trigger(have a whiterspace with word)
+# i: in word, can be trigger, ((no whiterspace with word)
 snippet shell "#!/usr/....(self:all)" b
 #!/usr/bin/env ${1:bash}
 endsnippet
@@ -7,3 +10,12 @@ endsnippet
 snippet li
 [${1:link}](${2:url})
 endsnippet
+
+snippet ( "better jump" wA
+($1)$2
+endsnippet
+
+snippet { "better jump" wA
+{$1}$2
+endsnippet
+
