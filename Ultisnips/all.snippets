@@ -3,6 +3,7 @@
 # default situation is at whiterspace or beginning, so add i or w symbol can improve this situation
 # w: after word, can trigger(have a whiterspace with word)
 # i: in word, can be trigger, ((no whiterspace with word)
+# b: just at the beginning of line will be trigger
 snippet shell "#!/usr/....(self:all)" b
 #!/usr/bin/env ${1:bash}
 endsnippet
@@ -11,6 +12,7 @@ snippet li
 [${1:link}](${2:url})
 endsnippet
 
+# TODO double right brack to jump(not support)
 snippet ( "better jump" iA
 ($1)$2
 endsnippet
@@ -19,3 +21,6 @@ snippet { "better jump" wA
 {$1}$2
 endsnippet
 
+snippet [ "better jump" iA
+[$1]$2
+endsnippet

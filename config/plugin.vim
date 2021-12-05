@@ -53,7 +53,7 @@ Plug 'NvChad/nvim-base16.lua'
 " @Editor
 " generate your markdown toc
 Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
-" preview your markdown in your brower
+" preview your markdown in your browser
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'markdown' }
 " better markdown for your table
 Plug 'dhruvasagar/vim-table-mode', { 'for' : ['markdown', 'norg'] }

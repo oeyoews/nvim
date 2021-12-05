@@ -1,5 +1,6 @@
 "language messages en_US.utf8 " have bug
-"setlocal spell  " for cmp-spell
+" setlocal just for the first file
+setlocal spell  " for cmp-spell
 set spelllang=en_us
 set spellfile+=~/.config/nvim/dict/myspell.utf-8.add
 set ignorecase

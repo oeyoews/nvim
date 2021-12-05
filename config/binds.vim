@@ -56,3 +56,5 @@ nnoremap <space>qe z=
 " test
 "
 "nnoremap <leader>ft <cmd>Ranger<CR>
+" need set spell
+inoremap <C-h> <c-g>u<Esc>[s1z=`]a<c-g>u
