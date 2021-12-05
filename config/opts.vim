@@ -51,4 +51,4 @@ set foldenable
 " h 'complete' or may use ctrl x && ctrl k
 " ctrl x && ctrl L(copy line)
 " ctrl x && ctrl f(complete filename)
-set complete+=k~/.config/nvim/dict/myself.txt
+set complete+=k~/.config/nvim/dict/myself.md

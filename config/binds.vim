@@ -34,7 +34,7 @@ noremap H 0
 nnoremap <silent> <esc> :noh<return><C-L><esc>
 
 nnoremap <leader>bs  <Cmd>e /tmp/scratch.txt<CR>
-nnoremap <leader>ed  <Cmd>e ~/.config/nvim/dict/myself.txt<CR>
+nnoremap <leader>ed  <Cmd>e ~/.config/nvim/dict/myself.md<CR>
 nnoremap <leader>es  <Cmd>e ~/.config/nvim/dict/myspell.utf-8.add<CR>
 
 " note this <cr> not have virtual space
