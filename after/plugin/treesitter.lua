@@ -32,6 +32,7 @@ tree_configs.setup {
     "org",
     "norg",
     "comment",
+    "go",
     },
 
   highlight = { enable = true,

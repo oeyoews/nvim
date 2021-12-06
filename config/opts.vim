@@ -1,7 +1,9 @@
 "language messages en_US.utf8 " have bug
 " setlocal just for the first file
-setlocal spell  " for cmp-spell
-set spelllang=en_us
+"setlocal spell  " for cmp-spell
+"set spelllang=en_us
+"setlocal spell spelllang=en_us
+" help: h spell
 set spellfile+=~/.config/nvim/dict/myspell.utf-8.add
 set ignorecase
 set termguicolors
@@ -46,7 +48,6 @@ set cursorline
 set nu
 "set t_ti= t_te=
 "set shortmess=atI  " disable show welcome and no clear this ui to quit vim
-set foldenable
 " use ctrl k && ctrl l
 "set dictionary+=~/.config/nvim/dict/myself.txt
 " h 'complete' or may use ctrl x && ctrl k

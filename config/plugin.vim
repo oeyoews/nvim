@@ -29,7 +29,6 @@ Plug 'hrsh7th/cmp-nvim-lua'
 Plug 'folke/lua-dev.nvim'
 Plug 'tami5/lspsaga.nvim'
 
-
 " @Dependcies
 " libs for some nvim plugins
 Plug 'nvim-lua/plenary.nvim'
@@ -74,7 +73,7 @@ Plug 'preservim/nerdcommenter'
 " show all keys
 Plug 'folke/which-key.nvim'
 " auto pairs
-"Plug 'windwp/nvim-autopairs'
+Plug 'windwp/nvim-autopairs'
 " quick run your code
 Plug 'thinca/vim-quickrun', { 'on': 'QuickRun', 'frozen': 1 }
 " save session
@@ -83,6 +82,8 @@ Plug 'folke/persistence.nvim'
 "Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 "Plug 'nvim-telescope/telescope-fzy-native.nvim'
 Plug 'lervag/vimtex'
+" for kitty syntax, need set it's filetype by hand
+Plug 'fladson/vim-kitty'
 
 
 call plug#end()
