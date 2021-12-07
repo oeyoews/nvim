@@ -53,12 +53,3 @@ nnoremap <silent> <leader>bm :messages<cr>
 nnoremap <Leader>vi <Cmd>PlugInstall<CR>
 nnoremap <Leader>vc <Cmd>PlugClean<CR>
 nnoremap <Leader>vu <Cmd>PlugUpdate<CR>
-nnoremap <space>qe z=
-
-
-" test
-"
-"nnoremap <leader>ft <cmd>Ranger<CR>
-" need set spell
-inoremap <C-h> <c-g>u<Esc>[s1z=`]a<c-g>u
-

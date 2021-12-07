@@ -8,6 +8,7 @@ function Shell()
   au! TermClose * call feedkeys("\<esc>")
   split | terminal
   setlocal nornu nonu
+  setlocal nocursorline
 endfunction
 
 " add i in the end of line, to patch bug of ranger

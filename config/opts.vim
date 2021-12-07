@@ -1,7 +1,7 @@
 "language messages en_US.utf8 " have bug
 " setlocal just for the first file
 "setlocal spell  " for cmp-spell
-"set spelllang=en_us
+set spelllang=en_us
 "setlocal spell spelllang=en_us
 " help: h spell
 set spellfile+=~/.config/nvim/dict/myspell.utf-8.add
@@ -54,3 +54,4 @@ set nu
 " ctrl x && ctrl L(copy line)
 " ctrl x && ctrl f(complete filename)
 set complete+=k~/.config/nvim/dict/myself.md
+set mouse+=a
