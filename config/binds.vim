@@ -1,5 +1,6 @@
 " bug: last highlight is not correct
 "
+"let g:mapleader = " "
 let g:mapleader = "\<Space>"
 
 " creat blankline nto formatoptions
@@ -31,10 +32,6 @@ nnoremap <silent> <space>qq :q<CR>
 noremap L $
 noremap H 0
 
-" clear all hlight words
-"nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>
-nnoremap <silent> <esc> :noh<return><C-L><esc>
-
 nnoremap <leader>bs  <Cmd>e /tmp/scratch.txt<CR>
 nnoremap <leader>ed  <Cmd>e ~/.config/nvim/dict/myself.md<CR>
 nnoremap <leader>es  <Cmd>e ~/.config/nvim/dict/myspell.utf-8.add<CR>
@@ -53,3 +50,9 @@ nnoremap <silent> <leader>bm :messages<cr>
 nnoremap <Leader>vi <Cmd>PlugInstall<CR>
 nnoremap <Leader>vc <Cmd>PlugClean<CR>
 nnoremap <Leader>vu <Cmd>PlugUpdate<CR>
+
+" clear or highlight search words
+"nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>
+"nnoremap <silent> <esc> :noh<return><C-L><esc>
+nnoremap <silent> <esc> :set invhlsearch<return><C-L><esc>
+nnoremap <space>bc <cmd>set invhlsearch<cr>

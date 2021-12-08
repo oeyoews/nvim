@@ -11,3 +11,6 @@ lspkind
 config
 luacachelog
 call
+firefox
+fastly
+wayland

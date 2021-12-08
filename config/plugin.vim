@@ -51,6 +51,7 @@ Plug 'NvChad/nvim-base16.lua'
 
 " @Editor
 " generate your markdown toc
+" command: Gen...
 Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
 " preview your markdown in your browser
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'markdown' }
@@ -100,7 +101,7 @@ Plug 'fladson/vim-kitty'
 "Plug 'edluffy/specs.nvim'
 
 " spell for nvim-tree sitter
-"Plug 'lewis6991/spellsitter.nvim'
+Plug 'lewis6991/spellsitter.nvim'
 
 Plug 'famiu/feline.nvim'  " to setup 04-statusline
 Plug 'folke/todo-comments.nvim'
