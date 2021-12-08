@@ -11,9 +11,10 @@ telescope.setup{
     mappings = {
       n = { ["q"] = actions.close },
     },
-    prompt_prefix = "# ",
-    -- 
-    selection_caret = " ➤ ",
+    -- #
+    prompt_prefix = " ",
+    --  ➤
+    selection_caret = " ",
     entry_prefix = "  ",
   },
   pickers = {
