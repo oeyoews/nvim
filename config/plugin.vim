@@ -86,7 +86,6 @@ Plug 'lervag/vimtex'
 Plug 'fladson/vim-kitty'
 
 
-call plug#end()
 
 
 " @Deprecated
@@ -125,3 +124,5 @@ call plug#end()
 " for norg is no effects
 "Plug 'f3fora/cmp-spell'
 "Plug 'phaazon/hop.nvim'
+
+call plug#end()

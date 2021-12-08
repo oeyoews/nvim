@@ -86,9 +86,10 @@ mapping = {
 
 
   --jsonls: npm i -g vscode-langservers-extracted
+  -- gopls need go.mod for folder
   local nvim_lsp = require('lspconfig')
   -- automatically connect language server protocol
-  local servers = { 'vimls', 'clangd', 'bashls', 'pyright',
+  local servers = { 'vimls', 'clangd', 'bashls', 'pyright', 'gopls',
   --'jdtls',
   --'jsonls',
   --'tsserver',
@@ -124,6 +125,7 @@ mapping = {
   }
   )
 
+
 --  == go-to definition split  ==
 local function goto_definition(split_cmd)
   local util = vim.lsp.util
@@ -158,7 +160,4 @@ local function goto_definition(split_cmd)
 end
 
 vim.lsp.handlers["textDocument/definition"] = goto_definition('split')
-
-
-
 

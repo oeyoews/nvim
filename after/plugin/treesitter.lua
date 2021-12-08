@@ -33,6 +33,7 @@ tree_configs.setup {
     "norg",
     "comment",
     "go",
+    "gomod",
     },
 
   highlight = { enable = true,
