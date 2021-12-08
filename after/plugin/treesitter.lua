@@ -29,7 +29,7 @@ tree_configs.setup {
     "yaml",
     "javascript",
     "typescript",
-    "org",
+    --"org",
     "norg",
     "comment",
     "go",
