@@ -124,5 +124,4 @@ Plug 'fladson/vim-kitty'
 " for norg is no effects
 "Plug 'f3fora/cmp-spell'
 "Plug 'phaazon/hop.nvim'
-
 call plug#end()
