@@ -1,5 +1,9 @@
 *vanilla.txt* This is my self documentation for nvim(vim)
 
+>
+  [link](https://www.kancloud.cn/kancloud/learn-vimscript-the-hard-way/49330)
+<
+
 	  __     ___    _   _ ___ _     _        _~
 	  \ \   / / \  | \ | |_ _| |   | |      / \~
 	   \ \ / / _ \ |  \| || || |   | |     / _ \~
@@ -53,7 +57,8 @@ TIPS *vanilla-tips*
 FAQ  *vanilla-questions*
 
 >
-	      - How to use comment in help.txt ?
+	      - How to use comment in help.txt ? FIXED: use > and <, note put
+		it in beginning of every line
 <
 
 DOCUMENTATION  *vanilla-documentation*

@@ -12,9 +12,9 @@ telescope.setup{
       n = { ["q"] = actions.close },
     },
     -- #
-    prompt_prefix = " ",
+    prompt_prefix = "# ",
     --  ➤
-    selection_caret = " ",
+    selection_caret = "> ",
     entry_prefix = "  ",
   },
   pickers = {
