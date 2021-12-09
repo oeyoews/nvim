@@ -5,7 +5,7 @@ nnoremap <silent> <SPACE>ll <Cmd>QuickRun<CR><C-w>w
 nnoremap <leader>vt <cmd>StartupTime --tries 1<cr>
 
 " suda
-nnoremap <leader>fE <Cmd>SudaRead<Cr>
+"nnoremap <leader>fE <Cmd>SudaRead<Cr>
 
 " == markdown-preview ==
 let g:mkdp_echo_preview_url = 1

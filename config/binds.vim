@@ -1,4 +1,4 @@
-" bug: last highlight is not correct
+" BUG: last highlight is not correct
 "
 "let g:mapleader = " "
 let g:mapleader = "\<Space>"
@@ -31,9 +31,6 @@ nnoremap <silent> <space>qq :q<CR>
 " better jump
 noremap L $
 noremap H 0
-
-nnoremap <leader>bs  <Cmd>e /tmp/scratch.txt<CR>
-nnoremap <leader>bb  <Cmd>e `mktemp -t scratch.XXXXXX`<CR>
 
 " note this <cr> not have virtual space
 nnoremap <silent> <leader>fs :w<cr>
