@@ -1,5 +1,6 @@
 " for spelling
-set spellfile+=~/.config/nvim/dict/myspell.utf-8.add
+" for spell dir, en...add this file is auto, just for more file exist
+set spellfile+=~/.config/nvim/spell/myspell.utf-8.add
 set spelllang=en_us,cjk
 
 " use ctrl k && ctrl l
@@ -29,7 +30,8 @@ nnoremap <space>ss <cmd>setlocal invspell<cr>
 " need set spell
 " fastly quick fix spell error
 inoremap <A-h> <c-g>u<Esc>[s1z=`]a<c-g>u
-nnoremap <A-h> <c-g>u<Esc>[s1z=`]a<c-g>u
+" TODO:
+"nnoremap <A-h> <c-g>u<Esc>[s1z=`]a<c-g>u
 
 nnoremap <space>qe z=
 
