@@ -103,7 +103,7 @@ Plug 'fladson/vim-kitty'
 " spell for nvim-tree sitter
 Plug 'lewis6991/spellsitter.nvim'
 
-Plug 'famiu/feline.nvim'  " to setup 04-statusline
+"Plug 'famiu/feline.nvim'  " to setup 04-statusline
 Plug 'folke/todo-comments.nvim'
 "Plug 'yamatsum/nvim-cursorline'
 "Plug 'oeyoews/nvim-cursorword'
@@ -126,5 +126,8 @@ Plug 'folke/todo-comments.nvim'
 " for norg is no effects
 "Plug 'f3fora/cmp-spell'
 "Plug 'phaazon/hop.nvim'
+"
+"Plug 'inkarkat/vim-SpellCheck'
+"Plug 'inkarkat/vim-ingo-library'
 "
 call plug#end()

@@ -33,8 +33,7 @@ noremap L $
 noremap H 0
 
 nnoremap <leader>bs  <Cmd>e /tmp/scratch.txt<CR>
-nnoremap <leader>ed  <Cmd>e ~/.config/nvim/dict/myself.md<CR>
-nnoremap <leader>es  <Cmd>e ~/.config/nvim/dict/myspell.utf-8.add<CR>
+nnoremap <leader>bb  <Cmd>e `mktemp -t scratch.XXXXXX`<CR>
 
 " note this <cr> not have virtual space
 nnoremap <silent> <leader>fs :w<cr>

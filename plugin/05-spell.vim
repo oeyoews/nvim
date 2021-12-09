@@ -24,7 +24,7 @@ set complete+=k~/.config/nvim/dict/myself.md
 
 " TODO
 "nnoremap <space>ss <cmd>call ToggleSpelling()<cr>
-nnoremap <space>ss <cmd>set invspell<cr>
+nnoremap <space>ss <cmd>setlocal invspell<cr>
 
 " need set spell
 " fastly quick fix spell error
@@ -32,3 +32,6 @@ inoremap <A-h> <c-g>u<Esc>[s1z=`]a<c-g>u
 nnoremap <A-h> <c-g>u<Esc>[s1z=`]a<c-g>u
 
 nnoremap <space>qe z=
+
+nnoremap <leader>ed  <Cmd>e ~/.config/nvim/dict/myself.md<CR>
+nnoremap <leader>es  <Cmd>e ~/.config/nvim/dict/myspell.utf-8.add<CR>

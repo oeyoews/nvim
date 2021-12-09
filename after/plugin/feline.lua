@@ -1,4 +1,4 @@
----[[
+--[[
 
 if not pcall(require, "feline") then
   return
@@ -38,13 +38,14 @@ local vi_mode_colors = {
 local function file_osinfo()
     local os = vim.bo.fileformat:upper()
     local icon
-    if os == 'UNIX' then
         icon = ''
-    elseif os == 'MAC' then
-        icon = ' '
-    else
-        icon = ' '
-    end
+    --if os == 'UNIX' then
+        --icon = ''
+    --elseif os == 'MAC' then
+        --icon = ' '
+    --else
+        --icon = ' '
+    --end
     return icon .. os
 end
 
@@ -62,7 +63,8 @@ local comps = {
     vi_mode = {
         left = {
             provider = function()
-              return ' ' .. vi_mode_utils.get_vim_mode()
+--
+              return '# ' .. vi_mode_utils.get_vim_mode()
             end,
             hl = function()
                 local val = {
@@ -151,7 +153,8 @@ local comps = {
         err = {
             -- provider = 'diagnostic_errors',
             provider = function()
-                return '' .. lsp_get_diag("Error")
+--
+                return 'B' .. lsp_get_diag("Error")
             end,
             -- left_sep = ' ',
             enabled = function() return lsp.diagnostics_exist('Error') end,
@@ -162,7 +165,8 @@ local comps = {
         warn = {
             -- provider = 'diagnostic_warnings',
             provider = function()
-                return '' ..  lsp_get_diag("Warning")
+--
+                return 'E ' ..  lsp_get_diag("Warning")
             end,
             -- left_sep = ' ',
             enabled = function() return lsp.diagnostics_exist('Warning') end,
@@ -173,7 +177,8 @@ local comps = {
         info = {
             -- provider = 'diagnostic_info',
             provider = function()
-                return '' .. lsp_get_diag("Information")
+--
+                return 'I ' .. lsp_get_diag("Information")
             end,
             -- left_sep = ' ',
             enabled = function() return lsp.diagnostics_exist('Information') end,
@@ -184,7 +189,8 @@ local comps = {
         hint = {
             -- provider = 'diagnostic_hints',
             provider = function()
-                return '' .. lsp_get_diag("Hint")
+--
+                return 'H ' .. lsp_get_diag("Hint")
             end,
             -- left_sep = ' ',
             enabled = function() return lsp.diagnostics_exist('Hint') end,
@@ -199,7 +205,8 @@ local comps = {
             -- left_sep = ' ',
             right_sep = ' ',
             --icon = '  ',
-            icon = '🐭',
+            --🐭
+            icon = ' ',
 
             hl = {
                 fg = colors.green,
@@ -210,7 +217,8 @@ local comps = {
     git = {
         branch = {
             provider = 'git_branch',
-            icon = ' ',
+-- 
+            icon = 'g',
             left_sep = ' ',
             hl = {
                 fg = colors.violet,
