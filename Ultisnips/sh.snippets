@@ -2,9 +2,24 @@ snippet al "alias"
 alias ${1:Command}
 endsnippet
 
-snippet fun
-# ${0:Dec:}
-function ${1:FunctionName}() {
-	${2:Body}
+snippet fun "function"
+# Dec:${1:}
+function ${2:FunctionName}() {
+	${3:Body}
 }
 endsnippet
+
+
+snippet main "main"
+main() {
+	$1
+}
+
+main
+endsnippet
+
+#TODO:
+#snippet $ "reference variable"
+#${$1}$2
+#endsnippet
+

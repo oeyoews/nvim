@@ -7,3 +7,5 @@
 ---
 
 ## USage
+  <!--TODO:-->
+  - vim -c PlugInstall

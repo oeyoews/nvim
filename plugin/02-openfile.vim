@@ -4,7 +4,7 @@ function! FindVanilla() abort
 endfunction
 
 function! FindPlugin() abort
-  find ~/.config/nvim/config/plugin.vim
+  find ~/.config/nvim/config/01-plugin.vim
 endfunction
 
 function! FindInit() abort

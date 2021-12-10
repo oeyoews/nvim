@@ -30,14 +30,20 @@ hi Keyword    cterm=bold ctermfg=68 guifg=#8167a3 gui=bold
 hi CursorLineNr      guifg=#c269fe guibg=#000000
 " highlight cursor-line
 hi CursorLine        guibg=black
+
 " split line
-hi VertSplit guibg=#4f97d7
+"hi VertSplit guibg=#4f97d7
+hi VertSplit guibg=#51afef
 " Status Line
 hi StatusLine guibg=#24283b
-" cursor
-hi Cursor guifg=#86af5d guibg=#86af5d
-hi Cursor2 guifg=red guibg=red
-set guicursor=n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor2/lCursor2,r-cr:hor20,o:hor50
+
+" this cusor must follow this theme
+" by this order to fix it
+"hi Cursor guifg=#51afef guibg=#51afef
+"hi Cursor2 guifg=red guibg=red
+"set guicursor=n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor2/lCursor2,r-cr:hor20,o:hor50
 
 "hi SpellBad   ctermbg=9 gui=underline guisp=#f7768e
 hi SpellBad   ctermbg=9 gui=underline guifg=#f7768e
+
+command! -nargs=?  Mdt TableModeToggle
