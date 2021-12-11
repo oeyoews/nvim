@@ -8,4 +8,4 @@
 
 ## USage
   <!--TODO:-->
-  - vim -c PlugInstall
+  <!--- vim -c PlugInstall-->

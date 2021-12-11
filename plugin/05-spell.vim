@@ -29,7 +29,7 @@ nnoremap <space>ss <cmd>setlocal invspell<cr>
 
 " need set spell
 " fastly quick fix spell error
-inoremap <A-h> <c-g>u<Esc>[s1z=`]a<c-g>u
+inoremap <silent> <A-h> <c-g>u<Esc>[s1z=`]a<c-g>u
 " TODO:
 "nnoremap <A-h> <c-g>u<Esc>[s1z=`]a<c-g>u
 
