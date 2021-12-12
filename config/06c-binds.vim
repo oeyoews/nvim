@@ -51,6 +51,13 @@ nnoremap <Leader>vu <Cmd>PlugUpdate<CR>
 "nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>
 "nnoremap <silent> <esc> :noh<return><C-L><esc>
 nnoremap <silent> <esc> :set invhlsearch<return><C-L><esc>
-nnoremap <space>bc <cmd>set invhlsearch<cr>
+
+" in neovim 0.6, you can use Ctrl + l to clear it
+" @deprecated
+"nnoremap <space>bc <cmd>set invhlsearch<cr>
 
 nnoremap <silent> <space>tn <cmd>setlocal invnumber<cr>
+
+" @feature
+" Y: to yank current cursor to end of the line
+" C: to cut current cursor to end of the line
