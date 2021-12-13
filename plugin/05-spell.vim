@@ -25,6 +25,7 @@ set complete+=k~/.config/nvim/dict/myself.md
 
 " TODO
 "nnoremap <space>ss <cmd>call ToggleSpelling()<cr>
+" " is's silent
 nnoremap <space>ss <cmd>setlocal invspell<cr>
 
 " need set spell
