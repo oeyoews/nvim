@@ -30,7 +30,7 @@ tree_configs.setup {
     "javascript",
     "typescript",
     --"org",
-    "norg",
+    "norg", "norg_meta", "norg_table",
     "comment",
     "go",
     "gomod",

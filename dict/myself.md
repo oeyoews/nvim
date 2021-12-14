@@ -1,5 +1,7 @@
+<!--some directions-->
 oeyoews
 vanilla
+directions
 
 <!--latex 数学符号-->
 alpha

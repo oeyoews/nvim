@@ -15,6 +15,10 @@ local border = {
 }
 -- cmp_lsp
 local cmp = require'cmp'
+
+--- cmp-look
+--cmp.register_source('look', require('cmp_look').new())
+
 cmp.setup({
 snippet = {
   expand = function(args)
@@ -37,6 +41,7 @@ mapping = {
     buffer = "",
     ultisnips = "",
     nvim_lua = "",
+    --neorg = "",
     })}),
   },
 
@@ -44,13 +49,14 @@ mapping = {
 
   sources = {
     { name = 'nvim_lsp' },
-    { name = 'ultisnips' },
     { name = 'buffer', keyword_length = 2 },
+    { name = 'ultisnips' },
     { name = 'path' },
     { name = 'nvim-lua' },
-    { name = 'emoji' },
     { name = 'neorg' },
     --{ name = 'spell' },
+    { name = 'emoji' },
+    --{ name = 'look' },
     --{ name = 'orgmode' },
     --{ name = 'cmdline' }
     },

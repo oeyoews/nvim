@@ -2,6 +2,9 @@
 " for spell dir, en...add this file is auto, just for more file exist
 set spellfile+=~/.config/nvim/spell/myspell.utf-8.add
 set spelllang=en_us,cjk
+" is confilict spellfile
+"set dictionary=~/.config/nvim/dict/myself.md
+
 
 " use ctrl k && ctrl l
 "set dictionary+=~/.config/nvim/dict/myself.txt

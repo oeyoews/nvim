@@ -15,9 +15,10 @@ neorg_callbacks.on_event("core.keybinds.events.enable_keybinds", function(_, key
 		n = { -- Bind keys in normal mode
 
 			-- Keys for managing TODO items and setting their states
-			{ "gtd", "core.norg.qol.todo_items.todo.task_done" },
-			{ "gtu", "core.norg.qol.todo_items.todo.task_undone" },
-			{ "gtp", "core.norg.qol.todo_items.todo.task_pending" },
+      -- is confilcted to jump next new table
+			--{ "gtd", "core.norg.qol.todo_items.todo.task_done" },
+			--{ "gtu", "core.norg.qol.todo_items.todo.task_undone" },
+			--{ "gtp", "core.norg.qol.todo_items.todo.task_pending" },
 			{ "<space>tn", "core.norg.qol.todo_items.todo.task_cycle" }
 
 		},
