@@ -131,5 +131,7 @@ Plug 'folke/todo-comments.nvim'
 "Plug 'inkarkat/vim-ingo-library'
 "
 "Plug 'skywind3000/vim-dic'
-Plug 'jayli/vim-dictionary'
+"Plug 'jayli/vim-dictionary'
+" have some bug
+"Plug 'uga-rosa/cmp-dictionary'
 call plug#end()

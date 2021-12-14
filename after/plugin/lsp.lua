@@ -58,7 +58,8 @@ mapping = {
     { name = 'emoji' },
     --{ name = 'look' },
     --{ name = 'orgmode' },
-    --{ name = 'cmdline' }
+    --{ name = 'cmdline' },
+    { name = "dictionary", keyword_length = 2 },
     },
 
   -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).

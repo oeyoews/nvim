@@ -14,6 +14,7 @@ set spelllang=en_us,cjk
 "
 set complete+=k~/.config/nvim/dict/myself.md
 
+
 "function! ToggleSpelling()
   "if &spell
     "setlocal nospell
