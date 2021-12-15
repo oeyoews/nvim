@@ -3,16 +3,9 @@ vim.cmd [[set completeopt=menu,menuone,noselect,noinsert]]
 
 vim.cmd [[highlight default Fs guifg=#3bb6c4 guibg=NONE]]
 
-local border = {
-      {"╭", "Fs"},
-      {"─", "Fs"},
-      {"╮", "Fs"},
-      {"│", "Fs"},
-      {"╯", "Fs"},
-      {"─", "Fs"},
-      {"╰", "Fs"},
-      {"│", "Fs"},
-}
+local border = { {"╭", "Fs"}, {"─", "Fs"}, {"╮", "Fs"}, {"│", "Fs"},
+      {"╯", "Fs"}, {"─", "Fs"}, {"╰", "Fs"}, {"│", "Fs"}, }
+
 -- cmp_lsp
 local cmp = require'cmp'
 
@@ -23,8 +16,7 @@ cmp.setup({
 snippet = {
   expand = function(args)
   vim.fn["UltiSnips#Anon"](args.body)
-end,
-},
+end, },
 
 -- mappings
 mapping = {
@@ -32,8 +24,7 @@ mapping = {
   ['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' }),
   ['<CR>'] = cmp.mapping.confirm(),
   ['<C-e>'] = cmp.mapping.complete(),
-  ['<C-c>'] = cmp.mapping.close(),
-},
+  ['<C-c>'] = cmp.mapping.close(), },
 
   formatting = {
     format = require("lspkind").cmp_format({with_text = true, menu = ({
@@ -42,8 +33,7 @@ mapping = {
     ultisnips = "",
     nvim_lua = "",
     --neorg = "",
-    })}),
-  },
+    })}), },
 
  documentation = { border = border, },
 
@@ -59,8 +49,7 @@ mapping = {
     --{ name = 'look' },
     --{ name = 'orgmode' },
     --{ name = 'cmdline' },
-    { name = "dictionary", keyword_length = 2 },
-    },
+    { name = "dictionary", keyword_length = 2 }, },
 
   -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
   --cmp.setup.cmdline('/', {
@@ -79,7 +68,6 @@ mapping = {
   --})
 
   })
-
 
   --[[
   -- TODO
