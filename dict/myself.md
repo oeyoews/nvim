@@ -2,6 +2,8 @@
 oeyoews
 vanilla
 directions
+submodules
+module
 
 <!--latex 数学符号-->
 alpha

@@ -3,13 +3,14 @@ set mouse+=a
 set ignorecase
 set termguicolors
 set undofile
+set ttyfast
 set signcolumn=yes
 set autochdir
 set nowrap
 set linebreak
 set hidden
 set ignorecase
-"set textwidth=120
+set textwidth=120
 set shortmess+=aIc  " atI clear advertise
 set lazyredraw
 set vb t_vb=  " no blinking no bells
@@ -26,7 +27,7 @@ set incsearch
 set hlsearch
 
 set confirm
-set scrolloff=3
+"set scrolloff=3
 set updatetime=200	" ??
 set foldmethod=marker
 set conceallevel=0

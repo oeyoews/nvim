@@ -23,5 +23,6 @@ nnoremap <leader>bb  <Cmd>e `mktemp -t scratch.XXXXXX`<CR>
 
 " draft notebooks
 " TODO: write a function, adjust it's dir
-nnoremap <space>fd <cmd>e ~/dotfiles/draft_notes/`date -I`.md<cr>
+"nnoremap <space>fd <cmd>e ~/dotfiles/notes/draft/`date -I`.md<cr>
+nnoremap <space>fd <cmd>e ${Draft}/`date -I`.md<cr>
 

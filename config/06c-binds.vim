@@ -49,8 +49,8 @@ nnoremap <Leader>vu <Cmd>PlugUpdate<CR>
 
 " clear or highlight search words
 "nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>
-"nnoremap <silent> <esc> :noh<return><C-L><esc>
-nnoremap <silent> <esc> :set invhlsearch<return><C-L><esc>
+nnoremap <silent> <esc> :noh<return><C-L><esc>
+"nnoremap <silent> <esc> :set invhlsearch<return><C-L><esc>
 
 " in neovim 0.6, you can use Ctrl + l to clear it
 " @deprecated

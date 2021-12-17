@@ -45,7 +45,7 @@ mapping = {
     { name = 'nvim-lua' },
     { name = 'neorg' },
     --{ name = 'spell' },
-    { name = 'emoji' },
+    { name = 'emoji', insert = true },
     --{ name = 'look' },
     --{ name = 'orgmode' },
     --{ name = 'cmdline' },

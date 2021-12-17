@@ -30,15 +30,18 @@ set complete+=k~/.config/nvim/dict/myself.md
 " TODO
 "nnoremap <space>ss <cmd>call ToggleSpelling()<cr>
 " " is's silent
-nnoremap <space>ss <cmd>setlocal invspell<cr>
+" TODO:: auto disappeard in some seconds
+nnoremap <space>ss <cmd>setlocal invspell <bar> echom "toggle spell"<cr>
 
 " need set spell
 " fastly quick fix spell error
+" TODO: ???
 inoremap <silent> <A-h> <c-g>u<Esc>[s1z=`]a<c-g>u
-" TODO:
 "nnoremap <A-h> <c-g>u<Esc>[s1z=`]a<c-g>u
 
-nnoremap <space>qe z=
+"nnoremap <space>qe z=
 
+" personal tips
 nnoremap <leader>ed  <Cmd>e ~/.config/nvim/dict/myself.md<CR>
-nnoremap <leader>es  <Cmd>e ~/.config/nvim/dict/myspell.utf-8.add<CR>
+" spell good words
+nnoremap <leader>es  <Cmd>e ~/.config/nvim/spell/myspell.utf-8.add<CR>

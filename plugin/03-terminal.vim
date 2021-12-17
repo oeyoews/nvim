@@ -12,4 +12,4 @@ function Shell()
 endfunction
 
 " add i in the end of line, to patch bug of ranger
-nnoremap <silent> <space>ts <cmd>call Shell()<cr>i
+nnoremap <silent> <space>tk <cmd>call Shell()<cr>i

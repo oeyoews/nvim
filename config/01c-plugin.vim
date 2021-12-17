@@ -39,7 +39,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 
 " @UI
 " better highlight
-Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TsUpdate' }
 " highlight your variable for reference and define
 Plug 'nvim-treesitter/nvim-treesitter-refactor'
 " manage your buffers
@@ -134,4 +134,8 @@ Plug 'folke/todo-comments.nvim'
 "Plug 'jayli/vim-dictionary'
 " have some bug
 "Plug 'uga-rosa/cmp-dictionary'
+"TODO:
+"Plug 'abecodes/tabout.nvim'
+" another ranger
+"Plug 'kevinhwang91/rnvimr'
 call plug#end()
