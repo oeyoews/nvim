@@ -1,13 +1,13 @@
-local ok, tabout = pcall(require, "tabout")
+--local ok, tabout = pcall(require, "tabout")
 
-if not ok then
-  return false
-end
+--if not ok then
+  --return false
+--end
 
-tabout.setup({
-  tabkey = "<Tab>",
-  backwards_tabkey = "<S-Tab>",
-})
+--tabout.setup({
+  --tabkey = "<Tab>",
+  --backwards_tabkey = "<S-Tab>",
+--})
 
 --local function replace_keycodes(str)
   --return vim.api.nvim_replace_termcodes(str, true, true, true)

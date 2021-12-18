@@ -1,4 +1,4 @@
-call plug#begin('$HOME/.config/nvim/.bundle')
+call plug#begin('$HOME/.local/share/nvim/nvim_bundle')
 
 " @Improve
 " improve Startup time
@@ -105,12 +105,13 @@ Plug 'fladson/vim-kitty'
 Plug 'lewis6991/spellsitter.nvim'
 
 "Plug 'famiu/feline.nvim'  " to setup 04-statusline
-Plug 'folke/todo-comments.nvim'
+"Plug 'folke/todo-comments.nvim'
 "Plug 'yamatsum/nvim-cursorline'
 "Plug 'oeyoews/nvim-cursorword'
 "Plug 'github/copilot.vim'
 "Plug 'kyazdani42/nvim-tree.lua'
 "Plug 'lewis6991/gitsigns.nvim'
+"TODO:
 "Plug 'williamboman/nvim-lsp-installer'
 "Plug 'mfussenegger/nvim-jdtls'
 "Plug 'olimorris/onedarkpro.nvim'
