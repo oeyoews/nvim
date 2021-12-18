@@ -90,7 +90,8 @@ mapping = {
   -- gopls need go.mod for folder
   local nvim_lsp = require('lspconfig')
   -- automatically connect language server protocol
-  local servers = { 'vimls', 'clangd', 'bashls', 'pyright', 'gopls',
+  local servers = { 'vimls',
+  --'clangd', 'bashls', 'pyright', 'gopls',
   --'jdtls',
   --'jsonls',
   --'tsserver',
