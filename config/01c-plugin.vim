@@ -83,7 +83,7 @@ Plug 'folke/persistence.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 "Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 "Plug 'nvim-telescope/telescope-fzy-native.nvim'
-Plug 'lervag/vimtex'
+"Plug 'lervag/vimtex'
 " for kitty syntax, need set it's filetype by hand
 Plug 'fladson/vim-kitty'
 
@@ -140,4 +140,5 @@ Plug 'lewis6991/spellsitter.nvim'
 " another ranger
 "Plug 'kevinhwang91/rnvimr'
 Plug 'folke/zen-mode.nvim'
+"Plug 'plasticboy/vim-markdown'
 call plug#end()
