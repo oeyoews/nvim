@@ -51,13 +51,13 @@ Plug 'NvChad/nvim-base16.lua'
 
 
 " @Editor
-" generate your markdown toc
-" command: Gen...
+" generate your markdown toc command: Gen...
 Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
 " preview your markdown in your browser
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'markdown' }
 " better markdown for your table
 Plug 'dhruvasagar/vim-table-mode', { 'for' : ['markdown', 'norg'] }
+" org mode for nvim
 Plug 'nvim-neorg/neorg', { 'for': 'norg' }
 
 
@@ -80,20 +80,18 @@ Plug 'windwp/nvim-autopairs'
 Plug 'thinca/vim-quickrun', { 'on': 'QuickRun', 'frozen': 1 }
 " save session
 Plug 'folke/persistence.nvim'
+" better for long code block
 Plug 'lukas-reineke/indent-blankline.nvim'
-"Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
-"Plug 'nvim-telescope/telescope-fzy-native.nvim'
-"Plug 'lervag/vimtex'
 " for kitty syntax, need set it's filetype by hand
 Plug 'fladson/vim-kitty'
-
-
-
 
 " @Deprecated
 " select chunk txt
 "Plug 'gcmt/wildfire.vim', { 'frozen': 1 }
 
+"Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+"Plug 'nvim-telescope/telescope-fzy-native.nvim'
+"Plug 'lervag/vimtex'
 " use sudo to manage your files
 "Plug 'oeyoews/suda.vim', { 'frozen': 1 }
 
