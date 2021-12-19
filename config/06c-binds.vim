@@ -61,3 +61,4 @@ nnoremap <silent> <space>tn <cmd>setlocal invnumber<cr>
 " @feature
 " Y: to yank current cursor to end of the line
 " C: to cut current cursor to end of the line
+

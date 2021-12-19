@@ -16,4 +16,3 @@ inoreabbrev <expr> __
           \ <SID>isAtStartOfLine('__') ?
           \ '<c-o>:silent! TableModeDisable<cr>' : '__'
 
-command! -nargs=?  -complete=color Theme  <args>

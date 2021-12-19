@@ -99,3 +99,9 @@ neorg_callbacks.on_event("core.keybinds.events.enable_keybinds", function(_, key
 	}, { silent = true, noremap = true })
 
 end)
+
+vim.cmd[[
+" add toggle for it, temp method is u to undo it
+"autocmd BufNewFile,BufRead *.norg nnoremap <space>nn I+<esc>A+<esc>
+autocmd FileType norg nnoremap <space>cn mzI+<esc>A+<esc>`z
+]]
