@@ -124,8 +124,8 @@ neorg.setup({
     ["core.norg.dirman"] = { -- Manage your directories with Neorg
     config = {
       workspaces = {
-        my_workspace = "~/dotfiles/notes/todo/",
-        temp = "/tmp/neorg"
+        my_workspace = "/tmp/neorg",
+        gtd = "$HOME/dotfiles/notes/todo"
       },
       -- Automatically detect whenever we have entered a subdirectory of a workspace
       autodetect = true,
@@ -134,6 +134,12 @@ neorg.setup({
     },
 
   },
+
+  ["core.gtd.base"] = {
+    config = { workspace = "gtd" }
+  },
+
+  ["core.ui"] = {},
 
 },
 })
@@ -201,4 +207,6 @@ neorg_callbacks.on_event("core.keybinds.events.enable_keybinds", function(_, key
 
 end)
 
-vim.cmd[[ ]]
+--vim.cmd[[ ]]
+-- Neorgstart silent=true
+

@@ -1,3 +1,4 @@
+help-tags	tags	1
 test.txt	test.txt	/*test.txt*
 vanilla	vanilla.txt	/*vanilla*
 vanilla-documentation	vanilla.txt	/*vanilla-documentation*

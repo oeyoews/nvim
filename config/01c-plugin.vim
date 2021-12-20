@@ -36,7 +36,6 @@ Plug 'nvim-lua/plenary.nvim'
 " icons for you ui
 Plug 'kyazdani42/nvim-web-devicons'
 
-
 " @UI
 " better highlight
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
@@ -143,4 +142,5 @@ Plug 'folke/zen-mode.nvim'
 "TODO
 " add open browser
 "Plug 'Pocco81/TrueZen.nvim'
+Plug 'tyru/open-browser.vim'
 call plug#end()
