@@ -62,3 +62,7 @@ nnoremap <silent> <space>tn <cmd>setlocal invnumber<cr>
 " Y: to yank current cursor to end of the line
 " C: to cut current cursor to end of the line
 
+" test
+" TODO:
+"autocmd FileType norg
+"vnoremap <space>nn mzI+<esc>A+<esc>`z

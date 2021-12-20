@@ -116,7 +116,7 @@ Plug 'lewis6991/spellsitter.nvim'
 "Plug 'henriquehbr/nvim-startup.lua'
 "Plug 'alec-gibson/nvim-tetris'
 "Plug 'oeyoews/nvim-deus'
-"Plug 'oeyoews/tokyonight.nvim'
+Plug 'folke/tokyonight.nvim'
 "Plug 'kristijanhusak/orgmode.nvim'
 "Plug 'akinsho/org-bullets.nvim'
 "Plug 'xiyaowong/nvim-transparent'
@@ -139,4 +139,7 @@ Plug 'lewis6991/spellsitter.nvim'
 "Plug 'kevinhwang91/rnvimr'
 Plug 'folke/zen-mode.nvim'
 "Plug 'plasticboy/vim-markdown'
+"TODO
+" add open browser
+"Plug 'Pocco81/TrueZen.nvim'
 call plug#end()

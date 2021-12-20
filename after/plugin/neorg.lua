@@ -26,14 +26,115 @@ neorg.setup({
       }
     },
     ["core.defaults"] = {}, -- Load all the default modules
-    ["core.norg.concealer"] = {}, -- Allows for use of icons
+    -- have bug: will show extra stars, this is not a really bug
+    ["core.norg.concealer"] = {
+      --config = {
+        --icons = {
+          --todo = {
+            --enabled = true,
+
+            --done = {
+              --enabled = true,
+              --icon = "",
+              --pattern = "^(%s*%-%s+%[%s*)x%s*%]%s+",
+              --whitespace_index = 1,
+              --highlight = "NeorgTodoItemDoneMark",
+              --padding_before = 0,
+            --},
+
+            --pending = {
+              --enabled = true,
+              --icon = "",
+              --pattern = "^(%s*%-%s+%[%s*)%*%s*%]%s+",
+              --whitespace_index = 1,
+              --highlight = "NeorgTodoItemPendingMark",
+              --padding_before = 0,
+            --},
+
+            --undone = {
+              --enabled = true,
+              --icon = "×",
+              --pattern = "^(%s*%-%s+%[)%s+]%s+",
+              --whitespace_index = 1,
+              --highlight = "TSComment",
+              --padding_before = 0,
+            --}
+          --},
+
+          --quote = {
+            --enabled = true,
+            --icon = "∣",
+            --pattern = "^(%s*)>%s+",
+            --whitespace_index = 1,
+            --highlight = "NeorgQuote",
+            --padding_before = 0,
+          --},
+
+          --heading = {
+            --enabled = true,
+
+            --level_1 = {
+              --enabled = true,
+              --icon = "◉",
+              --pattern = "^(%s*)%*%s+",
+              --whitespace_index = 1,
+              --highlight = "NeorgHeading1",
+              --padding_before = 0,
+            --},
+
+            --level_2 = {
+              --enabled = true,
+              --icon = "○",
+              --pattern = "^(%s*)%*%*%s+",
+              --whitespace_index = 1,
+              --highlight = "NeorgHeading2",
+              --padding_before = 1,
+            --},
+
+            --level_3 = {
+              --enabled = true,
+              --icon = "✿",
+              --pattern = "^(%s*)%*%*%*%s+",
+              --whitespace_index = 1,
+              --highlight = "NeorgHeading3",
+              --padding_before = 2,
+            --},
+
+            --level_4 = {
+              --enabled = true,
+              --icon = "•",
+              --pattern = "^(%s*)%*%*%*%*%s+",
+              --whitespace_index = 1,
+              --highlight = "NeorgHeading4",
+              --padding_before = 3,
+            --},
+          --},
+
+          --marker = {
+            --enabled = true,
+            --icon = "",
+            --pattern = "^(%s*)%|%s+",
+            --whitespace_index = 1,
+            --highlight = "NeorgMarker",
+            --padding_before = 0,
+          --},
+        --},
+      --}
+    }, -- Allows for use of icons
     ["core.norg.dirman"] = { -- Manage your directories with Neorg
     config = {
       workspaces = {
-        my_workspace = "~/dotfiles/notes/neorg/"
-      }
-    }
+        my_workspace = "~/dotfiles/notes/neorg/",
+        temp = "/tmp/"
+      },
+      -- Automatically detect whenever we have entered a subdirectory of a workspace
+      autodetect = true,
+      -- Automatically change the directory to the root of the workspace every time
+      autochdir = true,
+    },
+
   },
+
 },
 })
 
@@ -41,27 +142,27 @@ neorg.setup({
 local parser_configs = require('nvim-treesitter.parsers').get_parser_configs()
 
 parser_configs.norg = {
-    install_info = {
-        url = "https://github.com/nvim-neorg/tree-sitter-norg",
-        files = { "src/parser.c", "src/scanner.cc" },
-        branch = "main"
-    },
+  install_info = {
+    url = "https://github.com/nvim-neorg/tree-sitter-norg",
+    files = { "src/parser.c", "src/scanner.cc" },
+    branch = "main"
+  },
 }
 
 parser_configs.norg_meta = {
-    install_info = {
-        url = "https://github.com/nvim-neorg/tree-sitter-norg-meta",
-        files = { "src/parser.c" },
-        branch = "main"
-    },
+  install_info = {
+    url = "https://github.com/nvim-neorg/tree-sitter-norg-meta",
+    files = { "src/parser.c" },
+    branch = "main"
+  },
 }
 
 parser_configs.norg_table = {
-    install_info = {
-        url = "https://github.com/nvim-neorg/tree-sitter-norg-table",
-        files = { "src/parser.c" },
-        branch = "main"
-    },
+  install_info = {
+    url = "https://github.com/nvim-neorg/tree-sitter-norg-table",
+    files = { "src/parser.c" },
+    branch = "main"
+  },
 }
 
 --[[
@@ -84,24 +185,20 @@ local neorg_callbacks = require('neorg.callbacks')
 -- needs to reevaluate all the bound keys is invoked
 neorg_callbacks.on_event("core.keybinds.events.enable_keybinds", function(_, keybinds)
 
-	-- Map all the below keybinds only when the "norg" mode is active
-	keybinds.map_event_to_mode("norg", {
-		n = { -- Bind keys in normal mode
+  -- Map all the below keybinds only when the "norg" mode is active
+  keybinds.map_event_to_mode("norg", {
+    n = { -- Bind keys in normal mode
 
-			-- Keys for managing TODO items and setting their states
-      -- is confilcted to jump next new table
-			--{ "gtd", "core.norg.qol.todo_items.todo.task_done" },
-			--{ "gtu", "core.norg.qol.todo_items.todo.task_undone" },
-			--{ "gtp", "core.norg.qol.todo_items.todo.task_pending" },
-			{ "<space>tn", "core.norg.qol.todo_items.todo.task_cycle" }
+    -- Keys for managing TODO items and setting their states
+    -- is confilcted to jump next new table
+    --{ "gtd", "core.norg.qol.todo_items.todo.task_done" },
+    --{ "gtu", "core.norg.qol.todo_items.todo.task_undone" },
+    --{ "gtp", "core.norg.qol.todo_items.todo.task_pending" },
+    { "<space>tn", "core.norg.qol.todo_items.todo.task_cycle" }
 
-		},
-	}, { silent = true, noremap = true })
+  },
+}, { silent = true, noremap = true })
 
 end)
 
-vim.cmd[[
-" add toggle for it, temp method is u to undo it
-"autocmd BufNewFile,BufRead *.norg nnoremap <space>nn I+<esc>A+<esc>
-autocmd FileType norg nnoremap <space>cn mzI+<esc>A+<esc>`z
-]]
+vim.cmd[[ ]]

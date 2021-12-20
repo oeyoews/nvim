@@ -13,3 +13,12 @@ autocmd! FileType markdown nnoremap <space>fmm :MarkdownPreviewToggle<CR>
 "exec "nohlsearch"
 
 command! -nargs=?  -complete=color Theme colorscheme <args>
+
+
+" add toggle for it, temp method is u to undo it
+"autocmd! BufNewFile,BufRead *.norg nnoremap <space>nn I+<esc>A+<esc>
+" TODO: have bug how to exclude for other filetypes"
+"au<c-g>u<Esc>[s1z=`]a<c-g>u
+"<c-g>u<Esc>[s1z=`]a<c-g>u
+" TODO:
+"autocmd! FileType norg nnoremap <space>nn <c-g>mzI+<esc>A+<esc>`z<c-g>

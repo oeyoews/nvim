@@ -6,3 +6,4 @@ let g:tex_conceal='abdmg'
 
 " fix latex filetype(plaintex)
 autocmd BufRead,BufNewFile *.tex set filetype=tex
+

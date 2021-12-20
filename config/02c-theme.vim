@@ -1,8 +1,10 @@
-"colorscheme tokyonight
+colorscheme tokyonight
 
 lua << EOF
+--[[
 local base16 = require 'base16'
 base16(base16.themes("tokyonight"), true)
+--]]
 EOF
 
 " transparent background and float background
