@@ -57,8 +57,11 @@ Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'markdown' }
 " better markdown for your table
 Plug 'dhruvasagar/vim-table-mode', { 'for' : ['markdown', 'norg'] }
+" fix some error and color
+Plug 'plasticboy/vim-markdown'
 " org mode for nvim
 Plug 'nvim-neorg/neorg', { 'for': 'norg' }
+Plug 'lervag/vimtex'
 
 
 " @Tools
@@ -91,7 +94,6 @@ Plug 'fladson/vim-kitty'
 
 "Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 "Plug 'nvim-telescope/telescope-fzy-native.nvim'
-"Plug 'lervag/vimtex'
 " use sudo to manage your files
 "Plug 'oeyoews/suda.vim', { 'frozen': 1 }
 
@@ -138,7 +140,6 @@ Plug 'folke/tokyonight.nvim'
 " another ranger
 "Plug 'kevinhwang91/rnvimr'
 Plug 'folke/zen-mode.nvim'
-"Plug 'plasticboy/vim-markdown'
 "TODO
 " add open browser
 "Plug 'Pocco81/TrueZen.nvim'

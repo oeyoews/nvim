@@ -124,8 +124,8 @@ neorg.setup({
     ["core.norg.dirman"] = { -- Manage your directories with Neorg
     config = {
       workspaces = {
-        my_workspace = "~/dotfiles/notes/neorg/",
-        temp = "/tmp/"
+        my_workspace = "~/dotfiles/notes/todo/",
+        temp = "/tmp/neorg"
       },
       -- Automatically detect whenever we have entered a subdirectory of a workspace
       autodetect = true,

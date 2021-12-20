@@ -10,18 +10,21 @@ tree_configs.setup {
     highlight_current_scope = { enable =false},
     -- highlight define and refrence
     highlight_definitions = { enable = true},
-    },
+  },
 
+  indent = {
+    enable = false
+  },
   -- install some different parsers automatically
   ensure_installed = {
     "c",
     "python",
-    "java",
+    --"java",
     "html",
     "css",
     "bash",
     "toml",
-    "vue",
+    --"vue",
     "json",
     "lua",
     "vim",
@@ -32,8 +35,7 @@ tree_configs.setup {
     --"org",
     "norg", "norg_meta", "norg_table",
     "comment",
-    "go",
-    "gomod",
+    --"go", "gomod",
     },
 
   highlight = { enable = true,

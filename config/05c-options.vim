@@ -1,4 +1,7 @@
 "language messages en_US.utf8 " have bug
+"set cindent
+set smartindent
+set conceallevel=2
 set mouse+=a
 set ignorecase
 set termguicolors
@@ -30,7 +33,6 @@ set confirm
 "set scrolloff=3
 set updatetime=200	" ??
 set foldmethod=marker
-set conceallevel=0
 set timeoutlen=1000
 set expandtab
 set shiftwidth=2
