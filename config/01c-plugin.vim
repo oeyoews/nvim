@@ -105,7 +105,7 @@ Plug 'fladson/vim-kitty'
 Plug 'lewis6991/spellsitter.nvim'
 
 "Plug 'famiu/feline.nvim'  " to setup 04-statusline
-"Plug 'folke/todo-comments.nvim'
+Plug 'folke/todo-comments.nvim'
 "Plug 'yamatsum/nvim-cursorline'
 "Plug 'oeyoews/nvim-cursorword'
 "Plug 'github/copilot.vim'
