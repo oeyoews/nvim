@@ -171,17 +171,10 @@ parser_configs.norg_table = {
   },
 }
 
---[[
-
-vim.cmd [[
-nnoremap <silent> <leader>nn <cmd>NeorgStart<cr>
-]]
---]]
-
 
 -- This sets the leader for all Neorg keybinds. It is separate from the regular <Leader>,
 -- And allows you to shove every Neorg keybind under one "umbrella".
-local neorg_leader = "<Leader>" -- You may also want to set this to <Leader>o for "organization"
+local neorg_leader = "<space>o" -- You may also want to set this to <Leader>o for "organization"
 
 -- Require the user callbacks module, which allows us to tap into the core of Neorg
 local neorg_callbacks = require('neorg.callbacks')
@@ -197,10 +190,14 @@ neorg_callbacks.on_event("core.keybinds.events.enable_keybinds", function(_, key
 
     -- Keys for managing TODO items and setting their states
     -- is confilcted to jump next new table
-    --{ "gtd", "core.norg.qol.todo_items.todo.task_done" },
-    --{ "gtu", "core.norg.qol.todo_items.todo.task_undone" },
-    --{ "gtp", "core.norg.qol.todo_items.todo.task_pending" },
-    { "<space>tn", "core.norg.qol.todo_items.todo.task_cycle" }
+    { "gtd", "core.norg.qol.todo_items.todo.task_done" },
+    { "gtu", "core.norg.qol.todo_items.todo.task_undone" },
+    { "gtp", "core.norg.qol.todo_items.todo.task_pending" },
+    { "gth", "core.norg.qol.todo_items.todo.task_on_hold" },
+    { "gtc", "core.norg.qol.todo_items.todo.task_cancelled" },
+    { "gtr", "core.norg.qol.todo_items.todo.task_recurring" },
+    { "gti", "core.norg.qol.todo_items.todo.task_important" },
+    { "<space>tn", "core.norg.qol.todo_items.todo.task_cycle" },
 
   },
 }, { silent = true, noremap = true })
@@ -210,3 +207,7 @@ end)
 --vim.cmd[[ ]]
 -- Neorgstart silent=true
 
+-- Question: is confilct to binds.vim, but is work perfectly, it's wired
+vim.cmd[[
+nnoremap <space>nn <cmd>NeorgStart<cr>
+]]

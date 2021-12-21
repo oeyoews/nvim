@@ -1,11 +1,11 @@
-" BUG: last highlight is not correct
+" BUG: last line highlight is not correct
 "
 "let g:mapleader = " "
 let g:mapleader = "\<Space>"
 
 " creat blankline nto formatoptions
-nnoremap <silent> <leader>o :set paste<cr>o<esc>:set nopaste<cr>
-nnoremap <silent> <leader>O :set paste<cr>O<esc>:set nopaste<cr>
+"nnoremap <silent> <leader>o :set paste<cr>o<esc>:set nopaste<cr>
+"nnoremap <silent> <leader>O :set paste<cr>O<esc>:set nopaste<cr>
 
 " load current file
 nnoremap <leader>so <cmd>so % <bar> echo "Finished refresh current file."<cr>
@@ -49,14 +49,14 @@ nnoremap <Leader>vu <Cmd>PlugUpdate<CR>
 
 " clear or highlight search words
 "nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>
-nnoremap <silent> <esc> :noh<return><C-L><esc>
 "nnoremap <silent> <esc> :set invhlsearch<return><C-L><esc>
-
 " in neovim 0.6, you can use Ctrl + l to clear it
 " @deprecated
 "nnoremap <space>bc <cmd>set invhlsearch<cr>
+nnoremap <silent> <esc> :noh<return><C-L><esc>
 
-nnoremap <silent> <space>tn <cmd>setlocal invnumber<cr>
+" is same to neorg start, but is no effect
+"nnoremap <silent> <space>tn <cmd>setlocal invnumber<cr>
 
 " @feature
 " Y: to yank current cursor to end of the line

@@ -1,5 +1,6 @@
 call plug#begin('$HOME/.local/share/nvim/nvim_bundle')
 
+" TODO: setup install plugin automatically at first(data: spacevim)
 " @Improve
 " improve Startup time
 Plug 'nathom/filetype.nvim'
