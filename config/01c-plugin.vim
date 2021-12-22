@@ -1,4 +1,7 @@
+" maybe should use command PlugClean to fix url confilct
+" let g:plug_url_format = 'https://hub.fastgit.org/%s.git'
 call plug#begin('$HOME/.local/share/nvim/nvim_bundle')
+
 
 " TODO: setup install plugin automatically at first(data: spacevim)
 " @Improve
@@ -22,6 +25,7 @@ Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-emoji'
 Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-latex-symbols'
 "Plug 'hrsh7th/cmp-look'
 "Plug 'f3fora/cmp-spell'
 " if you want not use more tip, maybe you can comment it

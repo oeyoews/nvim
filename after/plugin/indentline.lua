@@ -9,7 +9,7 @@ end
 indent_blankline.setup({
 
   -- only show current
-  char = "",
+  --char = "",
 
   buftype_exclude = {"terminal"},
   space_char_blankline = " ",

@@ -44,6 +44,7 @@ mapping = {
     { name = 'path' },
     { name = 'nvim-lua' },
     { name = 'neorg' },
+     { name = "latex_symbols" },
     --{ name = 'spell' },
     { name = 'emoji', insert = true },
     --{ name = 'look' },

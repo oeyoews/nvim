@@ -124,8 +124,8 @@ neorg.setup({
     ["core.norg.dirman"] = { -- Manage your directories with Neorg
     config = {
       workspaces = {
-        my_workspace = "/tmp/neorg",
-        gtd = "$HOME/dotfiles/notes/todo"
+        tmp = "/tmp/neorg",
+        gtd = "$HOME/dotfiles/notes/"
       },
       -- Automatically detect whenever we have entered a subdirectory of a workspace
       autodetect = true,
@@ -136,10 +136,18 @@ neorg.setup({
   },
 
   ["core.gtd.base"] = {
-    config = { workspace = "gtd" }
+    config = {
+      workspace = "gtd",
+      default_lists = {
+        inbox = "inbox.norg",
+        someday = "someday.norg"
+      }
+    }
   },
 
   ["core.ui"] = {},
+  ["core.gtd.ui"] = {},
+  ["core.gtd.queries"] = {},
 
 },
 })
