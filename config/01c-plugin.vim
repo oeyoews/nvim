@@ -1,5 +1,6 @@
 " maybe should use command PlugClean to fix url confilct
-" let g:plug_url_format = 'https://hub.fastgit.org/%s.git'
+" OPENMIRROR: let g:plug_url_format = 'https://hub.fastgit.org/%s.git'
+" NOTE: don't put it in current directory like .config/nvim/xxx, so that to change another branch
 call plug#begin('$HOME/.local/share/nvim/nvim_bundle')
 
 
@@ -64,7 +65,7 @@ Plug 'dhruvasagar/vim-table-mode', { 'for' : ['markdown', 'norg'] }
 " fix some error and color
 Plug 'plasticboy/vim-markdown'
 " org mode for nvim
-Plug 'nvim-neorg/neorg', { 'for': 'norg' }
+Plug 'nvim-neorg/neorg', { 'for': 'norg', 'do': ':TSUpdate'  }
 Plug 'lervag/vimtex'
 
 
