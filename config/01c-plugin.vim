@@ -65,7 +65,8 @@ Plug 'dhruvasagar/vim-table-mode', { 'for' : ['markdown', 'norg'] }
 " fix some error and color
 Plug 'plasticboy/vim-markdown'
 " org mode for nvim
-Plug 'nvim-neorg/neorg', { 'for': 'norg', 'do': ':TSUpdate'  }
+"Plug 'nvim-neorg/neorg', { 'for': 'norg', 'do': ':TSUpdate'  }
+Plug 'nvim-neorg/neorg', { 'for': 'norg', }
 Plug 'lervag/vimtex'
 
 
