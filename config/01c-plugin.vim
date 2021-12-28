@@ -52,7 +52,7 @@ Plug 'akinsho/bufferline.nvim'
 " color
 Plug 'norcalli/nvim-colorizer.lua'
 "Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
-Plug 'NvChad/nvim-base16.lua'
+"Plug 'NvChad/nvim-base16.lua'
 
 
 " @Editor
@@ -93,7 +93,11 @@ Plug 'folke/persistence.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 " for kitty syntax, need set it's filetype by hand
 Plug 'fladson/vim-kitty'
+" spell for nvim-tree sitter
+Plug 'lewis6991/spellsitter.nvim'
 
+Plug 'folke/todo-comments.nvim'
+Plug 'folke/tokyonight.nvim'
 " @Deprecated
 " select chunk txt
 "Plug 'gcmt/wildfire.vim', { 'frozen': 1 }
@@ -107,11 +111,8 @@ Plug 'fladson/vim-kitty'
 "Plug 'oeyoews/beacon.nvim', { 'frozen': 1 }
 "Plug 'edluffy/specs.nvim'
 
-" spell for nvim-tree sitter
-Plug 'lewis6991/spellsitter.nvim'
 
 "Plug 'famiu/feline.nvim'  " to setup 04-statusline
-Plug 'folke/todo-comments.nvim'
 "Plug 'yamatsum/nvim-cursorline'
 "Plug 'oeyoews/nvim-cursorword'
 "Plug 'github/copilot.vim'
@@ -124,7 +125,6 @@ Plug 'folke/todo-comments.nvim'
 "Plug 'henriquehbr/nvim-startup.lua'
 "Plug 'alec-gibson/nvim-tetris'
 "Plug 'oeyoews/nvim-deus'
-Plug 'folke/tokyonight.nvim'
 "Plug 'kristijanhusak/orgmode.nvim'
 "Plug 'akinsho/org-bullets.nvim'
 "Plug 'xiyaowong/nvim-transparent'
@@ -146,7 +146,7 @@ Plug 'folke/tokyonight.nvim'
 " another ranger
 "Plug 'kevinhwang91/rnvimr'
 Plug 'folke/zen-mode.nvim'
-"TODO
+"TODO:
 " add open browser
 "Plug 'Pocco81/TrueZen.nvim'
 Plug 'tyru/open-browser.vim'

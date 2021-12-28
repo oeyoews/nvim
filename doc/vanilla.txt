@@ -131,5 +131,7 @@ NOTES - cd .../docs and :helptags . to generate a tags
     ctrl + a/x to increase or decrease number current number
     helptags ++t ./
 
+    tips: nvim +"Man ls"
+
 vim:tw=78:ts=8:noet:ft=help:norl:ma:nu:
 

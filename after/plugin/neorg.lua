@@ -125,7 +125,8 @@ neorg.setup({
     config = {
       workspaces = {
         tmp = "/tmp/neorg",
-        gtd = "$HOME/dotfiles/notes/"
+        gtd = "$HOME/dotfiles/notes/",
+        --journal = "/journal/"
       },
       -- Automatically detect whenever we have entered a subdirectory of a workspace
       autodetect = true,
@@ -145,9 +146,11 @@ neorg.setup({
     }
   },
 
+  ["core.norg.journal"] = {},
   ["core.ui"] = {},
   ["core.gtd.ui"] = {},
   ["core.gtd.queries"] = {},
+  ["core.presenter"] = {},
 
 },
 })
@@ -213,7 +216,8 @@ neorg_callbacks.on_event("core.keybinds.events.enable_keybinds", function(_, key
 end)
 
 --vim.cmd[[ ]]
--- Neorgstart silent=true
+-- tips
+-- 1. Neorgstart silent=true
 
 -- Question: is confilct to binds.vim, but is work perfectly, it's wired
 vim.cmd[[
