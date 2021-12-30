@@ -126,7 +126,6 @@ neorg.setup({
       workspaces = {
         tmp = "/tmp/neorg",
         gtd = "$HOME/dotfiles/notes/",
-        --journal = "/journal/"
       },
       -- Automatically detect whenever we have entered a subdirectory of a workspace
       autodetect = true,
@@ -146,6 +145,7 @@ neorg.setup({
     }
   },
 
+  -- TODO: to config folder, not use default to avoid some accident
   ["core.norg.journal"] = {},
   ["core.ui"] = {},
   ["core.gtd.ui"] = {},
