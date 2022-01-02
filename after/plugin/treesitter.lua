@@ -35,7 +35,8 @@ tree_configs.setup {
     --"org",
     "norg", "norg_meta", "norg_table",
     "comment",
-    --"go", "gomod",
+    "go",
+    --"gomod",
     },
 
   highlight = { enable = true,
