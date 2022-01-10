@@ -148,7 +148,7 @@ Plug 'folke/tokyonight.nvim'
 Plug 'folke/zen-mode.nvim'
 "TODO:
 " add open browser
-Plug 'sukima/vim-tiddlywiki'
+"Plug 'sukima/vim-tiddlywiki'
 "Plug 'Pocco81/TrueZen.nvim'
 Plug 'tyru/open-browser.vim'
 call plug#end()
