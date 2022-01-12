@@ -38,7 +38,7 @@ set expandtab
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
-set list
+"set list
 set listchars=tab:→\ ,eol:↵,trail:▫,extends:↷,precedes:↶
 set whichwrap+=<,>,[,]
 set splitright
