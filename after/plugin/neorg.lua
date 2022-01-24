@@ -156,6 +156,7 @@ neorg.setup({
 },
 })
 
+--[[
 --- add three parser
 local parser_configs = require('nvim-treesitter.parsers').get_parser_configs()
 
@@ -182,7 +183,7 @@ parser_configs.norg_table = {
     branch = "main"
   },
 }
-
+--]]
 
 -- This sets the leader for all Neorg keybinds. It is separate from the regular <Leader>,
 -- And allows you to shove every Neorg keybind under one "umbrella".
