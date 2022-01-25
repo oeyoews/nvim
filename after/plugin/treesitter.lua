@@ -37,6 +37,7 @@ tree_configs.setup {
     "comment",
     "go",
     --"gomod",
+    --"markdown",
     },
 
   highlight = { enable = true,

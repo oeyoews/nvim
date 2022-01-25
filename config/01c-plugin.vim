@@ -117,7 +117,8 @@ Plug 'folke/tokyonight.nvim'
 "Plug 'oeyoews/nvim-cursorword'
 "Plug 'github/copilot.vim'
 "Plug 'kyazdani42/nvim-tree.lua'
-"Plug 'lewis6991/gitsigns.nvim'
+Plug 'lewis6991/gitsigns.nvim'
+"
 "TODO:
 "Plug 'williamboman/nvim-lsp-installer'
 "Plug 'mfussenegger/nvim-jdtls'
