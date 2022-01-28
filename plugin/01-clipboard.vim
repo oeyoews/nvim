@@ -1,6 +1,7 @@
+" BUG: still have some bugs
 " copy and yank with system
 " selsct some text, copy it ro system clipboard
-vnoremap <space>yy "*y
+vnoremap <space>yy "+Y
 " in normal mode, like Y to copy current line,
 " but copy it to system clipboard
 "
@@ -12,12 +13,3 @@ noremap <space>pp "*p
 "noremap <space>P "*P
 
 nnoremap <silent> <space>yp :<C-U>let @+=expand('%:p') <bar>  echom "Finished copy fpath."<cr>
-
-"deom "finish to copy your system clipboard"
-"01-clipboard.vimdeom "finish to copy your system clipboard"
-" copy and yank with system
-"deom "finish to copy your system clipboard"
-"deom "finish to copy your system clipboard"
-"
-"deom "finish to copy your system clipboard"
-"demo
