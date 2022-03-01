@@ -1,3 +1,5 @@
+--[=[
+
 local ok, neorg = pcall(require, "neorg")
 
 if not ok then
@@ -225,3 +227,5 @@ end)
 vim.cmd[[
 nnoremap <space>nn <cmd>NeorgStart<cr>
 ]]
+
+--]=]
