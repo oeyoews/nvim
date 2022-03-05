@@ -12,3 +12,7 @@
 
   <!--TODO:-->
   <!--- vim -c PlugInstall-->
+
+## TODO
+
+- [ ] learn The lighgtspeed plugins usage
