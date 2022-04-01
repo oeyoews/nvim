@@ -90,7 +90,7 @@ Plug 'thinca/vim-quickrun', { 'on': 'QuickRun', 'frozen': 1 }
 " save session
 Plug 'folke/persistence.nvim'
 " better for long code block
-"Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim'
 " for kitty syntax, need set it's filetype by hand
 Plug 'fladson/vim-kitty'
 " spell for nvim-tree sitter

@@ -44,7 +44,7 @@ set whichwrap+=<,>,[,]
 set splitright
 set splitbelow
 set cursorline
-set nonumber
+set number
 set guifont=Fira\ Code\ 14
 "set t_ti= t_te=
 "set shortmess=atI  " disable show welcome and no clear this ui to quit vim
