@@ -35,7 +35,7 @@ mapping = {
     --neorg = "",
     })}), },
 
- documentation = { border = border, },
+documentation = { border = border, },
 
   sources = {
     { name = 'nvim_lsp' },

@@ -20,7 +20,8 @@ Plug 'SirVer/ultisnips'
 Plug 'oeyoews/vim-snippets'
 " configure your lsp
 Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/nvim-cmp'
+"TODO: fix this border is nothing
+Plug 'hrsh7th/nvim-cmp', { 'frozen': 1, 'commit': 'fae808a2' }
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 Plug 'hrsh7th/cmp-buffer'
