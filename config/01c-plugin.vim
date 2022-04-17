@@ -64,7 +64,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'm
 " better markdown for your table
 Plug 'dhruvasagar/vim-table-mode', { 'for' : ['markdown', 'norg'] }
 " fix some error and color
-Plug 'plasticboy/vim-markdown'
+"Plug 'plasticboy/vim-markdown'
 " org mode for nvim
 "Plug 'nvim-neorg/neorg', { 'for': 'norg', 'do': ':TSUpdate'  }
 "Plug 'nvim-neorg/neorg', { 'for': 'norg', }
