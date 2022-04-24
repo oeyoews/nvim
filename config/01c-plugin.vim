@@ -58,6 +58,7 @@ Plug 'norcalli/nvim-colorizer.lua'
 
 " @Editor
 " generate your markdown toc command: Gen...
+" bug: not support zh-cn
 Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
 " preview your markdown in your browser
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'markdown' }
