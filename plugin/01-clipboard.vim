@@ -6,7 +6,7 @@ vnoremap <space>yy "+y
 " but copy it to system clipboard
 "
 " == yank
-nnoremap <space>yy "*Y <cmd> echom "finish to copy your system clipboard"<cr>
+nnoremap <space>yy "*Y <cmd> echom "🎉 Finish to copy your system clipboard"<cr>
 
 " copy
 noremap <space>pp "*p

@@ -4,6 +4,7 @@
 # w: after word, can trigger(have a whiterspace with word)
 # i: in word, can be trigger, ((no whiterspace with word)
 # b: just at the beginning of line will be trigger
+# A: automatically
 snippet shell "#!/usr/....(self:all)" b
 #!/usr/bin/env ${1:bash}
 endsnippet
@@ -54,6 +55,6 @@ non proident, sunt in culpa qui officia deserunt mollit anim id est
 laborum.
 endsnippet
 
-snippet html "html comment"
+snippet htmlc "html comment" bA
 <!-- $1 -->
 endsnippet
