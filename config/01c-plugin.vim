@@ -28,12 +28,7 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-emoji'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-latex-symbols'
-"Plug 'hrsh7th/cmp-look'
-"Plug 'f3fora/cmp-spell'
-" if you want not use more tip, maybe you can comment it
-"Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/cmp-nvim-lua'
-" config lua lsp
 Plug 'folke/lua-dev.nvim'
 Plug 'tami5/lspsaga.nvim'
 
