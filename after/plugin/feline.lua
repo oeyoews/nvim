@@ -349,8 +349,13 @@ end
 local lsp = require 'feline.providers.lsp'
 local vi_mode_utils = require 'feline.providers.vi_mode'
 
+--local lsp_get_diag = function(str)
+  --local count = vim.lsp.diagnostic.get_count(0, str)
+  --return (count > 0) and ' '..count..' ' or ''
+--end
+-- fix deprecated
 local lsp_get_diag = function(str)
-  local count = vim.lsp.diagnostic.get_count(0, str)
+  local count = vim.diagnostic.get(0, str)
   return (count > 0) and ' '..count..' ' or ''
 end
 
@@ -582,6 +587,8 @@ table.insert(components.active[3], comps.vi_mode.right)
 
 
 -- TreeSitter
+-- TODO: have some bug
+--[[
  local ts_utils = require("nvim-treesitter.ts_utils")
  local ts_parsers = require("nvim-treesitter.parsers")
  local ts_queries = require("nvim-treesitter.query")
@@ -596,6 +603,7 @@ table.insert(components.active[3], comps.vi_mode.right)
     return ok and ts_parsers.has_parser()
   end
 })
+--]]
 
 -- require'feline'.setup {}
 require'feline'.setup {

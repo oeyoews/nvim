@@ -18,5 +18,7 @@
 - [ ] learn The lighgtspeed plugins usage
 - [ ] fix the zh bug(maybe also is terminal)
 
+* config dashboard
 - this emjoi shadow bug, maybe is kitty terminal(switch to wezterm compare)
+- some error tip from feline(active)
 
