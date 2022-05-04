@@ -71,7 +71,7 @@ Plug 'lervag/vimtex'
 " it's rich
 Plug 'nvim-telescope/telescope.nvim'
 " fast jump you want jump
-Plug 'ggandor/lightspeed.nvim'
+"Plug 'ggandor/lightspeed.nvim'
 " test your Startup Time
 Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1}
 " Chinese vim help
@@ -109,7 +109,7 @@ Plug 'folke/tokyonight.nvim'
 "Plug 'edluffy/specs.nvim'
 
 
-Plug 'famiu/feline.nvim'  " to setup 04-statusline
+"Plug 'famiu/feline.nvim'  " to setup 04-statusline
 "Plug 'yamatsum/nvim-cursorline'
 "Plug 'oeyoews/nvim-cursorword'
 "Plug 'github/copilot.vim'
