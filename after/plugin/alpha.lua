@@ -141,12 +141,13 @@ end
 local function header_color()
   local lines = {}
   for i, line_chars in pairs(header_chars()) do
-    local hi = "StartLogo" .. i
+    local hi = "Search" .. i
     local line = {
       type = "text",
       val = line_chars,
       opts = {
-        hl = hi,
+        hl = "SpecialComment",
+        --hl = hi,
         shrink_margin = false,
         position = "center",
       },
@@ -215,4 +216,14 @@ local opts = {
     },
 }
 
+
 alpha.setup(opts)
+--[[
+dashboard.section.footer.val = {
+  "                       ",
+  "I Dont want to be Horny",
+  " I Just wanna be happy ",
+  "          🚀           ",
+  "                       ",
+}
+--]]
