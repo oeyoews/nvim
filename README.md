@@ -25,6 +25,7 @@
 ## TODO
 
 - [ ] learn The lighgtspeed plugins usage
+* add shortkeys in vim to open browser html
 - [ ] fix the zh bug(maybe also is terminal)
 - add random banner and random color startup
   * https://github.com/goolord/alpha-nvim/discussions/16#discussioncomment-2386902
