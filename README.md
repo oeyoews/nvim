@@ -16,3 +16,7 @@
 ## TODO
 
 - [ ] learn The lighgtspeed plugins usage
+- [ ] fix the zh bug(maybe also is terminal)
+
+- this emjoi shadow bug, maybe is kitty terminal(switch to wezterm compare)
+

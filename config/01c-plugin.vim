@@ -109,7 +109,7 @@ Plug 'folke/tokyonight.nvim'
 "Plug 'edluffy/specs.nvim'
 
 
-"Plug 'famiu/feline.nvim'  " to setup 04-statusline
+Plug 'famiu/feline.nvim'  " to setup 04-statusline
 "Plug 'yamatsum/nvim-cursorline'
 "Plug 'oeyoews/nvim-cursorword'
 "Plug 'github/copilot.vim'
@@ -149,4 +149,5 @@ Plug 'folke/zen-mode.nvim'
 "Plug 'sukima/vim-tiddlywiki'
 "Plug 'Pocco81/TrueZen.nvim'
 Plug 'tyru/open-browser.vim'
+Plug 'goolord/alpha-nvim'
 call plug#end()

@@ -1,16 +1,3 @@
-#<style>
-#div  {
-  #text-align: center;
-  #}
-
-#img {
-  #border-radius: 5px;
-  #border: 5px solid cyan;
-  #box-shadow: 1px 5px 5px #0000004d;
-  #width: 512px;
-  #}
-#</style>
-
 snippet links "link_self"
 [${1:Text}](${2:url})
 endsnippet
@@ -81,7 +68,9 @@ endsnippet
 
 # note: in gitlab, not support this zoom parameter, you can add width parameter
 snippet imgh "img github"
-<img src="https://cdn.jsdelivr.net/gh/oeyoews/img/$1.png">
+<div style="text-align: center;">
+<img src="https://cdn.jsdelivr.net/gh/oeyoews/img/$1.png" style="border-radius: 5px; border: 5px solid cyan; box-shadow: 1px 5px 5px #0000004d;width:256;" />
+</div>
 endsnippet
 
 snippet https "cdn"
