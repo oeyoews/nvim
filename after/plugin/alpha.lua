@@ -1,5 +1,6 @@
 --require'alpha'.setup(require'alpha.themes.dashboard'.config)
 --require'alpha'.setup(require'alpha.themes.startify'.config)
+
 local status_ok, alpha = pcall(require, "alpha")
 if not status_ok then
   return
@@ -197,7 +198,8 @@ local buttons = {
     dashboard.button("n", "  New file", ":ene <BAR> startinsert <CR>"),
     dashboard.button("c", "  Configuration", ":e ~/.config/nvim/init.vim<CR>"),
     dashboard.button( "u", "  Update plugins" , ":PlugUpdate<CR>"),
-    dashboard.button( "q", "  Quit" , ":qa<CR>"),
+    --dashboard.button( "q", "  Quit" , ":qa<CR>"),
+    dashboard.button( "q", "🐮  Quit" , ":qa<CR>"),
   },
   position = "center",
 }
@@ -218,6 +220,7 @@ local opts = {
 
 
 alpha.setup(opts)
+
 --[[
 dashboard.section.footer.val = {
   "                       ",

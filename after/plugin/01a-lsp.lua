@@ -3,8 +3,9 @@ vim.cmd [[set completeopt=menu,menuone,noselect,noinsert]]
 
 vim.cmd [[highlight default Fs guifg=#3bb6c4 guibg=NONE]]
 
-local border = { {"╭", "Fs"}, {"─", "Fs"}, {"╮", "Fs"}, {"│", "Fs"},
-      {"╯", "Fs"}, {"─", "Fs"}, {"╰", "Fs"}, {"│", "Fs"}, }
+--deprecated
+--local border = { {"╭", "Fs"}, {"─", "Fs"}, {"╮", "Fs"}, {"│", "Fs"},
+      --{"╯", "Fs"}, {"─", "Fs"}, {"╰", "Fs"}, {"│", "Fs"}, }
 
 -- cmp_lsp
 local cmp = require'cmp'
@@ -36,7 +37,7 @@ mapping = {
     --neorg = "",
     })}), },
 
-documentation = { border = border, },
+--documentation = { border = border, },
 
   sources = {
     { name = 'nvim_lsp' },

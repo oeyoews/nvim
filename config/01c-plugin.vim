@@ -149,5 +149,5 @@ Plug 'folke/zen-mode.nvim'
 "Plug 'sukima/vim-tiddlywiki'
 "Plug 'Pocco81/TrueZen.nvim'
 Plug 'tyru/open-browser.vim'
-Plug 'goolord/alpha-nvim'
+"Plug 'goolord/alpha-nvim'
 call plug#end()
