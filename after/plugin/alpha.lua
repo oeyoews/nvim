@@ -142,13 +142,13 @@ end
 local function header_color()
   local lines = {}
   for i, line_chars in pairs(header_chars()) do
-    local hi = "Search" .. i
+    local hi = "StartLogo" .. i
     local line = {
       type = "text",
       val = line_chars,
       opts = {
-        hl = "SpecialComment",
-        --hl = hi,
+        --hl = "SpecialComment",
+        hl = hi,
         shrink_margin = false,
         position = "center",
       },
@@ -230,3 +230,25 @@ dashboard.section.footer.val = {
   "                       ",
 }
 --]]
+
+--#12c2e9, #c471ed, #f64f59
+
+vim.cmd [[
+hi StartLogo1                  guifg=#2DABAB ctermfg=18   gui=NONE cterm=NONE
+hi StartLogo2                  guifg=#c471ed ctermfg=18   gui=NONE cterm=NONE
+hi StartLogo3                  guifg=#12c2e9 ctermfg=18   gui=NONE cterm=NONE
+hi StartLogo4                  guifg=#47CABA ctermfg=18   gui=NONE cterm=NONE
+hi StartLogo5                  guifg=#59DACA ctermfg=23   gui=NONE cterm=NONE
+" hi StartLogo6                  guifg=#6A446E ctermfg=23   gui=NONE cterm=NONE
+" hi StartLogo7                  guifg=#6C506B ctermfg=23   gui=NONE cterm=NONE
+" hi StartLogo8                  guifg=#1D5D68 ctermfg=23   gui=NONE cterm=NONE
+" hi StartLogo9                  guifg=#1E6965 ctermfg=23   gui=NONE cterm=NONE
+" hi StartLogo10                 guifg=#1F7562 ctermfg=29   gui=NONE cterm=NONE
+" hi StartLogo11                 guifg=#21825F ctermfg=29   gui=NONE cterm=NONE
+" hi StartLogo12                 guifg=#228E5C ctermfg=29   gui=NONE cterm=NONE
+" hi StartLogo13                 guifg=#239B59 ctermfg=29   gui=NONE cterm=NONE
+" hi StartLogo14                 guifg=#24A755 ctermfg=35   gui=NONE cterm=NONE
+" hi StartLogo15                 guifg=#26B352 ctermfg=35   gui=NONE cterm=NONE
+" hi StartLogo16                 guifg=#27C04F ctermfg=35   gui=NONE cterm=NONE
+" hi StartLogo17                 guifg=#28CC4C ctermfg=41   gui=NONE cterm=NONE
+]]
