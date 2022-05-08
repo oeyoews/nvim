@@ -151,4 +151,6 @@ Plug 'folke/zen-mode.nvim'
 "Plug 'Pocco81/TrueZen.nvim'
 Plug 'tyru/open-browser.vim'
 "Plug 'goolord/alpha-nvim'
+"Plug 'catppuccin/nvim', {'as': 'catppuccin'}
+"Plug 'marko-cerovac/material.nvim'
 call plug#end()

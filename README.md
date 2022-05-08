@@ -24,6 +24,7 @@
 
 ## TODO
 
+* config new theme for material, like tilde,
 - [ ] learn The lighgtspeed plugins usage
 * add shortkeys in vim to open browser html
 - [ ] fix the zh bug(maybe also is terminal)

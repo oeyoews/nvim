@@ -1,9 +1,27 @@
 colorscheme tokyonight
+"colorscheme material
+"let g:material_style = "palenight"
+"colorscheme catppuccin
+
+lua << EOF
+--[[
+require('material.functions').change_style("palenight")
+--]]
+EOF
 
 lua << EOF
 --[[
 local base16 = require 'base16'
 base16(base16.themes("tokyonight"), true)
+--]]
+EOF
+
+lua << EOF
+--[[
+local catppuccin = require("catppuccin")
+
+-- configure it
+catppuccin.setup()
 --]]
 EOF
 
@@ -31,7 +49,8 @@ hi Keyword    cterm=bold ctermfg=68 guifg=#8167a3 gui=bold
 " note: if it's no rnu, you must enable cursor-line(highlight current line)
 hi CursorLineNr      guifg=#c269fe guibg=#000000
 " highlight cursor-line
-hi CursorLine        guibg=black
+" use material_style to comment this
+"hi CursorLine        guibg=black
 
 " split line
 "hi VertSplit guibg=#4f97d7
