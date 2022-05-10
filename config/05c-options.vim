@@ -1,12 +1,13 @@
 "language messages en_US.utf8 " have bug
 "set cindent
 set smartindent
-set conceallevel=2
+" visual degree chars symbols
+"set conceallevel=1
 set mouse+=a
 set ignorecase
 set termguicolors
 set undofile
-set ttyfast
+"set ttyfast
 set signcolumn=yes
 set autochdir
 set nowrap
