@@ -7,7 +7,7 @@ set mouse+=a
 set ignorecase
 set termguicolors
 set undofile
-"set ttyfast
+set ttyfast
 set signcolumn=yes
 set autochdir
 set nowrap
@@ -44,9 +44,11 @@ set listchars=tab:→\ ,eol:↵,trail:▫,extends:↷,precedes:↶
 set whichwrap+=<,>,[,]
 set splitright
 set splitbelow
-set cursorline
+" disable it, when use emoji, or other sititions, this visual will have some
+" bug
+"set cursorline
 set number
-set guifont=Fira\ Code\ 14
+"set guifont=Fira\ Code\ 14
 "set t_ti= t_te=
 "set shortmess=atI  " disable show welcome and no clear this ui to quit vim
 "set clipboard=unnamed

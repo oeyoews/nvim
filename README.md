@@ -25,7 +25,7 @@
 ## ✅ TODO
 
 
-* some sitution will cause error line repeat(maybe emoji)
+* some sitution will cause error line repeat(maybe emoji or refresh time error)
 * config new theme for material, like tilde,
 - [ ] learn The lighgtspeed plugins usage
 * add shortkeys in vim to open browser html
