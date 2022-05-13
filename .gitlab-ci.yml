@@ -1,0 +1,16 @@
+image: node:latest
+
+stages:
+  - release
+  - deploy
+
+create-release:
+
+  stage: release
+
+  variables:
+    GITLAB_TOKEN: $GITLAB_TOKEN
+
+  script:
+    - yarn install
+    - npx semantic-release

@@ -26,6 +26,7 @@
 
 
 * some sitution will cause error line repeat(maybe emoji or refresh time error)
+  * :snowflake:  this emoji will cause this bug in kitty(only)
 * config new theme for material, like tilde,
 - [ ] learn The lighgtspeed plugins usage
 * add shortkeys in vim to open browser html

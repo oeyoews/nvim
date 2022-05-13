@@ -7,7 +7,7 @@ set mouse+=a
 set ignorecase
 set termguicolors
 set undofile
-set ttyfast
+"set ttyfast
 set signcolumn=yes
 set autochdir
 set nowrap
@@ -16,7 +16,7 @@ set hidden
 set ignorecase
 "set textwidth=120
 set shortmess+=aIc  " atI clear advertise
-set lazyredraw
+"set lazyredraw
 set vb t_vb=  " no blinking no bells
 
 " disable some options
@@ -32,7 +32,7 @@ set hlsearch
 
 set confirm
 "set scrolloff=3
-set updatetime=200	" ??
+set updatetime=200
 set foldmethod=marker
 set timeoutlen=1000
 set expandtab
@@ -45,8 +45,9 @@ set whichwrap+=<,>,[,]
 set splitright
 set splitbelow
 " disable it, when use emoji, or other sititions, this visual will have some
-" bug
-"set cursorline
+" but not resolve all bug
+" kitty terminal cause it
+set cursorline
 set number
 "set guifont=Fira\ Code\ 14
 "set t_ti= t_te=
