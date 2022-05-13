@@ -1,0 +1,14 @@
+{
+  "name": "nvim",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://gitlab.com/oeyoews/nvim.git",
+  "author": "oeyoews <jyao4783@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/gitlab": "^9.2.1",
+    "semantic-release": "^19.0.2"
+  }
+}
