@@ -43,10 +43,10 @@ mapping = {
     { name = 'nvim_lsp' },
     { name = 'buffer', keyword_length = 2 },
     { name = 'ultisnips' },
-    { name = 'cmp_git' },
+    --{ name = 'cmp_git' },
     { name = 'path' },
     { name = 'nvim-lua' },
-    { name = 'neorg' },
+    --{ name = 'neorg' },
      { name = "latex_symbols" },
     --{ name = 'spell' },
     { name = 'emoji', insert = true },
@@ -97,19 +97,21 @@ mapping = {
   local servers = { 'vimls',
   --'clangd', 'bashls', 'pyright', 'gopls',
   --'jdtls',
-  --'jsonls',
+  'jsonls',
   --'tsserver',
-                    'html', 'cssls', }
-  local capabilities = vim.lsp.protocol.make_client_capabilities()
-  capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
-  for _, lsp in ipairs(servers) do
-    nvim_lsp[lsp].setup {
-      flags = {
-        debounce_text_changes = 150,
-      },
-      capabilities = capabilities,
-    }
-  end
+  --'html',
+  --'cssls',
+}
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+for _, lsp in ipairs(servers) do
+  nvim_lsp[lsp].setup {
+    flags = {
+      debounce_text_changes = 150,
+    },
+    capabilities = capabilities,
+  }
+end
 
   -- for lua dev cmd
   local luadev = require("lua-dev").setup({
@@ -118,6 +120,7 @@ mapping = {
     },
   })
   nvim_lsp.sumneko_lua.setup(luadev)
+
 
   -- icon note this order in last
   vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
@@ -133,6 +136,7 @@ mapping = {
 
 
 --  == go-to definition split  ==
+--[[
 local function goto_definition(split_cmd)
   local util = vim.lsp.util
   local log = require("vim.lsp.log")
@@ -166,4 +170,4 @@ local function goto_definition(split_cmd)
 end
 
 vim.lsp.handlers["textDocument/definition"] = goto_definition('split')
-
+--]]

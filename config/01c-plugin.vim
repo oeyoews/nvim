@@ -20,6 +20,8 @@ Plug 'SirVer/ultisnips'
 Plug 'oeyoews/vim-snippets'
 " configure your lsp
 Plug 'neovim/nvim-lspconfig'
+Plug 'williamboman/nvim-lsp-installer'
+Plug 'mhartington/formatter.nvim'
 "TODO: fix this border is nothing
 "Plug 'hrsh7th/nvim-cmp', { 'frozen': 1, 'commit': 'fae808a2' }
 Plug 'hrsh7th/nvim-cmp'
@@ -58,8 +60,8 @@ Plug 'norcalli/nvim-colorizer.lua'
 Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
 " preview your markdown in your browser
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'markdown' }
-" better markdown for your table
-Plug 'dhruvasagar/vim-table-mode', { 'for' : ['markdown', 'norg'] }
+" better markdown for your table 'norg'
+"Plug 'dhruvasagar/vim-table-mode', { 'for' : ['markdown'] }
 " fix some error and color
 "Plug 'plasticboy/vim-markdown'
 " org mode for nvim

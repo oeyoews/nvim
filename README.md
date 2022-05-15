@@ -29,6 +29,7 @@
 ## ✅ TODO
 
 
+* config format
 * some sitution will cause error line repeat(maybe emoji or refresh time error)
   * :snowflake:  this emoji will cause this bug in kitty(only)
 * config new theme for material, like tilde,
