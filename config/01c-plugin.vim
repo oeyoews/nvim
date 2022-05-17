@@ -22,6 +22,7 @@ Plug 'oeyoews/vim-snippets'
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/nvim-lsp-installer'
 Plug 'mhartington/formatter.nvim'
+Plug 'mfussenegger/nvim-lint'
 "TODO: fix this border is nothing
 "Plug 'hrsh7th/nvim-cmp', { 'frozen': 1, 'commit': 'fae808a2' }
 Plug 'hrsh7th/nvim-cmp'
@@ -65,7 +66,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'm
 " fix some error and color
 "Plug 'plasticboy/vim-markdown'
 " org mode for nvim
-"Plug 'nvim-neorg/neorg', { 'for': 'norg', 'do': ':TSUpdate'  }
+Plug 'nvim-neorg/neorg', { 'for': 'norg', 'do': ':TSUpdate'  }
 "Plug 'nvim-neorg/neorg', { 'for': 'norg', }
 Plug 'lervag/vimtex'
 

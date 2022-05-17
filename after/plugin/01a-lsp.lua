@@ -46,7 +46,7 @@ mapping = {
     --{ name = 'cmp_git' },
     { name = 'path' },
     { name = 'nvim-lua' },
-    --{ name = 'neorg' },
+    { name = 'neorg' },
      { name = "latex_symbols" },
     --{ name = 'spell' },
     { name = 'emoji', insert = true },

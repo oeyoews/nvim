@@ -1,4 +1,4 @@
---[=[
+---[=[
 
 local ok, neorg = pcall(require, "neorg")
 
@@ -153,7 +153,7 @@ neorg.setup({
   ["core.ui"] = {},
   ["core.gtd.ui"] = {},
   ["core.gtd.queries"] = {},
-  ["core.presenter"] = {},
+  --["core.presenter"] = {},
 
 },
 })
@@ -229,3 +229,15 @@ nnoremap <space>nn <cmd>NeorgStart<cr>
 ]]
 
 --]=]
+
+--local ok, neorg = pcall(require, "neorg")
+
+--if not ok then
+  --return false
+--end
+
+--neorg.setup {
+  --load = {
+        --["core.defaults"] = {}
+    --}
+--}
