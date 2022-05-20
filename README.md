@@ -15,9 +15,15 @@
 
 ## 🕊️ Introd <!--2021-09-18T 23:41:58-->
 
----
+## Dependcies
+
+* python-pynvim(neovim)
+* npm(for lsp-installer)
+* make(for install)
 
 ## 📨 Install
+
+* first, you can input `make` to run this makefile to install all need neovim plugins
 
 ---
 

@@ -1,0 +1,2 @@
+install:
+	nvim -c PlugInstall
