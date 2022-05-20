@@ -43,6 +43,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 
 " @UI
+Plug 'rcarriga/nvim-notify'
 " better highlight
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 " highlight your variable for reference and define
@@ -60,13 +61,14 @@ Plug 'norcalli/nvim-colorizer.lua'
 " bug: not support zh-cn
 Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
 " preview your markdown in your browser
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'markdown' }
+"Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'markdown' }
+Plug 'iamcco/markdown-preview.nvim'
 " better markdown for your table 'norg'
 "Plug 'dhruvasagar/vim-table-mode', { 'for' : ['markdown'] }
 " fix some error and color
 "Plug 'plasticboy/vim-markdown'
 " org mode for nvim
-Plug 'nvim-neorg/neorg', { 'for': 'norg', 'do': ':TSUpdate'  }
+"Plug 'nvim-neorg/neorg', { 'for': 'norg', 'do': ':TSUpdate'  }
 "Plug 'nvim-neorg/neorg', { 'for': 'norg', }
 Plug 'lervag/vimtex'
 

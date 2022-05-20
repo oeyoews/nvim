@@ -1,4 +1,4 @@
----[=[
+--[=[
 
 local ok, neorg = pcall(require, "neorg")
 

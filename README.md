@@ -28,7 +28,7 @@
 
 ## ✅ TODO
 
-
+* config norg table
 * config format
 * some sitution will cause error line repeat(maybe emoji or refresh time error)
   * :snowflake:  this emoji will cause this bug in kitty(only)
@@ -43,4 +43,3 @@
 * config dashboard
 - this emjoi shadow bug, maybe is kitty terminal(switch to wezterm compare)
 - some error tip from feline(active)
-
