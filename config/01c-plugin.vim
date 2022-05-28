@@ -74,6 +74,7 @@ Plug 'lervag/vimtex'
 
 
 " @Tools
+Plug 'sindrets/diffview.nvim'
 " it's rich
 Plug 'nvim-telescope/telescope.nvim'
 " fast jump you want jump
