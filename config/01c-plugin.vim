@@ -21,7 +21,7 @@ Plug 'oeyoews/vim-snippets'
 " configure your lsp
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/nvim-lsp-installer'
-Plug 'mhartington/formatter.nvim'
+"Plug 'mhartington/formatter.nvim'
 Plug 'mfussenegger/nvim-lint'
 "TODO: fix this border is nothing
 "Plug 'hrsh7th/nvim-cmp', { 'frozen': 1, 'commit': 'fae808a2' }
