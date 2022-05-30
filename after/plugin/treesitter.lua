@@ -34,7 +34,7 @@ tree_configs.setup {
     "typescript",
     --"org",
     -- todo details
-    "norg", "norg_meta", "norg_table",
+    --"norg", "norg_meta", "norg_table",
     "comment",
     "go",
     --"gomod",
