@@ -9,8 +9,10 @@
 ## Dependcies
 
 * python-pynvim(neovim)
+* python3(ultisnips)
 * npm(for lsp-installer)
 * make(for install)
+* ranger(file manager)
 
 ## 📨 Install
 
