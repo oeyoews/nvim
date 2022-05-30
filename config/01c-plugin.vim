@@ -51,6 +51,7 @@ Plug 'nvim-treesitter/nvim-treesitter-refactor'
 " manage your buffers
 Plug 'akinsho/bufferline.nvim'
 " color
+"Plug 'glepnir/zephyr-nvim'
 Plug 'norcalli/nvim-colorizer.lua'
 "Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 "Plug 'NvChad/nvim-base16.lua'
