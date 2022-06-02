@@ -36,6 +36,7 @@ Plug 'hrsh7th/cmp-latex-symbols'
 Plug 'hrsh7th/cmp-nvim-lua'
 Plug 'folke/lua-dev.nvim'
 Plug 'tami5/lspsaga.nvim'
+Plug 'cuducos/yaml.nvim'
 
 " @Dependcies
 " libs for some nvim plugins
@@ -72,7 +73,7 @@ Plug 'iamcco/markdown-preview.nvim'
 " org mode for nvim
 "Plug 'nvim-neorg/neorg', { 'for': 'norg', 'do': ':TSUpdate'  }
 "Plug 'nvim-neorg/neorg', { 'for': 'norg', }
-Plug 'lervag/vimtex'
+"Plug 'lervag/vimtex'
 
 
 " @Tools
@@ -84,7 +85,7 @@ Plug 'nvim-telescope/telescope.nvim'
 " test your Startup Time
 Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1}
 " Chinese vim help
-Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
+"Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
 " comment your code or txt
 Plug 'preservim/nerdcommenter'
 " show all keys

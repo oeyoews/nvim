@@ -16,30 +16,33 @@ tree_configs.setup {
     enable = false
   },
   -- install some different parsers automatically
+
+  --[[
   ensure_installed = {
-    "c",
-    "python",
-    --"java",
-    "html",
-    "css",
-    "bash",
-    "toml",
-    --"vue",
     "json",
     "lua",
     "vim",
-    "query",
-    "yaml",
-    "javascript",
-    "typescript",
+    --"c",
+    --"python",
+    --"java",
+    --"html",
+    --"css",
+    --"bash",
+    --"toml",
+    --"vue",
+    --"query",
+    --"yaml",
+    --"javascript",
+    --"typescript",
     --"org",
     -- todo details
     --"norg", "norg_meta", "norg_table",
-    "comment",
-    "go",
+    --"comment",
+    --"go",
     --"gomod",
     --"markdown",
     },
+  --]]
 
   highlight = { enable = true,
   disable = {'org'},
@@ -81,5 +84,4 @@ tree_configs.setup {
 		use_virtual_text = true,
 		lint_events = {"BufWrite", "CursorHold"},
 	},
-
 }

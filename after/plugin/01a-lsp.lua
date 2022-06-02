@@ -90,6 +90,7 @@ mapping = {
   --]]
 
 
+  -- need config in lspinstall
   --jsonls: npm i -g vscode-langservers-extracted
   -- gopls need go.mod for folder
   local nvim_lsp = require('lspconfig')
@@ -98,6 +99,7 @@ mapping = {
   --'clangd', 'bashls', 'pyright', 'gopls',
   --'jdtls',
   'jsonls',
+  'yamlls',
   --'tsserver',
   --'html',
   --'cssls',
