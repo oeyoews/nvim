@@ -11,6 +11,7 @@ call plug#begin('$HOME/.local/share/nvim/nvim_bundle')
 Plug 'nathom/filetype.nvim'
 " command: luacacheclear, luacachelog
 Plug 'lewis6991/impatient.nvim'
+Plug 'p00f/nvim-ts-rainbow'
 
 " @LspConfig
 " support some icons for you menu
@@ -36,7 +37,7 @@ Plug 'hrsh7th/cmp-latex-symbols'
 Plug 'hrsh7th/cmp-nvim-lua'
 Plug 'folke/lua-dev.nvim'
 Plug 'tami5/lspsaga.nvim'
-Plug 'cuducos/yaml.nvim'
+"Plug 'cuducos/yaml.nvim'
 
 " @Dependcies
 " libs for some nvim plugins
@@ -47,7 +48,8 @@ Plug 'kyazdani42/nvim-web-devicons'
 " @UI
 Plug 'rcarriga/nvim-notify'
 " better highlight
-Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+"Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate', 'frozen': 1 }
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate'}
 " highlight your variable for reference and define
 Plug 'nvim-treesitter/nvim-treesitter-refactor'
 " manage your buffers

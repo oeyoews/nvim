@@ -18,3 +18,5 @@ command! -nargs=?  -complete=color Theme colorscheme <args>
 lua << EOF
 vim.notify = require("notify")
 EOF
+
+"autocmd FileType lsp-installer lua vim.api.nvim_win_set_config(0, { border = "none" })
