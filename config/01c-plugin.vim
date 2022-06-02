@@ -1,5 +1,6 @@
 " maybe should use command PlugClean to fix url confilct
 " OPENMIRROR: let g:plug_url_format = 'https://hub.fastgit.org/%s.git'
+let g:plug_url_format = 'https://hub.fastgit.xyz/%s.git'
 " NOTE: don't put it in current directory like .config/nvim/xxx, so that to change another branch
 call plug#begin('$HOME/.local/share/nvim/nvim_bundle')
 
@@ -121,7 +122,7 @@ Plug 'folke/tokyonight.nvim'
 "Plug 'yamatsum/nvim-cursorline'
 "Plug 'oeyoews/nvim-cursorword'
 "Plug 'github/copilot.vim'
-"Plug 'kyazdani42/nvim-tree.lua'
+Plug 'kyazdani42/nvim-tree.lua'
 Plug 'lewis6991/gitsigns.nvim'
 "
 "TODO:
