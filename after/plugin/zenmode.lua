@@ -1,3 +1,4 @@
+--[[
 local ok, zenmode = pcall(require, "zen-mode")
 
 if not ok then
@@ -56,3 +57,4 @@ zenmode.setup({
 vim.cmd [[
 nnoremap <space>tp <cmd>ZenMode<cr>
 ]]
+--]]

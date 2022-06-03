@@ -6,7 +6,7 @@ autocmd VimEnter *
 
 " NOTE: need reinstall all plugins with url_format
 let g:plug_url_format = 'https://hub.fastgit.xyz/%s.git'
-let s:plug_dir = '$HOME/.local/share/nvim/nvim_bundle'
+let s:plug_dir = '$HOME/.local/share/nvim/nvim_bundles'
 " NOTE: don't put it in current directory like .config/nvim/xxx, so that to change another branch
 call plug#begin(s:plug_dir)
 
@@ -82,7 +82,7 @@ Plug 'iamcco/markdown-preview.nvim'
 
 
 " @Tools
-Plug 'sindrets/diffview.nvim'
+"Plug 'sindrets/diffview.nvim'
 " it's rich
 Plug 'nvim-telescope/telescope.nvim'
 " fast jump you want jump
@@ -128,7 +128,7 @@ Plug 'folke/tokyonight.nvim'
 "Plug 'yamatsum/nvim-cursorline'
 "Plug 'oeyoews/nvim-cursorword'
 "Plug 'github/copilot.vim'
-Plug 'kyazdani42/nvim-tree.lua'
+"Plug 'kyazdani42/nvim-tree.lua'
 Plug 'lewis6991/gitsigns.nvim'
 "
 "TODO:
@@ -158,12 +158,12 @@ Plug 'lewis6991/gitsigns.nvim'
 "Plug 'abecodes/tabout.nvim'
 " another ranger
 "Plug 'kevinhwang91/rnvimr'
-Plug 'folke/zen-mode.nvim'
+"Plug 'folke/zen-mode.nvim'
 "TODO:
 " add open browser
 "Plug 'sukima/vim-tiddlywiki'
 "Plug 'Pocco81/TrueZen.nvim'
-Plug 'tyru/open-browser.vim'
+"Plug 'tyru/open-browser.vim'
 "Plug 'goolord/alpha-nvim'
 "Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 "Plug 'marko-cerovac/material.nvim'

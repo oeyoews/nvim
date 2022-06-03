@@ -23,7 +23,12 @@
 local lsp_installer = require "nvim-lsp-installer"
 lsp_installer.setup({
   automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
-  ensure_installed = { "jsonls", "vimls", "yamlls"},
+  ensure_installed = {
+    --"taplo",
+    "jsonls",
+    "vimls",
+    "yamlls"
+  },
   ui = {
     icons = {
       server_installed = "✓",
