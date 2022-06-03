@@ -70,8 +70,8 @@ Plug 'norcalli/nvim-colorizer.lua'
 " bug: not support zh-cn
 Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
 " preview your markdown in your browser
-"Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'markdown' }
-Plug 'iamcco/markdown-preview.nvim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'markdown' }
+"Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 " better markdown for your table 'norg'
 "Plug 'dhruvasagar/vim-table-mode', { 'for' : ['markdown'] }
 " fix some error and color
