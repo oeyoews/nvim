@@ -60,7 +60,9 @@ cmp.setup({
       'vimls',
       'jsonls',
       'yamlls',
-      --'clangd', 'bashls', 'pyright', 'gopls', 'jdtls', 'tsserver', 'html','cssls',
+      'clangd',
+      'pyright',
+      --, 'bashls', 'pyright', 'gopls', 'jdtls', 'tsserver', 'html','cssls',
     }
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
