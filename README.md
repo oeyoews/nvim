@@ -22,8 +22,7 @@
 
 ## 🧮 USage
 
-  <!--TODO:-->
-  <!--- vim -c PlugInstall-->
+nvim -c PlugInstall
 
 ## ✅ TODO
 
@@ -42,4 +41,3 @@
 * config dashboard
 - this emjoi shadow bug, maybe is kitty terminal(switch to wezterm compare)
 - some error tip from feline(active)
-

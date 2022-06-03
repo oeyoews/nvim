@@ -17,7 +17,7 @@ tree_configs.setup {
   },
   -- install some different parsers automatically
 
-  --[[
+  ---[[
   ensure_installed = {
     "json",
     "lua",
