@@ -41,7 +41,6 @@ Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-nvim-lua'
 Plug 'folke/lua-dev.nvim'
 Plug 'tami5/lspsaga.nvim'
-"Plug 'cuducos/yaml.nvim'
 
 " @Dependcies
 " libs for some nvim plugins

@@ -8,13 +8,14 @@ lspsaga.setup { -- defaults ...
   debug = false,
   use_saga_diagnostic_sign = true,
   -- diagnostic sign
-  error_sign = "",
-  warn_sign = "",
+  --error_sign = "",
+  error_sign = "🌹",
+  warn_sign = "🍺",
   hint_sign = "",
   infor_sign = "",
-  --dianostic_header_icon = "   ",
+  dianostic_header_icon = " ",
   -- code action title icon
-  code_action_icon = " ",
+  code_action_icon = "👷",
   code_action_prompt = {
     enable = true,
     sign = true,

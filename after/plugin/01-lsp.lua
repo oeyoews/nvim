@@ -1,15 +1,17 @@
 -- note this order
 vim.cmd [[set completeopt=menu,menuone,noselect,noinsert]]
-
--- DEPRECATED: deprecated
---vim.cmd [[highlight default Fs guifg=#3bb6c4 guibg=NONE]]
---local border = { {"╭", "Fs"}, {"─", "Fs"}, {"╮", "Fs"}, {"│", "Fs"},
---{"╯", "Fs"}, {"─", "Fs"}, {"╰", "Fs"}, {"│", "Fs"}, }
+--vim.cmd [[highlight default GH guifg=#3bb6c4 guibg=NONE]]
+--vim.cmd [[highlight default GH guifg=gray guibg=NONE]]
 
 -- cmp_lsp
 local cmp = require'cmp'
+local lspkind = require('lspkind')
 
 cmp.setup({
+  view = {
+    --entries = "custom" -- can be "custom", "wildmenu" or "native"
+    entries = {name = 'custom', selection_order = 'near_cursor' }
+  },
   snippet = {
     expand = function(args)
       vim.fn["UltiSnips#Anon"](args.body)
@@ -23,46 +25,58 @@ cmp.setup({
       ['<C-e>'] = cmp.mapping.complete(),
       ['<C-c>'] = cmp.mapping.close(), },
 
+      -- menu
       formatting = {
-        format = require("lspkind").cmp_format({with_text = true, menu = ({
-          nvim_lsp = "",
-          buffer = "",
-          ultisnips = "",
-          nvim_lua = "",
-          --   
-          --neorg = "",
-        })}), },
+        format = lspkind.cmp_format({
+          --mode = "symbol_text",
+          mode = "symbol",
+          maxwidth = 50,
+          --with_text = true,
+          menu = ({
+            nvim_lsp = "[LSP]",
+            buffer = "[Buffer]",
+            ultisnips = "[UltiSnips]",
+            nvim_lua = "[Lua]",
+          })
+        }),
+      },
 
-        window = {
-           documentation = cmp.config.window.bordered(),
-        },
+      -- config window
+      window = {
+        completion = cmp.config.window.bordered(),
+        documentation = cmp.config.window.bordered()
+      },
+
+      experimental = {
+        --ghost_text = {hl_group = 'GH'}
+        ghost_text = true
+      },
+
+      -- sources
+      sources = {
+        { name = 'nvim_lsp' },
+        { name = 'buffer', keyword_length = 2 },
+        { name = 'ultisnips' },
+        { name = 'path' },
+        { name = 'nvim-lua' },
+        { name = 'emoji', insert = true },
+        { name = "dictionary", keyword_length = 2 },
+      },
+
+    })
 
 
-        sources = {
-          { name = 'nvim_lsp' },
-          { name = 'buffer', keyword_length = 2 },
-          { name = 'ultisnips' },
-          { name = 'path' },
-          { name = 'nvim-lua' },
-          { name = 'emoji', insert = true },
-          { name = "dictionary", keyword_length = 2 },
-          --{ name = 'cmp_git' }, { name = 'neorg' }, { name = "latex_symbols" }, { name = 'spell' }, { name = 'look' }, { name = 'orgmode' }, { name = 'cmdline' },
-        },
-
-      })
-
-      -- need config in lspinstall
-      --jsonls: npm i -g vscode-langservers-extracted
-      -- gopls need go.mod for folder
-      local nvim_lsp = require('lspconfig')
-      -- automatically connect language server protocol
-      local servers = {
+    -- need config in lspinstall
+    --jsonls: npm i -g vscode-langservers-extracted
+    -- gopls need go.mod for folder
+    local nvim_lsp = require('lspconfig')
+    -- automatically connect language server protocol
+    local servers = {
       'vimls',
       'jsonls',
       'yamlls',
       'clangd',
       'pyright',
-      --, 'bashls', 'pyright', 'gopls', 'jdtls', 'tsserver', 'html','cssls',
     }
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
@@ -82,7 +96,6 @@ cmp.setup({
       },
     })
     nvim_lsp.sumneko_lua.setup(luadev)
-
 
     -- icon note this order in last
     vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
