@@ -66,3 +66,9 @@ nnoremap <silent> <esc> :noh<return><C-L><esc>
 " TODO:
 "autocmd FileType norg
 "vnoremap <space>nn mzI+<esc>A+<esc>`z
+
+" StartupTime
+"nnoremap <leader>vt <cmd>StartupTime --tries 1<cr>
+
+" quickrun
+nnoremap <silent> <SPACE>ll <Cmd>QuickRun<CR><C-w>w

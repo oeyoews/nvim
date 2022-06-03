@@ -1,3 +1,9 @@
+" automatically install missing plugins
+autocmd VimEnter *
+  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \|   PlugInstall --sync | q
+  \| endif
+
 " maybe should use command PlugClean to fix url confilct
 " OPENMIRROR: let g:plug_url_format = 'https://hub.fastgit.org/%s.git'
 let g:plug_url_format = 'https://hub.fastgit.xyz/%s.git'
@@ -26,8 +32,6 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/nvim-lsp-installer'
 "Plug 'mhartington/formatter.nvim'
 Plug 'mfussenegger/nvim-lint'
-"TODO: fix this border is nothing
-"Plug 'hrsh7th/nvim-cmp', { 'frozen': 1, 'commit': 'fae808a2' }
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
@@ -75,7 +79,6 @@ Plug 'iamcco/markdown-preview.nvim'
 "Plug 'plasticboy/vim-markdown'
 " org mode for nvim
 "Plug 'nvim-neorg/neorg', { 'for': 'norg', 'do': ':TSUpdate'  }
-"Plug 'nvim-neorg/neorg', { 'for': 'norg', }
 "Plug 'lervag/vimtex'
 
 
@@ -86,7 +89,7 @@ Plug 'nvim-telescope/telescope.nvim'
 " fast jump you want jump
 "Plug 'ggandor/lightspeed.nvim'
 " test your Startup Time
-Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1}
+"Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1}
 " Chinese vim help
 "Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
 " comment your code or txt
@@ -104,7 +107,7 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 " for kitty syntax, need set it's filetype by hand
 Plug 'fladson/vim-kitty'
 " spell for nvim-tree sitter
-Plug 'lewis6991/spellsitter.nvim'
+"Plug 'lewis6991/spellsitter.nvim'
 
 Plug 'folke/todo-comments.nvim'
 Plug 'folke/tokyonight.nvim'
