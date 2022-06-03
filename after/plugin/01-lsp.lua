@@ -28,10 +28,8 @@ cmp.setup({
       -- menu
       formatting = {
         format = lspkind.cmp_format({
-          --mode = "symbol_text",
           mode = "symbol",
           maxwidth = 50,
-          --with_text = true,
           menu = ({
             nvim_lsp = "[LSP]",
             buffer = "[Buffer]",
@@ -41,7 +39,7 @@ cmp.setup({
         }),
       },
 
-      -- config window
+      -- config default window
       window = {
         completion = cmp.config.window.bordered(),
         documentation = cmp.config.window.bordered()
