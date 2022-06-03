@@ -8,7 +8,3 @@ autocmd! FileType markdown nnoremap <space>fmm :MarkdownPreviewToggle<CR>
 "exec "nohlsearch"
 
 command! -nargs=?  -complete=color Theme colorscheme <args>
-
-lua << EOF
-vim.notify = require("notify")
-EOF

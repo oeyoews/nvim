@@ -17,7 +17,7 @@ call plug#begin(s:plug_dir)
 Plug 'nathom/filetype.nvim'
 " command: luacacheclear, luacachelog
 Plug 'lewis6991/impatient.nvim'
-Plug 'p00f/nvim-ts-rainbow'
+"Plug 'p00f/nvim-ts-rainbow'
 
 " @LspConfig
 " support some icons for you menu
