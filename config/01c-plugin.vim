@@ -4,8 +4,7 @@ autocmd VimEnter *
   \|   PlugInstall --sync | q
   \| endif
 
-" maybe should use command PlugClean to fix url confilct
-" OPENMIRROR: let g:plug_url_format = 'https://hub.fastgit.org/%s.git'
+" NOTE: need reinstall all plugins with url_format
 let g:plug_url_format = 'https://hub.fastgit.xyz/%s.git'
 let s:plug_dir = '$HOME/.local/share/nvim/nvim_bundle'
 " NOTE: don't put it in current directory like .config/nvim/xxx, so that to change another branch
