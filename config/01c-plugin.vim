@@ -10,6 +10,8 @@ Plug 'lervag/vimtex'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'windwp/nvim-spectre'
 Plug 'phaazon/hop.nvim'
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'j-hui/fidget.nvim'
 
 " @ Prefence
 Plug 'nathom/filetype.nvim'
