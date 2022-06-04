@@ -105,6 +105,7 @@ cmp.setup({
     vim.lsp.diagnostic.on_publish_diagnostics, {
       underline = true,
       update_in_insert = false,
+      severity_sort = false,
       virtual_text = {
         spacing = 2,
         prefix = ' '
