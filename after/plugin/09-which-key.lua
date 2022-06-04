@@ -1,6 +1,6 @@
-local ok, which_configs = pcall(require, "which-key")
+local which_key_ok, which_configs = pcall(require, "which-key")
 
-if not ok then
+if not which_key_ok then
   return false
 end
 
@@ -8,7 +8,7 @@ which_configs.setup {
 
   plugins = {
     marks = false,
-    registers =true,
+    registers = true,
     spelling = {
       enabled = false,
       suggestions = 20,
@@ -28,7 +28,7 @@ which_configs.setup {
     height = { min = 4, max = 25 }, -- min and max height of the columns
     width = { min = 20, max = 50 }, -- min and max width of the columns
     spacing = 3, -- spacing between columns
-    align = "center"  -- align columns left, center or right
+    align = "center" -- align columns left, center or right
   },
 
   window = {

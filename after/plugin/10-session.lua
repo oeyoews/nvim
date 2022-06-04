@@ -1,6 +1,6 @@
-local ok, persistence = pcall(require, "persistence")
+local persistence_ok, persistence = pcall(require, "persistence")
 
-if not ok then
+if not persistence_ok then
   return false
 end
 
@@ -10,4 +10,3 @@ persistence.setup({ dir = vim.fn.expand(vim.fn.stdpath('data') .. "/nvim_session
 
 -- restore last session
 vim.cmd [[ nnoremap <leader>ql <cmd> lua require("persistence").load({ last = true })<cr> ]]
-

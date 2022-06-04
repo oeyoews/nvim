@@ -1,6 +1,6 @@
-local ok, lspsaga = pcall(require, "lspsaga")
+local lspsaga_ok, lspsaga = pcall(require, "lspsaga")
 
-if not ok then
+if not lspsaga_ok then
   return false
 end
 

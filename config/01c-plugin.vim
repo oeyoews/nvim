@@ -5,6 +5,7 @@ let s:plug_dir = '$HOME/.local/share/nvim/nvim_bundles'
 call plug#begin(s:plug_dir)
 
 " @Temporary
+Plug 'ray-x/lsp_signature.nvim'
 Plug 'lervag/vimtex'
 Plug 'kyazdani42/nvim-tree.lua'
 

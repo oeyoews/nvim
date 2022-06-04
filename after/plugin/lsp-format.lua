@@ -1,6 +1,6 @@
-local ok, lspformat = pcall(require, "lsp-format")
+local lspformat_ok, lspformat = pcall(require, "lsp-format")
 
-if not ok then
+if not lspformat_ok then
   return false
 end
 

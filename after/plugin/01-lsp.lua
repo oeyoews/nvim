@@ -3,9 +3,9 @@
 vim.cmd [[set completeopt=menu,menuone,noselect]]
 --vim.cmd [[highlight default GH guifg=#3bb6c4 guibg=NONE]]
 
-local ok, cmp = pcall(require, "cmp")
+local cmp_ok, cmp = pcall(require, "cmp")
 
-local ok2, lspkind = pcall(require, "lspkind")
+local lspkind_ok, lspkind = pcall(require, "lspkind")
 
 local servers = {
   'vimls',
@@ -23,8 +23,8 @@ local servers = {
 
 local lsp_installer = require "nvim-lsp-installer"
 
-if not ok then return false end
-if not ok2 then return false end
+if not cmp_ok then return false end
+if not lspkind_ok then return false end
 
 lsp_installer.setup({
   automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
@@ -108,10 +108,14 @@ capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
+    -- ??
     flags = {
       debounce_text_changes = 150,
     },
+    --format code
     on_attach = require "lsp-format".on_attach,
+    --require "lsp_signature".on_attach()
+    -- link lsp-servers
     capabilities = capabilities,
   }
 end
