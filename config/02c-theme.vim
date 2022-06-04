@@ -47,7 +47,8 @@ hi Visual         ctermbg=242 gui=reverse
 " keyword
 hi Keyword    cterm=bold ctermfg=68 guifg=#8167a3 gui=bold
 " note: if it's no rnu, you must enable cursor-line(highlight current line)
-hi CursorLineNr      guifg=#c269fe guibg=#000000
+"hi CursorLineNr      guifg=#c269fe guibg=#000000
+hi CursorLineNr      guifg=#86dc2f guibg=#000000
 " highlight cursor-line
 " use material_style to comment this
 "hi CursorLine        guibg=black

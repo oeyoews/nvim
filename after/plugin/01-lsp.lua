@@ -128,3 +128,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   }
 }
 )
+
+vim.cmd [[
+nnoremap <silent> <leader>li :LspInfo<cr>
+]]

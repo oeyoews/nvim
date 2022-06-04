@@ -5,7 +5,8 @@ let s:plug_dir = '$HOME/.local/share/nvim/nvim_bundles'
 call plug#begin(s:plug_dir)
 
 " @Temporary
-Plug 'lukas-reineke/lsp-format.nvim'
+Plug 'lervag/vimtex'
+Plug 'kyazdani42/nvim-tree.lua'
 
 " @ Prefence
 Plug 'nathom/filetype.nvim'
@@ -13,6 +14,7 @@ Plug 'lewis6991/impatient.nvim'
 
 " @LspConfig
 Plug 'onsails/lspkind-nvim'
+Plug 'lukas-reineke/lsp-format.nvim'
 Plug 'SirVer/ultisnips'
 Plug 'oeyoews/vim-snippets'
 Plug 'neovim/nvim-lspconfig'
@@ -67,7 +69,6 @@ Plug 'folke/tokyonight.nvim'
 "Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 "Plug 'dhruvasagar/vim-table-mode', { 'for' : ['markdown'] }
 "Plug 'plasticboy/vim-markdown'
-Plug 'lervag/vimtex'
 "Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 "Plug 'nvim-telescope/telescope-fzy-native.nvim'
 "Plug 'oeyoews/suda.vim', { 'frozen': 1 }
@@ -78,7 +79,6 @@ Plug 'lervag/vimtex'
 "Plug 'yamatsum/nvim-cursorline'
 "Plug 'oeyoews/nvim-cursorword'
 "Plug 'github/copilot.vim'
-"Plug 'kyazdani42/nvim-tree.lua'
 "Plug 'williamboman/nvim-lsp-installer'
 "Plug 'mfussenegger/nvim-jdtls'
 "Plug 'olimorris/onedarkpro.nvim'
