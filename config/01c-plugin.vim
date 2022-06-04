@@ -9,6 +9,8 @@ call plug#begin(s:plug_dir)
 Plug 'ray-x/lsp_signature.nvim'
 Plug 'lervag/vimtex'
 Plug 'kyazdani42/nvim-tree.lua'
+Plug 'sindrets/diffview.nvim'
+
 "Plug 'windwp/nvim-spectre'
 Plug 'phaazon/hop.nvim'
 Plug 'nvim-lualine/lualine.nvim'
@@ -68,7 +70,6 @@ Plug 'folke/tokyonight.nvim'
 " @Deprecated
 "Plug 'gcmt/wildfire.vim', { 'frozen': 1 }
 "Plug 'lewis6991/spellsitter.nvim'
-"Plug 'sindrets/diffview.nvim'
 "Plug 'ggandor/lightspeed.nvim'
 "Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1}
 "Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
