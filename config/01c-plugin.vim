@@ -11,7 +11,6 @@ Plug 'lervag/vimtex'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'sindrets/diffview.nvim'
 
-"Plug 'windwp/nvim-spectre'
 Plug 'phaazon/hop.nvim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'j-hui/fidget.nvim'
@@ -34,7 +33,6 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-emoji'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-nvim-lua'
-"Plug 'folke/lua-dev.nvim'
 Plug 'tami5/lspsaga.nvim'
 
 " @Dependcies
@@ -113,5 +111,7 @@ Plug 'folke/tokyonight.nvim'
 "Plug 'marko-cerovac/material.nvim'
 "Plug 'mfussenegger/nvim-lint'
 "Plug 'jose-elias-alvarez/null-ls.nvim'
+"Plug 'folke/lua-dev.nvim'
+"Plug 'windwp/nvim-spectre'
 
 call plug#end()
