@@ -3,8 +3,13 @@ vim.cmd [[set completeopt=menu,menuone,noselect,noinsert]]
 --vim.cmd [[highlight default GH guifg=#3bb6c4 guibg=NONE]]
 --vim.cmd [[highlight default GH guifg=gray guibg=NONE]]
 
+local ok, cmp = pcall(require, "cmp")
+
+if not ok then
+  return false
+end
+
 -- cmp_lsp
-local cmp = require'cmp'
 local lspkind = require('lspkind')
 
 cmp.setup({
@@ -75,6 +80,7 @@ cmp.setup({
       'yamlls',
       'clangd',
       'pyright',
+      'bashls'
     }
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)

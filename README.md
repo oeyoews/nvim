@@ -13,6 +13,7 @@
 * npm(for lsp-installer)
 * make(for install)
 * ranger(file manager)
+* need install noto-font-emoji
 
 ## 📨 Install
 

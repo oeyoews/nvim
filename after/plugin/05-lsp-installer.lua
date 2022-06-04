@@ -30,6 +30,7 @@ lsp_installer.setup({
     "pyright",
     "jsonls",
     "vimls",
+    "bashls",
     "yamlls"
   },
   ui = {
