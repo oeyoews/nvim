@@ -4,6 +4,7 @@ let g:plug_url_format = 'https://hub.fastgit.xyz/%s.git'
 let s:plug_dir = '$HOME/.local/share/nvim/nvim_bundles'
 call plug#begin(s:plug_dir)
 
+" TODO: config dap: https://github.com/ravenxrz/dotfiles/blob/master/nvim/lua/user/conf/nvim-spectre.lua
 " @Temporary
 Plug 'ray-x/lsp_signature.nvim'
 Plug 'lervag/vimtex'
