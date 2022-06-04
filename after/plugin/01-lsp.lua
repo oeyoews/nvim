@@ -1,16 +1,15 @@
 -- note this order
 vim.cmd [[set completeopt=menu,menuone,noselect,noinsert]]
 --vim.cmd [[highlight default GH guifg=#3bb6c4 guibg=NONE]]
---vim.cmd [[highlight default GH guifg=gray guibg=NONE]]
 
 local ok, cmp = pcall(require, "cmp")
+local ok2, lspkind = pcall(require, "lspkind")
 
-if not ok then
-  return false
-end
+if not ok then return false end
+if not ok2 then return false end
 
 -- cmp_lsp
-local lspkind = require('lspkind')
+--local lspkind = require('lspkind')
 
 cmp.setup({
   view = {
@@ -105,10 +104,10 @@ cmp.setup({
     vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
     vim.lsp.diagnostic.on_publish_diagnostics, {
       underline = true,
-      update_in_insert = true,
+      update_in_insert = false,
       virtual_text = {
         spacing = 2,
-        prefix = '●'
+        prefix = ' '
       }
     }
     )
