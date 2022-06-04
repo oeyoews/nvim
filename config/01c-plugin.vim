@@ -5,7 +5,7 @@ let s:plug_dir = '$HOME/.local/share/nvim/nvim_bundles'
 call plug#begin(s:plug_dir)
 
 " @Temporary
-"Plug 'lukas-reineke/lsp-format.nvim'
+Plug 'lukas-reineke/lsp-format.nvim'
 
 " @ Prefence
 Plug 'nathom/filetype.nvim'
@@ -24,7 +24,7 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-emoji'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-nvim-lua'
-Plug 'folke/lua-dev.nvim'
+"Plug 'folke/lua-dev.nvim'
 Plug 'tami5/lspsaga.nvim'
 
 " @Dependcies

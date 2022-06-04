@@ -1,115 +1,130 @@
 -- note this order
-vim.cmd [[set completeopt=menu,menuone,noselect,noinsert]]
+--vim.cmd [[set completeopt=menu,menuone,noselect,noinsert]]
+vim.cmd [[set completeopt=menu,menuone,noselect]]
 --vim.cmd [[highlight default GH guifg=#3bb6c4 guibg=NONE]]
 
 local ok, cmp = pcall(require, "cmp")
+
 local ok2, lspkind = pcall(require, "lspkind")
+
+local servers = {
+  'vimls',
+  'jsonls',
+  'yamlls',
+  'clangd',
+  'pyright',
+  'texlab',
+  'tsserver',
+  'zk',
+  'gopls',
+  'cssls',
+  'bashls'
+}
+
+local lsp_installer = require "nvim-lsp-installer"
 
 if not ok then return false end
 if not ok2 then return false end
 
+lsp_installer.setup({
+  automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
+  ensure_installed = servers,
+  ui = {
+    icons = {
+      server_installed = "🍺",
+      server_pending = "🔏",
+      server_uninstalled = "🌽"
+    }
+  }
+})
+
+
 cmp.setup({
   view = {
     --entries = "custom" -- can be "custom", "wildmenu" or "native"
-    entries = {name = 'custom', selection_order = 'near_cursor' }
+    entries = { name = 'custom', selection_order = 'near_cursor' }
   },
   snippet = {
     expand = function(args)
       vim.fn["UltiSnips#Anon"](args.body)
     end, },
 
-    -- mappings
-    mapping = {
-      ['<S-Tab>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 's' }),
-      ['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' }),
-      ['<CR>'] = cmp.mapping.confirm({ select = true}),
-      ['<C-e>'] = cmp.mapping.complete(),
-      ['<C-c>'] = cmp.mapping.close(), },
+  -- mappings
+  mapping = {
+    ['<S-Tab>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 's' }),
+    ['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' }),
+    ['<CR>'] = cmp.mapping.confirm({ select = true }),
+    ['<C-e>'] = cmp.mapping.complete(),
+    ['<C-c>'] = cmp.mapping.close(), },
 
-      -- menu
-      formatting = {
-        format = lspkind.cmp_format({
-          mode = "symbol",
-          maxwidth = 50,
-          menu = ({
-            nvim_lsp = "[LSP]",
-            buffer = "[Buffer]",
-            ultisnips = "[UltiSnips]",
-            nvim_lua = "[Lua]",
-          })
-        }),
-      },
+  -- menu
+  formatting = {
+    format = lspkind.cmp_format({
+      mode = "symbol",
+      maxwidth = 50,
+      menu = ({
+        nvim_lsp = "[LSP]",
+        buffer = "[Buffer]",
+        ultisnips = "[UltiSnips]",
+        nvim_lua = "[Lua]",
+      })
+    }),
+  },
 
-      -- config default window
-      window = {
-        completion = cmp.config.window.bordered(),
-        documentation = cmp.config.window.bordered()
-      },
+  -- config default window
+  window = {
+    completion = cmp.config.window.bordered(),
+    documentation = cmp.config.window.bordered()
+  },
 
-      experimental = {
-        --ghost_text = {hl_group = 'GH'}
-        ghost_text = true
-      },
+  experimental = {
+    --ghost_text = {hl_group = 'GH'}
+    ghost_text = true
+  },
 
-      -- sources
-      sources = {
-        { name = 'nvim_lsp' },
-        { name = 'buffer', keyword_length = 2 },
-        { name = 'ultisnips' },
-        { name = 'path' },
-        { name = 'nvim-lua' },
-        { name = 'emoji', insert = true },
-        { name = "dictionary", keyword_length = 2 },
-      },
+  -- sources
+  sources = {
+    { name = 'nvim_lsp' },
+    { name = 'buffer', keyword_length = 2 },
+    { name = 'ultisnips' },
+    { name = 'path' },
+    { name = 'nvim-lua' },
+    { name = 'emoji', insert = true },
+    { name = "dictionary", keyword_length = 2 },
+  },
 
-    })
+})
 
 
-    -- need config in lspinstall
-    --jsonls: npm i -g vscode-langservers-extracted
-    -- gopls need go.mod for folder
-    local nvim_lsp = require('lspconfig')
-    -- automatically connect language server protocol
-    local servers = {
-      'vimls',
-      'jsonls',
-      'yamlls',
-      'clangd',
-      'pyright',
-      'texlab',
-      'tsserver',
-      'zk',
-      'cssls',
-      'bashls'
-    }
-    local capabilities = vim.lsp.protocol.make_client_capabilities()
-    capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
-    for _, lsp in ipairs(servers) do
-      nvim_lsp[lsp].setup {
-        flags = {
-          debounce_text_changes = 150,
-        },
-        capabilities = capabilities,
-      }
-    end
+-- need config in lspinstall
+--jsonls: npm i -g vscode-langservers-extracted
+-- gopls need go.mod for folder
+local nvim_lsp = require('lspconfig')
+-- automatically connect language server protocol
 
-    -- for lua dev cmd
-    local luadev = require("lua-dev").setup({
-      lspconfig = {
-        cmd = {"lua-language-server"}
-      },
-    })
-    nvim_lsp.sumneko_lua.setup(luadev)
+local capabilities = vim.lsp.protocol.make_client_capabilities()
 
-    -- icon note this order in last
-    vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
-    vim.lsp.diagnostic.on_publish_diagnostics, {
-      underline = true,
-      update_in_insert = true,
-      severity_sort = false,
-      virtual_text = {
-        spacing = 2,
-        prefix = ' '
-      }
-    }
-    )
+capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+
+for _, lsp in ipairs(servers) do
+  nvim_lsp[lsp].setup {
+    flags = {
+      debounce_text_changes = 150,
+    },
+    on_attach = require "lsp-format".on_attach,
+    capabilities = capabilities,
+  }
+end
+
+-- icon note this order in last
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+  vim.lsp.diagnostic.on_publish_diagnostics, {
+  underline = true,
+  update_in_insert = true,
+  severity_sort = false,
+  virtual_text = {
+    spacing = 2,
+    prefix = ' '
+  }
+}
+)
