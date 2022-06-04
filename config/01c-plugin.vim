@@ -14,7 +14,6 @@ Plug 'SirVer/ultisnips'
 Plug 'oeyoews/vim-snippets'
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/nvim-lsp-installer'
-Plug 'mfussenegger/nvim-lint'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
@@ -103,5 +102,7 @@ Plug 'folke/tokyonight.nvim'
 "Plug 'goolord/alpha-nvim'
 "Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 "Plug 'marko-cerovac/material.nvim'
+"Plug 'mfussenegger/nvim-lint'
+"Plug 'jose-elias-alvarez/null-ls.nvim'
 
 call plug#end()
