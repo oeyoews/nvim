@@ -114,12 +114,19 @@ for _, lsp in ipairs(servers) do
     },
     --format code
     on_attach = require "lsp-format".on_attach,
-    --require "lsp_signature".on_attach()
     -- link lsp-servers
     capabilities = capabilities
   }
+  require "lsp_signature".on_attach()
 end
 
+--vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+--border = "rounded",
+--})
+
+vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
+  border = "rounded",
+})
 -- icon note this order in last
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
@@ -128,8 +135,16 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   severity_sort = false,
   virtual_text = {
     spacing = 2,
-    prefix = ' '
-  }
+    prefix = ""
+  },
+  float = {
+    focusable = false,
+    style = "minimal",
+    border = "rounded",
+    source = "always",
+    header = "",
+    prefix = "",
+  },
 }
 )
 
