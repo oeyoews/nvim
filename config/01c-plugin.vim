@@ -9,7 +9,7 @@ call plug#begin(s:plug_dir)
 Plug 'ray-x/lsp_signature.nvim'
 Plug 'lervag/vimtex'
 Plug 'kyazdani42/nvim-tree.lua'
-Plug 'windwp/nvim-spectre'
+"Plug 'windwp/nvim-spectre'
 Plug 'phaazon/hop.nvim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'j-hui/fidget.nvim'
