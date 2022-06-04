@@ -1,7 +1,5 @@
 {
   "name": "nvim",
-  "version": "1.0.0",
-  "main": "index.js",
   "repository": "https://gitlab.com/oeyoews/nvim.git",
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
