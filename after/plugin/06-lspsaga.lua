@@ -17,7 +17,7 @@ lspsaga.setup { -- defaults ...
   diagnostic_header_icon = " ",
   -- code action title icon
   --code_action_icon = "👷",
-  code_action_icon = " ",
+  code_action_icon = "",
   code_action_prompt = {
     enable = true,
     sign = true,

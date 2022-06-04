@@ -31,6 +31,9 @@ lsp_installer.setup({
     "jsonls",
     "vimls",
     "bashls",
+    "texlab",
+    "tsserver",
+    "remark_ls",
     "yamlls"
   },
   ui = {
@@ -45,5 +48,7 @@ lsp_installer.setup({
 local lspconfig = require('lspconfig')
 
 lspconfig.jsonls.setup {}
-
 lspconfig.yamlls.setup {}
+lspconfig.bashls.setup {}
+lspconfig.texlab.setup {}
+lspconfig.remark_ls.setup {}

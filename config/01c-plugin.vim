@@ -1,4 +1,4 @@
-autocmd VimEnter *   if len(filter(values(g:plugs), '!isdirectory(v:val.dir)')) | PlugInstall --sync | q | endif
+autocmd VimEnter *  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)')) | PlugInstall --sync | q | endif
 
 let g:plug_url_format = 'https://hub.fastgit.xyz/%s.git'
 let s:plug_dir = '$HOME/.local/share/nvim/nvim_bundles'
@@ -64,7 +64,7 @@ Plug 'folke/tokyonight.nvim'
 "Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 "Plug 'dhruvasagar/vim-table-mode', { 'for' : ['markdown'] }
 "Plug 'plasticboy/vim-markdown'
-"Plug 'lervag/vimtex'
+Plug 'lervag/vimtex'
 "Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 "Plug 'nvim-telescope/telescope-fzy-native.nvim'
 "Plug 'oeyoews/suda.vim', { 'frozen': 1 }

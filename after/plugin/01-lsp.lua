@@ -79,6 +79,9 @@ cmp.setup({
       'yamlls',
       'clangd',
       'pyright',
+      'texlab',
+      'tsserver',
+      'remark_ls',
       'bashls'
     }
     local capabilities = vim.lsp.protocol.make_client_capabilities()
