@@ -8,6 +8,8 @@ call plug#begin(s:plug_dir)
 Plug 'ray-x/lsp_signature.nvim'
 Plug 'lervag/vimtex'
 Plug 'kyazdani42/nvim-tree.lua'
+Plug 'windwp/nvim-spectre'
+Plug 'phaazon/hop.nvim'
 
 " @ Prefence
 Plug 'nathom/filetype.nvim'
@@ -91,7 +93,6 @@ Plug 'folke/tokyonight.nvim'
 "Plug 'xiyaowong/nvim-transparent'
 "Plug 'tribela/vim-transparent'
 "Plug 'nvim-treesitter/playground', { 'on': 'TSPlaygroundToggle' }
-"Plug 'phaazon/hop.nvim'
 "Plug 'inkarkat/vim-SpellCheck'
 "Plug 'inkarkat/vim-ingo-library'
 "Plug 'skywind3000/vim-dic'

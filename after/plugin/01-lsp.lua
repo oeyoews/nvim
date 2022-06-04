@@ -116,7 +116,7 @@ for _, lsp in ipairs(servers) do
     on_attach = require "lsp-format".on_attach,
     --require "lsp_signature".on_attach()
     -- link lsp-servers
-    capabilities = capabilities,
+    capabilities = capabilities
   }
 end
 

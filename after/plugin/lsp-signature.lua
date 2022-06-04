@@ -1,3 +1,4 @@
+--[[
 require "lsp_signature".setup({
   debug = false, -- set to true to enable debug logging
   log_path = vim.fn.stdpath("cache") .. "/lsp_signature.log", -- log dir when debug is on
@@ -47,3 +48,4 @@ require "lsp_signature".setup({
   timer_interval = 200, -- default timer check interval set to lower value if you want to reduce latency
   toggle_key = nil -- toggle signature on and off in insert mode,  e.g. toggle_key = '<M-x>'
 })
+--]]
