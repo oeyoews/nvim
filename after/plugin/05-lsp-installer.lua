@@ -33,7 +33,8 @@ lsp_installer.setup({
     "bashls",
     "texlab",
     "tsserver",
-    "remark_ls",
+    "zk",
+    "cssls",
     "yamlls"
   },
   ui = {
@@ -51,4 +52,5 @@ lspconfig.jsonls.setup {}
 lspconfig.yamlls.setup {}
 lspconfig.bashls.setup {}
 lspconfig.texlab.setup {}
-lspconfig.remark_ls.setup {}
+lspconfig.zk.setup {}
+lspconfig.cssls.setup {}

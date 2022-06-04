@@ -8,9 +8,6 @@ local ok2, lspkind = pcall(require, "lspkind")
 if not ok then return false end
 if not ok2 then return false end
 
--- cmp_lsp
---local lspkind = require('lspkind')
-
 cmp.setup({
   view = {
     --entries = "custom" -- can be "custom", "wildmenu" or "native"
@@ -81,7 +78,8 @@ cmp.setup({
       'pyright',
       'texlab',
       'tsserver',
-      'remark_ls',
+      'zk',
+      'cssls',
       'bashls'
     }
     local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -107,7 +105,7 @@ cmp.setup({
     vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
     vim.lsp.diagnostic.on_publish_diagnostics, {
       underline = true,
-      update_in_insert = false,
+      update_in_insert = true,
       severity_sort = false,
       virtual_text = {
         spacing = 2,

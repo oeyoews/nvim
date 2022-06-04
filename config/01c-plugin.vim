@@ -4,6 +4,9 @@ let g:plug_url_format = 'https://hub.fastgit.xyz/%s.git'
 let s:plug_dir = '$HOME/.local/share/nvim/nvim_bundles'
 call plug#begin(s:plug_dir)
 
+" @Temporary
+"Plug 'lukas-reineke/lsp-format.nvim'
+
 " @ Prefence
 Plug 'nathom/filetype.nvim'
 Plug 'lewis6991/impatient.nvim'
