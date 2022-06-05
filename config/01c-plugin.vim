@@ -11,6 +11,7 @@ Plug 'lervag/vimtex'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'sindrets/diffview.nvim'
 
+
 Plug 'phaazon/hop.nvim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'j-hui/fidget.nvim'
@@ -113,5 +114,10 @@ Plug 'folke/tokyonight.nvim'
 "Plug 'jose-elias-alvarez/null-ls.nvim'
 "Plug 'folke/lua-dev.nvim'
 "Plug 'windwp/nvim-spectre'
+"Plug 'ravenxrz/DAPInstall.nvim'
+"Plug 'ravenxrz/nvim-dap'
+"Plug 'rcarriga/nvim-dap-ui'
+"Plug 'theHamsta/nvim-dap-virtual-text'
+"Plug 'jbyuki/one-small-step-for-vimkind'
 
 call plug#end()
