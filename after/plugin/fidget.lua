@@ -1,6 +1,6 @@
 local status_ok, fidget = pcall(require, "fidget")
 if not status_ok then
-  vim.notify("comment not found!")
+  vim.notify("fidget not found!")
   return
 end
 
@@ -54,3 +54,7 @@ fidget.setup {
     strict = false, -- whether to interpret LSP strictly
   },
 }
+
+--vim.cmd [[
+--highlight FidgetTitle ctermfg=110 guifg=#6cb6eb
+--]]
