@@ -117,6 +117,7 @@ for _, lsp in ipairs(servers) do
     -- link lsp-servers
     capabilities = capabilities
   }
+  --require 'illuminate'.on_attach()
   require "lsp_signature".on_attach()
 end
 

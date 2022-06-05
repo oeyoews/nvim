@@ -7,4 +7,4 @@ let g:tex_conceal='abdmg'
 " fix latex filetype(plaintex)
 autocmd BufRead,BufNewFile *.tex set filetype=tex
 
-set conceallevel=2
+"set conceallevel=2

@@ -7,7 +7,8 @@ call plug#begin(s:plug_dir)
 " TODO: config dap: https://github.com/ravenxrz/dotfiles/blob/master/nvim/lua/user/conf/nvim-spectre.lua
 " @Temporary
 Plug 'ray-x/lsp_signature.nvim'
-Plug 'andymass/vim-matchup'
+Plug 'RRethy/vim-illuminate'
+"Plug 'glepnir/dashboard-nvim'
 
 Plug 'phaazon/hop.nvim'
 Plug 'nvim-lualine/lualine.nvim'
@@ -119,5 +120,6 @@ Plug 'folke/tokyonight.nvim'
 "Plug 'kyazdani42/nvim-tree.lua'
 "Plug 'sindrets/diffview.nvim'
 "Plug 'j-hui/fidget.nvim'
+"Plug 'andymass/vim-matchup'
 
 call plug#end()

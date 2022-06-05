@@ -8,3 +8,8 @@ autocmd! FileType markdown nnoremap <space>fmm :MarkdownPreviewToggle<CR>
 "exec "nohlsearch"
 
 command! -nargs=?  -complete=color Themes colorscheme <args>
+
+
+lua << EOF
+-- vim.cmd([[let g:matchup_matchparen_offscreen = {'method': 'popup'}]])
+EOF
