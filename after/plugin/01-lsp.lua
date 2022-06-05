@@ -7,25 +7,33 @@ local cmp_ok, cmp = pcall(require, "cmp")
 
 local lspkind_ok, lspkind = pcall(require, "lspkind")
 
-local servers = {
-  'vimls',
-  'jsonls',
-  'yamlls',
-  'clangd',
-  'pyright',
-  'texlab',
-  'tsserver',
-  'zk',
-  'gopls',
-  'cssls',
-  'bashls'
-}
-
 local lsp_installer = require "nvim-lsp-installer"
+
+local lspformat_ok, lspformat = pcall(require, "lsp-format")
+
+if not lspformat_ok then
+  return false
+end
+
 
 if not cmp_ok then return false end
 
 if not lspkind_ok then return false end
+
+local servers = {
+  'vimls',
+  'jsonls',
+  'yamlls',
+  --'ccls',
+  'clangd',
+  'pyright',
+  'texlab',
+  'tsserver',
+  'gopls',
+  'cssls',
+  'sumneko_lua',
+  'bashls',
+}
 
 lsp_installer.setup({
   automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
@@ -186,6 +194,7 @@ cmp.setup.cmdline(':', {
   })
 })
 
+--[[
 vim.cmd [[
 "autocmd FileType lsp-installer lua vim.api.nvim_win_set_config(0, { border = "none" })
 function! s:deregister_autocmd() abort
@@ -199,3 +208,4 @@ endfunction
 " For a left-aligned window
 autocmd FileType lsp-installer wincmd H | call s:deregister_autocmd()
 ]]
+--]]
