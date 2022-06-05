@@ -41,7 +41,7 @@ local mode = {
 local file_name = {
   'filename',
   file_status = true, -- Displays file status (readonly status, modified status)
-  path = 1, -- 0: Just the filename
+  path = 0, -- 0: Just the filename
   -- 1: Relative path
   -- 2: Absolute path
 
@@ -93,10 +93,9 @@ lualine.setup({
   options = {
     icons_enabled = true,
     theme = "auto",
-    component_separators = { left = "", right = "" },
+    --component_separators = { left = "", right = "" },
+    component_separators = { left = "", right = "" },
     section_separators = { left = "", right = "" },
-    -- component_separators = { left = "", right = "" },
-    -- section_separators = { left = "", right = "" },
     disabled_filetypes = { "alpha", "dashboard", "NvimTree", "Outline" },
     always_divide_middle = true,
   },
@@ -105,7 +104,7 @@ lualine.setup({
     lualine_b = { mode },
     lualine_c = { file_name },
     lualine_x = { diff, spaces, "encoding", filetype, "fileformat" },
-    lualine_y = { location },
+    lualine_y = { "location" },
     lualine_z = { progress },
   },
   inactive_sections = {
