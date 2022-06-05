@@ -9,6 +9,10 @@ call plug#begin(s:plug_dir)
 Plug 'ray-x/lsp_signature.nvim'
 Plug 'RRethy/vim-illuminate'
 Plug 'hrsh7th/cmp-cmdline'
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 Plug 'phaazon/hop.nvim'
 
