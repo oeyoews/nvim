@@ -11,9 +11,10 @@
 * python-pynvim(neovim)
 * python3(ultisnips)
 * npm(for lsp-installer)
+* go(lsp server)
 * make(for install)
 * ranger(file manager)
-* need install noto-font-emoji
+* need install noto-font-emoji or nerd font
 
 ## 📨 Install
 
