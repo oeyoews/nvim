@@ -8,7 +8,7 @@ call plug#begin(s:plug_dir)
 " @Temporary
 Plug 'ray-x/lsp_signature.nvim'
 Plug 'RRethy/vim-illuminate'
-"Plug 'glepnir/dashboard-nvim'
+Plug 'hrsh7th/cmp-cmdline'
 
 Plug 'phaazon/hop.nvim'
 
@@ -121,5 +121,7 @@ Plug 'folke/tokyonight.nvim'
 "Plug 'j-hui/fidget.nvim'
 "Plug 'andymass/vim-matchup'
 "Plug 'nvim-lualine/lualine.nvim'
+"Plug 'glepnir/dashboard-nvim'
+"Plug 'uga-rosa/cmp-dictionary'
 
 call plug#end()

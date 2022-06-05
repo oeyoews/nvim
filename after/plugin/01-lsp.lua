@@ -41,8 +41,8 @@ lsp_installer.setup({
 
 cmp.setup({
   view = {
-    --entries = "custom" -- can be "custom", "wildmenu" or "native"
-    entries = { name = 'custom', selection_order = 'near_cursor' }
+    entries = "custom" -- can be "custom", "wildmenu" or "native"
+    --entries = { name = 'custom', selection_order = 'near_cursor' }
   },
   snippet = {
     expand = function(args)
@@ -60,7 +60,8 @@ cmp.setup({
   -- menu
   formatting = {
     format = lspkind.cmp_format({
-      mode = "symbol",
+      --mode = "symbol",
+      mode = "symbol_text",
       maxwidth = 50,
       menu = ({
         nvim_lsp = "[LSP]",
@@ -84,6 +85,7 @@ cmp.setup({
 
   -- sources
   sources = {
+    { name = 'cmdline' },
     { name = 'nvim_lsp' },
     { name = 'buffer', keyword_length = 2 },
     { name = 'ultisnips' },
@@ -117,7 +119,7 @@ for _, lsp in ipairs(servers) do
     -- link lsp-servers
     capabilities = capabilities
   }
-  --require 'illuminate'.on_attach()
+  require 'illuminate'.on_attach()
   require "lsp_signature".on_attach()
 end
 
@@ -152,3 +154,32 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
 vim.cmd [[
   nnoremap <silent> <leader>li :LspInfo<cr>
 ]]
+
+
+-- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
+cmp.setup.cmdline('/', {
+  --view = {
+  --entries = { name = 'wildmenu', separator = '|' }
+  --},
+  mapping = cmp.mapping.preset.cmdline(),
+  sources = {
+    { name = 'buffer' }
+  }
+})
+
+cmp.setup.cmdline('?', {
+  mapping = cmp.mapping.preset.cmdline(),
+  sources = {
+    { name = 'buffer' }
+  }
+})
+
+-- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+cmp.setup.cmdline(':', {
+  mapping = cmp.mapping.preset.cmdline(),
+  sources = cmp.config.sources({
+    { name = 'cmdline' }
+  }, {
+    { name = 'path' }
+  })
+})
