@@ -24,6 +24,7 @@ local servers = {
 local lsp_installer = require "nvim-lsp-installer"
 
 if not cmp_ok then return false end
+
 if not lspkind_ok then return false end
 
 lsp_installer.setup({
@@ -58,6 +59,7 @@ cmp.setup({
     ['<C-c>'] = cmp.mapping.close(), },
 
   -- menu
+  ---[[
   formatting = {
     format = lspkind.cmp_format({
       --mode = "symbol",
@@ -71,6 +73,7 @@ cmp.setup({
       })
     }),
   },
+  --]]
 
   -- config default window
   window = {
