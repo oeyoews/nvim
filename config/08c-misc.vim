@@ -7,4 +7,4 @@ autocmd! FileType markdown nnoremap <space>fmm :MarkdownPreviewToggle<CR>
 
 "exec "nohlsearch"
 
-command! -nargs=?  -complete=color Theme colorscheme <args>
+command! -nargs=?  -complete=color Themes colorscheme <args>

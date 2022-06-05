@@ -8,7 +8,7 @@ let g:mapleader = "\<Space>"
 "nnoremap <silent> <leader>O :set paste<cr>O<esc>:set nopaste<cr>
 
 " load current file
-nnoremap <leader>so <cmd>so % <bar> echo "Finished refresh current file."<cr>
+nnoremap <leader>so <cmd>so % <bar> lua vim.notify("🍺 Finished refresh current file.")<cr>
 
 " quit insert mode fastly
 inoremap jk <ESC>
