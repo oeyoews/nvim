@@ -83,7 +83,7 @@ local progress = function()
 end
 
 local spaces = function()
-  return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
+  return "Spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
 end
 
 -- add gps module to get the position information
@@ -105,7 +105,7 @@ lualine.setup({
     lualine_c = { file_name },
     lualine_x = { diff, spaces, "encoding", filetype, "fileformat" },
     lualine_y = { "location" },
-    lualine_z = { progress },
+    lualine_z = {},
   },
   inactive_sections = {
     lualine_a = {},

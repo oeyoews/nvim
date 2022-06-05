@@ -10,7 +10,7 @@ set undofile
 "set ttyfast
 set signcolumn=yes
 set autochdir
-set nowrap
+set wrap
 set linebreak
 set hidden
 set ignorecase
