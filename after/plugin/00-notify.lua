@@ -42,3 +42,7 @@ notify.setup({
     TRACE = "✎",
   },
 })
+
+vim.cmd [[
+nnoremap <silent> <leader>bM :Notifications<cr>
+]]
