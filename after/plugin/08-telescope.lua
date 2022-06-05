@@ -6,24 +6,47 @@ end
 
 local actions = require('telescope.actions')
 
+-- disable preview binaries
+local previewers = require("telescope.previewers")
+local Job = require("plenary.job")
+local new_maker = function(filepath, bufnr, opts)
+  filepath = vim.fn.expand(filepath)
+  Job:new({
+    command = "file",
+    args = { "--mime-type", "-b", filepath },
+    on_exit = function(j)
+      local mime_type = vim.split(j:result()[1], "/")[1]
+      if mime_type == "text" then
+        previewers.buffer_previewer_maker(filepath, bufnr, opts)
+      else
+        -- maybe we want to write something to the buffer here
+        vim.schedule(function()
+          vim.api.nvim_buf_set_lines(bufnr, 0, -1, false, { "BINARY" })
+        end)
+      end
+    end
+  }):sync()
+end
+
 telescope.setup {
   defaults = {
     mappings = {
       n = { ["q"] = actions.close },
     },
     -- #
-    prompt_prefix = "# ",
-    --  ➤
-    selection_caret = "> ",
+    prompt_prefix = "  ",
+    --  ➤ 
+    selection_caret = " ",
     entry_prefix = "  ",
   },
-  pickers = {
 
+  pickers = {
     find_files = {
-      theme = "ivy",
+      theme = "dropdown",
+      --preview = false,
     },
     oldfiles = {
-      theme = "ivy"
+      theme = "dropdown"
     },
     buffers = {
       theme = "ivy"
@@ -68,7 +91,7 @@ telescope.setup {
 vim.cmd [[
 nnoremap <leader>ff <cmd>Telescope find_files <cr>
 nnoremap <leader>tr <cmd>Telescope oldfiles <cr>
-nnoremap <leader>tb <cmd>Telescope buffers <cr>
+nnoremap <leader>tbb <cmd>Telescope buffers <cr>
 nnoremap <leader>tc <Cmd>Telescope colorscheme <Cr>
 
 " search string in current dir
@@ -87,5 +110,5 @@ highlight TelescopeResultsBorder  guifg=#bd93f9
 highlight TelescopePreviewBorder  guifg=#bd93f9
 
 " Color the prompt prefix
-highlight TelescopePromptPrefix   guifg=green
+" highlight TelescopePromptPrefix   guifg=green
 ]]
