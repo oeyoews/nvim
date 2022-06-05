@@ -39,7 +39,6 @@ lsp_installer.setup({
   }
 })
 
-
 cmp.setup({
   view = {
     entries = "custom" -- can be "custom", "wildmenu" or "native"
@@ -186,3 +185,17 @@ cmp.setup.cmdline(':', {
     { name = 'path' }
   })
 })
+
+vim.cmd [[
+"autocmd FileType lsp-installer lua vim.api.nvim_win_set_config(0, { border = "none" })
+function! s:deregister_autocmd() abort
+    " Disables the self-closing behavior of the window
+    autocmd TextChanged <buffer> ++once autocmd! LspInstallerWindow
+endfunction
+
+" For a right-aligned window
+" autocmd FileType lsp-installer wincmd L | call s:deregister_autocmd()
+
+" For a left-aligned window
+autocmd FileType lsp-installer wincmd H | call s:deregister_autocmd()
+]]
