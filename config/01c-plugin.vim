@@ -11,7 +11,6 @@ Plug 'RRethy/vim-illuminate'
 "Plug 'glepnir/dashboard-nvim'
 
 Plug 'phaazon/hop.nvim'
-Plug 'nvim-lualine/lualine.nvim'
 
 " @ Prefence
 Plug 'nathom/filetype.nvim'
@@ -121,5 +120,6 @@ Plug 'folke/tokyonight.nvim'
 "Plug 'sindrets/diffview.nvim'
 "Plug 'j-hui/fidget.nvim'
 "Plug 'andymass/vim-matchup'
+"Plug 'nvim-lualine/lualine.nvim'
 
 call plug#end()
