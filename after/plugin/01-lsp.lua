@@ -24,7 +24,7 @@ local servers = {
   'pyright',
   'texlab',
   'tsserver',
-  'gopls',
+  --'gopls',
   'cssls',
   'sumneko_lua',
   'bashls',
