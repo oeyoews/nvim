@@ -6,8 +6,12 @@ end
 
 bufferline.setup {
   options = {
-    numbers = "none",
-    right_mouse_command = "buffer %d",
-    separator_style = "thin",
+    diagnostics_update_in_insert = false,
+    diagnostics_indicator = function(count, _, _, _)
+      return "(" .. count .. ")"
+    end,
+    diagnostics = "nvim_lsp",
+    show_buffer_close_icons = false,
+    show_close_icon = false,
   }
 }

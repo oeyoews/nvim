@@ -1,6 +1,5 @@
--- note this order
---vim.cmd [[set completeopt=menu,menuone,noselect,noinsert]]
-vim.cmd [[set completeopt=menu,menuone,noselect]]
+vim.cmd [[set completeopt=menu,menuone,noselect,noinsert]]
+
 --vim.cmd [[highlight default GH guifg=#3bb6c4 guibg=NONE]]
 
 local cmp_ok, cmp = pcall(require, "cmp")
@@ -9,12 +8,9 @@ local lspkind_ok, lspkind = pcall(require, "lspkind")
 
 local lsp_installer = require "nvim-lsp-installer"
 
-local lspformat_ok, lspformat = pcall(require, "lsp-format")
+local lspformat_ok, _ = pcall(require, "lsp-format")
 
-if not lspformat_ok then
-  return false
-end
-
+if not lspformat_ok then return false end
 
 if not cmp_ok then return false end
 
@@ -24,7 +20,6 @@ local servers = {
   'vimls',
   'jsonls',
   'yamlls',
-  --'ccls',
   'clangd',
   'pyright',
   'texlab',
@@ -36,7 +31,7 @@ local servers = {
 }
 
 lsp_installer.setup({
-  automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
+  automatic_installation = true,
   ensure_installed = servers,
   ui = {
     icons = {
@@ -55,7 +50,8 @@ cmp.setup({
   snippet = {
     expand = function(args)
       vim.fn["UltiSnips#Anon"](args.body)
-    end, },
+    end,
+  },
 
   -- mappings
   mapping = {
@@ -66,10 +62,9 @@ cmp.setup({
     ['<C-c>'] = cmp.mapping.close(), },
 
   -- menu
-  ---[[
   formatting = {
     format = lspkind.cmp_format({
-      --mode = "symbol",
+      -- mode-option: symbol
       mode = "symbol_text",
       maxwidth = 50,
       menu = ({
@@ -80,7 +75,6 @@ cmp.setup({
       })
     }),
   },
-  --]]
 
   -- config default window
   window = {
@@ -97,22 +91,17 @@ cmp.setup({
   sources = {
     { name = 'cmdline' },
     { name = 'nvim_lsp' },
-    { name = 'buffer', keyword_length = 2 },
+    { name = 'buffer', keyword_length = 3 },
     { name = 'ultisnips' },
     { name = 'path' },
     { name = 'nvim-lua' },
-    { name = 'emoji', insert = true },
-    { name = "dictionary", keyword_length = 2 },
+    { name = 'emoji' },
   },
 
 })
 
 
--- need config in lspinstall
---jsonls: npm i -g vscode-langservers-extracted
--- gopls need go.mod for folder
 local nvim_lsp = require('lspconfig')
--- automatically connect language server protocol
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
@@ -132,10 +121,6 @@ for _, lsp in ipairs(servers) do
   require 'illuminate'.on_attach()
   require "lsp_signature".on_attach()
 end
-
---vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
---border = "rounded",
---})
 
 vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
   border = "rounded",
@@ -161,11 +146,6 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
 }
 )
 
-vim.cmd [[
-  nnoremap <silent> <leader>li :LspInfo<cr>
-]]
-
-
 -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
 cmp.setup.cmdline('/', {
   --view = {
@@ -184,7 +164,6 @@ cmp.setup.cmdline('?', {
   }
 })
 
--- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
 cmp.setup.cmdline(':', {
   mapping = cmp.mapping.preset.cmdline(),
   sources = cmp.config.sources({
@@ -194,18 +173,6 @@ cmp.setup.cmdline(':', {
   })
 })
 
---[[
 vim.cmd [[
-"autocmd FileType lsp-installer lua vim.api.nvim_win_set_config(0, { border = "none" })
-function! s:deregister_autocmd() abort
-    " Disables the self-closing behavior of the window
-    autocmd TextChanged <buffer> ++once autocmd! LspInstallerWindow
-endfunction
-
-" For a right-aligned window
-" autocmd FileType lsp-installer wincmd L | call s:deregister_autocmd()
-
-" For a left-aligned window
-autocmd FileType lsp-installer wincmd H | call s:deregister_autocmd()
+  nnoremap <silent> <leader>li :LspInfo<cr>
 ]]
---]]

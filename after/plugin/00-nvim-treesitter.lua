@@ -31,10 +31,10 @@ tree_configs.setup {
     "bash",
     "go",
     "toml",
-    --"java",
-    --"vue",
     "query",
     "javascript",
+    --"java",
+    --"vue",
     --"typescript",
     --"org",
     -- todo details

@@ -32,20 +32,24 @@ EOF
 " black
 "hi Normal       guifg=#a9b1d6 guibg=#1A1B26
 " second float window
-hi NormalFloat  ctermbg=NONE guibg=NONE
+"hi NormalFloat  ctermbg=NONE guibg=NONE
 "hi NormalFloat  guifg=#c0caf5 guibg=#1f2335
 hi IncSearch  cterm=bold ctermfg=16 ctermbg=167 guifg=#292b2e guibg=#ce537a
 hi Search     ctermfg=16 ctermbg=76 guifg=#292b2e guibg=#86dc2f
+
 " float menu
-hi Pmenu        ctermfg=0 ctermbg=13 guifg=#a9b1d6 guibg=#3b4261
-hi PmenuSbar    ctermbg=248 guibg=#2A2E3F
-hi PmenuSel     ctermfg=242 ctermbg=0 guifg=#282c34 guibg=#73b8f1
+"hi Pmenu        ctermfg=0 ctermbg=13 guifg=#a9b1d6 guibg=#3b4261
+"hi PmenuSbar    ctermbg=248 guibg=#2A2E3F
+"hi PmenuSel     ctermfg=242 ctermbg=0 guifg=#282c34 guibg=#73b8f1
 " sidebar second
-hi PmenuThumb ctermfg=160 ctermbg=97 guifg=#282c34 guibg=#73b8f1
+"hi PmenuThumb ctermfg=160 ctermbg=97 guifg=#282c34 guibg=#73b8f1
+"
 " Visual"
-hi Visual         ctermbg=242 gui=reverse
+"hi Visual         ctermbg=242 gui=reverse
+
 " keyword
 hi Keyword    cterm=bold ctermfg=68 guifg=#8167a3 gui=bold
+
 " note: if it's no rnu, you must enable cursor-line(highlight current line)
 "hi CursorLineNr      guifg=#c269fe guibg=#000000
 hi CursorLineNr      guifg=#51afef guibg=#000000
@@ -55,7 +59,7 @@ hi CursorLineNr      guifg=#51afef guibg=#000000
 
 " split line
 "hi VertSplit guibg=#4f97d7
-hi VertSplit guibg=#51afef
+"hi VertSplit guibg=#51afef
 " Status Line
 hi StatusLine guibg=#24283b
 
