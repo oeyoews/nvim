@@ -65,14 +65,44 @@ cmp.setup({
   formatting = {
     fields = { 'kind', 'abbr', 'menu' },
     format = lspkind.cmp_format({
+      symbol_map = {
+        Text = "",
+        Method = "",
+        Function = "",
+        Constructor = "",
+        Field = "ﰠ ",
+        Variable = " ",
+        Class = "ﴯ ",
+        Interface = " ",
+        Module = " ",
+        Property = "ﰠ",
+        Unit = " ",
+        Value = " ",
+        Enum = " ",
+        Keyword = " ",
+        Snippet = "  ",
+        Color = " ",
+        Reference = "",
+        File = " ",
+        Folder = " ",
+        EnumMember = " ",
+        Constant = "",
+        Struct = " ",
+        Event = "",
+        Operator = " ",
+        TypeParameter = " "
+      },
       mode = "symbol",
       --mode = "symbol_text",
       maxwidth = 50,
       menu = ({
-        nvim_lsp = "LSP",
-        buffer = "Buffer",
-        ultisnips = "Snips",
-        nvim_lua = "Lua",
+        nvim_lsp = "(LSP)",
+        buffer = "(Buffer)",
+        ultisnips = "(Snipppet)",
+        nvim_lua = "(Lua)",
+        treesitter = "(TS)",
+        path = "(Path)",
+        emoji = "(emoji)"
       })
     }),
   },
@@ -129,8 +159,8 @@ vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.s
 -- icon note this order in last
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
-  underline = true,
-  update_in_insert = true,
+  --underline = true,
+  update_in_insert = false,
   severity_sort = false,
   virtual_text = {
     spacing = 2,
