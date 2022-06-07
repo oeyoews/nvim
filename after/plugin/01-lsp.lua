@@ -17,14 +17,14 @@ if not cmp_ok then return false end
 if not lspkind_ok then return false end
 
 local servers = {
+  --'gopls',
+  --'texlab',
   'vimls',
   'jsonls',
   'yamlls',
   'clangd',
   'pyright',
-  'texlab',
   'tsserver',
-  --'gopls',
   'cssls',
   'sumneko_lua',
   'bashls',
@@ -64,14 +64,14 @@ cmp.setup({
   -- menu
   formatting = {
     format = lspkind.cmp_format({
-      -- mode-option: symbol
-      mode = "symbol_text",
+      mode = "symbol",
+      --mode = "symbol_text",
       maxwidth = 50,
       menu = ({
-        nvim_lsp = "[LSP]",
-        buffer = "[Buffer]",
-        ultisnips = "[UltiSnips]",
-        nvim_lua = "[Lua]",
+        nvim_lsp = "LSP",
+        buffer = "Buffer",
+        ultisnips = "Snips",
+        nvim_lua = "Lua",
       })
     }),
   },
