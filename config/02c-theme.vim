@@ -71,5 +71,4 @@ hi StatusLine guibg=#24283b
 
 "hi SpellBad   ctermbg=9 gui=underline guisp=#f7768e
 hi SpellBad   ctermbg=9 gui=underline guifg=#f7768e
-
-command! -nargs=?  Mdt TableModeToggle
+"command! -nargs=?  Mdt TableModeToggle

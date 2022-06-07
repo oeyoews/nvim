@@ -7,7 +7,6 @@ call plug#begin(s:plug_dir)
 " TODO: config dap: https://github.com/ravenxrz/dotfiles/blob/master/nvim/lua/user/conf/nvim-spectre.lua
 " @Temporary
 Plug 'ray-x/lsp_signature.nvim'
-Plug 'RRethy/vim-illuminate'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -127,5 +126,6 @@ Plug 'folke/tokyonight.nvim'
 "Plug 'nvim-lualine/lualine.nvim'
 "Plug 'glepnir/dashboard-nvim'
 "Plug 'uga-rosa/cmp-dictionary'
+"Plug 'RRethy/vim-illuminate'
 
 call plug#end()
