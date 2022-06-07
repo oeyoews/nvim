@@ -14,7 +14,8 @@ lua << EOF
 -- vim.cmd([[let g:matchup_matchparen_offscreen = {'method': 'popup'}]])
 EOF
 
-nnoremap <silent> <leader>fn :NERDTree<cr>
+nnoremap <silent> <leader>fn :NERDTreeToggle<cr>
+nnoremap <silent> <leader>fn :NERDTreeToggle<cr>
 " Start NERDTree and put the cursor back in the other window.
 "autocmd VimEnter * NERDTree
 "autocmd VimEnter * NERDTree | wincmd p
