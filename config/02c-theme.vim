@@ -3,28 +3,6 @@ colorscheme tokyonight
 "let g:material_style = "palenight"
 "colorscheme catppuccin
 
-lua << EOF
---[[
-require('material.functions').change_style("palenight")
---]]
-EOF
-
-lua << EOF
---[[
-local base16 = require 'base16'
-base16(base16.themes("tokyonight"), true)
---]]
-EOF
-
-lua << EOF
---[[
-local catppuccin = require("catppuccin")
-
--- configure it
-catppuccin.setup()
---]]
-EOF
-
 " transparent background and float background
 " hi Normal      guifg=#b9c0cd ctermbg=NONE guibg=NONE
 "hi Normal      guifg=#c0caf5 guibg=#24283b
@@ -69,6 +47,25 @@ hi StatusLine guibg=#24283b
 "hi Cursor2 guifg=red guibg=red
 "set guicursor=n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor2/lCursor2,r-cr:hor20,o:hor50
 
-"hi SpellBad   ctermbg=9 gui=underline guisp=#f7768e
 hi SpellBad   ctermbg=9 gui=underline guifg=#f7768e
+"hi SpellBad   ctermbg=9 gui=underline guisp=#f7768e
 "command! -nargs=?  Mdt TableModeToggle
+
+lua << EOF
+--[[
+require('material.functions').change_style("palenight")
+--]]
+
+--[[
+local base16 = require 'base16'
+base16(base16.themes("tokyonight"), true)
+--]]
+
+--[[
+local catppuccin = require("catppuccin")
+
+-- configure it
+catppuccin.setup()
+--]]
+EOF
+

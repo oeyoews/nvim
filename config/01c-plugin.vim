@@ -2,57 +2,52 @@ autocmd VimEnter *  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)')) |
 
 let g:plug_url_format = 'https://hub.fastgit.xyz/%s.git'
 let s:plug_dir = '$HOME/.local/share/nvim/nvim_bundles'
+
 call plug#begin(s:plug_dir)
 
-" TODO: config dap: https://github.com/ravenxrz/dotfiles/blob/master/nvim/lua/user/conf/nvim-spectre.lua
 " @Temporary
-Plug 'ray-x/lsp_signature.nvim'
-Plug 'hrsh7th/cmp-cmdline'
-Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
-Plug 'phaazon/hop.nvim'
-
-" @ Prefence
-Plug 'nathom/filetype.nvim'
-Plug 'lewis6991/impatient.nvim'
-
-" @LspConfig
-Plug 'onsails/lspkind-nvim'
-Plug 'lukas-reineke/lsp-format.nvim'
-Plug 'SirVer/ultisnips'
-Plug 'oeyoews/vim-snippets'
-Plug 'neovim/nvim-lspconfig'
-Plug 'williamboman/nvim-lsp-installer'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'quangnguyen30192/cmp-nvim-ultisnips'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-emoji'
-Plug 'hrsh7th/cmp-path'
-Plug 'hrsh7th/cmp-nvim-lua'
-Plug 'tami5/lspsaga.nvim'
 
 " @Dependcies
 Plug 'nvim-lua/plenary.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
-
-" @UI
+Plug 'ryanoasis/vim-devicons'
 Plug 'rcarriga/nvim-notify'
+
+" @Performance
+Plug 'nathom/filetype.nvim'
+Plug 'lewis6991/impatient.nvim'
+
+" @Lsp
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+Plug 'hrsh7th/cmp-nvim-lua'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'williamboman/nvim-lsp-installer'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-emoji'
+Plug 'hrsh7th/cmp-path'
+Plug 'tami5/lspsaga.nvim'
+Plug 'onsails/lspkind-nvim'
+Plug 'lukas-reineke/lsp-format.nvim'
+Plug 'ray-x/lsp_signature.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate'}
 Plug 'nvim-treesitter/nvim-treesitter-refactor'
-Plug 'akinsho/bufferline.nvim'
 
-" @Color
-Plug 'norcalli/nvim-colorizer.lua'
-
-" @Editor
-Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'markdown' }
+" @Theme
+Plug 'folke/tokyonight.nvim'
 
 " @Tools
+Plug 'norcalli/nvim-colorizer.lua'
+Plug 'akinsho/bufferline.nvim'
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'phaazon/hop.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'preservim/nerdcommenter'
 Plug 'folke/which-key.nvim'
@@ -60,10 +55,13 @@ Plug 'windwp/nvim-autopairs'
 Plug 'thinca/vim-quickrun', { 'on': 'QuickRun', 'frozen': 1 }
 Plug 'folke/persistence.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
-Plug 'fladson/vim-kitty'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'folke/todo-comments.nvim'
-Plug 'folke/tokyonight.nvim'
+Plug 'fladson/vim-kitty'
+
+" @Markdown
+Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'markdown' }
 
 " @Deprecated
 "Plug 'gcmt/wildfire.vim', { 'frozen': 1 }
@@ -127,5 +125,8 @@ Plug 'folke/tokyonight.nvim'
 "Plug 'glepnir/dashboard-nvim'
 "Plug 'uga-rosa/cmp-dictionary'
 "Plug 'RRethy/vim-illuminate'
+"Plug 'oeyoews/vim-snippets'
+"
+" @ConfigDap: https://github.com/ravenxrz/dotfiles/blob/master/nvim/lua/user/conf/nvim-spectre.lua
 
 call plug#end()
