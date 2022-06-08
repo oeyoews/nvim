@@ -4,23 +4,31 @@ if not nvim_treesitter_ok then
   return false
 end
 
+--[[
+-- mirror in China TODO: verify  it
 for _, config in pairs(require("nvim-treesitter.parsers").get_parser_configs()) do
   config.install_info.url = config.install_info.url:gsub("https://github.com/", "https://hub.fastgit.xyz/")
 end
+--]]
 
 tree_configs.setup {
   refactor = {
     -- highlight scope code
     highlight_current_scope = { enable = false },
     -- highlight define and refrence
-    highlight_definitions = { enable = true },
+    highlight_definitions = {
+      enable = true,
+      clear_on_cursor_move = true
+    },
   },
 
   indent = {
-    enable = false
+    enable = true,
+    disable = { "python", "yaml" },
   },
   -- install some different parsers automatically
 
+  sync_install = false,
   ---[[
   ensure_installed = {
     "json",
@@ -48,16 +56,37 @@ tree_configs.setup {
   },
   --]]
 
-  highlight = { enable = true,
-    disable = { 'org' },
-    additional_vim_regex_highlighting = { 'org' },
+  highlight = {
+    enable = true,
+    disable = {},
+    additional_vim_regex_highlighting = false,
   },
 
-  --rainbow = {
-  --enable = true,
-  --extended_mode = true,
-  --max_file_lines = nil,
-  --},
+  -- nvim-ts-rainbow
+  rainbow = {
+    enable = true,
+    extended_mode = true,
+    max_file_lines = 1000,
+    colors = {
+      "#a89984", --grey
+      -- "#cc241d", --red
+      "#8169B4",
+      "#b16286", --Magenta
+      "#d79921", --yellow
+      "#689d6a", --green
+      "#d65d0e", --orange
+      "#458588", --cyan
+    },
+    termcolors = {
+      "Red",
+      "Green",
+      "Yellow",
+      "Blue",
+      "Magenta",
+      "Cyan",
+      "White",
+    },
+  },
 
   -- 增量选择 ??
   incremental_selection = {
@@ -70,28 +99,9 @@ tree_configs.setup {
     },
   },
 
-  --playground = {
-  --enable = true,
-  --disable = {},
-  --updatetime = 25, -- Debounced time for highlighting nodes in the playground from source code
-  --persist_queries = false, -- Whether the query persists across vim sessions
-  --keybindings = {
-  --toggle_query_editor = 'o',
-  --toggle_hl_groups = 'i',
-  --toggle_injected_languages = 't',
-  --toggle_anonymous_nodes = 'a',
-  --toggle_language_display = 'I',
-  --focus_language = 'f',
-  --unfocus_language = 'F',
-  --update = 'R',
-  --goto_node = '<cr>',
-  --show_help = '?',
-  --},
-  --},
-
-  --query_linter = {
-  --enable = true,
-  --use_virtual_text = true,
-  --lint_events = {"BufWrite", "CursorHold"},
-  --},
+  query_linter = {
+    enable = true,
+    use_virtual_text = true,
+    lint_events = { "BufWrite", "CursorHold" },
+  },
 }

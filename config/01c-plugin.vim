@@ -7,6 +7,7 @@ call plug#begin(s:plug_dir)
 
 " @Temporary
 Plug 'numToStr/Comment.nvim'
+Plug 'p00f/nvim-ts-rainbow'
 
 " @Dependcies
 Plug 'nvim-lua/plenary.nvim'
@@ -49,7 +50,6 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'phaazon/hop.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-"Plug 'preservim/nerdcommenter'
 Plug 'folke/which-key.nvim'
 Plug 'windwp/nvim-autopairs'
 Plug 'thinca/vim-quickrun', { 'on': 'QuickRun', 'frozen': 1 }
@@ -126,6 +126,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'm
 "Plug 'uga-rosa/cmp-dictionary'
 "Plug 'RRethy/vim-illuminate'
 "Plug 'oeyoews/vim-snippets'
+"Plug 'preservim/nerdcommenter'
 "
 " @ConfigDap: https://github.com/ravenxrz/dotfiles/blob/master/nvim/lua/user/conf/nvim-spectre.lua
 

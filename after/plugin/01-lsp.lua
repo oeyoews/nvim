@@ -19,6 +19,7 @@ if not lspkind_ok then return false end
 local servers = {
   --'gopls',
   --'texlab',
+  'diagnosticls',
   'cmake',
   'vimls',
   'jsonls',
