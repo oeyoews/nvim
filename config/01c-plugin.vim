@@ -60,7 +60,7 @@ Plug 'folke/todo-comments.nvim'
 Plug 'fladson/vim-kitty'
 
 " @Markdown
-Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
+" Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'markdown' }
 
 " @Deprecated
