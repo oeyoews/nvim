@@ -49,10 +49,10 @@ telescope.setup {
       theme = "dropdown"
     },
     buffers = {
-      theme = "ivy"
+      theme = "dropdown"
     },
     live_grep = {
-      theme = "ivy"
+      theme = "dropdown"
     },
     colorscheme = {
       theme = "ivy"
@@ -90,7 +90,7 @@ telescope.setup {
 
 vim.cmd [[
 nnoremap <leader>ff <cmd>Telescope find_files <cr>
-nnoremap <leader>tr <cmd>Telescope oldfiles <cr>
+nnoremap <leader>to <cmd>Telescope oldfiles <cr>
 nnoremap <leader>tbb <cmd>Telescope buffers <cr>
 nnoremap <leader>tc <Cmd>Telescope colorscheme <Cr>
 

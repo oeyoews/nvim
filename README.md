@@ -6,7 +6,7 @@
 
 ## 🕊️ Introd <!--2021-09-18T 23:41:58-->
 
-## Dependcies
+## Dependencies
 
 * python-pynvim(neovim)
 * python3(ultisnips)

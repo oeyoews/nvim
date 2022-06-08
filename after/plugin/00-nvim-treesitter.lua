@@ -4,6 +4,10 @@ if not nvim_treesitter_ok then
   return false
 end
 
+for _, config in pairs(require("nvim-treesitter.parsers").get_parser_configs()) do
+  config.install_info.url = config.install_info.url:gsub("https://github.com/", "https://hub.fastgit.xyz/")
+end
+
 tree_configs.setup {
   refactor = {
     -- highlight scope code
