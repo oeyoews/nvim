@@ -6,8 +6,6 @@ let s:plug_dir = '$HOME/.local/share/nvim/nvim_bundles'
 call plug#begin(s:plug_dir)
 
 " @Temporary
-Plug 'numToStr/Comment.nvim'
-Plug 'p00f/nvim-ts-rainbow'
 
 " @Dependcies
 Plug 'nvim-lua/plenary.nvim'
@@ -38,9 +36,8 @@ Plug 'lukas-reineke/lsp-format.nvim'
 Plug 'ray-x/lsp_signature.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate'}
 Plug 'nvim-treesitter/nvim-treesitter-refactor'
-
-" @Theme
-Plug 'folke/tokyonight.nvim'
+Plug 'p00f/nvim-ts-rainbow'
+Plug 'numToStr/Comment.nvim'
 
 " @Tools
 Plug 'norcalli/nvim-colorizer.lua'
@@ -60,8 +57,11 @@ Plug 'folke/todo-comments.nvim'
 Plug 'fladson/vim-kitty'
 
 " @Markdown
-" Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'markdown' }
+
+
+" @Theme
+Plug 'folke/tokyonight.nvim'
 
 " @Deprecated
 "Plug 'gcmt/wildfire.vim', { 'frozen': 1 }
@@ -127,7 +127,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'm
 "Plug 'RRethy/vim-illuminate'
 "Plug 'oeyoews/vim-snippets'
 "Plug 'preservim/nerdcommenter'
-"
+" Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
 " @ConfigDap: https://github.com/ravenxrz/dotfiles/blob/master/nvim/lua/user/conf/nvim-spectre.lua
 
 call plug#end()
