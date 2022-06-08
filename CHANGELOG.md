@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.21.0](https://gitlab.com/oeyoews/nvim/compare/v1.20.0...v1.21.0) (2022-06-08)
+
+
+### Features
+
+* remove markdown-toc ([b1dc957](https://gitlab.com/oeyoews/nvim/commit/b1dc9570ed2529dff00a34c0a8d9a157260fbf5f))
+
 # [1.20.0](https://gitlab.com/oeyoews/nvim/compare/v1.19.0...v1.20.0) (2022-06-08)
 
 
