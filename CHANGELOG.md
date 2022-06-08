@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.22.0](https://gitlab.com/oeyoews/nvim/compare/v1.21.0...v1.22.0) (2022-06-08)
+
+
+### Features
+
+* config nvim-ts-rainbow ([1fe13ec](https://gitlab.com/oeyoews/nvim/commit/1fe13ec434227c1aff2658199faa24390d381b73))
+
 # [1.21.0](https://gitlab.com/oeyoews/nvim/compare/v1.20.0...v1.21.0) (2022-06-08)
 
 
