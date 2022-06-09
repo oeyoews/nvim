@@ -1,12 +1,11 @@
 autocmd VimEnter *  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)')) | PlugInstall --sync | q | endif
 
 let g:plug_url_format = 'https://hub.fastgit.xyz/%s.git'
-let s:plug_dir = '$HOME/.local/share/nvim/nvim_bundles'
+let s:plug_dir = stdpath('data') . '/nvim_bundles'
 
 call plug#begin(s:plug_dir)
 
 " @Temporary
-Plug 'editorconfig/editorconfig-vim'
 
 " @Dependcies
 Plug 'nvim-lua/plenary.nvim'
@@ -41,6 +40,7 @@ Plug 'p00f/nvim-ts-rainbow'
 Plug 'numToStr/Comment.nvim'
 
 " @Tools
+Plug 'editorconfig/editorconfig-vim'
 Plug 'sindrets/diffview.nvim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'akinsho/bufferline.nvim'
