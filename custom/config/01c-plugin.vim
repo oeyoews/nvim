@@ -18,7 +18,8 @@ call plug#begin(s:plug_dir)
 if has('nvim')
 
 " @Temporary
-Plug 'romgrk/barbar.nvim'
+Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
+Plug 'windwp/windline.nvim'
 
 " @Dependcies
 Plug 'nvim-lua/plenary.nvim'
@@ -53,11 +54,9 @@ Plug 'p00f/nvim-ts-rainbow'
 Plug 'numToStr/Comment.nvim'
 
 " @Tools
+Plug 'romgrk/barbar.nvim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'norcalli/nvim-colorizer.lua'
-Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'phaazon/hop.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'folke/which-key.nvim'
@@ -76,12 +75,15 @@ endif
 " @Theme
 " Plug 'folke/tokyonight.nvim'
 
+" @ConfigDap: https://github.com/ravenxrz/dotfiles/blob/master/nvim/lua/user/conf/nvim-spectre.lua
+
+call plug#end()
+
 " @Deprecated
 "Plug 'gcmt/wildfire.vim', { 'frozen': 1 }
 "Plug 'lewis6991/spellsitter.nvim'
 "Plug 'ggandor/lightspeed.nvim'
 "Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1}
-"Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
 "Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 "Plug 'dhruvasagar/vim-table-mode', { 'for' : ['markdown'] }
 "Plug 'plasticboy/vim-markdown'
@@ -91,7 +93,6 @@ endif
 "Plug 'hrsh7th/cmp-latex-symbols'
 "Plug 'oeyoews/beacon.nvim', { 'frozen': 1 }
 "Plug 'edluffy/specs.nvim'
-"Plug 'famiu/feline.nvim'  " to setup 04-statusline
 "Plug 'yamatsum/nvim-cursorline'
 "Plug 'oeyoews/nvim-cursorword'
 "Plug 'github/copilot.vim'
@@ -145,7 +146,8 @@ endif
 "Plug 'lukas-reineke/indent-blankline.nvim'
 " Plug 'seblj/nvim-tabline'
 " Plug 'akinsho/bufferline.nvim'
+" Plug 'preservim/nerdtree'
+" Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+" Plug 'famiu/feline.nvim'
 
-" @ConfigDap: https://github.com/ravenxrz/dotfiles/blob/master/nvim/lua/user/conf/nvim-spectre.lua
-
-call plug#end()

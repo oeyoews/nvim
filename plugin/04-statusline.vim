@@ -1,8 +1,7 @@
-set noruler
-
 " show statusline for at least windows
-set laststatus=0
+" set laststatus=0
+" set noruler
 
-function Toggle() abort
+function ToggleStatusLine() abort
   set laststatus=1
 endfunction

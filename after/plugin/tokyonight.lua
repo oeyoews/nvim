@@ -23,6 +23,7 @@ hi Search     ctermfg=16 ctermbg=76 guifg=#292b2e guibg=#86dc2f
 hi Keyword    cterm=bold ctermfg=68 guifg=#8167a3 gui=bold
 hi CursorLineNr      guifg=#51afef guibg=#000000
 hi SpellBad   ctermbg=9 gui=underline guifg=#f7768e
+" hi VertSplit guibg=#51afef
 
 autocmd TextYankPost * lua vim.highlight.on_yank {higroup="IncSearch",
       \ timeout=150, on_visual=true}
