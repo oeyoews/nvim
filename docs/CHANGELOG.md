@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.32.0](https://gitlab.com/oeyoews/nvim/compare/v1.31.2...v1.32.0) (2022-06-09)
+
+
+### Features
+
+* use autoload in config path to fix install.sh error ([ea51a48](https://gitlab.com/oeyoews/nvim/commit/ea51a489aa77b678f77ccd52e00185b16decc264))
+
 ## [1.31.2](https://gitlab.com/oeyoews/nvim/compare/v1.31.1...v1.31.2) (2022-06-09)
 
 
