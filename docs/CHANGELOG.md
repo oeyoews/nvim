@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.31.0](https://gitlab.com/oeyoews/nvim/compare/v1.30.0...v1.31.0) (2022-06-09)
+
+
+### Features
+
+* embed tokyonight them minimum ([846b89a](https://gitlab.com/oeyoews/nvim/commit/846b89a2c29262bda0540fb064a8e5b64ad5f877))
+
 # [1.30.0](https://gitlab.com/oeyoews/nvim/compare/v1.29.0...v1.30.0) (2022-06-09)
 
 
