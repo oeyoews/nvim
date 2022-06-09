@@ -26,9 +26,9 @@ sh ./install.sh
 
 ---
 
-## 🧮 USage
+## Feature
 
-nvim -c PlugInstall
+* `Ctrl L` in insert mode, press it, you can input uppercase letters, press it again to toggle lowercase letters
 
 ## ✅ TODO
 
