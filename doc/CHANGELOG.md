@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.34.0](https://gitlab.com/oeyoews/nvim/compare/v1.33.0...v1.34.0) (2022-06-09)
+
+
+### Features
+
+* move config to custom ([42495aa](https://gitlab.com/oeyoews/nvim/commit/42495aa590e46527da5e76ed8a98304496fec9ad))
+
 # [1.33.0](https://gitlab.com/oeyoews/nvim/compare/v1.32.3...v1.33.0) (2022-06-09)
 
 
