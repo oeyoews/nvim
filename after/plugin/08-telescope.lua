@@ -98,7 +98,6 @@ nnoremap <leader>tc <Cmd>Telescope colorscheme <Cr>
 nnoremap <leader>ps <Cmd>Telescope live_grep<Cr>
 
 nnoremap <leader>tm <cmd>Telescope keymaps<cr>
-nnoremap <leader>tf <cmd>Telescope file_browser<cr>
 " nnoremap <leader>ss <cmd>Telescope current_buffer_fuzzy_find<cr>
 
 " nnoremap <C-k> <cmd>lua vim.lsp.buf.signature_help() <cr>

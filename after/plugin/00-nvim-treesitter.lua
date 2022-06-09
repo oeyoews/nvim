@@ -31,6 +31,7 @@ tree_configs.setup {
   sync_install = false,
   ---[[
   ensure_installed = {
+    "make",
     "json",
     "lua",
     "vim",
