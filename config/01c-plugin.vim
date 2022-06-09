@@ -1,7 +1,7 @@
-autocmd VimEnter *  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)')) | PlugInstall --sync | q | endif
-
-let g:plug_url_format = 'https://hub.fastgit.xyz/%s.git'
-let s:plug_dir = stdpath('data') . '/nvim_bundles'
+" Run PlugInstall if there are missing plugins
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \| PlugInstall --sync | source $MYVIMRC
+\| endif
 
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
@@ -9,7 +9,12 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+let g:plug_url_format = 'https://hub.fastgit.xyz/%s.git'
+let s:plug_dir = stdpath('data') . '/nvim_bundles'
+
 call plug#begin(s:plug_dir)
+
+if has('nvim')
 
 " @Temporary
 
@@ -70,6 +75,8 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'm
 
 " @Theme
 Plug 'folke/tokyonight.nvim'
+
+endif
 
 " @Deprecated
 "Plug 'gcmt/wildfire.vim', { 'frozen': 1 }
