@@ -34,6 +34,8 @@ sh ./install.sh
 
 ## ✅ TODO
 
+* [ ] add window number switch number(mousenum)
+* [ ] solve gitsign utf8
 * [ ] how to add templates in nvim
 * config norg table
 * config format
