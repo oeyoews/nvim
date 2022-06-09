@@ -10,6 +10,8 @@ local lsp_installer = require "nvim-lsp-installer"
 
 local lspformat_ok, _ = pcall(require, "lsp-format")
 
+if not lsp_installer then return false end
+
 if not lspformat_ok then return false end
 
 if not cmp_ok then return false end
