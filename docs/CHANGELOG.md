@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.28.0](https://gitlab.com/oeyoews/nvim/compare/v1.27.0...v1.28.0) (2022-06-09)
+
+
+### Features
+
+* use vim.stdpath() to replace manual specify ([fe566de](https://gitlab.com/oeyoews/nvim/commit/fe566de83bbfb22901597e01a5b4bdec2431a7b3))
+
 # [1.27.0](https://gitlab.com/oeyoews/nvim/compare/v1.26.1...v1.27.0) (2022-06-09)
 
 
