@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.23.0](https://gitlab.com/oeyoews/nvim/compare/v1.22.1...v1.23.0) (2022-06-09)
+
+
+### Features
+
+* add chezmoi apply refresh ([86e306a](https://gitlab.com/oeyoews/nvim/commit/86e306a7ad7054af05acbaccbd311c6af00086d0))
+
 ## [1.22.1](https://gitlab.com/oeyoews/nvim/compare/v1.22.0...v1.22.1) (2022-06-08)
 
 
