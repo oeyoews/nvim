@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.26.0](https://gitlab.com/oeyoews/nvim/compare/v1.25.0...v1.26.0) (2022-06-09)
+
+
+### Features
+
+* add templates folder ([2354b6f](https://gitlab.com/oeyoews/nvim/commit/2354b6feb911147b2b2177dea3a830799ebbd3b7))
+
 # [1.25.0](https://gitlab.com/oeyoews/nvim/compare/v1.24.0...v1.25.0) (2022-06-09)
 
 
