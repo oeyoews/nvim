@@ -1,5 +1,4 @@
 *vanilla.txt* This is my self documentation for nvim(vim)
-
 >
   [link](https://www.kancloud.cn/kancloud/learn-vimscript-the-hard-way/49330)
 <
