@@ -64,7 +64,6 @@ Plug 'folke/which-key.nvim'
 Plug 'windwp/nvim-autopairs'
 Plug 'thinca/vim-quickrun', { 'on': 'QuickRun', 'frozen': 1 }
 Plug 'folke/persistence.nvim'
-Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'folke/todo-comments.nvim'
 Plug 'fladson/vim-kitty'
@@ -72,11 +71,10 @@ Plug 'fladson/vim-kitty'
 " @Markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'markdown' }
 
+endif
 
 " @Theme
 " Plug 'folke/tokyonight.nvim'
-
-endif
 
 " @Deprecated
 "Plug 'gcmt/wildfire.vim', { 'frozen': 1 }
@@ -126,11 +124,6 @@ endif
 "Plug 'jose-elias-alvarez/null-ls.nvim'
 "Plug 'folke/lua-dev.nvim'
 "Plug 'windwp/nvim-spectre'
-" Plug 'ravenxrz/nvim-dap'
-" Plug 'rcarriga/nvim-dap-ui'
-" Plug 'ravenxrz/DAPInstall.nvim'
-" Plug 'theHamsta/nvim-dap-virtual-text'
-" Plug 'jbyuki/one-small-step-for-vimkind'
 "Plug 'lervag/vimtex'
 "Plug 'kyazdani42/nvim-tree.lua'
 "Plug 'j-hui/fidget.nvim'
@@ -141,10 +134,16 @@ endif
 "Plug 'RRethy/vim-illuminate'
 "Plug 'oeyoews/vim-snippets'
 "Plug 'preservim/nerdcommenter'
-" Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
-" Plug 'sindrets/diffview.nvim'
-" Plug '~/.config/nvim/after/theme/tokyonight'
-"
+"Plug 'ravenxrz/nvim-dap'
+"Plug 'rcarriga/nvim-dap-ui'
+"Plug 'ravenxrz/DAPInstall.nvim'
+"Plug 'theHamsta/nvim-dap-virtual-text'
+"Plug 'jbyuki/one-small-step-for-vimkind'
+"Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
+"Plug 'sindrets/diffview.nvim'
+"Plug '~/.config/nvim/after/theme/tokyonight'
+"Plug 'lukas-reineke/indent-blankline.nvim'
+
 " @ConfigDap: https://github.com/ravenxrz/dotfiles/blob/master/nvim/lua/user/conf/nvim-spectre.lua
 
 call plug#end()

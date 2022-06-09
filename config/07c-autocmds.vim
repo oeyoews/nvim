@@ -9,4 +9,3 @@ autocmd! FileType startuptime,help,qf,quickrun,snippets,tsplayground nnoremap <s
 
 " it's confict for last command to quit window fastly
 "autocmd! FileType vim-plug,startuptime, setlocal nornu nonu
-

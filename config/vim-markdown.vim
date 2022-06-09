@@ -1,13 +1,3 @@
-" add toggle for it, temp method is u to undo it
-"autocmd! BufNewFile,BufRead *.norg nnoremap <space>nn I+<esc>A+<esc>
-" TODO: have bug how to exclude for other filetypes"
-"au<c-g>u<Esc>[s1z=`]a<c-g>u
-"<c-g>u<Esc>[s1z=`]a<c-g>u
-" TODO:
-"autocmd! FileType norg nnoremap <space>nn <c-g>mzI+<esc>A+<esc>`z<c-g>
-
-"let g:vim_markdown_folding_disabled=1
-"let g:vim_markdown_conceal=0
 let g:vim_markdown_frontmatter = 1
 "let g:vim_markdown_toml_frontmatter = 1
 let g:vim_markdown_list_item_indent = 0
