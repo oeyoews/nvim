@@ -8,13 +8,13 @@ lspsaga.setup { -- defaults ...
   debug = false,
   use_saga_diagnostic_sign = true,
   -- diagnostic sign
-  --error_sign = "",
+  error_sign = " ",
   --error_sign = "🌹",
-  error_sign = "",
-  warn_sign = "🍺",
-  hint_sign = "",
-  infor_sign = "",
-  diagnostic_header_icon = "",
+  -- error_sign = "",
+  warn_sign = " ",
+  hint_sign = " ",
+  infor_sign = " ",
+  diagnostic_header_icon = " ",
   --code_action_icon = "👷",
   code_action_icon = "💡",
   code_action_prompt = {
@@ -22,7 +22,7 @@ lspsaga.setup { -- defaults ...
     sign = true,
     sign_priority = 40,
     -- disable for code icon
-    virtual_text = false,
+    virtual_text = true,
   },
   finder_definition_icon = "  ",
   finder_reference_icon = "  ",
@@ -44,13 +44,26 @@ lspsaga.setup { -- defaults ...
     exec = "<CR>",
   },
   definition_preview_icon = "  ",
-  border_style = "single",
-  rename_prompt_prefix = "➤",
+  -- "single" "double" "round" "plus"
+  border_style = "round",
+  rename_prompt_prefix = "➤ ",
   server_filetype_map = {},
   diagnostic_prefix_format = "%d. ",
 }
 
 vim.cmd [[
-nnoremap <silent> <space>lr <cmd>Lspsaga rename<cr>
 nnoremap <silent> <space>le <cmd>Lspsaga code_action<cr>
+nnoremap <silent>K :Lspsaga hover_doc<CR>
+nnoremap <silent> <C-f> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>
+nnoremap <silent> <C-b> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>
+nnoremap <silent> gs :Lspsaga signature_help<CR>
+nnoremap <silent> gd :Lspsaga preview_definition<CR>
+nnoremap <silent> gh :Lspsaga lsp_finder<CR>
+nnoremap <silent>gr :Lspsaga rename<CR>
+nnoremap <silent> <leader>cd :Lspsaga show_line_diagnostics<CR>
+nnoremap <silent><leader>cc <cmd>lua require'lspsaga.diagnostic'.show_cursor_diagnostics()<CR>
+nnoremap <silent> [e :Lspsaga diagnostic_jump_next<CR>
+nnoremap <silent> ]e :Lspsaga diagnostic_jump_prev<CR>
+" nnoremap <silent> <A-d> :Lspsaga open_floaterm<CR>
+" tnoremap <silent> <A-c>:Lspsaga close_floaterm<CR>
 ]]
