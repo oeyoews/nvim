@@ -1,1 +1,1 @@
-runtime! config/*.vim
+runtime! custom/config/*.vim
