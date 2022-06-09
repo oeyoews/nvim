@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.27.0](https://gitlab.com/oeyoews/nvim/compare/v1.26.1...v1.27.0) (2022-06-09)
+
+
+### Features
+
+* add .editorconfig for nvim ([e59079c](https://gitlab.com/oeyoews/nvim/commit/e59079c59649d0de6cc1d43fd37681badf5b80d5))
+
 ## [1.26.1](https://gitlab.com/oeyoews/nvim/compare/v1.26.0...v1.26.1) (2022-06-09)
 
 
