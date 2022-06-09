@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.30.0](https://gitlab.com/oeyoews/nvim/compare/v1.29.0...v1.30.0) (2022-06-09)
+
+
+### Features
+
+* add adjust for nvim ([2aea5e2](https://gitlab.com/oeyoews/nvim/commit/2aea5e28c07b06446574e5c4ba9b7ad72377386d))
+
 # [1.29.0](https://gitlab.com/oeyoews/nvim/compare/v1.28.0...v1.29.0) (2022-06-09)
 
 
