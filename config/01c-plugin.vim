@@ -1,13 +1,14 @@
-" Run PlugInstall if there are missing plugins
-autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
-  \| PlugInstall --sync | source $MYVIMRC
-\| endif
-
+" First install setting steps
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
+
+" Run PlugInstall if there are missing plugins
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \| PlugInstall --sync | source $MYVIMRC
+\| endif
 
 let g:plug_url_format = 'https://hub.fastgit.xyz/%s.git'
 let s:plug_dir = stdpath('data') . '/nvim_bundles'
@@ -17,6 +18,7 @@ call plug#begin(s:plug_dir)
 if has('nvim')
 
 " @Temporary
+Plug '~/.config/nvim/after/theme/tokyonight'
 
 " @Dependcies
 Plug 'nvim-lua/plenary.nvim'
@@ -74,7 +76,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'm
 
 
 " @Theme
-Plug 'folke/tokyonight.nvim'
+" Plug 'folke/tokyonight.nvim'
 
 endif
 

@@ -1,3 +1,7 @@
+lua << EOF
+
+EOF
+
 colorscheme tokyonight
 "colorscheme material
 "let g:material_style = "palenight"
