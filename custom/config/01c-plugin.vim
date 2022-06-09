@@ -18,6 +18,7 @@ call plug#begin(s:plug_dir)
 if has('nvim')
 
 " @Temporary
+Plug 'romgrk/barbar.nvim'
 
 " @Dependcies
 Plug 'nvim-lua/plenary.nvim'
@@ -54,7 +55,6 @@ Plug 'numToStr/Comment.nvim'
 " @Tools
 Plug 'editorconfig/editorconfig-vim'
 Plug 'norcalli/nvim-colorizer.lua'
-Plug 'akinsho/bufferline.nvim'
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
@@ -143,6 +143,8 @@ endif
 "Plug 'sindrets/diffview.nvim'
 "Plug '~/.config/nvim/after/theme/tokyonight'
 "Plug 'lukas-reineke/indent-blankline.nvim'
+" Plug 'seblj/nvim-tabline'
+" Plug 'akinsho/bufferline.nvim'
 
 " @ConfigDap: https://github.com/ravenxrz/dotfiles/blob/master/nvim/lua/user/conf/nvim-spectre.lua
 
