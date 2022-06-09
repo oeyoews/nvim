@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.36.0](https://gitlab.com/oeyoews/nvim/compare/v1.35.1...v1.36.0) (2022-06-09)
+
+
+### Features
+
+* add vsplit color ([fedadec](https://gitlab.com/oeyoews/nvim/commit/fedadecd4c559378a068da148ff787ebd88df707))
+
 ## [1.35.1](https://gitlab.com/oeyoews/nvim/compare/v1.35.0...v1.35.1) (2022-06-09)
 
 
