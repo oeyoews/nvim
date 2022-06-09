@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.29.0](https://gitlab.com/oeyoews/nvim/compare/v1.28.0...v1.29.0) (2022-06-09)
+
+
+### Features
+
+* remove autoload and automatically install firstly ([549254b](https://gitlab.com/oeyoews/nvim/commit/549254b6f3b452d156390eb6c9a2cb28e10d108b))
+
 # [1.28.0](https://gitlab.com/oeyoews/nvim/compare/v1.27.0...v1.28.0) (2022-06-09)
 
 
