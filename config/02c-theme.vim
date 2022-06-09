@@ -1,8 +1,8 @@
 lua << EOF
-
+require('tokyonight').colorscheme()
 EOF
 
-colorscheme tokyonight
+" colorscheme tokyonight
 "colorscheme material
 "let g:material_style = "palenight"
 "colorscheme catppuccin

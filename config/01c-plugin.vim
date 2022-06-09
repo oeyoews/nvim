@@ -18,7 +18,6 @@ call plug#begin(s:plug_dir)
 if has('nvim')
 
 " @Temporary
-Plug '~/.config/nvim/after/theme/tokyonight'
 
 " @Dependcies
 Plug 'nvim-lua/plenary.nvim'
@@ -144,6 +143,7 @@ endif
 "Plug 'preservim/nerdcommenter'
 " Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
 " Plug 'sindrets/diffview.nvim'
+" Plug '~/.config/nvim/after/theme/tokyonight'
 "
 " @ConfigDap: https://github.com/ravenxrz/dotfiles/blob/master/nvim/lua/user/conf/nvim-spectre.lua
 
