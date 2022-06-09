@@ -18,7 +18,11 @@
 
 ## 📨 Install
 
-* first, you can input `make` to run this makefile to install all need neovim plugins
+```bash
+make
+or
+sh ./install.sh
+```
 
 ---
 
@@ -28,6 +32,7 @@ nvim -c PlugInstall
 
 ## ✅ TODO
 
+* [ ] how to add templates in nvim
 * config norg table
 * config format
 * some sitution will cause error line repeat(maybe emoji or refresh time error)

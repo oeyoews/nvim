@@ -23,7 +23,7 @@ nnoremap <silent> <leader>fn :NERDTreeToggle<cr>
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
 
-autocmd BufWritePost ~/.local/share/chezmoi/* ! chezmoi apply --source-path "%"
+autocmd BufWritePost ~/.local/share/chezmoi/dot_* ! chezmoi apply --source-path "%"
 
 " let g:EditorConfig_verbose=1
 " EditorConfigReload
