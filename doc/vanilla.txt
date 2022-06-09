@@ -121,6 +121,7 @@ PLUGIN
 - C-h/i/w
 
   tips
+    - <set ft> to show filetype
   - vim <filename> +nu
   - search Shift in vimhelp to find some keymap binds stand
   - visual: g ctrl + g   : count the number of fonts

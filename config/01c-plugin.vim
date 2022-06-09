@@ -6,6 +6,7 @@ let s:plug_dir = '$HOME/.local/share/nvim/nvim_bundles'
 call plug#begin(s:plug_dir)
 
 " @Temporary
+Plug 'editorconfig/editorconfig-vim'
 
 " @Dependcies
 Plug 'nvim-lua/plenary.nvim'
