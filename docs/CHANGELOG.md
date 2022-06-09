@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.31.2](https://gitlab.com/oeyoews/nvim/compare/v1.31.1...v1.31.2) (2022-06-09)
+
+
+### Bug Fixes
+
+* add executable for install.sh ([70f2429](https://gitlab.com/oeyoews/nvim/commit/70f242951db44d6909a272fa436d7be9f3ea19cb))
+
 ## [1.31.1](https://gitlab.com/oeyoews/nvim/compare/v1.31.0...v1.31.1) (2022-06-09)
 
 
