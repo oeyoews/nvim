@@ -54,7 +54,6 @@ Plug 'numToStr/Comment.nvim'
 
 " @Tools
 Plug 'editorconfig/editorconfig-vim'
-Plug 'sindrets/diffview.nvim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'akinsho/bufferline.nvim'
 Plug 'preservim/nerdtree'
@@ -144,6 +143,8 @@ endif
 "Plug 'oeyoews/vim-snippets'
 "Plug 'preservim/nerdcommenter'
 " Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
+" Plug 'sindrets/diffview.nvim'
+"
 " @ConfigDap: https://github.com/ravenxrz/dotfiles/blob/master/nvim/lua/user/conf/nvim-spectre.lua
 
 call plug#end()

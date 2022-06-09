@@ -24,6 +24,8 @@ or
 sh ./install.sh
 ```
 
+* vim-plug: enter to show more information, R to reinstall failed plugins
+
 ---
 
 ## Feature
