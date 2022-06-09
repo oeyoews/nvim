@@ -27,6 +27,7 @@ nnoremap <silent> <leader>bx <cmd>enew<cr>
 
 " quit window
 nnoremap <silent> <space>qq :q<CR>
+nnoremap <silent> <space>qa :qa<CR>
 
 " better jump
 noremap L $
