@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.26.1](https://gitlab.com/oeyoews/nvim/compare/v1.26.0...v1.26.1) (2022-06-09)
+
+
+### Bug Fixes
+
+* add prefix dot_* for chezmoi ([ba6744a](https://gitlab.com/oeyoews/nvim/commit/ba6744ac56e8046df818bf4ea03c9f1249ebba99))
+
 # [1.26.0](https://gitlab.com/oeyoews/nvim/compare/v1.25.0...v1.26.0) (2022-06-09)
 
 
