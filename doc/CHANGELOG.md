@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.35.0](https://gitlab.com/oeyoews/nvim/compare/v1.34.1...v1.35.0) (2022-06-09)
+
+
+### Features
+
+* config open-file short-keys ([298c579](https://gitlab.com/oeyoews/nvim/commit/298c5798bc09490a7ac750e407299dc86ffcff9b))
+
 ## [1.34.1](https://gitlab.com/oeyoews/nvim/compare/v1.34.0...v1.34.1) (2022-06-09)
 
 
