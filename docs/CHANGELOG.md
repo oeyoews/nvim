@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.31.1](https://gitlab.com/oeyoews/nvim/compare/v1.31.0...v1.31.1) (2022-06-09)
+
+
+### Bug Fixes
+
+* add lsp-installer pcall ([4d9b6f4](https://gitlab.com/oeyoews/nvim/commit/4d9b6f4753c76f4c8c15258942f7c27010e34101))
+
 # [1.31.0](https://gitlab.com/oeyoews/nvim/compare/v1.30.0...v1.31.0) (2022-06-09)
 
 
