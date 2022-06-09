@@ -6,5 +6,3 @@ package-lock.json
 node_modules
 
 .sessions
-
-/autoload/plug*.vim
