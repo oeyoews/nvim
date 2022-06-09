@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.33.0](https://gitlab.com/oeyoews/nvim/compare/v1.32.3...v1.33.0) (2022-06-09)
+
+
+### Features
+
+* config lspsaga binds ([62f50ae](https://gitlab.com/oeyoews/nvim/commit/62f50ae4cc5d117bc66a2ec224f67cce2f4ce40a))
+
 ## [1.32.3](https://gitlab.com/oeyoews/nvim/compare/v1.32.2...v1.32.3) (2022-06-09)
 
 
