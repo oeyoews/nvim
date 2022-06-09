@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.35.1](https://gitlab.com/oeyoews/nvim/compare/v1.35.0...v1.35.1) (2022-06-09)
+
+
+### Bug Fixes
+
+* replace bufferline to barbar ([85892a0](https://gitlab.com/oeyoews/nvim/commit/85892a0d527a9d7ded2ddff2eb2e6b102ca3f041))
+
 # [1.35.0](https://gitlab.com/oeyoews/nvim/compare/v1.34.1...v1.35.0) (2022-06-09)
 
 
