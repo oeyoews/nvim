@@ -52,3 +52,7 @@ sh ./install.sh
 * [x] config dashboard
 - [x] this emjoi shadow bug, maybe is kitty terminal(switch to wezterm compare)
 - [x] some error tip from feline(active)
+
+## ⚠️  NOTE
+
+* not rename Ultisnips
