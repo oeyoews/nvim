@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.38.2](https://gitlab.com/oeyoews/nvim/compare/v1.38.1...v1.38.2) (2022-06-10)
+
+
+### Bug Fixes
+
+* update lsp info icon ([7747cbe](https://gitlab.com/oeyoews/nvim/commit/7747cbe1107987d6f2b23e902a6abfc61f170aaa))
+
 ## [1.38.1](https://gitlab.com/oeyoews/nvim/compare/v1.38.0...v1.38.1) (2022-06-10)
 
 
