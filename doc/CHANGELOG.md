@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.37.1](https://gitlab.com/oeyoews/nvim/compare/v1.37.0...v1.37.1) (2022-06-10)
+
+
+### Bug Fixes
+
+* not use echom in autocmd ([c409133](https://gitlab.com/oeyoews/nvim/commit/c409133d7c3210fc79bb5b3b409f74d15c1823d2))
+
 # [1.37.0](https://gitlab.com/oeyoews/nvim/compare/v1.36.0...v1.37.0) (2022-06-10)
 
 
