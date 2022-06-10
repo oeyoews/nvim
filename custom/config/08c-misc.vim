@@ -2,10 +2,6 @@
 
 command! -nargs=?  -complete=color Themes colorscheme <args>
 
-lua << EOF
--- vim.cmd([[let g:matchup_matchparen_offscreen = {'method': 'popup'}]])
-EOF
-
 " config chezmoi
 function! ChezmoiSource() abort
   !chezmoi apply --source-path "%" && exec zsh

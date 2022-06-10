@@ -20,6 +20,7 @@ call plug#begin(s:plug_dir)
 if has('nvim')
 
 " @Temporary
+Plug 'b0o/incline.nvim'
 Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
 Plug 'sindrets/diffview.nvim'
 
