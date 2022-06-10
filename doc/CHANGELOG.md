@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://gitlab.com/oeyoews/nvim/compare/v2.0.0...v2.0.1) (2022-06-10)
+
+
+### Bug Fixes
+
+* remove exec zsh for chezmoi ([67525f9](https://gitlab.com/oeyoews/nvim/commit/67525f99c371d22ebf4b177cb9378be3f73d7e30))
+
 # [2.0.0](https://gitlab.com/oeyoews/nvim/compare/v1.39.0...v2.0.0) (2022-06-10)
 
 
