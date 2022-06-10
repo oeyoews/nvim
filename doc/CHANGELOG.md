@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://gitlab.com/oeyoews/nvim/compare/v2.1.0...v2.2.0) (2022-06-10)
+
+
+### Features
+
+* reconfig indent ([22e2c6d](https://gitlab.com/oeyoews/nvim/commit/22e2c6d4d0f36c1e2b2615de0f24e299dc839542))
+
 # [2.1.0](https://gitlab.com/oeyoews/nvim/compare/v2.0.1...v2.1.0) (2022-06-10)
 
 
