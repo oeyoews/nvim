@@ -32,7 +32,7 @@ local servers = {
   'sumneko_lua',
   'clangd',
   'jsonls',
-  'bashls',
+  'bashls', -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
 }
 
 lsp_installer.setup({

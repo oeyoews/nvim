@@ -4,7 +4,8 @@ command! -nargs=?  -complete=color Themes colorscheme <args>
 
 " config chezmoi
 function! ChezmoiSource() abort
-  !chezmoi apply --source-path "%" && exec zsh
+  " exec zsh not use , just int current vim work
+  !chezmoi apply --source-path "%" &&
 endfunction
 
 autocmd BufWritePost ~/.local/share/chezmoi/dot_* :call ChezmoiSource()
