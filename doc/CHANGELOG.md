@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.38.1](https://gitlab.com/oeyoews/nvim/compare/v1.38.0...v1.38.1) (2022-06-10)
+
+
+### Bug Fixes
+
+* replace git changed icon, and main icon ([e079e05](https://gitlab.com/oeyoews/nvim/commit/e079e056b753aa948fba4f2ca2888ba715ccc206))
+
 # [1.38.0](https://gitlab.com/oeyoews/nvim/compare/v1.37.1...v1.38.0) (2022-06-10)
 
 
