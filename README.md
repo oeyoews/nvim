@@ -35,6 +35,8 @@ sh ./install.sh
 
 ## ✅ TODO
 
+* [ ] config tab space show in different filetype
+* [ ] move plugins/*.lua to lua folder, and to pure lua config
 * [ ] add window number switch number(mousenum)
 * [x] solve gitsign utf8
 * [ ] how to add templates in nvim
