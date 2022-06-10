@@ -28,7 +28,6 @@ Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
 " @Dependcies
 Plug 'nvim-lua/plenary.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'ryanoasis/vim-devicons'
 Plug 'rcarriga/nvim-notify'
 
 " @Performance
@@ -73,7 +72,7 @@ Plug 'folke/todo-comments.nvim'
 Plug 'fladson/vim-kitty'
 
 " @Markdown
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+" Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
 endif
 
@@ -157,3 +156,4 @@ call plug#end()
 " Plug 'jbyuki/nabla.nvim'
 " Plug 'nvim-lua/popup.nvim'
 " Plug 'sindrets/diffview.nvim'
+" Plug 'ryanoasis/vim-devicons'

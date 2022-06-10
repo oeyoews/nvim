@@ -6,6 +6,7 @@ end
 
 --echo stdpath('data')
 --must have last slash
+
 persistence.setup({ dir = vim.fn.expand(vim.fn.stdpath('data') .. "/nvim_sessions/") })
 
 -- restore last session
