@@ -28,7 +28,8 @@ sh ./install.sh
 
 ---
 
-## 🥙 Feature
+<!-- 🥙 -->
+## ✨ Feature
 
 * `Ctrl L` in insert mode, press it, you can input uppercase letters, press it again to toggle lowercase letters
 
