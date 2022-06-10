@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.37.0](https://gitlab.com/oeyoews/nvim/compare/v1.36.0...v1.37.0) (2022-06-10)
+
+
+### Features
+
+* add soz for chezmoi ([3520bd7](https://gitlab.com/oeyoews/nvim/commit/3520bd7f0fee3bda20dd17817a535d657fee330b))
+
 # [1.36.0](https://gitlab.com/oeyoews/nvim/compare/v1.35.1...v1.36.0) (2022-06-09)
 
 
