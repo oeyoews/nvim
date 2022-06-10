@@ -27,3 +27,14 @@ autocmd BufWritePost ~/.config/nvim/custom/config/*.vim source %
 " Customize with popup({border = ...})  : `single` (default), `double`, `rounded`
 " TODO:
 " autocmd! FileType markdown nnoremap <leader>tp :lua require("nabla").popup()<cr>
+
+let s:fontsize = 18
+function! AdjustFontSize(amount)
+let s:fontsize = s:fontsize+a:amount
+execute "GuiFont! Consolas:h" . s:fontsize
+endfunction
+
+noremap :call AdjustFontSize(1)
+noremap :call AdjustFontSize(-1)
+inoremap :call AdjustFontSize(1)a
+inoremap :call AdjustFontSize(-1)a
