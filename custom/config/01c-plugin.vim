@@ -24,6 +24,7 @@ if has('nvim')
 " @Temporary
 Plug 'b0o/incline.nvim', { 'frozen': 1 }
 Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 " @Dependcies
 Plug 'nvim-lua/plenary.nvim'
@@ -146,7 +147,6 @@ call plug#end()
 "Plug 'jbyuki/one-small-step-for-vimkind'
 "Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
 "Plug '~/.config/nvim/after/theme/tokyonight'
-"Plug 'lukas-reineke/indent-blankline.nvim'
 " Plug 'seblj/nvim-tabline'
 " Plug 'akinsho/bufferline.nvim'
 " Plug 'preservim/nerdtree'
