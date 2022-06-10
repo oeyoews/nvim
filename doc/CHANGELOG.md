@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.1](https://gitlab.com/oeyoews/nvim/compare/v2.3.0...v2.3.1) (2022-06-10)
+
+
+### Bug Fixes
+
+* command q fix ([29a0204](https://gitlab.com/oeyoews/nvim/commit/29a02045e188e3f4e923d14d4d42cd03cd63b5f0))
+
 # [2.3.0](https://gitlab.com/oeyoews/nvim/compare/v2.2.0...v2.3.0) (2022-06-10)
 
 
