@@ -37,7 +37,8 @@ local servers = {
 
 lsp_installer.setup({
   automatic_installation = true,
-  ensure_installed = servers,
+  -- comment it bug: will have second notify
+  -- ensure_installed = servers,
   ui = {
     icons = {
       server_installed = "🍺",
