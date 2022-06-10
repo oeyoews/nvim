@@ -12,7 +12,9 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 \| endif
 
 " Speedup install plugins
-let g:plug_url_format = 'https://hub.fastgit.xyz/%s.git'
+" let g:plug_url_format = 'https://hub.fastgit.xyz/%s.git'
+"
+" definate plugins location
 let s:plug_dir = stdpath('data') . '/nvim_bundles'
 
 call plug#begin(s:plug_dir)
@@ -22,7 +24,6 @@ if has('nvim')
 " @Temporary
 Plug 'b0o/incline.nvim', { 'frozen': 1 }
 Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
-Plug 'sindrets/diffview.nvim'
 
 " @Dependcies
 Plug 'nvim-lua/plenary.nvim'
@@ -155,3 +156,4 @@ call plug#end()
 " Plug 'famiu/feline.nvim'
 " Plug 'jbyuki/nabla.nvim'
 " Plug 'nvim-lua/popup.nvim'
+" Plug 'sindrets/diffview.nvim'

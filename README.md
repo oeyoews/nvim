@@ -56,3 +56,4 @@ sh ./install.sh
 ## ⚠️  NOTE
 
 * not rename Ultisnips
+* because this GFW, please multi try to install all plugins
