@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.39.0](https://gitlab.com/oeyoews/nvim/compare/v1.38.3...v1.39.0) (2022-06-10)
+
+
+### Features
+
+* classify templates ([aaf6ffd](https://gitlab.com/oeyoews/nvim/commit/aaf6ffda064a06c06152cf451e0f25591800429b))
+
 ## [1.38.3](https://gitlab.com/oeyoews/nvim/compare/v1.38.2...v1.38.3) (2022-06-10)
 
 
