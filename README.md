@@ -28,7 +28,7 @@ sh ./install.sh
 
 ---
 
-## Feature
+## 🥙 Feature
 
 * `Ctrl L` in insert mode, press it, you can input uppercase letters, press it again to toggle lowercase letters
 
@@ -37,18 +37,17 @@ sh ./install.sh
 * [ ] add window number switch number(mousenum)
 * [x] solve gitsign utf8
 * [ ] how to add templates in nvim
-* config norg table
-* config format
-* some sitution will cause error line repeat(maybe emoji or refresh time error)
+* [x] config norg table
+* [x] config format
+* [x] some sitution will cause error line repeat(maybe emoji or refresh time error)
   * :snowflake:  this emoji will cause this bug in kitty(only)
 * config new theme for material, like tilde,
 - [ ] learn The lighgtspeed plugins usage
 * add shortkeys in vim to open browser html
-- [ ] fix the zh bug(maybe also is terminal)
-- add random banner and random color startup
+- [?] fix the zh bug(maybe also is terminal)
+- [x] add random banner and random color startup
   * https://github.com/goolord/alpha-nvim/discussions/16#discussioncomment-2386902
 * first install automaticall install
-*
-* config dashboard
-- this emjoi shadow bug, maybe is kitty terminal(switch to wezterm compare)
-- some error tip from feline(active)
+* [x] config dashboard
+- [x] this emjoi shadow bug, maybe is kitty terminal(switch to wezterm compare)
+- [x] some error tip from feline(active)
