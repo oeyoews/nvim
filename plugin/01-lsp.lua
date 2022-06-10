@@ -19,7 +19,7 @@ if not cmp_ok then return false end
 if not lspkind_ok then return false end
 
 local servers = {
-  --'gopls',
+  'gopls',
   --'texlab',
   -- 'diagnosticls',
   -- 'yamlls',

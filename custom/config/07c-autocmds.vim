@@ -5,4 +5,4 @@ command! Scripts vsplit | enew|pu=execute('scriptnames')
 command! -nargs=1 -complete=highlight HI enew|pu=execute('hi <args>')
 
 " smart quit some window
-" autocmd! FileType startuptime,help,qf,quickrun,snippets,tsplayground nnoremap <silent> q :q
+autocmd! FileType startuptime,help,qf,quickrun,snippets,tsplayground nnoremap <silent> q :q<cr>
