@@ -72,7 +72,7 @@ Plug 'folke/todo-comments.nvim'
 Plug 'fladson/vim-kitty'
 
 " @Markdown
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install', 'for': 'markdown' }
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
 endif
 
@@ -153,3 +153,5 @@ call plug#end()
 " Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 " Plug 'famiu/feline.nvim'
+" Plug 'jbyuki/nabla.nvim'
+" Plug 'nvim-lua/popup.nvim'

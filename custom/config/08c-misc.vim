@@ -22,3 +22,7 @@ nnoremap <silent> <leader>bp :BufferPick<CR>
 " autoload refresh custom/config/ all files, when they changed, not use echo
 " message
 autocmd BufWritePost ~/.config/nvim/custom/config/*.vim source %
+
+" Customize with popup({border = ...})  : `single` (default), `double`, `rounded`
+" TODO:
+" autocmd! FileType markdown nnoremap <leader>tp :lua require("nabla").popup()<cr>

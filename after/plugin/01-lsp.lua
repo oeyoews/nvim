@@ -26,6 +26,7 @@ local servers = {
   -- 'pyright',
   -- 'cssls',
   -- 'tsserver',
+  'html',
   'cmake',
   'vimls',
   'sumneko_lua',
