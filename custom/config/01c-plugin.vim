@@ -19,7 +19,7 @@ if has('nvim')
 
 " @Temporary
 Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
-Plug 'windwp/windline.nvim'
+Plug 'sindrets/diffview.nvim'
 
 " @Dependcies
 Plug 'nvim-lua/plenary.nvim'
@@ -54,6 +54,7 @@ Plug 'p00f/nvim-ts-rainbow'
 Plug 'numToStr/Comment.nvim'
 
 " @Tools
+Plug 'windwp/windline.nvim'
 Plug 'romgrk/barbar.nvim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'norcalli/nvim-colorizer.lua'
@@ -141,7 +142,6 @@ call plug#end()
 "Plug 'theHamsta/nvim-dap-virtual-text'
 "Plug 'jbyuki/one-small-step-for-vimkind'
 "Plug 'mzlogin/vim-markdown-toc', { 'frozen': 1 }
-"Plug 'sindrets/diffview.nvim'
 "Plug '~/.config/nvim/after/theme/tokyonight'
 "Plug 'lukas-reineke/indent-blankline.nvim'
 " Plug 'seblj/nvim-tabline'
