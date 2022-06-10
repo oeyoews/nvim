@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://gitlab.com/oeyoews/nvim/compare/v1.39.0...v2.0.0) (2022-06-10)
+
+
+### Code Refactoring
+
+* **struct:** delete after, move *.lua to plugin folders ([af5228f](https://gitlab.com/oeyoews/nvim/commit/af5228f2085ae292c97b43d16a8d947e97f28265))
+
+
+### BREAKING CHANGES
+
+* **struct:** merge after to plugin folder
+
 # [1.39.0](https://gitlab.com/oeyoews/nvim/compare/v1.38.3...v1.39.0) (2022-06-10)
 
 
