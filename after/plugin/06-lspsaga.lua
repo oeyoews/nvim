@@ -22,7 +22,8 @@ lspsaga.setup { -- defaults ...
     sign = true,
     sign_priority = 40,
     -- disable for code icon
-    virtual_text = true,
+    -- to prevent emoji lightbulb error
+    virtual_text = false,
   },
   finder_definition_icon = "  ",
   finder_reference_icon = "  ",
