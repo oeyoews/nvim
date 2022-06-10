@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://gitlab.com/oeyoews/nvim/compare/v2.0.1...v2.1.0) (2022-06-10)
+
+
+### Features
+
+* show tab use double right arrow ([4693def](https://gitlab.com/oeyoews/nvim/commit/4693def59f53c90f2311b46a016c48ee4d3d9369))
+
 ## [2.0.1](https://gitlab.com/oeyoews/nvim/compare/v2.0.0...v2.0.1) (2022-06-10)
 
 
