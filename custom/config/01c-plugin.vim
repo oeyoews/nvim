@@ -6,10 +6,12 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 
 " Run PlugInstall if there are missing plugins
+" BUG: always less one
 autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \| PlugInstall --sync | source $MYVIMRC
 \| endif
 
+" Speedup install plugins
 let g:plug_url_format = 'https://hub.fastgit.xyz/%s.git'
 let s:plug_dir = stdpath('data') . '/nvim_bundles'
 
@@ -128,7 +130,7 @@ call plug#end()
 "Plug 'windwp/nvim-spectre'
 "Plug 'lervag/vimtex'
 "Plug 'kyazdani42/nvim-tree.lua'
-"Plug 'j-hui/fidget.nvim'
+" Plug 'j-hui/fidget.nvim'
 "Plug 'andymass/vim-matchup'
 "Plug 'nvim-lualine/lualine.nvim'
 "Plug 'glepnir/dashboard-nvim'
@@ -150,4 +152,3 @@ call plug#end()
 " Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 " Plug 'famiu/feline.nvim'
-

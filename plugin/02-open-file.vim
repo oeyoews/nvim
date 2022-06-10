@@ -1,4 +1,3 @@
-
 function! FindVanilla() abort
   find ~/.config/nvim/doc/vanilla.txt
 endfunction
@@ -30,4 +29,3 @@ nnoremap <leader>bb  <Cmd>e `mktemp -t scratch-XXXXXX`<CR>
 " TODO: write a function, adjust it's dir
 "nnoremap <space>fd <cmd>e ~/dotfiles/notes/draft/`date -I`.md<cr>
 "nnoremap <space>fd <cmd>e ${NOTES}/markdown/$(date +"%d-%m-%Y").md<cr>
-
