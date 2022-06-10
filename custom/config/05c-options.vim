@@ -1,5 +1,5 @@
-let $LANG = 'en'  "set message language
-set langmenu=en   "set menu's language of gvim. no spaces beside '='
+" let $LANG = 'en'  "set message language
+" set langmenu=en   "set menu's language of gvim. no spaces beside '='
 "set cindent
 set smartindent
 " visual degree chars symbols

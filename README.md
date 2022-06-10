@@ -19,9 +19,7 @@
 ## 📨 Install
 
 ```bash
-make
-or
-sh ./install.sh
+make && make install
 ```
 
 * vim-plug: enter to show more information, R to reinstall failed plugins
@@ -35,6 +33,7 @@ sh ./install.sh
 
 ## ✅ TODO
 
+* [ ] tidy vanilla.txt, maybe can write vanilla.markdown, last to txt
 * [ ] config tab space show in different filetype
 * [ ] move plugins/*.lua to lua folder, and to pure lua config
 * [ ] add window number switch number(mousenum)

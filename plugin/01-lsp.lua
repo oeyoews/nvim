@@ -73,30 +73,31 @@ cmp.setup({
     format = lspkind.cmp_format({
       -- https://code.visualstudio.com/api/references/icons-in-labels
       symbol_map = {
-        Text = " ",
-        Method = " ",
-        Function = " ",
+        --   
+        Text = "",
+        Method = "",
+        Function = "",
         Constructor = "",
-        Field = "ﰠ",
-        Variable = "",
+        Field = "",
+        Variable = "",
         Class = "ﴯ",
         Interface = "",
         Module = "",
-        Property = "ﰠ ",
+        Property = "ﰠ",
         Unit = "",
         Value = "",
         Enum = "",
         Keyword = "",
-        Snippet = "",
+        Snippet = "",
         Color = "",
-        Reference = "",
+        Reference = "",
         File = "",
         Folder = "",
         EnumMember = "",
         Constant = "",
         Struct = "",
         Event = "",
-        Operator = " ",
+        Operator = "",
         TypeParameter = ""
       },
       mode = "symbol",
@@ -104,12 +105,11 @@ cmp.setup({
       maxwidth = 50,
       menu = ({
         nvim_lsp = "(LSP)",
-        buffer = "(Buffer)",
-        ultisnips = "(Snipppet)",
+        buffer = "(Buf)",
+        ultisnips = "(Sni)",
         nvim_lua = "(Lua)",
-        treesitter = "(TS)",
-        path = "(Path)",
-        emoji = "(emoji)"
+        path = "(Pat)",
+        emoji = "(Emo)"
       })
     }),
   },

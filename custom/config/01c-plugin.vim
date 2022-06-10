@@ -43,7 +43,6 @@ Plug 'hrsh7th/cmp-nvim-lua'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-cmdline'
 Plug 'williamboman/nvim-lsp-installer'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-emoji'
@@ -78,7 +77,6 @@ Plug 'fladson/vim-kitty'
 endif
 
 " @Theme
-" Plug 'folke/tokyonight.nvim'
 
 " @ConfigDap: https://github.com/ravenxrz/dotfiles/blob/master/nvim/lua/user/conf/nvim-spectre.lua
 
@@ -157,3 +155,5 @@ call plug#end()
 " Plug 'nvim-lua/popup.nvim'
 " Plug 'sindrets/diffview.nvim'
 " Plug 'ryanoasis/vim-devicons'
+" Plug 'folke/tokyonight.nvim'
+" Plug 'hrsh7th/cmp-cmdline'
