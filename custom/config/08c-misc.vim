@@ -23,7 +23,7 @@ autocmd BufWritePost ~/.local/share/chezmoi/dot_* ! chezmoi apply --source-path 
 let g:EditorConfig_verbose=1
 
 let bufferline = get(g:, 'bufferline', {})
-let bufferline.maximum_padding = 2
+let bufferline.maximum_padding = 1
 let bufferline.maximum_length = 14
 
-nnoremap <silent> <C-p>    :BufferPick<CR>
+nnoremap <silent> <leader>bp :BufferPick<CR>
