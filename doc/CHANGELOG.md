@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.38.0](https://gitlab.com/oeyoews/nvim/compare/v1.37.1...v1.38.0) (2022-06-10)
+
+
+### Features
+
+* add incline(winbar) ([0cee77b](https://gitlab.com/oeyoews/nvim/commit/0cee77b211705c7741dce6134af959ab89410cae))
+
 ## [1.37.1](https://gitlab.com/oeyoews/nvim/compare/v1.37.0...v1.37.1) (2022-06-10)
 
 
