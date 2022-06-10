@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://gitlab.com/oeyoews/nvim/compare/v2.2.0...v2.3.0) (2022-06-10)
+
+
+### Features
+
+* use init.lua replace init.vim ([746e64b](https://gitlab.com/oeyoews/nvim/commit/746e64bf134f57e369807014ea99c9a139694446))
+
 # [2.2.0](https://gitlab.com/oeyoews/nvim/compare/v2.1.0...v2.2.0) (2022-06-10)
 
 
