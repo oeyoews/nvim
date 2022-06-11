@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.9.1](https://gitlab.com/oeyoews/nvim/compare/v2.9.0...v2.9.1) (2022-06-11)
+
+
+### Bug Fixes
+
+* disable auto-preview for system-outline ([3241426](https://gitlab.com/oeyoews/nvim/commit/32414265c036708d9ddb508e3968b6d917f9381a))
+
 # [2.9.0](https://gitlab.com/oeyoews/nvim/compare/v2.8.0...v2.9.0) (2022-06-11)
 
 
