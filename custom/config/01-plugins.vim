@@ -25,6 +25,7 @@ if has('nvim')
 Plug 'b0o/incline.nvim', { 'frozen': 1 }
 Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'simrat39/symbols-outline.nvim'
 
 " @Dependcies
 Plug 'nvim-lua/plenary.nvim'

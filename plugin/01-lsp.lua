@@ -77,18 +77,21 @@ cmp.setup({
         --   
         Text = "",
         Method = "",
-        Function = "",
-        Constructor = "",
+        -- Function = "",
+        Function = "ƒ",
+        -- 
+        Constructor = "",
         Field = "",
         Variable = "",
-        Class = "ﴯ",
+        Class = "𝓒",
         Interface = "",
-        Module = "",
+        Module = "",
         Property = "ﰠ",
         Unit = "",
         Value = "",
         Enum = "",
-        Keyword = "",
+        -- Keyword = "",
+        Keyword = "🔐",
         Snippet = "",
         Color = "",
         Reference = "",
@@ -96,10 +99,12 @@ cmp.setup({
         Folder = "",
         EnumMember = "",
         Constant = "",
-        Struct = "",
+        -- 
+        Struct = "𝓢",
         Event = "",
         Operator = "",
-        TypeParameter = ""
+        -- 
+        TypeParameter = "𝙏"
       },
       mode = "symbol",
       --mode = "symbol_text",
