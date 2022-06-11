@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.8.0](https://gitlab.com/oeyoews/nvim/compare/v2.7.0...v2.8.0) (2022-06-11)
+
+
+### Features
+
+* install go nvim-treesitter ([9af299b](https://gitlab.com/oeyoews/nvim/commit/9af299bb5cd7baee72285f922e2071b69383d913))
+
 # [2.7.0](https://gitlab.com/oeyoews/nvim/compare/v2.6.0...v2.7.0) (2022-06-11)
 
 
