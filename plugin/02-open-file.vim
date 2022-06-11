@@ -11,7 +11,7 @@ function! FindPlugin() abort
 endfunction
 
 function! FindInit() abort
-  find ~/.config/nvim/init.vim
+  find ~/.config/nvim/init.lua
 endfunction
 
 " open nvim config file
