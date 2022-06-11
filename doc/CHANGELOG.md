@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.5.0](https://gitlab.com/oeyoews/nvim/compare/v2.4.0...v2.5.0) (2022-06-11)
+
+
+### Features
+
+* add filetype lspinfo to quict fastly ([d4d3e9d](https://gitlab.com/oeyoews/nvim/commit/d4d3e9d13d9d63decd9805fa905741cf805294d2))
+
 # [2.4.0](https://gitlab.com/oeyoews/nvim/compare/v2.3.1...v2.4.0) (2022-06-11)
 
 
