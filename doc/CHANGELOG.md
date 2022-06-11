@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://gitlab.com/oeyoews/nvim/compare/v2.3.1...v2.4.0) (2022-06-11)
+
+
+### Bug Fixes
+
+* correct open to inin.lua ([9692255](https://gitlab.com/oeyoews/nvim/commit/9692255805fd3f570859703576b964f93dc7135a))
+* remove adjust font setting ([8c20f96](https://gitlab.com/oeyoews/nvim/commit/8c20f9637682c22b13262c714e31d260acc94f86))
+
+
+### Features
+
+* add toggle statusline ([96bea73](https://gitlab.com/oeyoews/nvim/commit/96bea73350c60c9735cc1e3ccf296b710b1cb1ba))
+
 ## [2.3.1](https://gitlab.com/oeyoews/nvim/compare/v2.3.0...v2.3.1) (2022-06-10)
 
 
