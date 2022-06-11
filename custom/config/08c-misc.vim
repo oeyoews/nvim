@@ -27,3 +27,5 @@ autocmd BufWritePost ~/.config/nvim/custom/config/*.vim source %
 " Customize with popup({border = ...})  : `single` (default), `double`, `rounded`
 " TODO:
 " autocmd! FileType markdown nnoremap <leader>tp :lua require("nabla").popup()<cr>
+
+nnoremap <silent> <leader>tn :set number!<cr>

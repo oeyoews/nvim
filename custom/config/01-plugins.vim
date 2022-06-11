@@ -23,7 +23,6 @@ if has('nvim')
 
 " @Temporary
 Plug 'b0o/incline.nvim', { 'frozen': 1 }
-Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'simrat39/symbols-outline.nvim'
 
@@ -33,6 +32,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'rcarriga/nvim-notify'
 
 " @Performance
+Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
 Plug 'nathom/filetype.nvim'
 Plug 'lewis6991/impatient.nvim'
 
@@ -60,7 +60,6 @@ Plug 'numToStr/Comment.nvim'
 " @Tools
 Plug 'windwp/windline.nvim'
 Plug 'romgrk/barbar.nvim'
-Plug 'editorconfig/editorconfig-vim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'phaazon/hop.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -70,7 +69,6 @@ Plug 'thinca/vim-quickrun', { 'on': 'QuickRun', 'frozen': 1 }
 Plug 'folke/persistence.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'folke/todo-comments.nvim'
-Plug 'fladson/vim-kitty'
 
 " @Markdown
 " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
@@ -161,3 +159,5 @@ call plug#end()
 " Plug 'stevearc/dressing.nvim'
 " Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 " Plug 'famiu/bufdelete.nvim'
+" Plug 'editorconfig/editorconfig-vim'
+" Plug 'fladson/vim-kitty'
