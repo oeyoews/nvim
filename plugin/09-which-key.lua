@@ -1,6 +1,7 @@
 local which_key_ok, which_configs = pcall(require, "which-key")
 
 if not which_key_ok then
+  vim.notify("whickey not founded")
   return false
 end
 

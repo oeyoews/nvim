@@ -3,8 +3,11 @@ local helper = require('windline.helpers')
 local b_components = require('windline.components.basic')
 local state = _G.WindLine.state
 
+-- local gps = require("nvim-gps")
+
 local lsp_comps = require('windline.components.lsp')
 local git_comps = require('windline.components.git')
+-- local git_rev = require('windline.components.git_rev')
 
 local hl_list = {
   Black = { 'white', 'black' },
@@ -13,6 +16,39 @@ local hl_list = {
   Active = { 'ActiveFg', 'ActiveBg' },
 }
 local basic = {}
+
+-- basic.gps = {
+--   name = gps,
+--   text = function()
+--     if gps.is_available() then
+--       return {
+--         gps.get_location()
+--       }
+--     end
+--     return ''
+--   end,
+-- }
+
+local language = 'EN'
+basic.language = {
+  hl_colors = {
+    red = { 'red', 'black' },
+    yellow = { 'yellow', 'black' },
+    blue = { 'blue', 'black' },
+  },
+  text = function()
+    return {
+      { 'LANG: ', '' },
+      {
+        language,
+        '',
+        windline.make_click('change_language', function()
+          language = language == 'EN' and 'US' or 'EN'
+        end),
+      },
+    }
+  end,
+}
 
 local breakpoint_width = 90
 basic.divider = { b_components.divider, '' }
@@ -53,7 +89,7 @@ basic.lsp_diagnos = {
     if lsp_comps.check_lsp(bufnr) then
       return {
         { lsp_comps.lsp_error({ format = '  %s', show_zero = true }), 'red' },
-        { lsp_comps.lsp_warning({ format = '  %s', show_zero = true }), 'yellow' },
+        { lsp_comps.lsp_warning({ format = '  %s', show_zero = true }), 'yellow' },
         -- 
         { lsp_comps.lsp_hint({ format = '  %s', show_zero = true }), 'blue' },
       }
@@ -118,7 +154,7 @@ basic.git = {
       return {
         { git_comps.diff_added({ format = '  %s', show_zero = true }), 'green' },
         { git_comps.diff_removed({ format = '  %s', show_zero = true }), 'red' },
-        { git_comps.diff_changed({ format = '  %s', show_zero = true }), 'blue' },
+        { git_comps.diff_changed({ format = '  %s', show_zero = true }), 'blue' },
       }
     end
     return ''
@@ -189,8 +225,11 @@ local default = {
     basic.file_right,
     basic.lsp_name,
     basic.git,
+    -- { git_comps.git_rev({ format = " ⇡%s⇣%s", interval = 10000 }) },
     { git_comps.git_branch(), { 'magenta', 'black' }, breakpoint_width },
     { ' ', hl_list.Black },
+    -- basic.gps,
+    -- basic.language,
     basic.square_mode,
   },
   inactive = {

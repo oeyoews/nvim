@@ -22,6 +22,9 @@ call plug#begin(s:plug_dir)
 if has('nvim')
 
 " @Temporary
+Plug 'sindrets/diffview.nvim'
+Plug 'SmiteshP/nvim-gps'
+Plug 'folke/trouble.nvim'
 Plug 'b0o/incline.nvim', { 'frozen': 1 }
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'simrat39/symbols-outline.nvim'
@@ -152,7 +155,6 @@ call plug#end()
 " Plug 'famiu/feline.nvim'
 " Plug 'jbyuki/nabla.nvim'
 " Plug 'nvim-lua/popup.nvim'
-" Plug 'sindrets/diffview.nvim'
 " Plug 'ryanoasis/vim-devicons'
 " Plug 'folke/tokyonight.nvim'
 " Plug 'hrsh7th/cmp-cmdline'
@@ -161,3 +163,4 @@ call plug#end()
 " Plug 'famiu/bufdelete.nvim'
 " Plug 'editorconfig/editorconfig-vim'
 " Plug 'fladson/vim-kitty'
+" Plug 'bfredl/nvim-luadev'

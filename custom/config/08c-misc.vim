@@ -29,3 +29,4 @@ autocmd BufWritePost ~/.config/nvim/custom/config/*.vim source %
 " autocmd! FileType markdown nnoremap <leader>tp :lua require("nabla").popup()<cr>
 
 nnoremap <silent> <leader>tn :set number!<cr>
+nnoremap <silent> <leader>tt :TroubleToggle<cr>
