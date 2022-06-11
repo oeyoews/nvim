@@ -26,7 +26,6 @@ Plug 'b0o/incline.nvim', { 'frozen': 1 }
 Plug 'yianwillis/vimcdoc', { 'frozen': 1 }
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'simrat39/symbols-outline.nvim'
-Plug 'famiu/bufdelete.nvim'
 
 " @Dependcies
 Plug 'nvim-lua/plenary.nvim'
@@ -161,3 +160,4 @@ call plug#end()
 " Plug 'hrsh7th/cmp-cmdline'
 " Plug 'stevearc/dressing.nvim'
 " Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+" Plug 'famiu/bufdelete.nvim'
