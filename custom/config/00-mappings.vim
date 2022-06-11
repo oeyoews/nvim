@@ -69,8 +69,8 @@ nnoremap <silent> <esc> :noh<return><C-L><esc>
 " StartupTime
 "nnoremap <leader>vt <cmd>StartupTime --tries 1<cr>
 
-" quickrun
-nnoremap <silent> <SPACE>ll <Cmd>QuickRun<CR><C-w>w
+" quickrun :NOTE: must use <bar> in cmd format
+nnoremap <silent> <SPACE>ll <Cmd>w <bar> QuickRun <CR><C-w>w
 
 nnoremap <silent> <SPACE>tf <Cmd>only<bar> lua vim.notify("🍺 FullScreen")<cr>
 
