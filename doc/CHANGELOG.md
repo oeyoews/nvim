@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.6.0](https://gitlab.com/oeyoews/nvim/compare/v2.5.0...v2.6.0) (2022-06-11)
+
+
+### Features
+
+* add symbolsoutline mapping ([ff122fb](https://gitlab.com/oeyoews/nvim/commit/ff122fbe9b90421e2b64b2b631db3a5e72a4745e))
+
 # [2.5.0](https://gitlab.com/oeyoews/nvim/compare/v2.4.0...v2.5.0) (2022-06-11)
 
 
