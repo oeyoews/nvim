@@ -73,3 +73,5 @@ nnoremap <silent> <esc> :noh<return><C-L><esc>
 nnoremap <silent> <SPACE>ll <Cmd>QuickRun<CR><C-w>w
 
 nnoremap <silent> <SPACE>tf <Cmd>only<bar> lua vim.notify("🍺 FullScreen")<cr>
+
+nnoremap <silent> <SPACE>ls <Cmd>SymbolsOutline<CR><C-w>w
