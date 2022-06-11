@@ -3,7 +3,7 @@ function! FindVanilla() abort
 endfunction
 
 function! FindCustomConfig() abort
-  find ~/.config/nvim/custom/config/01-plugin.vim
+  find ~/.config/nvim/custom/config/01-plugins.vim
 endfunction
 
 function! FindPlugin() abort

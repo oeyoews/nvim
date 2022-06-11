@@ -20,7 +20,7 @@ if not lspkind_ok then return false end
 
 local servers = {
   'gopls',
-  'golangci_lint_ls',
+  -- 'golangci_lint_ls',
   --'texlab',
   -- 'diagnosticls',
   -- 'yamlls',
