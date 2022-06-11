@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.7.0](https://gitlab.com/oeyoews/nvim/compare/v2.6.0...v2.7.0) (2022-06-11)
+
+
+### Features
+
+* add space tn to toggle number ([2499f40](https://gitlab.com/oeyoews/nvim/commit/2499f40fb94f47be4e3db2ce431f1ee2ce810f79))
+
 # [2.6.0](https://gitlab.com/oeyoews/nvim/compare/v2.5.0...v2.6.0) (2022-06-11)
 
 
