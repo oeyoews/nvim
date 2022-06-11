@@ -3,5 +3,12 @@
 " set noruler
 
 function ToggleStatusLine() abort
-  set laststatus=1
+  if &laststatus
+    set laststatus=0
+  else
+    set laststatus=2
+  endif
+  lua vim.notify("ToggleStatusLine")
 endfunction
+
+nnoremap <silent> <leader>ts :call ToggleStatusLine()<CR>
