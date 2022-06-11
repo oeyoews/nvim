@@ -74,7 +74,7 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'folke/todo-comments.nvim'
 
 " @Markdown
-" Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
 endif
 

@@ -3,6 +3,7 @@
 [![Latest Release](https://gitlab.com/oeyoews/nvim/-/badges/release.svg)](https://gitlab.com/oeyoews/nvim/-/releases)
 
 ## 🎉 Welcome
+<img src="https://cdn.jsdelivr.net/gh/oeyoews/img/nvim-example.png"/>
 
 ## 🕊️ Introd <!--2021-09-18T 23:41:58-->
 
