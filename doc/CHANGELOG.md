@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.9.0](https://gitlab.com/oeyoews/nvim/compare/v2.8.0...v2.9.0) (2022-06-11)
+
+
+### Features
+
+* save code before run it ([0554a55](https://gitlab.com/oeyoews/nvim/commit/0554a5525e5e6dbe0413aff0df96a26bda81340d))
+
 # [2.8.0](https://gitlab.com/oeyoews/nvim/compare/v2.7.0...v2.8.0) (2022-06-11)
 
 
