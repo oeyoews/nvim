@@ -22,6 +22,7 @@ call plug#begin(s:plug_dir)
 if has('nvim')
 
 " @Temporary
+Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1}
 Plug 'sindrets/diffview.nvim'
 Plug 'SmiteshP/nvim-gps'
 Plug 'folke/trouble.nvim'
@@ -88,7 +89,6 @@ call plug#end()
 "Plug 'gcmt/wildfire.vim', { 'frozen': 1 }
 "Plug 'lewis6991/spellsitter.nvim'
 "Plug 'ggandor/lightspeed.nvim'
-"Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1}
 "Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 "Plug 'dhruvasagar/vim-table-mode', { 'for' : ['markdown'] }
 "Plug 'plasticboy/vim-markdown'

@@ -67,7 +67,7 @@ nnoremap <silent> <esc> :noh<return><C-L><esc>
 "vnoremap <space>nn mzI+<esc>A+<esc>`z
 
 " StartupTime
-"nnoremap <leader>vt <cmd>StartupTime --tries 1<cr>
+nnoremap <leader>vt <cmd>StartupTime --tries 1<cr>
 
 " quickrun :NOTE: must use <bar> in cmd format
 nnoremap <silent> <SPACE>ll <Cmd>w <bar> QuickRun <CR><C-w>w
