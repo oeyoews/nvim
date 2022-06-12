@@ -31,12 +31,9 @@ Plug 'kevinhwang91/rnvimr'
 Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1}
 Plug 'sindrets/diffview.nvim'
 Plug 'folke/trouble.nvim'
-Plug 'b0o/incline.nvim', { 'frozen': 1 }
 Plug 'lukas-reineke/indent-blankline.nvim'
-Plug 'simrat39/symbols-outline.nvim'
 
 " @Dependcies
-Plug 'antoinemadec/FixCursorHold.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'rcarriga/nvim-notify'
@@ -124,7 +121,6 @@ call plug#end()
 "Plug 'jayli/vim-dictionary'
 "Plug 'uga-rosa/cmp-dictionary'
 "Plug 'abecodes/tabout.nvim'
-"Plug 'kevinhwang91/rnvimr'
 "Plug 'folke/zen-mode.nvim'
 "Plug 'sukima/vim-tiddlywiki'
 "Plug 'Pocco81/TrueZen.nvim'
@@ -178,3 +174,6 @@ call plug#end()
 " Plug 'karb94/neoscroll.nvim'
 " Plug 'fgheng/winbar.nvim'
 " Plug 'SmiteshP/nvim-gps'
+" Plug 'antoinemadec/FixCursorHold.nvim'
+" Plug 'b0o/incline.nvim', { 'frozen': 1 }
+" Plug 'simrat39/symbols-outline.nvim'
