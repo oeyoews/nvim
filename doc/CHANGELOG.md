@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.11.0](https://gitlab.com/oeyoews/nvim/compare/v2.10.0...v2.11.0) (2022-06-12)
+
+
+### Features
+
+* add autotag ([35cb3c4](https://gitlab.com/oeyoews/nvim/commit/35cb3c4371f829ee59e1278b410d8906ffcda304))
+
 # [2.10.0](https://gitlab.com/oeyoews/nvim/compare/v2.9.1...v2.10.0) (2022-06-12)
 
 
