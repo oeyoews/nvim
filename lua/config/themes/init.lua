@@ -1,14 +1,7 @@
-local package = 'config/'
+local package = 'config.themes/'
 
 local moudles = {
-  'notify',
-  'telescope',
-  'performance',
   'tokyonight',
-  'hop',
-  'neorg',
-  'lsp',
-  'lspsignature',
 }
 
 

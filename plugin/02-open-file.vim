@@ -7,7 +7,7 @@ function! FindCustomConfig() abort
 endfunction
 
 function! FindPlugin() abort
-  find ~/.config/nvim/lua/config/lsp.lua
+  find ~/.config/nvim/lua/config/lsp/lsp.lua
 endfunction
 
 function! FindInit() abort
