@@ -139,6 +139,7 @@ cmp.setup({
     { name = 'ultisnips' },
     { name = 'path' },
     { name = 'nvim-lua' },
+    { name = 'neorg' },
     { name = 'emoji' },
   },
 

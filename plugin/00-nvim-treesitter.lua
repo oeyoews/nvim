@@ -41,6 +41,7 @@ tree_configs.setup {
   sync_install = false,
   ---[[
   ensure_installed = {
+    "norg",
     "make",
     "json",
     "lua",
@@ -62,7 +63,7 @@ tree_configs.setup {
     --"typescript",
     --"org",
     -- todo details
-    --"norg", "norg_meta", "norg_table",
+    -- "norg", "norg_meta", "norg_table",
     --"comment",
     --"gomod",
   },
