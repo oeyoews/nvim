@@ -22,6 +22,7 @@ call plug#begin(s:plug_install_dir)
 if has('nvim')
 
 " @Temporary
+Plug 'kevinhwang91/rnvimr'
 Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1}
 Plug 'sindrets/diffview.nvim'
 Plug 'SmiteshP/nvim-gps'
@@ -31,6 +32,7 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'simrat39/symbols-outline.nvim'
 
 " @Dependcies
+Plug 'antoinemadec/FixCursorHold.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'rcarriga/nvim-notify'
@@ -164,3 +166,6 @@ call plug#end()
 " Plug 'editorconfig/editorconfig-vim'
 " Plug 'fladson/vim-kitty'
 " Plug 'bfredl/nvim-luadev'
+" Plug 'Tastyep/structlog.nvim'
+" Plug 'akinsho/toggleterm.nvim'
+" Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap'}

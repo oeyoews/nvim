@@ -117,5 +117,5 @@ endif
 
 " NOTE: it conflict to terminal.vim, feedkeys i
 if !exists('g:ranger_map_keys') || g:ranger_map_keys
-  nnoremap <silent> <leader>ft <cmd>Ranger<CR><cmd>setlocal nornu nonu nospell<cr>
+  nnoremap <silent> <leader>fT <cmd>Ranger<CR><cmd>setlocal nornu nonu nospell<cr>
 endif
