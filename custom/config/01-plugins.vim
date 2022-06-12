@@ -15,9 +15,9 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 " let g:plug_url_format = 'https://hub.fastgit.xyz/%s.git'
 "
 " definate plugins location
-let s:plug_dir = stdpath('data') . '/plugged'
+let s:plug_install_dir = stdpath('data') . '/plugged'
 
-call plug#begin(s:plug_dir)
+call plug#begin(s:plug_install_dir)
 
 if has('nvim')
 
