@@ -1,12 +1,9 @@
-local package = 'config.lsp/'
+local package = 'config.perfect/'
 
 local moudles = {
-  'lsp',
-  'lspsignature',
-  'treesitter',
-  'lspsaga',
+  'performance',
+  'filetype',
 }
-
 
 for _, load_module in ipairs(moudles) do
   require(package .. load_module)

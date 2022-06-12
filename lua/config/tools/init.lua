@@ -6,7 +6,7 @@ local moudles = {
   'hop',
   'colorizer',
   'gitsigns',
-  'neorg',
+  -- 'neorg',
   'whichkey',
   'todocomments',
   'persistence',

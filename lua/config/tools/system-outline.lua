@@ -7,3 +7,7 @@ end
 symbolsoutline.setup({
   auto_preview = false
 })
+
+vim.cmd([[
+nnoremap <silent> <SPACE>ls <Cmd>SymbolsOutline<CR><C-w>w
+]])
