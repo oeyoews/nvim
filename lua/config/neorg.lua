@@ -1,6 +1,7 @@
 local ok, neorg = pcall(require, "neorg")
 
 if not ok then
+  vim.notify('neorg not founded')
   return false
 end
 

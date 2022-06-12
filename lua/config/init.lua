@@ -1,18 +1,17 @@
-require("config.notify")
-require("config.telescope")
-require("config.performance")
-require("config.tokyonight")
-require("config.hop")
-require("config.neorg")
-require("config.lsp")
-require("config.lspsignature")
-
+local package = 'config/'
 
 local moudles = {
-  'config.hop',
+  'notify',
+  'telescope',
+  'performance',
+  'tokyonight',
+  'hop',
+  'neorg',
+  'lsp',
+  'lspsignature',
 }
 
 
-for _, moudle in ipairs(moudles) do
-  -- moudles[moudle].
+for _, load_module in ipairs(moudles) do
+  require(package .. load_module)
 end

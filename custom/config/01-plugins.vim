@@ -177,3 +177,4 @@ call plug#end()
 " Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 " Plug 'turbio/bracey.vim'
 " Plug 'karb94/neoscroll.nvim'
+" Plug 'fgheng/winbar.nvim'
