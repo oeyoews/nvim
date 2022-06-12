@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.14.0](https://gitlab.com/oeyoews/nvim/compare/v2.13.0...v2.14.0) (2022-06-12)
+
+
+### Features
+
+* try use norg helptags ([8e07f28](https://gitlab.com/oeyoews/nvim/commit/8e07f289d5602051c1924c972bc1733331ccc3b4))
+
 # [2.13.0](https://gitlab.com/oeyoews/nvim/compare/v2.12.0...v2.13.0) (2022-06-12)
 
 
