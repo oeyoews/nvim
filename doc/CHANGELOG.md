@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.17.0](https://gitlab.com/oeyoews/nvim/compare/v2.16.0...v2.17.0) (2022-06-12)
+
+
+### Features
+
+* add lua format(styula) keymap ([51c1267](https://gitlab.com/oeyoews/nvim/commit/51c1267bf6eb7396297d6185886390032d9d1dcb))
+
 # [2.16.0](https://gitlab.com/oeyoews/nvim/compare/v2.15.0...v2.16.0) (2022-06-12)
 
 
