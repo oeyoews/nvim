@@ -22,6 +22,7 @@ call plug#begin(s:plug_install_dir)
 if has('nvim')
 
 " @Temporary
+Plug 'windwp/nvim-ts-autotag'
 Plug 'kevinhwang91/rnvimr'
 Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1}
 Plug 'sindrets/diffview.nvim'

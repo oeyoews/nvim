@@ -13,6 +13,9 @@ end
 --]]
 
 tree_configs.setup {
+  autotag = {
+    enable = true,
+  },
   refactor = {
     -- highlight scope code
     highlight_current_scope = { enable = false },
