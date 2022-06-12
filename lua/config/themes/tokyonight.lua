@@ -1,15 +1,15 @@
 ---[[
-local status_ok, tokyonight = pcall(require, "tokyonight")
+local status_ok, tokyonight = pcall(require, 'tokyonight')
 
 if not status_ok then
-  vim.notify("Theme not found")
-  return false
+	vim.notify('Theme not found')
+	return false
 end
 
 package.loaded['tokyonight.config'] = nil
 tokyonight.colorscheme()
 
-vim.cmd [[
+vim.cmd([[
 hi NormalFloat  ctermbg=NONE guibg=NONE
 
 hi Visual         ctermbg=242 gui=reverse
@@ -41,6 +41,6 @@ autocmd TextYankPost * lua vim.highlight.on_yank {higroup="IncSearch",
 " restore the cursor location
 autocmd! BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-]]
+]])
 
 --]]

@@ -4,12 +4,12 @@ vim.g.loaded_tarPlugin = false
 vim.g.loaded_zipPlugin = false
 vim.g.loaded_2html_plugin = false
 
-local present, impatient = pcall(require, "impatient")
+local present, impatient = pcall(require, 'impatient')
 
 if present then
-  impatient.enable_profile()
-  -- vim.notify("impatient  founded")
+	impatient.enable_profile()
+	-- vim.notify("impatient  founded")
 else
-  vim.notify("impatient not founded")
-  return
+	vim.notify('impatient not founded')
+	return
 end

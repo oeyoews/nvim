@@ -1,13 +1,13 @@
-local ok, filetype = pcall(require, "filetype")
+local ok, filetype = pcall(require, 'filetype')
 
 if not ok then
-  return false
+	return false
 end
 
 filetype.setup({
-  overrides = {
-    complex = {
-      [".service"] = "systemd",
-    },
-  },
+	overrides = {
+		complex = {
+			['.service'] = 'systemd',
+		},
+	},
 })

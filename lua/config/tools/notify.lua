@@ -1,48 +1,48 @@
-local status_ok, notify = pcall(require, "notify")
+local status_ok, notify = pcall(require, 'notify')
 if not status_ok then
-  vim.notify("notify module not found!", "warn")
-  return
+	vim.notify('notify module not found!', 'warn')
+	return
 end
 
 vim.notify = notify
 notify.setup({
-  -- Animation style (see below for details)
-  stages = "slide",
+	-- Animation style (see below for details)
+	stages = 'slide',
 
-  -- Function called when a new window is opened, use for changing win settings/config
-  on_open = nil,
+	-- Function called when a new window is opened, use for changing win settings/config
+	on_open = nil,
 
-  -- Function called when a window is closed
-  on_close = nil,
+	-- Function called when a window is closed
+	on_close = nil,
 
-  -- Render function for notifications. See notify-render()
-  render = "default",
+	-- Render function for notifications. See notify-render()
+	render = 'default',
 
-  -- Default timeout for notifications
-  timeout = 600,
+	-- Default timeout for notifications
+	timeout = 600,
 
-  -- Max number of columns for messages
-  max_width = nil,
-  -- Max number of lines for a message
-  max_height = nil,
+	-- Max number of columns for messages
+	max_width = nil,
+	-- Max number of lines for a message
+	max_height = nil,
 
-  -- For stages that change opacity this is treated as the highlight behind the window
-  -- Set this to either a highlight group, an RGB hex value e.g. "#000000" or a function returning an RGB code for dynamic values
-  background_colour = "Normal",
+	-- For stages that change opacity this is treated as the highlight behind the window
+	-- Set this to either a highlight group, an RGB hex value e.g. "#000000" or a function returning an RGB code for dynamic values
+	background_colour = 'Normal',
 
-  -- Minimum width for notification windows
-  minimum_width = 50,
+	-- Minimum width for notification windows
+	minimum_width = 50,
 
-  -- Icons for the different levels
-  icons = {
-    ERROR = "",
-    WARN = "",
-    INFO = "",
-    DEBUG = "",
-    TRACE = "✎",
-  },
+	-- Icons for the different levels
+	icons = {
+		ERROR = '',
+		WARN = '',
+		INFO = '',
+		DEBUG = '',
+		TRACE = '✎',
+	},
 })
 
-vim.cmd [[
+vim.cmd([[
 nnoremap <silent> <leader>bM :Notifications<cr>
-]]
+]])
