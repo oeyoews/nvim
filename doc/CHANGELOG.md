@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.12.0](https://gitlab.com/oeyoews/nvim/compare/v2.11.0...v2.12.0) (2022-06-12)
+
+
+### Features
+
+* add neoscroll and calendar ([df22fb3](https://gitlab.com/oeyoews/nvim/commit/df22fb38b0980f0b6a5df421529c9b3a6a893f48))
+
 # [2.11.0](https://gitlab.com/oeyoews/nvim/compare/v2.10.0...v2.11.0) (2022-06-12)
 
 
