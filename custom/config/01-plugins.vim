@@ -78,3 +78,6 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 endif
 
 call plug#end()
+
+" Plug 'stevearc/dressing.nvim'
+" Plug 'jose-elias-alvarez/null-ls.nvim'
