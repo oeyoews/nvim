@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.13.0](https://gitlab.com/oeyoews/nvim/compare/v2.12.0...v2.13.0) (2022-06-12)
+
+
+### Features
+
+* add neorg ([cc83f00](https://gitlab.com/oeyoews/nvim/commit/cc83f00524d8d14d70a0794f1032b03b0321aa65))
+
 # [2.12.0](https://gitlab.com/oeyoews/nvim/compare/v2.11.0...v2.12.0) (2022-06-12)
 
 
