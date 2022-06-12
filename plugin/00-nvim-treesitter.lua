@@ -16,6 +16,12 @@ tree_configs.setup {
   autotag = {
     enable = true,
   },
+  context_commentstring = {
+    enable = false,
+    config = {
+      css = '// %s'
+    }
+  },
   refactor = {
     -- highlight scope code
     highlight_current_scope = { enable = false },

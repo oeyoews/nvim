@@ -3,6 +3,7 @@ require("config.telescope")
 require("config.performance")
 require("config.tokyonight")
 require("config.hop")
+require("config.neoscroll")
 
 -- local moudles = {
 --   'hop',

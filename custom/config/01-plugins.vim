@@ -22,6 +22,9 @@ call plug#begin(s:plug_install_dir)
 if has('nvim')
 
 " @Temporary
+Plug 'itchyny/calendar.vim'
+Plug 'karb94/neoscroll.nvim'
+Plug 'npxbr/glow.nvim', { 'for': ['markdown'] }
 Plug 'windwp/nvim-ts-autotag'
 Plug 'kevinhwang91/rnvimr'
 Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1}
@@ -170,3 +173,5 @@ call plug#end()
 " Plug 'Tastyep/structlog.nvim'
 " Plug 'akinsho/toggleterm.nvim'
 " Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap'}
+" Plug 'JoosepAlviste/nvim-ts-context-commentstring'
+" Plug 'turbio/bracey.vim'
