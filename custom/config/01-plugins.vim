@@ -30,7 +30,6 @@ Plug 'windwp/nvim-ts-autotag'
 Plug 'kevinhwang91/rnvimr'
 Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1}
 Plug 'sindrets/diffview.nvim'
-Plug 'SmiteshP/nvim-gps'
 Plug 'folke/trouble.nvim'
 Plug 'b0o/incline.nvim', { 'frozen': 1 }
 Plug 'lukas-reineke/indent-blankline.nvim'
@@ -178,3 +177,4 @@ call plug#end()
 " Plug 'turbio/bracey.vim'
 " Plug 'karb94/neoscroll.nvim'
 " Plug 'fgheng/winbar.nvim'
+" Plug 'SmiteshP/nvim-gps'
