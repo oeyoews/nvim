@@ -150,7 +150,10 @@ local nvim_lsp = require('lspconfig')
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
+local lsp_format = require('lsp-format')
+
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+
 
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
@@ -159,12 +162,10 @@ for _, lsp in ipairs(servers) do
       debounce_text_changes = 150,
     },
     --format code
-    on_attach = require "lsp-format".on_attach,
+    on_attach = lsp_format.on_attach,
     -- link lsp-servers
     capabilities = capabilities
   }
-  --require 'illuminate'.on_attach()
-  require "lsp_signature".on_attach()
 end
 
 vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
