@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.15.0](https://gitlab.com/oeyoews/nvim/compare/v2.14.0...v2.15.0) (2022-06-12)
+
+
+### Features
+
+* use for loop to load modules config ([46f5bcc](https://gitlab.com/oeyoews/nvim/commit/46f5bcc704bc7d28e717642ded3282f41b1320f5))
+
 # [2.14.0](https://gitlab.com/oeyoews/nvim/compare/v2.13.0...v2.14.0) (2022-06-12)
 
 
