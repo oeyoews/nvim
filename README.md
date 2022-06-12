@@ -34,6 +34,7 @@ make && make install
 
 ## ✅ TODO
 
+* [ ] use packer.nvim to replace vim-plug
 * [ ] tidy vanilla.txt, maybe can write vanilla.markdown, last to txt
 * [ ] config tab space show in different filetype
 * [ ] move plugins/*.lua to lua folder, and to pure lua config
