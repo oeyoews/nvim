@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.16.0](https://gitlab.com/oeyoews/nvim/compare/v2.15.0...v2.16.0) (2022-06-12)
+
+
+### Features
+
+* add stylua.toml ([e6290bc](https://gitlab.com/oeyoews/nvim/commit/e6290bc48f2fe6aa7722acfb6ec9433dc0b11ef2))
+
 # [2.15.0](https://gitlab.com/oeyoews/nvim/compare/v2.14.0...v2.15.0) (2022-06-12)
 
 
