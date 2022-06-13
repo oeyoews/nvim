@@ -15,7 +15,7 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 " let g:plug_url_format = 'https://hub.fastgit.xyz/%s.git'
 "
 " NOTE: need add ssh idpub
-let g:plug_url_format = 'git@github.com:%s.git'
+" let g:plug_url_format = 'git@github.com:%s.git'
 "
 " definate plugins location
 let s:plug_install_dir = stdpath('data') . '/plugged'
@@ -30,7 +30,7 @@ Plug 'abecodes/tabout.nvim'
 Plug 'Pocco81/HighStr.nvim'
 Plug 'windwp/nvim-ts-autotag'
 Plug 'kevinhwang91/rnvimr'
-Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1, 'commit': '61f122ebc41e9bcf1793c752a728db59feee77bb'}
+Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1, 'commit': '61f122ebc41e9bcf1793c752a728db59feee77bb' }
 Plug 'folke/trouble.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 
@@ -67,7 +67,7 @@ Plug 'numToStr/Comment.nvim'
 
 " @Tools
 Plug 'windwp/windline.nvim'
-Plug 'romgrk/barbar.nvim'
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'phaazon/hop.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -91,3 +91,4 @@ call plug#end()
 " Plug 'henriquehbr/nvim-startup.lua'
 " Plug 'CRAG666/code_runner.nvim'
 " Plug 'notomo/gesture.nvim'
+" Plug 'romgrk/barbar.nvim'

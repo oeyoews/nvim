@@ -12,7 +12,7 @@ $1--]]
 endsnippet
 
 snippet pp "adjust plugin"
-local ok, ${1:name} = pcall(require, "${2:module}")
+local ok, ${1:name} = pcall(require, '${2:module}')
 
 if not ok then
 	return false
