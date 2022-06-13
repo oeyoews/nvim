@@ -39,10 +39,10 @@ set foldmethod=marker
 set timeoutlen=1000
 " tab --> space, but you can use set et! to convert :%retab!
 set expandtab
-set shiftwidth=2
-set tabstop=2
-set softtabstop=2
-set list
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+ set list
 " set listchars=tab:→\ ,eol:↵,trail:▫,extends:↷,precedes:↶
 set listchars=tab:\ ,
 set whichwrap+=<,>,[,]
