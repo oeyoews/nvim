@@ -1,3 +1,7 @@
+require('core.plugins')
+require('core.mappings')
+require('core.options')
+
 local config_package = 'plugins/'
 
 local moudles = {
@@ -7,10 +11,6 @@ local moudles = {
     'ui',
     'tools',
 }
-
-require('core.mappings')
-require('core.options')
-require('core.plugins')
 
 for _, load_module in ipairs(moudles) do
     require(config_package .. load_module)
