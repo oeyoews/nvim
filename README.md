@@ -34,7 +34,7 @@ make && make install
 
 ## ✅ TODO
 
-* [ ] add hightlight symbols under cursor functions
+* [ ] add hightlight symbols under cursor functions(terminal gnome support)
 * [ ] use packer.nvim to replace vim-plug
 * [ ] tidy vanilla.txt, maybe can write vanilla.markdown, last to txt
 * [ ] config tab space show in different filetype
