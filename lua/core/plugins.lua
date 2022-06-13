@@ -1,3 +1,4 @@
+vim.cmd([[
 " First install setting steps
 let data_dir = stdpath('data') . '/site'
 
@@ -94,3 +95,4 @@ call plug#end()
 " Plug 'CRAG666/code_runner.nvim'
 " Plug 'notomo/gesture.nvim'
 " Plug 'romgrk/barbar.nvim'
+]])

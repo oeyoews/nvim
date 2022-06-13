@@ -46,7 +46,7 @@ function! FindVanilla() abort
 endfunction
 
 function! FindCustomConfig() abort
-  find ~/.config/nvim/custom/config/01-plugins.vim
+  find ~/.config/nvim/lua/core/plugins.lua
 endfunction
 
 function! FindPlugin() abort
