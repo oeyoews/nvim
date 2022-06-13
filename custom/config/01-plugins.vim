@@ -22,6 +22,7 @@ call plug#begin(s:plug_install_dir)
 if has('nvim')
 
 " @Temporary
+Plug 'ekickx/clipboard-image.nvim'
 Plug 'abecodes/tabout.nvim'
 Plug 'Pocco81/HighStr.nvim'
 Plug 'windwp/nvim-ts-autotag'
@@ -81,6 +82,7 @@ endif
 
 call plug#end()
 
+" more plugins: https://github.com/rockerBOO/awesome-neovim
 " Plug 'stevearc/dressing.nvim'
 " Plug 'jose-elias-alvarez/null-ls.nvim'
 " Plug 'henriquehbr/nvim-startup.lua'
