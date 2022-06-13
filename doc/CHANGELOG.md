@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.19.1](https://gitlab.com/oeyoews/nvim/compare/v2.19.0...v2.19.1) (2022-06-13)
+
+
+### Bug Fixes
+
+* remove tags file ([5888493](https://gitlab.com/oeyoews/nvim/commit/5888493ebe4827190bd85dc8f32921ee1c2cf863))
+
 # [2.19.0](https://gitlab.com/oeyoews/nvim/compare/v2.18.0...v2.19.0) (2022-06-13)
 
 
