@@ -158,7 +158,7 @@ cmp.setup({
     },
 })
 
-local nvim_lsp = require('lspconfig')
+local lspconfig = require('lspconfig')
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
@@ -167,7 +167,7 @@ local lsp_format = require('lsp-format')
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
 for _, lsp in ipairs(servers) do
-    nvim_lsp[lsp].setup({
+    lspconfig[lsp].setup({
         -- ??
         flags = {
             debounce_text_changes = 150,
