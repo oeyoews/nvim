@@ -1,7 +1,10 @@
-local package = 'config.themes/'
+local package = 'plugins.lsp/'
 
 local moudles = {
-	'tokyonight',
+	'lsp',
+	'lspsignature',
+	'treesitter',
+	'lspsaga',
 }
 
 for _, load_module in ipairs(moudles) do

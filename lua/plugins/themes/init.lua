@@ -1,8 +1,7 @@
-local package = 'config.ui/'
+local package = 'plugins.themes/'
 
 local moudles = {
-  'bufferline',
-  'windline',
+  'tokyonight',
 }
 
 for _, load_module in ipairs(moudles) do
