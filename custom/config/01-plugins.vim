@@ -14,6 +14,9 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 " Speedup install plugins
 " let g:plug_url_format = 'https://hub.fastgit.xyz/%s.git'
 "
+" NOTE: need add ssh idpub
+let g:plug_url_format = 'git@github.com:%s.git'
+"
 " definate plugins location
 let s:plug_install_dir = stdpath('data') . '/plugged'
 

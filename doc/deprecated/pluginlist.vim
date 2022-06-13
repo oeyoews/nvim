@@ -35,7 +35,6 @@
 "Plug 'skywind3000/vim-dic'
 "Plug 'jayli/vim-dictionary'
 "Plug 'uga-rosa/cmp-dictionary'
-"Plug 'abecodes/tabout.nvim'
 "Plug 'folke/zen-mode.nvim'
 "Plug 'sukima/vim-tiddlywiki'
 "Plug 'Pocco81/TrueZen.nvim'
