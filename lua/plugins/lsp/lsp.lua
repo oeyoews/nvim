@@ -39,7 +39,7 @@ local servers = {
     'cmake',
     'clangd',
     'jsonls',
-     -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
+    -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
     'bashls',
     'pyright',
     'gopls',
