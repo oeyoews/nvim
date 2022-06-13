@@ -5,13 +5,13 @@ function! Terminal()
   " TODO: have confict for ranger(TermOpen)
   "setlocal filetype=omz
   "au! TermOpen * call feedkeys("i")
-  au! TermClose * call feedkeys("\<esc>")
+  autocmd! TermClose * call feedkeys("\<esc>")
   split | terminal
   setlocal nornu nonu
   setlocal nocursorline
 endfunction
 
-" add i in the end of line, to patch bug of ranger
+" add i in the end of line, to enter insert mode
 nnoremap <silent> <space>tk <cmd>call Terminal()<cr>i
 
 
@@ -28,13 +28,17 @@ autocmd BufWritePost ~/.local/share/chezmoi/dot_* :call ChezmoiSource()
 " set laststatus=0
 
 function! ToggleStatusLine() abort
+  " laststatus default is 2
   if &laststatus
     set laststatus=0
-    set ruler!
   else
     set laststatus=2
-    set ruler!
   endif
+
+  " disable lastline right info set ruler!
+  set noruler
+  " let statusline = 2
+  " let &laststatus = statusline
   lua vim.notify("ToggleStatusLine")
 endfunction
 
@@ -42,8 +46,18 @@ nnoremap <silent> <leader>ts :call ToggleStatusLine()<CR>
 
 
 function! FindVanilla() abort
-  find ~/.config/nvim/doc/vanilla.txt
+    " this variable how to be quoted
+" let &vanilla = stdpath('config') . '/doc/vanilla.tx'
+"   if !empty(glob(&vanilla))
+"    echo &vanilla
+"   else
+"       echom "this &vanilla not fouded"
+"   endif
+    find ~/.config/nvim/doc/vanilla.txt
 endfunction
+
+nnoremap <silent> <space>eh <cmd>call FindVanilla()<cr>
+
 
 function! FindCustomConfig() abort
   find ~/.config/nvim/lua/core/plugins.lua
@@ -61,7 +75,6 @@ endfunction
 nnoremap <silent> <space>fi <cmd>call FindInit()<cr>
 nnoremap <silent> <space>fc <cmd>call FindCustomConfig()<cr>
 nnoremap <silent> <space>fp <cmd>call FindPlugin()<cr>
-nnoremap <silent> <space>eh <cmd>call FindVanilla()<cr>
 
 nnoremap <silent> <space>hh <cmd>help vanilla.txt<cr>
 
