@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.20.0](https://gitlab.com/oeyoews/nvim/compare/v2.19.2...v2.20.0) (2022-06-13)
+
+
+### Features
+
+* add shade plugin ([ed4183a](https://gitlab.com/oeyoews/nvim/commit/ed4183ae9a5ea996d1e6f4125f02af39b713f9fa))
+
 ## [2.19.2](https://gitlab.com/oeyoews/nvim/compare/v2.19.1...v2.19.2) (2022-06-13)
 
 
