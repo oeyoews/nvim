@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.21.1](https://gitlab.com/oeyoews/nvim/compare/v2.21.0...v2.21.1) (2022-06-13)
+
+
+### Bug Fixes
+
+* modify keyword color ([5caa2f9](https://gitlab.com/oeyoews/nvim/commit/5caa2f94450e4f5ad71c4af040d6fc8b0b16841d))
+
 # [2.21.0](https://gitlab.com/oeyoews/nvim/compare/v2.20.0...v2.21.0) (2022-06-13)
 
 
