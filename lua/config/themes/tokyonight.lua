@@ -1,8 +1,8 @@
 local status_ok, tokyonight = pcall(require, 'tokyonight')
 
 if not status_ok then
-  vim.notify('Theme not found')
-  return false
+	vim.notify('Theme not found')
+	return false
 end
 
 tokyonight.colorscheme()

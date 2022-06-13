@@ -1,3 +1,4 @@
+" NOTE: This same file type will overwrite
 " command: Scripts
 command! Scripts vsplit | enew|pu=execute('scriptnames')
 
@@ -13,5 +14,8 @@ autocmd! FileType lspinfo,startuptime,help,qf,quickrun,snippets,tsplayground nno
 " message
 " autocmd! BufWritePost ~/.config/nvim/custom/config/*.vim source %
 autocmd! BufWritePost *.vim source %
+autocmd! BufWritePost *.lua luafile %
 
+" can't reconzie styula.toml
 autocmd! FileType lua nnoremap <silent> <leader>lfl <cmd>!stylua %<cr>
+" autocmd! BufWritePost *.lua <silent> !stylua %

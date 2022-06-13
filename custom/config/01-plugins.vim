@@ -22,6 +22,8 @@ call plug#begin(s:plug_install_dir)
 if has('nvim')
 
 " @Temporary
+Plug 'abecodes/tabout.nvim'
+Plug 'Pocco81/HighStr.nvim'
 Plug 'windwp/nvim-ts-autotag'
 Plug 'kevinhwang91/rnvimr'
 Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1, 'commit': '61f122ebc41e9bcf1793c752a728db59feee77bb'}
@@ -81,3 +83,6 @@ call plug#end()
 
 " Plug 'stevearc/dressing.nvim'
 " Plug 'jose-elias-alvarez/null-ls.nvim'
+" Plug 'henriquehbr/nvim-startup.lua'
+" Plug 'CRAG666/code_runner.nvim'
+" Plug 'notomo/gesture.nvim'

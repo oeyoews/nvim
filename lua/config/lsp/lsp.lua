@@ -32,7 +32,7 @@ local servers = {
 	--'texlab',
 	-- 'diagnosticls',
 	-- 'yamlls',
-	-- 'pyright',
+	'pyright',
 	-- 'cssls',
 	-- 'tsserver',
 	'html',

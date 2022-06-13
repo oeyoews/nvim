@@ -44,11 +44,6 @@ nnoremap q <nop>
 nnoremap <leader>w <C-w>
 nnoremap <silent> <leader>bm :messages<cr>
 
-" vim plug
-nnoremap <Leader>vi <Cmd>PlugInstall<CR>
-nnoremap <Leader>vc <Cmd>PlugClean<CR>
-nnoremap <Leader>vu <Cmd>PlugUpdate<CR>
-
 " clear or highlight search words
 "nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>
 "nnoremap <silent> <esc> :set invhlsearch<return><C-L><esc>
@@ -94,3 +89,8 @@ noremap <space>pp "*p <cmd> lua vim.notify("🗒️ Copy text from SystemClipBoa
 
 "nnoremap <silent> <space>yp :<C-U>let @+=expand('%:p') <bar> echom "Finished copy fpath."<cr>
 nnoremap <silent> <space>yp :<C-U>let @+=expand('%:p') <bar> lua vim.notify(" 🦜 Copy Fpath")<cr>
+
+
+nnoremap <Leader>vi <Cmd>PlugInstall<cr>
+nnoremap <Leader>vc <Cmd>PlugClean<CR>
+nnoremap <Leader>vu <Cmd>PlugUpdate<CR>

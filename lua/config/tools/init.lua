@@ -9,6 +9,7 @@ local moudles = {
 	'comment',
 	'indent',
 	'autopairs',
+  'highstr',
 	-- 'neorg',
 	'whichkey',
 	'todocomments',
