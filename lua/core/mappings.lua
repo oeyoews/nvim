@@ -71,7 +71,7 @@ nnoremap <silent> <SPACE>ll <Cmd>w <bar> QuickRun <CR><C-w>w
 
 nnoremap <silent> <SPACE>tf <Cmd>only<bar> lua vim.notify("🍺 FullScreen")<cr>
 
-nnoremap <silent> <leader>tn <cmd>set number!<cr>
+nnoremap <silent> <leader>tn <cmd>set invnumber<cr>
 
 " BUG: still have some bugs(for gnome paste plugins)
 " copy and yank with system
