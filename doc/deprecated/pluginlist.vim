@@ -89,7 +89,6 @@
 " Plug 'fgheng/winbar.nvim'
 " Plug 'SmiteshP/nvim-gps'
 " Plug 'antoinemadec/FixCursorHold.nvim'
-" Plug 'b0o/incline.nvim', { 'frozen': 1 }
 " Plug 'simrat39/symbols-outline.nvim'
 " Plug 'itchyny/calendar.vim'
 " Plug 'nvim-neorg/neorg'

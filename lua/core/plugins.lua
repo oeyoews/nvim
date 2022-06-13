@@ -26,7 +26,14 @@ call plug#begin(s:plug_install_dir)
 if has('nvim')
 
 " @Temporary
-Plug 'sunjon/shade.nvim'
+Plug 'marko-cerovac/material.nvim'
+Plug 'olimorris/onedarkpro.nvim'
+Plug 'b0o/incline.nvim', { 'frozen': 1 }
+" Plug 'rainbowhxch/beacon.nvim'
+" vim version
+" Plug 'danilamihailov/beacon.nvim'
+" bug: invalid window id"
+" Plug 'sunjon/shade.nvim'
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'ekickx/clipboard-image.nvim'
 Plug 'abecodes/tabout.nvim'
@@ -97,4 +104,5 @@ call plug#end()
 " Plug 'CRAG666/code_runner.nvim'
 " Plug 'notomo/gesture.nvim'
 " Plug 'romgrk/barbar.nvim'
+" Plug 'jbyuki/venn.nvim'
 ]])

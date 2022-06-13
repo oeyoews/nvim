@@ -3,6 +3,8 @@ local package = 'plugins.themes/'
 local moudles = {
     -- 'catppuccin',
     'tokyonight',
+    -- 'material',
+    -- 'onedarkpro',
     'custom',
 }
 
