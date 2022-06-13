@@ -26,15 +26,9 @@ call plug#begin(s:plug_install_dir)
 if has('nvim')
 
 " @Temporary
-Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'marko-cerovac/material.nvim'
 Plug 'olimorris/onedarkpro.nvim'
 Plug 'b0o/incline.nvim', { 'frozen': 1 }
-" Plug 'rainbowhxch/beacon.nvim'
-" vim version
-" Plug 'danilamihailov/beacon.nvim'
-" bug: invalid window id"
-" Plug 'sunjon/shade.nvim'
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'ekickx/clipboard-image.nvim'
 Plug 'abecodes/tabout.nvim'
@@ -89,8 +83,6 @@ Plug 'thinca/vim-quickrun', { 'on': 'QuickRun', 'frozen': 1 }
 Plug 'folke/persistence.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'folke/todo-comments.nvim'
-
-" @Markdown
 Plug 'iamcco/markdown-preview.nvim', { 'for': 'markdown', 'do': 'cd app && yarn install' }
 
 endif
@@ -105,4 +97,10 @@ call plug#end()
 " Plug 'notomo/gesture.nvim'
 " Plug 'romgrk/barbar.nvim'
 " Plug 'jbyuki/venn.nvim'
+" Plug 'rainbowhxch/beacon.nvim'
+" vim version
+" Plug 'danilamihailov/beacon.nvim'
+" bug: invalid window id"
+" Plug 'sunjon/shade.nvim'
+" Plug 'jose-elias-alvarez/null-ls.nvim'
 ]])
