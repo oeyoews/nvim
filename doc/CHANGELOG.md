@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.19.0](https://gitlab.com/oeyoews/nvim/compare/v2.18.0...v2.19.0) (2022-06-13)
+
+
+### Features
+
+* add pastimage ([52a5590](https://gitlab.com/oeyoews/nvim/commit/52a55908eee188ffe414902370301fe86ee20cd2))
+
 # [2.18.0](https://gitlab.com/oeyoews/nvim/compare/v2.17.0...v2.18.0) (2022-06-13)
 
 
