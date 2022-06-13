@@ -1,5 +1,5 @@
 require('core')
 
-vim.cmd ([[
-runtime! custom/config/*.vim
-]])
+-- vim.cmd ([[
+-- runtime! custom/config/*.vim
+-- ]])
