@@ -26,6 +26,8 @@ call plug#begin(s:plug_install_dir)
 if has('nvim')
 
 " @Temporary
+Plug 'sunjon/shade.nvim'
+Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'ekickx/clipboard-image.nvim'
 Plug 'abecodes/tabout.nvim'
 Plug 'Pocco81/HighStr.nvim'

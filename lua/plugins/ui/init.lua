@@ -3,6 +3,7 @@ local package = 'plugins.ui/'
 local moudles = {
     'bufferline',
     'windline',
+    'shade',
 }
 
 for _, load_module in ipairs(moudles) do
