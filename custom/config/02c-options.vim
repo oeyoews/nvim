@@ -17,7 +17,7 @@ set hidden
 set ignorecase
 "set textwidth=120
 set shortmess+=aIc  " atI clear advertise
-"set lazyredraw
+set lazyredraw
 set vb t_vb=  " no blinking no bells
 
 " disable some options

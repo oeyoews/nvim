@@ -30,8 +30,9 @@ Plug 'abecodes/tabout.nvim'
 Plug 'Pocco81/HighStr.nvim'
 Plug 'windwp/nvim-ts-autotag'
 Plug 'kevinhwang91/rnvimr'
+" \time \nvim +q
 Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1, 'commit': '61f122ebc41e9bcf1793c752a728db59feee77bb' }
-Plug 'folke/trouble.nvim'
+Plug 'folke/trouble.nvim', { 'on': 'TroubleToggle' }
 Plug 'lukas-reineke/indent-blankline.nvim'
 
 " @Dependcies
@@ -54,7 +55,7 @@ Plug 'honza/vim-snippets'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'williamboman/nvim-lsp-installer'
 Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-emoji'
+Plug 'hrsh7th/cmp-emoji', { 'for': 'markdown' }
 Plug 'hrsh7th/cmp-path'
 Plug 'tami5/lspsaga.nvim'
 Plug 'onsails/lspkind-nvim'
@@ -79,13 +80,14 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'folke/todo-comments.nvim'
 
 " @Markdown
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+Plug 'iamcco/markdown-preview.nvim', { 'for': 'markdown', 'do': 'cd app && yarn install' }
 
 endif
 
 call plug#end()
 
 " more plugins: https://github.com/rockerBOO/awesome-neovim
+" tips: https://www.reddit.com/r/neovim/comments/opipij/guide_tips_and_tricks_to_reduce_startup_and
 " Plug 'stevearc/dressing.nvim'
 " Plug 'jose-elias-alvarez/null-ls.nvim'
 " Plug 'henriquehbr/nvim-startup.lua'
