@@ -26,6 +26,7 @@ call plug#begin(s:plug_install_dir)
 if has('nvim')
 
 " @Temporary
+Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'marko-cerovac/material.nvim'
 Plug 'olimorris/onedarkpro.nvim'
 Plug 'b0o/incline.nvim', { 'frozen': 1 }
@@ -99,7 +100,6 @@ call plug#end()
 " more plugins: https://github.com/rockerBOO/awesome-neovim
 " tips: https://www.reddit.com/r/neovim/comments/opipij/guide_tips_and_tricks_to_reduce_startup_and
 " Plug 'stevearc/dressing.nvim'
-" Plug 'jose-elias-alvarez/null-ls.nvim'
 " Plug 'henriquehbr/nvim-startup.lua'
 " Plug 'CRAG666/code_runner.nvim'
 " Plug 'notomo/gesture.nvim'
