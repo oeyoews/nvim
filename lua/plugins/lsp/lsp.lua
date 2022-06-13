@@ -11,18 +11,22 @@ local lsp_installer = require('nvim-lsp-installer')
 local lspformat_ok, _ = pcall(require, 'lsp-format')
 
 if not lsp_installer then
+    vim.notify('lsp_installer not founded')
     return false
 end
 
 if not lspformat_ok then
+    vim.notify('lsp_format not founded')
     return false
 end
 
 if not cmp_ok then
+    vim.notify('cmp not founded')
     return false
 end
 
 if not lspkind_ok then
+    vim.notify('lspkind not founded')
     return false
 end
 

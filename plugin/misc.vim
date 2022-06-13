@@ -4,8 +4,6 @@
 " EditorConfigReload
 " let g:EditorConfig_verbose=1
 
-nnoremap <silent> <leader>tt :TroubleToggle<cr>
-
 let g:tex_flavor='latex'
 "let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
