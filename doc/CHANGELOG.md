@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.21.0](https://gitlab.com/oeyoews/nvim/compare/v2.20.0...v2.21.0) (2022-06-13)
+
+
+### Features
+
+* add some themes ([ab7baed](https://gitlab.com/oeyoews/nvim/commit/ab7baed26092fbf1448d3a62117ab4da5f115099))
+
 # [2.20.0](https://gitlab.com/oeyoews/nvim/compare/v2.19.2...v2.20.0) (2022-06-13)
 
 
