@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.18.0](https://gitlab.com/oeyoews/nvim/compare/v2.17.0...v2.18.0) (2022-06-13)
+
+
+### Features
+
+* add tabout ([c5dda5e](https://gitlab.com/oeyoews/nvim/commit/c5dda5eccbf0ce4fcdb51b15c1876f8b7872d934))
+
 # [2.17.0](https://gitlab.com/oeyoews/nvim/compare/v2.16.0...v2.17.0) (2022-06-12)
 
 
