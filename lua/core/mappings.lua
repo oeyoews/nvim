@@ -12,8 +12,9 @@ nnoremap <leader>bd <cmd>bdelete<cr>
 "nnoremap <silent> <leader>o :set paste<cr>o<esc>:set nopaste<cr>
 "nnoremap <silent> <leader>O :set paste<cr>O<esc>:set nopaste<cr>
 
-" load current file
-nnoremap <leader>so <cmd>so % <bar> lua vim.notify("🍺 Finished refresh current file.")<cr>
+" load current config file
+" nnoremap <leader>so <cmd>so % <bar> lua vim.notify("🍺 Finished refresh current file.")<cr>
+nnoremap <silent> <leader>so <cmd>luafile %<cr> :lua vim.notify("🍺 Finished refresh current file.")<cr>
 
 " quit insert mode fastly
 inoremap jk <ESC>

@@ -1,11 +1,11 @@
-local which_key_ok, which_configs = pcall(require, 'which-key')
+local which_key_ok, which_key = pcall(require, 'which-key')
 
 if not which_key_ok then
   vim.notify('whickey not founded')
   return false
 end
 
-which_configs.setup({
+which_key.setup({
 
   plugins = {
     marks = false,
@@ -55,7 +55,7 @@ which_configs.setup({
   ignore_missing = false, -- not modify it
 })
 
-which_configs.register({
+which_key.register({
 
   f = { name = '+file' },
   b = { name = '+buffer' },

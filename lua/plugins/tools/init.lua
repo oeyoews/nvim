@@ -1,8 +1,7 @@
 local package = 'plugins.tools'
 
 local modules = {
-  'notify',
-  'telescope',
+  'notify', -- first
   'hop',
   'colorizer',
   'gitsigns',
@@ -11,10 +10,11 @@ local modules = {
   -- 'autopairs',
   'highstr',
   'neorg',
-  'whichkey',
-  'todocomments',
   'persistence',
+  'todocomments',
   'tabout',
+  'telescope',
+  'whichkey',
 }
 
 for _, load_module in ipairs(modules) do
