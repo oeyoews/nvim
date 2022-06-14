@@ -9,10 +9,17 @@ null_ls.setup({
   debounce = 500,
   sources = {
     -- builtin.formatting.stylua,
-    -- builtin.diagnostics.codespell, -- need install codespell
+    builtin.diagnostics.markdownlint, -- need install markdownlint
+    builtin.diagnostics.codespell.with({
+      filetypes = {
+        'lua',
+        'markdown',
+        'vim',
+        'python',
+      },
+    }), -- need install codespell
     -- builtin.formatting.prettierd.with,
     -- builtin.diagnostics.misspell,
-    builtin.diagnostics.markdownlint, -- need install markdownlint
     -- builtin.diagnostics.gitlint, -- need install gitlint
     -- builtin.completion.spell,
     -- builtin.code_actions.shellcheck

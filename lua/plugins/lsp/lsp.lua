@@ -31,22 +31,22 @@ if not lspkind_ok then
 end
 
 local servers = {
-  -- 'golangci_lint_ls',
-  --'texlab',
-  -- 'diagnosticls',
-  -- 'yamlls',
+  'bashls',
   -- 'cssls',
-  -- 'tsserver',
-  'sumneko_lua',
-  'vimls',
-  'html',
   'cmake',
   'clangd',
+  -- 'diagnosticls',
+  'html',
   'jsonls',
   -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
-  'bashls',
   'pyright',
   'gopls',
+  'sumneko_lua',
+  -- 'tsserver',
+  --'texlab',
+  -- 'golangci_lint_ls',
+  -- 'yamlls',
+  'vimls',
 }
 
 lsp_installer.setup({

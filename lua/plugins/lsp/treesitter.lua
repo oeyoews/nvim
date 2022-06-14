@@ -16,12 +16,14 @@ tree_configs.setup({
   autotag = {
     enable = true,
   },
+
   context_commentstring = {
     enable = false,
     config = {
       css = '// %s',
     },
   },
+
   refactor = {
     -- highlight scope code
     highlight_current_scope = { enable = false },
@@ -41,31 +43,30 @@ tree_configs.setup({
   sync_install = false,
   ---[[
   ensure_installed = {
-    'norg',
-    'make',
+    'bash',
+    'c',
+    'css',
+    --"comment",
+    'html',
     'json',
     'lua',
-    'vim',
-    'yaml',
-    'c',
+    'norg',
+    'make',
     'markdown',
     'python',
-    'html',
-    'css',
-    'bash',
     'go',
     'gomod',
-    'toml',
     'javascript',
-    -- "query",
     --"java",
+    'vim',
     --"vue",
+    'yaml',
+    'toml',
     --"typescript",
     --"org",
+    -- "query",
     -- todo details
     -- "norg", "norg_meta", "norg_table",
-    --"comment",
-    --"gomod",
   },
   --]]
 
@@ -106,14 +107,14 @@ tree_configs.setup({
     enable = true,
     keymaps = {
       init_selection = 'gnn',
-      node_incremental = 'grn',
-      scope_incremental = 'grc',
-      node_decremental = 'grm',
+      -- node_incremental = 'grn',
+      -- scope_incremental = 'grc',
+      -- node_decremental = 'grm',
     },
   },
 
   query_linter = {
-    enable = true,
+    enable = false,
     use_virtual_text = true,
     lint_events = { 'BufWrite', 'CursorHold' },
   },

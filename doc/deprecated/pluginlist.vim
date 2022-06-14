@@ -90,4 +90,3 @@
 " Plug 'SmiteshP/nvim-gps'
 " Plug 'antoinemadec/FixCursorHold.nvim'
 " Plug 'simrat39/symbols-outline.nvim'
-" Plug 'sindrets/diffview.nvim'

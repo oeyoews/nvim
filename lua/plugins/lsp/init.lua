@@ -7,6 +7,7 @@ local moudles = {
   'treesitter',
   'lspsaga',
   'trouble',
+  -- 'luapad',
 }
 
 for _, load_module in ipairs(moudles) do
