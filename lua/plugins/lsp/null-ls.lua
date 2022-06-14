@@ -12,6 +12,7 @@ null_ls.setup({
         -- builtin.formatting.prettierd.with,
         -- builtin.diagnostics.misspell,
         builtin.diagnostics.markdownlint, -- need install markdownlint
+        builtin.diagnostics.gitlint, -- need install markdownlint
         -- builtin.completion.spell,
         -- builtin.code_actions.shellcheck
     },
