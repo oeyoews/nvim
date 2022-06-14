@@ -8,7 +8,8 @@ end
 null_ls.setup({
     sources = {
         -- builtin.formatting.stylua,
-        builtin.diagnostics.codespell,
+        -- builtin.diagnostics.codespell, -- need install codespell
+        -- builtin.formatting.prettierd.with,
         -- builtin.diagnostics.misspell,
         builtin.diagnostics.markdownlint, -- need install markdownlint
         -- builtin.completion.spell,
