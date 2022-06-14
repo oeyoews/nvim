@@ -48,7 +48,6 @@
 "Plug 'windwp/nvim-spectre'
 "Plug 'lervag/vimtex'
 "Plug 'kyazdani42/nvim-tree.lua'
-" Plug 'j-hui/fidget.nvim'
 "Plug 'andymass/vim-matchup'
 "Plug 'nvim-lualine/lualine.nvim'
 "Plug 'glepnir/dashboard-nvim'

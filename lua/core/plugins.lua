@@ -26,6 +26,7 @@ call plug#begin(s:plug_install_dir)
 if has('nvim')
 
 " @Temporary
+Plug 'j-hui/fidget.nvim'
 Plug 'sindrets/diffview.nvim'
 Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'nvim-neorg/neorg', { 'for': 'norg', 'on': 'NeorgStart' }
