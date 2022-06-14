@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.27.0](https://gitlab.com/oeyoews/nvim/compare/v2.26.2...v2.27.0) (2022-06-14)
+
+
+### Features
+
+* add nvim-tree ([f5bf77f](https://gitlab.com/oeyoews/nvim/commit/f5bf77f10cfc2377b56a9462ece4a465c198e8ae))
+
 ## [2.26.2](https://gitlab.com/oeyoews/nvim/compare/v2.26.1...v2.26.2) (2022-06-14)
 
 
