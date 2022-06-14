@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.26.1](https://gitlab.com/oeyoews/nvim/compare/v2.26.0...v2.26.1) (2022-06-14)
+
+
+### Bug Fixes
+
+* use auto-pairs lua ([0e0ebef](https://gitlab.com/oeyoews/nvim/commit/0e0ebefac79ea052b3c6c865780f400f37024125))
+
 # [2.26.0](https://gitlab.com/oeyoews/nvim/compare/v2.25.0...v2.26.0) (2022-06-14)
 
 
