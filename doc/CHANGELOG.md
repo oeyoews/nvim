@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.22.1](https://gitlab.com/oeyoews/nvim/compare/v2.22.0...v2.22.1) (2022-06-14)
+
+
+### Bug Fixes
+
+* disable codespell ([54a205e](https://gitlab.com/oeyoews/nvim/commit/54a205e58adfb6d53d00326c82263b178bf44fa0))
+
 # [2.22.0](https://gitlab.com/oeyoews/nvim/compare/v2.21.1...v2.22.0) (2022-06-14)
 
 
