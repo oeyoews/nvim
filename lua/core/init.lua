@@ -12,4 +12,4 @@ for _, load_module in ipairs(modules) do
 end
 
 -- disable to read shadafile
-vim.opt.shadafile = "NONE"
+vim.opt.shadafile = 'NONE'
