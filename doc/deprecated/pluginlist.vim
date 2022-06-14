@@ -90,7 +90,5 @@
 " Plug 'SmiteshP/nvim-gps'
 " Plug 'antoinemadec/FixCursorHold.nvim'
 " Plug 'simrat39/symbols-outline.nvim'
-" Plug 'itchyny/calendar.vim'
 " Plug 'nvim-neorg/neorg'
 " Plug 'sindrets/diffview.nvim'
-" Plug 'npxbr/glow.nvim', { 'for': ['markdown'] }

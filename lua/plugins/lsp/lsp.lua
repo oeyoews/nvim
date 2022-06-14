@@ -60,6 +60,10 @@ lsp_installer.setup({
             server_uninstalled = '🌽',
         },
     },
+    github = {
+            -- download_url_template = "https://hub.fastgit.xyz/%s/releases/download/%s/%s",
+            download_url_template = "https://github.com/%s/releases/download/%s/%s",
+        },
 })
 
 cmp.setup({
@@ -185,7 +189,7 @@ vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(vim.lsp.handlers.s
 -- icon note this order in last
 vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
     --underline = true,
-    update_in_insert = false,
+    update_in_insert = true,
     severity_sort = false,
     virtual_text = {
         spacing = 2,

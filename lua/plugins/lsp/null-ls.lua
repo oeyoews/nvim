@@ -5,13 +5,13 @@ if not ok then
     return false
 end
 
-null_ls.setup()
-
 null_ls.setup({
     sources = {
-        builtin.formatting.stylua,
-        builtin.diagnostics.eslint,
-        builtin.completion.spell,
-        builtin.code_actions.shellcheck
+        -- builtin.formatting.stylua,
+        builtin.diagnostics.codespell,
+        -- builtin.diagnostics.misspell,
+        builtin.diagnostics.markdownlint, -- need install markdownlint
+        -- builtin.completion.spell,
+        -- builtin.code_actions.shellcheck
     },
 })

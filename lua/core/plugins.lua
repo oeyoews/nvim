@@ -18,7 +18,7 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 " NOTE: need add ssh idpub
 " let g:plug_url_format = 'git@github.com:%s.git'
 "
-" definate plugins location
+" definaite plugins location
 let s:plug_install_dir = stdpath('data') . '/plugged'
 
 call plug#begin(s:plug_install_dir)
@@ -26,6 +26,8 @@ call plug#begin(s:plug_install_dir)
 if has('nvim')
 
 " @Temporary
+Plug 'itchyny/calendar.vim'
+Plug 'ellisonleao/glow.nvim'
 Plug 'marko-cerovac/material.nvim'
 Plug 'olimorris/onedarkpro.nvim'
 Plug 'b0o/incline.nvim', { 'frozen': 1 }
@@ -40,7 +42,7 @@ Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1, 'commit': '
 Plug 'folke/trouble.nvim', { 'on': 'TroubleToggle' }
 Plug 'lukas-reineke/indent-blankline.nvim'
 
-" @Dependcies
+" @Dependencies
 Plug 'nvim-lua/plenary.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'rcarriga/nvim-notify'
@@ -102,5 +104,5 @@ call plug#end()
 " Plug 'danilamihailov/beacon.nvim'
 " bug: invalid window id"
 " Plug 'sunjon/shade.nvim'
-" Plug 'jose-elias-alvarez/null-ls.nvim'
+Plug 'jose-elias-alvarez/null-ls.nvim'
 ]])
