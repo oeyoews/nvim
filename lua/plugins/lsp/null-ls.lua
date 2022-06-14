@@ -6,6 +6,7 @@ if not ok then
 end
 
 null_ls.setup({
+    debounce = 500,
     sources = {
         -- builtin.formatting.stylua,
         -- builtin.diagnostics.codespell, -- need install codespell
