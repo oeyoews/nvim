@@ -5,9 +5,14 @@
 
 --vim.cmd [[highlight default GH guifg=#3bb6c4 guibg=NONE]]
 
-local servers = require('plugins.lsp.lspinstall').servers
-
 local cmp_ok, cmp = pcall(require, 'cmp')
+
+if not cmp_ok then
+  vim.notify('cmp not founded')
+  return false
+end
+
+local servers = require('plugins.lsp.lspinstall').servers
 
 local lspkind_ok, lspkind = pcall(require, 'lspkind')
 
@@ -46,11 +51,6 @@ local symbol_map = {
 
 if not lspformat_ok then
   vim.notify('lsp_format not founded')
-  return false
-end
-
-if not cmp_ok then
-  vim.notify('cmp not founded')
   return false
 end
 

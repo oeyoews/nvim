@@ -1,4 +1,10 @@
-local windline = require('windline')
+local ok, windline = pcall(require, 'windline')
+
+if not ok then
+  vim.notify('windline not founded')
+  return false
+end
+
 local helper = require('windline.helpers')
 local b_components = require('windline.components.basic')
 local state = _G.WindLine.state

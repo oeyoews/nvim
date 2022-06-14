@@ -1,4 +1,5 @@
-vim.cmd([[
+--[[
+vim.cmd[[
 " First install setting steps
 let data_dir = stdpath('data') . '/site'
 
@@ -118,4 +119,6 @@ call plug#end()
 nnoremap <Leader>vi <Cmd>PlugInstall<cr>
 nnoremap <Leader>vc <Cmd>PlugClean<CR>
 nnoremap <Leader>vu <Cmd>PlugUpdate<CR>
-]])
+
+]]
+--]]
