@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.25.0](https://gitlab.com/oeyoews/nvim/compare/v2.24.0...v2.25.0) (2022-06-14)
+
+
+### Features
+
+* use codespell for specifice filetype ([f79084f](https://gitlab.com/oeyoews/nvim/commit/f79084f2b649f18338b85825ec2722d722814048))
+
 # [2.24.0](https://gitlab.com/oeyoews/nvim/compare/v2.23.2...v2.24.0) (2022-06-14)
 
 
