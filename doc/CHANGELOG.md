@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.23.1](https://gitlab.com/oeyoews/nvim/compare/v2.23.0...v2.23.1) (2022-06-14)
+
+
+### Bug Fixes
+
+* recover tab setting ([7e4250a](https://gitlab.com/oeyoews/nvim/commit/7e4250a49b18fa4846cb7af1c226fa7ece953717))
+
 # [2.23.0](https://gitlab.com/oeyoews/nvim/compare/v2.22.1...v2.23.0) (2022-06-14)
 
 
