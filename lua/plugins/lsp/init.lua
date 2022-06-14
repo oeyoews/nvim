@@ -1,8 +1,8 @@
 local package = 'plugins.lsp'
 
 local modules = {
-  'null-ls',
   'lsp',
+  'null-ls',
   'lspconfig',
   'fidget',
   'lspsignature',

@@ -22,25 +22,43 @@ end
 
 local plugins = {
   {
-    'hrsh7th/cmp-nvim-lsp',
+    'rcarriga/nvim-notify',
+  },
+  {
+    'kyazdani42/nvim-web-devicons',
+  },
+  {
+    'nvim-lua/plenary.nvim',
+  },
+  {
+    'hrsh7th/nvim-cmp',
+    requires = {
+      'hrsh7th/cmp-buffer',
+      'hrsh7th/cmp-nvim-lsp',
+      {
+        'hrsh7th/cmp-emoji',
+        ft = 'markdown',
+      },
+      'hrsh7th/cmp-path',
+      'honza/vim-snippets',
+      'SirVer/ultisnips',
+      'quangnguyen30192/cmp-nvim-ultisnips',
+    }
   },
   {
     'williamboman/nvim-lsp-installer',
   },
-  { 'quangnguyen30192/cmp-nvim-ultisnips' },
-  { 'SirVer/ultisnips' },
-  { 'honza/vim-snippets' },
-  { 'hrsh7th/cmp-buffer' },
-  { 'hrsh7th/cmp-emoji' },
-  { 'hrsh7th/cmp-path' },
-  { 'tami5/lspsaga.nvim' },
-  { 'onsails/lspkind-nvim' },
-  { 'lukas-reineke/lsp-format.nvim' },
-  { 'ray-x/lsp_signature.nvim' },
-  { 'nvim-treesitter/nvim-treesitter-refactor' },
-  { 'p00f/nvim-ts-rainbow' },
   {
-    'windwp/nvim-ts-autotag',
+    'tami5/lspsaga.nvim'
+  },
+  {
+    'onsails/lspkind-nvim'
+  },
+  {
+    'lukas-reineke/lsp-format.nvim'
+  },
+  {
+    'ray-x/lsp_signature.nvim'
   },
   {
     'j-hui/fidget.nvim',
@@ -50,15 +68,19 @@ local plugins = {
   },
   {
     'nvim-neorg/neorg',
+    ft = 'norg'
   },
   {
     'iamcco/markdown-preview.nvim',
+    ft = 'markdown',
+    run = function() vim.fn["mkdp#util#install"]() end,
   },
   {
     'b0o/incline.nvim',
   },
   {
     'ekickx/clipboard-image.nvim',
+    ft = 'markdown'
   },
   {
     'Pocco81/HighStr.nvim',
@@ -85,16 +107,18 @@ local plugins = {
     'lewis6991/impatient.nvim',
   },
   {
-    'kyazdani42/nvim-web-devicons',
-  },
-  {
     'nvim-treesitter/nvim-treesitter',
-  },
-  {
-    'nvim-lua/plenary.nvim',
-  },
-  {
-    'rcarriga/nvim-notify',
+    run = ":TSUpdate",
+    requires = {
+      'nvim-treesitter/nvim-treesitter-refactor',
+      'p00f/nvim-ts-rainbow',
+      'windwp/nvim-ts-autotag',
+      ft = {
+        "html",
+        "xml"
+      },
+    },
+
   },
   {
     'akinsho/bufferline.nvim',
@@ -115,16 +139,16 @@ local plugins = {
     'lukas-reineke/indent-blankline.nvim',
   },
   {
-    'hrsh7th/nvim-cmp',
-  },
-  {
     'kyazdani42/nvim-tree.lua',
   },
   {
     'dstein64/vim-startuptime',
+    cmd = "StartupTime",
+    commit = "61f122ebc41e9bcf1793c752a728db59feee77bb",
   },
   {
     'kevinhwang91/rnvimr',
+    cmd = 'RnvimrToggle'
   },
   {
     'numToStr/Comment.nvim',
@@ -175,10 +199,10 @@ end)
 vim.cmd([[
 augroup packer_user_config
   autocmd!
-  " autocmd BufWritePost plugins.lua luafile plugins.lua | PackerCompile
+  " autocmd BufWritePost plugins.lua luafile % | PackerCompile
 augroup end
 
 nnoremap <Leader>vi <Cmd>PackerInstall<cr>
-" nnoremap <Leader>vc <Cmd>PlugClean<CR>
-" nnoremap <Leader>vu <Cmd>PlugUpdate<CR>
+nnoremap <Leader>vc <Cmd>PackerClean<CR>
+nnoremap <Leader>vu <Cmd>PackerCompile<CR>
 ]])
