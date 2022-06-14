@@ -114,4 +114,8 @@ call plug#end()
 " Plug 'rafcamlet/nvim-luapad'
 " Plug 'sunjon/shade.nvim'
 " Plug 'sindrets/diffview.nvim'
+
+nnoremap <Leader>vi <Cmd>PlugInstall<cr>
+nnoremap <Leader>vc <Cmd>PlugClean<CR>
+nnoremap <Leader>vu <Cmd>PlugUpdate<CR>
 ]])

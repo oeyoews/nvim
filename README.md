@@ -16,6 +16,7 @@
 * python3(ultisnips)
 * npm(for lsp-installer)
 * go(lsp server)
+* shellcheck, codespell
 * make(for install)
 * ranger(file manager)
 * need install noto-font-emoji or nerd font
@@ -26,7 +27,7 @@
 make && make install
 ```
 
-* vim-plug: enter to show more information, R to reinstall failed plugins
+> tips: vim-plug: enter to show more information, R to reinstall failed plugins
 
 ---
 
@@ -38,6 +39,7 @@ again to toggle lowercase letters
 
 ## TODO
 
+* [ ] format lua(include vim), this treesitter
 * [ ] learn lua: doom-nvim, nvchad to deeply look
 * [ ] add highlight symbols under cursor functions(terminal gnome support)
 * [ ] use packer.nvim to replace vim-plug
@@ -63,7 +65,7 @@ again to toggle lowercase letters
 * [x] this emjoi shadow bug, maybe is kitty terminal(switch to wezterm compare)
 * [x] some error tip from feline(active)
 
-##  NOTE
+## NOTE
 
 * not rename Ultisnips
 * because this GFW, please multi try to install all plugins

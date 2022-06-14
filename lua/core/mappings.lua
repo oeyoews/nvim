@@ -1,6 +1,7 @@
 local g = vim.g
 
 g.mapleader = ' '
+
 vim.cmd([[
 " BUG: last line highlight is not correct
 "
@@ -24,7 +25,7 @@ vnoremap >> >gv
 vnoremap << <gv
 
 " command mode
-noremap <leader><leader> :
+nnoremap <leader><leader> :
 
 " buffer
 nnoremap <silent> <leader><tab> :bp<CR>
@@ -67,12 +68,6 @@ nnoremap <silent> <esc> :noh<return><C-L><esc>
 "autocmd FileType norg
 "vnoremap <space>nn mzI+<esc>A+<esc>`z
 
-" StartupTime
-nnoremap <leader>vt <cmd>StartupTime --tries 10<cr>
-
-" quickrun :NOTE: must use <bar> in cmd format
-nnoremap <silent> <SPACE>ll <Cmd>w <bar> QuickRun <CR><C-w>w
-
 nnoremap <silent> <SPACE>tf <Cmd>only<bar> lua vim.notify("🍺 FullScreen")<cr>
 
 nnoremap <silent> <leader>tn <cmd>set invnumber<cr>
@@ -94,9 +89,4 @@ noremap <space>pp "*p <cmd> lua vim.notify("🗒️ Copy text from SystemClipBoa
 
 "nnoremap <silent> <space>yp :<C-U>let @+=expand('%:p') <bar> echom "Finished copy fpath."<cr>
 nnoremap <silent> <space>yp :<C-U>let @+=expand('%:p') <bar> lua vim.notify(" 🦜 Copy Fpath")<cr>
-
-
-nnoremap <Leader>vi <Cmd>PlugInstall<cr>
-nnoremap <Leader>vc <Cmd>PlugClean<CR>
-nnoremap <Leader>vu <Cmd>PlugUpdate<CR>
 ]])
