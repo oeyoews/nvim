@@ -61,7 +61,7 @@ Plug 'folke/todo-comments.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'for': 'markdown', 'do': 'cd app && yarn install' }
 Plug 'nvim-neorg/neorg', { 'for': 'norg', 'on': 'NeorgStart' }
 Plug 'itchyny/calendar.vim', { 'on': 'Calendar' }
-Plug 'ellisonleao/glow.nvim'
+Plug 'ellisonleao/glow.nvim', { 'for': 'markdown' }
 
 " @Theme
 " Plug 'marko-cerovac/material.nvim'
