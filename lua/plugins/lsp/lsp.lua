@@ -81,7 +81,7 @@ cmp.setup({
   mapping = {
     ['<S-Tab>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 's' }),
     ['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' }),
-    ['<CR>'] = cmp.mapping.confirm({ select = true }),
+    ['<CR>'] = cmp.mapping.confirm({ select = false }),
     -- ['<C-e>'] = cmp.mapping.complete(),
     ['<C-c>'] = cmp.mapping.close(),
   },
@@ -151,14 +151,14 @@ cmp.setup({
 
   -- sources
   sources = {
-    { name = 'cmdline' },
     { name = 'nvim_lsp' },
     { name = 'buffer', keyword_length = 2 },
     { name = 'ultisnips' },
     { name = 'path' },
-    { name = 'nvim-lua' },
     { name = 'neorg' },
     { name = 'emoji' },
+    { name = 'nvim-lua' },
+    -- { name = 'cmdline' },
   },
 })
 
