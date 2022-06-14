@@ -98,7 +98,8 @@ local plugins = {
   },
   {
     'ekickx/clipboard-image.nvim',
-    ft = 'markdown'
+    ft = 'markdown',
+    cmd = 'PostImg',
   },
   {
     'Pocco81/HighStr.nvim',
