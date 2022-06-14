@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.23.2](https://gitlab.com/oeyoews/nvim/compare/v2.23.1...v2.23.2) (2022-06-14)
+
+
+### Bug Fixes
+
+* disable gitlint ([d973709](https://gitlab.com/oeyoews/nvim/commit/d973709a4fc73eb9ab765c4ea5efc6d39d76d6db))
+
 ## [2.23.1](https://gitlab.com/oeyoews/nvim/compare/v2.23.0...v2.23.1) (2022-06-14)
 
 
