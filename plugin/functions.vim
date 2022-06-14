@@ -1,8 +1,8 @@
 " have some bug , if source it twice in xx.vim and xx.lua(because of vim.cmd)
-" it's confict for ranger, maybe it's it terminal job
+" it's conflict for ranger, maybe it's it terminal job
 
 function! Terminal()
-  " TODO: have confict for ranger(TermOpen)
+  " TODO: have conflict for ranger(TermOpen)
   "setlocal filetype=omz
   "au! TermOpen * call feedkeys("i")
   autocmd! TermClose * call feedkeys("\<esc>")
@@ -60,7 +60,7 @@ nnoremap <silent> <space>eh <cmd>call FindVanilla()<cr>
 
 
 function! FindCustomConfig() abort
-  find ~/.config/nvim/lua/core/plugins.lua
+  find ~/.config/nvim/lua/plugins/plugins.lua
 endfunction
 
 function! FindPlugin() abort

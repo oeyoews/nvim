@@ -26,20 +26,9 @@ call plug#begin(s:plug_install_dir)
 if has('nvim')
 
 " @Temporary
-Plug 'j-hui/fidget.nvim'
-Plug 'jose-elias-alvarez/null-ls.nvim'
-Plug 'nvim-neorg/neorg', { 'for': 'norg', 'on': 'NeorgStart' }
-Plug 'itchyny/calendar.vim'
-Plug 'ellisonleao/glow.nvim'
-Plug 'marko-cerovac/material.nvim'
-Plug 'olimorris/onedarkpro.nvim'
 Plug 'b0o/incline.nvim', { 'frozen': 1 }
-Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'ekickx/clipboard-image.nvim'
-Plug 'abecodes/tabout.nvim'
 Plug 'Pocco81/HighStr.nvim'
-Plug 'windwp/nvim-ts-autotag'
-Plug 'kevinhwang91/rnvimr'
 " \time \nvim +q
 Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1, 'commit': '61f122ebc41e9bcf1793c752a728db59feee77bb' }
 Plug 'folke/trouble.nvim', { 'on': 'TroubleToggle' }
@@ -56,6 +45,10 @@ Plug 'nathom/filetype.nvim'
 Plug 'lewis6991/impatient.nvim'
 
 " @Lsp
+Plug 'abecodes/tabout.nvim'
+Plug 'windwp/nvim-ts-autotag'
+Plug 'j-hui/fidget.nvim'
+Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
@@ -77,6 +70,7 @@ Plug 'p00f/nvim-ts-rainbow'
 Plug 'numToStr/Comment.nvim'
 
 " @Tools
+Plug 'kevinhwang91/rnvimr'
 Plug 'windwp/windline.nvim'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'norcalli/nvim-colorizer.lua'
@@ -89,6 +83,14 @@ Plug 'folke/persistence.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'folke/todo-comments.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'for': 'markdown', 'do': 'cd app && yarn install' }
+Plug 'nvim-neorg/neorg', { 'for': 'norg', 'on': 'NeorgStart' }
+Plug 'itchyny/calendar.vim'
+Plug 'ellisonleao/glow.nvim'
+
+" @Theme
+Plug 'marko-cerovac/material.nvim'
+Plug 'olimorris/onedarkpro.nvim'
+Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 
 endif
 

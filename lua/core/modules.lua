@@ -2,7 +2,7 @@ local package = 'plugins' -- load package
 
 local modules = {
   enable_modules = {
-    'pluginlist', -- install plugin list
+    'plugins', -- install plugin list
     'perfect', -- performance
     'lsp', -- lsp settings
     'themes', -- some themes

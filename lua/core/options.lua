@@ -1,3 +1,5 @@
+local o = vim.o
+
 vim.cmd([[
 " let $LANG = 'en'  "set message language
 " set langmenu=en   "set menu's language of gvim. no spaces beside '='
