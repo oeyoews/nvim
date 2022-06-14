@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.26.2](https://gitlab.com/oeyoews/nvim/compare/v2.26.1...v2.26.2) (2022-06-14)
+
+
+### Bug Fixes
+
+* disable has nvim to speed up startup time ([6819edc](https://gitlab.com/oeyoews/nvim/commit/6819edc8986814d25b3f1366e9dadd40fdca2b95))
+* enable vim-plug temporarily for packer ([1bdcea1](https://gitlab.com/oeyoews/nvim/commit/1bdcea173b07a2315627a9fa82fc78e314d3fbd0))
+
 ## [2.26.1](https://gitlab.com/oeyoews/nvim/compare/v2.26.0...v2.26.1) (2022-06-14)
 
 
