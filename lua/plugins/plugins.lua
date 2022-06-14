@@ -1,5 +1,5 @@
 ---[[
-vim.cmd[[
+vim.cmd [[
 " First install setting steps
 let data_dir = stdpath('data') . '/site'
 
@@ -44,6 +44,7 @@ Plug 'windwp/windline.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 
 " @Tools
+Plug 'kyazdani42/nvim-tree.lua'
 " \time \nvim +q
 Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1, 'commit': '61f122ebc41e9bcf1793c752a728db59feee77bb' }
 Plug 'ekickx/clipboard-image.nvim', { 'on': 'PostImg', 'for': 'markdown' }

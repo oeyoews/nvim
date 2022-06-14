@@ -15,13 +15,11 @@ snippet pp "adjust plugin"
 local ok, ${1:name} = pcall(require, '${2:module}')
 
 if not ok then
-	vim.notify('')
+	vim.notify('$2 not founded')
 	return
 end
 
-$1.setup({
-
-})
+$1.setup({${3:settings}})
 endsnippet
 
 snippet vimn "vim votify"
