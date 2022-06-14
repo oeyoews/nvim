@@ -7,5 +7,5 @@ local modules = {
 }
 
 for _, load_module in ipairs(modules) do
-  require(package .. "." .. load_module)
+  require(package .. '.' .. load_module)
 end
