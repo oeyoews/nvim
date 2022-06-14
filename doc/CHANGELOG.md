@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.23.0](https://gitlab.com/oeyoews/nvim/compare/v2.22.1...v2.23.0) (2022-06-14)
+
+
+### Features
+
+* more null-ls config ([968710c](https://gitlab.com/oeyoews/nvim/commit/968710ced1c2efc1cd639dd3deb9120bdaf97069))
+
 ## [2.22.1](https://gitlab.com/oeyoews/nvim/compare/v2.22.0...v2.22.1) (2022-06-14)
 
 
