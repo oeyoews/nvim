@@ -14,7 +14,6 @@ endfunction
 " add i in the end of line, to enter insert mode
 nnoremap <silent> <space>tk <cmd>call Terminal()<cr>i
 
-
 " config chezmoi
 function! ChezmoiSource() abort
   " exec zsh not use , just int current vim work
@@ -22,10 +21,6 @@ function! ChezmoiSource() abort
 endfunction
 
 autocmd BufWritePost ~/.local/share/chezmoi/dot_* :call ChezmoiSource()
-
-"
-" show statusline for at least windows
-" set laststatus=0
 
 function! ToggleStatusLine() abort
   " laststatus default is 2
@@ -90,10 +85,8 @@ nnoremap <leader>bb  <Cmd>e `mktemp -t scratch-XXXXXX`<CR>
 " for spelling
 " for spell dir, en...add this file is auto, just for more file exist
 " set spellfile+=~/.config/nvim/spell/myspell.utf-8.add
-set spelllang=en_us,cjk
 " is confilict spellfile
 "set dictionary=~/.config/nvim/dict/myself.md
-
 
 " use ctrl k && ctrl l
 "set dictionary+=~/.config/nvim/dict/myself.txt
@@ -102,7 +95,6 @@ set spelllang=en_us,cjk
 " ctrl x && ctrl f(complete filename)
 "
 " set complete+=k~/.config/nvim/dict/myself.md
-
 
 "function! ToggleSpelling()
   "if &spell
@@ -120,7 +112,6 @@ set spelllang=en_us,cjk
 "nnoremap <space>ss <cmd>call ToggleSpelling()<cr>
 " " is's silent
 " TODO:: auto disappeard in some seconds
-nnoremap <space>ss <cmd>setlocal invspell <bar> lua vim.notify("Toggle Spell")<cr>
 
 " need set spell
 " fastly quick fix spell error
@@ -135,8 +126,6 @@ nnoremap <space>ss <cmd>setlocal invspell <bar> lua vim.notify("Toggle Spell")<c
 " spell good words
 " nnoremap <leader>es  <Cmd>e ~/.config/nvim/spell/myspell.utf-8.add<CR>
 "
-"
-let g:calendar_cache_directory = stdpath('data') . '/calendar'
 " exec "nohlsearch"
 
 " EditorConfigReload

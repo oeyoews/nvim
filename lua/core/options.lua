@@ -54,6 +54,7 @@ opt.foldenable = false
 opt.incsearch = true
 opt.hlsearch = true
 opt.vb = true
+opt.shell = '/bin/zsh'
 
 -- set shada path
 vim.schedule(function()
@@ -64,4 +65,5 @@ end)
 vim.cmd([[
 set listchars=tab:\ \ ,
 set whichwrap+=<,>,[,]
+set spelllang=en_us,cjk
 ]])

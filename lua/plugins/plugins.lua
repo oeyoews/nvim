@@ -45,9 +45,9 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 " @Tools
 " \time \nvim +q
 Plug 'dstein64/vim-startuptime', { 'on': 'StartupTime', 'frozen': 1, 'commit': '61f122ebc41e9bcf1793c752a728db59feee77bb' }
-Plug 'ekickx/clipboard-image.nvim'
+Plug 'ekickx/clipboard-image.nvim', { 'on': 'PostImg', 'for': 'markdown' }
 Plug 'b0o/incline.nvim', { 'frozen': 1 }
-Plug 'kevinhwang91/rnvimr'
+Plug 'kevinhwang91/rnvimr', { 'on': 'RnvimrToggle' }
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'phaazon/hop.nvim'
@@ -60,7 +60,7 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'folke/todo-comments.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'for': 'markdown', 'do': 'cd app && yarn install' }
 Plug 'nvim-neorg/neorg', { 'for': 'norg', 'on': 'NeorgStart' }
-Plug 'itchyny/calendar.vim'
+Plug 'itchyny/calendar.vim', { 'on': 'Calendar' }
 Plug 'ellisonleao/glow.nvim'
 
 " @Theme
