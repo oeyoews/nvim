@@ -2,7 +2,7 @@
   "dryRun": false,
   "debug": false,
   "branches": [
-    "nvim"
+    "packer"
   ],
   "plugins": [
     "@semantic-release/commit-analyzer",
