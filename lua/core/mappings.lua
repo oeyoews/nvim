@@ -1,11 +1,14 @@
+local g = vim.g
+
+g.mapleader = ' '
 vim.cmd([[
 " BUG: last line highlight is not correct
 "
 "let g:mapleader = " "
-let g:mapleader = "\<Space>"
+" let g:mapleader = "\<Space>"
 
 nnoremap <leader>bd <cmd>bdelete<cr>
-" creat blankline nto formatoptions
+" create blankline nto formatoptions
 "nnoremap <silent> <leader>o :set paste<cr>o<esc>:set nopaste<cr>
 "nnoremap <silent> <leader>O :set paste<cr>O<esc>:set nopaste<cr>
 

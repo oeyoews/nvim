@@ -134,4 +134,6 @@ NOTES - cd .../docs and :helptags . to generate a tags
     tips: nvim +"Man ls"
     :scriptname to show load order files
 
+    * nvim -u NONE < -N> no config startup neovim
+
 vim:tw=78:ts=8:noet:ft=help:norl:ma:nu:

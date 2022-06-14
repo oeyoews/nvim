@@ -1,67 +1,59 @@
-local o = vim.o
+local g = vim.g
+local opt = vim.opt
+
+g.did_load_filetypes = 0
+g.do_filetype_lua = 1
+-- time
+opt.updatetime = 200
+opt.timeoutlen = 1000
+-- disable nvim intro
+opt.shortmess:append('acsI')
+opt.splitright = true
+opt.splitbelow = true
+-- Indent
+opt.expandtab = true
+opt.shiftwidth = 2
+opt.smartindent = true
+opt.tabstop = 2
+opt.softtabstop = 2
+opt.signcolumn = 'yes'
+opt.mouse = 'a'
+opt.fillchars = { eob = ' ' }
+opt.cursorline = true
+opt.smartindent = true
+opt.lazyredraw = true
+opt.termguicolors = true
+opt.undofile = true
+opt.ttyfast = true
+-- opt.signcolumn = true
+opt.autochdir = true
+opt.wrap = true
+-- Number
+opt.numberwidth = 2
+opt.number = true
+opt.ruler = false
+-- opt.clipboard = "unnamedplus"
+opt.title = true
+opt.list = true
+opt.linebreak = true
+opt.hidden = true
+opt.ignorecase = true
+opt.confirm = true
+opt.showcmd = false
+opt.showmode = false
+opt.backup = false
+opt.swapfile = false
+opt.foldenable = false
+opt.incsearch = true
+opt.hlsearch = true
+opt.vb = true
+-- set shada path
+vim.schedule(function()
+  vim.opt.shadafile = vim.fn.expand('$HOME') .. '/.local/share/nvim/shada/main.shada'
+  vim.cmd([[ silent! rsh ]])
+end)
 
 vim.cmd([[
-" let $LANG = 'en'  "set message language
-" set langmenu=en   "set menu's language of gvim. no spaces beside '='
-"set cindent
-set smartindent
-" visual degree chars symbols
-"set conceallevel=1
-set mouse+=a
-set ignorecase
-set termguicolors
-set undofile
-"set ttyfast
-set signcolumn=yes
-set autochdir
-set wrap
-set linebreak
-set hidden
-set ignorecase
-set textwidth=120
-" set colorcolumn=80
-set shortmess+=aIc  " atI clear advertise
-set lazyredraw
-set vb t_vb=  " no blinking no bells
-
-" disable some options
-set noshowcmd
-set noshowmode
-set nobackup
-set noswapfile
-set nofoldenable
-
-" incease highlight
-set incsearch
-set hlsearch
-
-set confirm
-"set scrolloff=3
-set updatetime=200
-set foldmethod=marker
-set timeoutlen=1000
-" tab --> space, but you can use set et! to convert :%retab!
-set expandtab
-" use > and shift to add indent current operator
-set shiftwidth=2
-set tabstop=2
-set softtabstop=2
- set list
-" set listchars=tab:→\ ,eol:↵,trail:▫,extends:↷,precedes:↶
 set listchars=tab:\ \ ,
 set whichwrap+=<,>,[,]
-set splitright
-set splitbelow
-" disable it, when use emoji, or other sititions, this visual will have some
-" but not resolve all bug
-" kitty terminal cause it
-set cursorline
-set number
-" set ve=all
-"set guifont=Fira\ Code\ 14
-"set t_ti= t_te=
-"set shortmess=atI  " disable show welcome and no clear this ui to quit vim
-"set clipboard=unnamed
-" equal set so
-"set scrolloff=999
 ]])

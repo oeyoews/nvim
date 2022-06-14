@@ -1,8 +1,8 @@
 local package = 'core' -- require package
 
 local modules = {
-  'mappings', -- basic mappings
   'options', -- basic options
+  'mappings', -- basic mappings
   'modules', -- enable modules
 }
 

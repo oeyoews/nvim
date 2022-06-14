@@ -36,7 +36,7 @@ function! ToggleStatusLine() abort
   endif
 
   " disable lastline right info set ruler!
-  set noruler
+  " set noruler
   " let statusline = 2
   " let &laststatus = statusline
   lua vim.notify("ToggleStatusLine")

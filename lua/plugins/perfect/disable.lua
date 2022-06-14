@@ -1,24 +1,40 @@
-local disabled_built_ins = {
+local g = vim.g
+
+-- disable some builtin vim plugins
+
+local default_plugins = {
+  '2html_plugin',
+  'getscript',
+  'getscriptPlugin',
+  'gzip',
+  'logipat',
   'netrw',
   'netrwPlugin',
   'netrwSettings',
   'netrwFileHandlers',
-  'gzip',
-  'zip',
-  'zipPlugin',
+  'matchit',
   'tar',
   'tarPlugin',
-  'getscript',
-  'getscriptPlugin',
-  'vimball',
-  'vimballPlugin',
-  '2html_plugin',
-  'logipat',
   'rrhelper',
   'spellfile_plugin',
-  'matchit',
+  'vimball',
+  'vimballPlugin',
+  'zip',
+  'zipPlugin',
+  'python_provider',
+  'node_provider',
+  'ruby_provider',
+  'perl_provider',
+  'tutor',
+  'rplugin',
+  'syntax',
+  'synmenu',
+  'optwin',
+  'compiler',
+  'bugreport',
+  'ftplugin',
 }
 
-for _, plugin in pairs(disabled_built_ins) do
-  vim.g['loaded_' .. plugin] = 1
+for _, plugin in pairs(default_plugins) do
+  g['loaded_' .. plugin] = 1
 end
