@@ -39,6 +39,9 @@ again to toggle lowercase letters
 
 ## TODO
 
+* config opt(load)
+* delete compiled file
+* learn packer, test packer automatically
 * [ ] format lua(include vim), this treesitter
 * [ ] learn lua: doom-nvim, nvchad to deeply look
 * [ ] add highlight symbols under cursor functions(terminal gnome support)

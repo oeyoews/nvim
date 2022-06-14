@@ -6,7 +6,7 @@ local modules = {
   'lspconfig',
   'fidget',
   'lspsignature',
-  -- 'treesitter',
+  'treesitter',
   'lspsaga',
   'trouble',
 }
