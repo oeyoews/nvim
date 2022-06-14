@@ -1,6 +1,13 @@
+-- NOTE: this null_ls can't return, unless really uninstall it
 local ok, null_ls = pcall(require, 'null-ls')
 
+if not ok then
+  vim.notify('null-ls not founded')
+  return false
+end
+
 local diagnostics = null_ls.builtins.diagnostics
+
 local formatting = null_ls.builtins.formatting
 
 local sources = {
@@ -23,11 +30,6 @@ local sources = {
     },
   }), -- need install codespell
 }
-
-if not ok then
-  vim.notify('null-ls not founded')
-  return
-end
 
 null_ls.setup({
   update_in_insert = false,
