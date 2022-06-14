@@ -1,9 +1,9 @@
 local present, impatient = pcall(require, 'impatient')
 
 if present then
-    impatient.enable_profile()
-    -- vim.notify("impatient  founded")
+  impatient.enable_profile()
+  -- vim.notify("impatient  founded")
 else
-    vim.notify('impatient not founded')
-    return
+  vim.notify('impatient not founded')
+  return
 end

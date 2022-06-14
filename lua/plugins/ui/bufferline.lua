@@ -1,7 +1,7 @@
 local ok, bufferline = pcall(require, 'bufferline')
 
 if not ok then
-    return false
+  return false
 end
 
 bufferline.setup({})
