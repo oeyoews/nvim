@@ -1,4 +1,4 @@
-local config_package = 'plugins/' -- load package
+local package = 'plugins' -- load package
 
 local modules = {
   enable_modules = {
@@ -12,5 +12,5 @@ local modules = {
 }
 
 for _, load_module in ipairs(modules.enable_modules) do
-  require(config_package .. load_module)
+  require(package .. "." .. load_module)
 end

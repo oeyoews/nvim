@@ -1,4 +1,4 @@
-local core = 'core/' -- require package
+local package = 'core' -- require package
 
 local modules = {
   'mappings', -- basic mappings
@@ -8,5 +8,5 @@ local modules = {
 
 -- load module
 for _, load_module in ipairs(modules) do
-  require(core .. load_module)
+  require(package .. "." .. load_module)
 end

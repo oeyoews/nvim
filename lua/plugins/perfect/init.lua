@@ -1,4 +1,4 @@
-local package = 'plugins.perfect/'
+local package = 'plugins.perfect'
 
 local modules = {
   'disable',
@@ -7,5 +7,5 @@ local modules = {
 }
 
 for _, load_module in ipairs(modules) do
-  require(package .. load_module)
+  require(package .. "." .. load_module)
 end
