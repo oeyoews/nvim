@@ -2,9 +2,9 @@ local package = 'plugins.themes'
 
 local modules = {
   -- 'catppuccin',
-  'tokyonight',
   -- 'material',
   -- 'onedarkpro',
+  'tokyonight',
   'custom',
 }
 

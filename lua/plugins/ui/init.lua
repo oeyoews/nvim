@@ -3,8 +3,6 @@ local package = 'plugins.ui'
 local modules = {
   'bufferline',
   'windline',
-  -- 'shade',
-  -- 'beacon',
   'incline',
 }
 
