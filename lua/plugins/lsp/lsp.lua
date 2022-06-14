@@ -12,11 +12,22 @@ if not cmp_ok then
   return false
 end
 
-local servers = require('plugins.lsp.lspinstall').servers
 
 local lspkind_ok, lspkind = pcall(require, 'lspkind')
 
+if not lspkind_ok then
+  vim.notify('lspkind not founded')
+  return false
+end
+
 local lspformat_ok, lsp_format = pcall(require, 'lsp-format')
+
+if not lspformat_ok then
+  vim.notify('lsp_format not founded')
+  return false
+end
+
+local servers = require('plugins.lsp.lspinstall').servers
 
 local symbol_map = {
   --         
@@ -48,16 +59,6 @@ local symbol_map = {
   Operator = '',
   TypeParameter = '𝙏',
 }
-
-if not lspformat_ok then
-  vim.notify('lsp_format not founded')
-  return false
-end
-
-if not lspkind_ok then
-  vim.notify('lspkind not founded')
-  return false
-end
 
 cmp.setup({
   view = {

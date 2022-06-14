@@ -6,7 +6,6 @@ local modules = {
   'colorizer',
   'gitsigns',
   'comment',
-  'indent',
   'autopairs',
   'highstr',
   'neorg',

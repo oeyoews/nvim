@@ -1,6 +1,7 @@
 local package = 'plugins.ui'
 
 local modules = {
+  'indent',
   'bufferline',
   'windline',
   'incline',

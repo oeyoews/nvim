@@ -8,3 +8,5 @@ node_modules
 .sessions
 tags
 *.tar.gz
+
+packer_compiled.lua
