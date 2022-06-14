@@ -1,5 +1,4 @@
 ---[[
->>>>>>> packer
 vim.cmd[[
 " First install setting steps
 let data_dir = stdpath('data') . '/site'
