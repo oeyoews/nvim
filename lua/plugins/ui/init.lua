@@ -3,7 +3,7 @@ local package = 'plugins.ui/'
 local moudles = {
   'bufferline',
   'windline',
-  -- 'shade',
+  'shade',
   -- 'beacon',
   'incline',
 }

@@ -1,16 +1,17 @@
 local ok, null_ls = pcall(require, 'null-ls')
 
-local builtin = null_ls.builtins
+local diagnostics = null_ls.builtins.diagnostics
+local formatting = null_ls.builtins.formatting
 
 local sources = {
-  builtin.diagnostics.markdownlint, -- need install markdownlint
+  diagnostics.markdownlint, -- need install markdownlint
   -- builtin.formatting.prettierd.with,
   -- builtin.diagnostics.misspell,
   -- builtin.diagnostics.gitlint, -- need install gitlint
   -- builtin.completion.spell,
   -- builtin.code_actions.shellcheck
-  builtin.diagnostics.codespell.with({
-    disabled_filetypes = { "c" },
+  diagnostics.codespell.with({
+    disabled_filetypes = { 'c' },
     filetypes = {
       -- NOTE: not mix two styles
       -- c = false,
@@ -24,11 +25,12 @@ local sources = {
 }
 
 if not ok then
-  return false
+  vim.notify('null-ls not founded')
+  return
 end
 
 null_ls.setup({
-  update_in_insert = true,
+  update_in_insert = false,
   debounce = 500,
   sources = sources,
 })
