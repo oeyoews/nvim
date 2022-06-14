@@ -12,7 +12,6 @@ if not cmp_ok then
   return false
 end
 
-
 local lspkind_ok, lspkind = pcall(require, 'lspkind')
 
 if not lspkind_ok then

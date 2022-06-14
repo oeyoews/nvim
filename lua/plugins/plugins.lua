@@ -9,7 +9,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
     '--depth',
     '1',
     'https://github.com/wbthomason/packer.nvim',
-    install_path
+    install_path,
   })
 end
 
@@ -22,137 +22,142 @@ end
 
 local plugins = {
   {
-    "hrsh7th/cmp-nvim-lsp"
+    'hrsh7th/cmp-nvim-lsp',
   },
   {
-    "williamboman/nvim-lsp-installer",
+    'williamboman/nvim-lsp-installer',
   },
-  { "quangnguyen30192/cmp-nvim-ultisnips" },
-  { "SirVer/ultisnips" },
-  { "honza/vim-snippets" },
-  { "hrsh7th/cmp-buffer" },
-  { "hrsh7th/cmp-emoji" },
-  { "hrsh7th/cmp-path", },
-  { "tami5/lspsaga.nvim" },
-  { "onsails/lspkind-nvim" },
-  { "lukas-reineke/lsp-format.nvim" },
-  { "ray-x/lsp_signature.nvim" },
-  { "nvim-treesitter/nvim-treesitter-refactor", },
-  { "p00f/nvim-ts-rainbow" },
+  { 'quangnguyen30192/cmp-nvim-ultisnips' },
+  { 'SirVer/ultisnips' },
+  { 'honza/vim-snippets' },
+  { 'hrsh7th/cmp-buffer' },
+  { 'hrsh7th/cmp-emoji' },
+  { 'hrsh7th/cmp-path' },
+  { 'tami5/lspsaga.nvim' },
+  { 'onsails/lspkind-nvim' },
+  { 'lukas-reineke/lsp-format.nvim' },
+  { 'ray-x/lsp_signature.nvim' },
+  { 'nvim-treesitter/nvim-treesitter-refactor' },
+  { 'p00f/nvim-ts-rainbow' },
   {
-    "windwp/nvim-ts-autotag",
-  },
-  {
-    "j-hui/fidget.nvim"
+    'windwp/nvim-ts-autotag',
   },
   {
-    "folke/trouble.nvim"
+    'j-hui/fidget.nvim',
   },
   {
-    "nvim-neorg/neorg"
+    'folke/trouble.nvim',
   },
   {
-    "iamcco/markdown-preview.nvim" },
-  {
-    "b0o/incline.nvim" },
-  {
-    "ekickx/clipboard-image.nvim" },
-  {
-    "Pocco81/HighStr.nvim" },
-  {
-    "itchyny/calendar.vim" },
-  {
-    "yianwillis/vimcdoc",
+    'nvim-neorg/neorg',
   },
   {
-    "abecodes/tabout.nvim",
+    'iamcco/markdown-preview.nvim',
   },
   {
-    "nathom/filetype.nvim",
+    'b0o/incline.nvim',
   },
   {
-    "folke/which-key.nvim",
+    'ekickx/clipboard-image.nvim',
   },
   {
-    "wbthomason/packer.nvim"
+    'Pocco81/HighStr.nvim',
   },
   {
-    "lewis6991/impatient.nvim"
+    'itchyny/calendar.vim',
   },
   {
-    "kyazdani42/nvim-web-devicons"
+    'yianwillis/vimcdoc',
   },
   {
-    "nvim-treesitter/nvim-treesitter"
+    'abecodes/tabout.nvim',
   },
   {
-    "nvim-lua/plenary.nvim"
+    'nathom/filetype.nvim',
   },
   {
-    "rcarriga/nvim-notify"
+    'folke/which-key.nvim',
   },
   {
-    "akinsho/bufferline.nvim",
+    'wbthomason/packer.nvim',
   },
   {
-    "nvim-telescope/telescope.nvim" },
-  {
-    "phaazon/hop.nvim"
+    'lewis6991/impatient.nvim',
   },
   {
-    "norcalli/nvim-colorizer.lua"
+    'kyazdani42/nvim-web-devicons',
   },
   {
-    "windwp/windline.nvim"
+    'nvim-treesitter/nvim-treesitter',
   },
   {
-    "lukas-reineke/indent-blankline.nvim"
+    'nvim-lua/plenary.nvim',
   },
   {
-    "hrsh7th/nvim-cmp"
+    'rcarriga/nvim-notify',
   },
   {
-    "kyazdani42/nvim-tree.lua"
+    'akinsho/bufferline.nvim',
   },
   {
-    "dstein64/vim-startuptime"
+    'nvim-telescope/telescope.nvim',
   },
   {
-    "kevinhwang91/rnvimr"
+    'phaazon/hop.nvim',
   },
   {
-    "numToStr/Comment.nvim"
+    'norcalli/nvim-colorizer.lua',
   },
   {
-    "folke/persistence.nvim"
+    'windwp/windline.nvim',
   },
   {
-    "folke/todo-comments.nvim"
+    'lukas-reineke/indent-blankline.nvim',
   },
   {
-    "lewis6991/gitsigns.nvim"
+    'hrsh7th/nvim-cmp',
   },
   {
-    "windwp/nvim-autopairs"
+    'kyazdani42/nvim-tree.lua',
   },
   {
-    "thinca/vim-quickrun"
+    'dstein64/vim-startuptime',
   },
   {
-    "jose-elias-alvarez/null-ls.nvim"
+    'kevinhwang91/rnvimr',
   },
   {
-    "neovim/nvim-lspconfig"
+    'numToStr/Comment.nvim',
   },
-
+  {
+    'folke/persistence.nvim',
+  },
+  {
+    'folke/todo-comments.nvim',
+  },
+  {
+    'lewis6991/gitsigns.nvim',
+  },
+  {
+    'windwp/nvim-autopairs',
+  },
+  {
+    'thinca/vim-quickrun',
+  },
+  {
+    'jose-elias-alvarez/null-ls.nvim',
+  },
+  {
+    'neovim/nvim-lspconfig',
+  },
 }
 
 packer.init({
   display = {
     open_fn = function()
-      return require("packer.util").float({ border = "single" })
+      return require('packer.util').float({ border = 'single' })
     end,
-    prompt_border = "single",
+    prompt_border = 'single',
   },
   git = {
     clone_timeout = 6000,
