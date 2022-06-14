@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.24.0](https://gitlab.com/oeyoews/nvim/compare/v2.23.2...v2.24.0) (2022-06-14)
+
+
+### Features
+
+* enable norg ([beec81c](https://gitlab.com/oeyoews/nvim/commit/beec81c62f8744c57231158df43d646861c1488e))
+
 ## [2.23.2](https://gitlab.com/oeyoews/nvim/compare/v2.23.1...v2.23.2) (2022-06-14)
 
 
