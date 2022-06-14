@@ -38,6 +38,7 @@ again to toggle lowercase letters
 
 ## TODO
 
+* [ ] learn lua: doom-nvim, nvchad to deeply look
 * [ ] add highlight symbols under cursor functions(terminal gnome support)
 * [ ] use packer.nvim to replace vim-plug
 * [ ] tidy vanilla.txt, maybe can write vanilla.markdown, last to txt

@@ -1,13 +1,13 @@
 " NOTE: This same file type will overwrite
 
 " general output
-command! -nargs=1 Out new|pu=execute('<args>')
+command! -nargs=1 Out enew|pu=execute('<args>')
 
 " command: Scripts
-command! Scripts vsplit | new|pu=execute('scriptnames')
+command! Scripts split | enew|pu=execute('scriptnames')
 
 " command: HI : redirect new buffer to ourputs
-command! -nargs=1 -complete=highlight HI new|pu=execute('hi <args>')
+command! -nargs=1 -complete=highlight HI enew|pu=execute('hi <args>')
 
 command! -nargs=?  -complete=color Themes colorscheme <args>
 

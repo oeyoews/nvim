@@ -1,6 +1,6 @@
 local package = 'plugins.tools/'
 
-local moudles = {
+local modules = {
   'notify',
   'telescope',
   'hop',
@@ -17,6 +17,6 @@ local moudles = {
   'tabout',
 }
 
-for _, load_module in ipairs(moudles) do
+for _, load_module in ipairs(modules) do
   require(package .. load_module)
 end

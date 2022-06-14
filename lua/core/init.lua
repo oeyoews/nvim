@@ -1,17 +1,12 @@
-local config_package = 'plugins/'
+local core = 'core/' -- require package
 
-local moudles = {
-  'perfect',
-  'lsp',
-  'themes',
-  'ui',
-  'tools',
+local modules = {
+  'mappings', -- basic mappings
+  'options', -- basic options
+  'modules', -- enable modules
 }
 
-require('core.plugins')
-require('core.mappings')
-require('core.options')
-
-for _, load_module in ipairs(moudles) do
-  require(config_package .. load_module)
+-- load module
+for _, load_module in ipairs(modules) do
+  require(core .. load_module)
 end

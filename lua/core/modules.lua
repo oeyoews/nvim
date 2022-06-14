@@ -1,0 +1,16 @@
+local config_package = 'plugins/' -- load package
+
+local modules = {
+  enable_modules = {
+    'pluginlist', -- install plugin list
+    'perfect', -- performance
+    'lsp', -- lsp settings
+    'themes', -- some themes
+    'ui', -- ui configuration
+    'tools', -- some tools
+  },
+}
+
+for _, load_module in ipairs(modules.enable_modules) do
+  require(config_package .. load_module)
+end

@@ -1,13 +1,13 @@
 local package = 'plugins.ui/'
 
-local moudles = {
+local modules = {
   'bufferline',
   'windline',
-  'shade',
+  -- 'shade',
   -- 'beacon',
   'incline',
 }
 
-for _, load_module in ipairs(moudles) do
+for _, load_module in ipairs(modules) do
   require(package .. load_module)
 end

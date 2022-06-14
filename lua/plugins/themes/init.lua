@@ -1,6 +1,6 @@
 local package = 'plugins.themes/'
 
-local moudles = {
+local modules = {
   -- 'catppuccin',
   'tokyonight',
   -- 'material',
@@ -8,6 +8,6 @@ local moudles = {
   'custom',
 }
 
-for _, load_module in ipairs(moudles) do
+for _, load_module in ipairs(modules) do
   require(package .. load_module)
 end
