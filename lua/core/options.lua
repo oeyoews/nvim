@@ -3,6 +3,7 @@ local opt = vim.opt
 
 g.did_load_filetypes = 0
 g.do_filetype_lua = 1
+g.python3_host_prog = '/usr/bin/python3'
 -- time
 opt.updatetime = 200
 opt.timeoutlen = 1000
@@ -47,6 +48,7 @@ opt.foldenable = false
 opt.incsearch = true
 opt.hlsearch = true
 opt.vb = true
+
 -- set shada path
 vim.schedule(function()
   vim.opt.shadafile = vim.fn.expand('$HOME') .. '/.local/share/nvim/shada/main.shada'

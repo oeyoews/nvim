@@ -7,7 +7,7 @@ local modules = {
   'gitsigns',
   'comment',
   'indent',
-  -- 'autopairs',
+  'autopairs',
   'highstr',
   'neorg',
   'persistence',
