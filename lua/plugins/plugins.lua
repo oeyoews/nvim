@@ -1,4 +1,5 @@
---[[
+---[[
+>>>>>>> packer
 vim.cmd[[
 " First install setting steps
 let data_dir = stdpath('data') . '/site'
@@ -24,7 +25,7 @@ let s:plug_install_dir = stdpath('data') . '/plugged'
 
 call plug#begin(s:plug_install_dir)
 
-if has('nvim')
+" if has('nvim')
 
 " @Temporary
 
@@ -95,7 +96,7 @@ Plug 'nvim-treesitter/nvim-treesitter-refactor'
 Plug 'p00f/nvim-ts-rainbow'
 Plug 'numToStr/Comment.nvim'
 
-endif
+" endif
 
 call plug#end()
 
