@@ -26,6 +26,7 @@ call plug#begin(s:plug_install_dir)
 if has('nvim')
 
 " @Temporary
+Plug 'nvim-neorg/neorg', { 'for': 'norg', 'on': 'NeorgStart' }
 Plug 'itchyny/calendar.vim'
 Plug 'ellisonleao/glow.nvim'
 Plug 'marko-cerovac/material.nvim'

@@ -136,16 +136,16 @@ nnoremap <space>ss <cmd>setlocal invspell <bar> lua vim.notify("Toggle Spell")<c
 " nnoremap <leader>es  <Cmd>e ~/.config/nvim/spell/myspell.utf-8.add<CR>
 "
 "
-" let g:calendar_cache_directory = stdpath('data') . '/calendar'
+let g:calendar_cache_directory = stdpath('data') . '/calendar'
 " exec "nohlsearch"
 
 " EditorConfigReload
 " let g:EditorConfig_verbose=1
 
-let g:tex_flavor='latex'
 "let g:vimtex_view_method='zathura'
-let g:vimtex_quickfix_mode=0
 " need set this conceallevel to level 2, to fix width to large
+let g:tex_flavor='latex'
+let g:vimtex_quickfix_mode=0
 let g:tex_conceal='abdmg'
 
 " fixed latex filetype(plaintex)
