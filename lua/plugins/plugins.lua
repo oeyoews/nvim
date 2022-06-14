@@ -22,6 +22,15 @@ end
 
 local plugins = {
   {
+    'nathom/filetype.nvim',
+  },
+  {
+    'lewis6991/impatient.nvim',
+  },
+  {
+    'wbthomason/packer.nvim',
+  },
+  {
     'rcarriga/nvim-notify',
   },
   {
@@ -31,9 +40,23 @@ local plugins = {
     'nvim-lua/plenary.nvim',
   },
   {
+    'nvim-treesitter/nvim-treesitter',
+    run = ":TSUpdate",
+    requires = {
+      'nvim-treesitter/nvim-treesitter-refactor',
+      'p00f/nvim-ts-rainbow',
+      'windwp/nvim-ts-autotag',
+      ft = {
+        "html",
+        "xml"
+      },
+    },
+  },
+  {
     'hrsh7th/nvim-cmp',
     requires = {
       'hrsh7th/cmp-buffer',
+      'abecodes/tabout.nvim',
       'hrsh7th/cmp-nvim-lsp',
       {
         'hrsh7th/cmp-emoji',
@@ -46,25 +69,20 @@ local plugins = {
     }
   },
   {
-    'williamboman/nvim-lsp-installer',
-  },
-  {
-    'tami5/lspsaga.nvim'
-  },
-  {
-    'onsails/lspkind-nvim'
-  },
-  {
-    'lukas-reineke/lsp-format.nvim'
-  },
-  {
-    'ray-x/lsp_signature.nvim'
-  },
-  {
-    'j-hui/fidget.nvim',
+    'neovim/nvim-lspconfig',
+    requires = {
+      'williamboman/nvim-lsp-installer',
+      'tami5/lspsaga.nvim',
+      'onsails/lspkind-nvim',
+      'lukas-reineke/lsp-format.nvim',
+      'ray-x/lsp_signature.nvim',
+      'jose-elias-alvarez/null-ls.nvim',
+      'j-hui/fidget.nvim',
+    }
   },
   {
     'folke/trouble.nvim',
+    cmd = 'Trouble',
   },
   {
     'nvim-neorg/neorg',
@@ -87,38 +105,13 @@ local plugins = {
   },
   {
     'itchyny/calendar.vim',
+    cmd = 'Calendar',
   },
   {
     'yianwillis/vimcdoc',
   },
   {
-    'abecodes/tabout.nvim',
-  },
-  {
-    'nathom/filetype.nvim',
-  },
-  {
     'folke/which-key.nvim',
-  },
-  {
-    'wbthomason/packer.nvim',
-  },
-  {
-    'lewis6991/impatient.nvim',
-  },
-  {
-    'nvim-treesitter/nvim-treesitter',
-    run = ":TSUpdate",
-    requires = {
-      'nvim-treesitter/nvim-treesitter-refactor',
-      'p00f/nvim-ts-rainbow',
-      'windwp/nvim-ts-autotag',
-      ft = {
-        "html",
-        "xml"
-      },
-    },
-
   },
   {
     'akinsho/bufferline.nvim',
@@ -167,12 +160,7 @@ local plugins = {
   },
   {
     'thinca/vim-quickrun',
-  },
-  {
-    'jose-elias-alvarez/null-ls.nvim',
-  },
-  {
-    'neovim/nvim-lspconfig',
+    cmd = 'QuickRun',
   },
 }
 
