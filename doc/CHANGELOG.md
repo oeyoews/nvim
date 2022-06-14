@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.26.0](https://gitlab.com/oeyoews/nvim/compare/v2.25.0...v2.26.0) (2022-06-14)
+
+
+### Features
+
+* use fidget to better visual null-ls ([5cd198b](https://gitlab.com/oeyoews/nvim/commit/5cd198b5c8b50174257fe071b2ee46a2ea24aba3))
+
 # [2.25.0](https://gitlab.com/oeyoews/nvim/compare/v2.24.0...v2.25.0) (2022-06-14)
 
 
