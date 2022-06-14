@@ -10,6 +10,56 @@ local lsp_installer = require('nvim-lsp-installer')
 
 local lspformat_ok, _ = pcall(require, 'lsp-format')
 
+local servers = {
+  'bashls',
+  -- 'cssls',
+  'cmake',
+  'clangd',
+  -- 'diagnosticls',
+  'html',
+  'jsonls',
+  -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
+  'pyright',
+  'gopls',
+  'sumneko_lua',
+  -- 'tsserver',
+  --'texlab',
+  -- 'golangci_lint_ls',
+  -- 'yamlls',
+  'vimls',
+}
+
+local symbol_map = {
+        --         
+        -- Function = "",
+        -- Keyword = "",
+        Text = '',
+        Method = '',
+        Function = 'ƒ',
+        Constructor = '',
+        Field = '',
+        Variable = '',
+        Class = '𝓒',
+        Interface = '',
+        Module = '',
+        Property = 'ﰠ',
+        Unit = '',
+        Value = '',
+        Enum = '',
+        Keyword = '🔐',
+        Snippet = '',
+        Color = '',
+        Reference = '',
+        File = '',
+        Folder = '',
+        EnumMember = '',
+        Constant = '',
+        Struct = '𝓢',
+        Event = '',
+        Operator = '',
+        TypeParameter = '𝙏',
+}
+
 if not lsp_installer then
   vim.notify('lsp_installer not founded')
   return false
@@ -29,25 +79,6 @@ if not lspkind_ok then
   vim.notify('lspkind not founded')
   return false
 end
-
-local servers = {
-  'bashls',
-  -- 'cssls',
-  'cmake',
-  'clangd',
-  -- 'diagnosticls',
-  'html',
-  'jsonls',
-  -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
-  'pyright',
-  'gopls',
-  'sumneko_lua',
-  -- 'tsserver',
-  --'texlab',
-  -- 'golangci_lint_ls',
-  -- 'yamlls',
-  'vimls',
-}
 
 lsp_installer.setup({
   automatic_installation = true,
@@ -88,42 +119,14 @@ cmp.setup({
 
   -- menu
   formatting = {
-    fields = { 'kind', 'abbr', 'menu' },
+    fields = {
+      'kind',
+      'abbr',
+      'menu'
+    },
     format = lspkind.cmp_format({
       -- https://code.visualstudio.com/api/references/icons-in-labels
-      symbol_map = {
-        --   
-        Text = '',
-        Method = '',
-        -- Function = "",
-        Function = 'ƒ',
-        -- 
-        Constructor = '',
-        Field = '',
-        Variable = '',
-        Class = '𝓒',
-        Interface = '',
-        Module = '',
-        Property = 'ﰠ',
-        Unit = '',
-        Value = '',
-        Enum = '',
-        -- Keyword = "",
-        Keyword = '🔐',
-        Snippet = '',
-        Color = '',
-        Reference = '',
-        File = '',
-        Folder = '',
-        EnumMember = '',
-        Constant = '',
-        -- 
-        Struct = '𝓢',
-        Event = '',
-        Operator = '',
-        -- 
-        TypeParameter = '𝙏',
-      },
+      symbol_map = symbol_map,
       mode = 'symbol',
       --mode = "symbol_text",
       maxwidth = 50,
@@ -152,13 +155,12 @@ cmp.setup({
   -- sources
   sources = {
     { name = 'nvim_lsp' },
-    { name = 'buffer', keyword_length = 2 },
+    { name = 'buffer' },
     { name = 'ultisnips' },
     { name = 'path' },
     { name = 'neorg' },
     { name = 'emoji' },
     { name = 'nvim-lua' },
-    -- { name = 'cmdline' },
   },
 })
 
@@ -203,33 +205,6 @@ vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(vim.lsp.diagn
     header = '',
     prefix = '',
   },
-})
-
--- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
-cmp.setup.cmdline('/', {
-  --view = {
-  --entries = { name = 'wildmenu', separator = '|' }
-  --},
-  mapping = cmp.mapping.preset.cmdline(),
-  sources = {
-    { name = 'buffer' },
-  },
-})
-
-cmp.setup.cmdline('?', {
-  mapping = cmp.mapping.preset.cmdline(),
-  sources = {
-    { name = 'buffer' },
-  },
-})
-
-cmp.setup.cmdline(':', {
-  mapping = cmp.mapping.preset.cmdline(),
-  sources = cmp.config.sources({
-    { name = 'cmdline' },
-  }, {
-    { name = 'path' },
-  }),
 })
 
 vim.cmd([[

@@ -1,8 +1,8 @@
 local package = 'plugins.lsp/'
 
 local moudles = {
-  'lsp',
   'null-ls',
+  'lsp',
   'lspsignature',
   'treesitter',
   'lspsaga',
