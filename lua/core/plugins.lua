@@ -26,6 +26,7 @@ call plug#begin(s:plug_install_dir)
 if has('nvim')
 
 " @Temporary
+Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'nvim-neorg/neorg', { 'for': 'norg', 'on': 'NeorgStart' }
 Plug 'itchyny/calendar.vim'
 Plug 'ellisonleao/glow.nvim'
@@ -105,5 +106,5 @@ call plug#end()
 " Plug 'danilamihailov/beacon.nvim'
 " bug: invalid window id"
 " Plug 'sunjon/shade.nvim'
-Plug 'jose-elias-alvarez/null-ls.nvim'
+" Plug 'jiangmiao/auto-pairs'
 ]])

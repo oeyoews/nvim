@@ -8,7 +8,7 @@ local moudles = {
   'gitsigns',
   'comment',
   'indent',
-  'autopairs',
+  -- 'autopairs',
   'highstr',
   'neorg',
   'whichkey',
