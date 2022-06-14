@@ -26,6 +26,7 @@ call plug#begin(s:plug_install_dir)
 if has('nvim')
 
 " @Temporary
+Plug 'sunjon/shade.nvim'
 Plug 'j-hui/fidget.nvim'
 Plug 'sindrets/diffview.nvim'
 Plug 'jose-elias-alvarez/null-ls.nvim'
@@ -107,7 +108,6 @@ call plug#end()
 " vim version
 " Plug 'danilamihailov/beacon.nvim'
 " bug: invalid window id"
-" Plug 'sunjon/shade.nvim'
 " Plug 'jiangmiao/auto-pairs'
 " Plug 'rafcamlet/nvim-luapad'
 ]])

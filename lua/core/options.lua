@@ -17,6 +17,7 @@ set linebreak
 set hidden
 set ignorecase
 "set textwidth=120
+set colorcolumn=80
 set shortmess+=aIc  " atI clear advertise
 set lazyredraw
 set vb t_vb=  " no blinking no bells
