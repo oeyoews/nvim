@@ -4,10 +4,10 @@ if not ok then
   return false
 end
 
-filetype.setup {
+filetype.setup({
   overrides = {
     complex = {
       [".service"] = "systemd",
     },
   },
-}
+})

@@ -1,7 +1,7 @@
 local lspsaga_ok, lspsaga = pcall(require, "lspsaga")
 
 if not lspsaga_ok then
-  vim.notify "lspsaga not founded"
+  vim.notify("lspsaga not founded")
   return
 end
 -- ymbol("Error", "")
@@ -9,23 +9,23 @@ end
 -- lspSymbol("Hint", "")
 -- lspSymbol("Warn", "")
 
-lspsaga.setup { -- defaults ...
+lspsaga.setup({ -- defaults ...
   debug = false,
   use_saga_diagnostic_sign = true,
   -- diagnostic sign
-  -- error_sign = ' ',
-  error_sign = " ",
+  error_sign = ' ',
+  -- error_sign = " ",
   --error_sign = "🌹",
   -- error_sign = "",
-  -- warn_sign = '  ',
-  warn_sign = "",
+  warn_sign = '',
+  -- warn_sign = " ",
   hint_sign = " ",
-  -- infor_sign = '   ',
-  infor_sign = " ",
+  infor_sign = ' ',
+  -- infor_sign = " ",
   diagnostic_header_icon = "",
   --code_action_icon = "👷",
-  -- code_action_icon = '💡 ',
-  code_action_icon = " ",
+  code_action_icon = '💡',
+  -- code_action_icon = " ",
   code_action_prompt = {
     enable = true,
     sign = true,
@@ -59,9 +59,9 @@ lspsaga.setup { -- defaults ...
   rename_prompt_prefix = "➤ ",
   server_filetype_map = {},
   diagnostic_prefix_format = "%d. ",
-}
+})
 
-vim.cmd [[
+vim.cmd([[
 nnoremap <silent> <space>le <cmd>Lspsaga code_action<cr>
 nnoremap <silent>K :Lspsaga hover_doc<CR>
 nnoremap <silent> <C-f> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>
@@ -76,4 +76,4 @@ nnoremap <silent> [e :Lspsaga diagnostic_jump_next<CR>
 nnoremap <silent> ]e :Lspsaga diagnostic_jump_prev<CR>
 " nnoremap <silent> <A-d> :Lspsaga open_floaterm<CR>
 " tnoremap <silent> <A-c>:Lspsaga close_floaterm<CR>
-]]
+]])

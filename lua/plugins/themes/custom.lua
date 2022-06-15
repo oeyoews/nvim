@@ -1,4 +1,4 @@
-vim.cmd [[
+vim.cmd([[
 hi NormalFloat  ctermbg=NONE guibg=NONE
 
 hi Visual         ctermbg=242 gui=reverse
@@ -29,4 +29,4 @@ autocmd TextYankPost * lua vim.highlight.on_yank {higroup="IncSearch",
 " restore the cursor location
 autocmd! BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-]]
+]])

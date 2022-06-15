@@ -5,7 +5,7 @@ if not status_ok then
 end
 
 vim.notify = notify
-notify.setup {
+notify.setup({
   -- Animation style (see below for details)
   stages = "slide",
 
@@ -41,8 +41,8 @@ notify.setup {
     DEBUG = "",
     TRACE = "✎",
   },
-}
+})
 
-vim.cmd [[
+vim.cmd([[
 nnoremap <silent> <leader>bM :Notifications<cr>
-]]
+]])

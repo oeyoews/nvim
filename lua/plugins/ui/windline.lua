@@ -1,18 +1,18 @@
 local ok, windline = pcall(require, "windline")
 
 if not ok then
-  vim.notify "windline not founded"
+  vim.notify("windline not founded")
   return false
 end
 
-local helper = require "windline.helpers"
-local b_components = require "windline.components.basic"
+local helper = require("windline.helpers")
+local b_components = require("windline.components.basic")
 local state = _G.WindLine.state
 
 -- local gps = require("nvim-gps")
 
-local lsp_comps = require "windline.components.lsp"
-local git_comps = require "windline.components.git"
+local lsp_comps = require("windline.components.lsp")
+local git_comps = require("windline.components.git")
 -- local git_rev = require('windline.components.git_rev')
 
 local hl_list = {
@@ -94,10 +94,10 @@ basic.lsp_diagnos = {
   text = function(bufnr)
     if lsp_comps.check_lsp(bufnr) then
       return {
-        { lsp_comps.lsp_error { format = "  %s", show_zero = true }, "red" },
-        { lsp_comps.lsp_warning { format = "  %s", show_zero = true }, "yellow" },
+        { lsp_comps.lsp_error({ format = "  %s", show_zero = true }), "red" },
+        { lsp_comps.lsp_warning({ format = "  %s", show_zero = true }), "yellow" },
         -- 
-        { lsp_comps.lsp_hint { format = "  %s", show_zero = true }, "blue" },
+        { lsp_comps.lsp_hint({ format = "  %s", show_zero = true }), "blue" },
       }
     end
     return ""
@@ -119,7 +119,7 @@ basic.file = {
         { b_components.line_col_lua, "white" },
         { b_components.progress_lua, "" },
         { " ", "" },
-        { b_components.file_modified " ", "magenta" },
+        { b_components.file_modified(" "), "magenta" },
       }
     else
       return {
@@ -127,7 +127,7 @@ basic.file = {
         { " ", "" },
         { b_components.cache_file_name("[No Name]", "unique"), "magenta" },
         { " ", "" },
-        { b_components.file_modified " ", "magenta" },
+        { b_components.file_modified(" "), "magenta" },
       }
     end
   end,
@@ -158,9 +158,9 @@ basic.git = {
   text = function(bufnr)
     if git_comps.is_git(bufnr) then
       return {
-        { git_comps.diff_added { format = "  %s", show_zero = true }, "green" },
-        { git_comps.diff_removed { format = "  %s", show_zero = true }, "red" },
-        { git_comps.diff_changed { format = "  %s", show_zero = true }, "blue" },
+        { git_comps.diff_added({ format = "  %s", show_zero = true }), "green" },
+        { git_comps.diff_removed({ format = "  %s", show_zero = true }), "red" },
+        { git_comps.diff_changed({ format = "  %s", show_zero = true }), "blue" },
       }
     end
     return ""
@@ -196,7 +196,7 @@ local explorer = {
     { "  ", { "black", "red" } },
     { helper.separators.slant_right, { "red", "NormalBg" } },
     { b_components.divider, "" },
-    { b_components.file_name "", { "white", "NormalBg" } },
+    { b_components.file_name(""), { "white", "NormalBg" } },
   },
   always_active = true,
   show_last_status = true,
@@ -215,7 +215,7 @@ basic.lsp_name = {
       }
     end
     return {
-      { b_components.cache_file_type { icon = true }, "magenta" },
+      { b_components.cache_file_type({ icon = true }), "magenta" },
     }
   end,
 }
@@ -248,7 +248,7 @@ local default = {
   },
 }
 
-windline.setup {
+windline.setup({
   colors_name = function(colors)
     -- print(vim.inspect(colors))
     -- ADD MORE COLOR HERE ----
@@ -259,4 +259,4 @@ windline.setup {
     quickfix,
     explorer,
   },
-}
+})

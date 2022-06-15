@@ -1,5 +1,5 @@
-local util = require "tokyonight.util"
-local theme = require "tokyonight.theme"
+local util = require("tokyonight.util")
+local theme = require("tokyonight.theme")
 
 local M = {}
 

@@ -2,7 +2,7 @@ local status_ok, tokyonight = pcall(require, "tokyonight")
 local g = vim.g
 
 if not status_ok then
-  vim.notify "tokyonight not found"
+  vim.notify("tokyonight not found")
   return false
 end
 

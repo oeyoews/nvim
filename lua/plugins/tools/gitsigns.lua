@@ -1,10 +1,10 @@
 local status_ok, gitsigns = pcall(require, "gitsigns")
 if not status_ok then
-  vim.notify "gitsigns not found!"
+  vim.notify("gitsigns not found!")
   return
 end
 
-gitsigns.setup {
+gitsigns.setup({
   signs = {
     add = { hl = "GitSignsAdd", text = "│", numhl = "GitSignsAddNr", linehl = "GitSignsAddLn" },
     change = { hl = "GitSignsChange", text = "│", numhl = "GitSignsChangeNr", linehl = "GitSignsChangeLn" },
@@ -74,4 +74,4 @@ gitsigns.setup {
     --map('o', 'ih', ':<C-U>Gitsigns select_hunk<CR>')
     --map('x', 'ih', ':<C-U>Gitsigns select_hunk<CR>')
   end,
-}
+})

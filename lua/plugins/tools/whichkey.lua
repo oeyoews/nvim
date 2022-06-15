@@ -1,11 +1,11 @@
 local which_key_ok, which_key = pcall(require, "which-key")
 
 if not which_key_ok then
-  vim.notify "whickey not founded"
+  vim.notify("whickey not founded")
   return false
 end
 
-which_key.setup {
+which_key.setup({
 
   plugins = {
     marks = false,
@@ -53,7 +53,7 @@ which_key.setup {
 
   show_help = false, -- more silent in minimal buffer
   ignore_missing = false, -- not modify it
-}
+})
 
 which_key.register({
 

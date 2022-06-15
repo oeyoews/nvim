@@ -8,21 +8,21 @@
 local cmp_ok, cmp = pcall(require, "cmp")
 
 if not cmp_ok then
-  vim.notify "cmp not founded"
+  vim.notify("cmp not founded")
   return false
 end
 
 local lspkind_ok, lspkind = pcall(require, "lspkind")
 
 if not lspkind_ok then
-  vim.notify "lspkind not founded"
+  vim.notify("lspkind not founded")
   return false
 end
 
 local lspformat_ok, lsp_format = pcall(require, "lsp-format")
 
 if not lspformat_ok then
-  vim.notify "lsp_format not founded"
+  vim.notify("lsp_format not founded")
   return false
 end
 
@@ -59,7 +59,7 @@ local symbol_map = {
   TypeParameter = "𝙏",
 }
 
-cmp.setup {
+cmp.setup({
   view = {
     entries = "custom", -- can be "custom", "wildmenu" or "native"
     --entries = { name = 'custom', selection_order = 'near_cursor' }
@@ -74,7 +74,7 @@ cmp.setup {
   mapping = {
     ["<S-Tab>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "s" }),
     ["<Tab>"] = cmp.mapping(cmp.mapping.select_next_item(), { "i", "s" }),
-    ["<CR>"] = cmp.mapping.confirm { select = false },
+    ["<CR>"] = cmp.mapping.confirm({ select = false }),
     -- ['<C-e>'] = cmp.mapping.complete(),
     ["<C-c>"] = cmp.mapping.close(),
   },
@@ -86,7 +86,7 @@ cmp.setup {
       "abbr",
       "menu",
     },
-    format = lspkind.cmp_format {
+    format = lspkind.cmp_format({
       -- https://code.visualstudio.com/api/references/icons-in-labels
       symbol_map = symbol_map,
       mode = "symbol",
@@ -100,7 +100,7 @@ cmp.setup {
         path = "(Pat)",
         emoji = "(Emo)",
       },
-    },
+    }),
   },
 
   -- config default window
@@ -124,16 +124,16 @@ cmp.setup {
     { name = "emoji" },
     { name = "nvim-lua" },
   },
-}
+})
 
-local lspconfig = require "lspconfig"
+local lspconfig = require("lspconfig")
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 
 for _, lsp in ipairs(servers) do
-  lspconfig[lsp].setup {
+  lspconfig[lsp].setup({
     -- ??
     flags = {
       debounce_text_changes = 150,
@@ -142,5 +142,5 @@ for _, lsp in ipairs(servers) do
     on_attach = lsp_format.on_attach,
     -- link lsp-servers
     capabilities = capabilities,
-  }
+  })
 end

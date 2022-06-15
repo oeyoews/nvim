@@ -1,3 +1,3 @@
-vim.cmd [[
+vim.cmd([[
 nnoremap <silent> <leader>tt :TroubleToggle<cr>
-]]
+]])

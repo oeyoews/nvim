@@ -1,15 +1,15 @@
 local telescope_ok, telescope = pcall(require, "telescope")
 
 if not telescope_ok then
-  vim.notify "telescope not founded"
+  vim.notify("telescope not founded")
   return
 end
 
-local actions = require "telescope.actions"
+local actions = require("telescope.actions")
 
 -- disable preview binaries
-local previewers = require "telescope.previewers"
-local Job = require "plenary.job"
+local previewers = require("telescope.previewers")
+local Job = require("plenary.job")
 local new_maker = function(filepath, bufnr, opts)
   filepath = vim.fn.expand(filepath)
   Job
@@ -31,7 +31,7 @@ local new_maker = function(filepath, bufnr, opts)
     :sync()
 end
 
-telescope.setup {
+telescope.setup({
   defaults = {
     mappings = {
       n = { ["q"] = actions.close },
@@ -70,9 +70,9 @@ telescope.setup {
       theme = "ivy",
     },
   },
-}
+})
 
-vim.cmd [[
+vim.cmd([[
 nnoremap <leader>ff <cmd>Telescope find_files <cr>
 nnoremap <leader>to <cmd>Telescope oldfiles <cr>
 nnoremap <leader>tbb <cmd>Telescope buffers <cr>
@@ -94,4 +94,4 @@ highlight TelescopePreviewBorder  guifg=#bd93f9
 
 " Color the prompt prefix
 " highlight TelescopePromptPrefix   guifg=green
-]]
+]])

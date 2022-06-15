@@ -1,4 +1,4 @@
-local hsluv = require "tokyonight.hsluv"
+local hsluv = require("tokyonight.hsluv")
 
 local util = {}
 
@@ -116,7 +116,7 @@ function util.highlight(group, color)
 end
 
 function util.debug(colors)
-  colors = colors or require "tokyonight.colors"
+  colors = colors or require("tokyonight.colors")
   -- Dump unused colors
   for name, color in pairs(colors) do
     if type(color) == "table" then
@@ -132,27 +132,27 @@ end
 --- Delete the autocmds when the theme changes to something else
 function util.onColorScheme()
   if vim.g.colors_name ~= "tokyonight" then
-    vim.cmd [[autocmd! TokyoNight]]
-    vim.cmd [[augroup! TokyoNight]]
+    vim.cmd([[autocmd! TokyoNight]])
+    vim.cmd([[augroup! TokyoNight]])
   end
 end
 
 ---@param config Config
 function util.autocmds(config)
-  vim.cmd [[augroup TokyoNight]]
-  vim.cmd [[  autocmd!]]
-  vim.cmd [[  autocmd ColorScheme * lua require("tokyonight.util").onColorScheme()]]
+  vim.cmd([[augroup TokyoNight]])
+  vim.cmd([[  autocmd!]])
+  vim.cmd([[  autocmd ColorScheme * lua require("tokyonight.util").onColorScheme()]])
   if config.dev then
-    vim.cmd [[  autocmd BufWritePost */lua/tokyonight/** nested colorscheme tokyonight]]
+    vim.cmd([[  autocmd BufWritePost */lua/tokyonight/** nested colorscheme tokyonight]])
   end
   for _, sidebar in ipairs(config.sidebars) do
     if sidebar == "terminal" then
-      vim.cmd [[  autocmd TermOpen * setlocal winhighlight=Normal:NormalSB,SignColumn:SignColumnSB]]
+      vim.cmd([[  autocmd TermOpen * setlocal winhighlight=Normal:NormalSB,SignColumn:SignColumnSB]])
     else
       vim.cmd([[  autocmd FileType ]] .. sidebar .. [[ setlocal winhighlight=Normal:NormalSB,SignColumn:SignColumnSB]])
     end
   end
-  vim.cmd [[augroup end]]
+  vim.cmd([[augroup end]])
 end
 
 -- Simple string interpolation.
@@ -224,7 +224,7 @@ end
 function util.load(theme)
   -- only needed to clear when not the default colorscheme
   if vim.g.colors_name then
-    vim.cmd "hi clear"
+    vim.cmd("hi clear")
   end
   -- if vim.fn.exists("syntax_on") then
   --   vim.cmd("syntax reset")
@@ -278,7 +278,7 @@ end
 function util.light(brightness)
   for hl_name, hl in pairs(vim.api.nvim__get_hl_defs(0)) do
     local def = {}
-    for key, def_key in pairs { foreground = "fg", background = "bg", special = "sp" } do
+    for key, def_key in pairs({ foreground = "fg", background = "bg", special = "sp" }) do
       if type(hl[key]) == "number" then
         local hex = string.format("#%06x", hl[key])
         local color = util.invertColor(hex)
@@ -289,7 +289,7 @@ function util.light(brightness)
       end
     end
     if hl_name ~= "" and #def > 0 then
-      for _, style in pairs { "bold", "italic", "underline", "undercurl", "reverse" } do
+      for _, style in pairs({ "bold", "italic", "underline", "undercurl", "reverse" }) do
         if hl[style] then
           table.insert(def, "gui=" .. style)
         end
@@ -304,7 +304,7 @@ function util.random()
   local colors = {}
   for hl_name, hl in pairs(vim.api.nvim__get_hl_defs(0)) do
     local def = {}
-    for key, def_key in pairs { foreground = "fg", background = "bg", special = "sp" } do
+    for key, def_key in pairs({ foreground = "fg", background = "bg", special = "sp" }) do
       if type(hl[key]) == "number" then
         local hex = string.format("#%06x", hl[key])
         local color = colors[hex] and colors[hex] or util.randomColor(hex)
@@ -313,7 +313,7 @@ function util.random()
       end
     end
     if hl_name ~= "" and #def > 0 then
-      for _, style in pairs { "bold", "italic", "underline", "undercurl", "reverse" } do
+      for _, style in pairs({ "bold", "italic", "underline", "undercurl", "reverse" }) do
         if hl[style] then
           table.insert(def, "gui=" .. style)
         end

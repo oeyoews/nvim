@@ -1,27 +1,27 @@
 local fn = vim.fn
 
-local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
+local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 
 if fn.empty(fn.glob(install_path)) > 0 then
-  packer_bootstrap = fn.system {
+  packer_bootstrap = fn.system({
     "git",
     "clone",
     "--depth",
     "1",
     "https://github.com/wbthomason/packer.nvim",
     install_path,
-  }
-  vim.cmd "packadd packer.nvim"
+  })
+  vim.cmd("packadd packer.nvim")
 end
 
 local ok, packer = pcall(require, "packer")
 
 if not ok then
-  vim.notify "packer not founded"
+  vim.notify("packer not founded")
   return false
 end
 
-local util = require "packer.util"
+local util = require("packer.util")
 
 local plugins = {
   "wbthomason/packer.nvim",
@@ -137,7 +137,7 @@ local plugins = {
   },
 }
 
-packer.init {
+packer.init({
   config = {
     profile = {
       enable = true,
@@ -146,15 +146,15 @@ packer.init {
   },
   display = {
     open_fn = function()
-      return require("packer.util").float { border = "double" }
+      return require("packer.util").float({ border = "double" })
     end,
   },
   git = {
     clone_timeout = 6000,
   },
   autoremove = false,
-  compile_path = util.join_paths(vim.fn.stdpath "data", "compile", "packer_compiled.lua"),
-}
+  compile_path = util.join_paths(vim.fn.stdpath("data"), "compile", "packer_compiled.lua"),
+})
 
 packer.startup(function(use)
   for _, plugin in pairs(plugins) do
@@ -174,12 +174,12 @@ packer.startup(function(use)
   packer.install()
 
   -- automatically packer_compiled on startup
-  vim.cmd [[PackerCompile]]
+  vim.cmd([[PackerCompile]])
 end)
 
-vim.cmd [[
+vim.cmd([[
 nnoremap <Leader>vc <Cmd>PackerClean<CR>
 nnoremap <Leader>vi <Cmd>PackerInstall<cr>
 nnoremap <Leader>vs <Cmd>PackerSync<CR>
 nnoremap <Leader>vU <Cmd>PackerCompile<CR>
-]]
+]])

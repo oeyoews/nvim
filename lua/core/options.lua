@@ -9,7 +9,7 @@ opt.updatetime = 200
 opt.timeoutlen = 1000
 
 -- disable nvim intro
-opt.shortmess:append "acsI"
+opt.shortmess:append("acsI")
 opt.splitright = true
 opt.splitbelow = true
 
@@ -57,12 +57,12 @@ opt.shell = "/bin/zsh"
 
 -- set shada path
 vim.schedule(function()
-  vim.opt.shadafile = vim.fn.expand "$HOME" .. "/.local/share/nvim/shada/main.shada"
-  vim.cmd [[ silent! rsh ]]
+  vim.opt.shadafile = vim.fn.expand("$HOME") .. "/.local/share/nvim/shada/main.shada"
+  vim.cmd([[ silent! rsh ]])
 end)
 
-vim.cmd [[
+vim.cmd([[
 set listchars=tab:\ \ ,
 set whichwrap+=<,>,[,]
 set spelllang=en_us,cjk
-]]
+]])

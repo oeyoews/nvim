@@ -2,7 +2,7 @@
 local ok, null_ls = pcall(require, "null-ls")
 
 if not ok then
-  vim.notify "null-ls not founded"
+  vim.notify("null-ls not founded")
   return false
 end
 
@@ -17,7 +17,7 @@ local sources = {
   -- builtin.diagnostics.gitlint, -- need install gitlint
   -- builtin.completion.spell,
   -- builtin.code_actions.shellcheck
-  diagnostics.codespell.with {
+  diagnostics.codespell.with({
     disabled_filetypes = { "c" },
     filetypes = {
       -- NOTE: not mix two styles
@@ -28,11 +28,11 @@ local sources = {
       "vim",
       "gitcommit",
     },
-  }, -- need install codespell
+  }), -- need install codespell
 }
 
-null_ls.setup {
+null_ls.setup({
   update_in_insert = false,
   debounce = 500,
   sources = sources,
-}
+})

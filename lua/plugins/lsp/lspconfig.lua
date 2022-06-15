@@ -1,11 +1,11 @@
-vim.diagnostic.config {
+vim.diagnostic.config({
   virtual_text = {
     prefix = "",
   },
   signs = true,
   underline = true,
   update_in_insert = false,
-}
+})
 
 -- icon note this order in last
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
@@ -38,6 +38,6 @@ vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.s
   row = -1,
 })
 
-vim.cmd [[
+vim.cmd([[
   nnoremap <silent> <leader>li :LspInfo<cr>
-]]
+]])

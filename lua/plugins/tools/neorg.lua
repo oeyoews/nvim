@@ -1,7 +1,7 @@
 local ok, neorg = pcall(require, "neorg")
 
 if not ok then
-  vim.notify "neorg not founded"
+  vim.notify("neorg not founded")
   return false
 end
 
@@ -18,7 +18,7 @@ else -- Otherwise wait until Neorg gets started and load the completion module t
   neorg.callbacks.on_event("core.started", load_completion)
 end
 
-neorg.setup {
+neorg.setup({
   load = {
     ["core.defaults"] = {},
     ["core.norg.concealer"] = {
@@ -38,4 +38,4 @@ neorg.setup {
       },
     },
   },
-}
+})

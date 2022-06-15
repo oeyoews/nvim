@@ -1,12 +1,12 @@
-local util = require "tokyonight.util"
-local colors = require "tokyonight.colors"
+local util = require("tokyonight.util")
+local colors = require("tokyonight.colors")
 
 local M = {}
 
 ---@param config Config
 ---@return Theme
 function M.setup(config)
-  config = config or require "tokyonight.config"
+  config = config or require("tokyonight.config")
 
   ---@class Theme
   local theme = {}
@@ -468,7 +468,7 @@ function M.setup(config)
     theme.base.StatusLineNC = inactive
 
     -- LuaLine
-    for _, section in ipairs { "a", "b", "c" } do
+    for _, section in ipairs({ "a", "b", "c" }) do
       theme.defer["lualine_" .. section .. "_inactive"] = inactive
     end
   end

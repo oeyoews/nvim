@@ -4,10 +4,10 @@ if not ok then
   return false
 end
 
-symbolsoutline.setup {
+symbolsoutline.setup({
   auto_preview = false,
-}
+})
 
-vim.cmd [[
+vim.cmd([[
 nnoremap <silent> <SPACE>ls <Cmd>SymbolsOutline<CR><C-w>w
-]]
+]])

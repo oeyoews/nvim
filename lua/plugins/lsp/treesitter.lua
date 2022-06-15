@@ -1,7 +1,7 @@
 local nvim_treesitter_ok, tree_configs = pcall(require, "nvim-treesitter.configs")
 
 if not nvim_treesitter_ok then
-  vim.notify "nvim_treesitter not founded"
+  vim.notify("nvim_treesitter not founded")
   return
 end
 
@@ -39,7 +39,7 @@ local ensure_installed = {
   -- "norg", "norg_meta", "norg_table",
 }
 -- tips: tsmoduleinfo
-tree_configs.setup {
+tree_configs.setup({
   autotag = {
     enable = true,
   },
@@ -94,4 +94,4 @@ tree_configs.setup {
       clear_on_cursor_move = true,
     },
   },
-}
+})
