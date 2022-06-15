@@ -1,6 +1,3 @@
-vim.cmd([[
-  set spell
-]])
 local ok, spellsitter = pcall(require, 'spellsitter')
 
 if not ok then
@@ -9,10 +6,11 @@ if not ok then
 end
 
 spellsitter.setup({
-  -- enable = true,
-  enable = {
-    'lua',
-    'vim',
-    'c',
-  }
+  enable = true,
+  -- enable = {
+  --   'lua',
+  --   'vim',
+  --   'c',
+  --   ''
+  -- }
 })

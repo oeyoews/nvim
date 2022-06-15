@@ -91,5 +91,5 @@ noremap <space>pp "*p <cmd> lua vim.notify("🗒️ Copy text from SystemClipBoa
 nnoremap <silent> <space>yp :<C-U>let @+=expand('%:p') <bar> lua vim.notify(" 🦜 Copy Fpath")<cr>
 
 " toggle spell
-nnoremap <space>ss <cmd>setlocal invspell <bar> lua vim.notify("Toggle Spell")<cr>
+nnoremap <space>ss <cmd>set invspell <bar> lua vim.notify("Toggle Spell")<cr>
 ]])
