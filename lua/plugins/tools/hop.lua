@@ -5,6 +5,7 @@ if not hop_ok then
 end
 
 hop.setup()
+
 vim.cmd([[
     nnoremap <leader>hw  <cmd>HopWord<CR>
     nnoremap <leader>hl <cmd>HopLine<cr>

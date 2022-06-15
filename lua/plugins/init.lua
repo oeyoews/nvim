@@ -11,7 +11,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
     'https://github.com/wbthomason/packer.nvim',
     install_path,
   })
-  vim.cmd("packadd packer.nvim")
+  vim.cmd('packadd packer.nvim')
 end
 
 local ok, packer = pcall(require, 'packer')
@@ -21,7 +21,7 @@ if not ok then
   return false
 end
 
-local util = require 'packer.util'
+local util = require('packer.util')
 
 local plugins = {
   'wbthomason/packer.nvim',
@@ -42,7 +42,7 @@ local plugins = {
     run = ':TSUpdate',
     requires = {
       'p00f/nvim-ts-rainbow',
-    }
+    },
   },
   'norcalli/nvim-colorizer.lua',
   'windwp/windline.nvim',
@@ -155,7 +155,6 @@ packer.init({
   compile_path = util.join_paths(vim.fn.stdpath('data'), 'compile', 'packer_compiled.lua'),
 })
 
-
 packer.startup(function(use)
   for _, plugin in pairs(plugins) do
     use(plugin)
@@ -176,7 +175,6 @@ packer.startup(function(use)
   -- automatically packer_compiled on startup
   vim.cmd([[PackerCompile]])
 end)
-
 
 vim.cmd([[
 nnoremap <Leader>vc <Cmd>PackerClean<CR>
