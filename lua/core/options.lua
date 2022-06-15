@@ -4,6 +4,11 @@ g.did_load_filetypes = 0
 g.do_filetype_lua = 1
 g.python3_host_prog = "/usr/bin/python3"
 
+-- opt.colorcolumn = "99999" -- fixes indentline for now
+opt.completeopt = { "menuone", "noselect" }
+opt.pumheight = 10
+-- opt.guifont = "monospace:h27"
+
 -- time
 opt.updatetime = 200
 opt.timeoutlen = 1000
@@ -40,6 +45,7 @@ opt.ruler = false
 
 -- opt.clipboard = "unnamedplus"
 opt.title = true
+opt.titlestring = "%<%F%=%l/%L - nvim"
 opt.list = true
 opt.linebreak = true
 opt.hidden = true

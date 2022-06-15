@@ -183,3 +183,7 @@ nnoremap <Leader>vi <Cmd>PackerInstall<cr>
 nnoremap <Leader>vs <Cmd>PackerSync<CR>
 nnoremap <Leader>vU <Cmd>PackerCompile<CR>
 ]])
+
+--[[
+    'declancm/cinnamon.nvim',
+--]]
