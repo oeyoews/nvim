@@ -102,7 +102,6 @@ local plugins = {
   {
     'ekickx/clipboard-image.nvim',
     ft = 'markdown',
-    cmd = 'PostImg',
   },
   'Pocco81/HighStr.nvim',
   {
@@ -155,18 +154,28 @@ packer.init({
   compile_path = util.join_paths(vim.fn.stdpath('data'), 'compile', 'packer_compiled.lua'),
 })
 
+
 packer.startup(function(use)
   for _, plugin in pairs(plugins) do
     use(plugin)
   end
 
+  -- Automatically set up your configuration after cloning packer.nvim
+  -- Put this at the end after all plugins
   if packer_bootstrap then
     if packer.config.compile_path then
       os.remove(packer.config.compile_path)
     end
-    vim.cmd([[PackerCompile]])
+    packer.sync()
   end
+
+  -- automatically install missing plugin(s)
+  packer.install()
+
+  -- automatically packer_compiled on startup
+  vim.cmd([[PackerCompile]])
 end)
+
 
 vim.cmd([[
 nnoremap <Leader>vc <Cmd>PackerClean<CR>
