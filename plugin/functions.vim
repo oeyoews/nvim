@@ -55,7 +55,7 @@ nnoremap <silent> <space>eh <cmd>call FindVanilla()<cr>
 
 
 function! FindCustomConfig() abort
-  find ~/.config/nvim/lua/plugins/plugins.lua
+  find ~/.config/nvim/lua/plugins/init.lua
 endfunction
 
 function! FindPlugin() abort

@@ -2,6 +2,7 @@ local package = 'plugins' -- load package
 
 local modules = {
   enable_modules = {
+    'init',
     'perfect', -- performance
     'themes', -- some themes
     'tools', -- some tools
