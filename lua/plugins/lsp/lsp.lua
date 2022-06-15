@@ -26,7 +26,7 @@ if not lspformat_ok then
   return false
 end
 
-local servers = require("plugins.lsp.lspinstall").servers
+local lsp_servers = require("plugins.lsp.servers").servers
 
 local symbol_map = {
   --         
@@ -126,14 +126,16 @@ cmp.setup({
   },
 })
 
-local lspconfig = require("lspconfig")
+-- local lspconfig = require("lspconfig")
+-- fixme
+local lspconfig_ok, lspconfig = pcall(require, "lspconfig")
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 
-for _, lsp in ipairs(servers) do
-  lspconfig[lsp].setup({
+for _, lsp_server in ipairs(lsp_servers) do
+  lspconfig[lsp_server].setup({
     -- ??
     flags = {
       debounce_text_changes = 150,

@@ -5,31 +5,12 @@ if not ok then
   return false
 end
 
-local M = {}
-
-M.servers = {
-  "bashls",
-  -- 'cssls',
-  "cmake",
-  "clangd",
-  -- 'diagnosticls',
-  "html",
-  "jsonls",
-  -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
-  "pyright",
-  "gopls",
-  "sumneko_lua",
-  -- 'tsserver',
-  --'texlab',
-  -- 'golangci_lint_ls',
-  -- 'yamlls',
-  "vimls",
-}
+local servers = require("plugins.lsp.servers").servers
 
 lsp_installer.setup({
   automatic_installation = true,
   -- comment it bug: will have second notify
-  ensure_installed = M.servers,
+  ensure_installed = servers,
   ui = {
     icons = {
       server_installed = "🍺",
@@ -42,5 +23,3 @@ lsp_installer.setup({
     download_url_template = "https://github.com/%s/releases/download/%s/%s",
   },
 })
-
-return M
