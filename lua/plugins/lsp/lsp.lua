@@ -126,9 +126,13 @@ cmp.setup({
   },
 })
 
--- local lspconfig = require("lspconfig")
 -- fixme
 local lspconfig_ok, lspconfig = pcall(require, "lspconfig")
+
+if not lspconfig_ok then
+  vim.notify("lspconfig not fouded")
+  return
+end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 

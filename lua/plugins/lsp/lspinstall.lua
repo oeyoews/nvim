@@ -5,12 +5,12 @@ if not ok then
   return false
 end
 
-local servers = require("plugins.lsp.servers").servers
+local lspinstall_servers = require("plugins.lsp.servers").servers
 
 lsp_installer.setup({
   automatic_installation = true,
   -- comment it bug: will have second notify
-  ensure_installed = servers,
+  ensure_installed = lspinstall_servers,
   ui = {
     icons = {
       server_installed = "🍺",
