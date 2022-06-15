@@ -23,8 +23,9 @@ end
 local plugins = {
   'wbthomason/packer.nvim',
   -- @Perfect
-  'nathom/filetype.nvim',
+  -- BUG: filetype need in impatient after to fix treesitter install times
   'lewis6991/impatient.nvim',
+  'nathom/filetype.nvim',
   'rcarriga/nvim-notify',
   'kyazdani42/nvim-web-devicons',
   'nvim-lua/plenary.nvim',
@@ -83,7 +84,7 @@ local plugins = {
   'abecodes/tabout.nvim',
   {
     'nvim-neorg/neorg',
-    ft = 'norg'
+    -- ft = 'norg'
   },
   {
     'iamcco/markdown-preview.nvim',
@@ -105,7 +106,8 @@ local plugins = {
   'folke/which-key.nvim',
   {
     'nvim-telescope/telescope.nvim',
-    cmd = 'Telescope',
+    -- command will cause some order mass, can't recognize this plugin
+    -- cmd = 'Telescope',
   },
   'phaazon/hop.nvim',
   'kyazdani42/nvim-tree.lua',
