@@ -46,7 +46,7 @@ local plugins = {
     },
   },
   "norcalli/nvim-colorizer.lua",
-  "windwp/windline.nvim",
+  "oeyoews/windline.nvim",
   "lukas-reineke/indent-blankline.nvim",
   "akinsho/bufferline.nvim",
   {

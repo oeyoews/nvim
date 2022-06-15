@@ -4,6 +4,7 @@ g.did_load_filetypes = 0
 g.do_filetype_lua = 1
 g.python3_host_prog = "/usr/bin/python3"
 
+opt.laststatus = 3
 -- opt.colorcolumn = "99999" -- fixes indentline for now
 opt.completeopt = { "menuone", "noselect" }
 opt.pumheight = 10

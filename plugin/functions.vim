@@ -27,7 +27,7 @@ function! ToggleStatusLine() abort
   if &laststatus
     set laststatus=0
   else
-    set laststatus=2
+    set laststatus=3
   endif
 
   " disable lastline right info set ruler!
