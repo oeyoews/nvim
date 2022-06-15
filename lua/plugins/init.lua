@@ -120,13 +120,9 @@ local plugins = {
   'kyazdani42/nvim-tree.lua',
   {
     'dstein64/vim-startuptime',
-    cmd = 'StartupTime',
     commit = '61f122ebc41e9bcf1793c752a728db59feee77bb',
   },
-  {
-    'kevinhwang91/rnvimr',
-    cmd = 'RnvimrToggle',
-  },
+  'kevinhwang91/rnvimr',
   'numToStr/Comment.nvim',
   'folke/persistence.nvim',
   'folke/todo-comments.nvim',
@@ -169,13 +165,12 @@ packer.startup(function(use)
       os.remove(packer.config.compile_path)
     end
     vim.cmd([[PackerCompile]])
-    require('packer').sync()
   end
 end)
 
 vim.cmd([[
-nnoremap <Leader>vi <Cmd>PackerInstall<cr>
 nnoremap <Leader>vc <Cmd>PackerClean<CR>
-nnoremap <Leader>vu <Cmd>PackerSync<CR>
+nnoremap <Leader>vi <Cmd>PackerInstall<cr>
+nnoremap <Leader>vs <Cmd>PackerSync<CR>
 nnoremap <Leader>vU <Cmd>PackerCompile<CR>
 ]])
