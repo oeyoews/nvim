@@ -27,7 +27,7 @@ tree_configs.setup({
   refactor = {
     -- highlight scope code
     highlight_current_scope = { enable = false },
-    -- highlight define and refrence
+    -- highlight define and reference
     highlight_definitions = {
       enable = true,
       clear_on_cursor_move = true,

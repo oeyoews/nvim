@@ -21,6 +21,7 @@ if not ok then
 end
 
 local plugins = {
+  -- @Perfect
   {
     'nathom/filetype.nvim',
   },
@@ -39,22 +40,42 @@ local plugins = {
   {
     'nvim-lua/plenary.nvim',
   },
+
+  -- #Ui
+  {
+    'norcalli/nvim-colorizer.lua',
+  },
+  {
+    'windwp/windline.nvim',
+  },
+  {
+    'lukas-reineke/indent-blankline.nvim',
+  },
+  {
+    'akinsho/bufferline.nvim',
+    tag = "v2.*",
+  },
   {
     'nvim-treesitter/nvim-treesitter',
+    cmd = { "TSInstall", "TSUpdate", "TSUninstall", },
     run = ":TSUpdate",
-    requires = {
-      'nvim-treesitter/nvim-treesitter-refactor',
-      'p00f/nvim-ts-rainbow',
-      'windwp/nvim-ts-autotag',
-      ft = {
-        "html",
-        "xml"
-      },
-    },
   },
+  {
+    'p00f/nvim-ts-rainbow',
+  },
+  {
+    'nvim-treesitter/nvim-treesitter-refactor',
+  },
+  {
+    'windwp/nvim-ts-autotag',
+    ft = { "html", "xml" },
+  },
+
+  -- @LSP
   {
     'hrsh7th/nvim-cmp',
     requires = {
+      'williamboman/nvim-lsp-installer',
       'hrsh7th/cmp-buffer',
       'abecodes/tabout.nvim',
       'hrsh7th/cmp-nvim-lsp',
@@ -71,7 +92,6 @@ local plugins = {
   {
     'neovim/nvim-lspconfig',
     requires = {
-      'williamboman/nvim-lsp-installer',
       'tami5/lspsaga.nvim',
       'onsails/lspkind-nvim',
       'lukas-reineke/lsp-format.nvim',
@@ -82,8 +102,10 @@ local plugins = {
   },
   {
     'folke/trouble.nvim',
-    cmd = 'Trouble',
+    cmd = 'TroubleToggle',
   },
+
+  -- @Tools
   {
     'nvim-neorg/neorg',
     ft = 'norg'
@@ -110,27 +132,17 @@ local plugins = {
   },
   {
     'yianwillis/vimcdoc',
+    lock = true
   },
   {
     'folke/which-key.nvim',
   },
   {
-    'akinsho/bufferline.nvim',
-  },
-  {
     'nvim-telescope/telescope.nvim',
+    cmd = 'Telescope',
   },
   {
     'phaazon/hop.nvim',
-  },
-  {
-    'norcalli/nvim-colorizer.lua',
-  },
-  {
-    'windwp/windline.nvim',
-  },
-  {
-    'lukas-reineke/indent-blankline.nvim',
   },
   {
     'kyazdani42/nvim-tree.lua',
@@ -155,6 +167,7 @@ local plugins = {
   },
   {
     'lewis6991/gitsigns.nvim',
+    opt = true,
   },
   {
     'windwp/nvim-autopairs',

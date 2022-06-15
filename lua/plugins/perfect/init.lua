@@ -1,7 +1,7 @@
 local package = 'plugins.perfect'
 
 local modules = {
-  'performance',
+  'impatient',
   'disable',
   'filetype',
 }
