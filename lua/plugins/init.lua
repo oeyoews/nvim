@@ -38,13 +38,15 @@ local plugins = {
     'nvim-treesitter/nvim-treesitter',
     -- cmd = { "TSInstall", "TSUpdate", "TSUninstall", },
     run = ':TSUpdate',
+    requires = {
+      'nvim-treesitter/nvim-treesitter-refactor',
+      'p00f/nvim-ts-rainbow',
+    }
   },
   'norcalli/nvim-colorizer.lua',
   'windwp/windline.nvim',
   'lukas-reineke/indent-blankline.nvim',
   'akinsho/bufferline.nvim',
-  'p00f/nvim-ts-rainbow',
-  'nvim-treesitter/nvim-treesitter-refactor',
   {
     'windwp/nvim-ts-autotag',
     ft = { 'html', 'xml' },
@@ -174,5 +176,6 @@ end)
 vim.cmd([[
 nnoremap <Leader>vi <Cmd>PackerInstall<cr>
 nnoremap <Leader>vc <Cmd>PackerClean<CR>
-nnoremap <Leader>vu <Cmd>PackerCompile<CR>
+nnoremap <Leader>vu <Cmd>PackerSync<CR>
+nnoremap <Leader>vU <Cmd>PackerCompile<CR>
 ]])
