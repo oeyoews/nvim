@@ -99,7 +99,7 @@ local plugins = {
       vim.fn['mkdp#util#install']()
     end,
   },
-  'b0o/incline.nvim',
+  -- 'b0o/incline.nvim',
   {
     'ekickx/clipboard-image.nvim',
     ft = 'markdown',

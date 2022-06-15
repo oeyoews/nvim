@@ -4,7 +4,7 @@ local modules = {
   'indent',
   'bufferline',
   'windline',
-  'incline',
+  -- 'incline',
 }
 
 for _, load_module in ipairs(modules) do
