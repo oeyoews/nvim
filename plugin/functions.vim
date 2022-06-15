@@ -54,11 +54,11 @@ endfunction
 nnoremap <silent> <space>eh <cmd>call FindVanilla()<cr>
 
 
-function! FindCustomConfig() abort
+function! FindPlugin() abort
   find ~/.config/nvim/lua/plugins/init.lua
 endfunction
 
-function! FindPlugin() abort
+function! FindLsp() abort
   find ~/.config/nvim/lua/plugins/lsp/lsp.lua
 endfunction
 
@@ -68,8 +68,8 @@ endfunction
 
 " open nvim config file
 nnoremap <silent> <space>fi <cmd>call FindInit()<cr>
-nnoremap <silent> <space>fc <cmd>call FindCustomConfig()<cr>
 nnoremap <silent> <space>fp <cmd>call FindPlugin()<cr>
+nnoremap <silent> <space>fl <cmd>call FindLsp()<cr>
 
 nnoremap <silent> <space>hh <cmd>help vanilla.txt<cr>
 

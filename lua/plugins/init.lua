@@ -34,7 +34,7 @@ local plugins = {
   {
     'nvim-treesitter/nvim-treesitter',
     -- cmd = { "TSInstall", "TSUpdate", "TSUninstall", },
-    run = ":TSUpdate",
+    run = ':TSUpdate',
   },
   'norcalli/nvim-colorizer.lua',
   'windwp/windline.nvim',
@@ -44,7 +44,7 @@ local plugins = {
   'nvim-treesitter/nvim-treesitter-refactor',
   {
     'windwp/nvim-ts-autotag',
-    ft = { "html", "xml" },
+    ft = { 'html', 'xml' },
   },
 
   -- @LSP
@@ -63,7 +63,7 @@ local plugins = {
         'hrsh7th/cmp-emoji',
         ft = 'markdown',
       },
-    }
+    },
   },
   {
     'neovim/nvim-lspconfig',
@@ -73,7 +73,7 @@ local plugins = {
       'ray-x/lsp_signature.nvim',
       'jose-elias-alvarez/null-ls.nvim',
       'j-hui/fidget.nvim',
-    }
+    },
   },
   {
     'folke/trouble.nvim',
@@ -88,8 +88,10 @@ local plugins = {
   },
   {
     'iamcco/markdown-preview.nvim',
-    ft = 'markdown',
-    run = function() vim.fn["mkdp#util#install"]() end,
+    cmd = 'MarkdownPreview',
+    run = function()
+      vim.fn['mkdp#util#install']()
+    end,
   },
   'b0o/incline.nvim',
   {
@@ -113,12 +115,12 @@ local plugins = {
   'kyazdani42/nvim-tree.lua',
   {
     'dstein64/vim-startuptime',
-    cmd = "StartupTime",
-    commit = "61f122ebc41e9bcf1793c752a728db59feee77bb",
+    cmd = 'StartupTime',
+    commit = '61f122ebc41e9bcf1793c752a728db59feee77bb',
   },
   {
     'kevinhwang91/rnvimr',
-    cmd = 'RnvimrToggle'
+    cmd = 'RnvimrToggle',
   },
   'numToStr/Comment.nvim',
   'folke/persistence.nvim',
@@ -137,8 +139,8 @@ packer.init({
   config = {
     profile = {
       enable = true,
-      threshold = 1 -- the amount in ms that a plugins load time must be over for it to be included in the profile
-    }
+      threshold = 1, -- the amount in ms that a plugins load time must be over for it to be included in the profile
+    },
   },
   display = {
     open_fn = function()
@@ -153,17 +155,12 @@ packer.init({
 })
 
 packer.startup(function(use)
-  for _, v in pairs(plugins) do
-    use(v)
+  for _, plugin in pairs(plugins) do
+    use(plugin)
   end
 end)
 
 vim.cmd([[
-" augroup packer_user_config
-"   autocmd!
-"   " autocmd BufWritePost plugins.lua luafile % | PackerCompile
-" augroup end
-
 nnoremap <Leader>vi <Cmd>PackerInstall<cr>
 nnoremap <Leader>vc <Cmd>PackerClean<CR>
 nnoremap <Leader>vu <Cmd>PackerCompile<CR>
