@@ -4,8 +4,8 @@ local modules = {
   enable_modules = {
     'plugins', -- install plugin list
     'perfect', -- performance
-    'tools', -- some tools
     'themes', -- some themes
+    'tools', -- some tools
     'ui', -- ui configuration
     'lsp', -- lsp settings
   },

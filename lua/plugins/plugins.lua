@@ -21,79 +21,53 @@ if not ok then
 end
 
 local plugins = {
+  'wbthomason/packer.nvim',
   -- @Perfect
-  {
-    'nathom/filetype.nvim',
-  },
-  {
-    'lewis6991/impatient.nvim',
-  },
-  {
-    'wbthomason/packer.nvim',
-  },
-  {
-    'rcarriga/nvim-notify',
-  },
-  {
-    'kyazdani42/nvim-web-devicons',
-  },
-  {
-    'nvim-lua/plenary.nvim',
-  },
+  'nathom/filetype.nvim',
+  'lewis6991/impatient.nvim',
+  'rcarriga/nvim-notify',
+  'kyazdani42/nvim-web-devicons',
+  'nvim-lua/plenary.nvim',
 
   -- #Ui
-  {
-    'norcalli/nvim-colorizer.lua',
-  },
-  {
-    'windwp/windline.nvim',
-  },
-  {
-    'lukas-reineke/indent-blankline.nvim',
-  },
-  {
-    'akinsho/bufferline.nvim',
-    tag = "v2.*",
-  },
   {
     'nvim-treesitter/nvim-treesitter',
     -- cmd = { "TSInstall", "TSUpdate", "TSUninstall", },
     run = ":TSUpdate",
   },
-  {
-    'p00f/nvim-ts-rainbow',
-  },
-  {
-    'nvim-treesitter/nvim-treesitter-refactor',
-  },
+  'norcalli/nvim-colorizer.lua',
+  'windwp/windline.nvim',
+  'lukas-reineke/indent-blankline.nvim',
+  'akinsho/bufferline.nvim',
+  'p00f/nvim-ts-rainbow',
+  'nvim-treesitter/nvim-treesitter-refactor',
   {
     'windwp/nvim-ts-autotag',
     ft = { "html", "xml" },
   },
 
   -- @LSP
+  'williamboman/nvim-lsp-installer',
   {
     'hrsh7th/nvim-cmp',
     requires = {
-      'williamboman/nvim-lsp-installer',
       'hrsh7th/cmp-buffer',
-      'abecodes/tabout.nvim',
       'hrsh7th/cmp-nvim-lsp',
-      {
-        'hrsh7th/cmp-emoji',
-        ft = 'markdown',
-      },
+      'onsails/lspkind-nvim',
       'hrsh7th/cmp-path',
       'honza/vim-snippets',
       'SirVer/ultisnips',
       'quangnguyen30192/cmp-nvim-ultisnips',
+      {
+        'hrsh7th/cmp-emoji',
+        ft = 'markdown',
+      },
     }
   },
   {
     'neovim/nvim-lspconfig',
     requires = {
       'tami5/lspsaga.nvim',
-      'onsails/lspkind-nvim',
       'lukas-reineke/lsp-format.nvim',
       'ray-x/lsp_signature.nvim',
       'jose-elias-alvarez/null-ls.nvim',
@@ -106,6 +80,7 @@ local plugins = {
   },
 
   -- @Tools
+  'abecodes/tabout.nvim',
   {
     'nvim-neorg/neorg',
     ft = 'norg'
@@ -115,38 +90,25 @@ local plugins = {
     ft = 'markdown',
     run = function() vim.fn["mkdp#util#install"]() end,
   },
-  {
-    'b0o/incline.nvim',
-  },
+  'b0o/incline.nvim',
   {
     'ekickx/clipboard-image.nvim',
     ft = 'markdown',
     cmd = 'PostImg',
   },
-  {
-    'Pocco81/HighStr.nvim',
-  },
+  'Pocco81/HighStr.nvim',
   {
     'itchyny/calendar.vim',
     cmd = 'Calendar',
   },
-  {
-    'yianwillis/vimcdoc',
-    lock = true
-  },
-  {
-    'folke/which-key.nvim',
-  },
+  'yianwillis/vimcdoc',
+  'folke/which-key.nvim',
   {
     'nvim-telescope/telescope.nvim',
     cmd = 'Telescope',
   },
-  {
-    'phaazon/hop.nvim',
-  },
-  {
-    'kyazdani42/nvim-tree.lua',
-  },
+  'phaazon/hop.nvim',
+  'kyazdani42/nvim-tree.lua',
   {
     'dstein64/vim-startuptime',
     cmd = "StartupTime",
@@ -156,19 +118,10 @@ local plugins = {
     'kevinhwang91/rnvimr',
     cmd = 'RnvimrToggle'
   },
-  {
-    'numToStr/Comment.nvim',
-  },
-  {
-    'folke/persistence.nvim',
-  },
-  {
-    'folke/todo-comments.nvim',
-  },
-  {
-    'lewis6991/gitsigns.nvim',
-    opt = true,
-  },
+  'numToStr/Comment.nvim',
+  'folke/persistence.nvim',
+  'folke/todo-comments.nvim',
+  'lewis6991/gitsigns.nvim',
   {
     'windwp/nvim-autopairs',
   },
@@ -179,17 +132,22 @@ local plugins = {
 }
 
 packer.init({
+  config = {
+    profile = {
+      enable = true,
+      threshold = 1 -- the amount in ms that a plugins load time must be over for it to be included in the profile
+    }
+  },
   display = {
     open_fn = function()
-      return require('packer.util').float({ border = 'single' })
+      return require('packer.util').float({ border = 'double' })
     end,
-    prompt_border = 'single',
   },
   git = {
-    clone_timeout = 6000,
+    clone_timeout = 60,
   },
-  auto_clean = true,
   compile_on_sync = true,
+  autoremove = true,
 })
 
 packer.startup(function(use)
@@ -199,10 +157,10 @@ packer.startup(function(use)
 end)
 
 vim.cmd([[
-augroup packer_user_config
-  autocmd!
-  " autocmd BufWritePost plugins.lua luafile % | PackerCompile
-augroup end
+" augroup packer_user_config
+"   autocmd!
+"   " autocmd BufWritePost plugins.lua luafile % | PackerCompile
+" augroup end
 
 nnoremap <Leader>vi <Cmd>PackerInstall<cr>
 nnoremap <Leader>vc <Cmd>PackerClean<CR>
