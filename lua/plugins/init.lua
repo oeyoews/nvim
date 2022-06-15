@@ -152,6 +152,8 @@ packer.init({
     clone_timeout = 6000,
   },
   autoremove = true,
+  -- compile_path = util.join_paths(vim.fn.stdpath('config'), 'plugin', 'packer-compiled.lua'),
+  compile_path = '~/.local/share/nvim/compile/packer_compiled.lua',
 })
 
 packer.startup(function(use)
