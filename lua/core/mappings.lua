@@ -15,7 +15,7 @@ nnoremap <leader>bd <cmd>bdelete<cr>
 
 " load current config file
 " nnoremap <leader>so <cmd>so % <bar> lua vim.notify("🍺 Finished refresh current file.")<cr>
-nnoremap <silent> <leader>so <cmd>luafile %<cr> :lua vim.notify("🍺 Finished refresh current file.")<cr>
+" nnoremap <silent> <leader>so <cmd>luafile %<cr> :lua vim.notify("🍺 Finished refresh current file.")<cr>
 
 " quit insert mode fastly
 inoremap jk <ESC>

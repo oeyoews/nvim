@@ -39,6 +39,7 @@ again to toggle lowercase letters
 
 ## TODO
 
+* [ ] insert mode to hide cursorline
 * [ ] https://github.com/AstroNvim/AstroNvim, learn it option setting and lsp multi seperate setting
 * [ ] automatically install filetype server when first open
 * [ ] bug: treesitter multi download

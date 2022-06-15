@@ -14,8 +14,8 @@ hi PmenuThumb ctermfg=160 ctermbg=97 guifg=#282c34 guibg=#73b8f1
 hi IncSearch  cterm=bold ctermfg=16 ctermbg=167 guifg=#292b2e guibg=#ce537a
 hi Search     ctermfg=16 ctermbg=76 guifg=#292b2e guibg=#86dc2f
 hi CursorLineNr      gui=none guibg=none
-hi VertSplit guibg=none guifg=#353b45 gui=bold cterm=reverse
 hi Keyword   guifg=#9D7CD8 gui=bold
+hi VertSplit guibg=none guifg=#353b45 gui=bold cterm=reverse
 
 " set cursor color
 hi Cursorn guifg=none guibg=none

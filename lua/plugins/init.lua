@@ -26,7 +26,7 @@ local util = require("packer.util")
 local plugins = {
   "wbthomason/packer.nvim",
   -- @Perfect
-  -- FIXME: filetype need in impatient after to fix treesitter install times
+  -- fixme: filetype need in impatient after to fix treesitter install times
   "lewis6991/impatient.nvim",
   "nathom/filetype.nvim",
   "rcarriga/nvim-notify",
@@ -182,6 +182,7 @@ nnoremap <Leader>vc <Cmd>PackerClean<CR>
 nnoremap <Leader>vi <Cmd>PackerInstall<cr>
 nnoremap <Leader>vs <Cmd>PackerSync<CR>
 nnoremap <Leader>vU <Cmd>PackerCompile<CR>
+nnoremap <leader>so <cmd>luafile ~/.config/nvim/lua/plugins/init.lua<cr>
 ]])
 
 --[[
