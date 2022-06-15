@@ -1,5 +1,7 @@
 local fn = vim.fn
 
+local util = require 'packer.util'
+
 local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
 
 if fn.empty(fn.glob(install_path)) > 0 then
@@ -152,8 +154,7 @@ packer.init({
     clone_timeout = 6000,
   },
   autoremove = true,
-  -- compile_path = util.join_paths(vim.fn.stdpath('config'), 'plugin', 'packer-compiled.lua'),
-  compile_path = '~/.local/share/nvim/compile/packer_compiled.lua',
+  compile_path = util.join_paths(vim.fn.stdpath('data'), 'compile', 'packer_compiled.lua'),
 })
 
 packer.startup(function(use)
