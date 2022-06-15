@@ -26,7 +26,7 @@ local util = require('packer.util')
 local plugins = {
   'wbthomason/packer.nvim',
   -- @Perfect
-  -- BUG: filetype need in impatient after to fix treesitter install times
+  -- WARNING: filetype need in impatient after to fix treesitter install times
   'lewis6991/impatient.nvim',
   'nathom/filetype.nvim',
   'rcarriga/nvim-notify',

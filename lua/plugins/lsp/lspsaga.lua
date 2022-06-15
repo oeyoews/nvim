@@ -4,20 +4,28 @@ if not lspsaga_ok then
   vim.notify('lspsaga not founded')
   return
 end
+-- ymbol("Error", "")
+-- lspSymbol("Info", "")
+-- lspSymbol("Hint", "")
+-- lspSymbol("Warn", "")
 
 lspsaga.setup({ -- defaults ...
   debug = false,
   use_saga_diagnostic_sign = true,
   -- diagnostic sign
-  error_sign = ' ',
+  -- error_sign = ' ',
+  error_sign = ' ',
   --error_sign = "🌹",
   -- error_sign = "",
-  warn_sign = ' ',
+  -- warn_sign = '  ',
+  warn_sign = '',
   hint_sign = ' ',
-  infor_sign = ' ',
-  diagnostic_header_icon = ' ',
+  -- infor_sign = '   ',
+  infor_sign = ' ',
+  diagnostic_header_icon = '',
   --code_action_icon = "👷",
-  code_action_icon = '💡',
+  -- code_action_icon = '💡 ',
+  code_action_icon = ' ',
   code_action_prompt = {
     enable = true,
     sign = true,
