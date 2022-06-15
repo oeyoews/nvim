@@ -1,3 +1,4 @@
+---[[
 local package = 'core' -- require package
 
 local modules = {
@@ -10,6 +11,7 @@ local modules = {
 for _, load_module in ipairs(modules) do
   require(package .. '.' .. load_module)
 end
+--]]
 
 -- disable to read shadafile
 vim.opt.shadafile = 'NONE'
