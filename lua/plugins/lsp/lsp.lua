@@ -117,7 +117,7 @@ cmp.setup({
   -- sources
   sources = {
     { name = 'nvim_lsp' },
-    { name = 'buffer' },
+    { name = 'buffer', keyword_length = 3 },
     { name = 'ultisnips' },
     { name = 'path' },
     { name = 'neorg' },

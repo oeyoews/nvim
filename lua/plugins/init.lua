@@ -33,6 +33,8 @@ local plugins = {
   'kyazdani42/nvim-web-devicons',
   'nvim-lua/plenary.nvim',
 
+  -- # Temporary
+  'lewis6991/spellsitter.nvim',
   -- #Ui
   {
     'nvim-treesitter/nvim-treesitter',

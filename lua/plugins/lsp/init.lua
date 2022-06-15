@@ -9,6 +9,7 @@ local modules = {
   'treesitter',
   'lspsaga',
   'trouble',
+  'spellsitter',
 }
 
 for _, load_module in ipairs(modules) do
