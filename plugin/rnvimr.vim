@@ -96,5 +96,5 @@ let g:rnvimr_layout = {
 " Only use initial preset layout
 " let g:rnvimr_presets = [{}]
 
-" rnvimr
-nnoremap <silent> <leader>ft <C-L> :RnvimrToggle<CR>
+" rnvimr TODO highlight
+nnoremap <silent> <leader>ft :RnvimrToggle<CR>

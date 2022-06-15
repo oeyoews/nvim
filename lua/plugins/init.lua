@@ -11,6 +11,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
     'https://github.com/wbthomason/packer.nvim',
     install_path,
   })
+  vim.cmd("packadd packer.nvim")
 end
 
 local ok, packer = pcall(require, 'packer')
@@ -148,15 +149,22 @@ packer.init({
     end,
   },
   git = {
-    clone_timeout = 60,
+    clone_timeout = 6000,
   },
-  compile_on_sync = true,
   autoremove = true,
 })
 
 packer.startup(function(use)
   for _, plugin in pairs(plugins) do
     use(plugin)
+  end
+
+  if packer_bootstrap then
+    if packer.config.compile_path then
+      os.remove(packer.config.compile_path)
+    end
+    require('packer').sync()
+    vim.cmd([[PackerCompile]])
   end
 end)
 
