@@ -41,6 +41,7 @@ local plugins = {
     -- cmd = { "TSInstall", "TSUpdate", "TSUninstall", },
     run = ":TSUpdate",
     requires = {
+      "nvim-treesitter/nvim-treesitter-refactor",
       "p00f/nvim-ts-rainbow",
     },
   },
