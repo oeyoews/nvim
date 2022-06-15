@@ -1,7 +1,5 @@
 local fn = vim.fn
 
-local util = require 'packer.util'
-
 local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
 
 if fn.empty(fn.glob(install_path)) > 0 then
@@ -22,6 +20,8 @@ if not ok then
   vim.notify('packer not founded')
   return false
 end
+
+local util = require 'packer.util'
 
 local plugins = {
   'wbthomason/packer.nvim',
@@ -166,8 +166,8 @@ packer.startup(function(use)
     if packer.config.compile_path then
       os.remove(packer.config.compile_path)
     end
-    require('packer').sync()
     vim.cmd([[PackerCompile]])
+    require('packer').sync()
   end
 end)
 

@@ -1,3 +1,5 @@
+vim.cmd([[ hi clear ]])
+
 local package = 'plugins' -- load package
 
 local modules = {

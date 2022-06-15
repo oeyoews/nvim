@@ -1,6 +1,3 @@
--- infect notify
-vim.cmd([[ hi clear ]])
-
 local status_ok, tokyonight = pcall(require, 'tokyonight')
 local g = vim.g
 
