@@ -57,7 +57,7 @@ local plugins = {
   },
   {
     'nvim-treesitter/nvim-treesitter',
-    cmd = { "TSInstall", "TSUpdate", "TSUninstall", },
+    -- cmd = { "TSInstall", "TSUpdate", "TSUninstall", },
     run = ":TSUpdate",
   },
   {
