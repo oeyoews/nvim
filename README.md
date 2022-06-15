@@ -39,6 +39,7 @@ again to toggle lowercase letters
 
 ## TODO
 
+* [ ] automatically install filetype server when first open
 * [ ] bug: treesitter multi download
 * config opt(load)
 * learn packer, test packer automatically

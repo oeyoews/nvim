@@ -54,15 +54,15 @@ opt.incsearch = true
 opt.hlsearch = true
 opt.vb = true
 opt.shell = "/bin/zsh"
+opt.spelllang = { "en", "cjk" }
+opt.listchars = { tab = " " }
 
 -- set shada path
-vim.schedule(function()
-  vim.opt.shadafile = vim.fn.expand("$HOME") .. "/.local/share/nvim/shada/main.shada"
-  vim.cmd([[ silent! rsh ]])
-end)
+-- vim.schedule(function()
+--   vim.opt.shadafile = vim.fn.expand("$HOME") .. "/.local/share/nvim/shada/main.shada"
+--   vim.cmd([[ silent! rsh ]])
+-- end)
 
-vim.cmd([[
-set listchars=tab:\ \ ,
-set whichwrap+=<,>,[,]
-set spelllang=en_us,cjk
-]])
+-- vim.cmd([[
+-- set whichwrap+=<,>,[,]
+-- ]])
