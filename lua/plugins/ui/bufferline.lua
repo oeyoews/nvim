@@ -1,11 +1,11 @@
-local ok, bufferline = pcall(require, 'bufferline')
+local ok, bufferline = pcall(require, "bufferline")
 
 if not ok then
   return false
 end
 
-bufferline.setup({})
+bufferline.setup {}
 
-vim.cmd([[
+vim.cmd [[
   nnoremap <silent> <leader>bp :BufferLinePick<CR>
-]])
+]]

@@ -1,16 +1,16 @@
-local status_ok, gitsigns = pcall(require, 'gitsigns')
+local status_ok, gitsigns = pcall(require, "gitsigns")
 if not status_ok then
-  vim.notify('gitsigns not found!')
+  vim.notify "gitsigns not found!"
   return
 end
 
-gitsigns.setup({
+gitsigns.setup {
   signs = {
-    add = { hl = 'GitSignsAdd', text = '│', numhl = 'GitSignsAddNr', linehl = 'GitSignsAddLn' },
-    change = { hl = 'GitSignsChange', text = '│', numhl = 'GitSignsChangeNr', linehl = 'GitSignsChangeLn' },
-    delete = { hl = 'GitSignsDelete', text = '_', numhl = 'GitSignsDeleteNr', linehl = 'GitSignsDeleteLn' },
-    topdelete = { hl = 'GitSignsDelete', text = '‾', numhl = 'GitSignsDeleteNr', linehl = 'GitSignsDeleteLn' },
-    changedelete = { hl = 'GitSignsChange', text = '~', numhl = 'GitSignsChangeNr', linehl = 'GitSignsChangeLn' },
+    add = { hl = "GitSignsAdd", text = "│", numhl = "GitSignsAddNr", linehl = "GitSignsAddLn" },
+    change = { hl = "GitSignsChange", text = "│", numhl = "GitSignsChangeNr", linehl = "GitSignsChangeLn" },
+    delete = { hl = "GitSignsDelete", text = "_", numhl = "GitSignsDeleteNr", linehl = "GitSignsDeleteLn" },
+    topdelete = { hl = "GitSignsDelete", text = "‾", numhl = "GitSignsDeleteNr", linehl = "GitSignsDeleteLn" },
+    changedelete = { hl = "GitSignsChange", text = "~", numhl = "GitSignsChangeNr", linehl = "GitSignsChangeLn" },
   },
   signcolumn = true, -- Toggle with `:Gitsigns toggle_signs`
   numhl = true, -- Toggle with `:Gitsigns toggle_numhl`
@@ -24,7 +24,7 @@ gitsigns.setup({
   current_line_blame = true, -- Toggle with `:Gitsigns toggle_current_line_blame`
   current_line_blame_opts = {
     virt_text = false,
-    virt_text_pos = 'eol', -- 'eol' | 'overlay' | 'right_align'
+    virt_text_pos = "eol", -- 'eol' | 'overlay' | 'right_align'
     delay = 100,
     ignore_whitespace = false,
   },
@@ -37,9 +37,9 @@ gitsigns.setup({
   max_file_length = 4000,
   preview_config = {
     -- Options passed to nvim_open_win
-    border = 'single',
-    style = 'minimal',
-    relative = 'cursor',
+    border = "single",
+    style = "minimal",
+    relative = "cursor",
     row = 0,
     col = 1,
   },
@@ -49,7 +49,7 @@ gitsigns.setup({
   -- keymapping
   on_attach = function(bufnr)
     local function map(mode, lhs, rhs, opts)
-      opts = vim.tbl_extend('force', { noremap = true, silent = true }, opts or {})
+      opts = vim.tbl_extend("force", { noremap = true, silent = true }, opts or {})
       vim.api.nvim_buf_set_keymap(bufnr, mode, lhs, rhs, opts)
     end
 
@@ -74,4 +74,4 @@ gitsigns.setup({
     --map('o', 'ih', ':<C-U>Gitsigns select_hunk<CR>')
     --map('x', 'ih', ':<C-U>Gitsigns select_hunk<CR>')
   end,
-})
+}

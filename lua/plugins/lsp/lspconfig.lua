@@ -8,26 +8,25 @@ vim.diagnostic.config {
 }
 
 -- icon note this order in last
-vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
   underline = true,
   -- false to save some consume
   update_in_insert = false,
   severity_sort = false,
   virtual_text = {
     spacing = 2,
-    source = 'always',
-    prefix = '',
+    source = "always",
+    prefix = "",
   },
   float = {
     focusable = false,
-    style = 'minimal',
-    border = 'rounded',
-    source = 'always',
-    header = '',
-    prefix = '',
+    style = "minimal",
+    border = "rounded",
+    source = "always",
+    header = "",
+    prefix = "",
   },
 })
-
 
 vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
   border = "single",
@@ -39,6 +38,6 @@ vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.s
   row = -1,
 })
 
-vim.cmd([[
+vim.cmd [[
   nnoremap <silent> <leader>li :LspInfo<cr>
-]])
+]]

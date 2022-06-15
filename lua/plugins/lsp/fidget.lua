@@ -1,7 +1,7 @@
-local ok, fidget = pcall(require, 'fidget')
+local ok, fidget = pcall(require, "fidget")
 
 if not ok then
-  vim.notify('fidget not founded')
+  vim.notify "fidget not founded"
   return false
 end
 

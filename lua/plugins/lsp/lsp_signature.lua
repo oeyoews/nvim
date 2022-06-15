@@ -1,4 +1,4 @@
-local ok, lsp_signature = pcall(require, 'lsp_signature')
+local ok, lsp_signature = pcall(require, "lsp_signature")
 
 if not ok then
   return false

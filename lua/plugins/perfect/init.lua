@@ -1,11 +1,11 @@
-local package = 'plugins.perfect'
+local package = "plugins.perfect"
 
 local modules = {
-  'impatient',
-  'disable',
-  'filetype',
+  "impatient",
+  "disable",
+  "filetype",
 }
 
 for _, load_module in ipairs(modules) do
-  require(package .. '.' .. load_module)
+  require(package .. "." .. load_module)
 end

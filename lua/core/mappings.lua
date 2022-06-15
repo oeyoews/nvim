@@ -1,8 +1,8 @@
 local g = vim.g
 
-g.mapleader = ' '
+g.mapleader = " "
 
-vim.cmd([[
+vim.cmd [[
 " BUG: last line highlight is not correct
 "
 "let g:mapleader = " "
@@ -92,4 +92,4 @@ nnoremap <silent> <space>yp :<C-U>let @+=expand('%:p') <bar> lua vim.notify(" ðŸ
 
 " toggle spell
 nnoremap <space>ss <cmd>set invspell <bar> lua vim.notify("Toggle Spell")<cr>
-]])
+]]

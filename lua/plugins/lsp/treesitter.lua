@@ -1,7 +1,7 @@
-local nvim_treesitter_ok, tree_configs = pcall(require, 'nvim-treesitter.configs')
+local nvim_treesitter_ok, tree_configs = pcall(require, "nvim-treesitter.configs")
 
 if not nvim_treesitter_ok then
-  vim.notify('nvim_treesitter not founded')
+  vim.notify "nvim_treesitter not founded"
   return
 end
 
@@ -13,25 +13,25 @@ end
 --]]
 
 local ensure_installed = {
-  'bash',
-  'c',
-  'css',
+  "bash",
+  "c",
+  "css",
   --"comment",
-  'html',
-  'json',
-  'lua',
-  'norg',
-  'make',
-  'markdown',
-  'python',
-  'go',
-  'gomod',
-  'javascript',
+  "html",
+  "json",
+  "lua",
+  "norg",
+  "make",
+  "markdown",
+  "python",
+  "go",
+  "gomod",
+  "javascript",
   --"java",
-  'vim',
+  "vim",
   --"vue",
-  'yaml',
-  'toml',
+  "yaml",
+  "toml",
   --"typescript",
   --"org",
   -- "query",
@@ -39,14 +39,14 @@ local ensure_installed = {
   -- "norg", "norg_meta", "norg_table",
 }
 -- tips: tsmoduleinfo
-tree_configs.setup({
+tree_configs.setup {
   autotag = {
     enable = true,
   },
 
   indent = {
     enable = true,
-    disable = { 'python', 'yaml' },
+    disable = { "python", "yaml" },
   },
   -- install some different parsers automatically
 
@@ -66,23 +66,23 @@ tree_configs.setup({
     extended_mode = true,
     max_file_lines = 1000,
     colors = {
-      '#a89984', --grey
+      "#a89984", --grey
       -- "#cc241d", --red
-      '#8169B4',
-      '#b16286', --Magenta
-      '#d79921', --yellow
-      '#689d6a', --green
-      '#d65d0e', --orange
-      '#458588', --cyan
+      "#8169B4",
+      "#b16286", --Magenta
+      "#d79921", --yellow
+      "#689d6a", --green
+      "#d65d0e", --orange
+      "#458588", --cyan
     },
     termcolors = {
-      'Red',
-      'Green',
-      'Yellow',
-      'Blue',
-      'Magenta',
-      'Cyan',
-      'White',
+      "Red",
+      "Green",
+      "Yellow",
+      "Blue",
+      "Magenta",
+      "Cyan",
+      "White",
     },
   },
-})
+}

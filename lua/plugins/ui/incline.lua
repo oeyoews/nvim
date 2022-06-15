@@ -1,11 +1,11 @@
-local ok, incline = pcall(require, 'incline')
+local ok, incline = pcall(require, "incline")
 
 if not ok then
   return false
 end
 
 incline.setup()
-require('incline').setup({
+require("incline").setup {
   debounce_threshold = {
     falling = 50,
     rising = 10,
@@ -19,50 +19,50 @@ require('incline').setup({
     groups = {
       InclineNormal = {
         default = true,
-        group = 'NormalFloat',
+        group = "NormalFloat",
       },
       InclineNormalNC = {
         default = true,
-        group = 'NormalFloat',
+        group = "NormalFloat",
       },
     },
   },
   ignore = {
-    buftypes = 'special',
+    buftypes = "special",
     filetypes = {},
     floating_wins = true,
     unlisted_buffers = true,
-    wintypes = 'special',
+    wintypes = "special",
   },
-  render = 'basic',
+  render = "basic",
   window = {
     margin = {
       horizontal = 1,
       vertical = 1,
     },
     options = {
-      signcolumn = 'no',
+      signcolumn = "no",
       wrap = false,
     },
     padding = 1,
-    padding_char = ' ',
+    padding_char = " ",
     placement = {
-      horizontal = 'right',
-      vertical = 'top',
+      horizontal = "right",
+      vertical = "top",
     },
-    width = 'fit',
+    width = "fit",
     winhighlight = {
       active = {
-        EndOfBuffer = 'None',
-        Normal = 'InclineNormal',
-        Search = 'None',
+        EndOfBuffer = "None",
+        Normal = "InclineNormal",
+        Search = "None",
       },
       inactive = {
-        EndOfBuffer = 'None',
-        Normal = 'InclineNormalNC',
-        Search = 'None',
+        EndOfBuffer = "None",
+        Normal = "InclineNormalNC",
+        Search = "None",
       },
     },
     zindex = 50,
   },
-})
+}

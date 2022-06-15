@@ -1,20 +1,20 @@
-local hsluv = require('tokyonight.hsluv')
+local hsluv = require "tokyonight.hsluv"
 
 local util = {}
 
 util.colorsUsed = {}
 util.colorCache = {}
 
-util.bg = '#000000'
-util.fg = '#ffffff'
+util.bg = "#000000"
+util.fg = "#ffffff"
 util.day_brightness = 0.3
 
 local function hexToRgb(hex_str)
-  local hex = '[abcdef0-9][abcdef0-9]'
-  local pat = '^#(' .. hex .. ')(' .. hex .. ')(' .. hex .. ')$'
+  local hex = "[abcdef0-9][abcdef0-9]"
+  local pat = "^#(" .. hex .. ")(" .. hex .. ")(" .. hex .. ")$"
   hex_str = string.lower(hex_str)
 
-  assert(string.find(hex_str, pat) ~= nil, 'hex_to_rgb: invalid hex_str: ' .. tostring(hex_str))
+  assert(string.find(hex_str, pat) ~= nil, "hex_to_rgb: invalid hex_str: " .. tostring(hex_str))
 
   local r, g, b = string.match(hex_str, pat)
   return { tonumber(r, 16), tonumber(g, 16), tonumber(b, 16) }
@@ -32,7 +32,7 @@ function util.blend(fg, bg, alpha)
     return math.floor(math.min(math.max(0, ret), 255) + 0.5)
   end
 
-  return string.format('#%02X%02X%02X', blendChannel(1), blendChannel(2), blendChannel(3))
+  return string.format("#%02X%02X%02X", blendChannel(1), blendChannel(2), blendChannel(3))
 end
 
 function util.darken(hex, amount, bg)
@@ -53,7 +53,7 @@ function util.brighten(color, percentage)
 end
 
 function util.invertColor(color)
-  if color ~= 'NONE' then
+  if color ~= "NONE" then
     local hsl = hsluv.hex_to_hsluv(color)
     hsl[3] = 100 - hsl[3]
     if hsl[3] < 40 then
@@ -65,7 +65,7 @@ function util.invertColor(color)
 end
 
 function util.randomColor(color)
-  if color ~= 'NONE' then
+  if color ~= "NONE" then
     local hsl = hsluv.hex_to_hsluv(color)
     hsl[1] = math.random(1, 360)
     return hsluv.hsluv_to_hex(hsl)
@@ -74,7 +74,7 @@ function util.randomColor(color)
 end
 
 function util.getColor(color)
-  if vim.o.background == 'dark' then
+  if vim.o.background == "dark" then
     return color
   end
   if not util.colorCache[color] then
@@ -95,15 +95,15 @@ function util.highlight(group, color)
     util.colorsUsed[color.sp] = true
   end
 
-  local style = color.style and 'gui=' .. color.style or 'gui=NONE'
-  local fg = color.fg and 'guifg=' .. util.getColor(color.fg) or 'guifg=NONE'
-  local bg = color.bg and 'guibg=' .. util.getColor(color.bg) or 'guibg=NONE'
-  local sp = color.sp and 'guisp=' .. util.getColor(color.sp) or ''
+  local style = color.style and "gui=" .. color.style or "gui=NONE"
+  local fg = color.fg and "guifg=" .. util.getColor(color.fg) or "guifg=NONE"
+  local bg = color.bg and "guibg=" .. util.getColor(color.bg) or "guibg=NONE"
+  local sp = color.sp and "guisp=" .. util.getColor(color.sp) or ""
 
-  local hl = 'highlight ' .. group .. ' ' .. style .. ' ' .. fg .. ' ' .. bg .. ' ' .. sp
+  local hl = "highlight " .. group .. " " .. style .. " " .. fg .. " " .. bg .. " " .. sp
 
   if color.link then
-    vim.cmd('highlight! link ' .. group .. ' ' .. color.link)
+    vim.cmd("highlight! link " .. group .. " " .. color.link)
   else
     -- local data = {}
     -- if color.fg then data.foreground = color.fg end
@@ -116,14 +116,14 @@ function util.highlight(group, color)
 end
 
 function util.debug(colors)
-  colors = colors or require('tokyonight.colors')
+  colors = colors or require "tokyonight.colors"
   -- Dump unused colors
   for name, color in pairs(colors) do
-    if type(color) == 'table' then
+    if type(color) == "table" then
       util.debug(color)
     else
       if util.colorsUsed[color] == nil then
-        print('not used: ' .. name .. ' : ' .. color)
+        print("not used: " .. name .. " : " .. color)
       end
     end
   end
@@ -131,28 +131,28 @@ end
 
 --- Delete the autocmds when the theme changes to something else
 function util.onColorScheme()
-  if vim.g.colors_name ~= 'tokyonight' then
-    vim.cmd([[autocmd! TokyoNight]])
-    vim.cmd([[augroup! TokyoNight]])
+  if vim.g.colors_name ~= "tokyonight" then
+    vim.cmd [[autocmd! TokyoNight]]
+    vim.cmd [[augroup! TokyoNight]]
   end
 end
 
 ---@param config Config
 function util.autocmds(config)
-  vim.cmd([[augroup TokyoNight]])
-  vim.cmd([[  autocmd!]])
-  vim.cmd([[  autocmd ColorScheme * lua require("tokyonight.util").onColorScheme()]])
+  vim.cmd [[augroup TokyoNight]]
+  vim.cmd [[  autocmd!]]
+  vim.cmd [[  autocmd ColorScheme * lua require("tokyonight.util").onColorScheme()]]
   if config.dev then
-    vim.cmd([[  autocmd BufWritePost */lua/tokyonight/** nested colorscheme tokyonight]])
+    vim.cmd [[  autocmd BufWritePost */lua/tokyonight/** nested colorscheme tokyonight]]
   end
   for _, sidebar in ipairs(config.sidebars) do
-    if sidebar == 'terminal' then
-      vim.cmd([[  autocmd TermOpen * setlocal winhighlight=Normal:NormalSB,SignColumn:SignColumnSB]])
+    if sidebar == "terminal" then
+      vim.cmd [[  autocmd TermOpen * setlocal winhighlight=Normal:NormalSB,SignColumn:SignColumnSB]]
     else
       vim.cmd([[  autocmd FileType ]] .. sidebar .. [[ setlocal winhighlight=Normal:NormalSB,SignColumn:SignColumnSB]])
     end
   end
-  vim.cmd([[augroup end]])
+  vim.cmd [[augroup end]]
 end
 
 -- Simple string interpolation.
@@ -162,7 +162,7 @@ end
 ---@param str string template string
 ---@param table table key value pairs to replace in the string
 function util.template(str, table)
-  return (str:gsub('($%b{})', function(w)
+  return (str:gsub("($%b{})", function(w)
     return table[w:sub(3, -2)] or w
   end))
 end
@@ -202,15 +202,15 @@ function util.terminal(colors)
   vim.g.terminal_color_6 = colors.cyan
   vim.g.terminal_color_14 = colors.cyan
 
-  if vim.o.background == 'light' then
+  if vim.o.background == "light" then
     for i = 0, 15, 1 do
-      vim.g['terminal_color_' .. i] = util.getColor(vim.g['terminal_color_' .. i])
+      vim.g["terminal_color_" .. i] = util.getColor(vim.g["terminal_color_" .. i])
     end
   end
 end
 
 function util.light_colors(colors)
-  if type(colors) == 'string' then
+  if type(colors) == "string" then
     return util.getColor(colors)
   end
   local ret = {}
@@ -224,14 +224,14 @@ end
 function util.load(theme)
   -- only needed to clear when not the default colorscheme
   if vim.g.colors_name then
-    vim.cmd('hi clear')
+    vim.cmd "hi clear"
   end
   -- if vim.fn.exists("syntax_on") then
   --   vim.cmd("syntax reset")
   -- end
 
   vim.o.termguicolors = true
-  vim.g.colors_name = 'tokyonight'
+  vim.g.colors_name = "tokyonight"
   -- vim.api.nvim__set_hl_ns(ns)
   -- load base theme
   util.syntax(theme.base)
@@ -247,26 +247,26 @@ end
 ---@param config Config
 ---@param colors ColorScheme
 function util.color_overrides(colors, config)
-  if type(config.colors) == 'table' then
+  if type(config.colors) == "table" then
     for key, value in pairs(config.colors) do
       if not colors[key] then
-        error('Color ' .. key .. ' does not exist')
+        error("Color " .. key .. " does not exist")
       end
 
       -- Patch: https://github.com/ful1e5/onedark.nvim/issues/6
-      if type(colors[key]) == 'table' then
+      if type(colors[key]) == "table" then
         util.color_overrides(colors[key], { colors = value })
       else
-        if value:lower() == 'none' then
+        if value:lower() == "none" then
           -- set to none
-          colors[key] = 'NONE'
-        elseif string.sub(value, 1, 1) == '#' then
+          colors[key] = "NONE"
+        elseif string.sub(value, 1, 1) == "#" then
           -- hex override
           colors[key] = value
         else
           -- another group
           if not colors[value] then
-            error('Color ' .. value .. ' does not exist')
+            error("Color " .. value .. " does not exist")
           end
           colors[key] = colors[value]
         end
@@ -278,24 +278,24 @@ end
 function util.light(brightness)
   for hl_name, hl in pairs(vim.api.nvim__get_hl_defs(0)) do
     local def = {}
-    for key, def_key in pairs({ foreground = 'fg', background = 'bg', special = 'sp' }) do
-      if type(hl[key]) == 'number' then
-        local hex = string.format('#%06x', hl[key])
+    for key, def_key in pairs { foreground = "fg", background = "bg", special = "sp" } do
+      if type(hl[key]) == "number" then
+        local hex = string.format("#%06x", hl[key])
         local color = util.invertColor(hex)
         if brightness then
           color = util.brighten(hex, brightness)
         end
-        table.insert(def, 'gui' .. def_key .. '=' .. color)
+        table.insert(def, "gui" .. def_key .. "=" .. color)
       end
     end
-    if hl_name ~= '' and #def > 0 then
-      for _, style in pairs({ 'bold', 'italic', 'underline', 'undercurl', 'reverse' }) do
+    if hl_name ~= "" and #def > 0 then
+      for _, style in pairs { "bold", "italic", "underline", "undercurl", "reverse" } do
         if hl[style] then
-          table.insert(def, 'gui=' .. style)
+          table.insert(def, "gui=" .. style)
         end
       end
 
-      vim.cmd('highlight! ' .. hl_name .. ' ' .. table.concat(def, ' '))
+      vim.cmd("highlight! " .. hl_name .. " " .. table.concat(def, " "))
     end
   end
 end
@@ -304,22 +304,22 @@ function util.random()
   local colors = {}
   for hl_name, hl in pairs(vim.api.nvim__get_hl_defs(0)) do
     local def = {}
-    for key, def_key in pairs({ foreground = 'fg', background = 'bg', special = 'sp' }) do
-      if type(hl[key]) == 'number' then
-        local hex = string.format('#%06x', hl[key])
+    for key, def_key in pairs { foreground = "fg", background = "bg", special = "sp" } do
+      if type(hl[key]) == "number" then
+        local hex = string.format("#%06x", hl[key])
         local color = colors[hex] and colors[hex] or util.randomColor(hex)
         colors[hex] = color
-        table.insert(def, 'gui' .. def_key .. '=' .. color)
+        table.insert(def, "gui" .. def_key .. "=" .. color)
       end
     end
-    if hl_name ~= '' and #def > 0 then
-      for _, style in pairs({ 'bold', 'italic', 'underline', 'undercurl', 'reverse' }) do
+    if hl_name ~= "" and #def > 0 then
+      for _, style in pairs { "bold", "italic", "underline", "undercurl", "reverse" } do
         if hl[style] then
-          table.insert(def, 'gui=' .. style)
+          table.insert(def, "gui=" .. style)
         end
       end
 
-      vim.cmd('highlight! ' .. hl_name .. ' ' .. table.concat(def, ' '))
+      vim.cmd("highlight! " .. hl_name .. " " .. table.concat(def, " "))
     end
   end
 end

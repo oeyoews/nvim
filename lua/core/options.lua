@@ -1,16 +1,15 @@
-local g = vim.g
-local opt = vim.opt
+local g, opt = vim.g, vim.opt
 
 g.did_load_filetypes = 0
 g.do_filetype_lua = 1
-g.python3_host_prog = '/usr/bin/python3'
+g.python3_host_prog = "/usr/bin/python3"
 
 -- time
 opt.updatetime = 200
 opt.timeoutlen = 1000
 
 -- disable nvim intro
-opt.shortmess:append('acsI')
+opt.shortmess:append "acsI"
 opt.splitright = true
 opt.splitbelow = true
 
@@ -20,9 +19,9 @@ opt.shiftwidth = 2
 opt.smartindent = true
 opt.tabstop = 2
 opt.softtabstop = 2
-opt.signcolumn = 'yes'
-opt.mouse = 'a'
-opt.fillchars = { eob = ' ' }
+opt.signcolumn = "yes"
+opt.mouse = "a"
+opt.fillchars = { eob = " " }
 opt.cursorline = true
 opt.smartindent = true
 opt.lazyredraw = true
@@ -54,16 +53,16 @@ opt.foldenable = false
 opt.incsearch = true
 opt.hlsearch = true
 opt.vb = true
-opt.shell = '/bin/zsh'
+opt.shell = "/bin/zsh"
 
 -- set shada path
 vim.schedule(function()
-  vim.opt.shadafile = vim.fn.expand('$HOME') .. '/.local/share/nvim/shada/main.shada'
-  vim.cmd([[ silent! rsh ]])
+  vim.opt.shadafile = vim.fn.expand "$HOME" .. "/.local/share/nvim/shada/main.shada"
+  vim.cmd [[ silent! rsh ]]
 end)
 
-vim.cmd([[
+vim.cmd [[
 set listchars=tab:\ \ ,
 set whichwrap+=<,>,[,]
 set spelllang=en_us,cjk
-]])
+]]

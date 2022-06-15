@@ -1,13 +1,13 @@
-local status_ok, notify = pcall(require, 'notify')
+local status_ok, notify = pcall(require, "notify")
 if not status_ok then
-  vim.notify('notify module not found!', 'warn')
+  vim.notify("notify module not found!", "warn")
   return
 end
 
 vim.notify = notify
-notify.setup({
+notify.setup {
   -- Animation style (see below for details)
-  stages = 'slide',
+  stages = "slide",
 
   -- Function called when a new window is opened, use for changing win settings/config
   on_open = nil,
@@ -16,7 +16,7 @@ notify.setup({
   on_close = nil,
 
   -- Render function for notifications. See notify-render()
-  render = 'default',
+  render = "default",
 
   -- Default timeout for notifications
   timeout = 600,
@@ -28,21 +28,21 @@ notify.setup({
 
   -- For stages that change opacity this is treated as the highlight behind the window
   -- Set this to either a highlight group, an RGB hex value e.g. "#000000" or a function returning an RGB code for dynamic values
-  background_colour = 'Normal',
+  background_colour = "Normal",
 
   -- Minimum width for notification windows
   minimum_width = 50,
 
   -- Icons for the different levels
   icons = {
-    ERROR = '',
-    WARN = '',
-    INFO = '',
-    DEBUG = '',
-    TRACE = '✎',
+    ERROR = "",
+    WARN = "",
+    INFO = "",
+    DEBUG = "",
+    TRACE = "✎",
   },
-})
+}
 
-vim.cmd([[
+vim.cmd [[
 nnoremap <silent> <leader>bM :Notifications<cr>
-]])
+]]
