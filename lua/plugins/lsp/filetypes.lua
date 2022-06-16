@@ -2,7 +2,7 @@
 
 local M = {}
 
-M.setup = {
+M.filetypes = {
   "bash",
   "c",
   "css",

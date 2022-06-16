@@ -15,15 +15,15 @@ local disabled_filetypes = {
   "json",
 }
 
-local enabale_filetypes = require("plugins.lsp.filetypes").setup
+local enabale_filetypes = require("plugins.lsp.filetypes").filetypes
 
 local sources = {
-  diagnostics.markdownlint, -- need install markdownlint
   -- builtin.formatting.prettierd.with,
   -- builtin.diagnostics.misspell,
   -- builtin.diagnostics.gitlint, -- need install gitlint
   -- builtin.completion.spell,
   -- builtin.code_actions.shellcheck
+  diagnostics.markdownlint, -- need install markdownlint
   diagnostics.codespell.with({
     disabled_filetypes = disabled_filetypes,
     filetypes = enabale_filetypes,

@@ -2,6 +2,7 @@ local package = "plugins.lsp"
 
 local modules = {
   "treesitter",
+  "lspinstall", -- WARN: don't modify this order, cmp may be automatically it, should put it in lspconfig
   "lspconfig",
   "cmp",
   "null_ls",
@@ -10,7 +11,6 @@ local modules = {
   "lspsaga",
   "trouble",
   "spellsitter",
-  "lspinstall", -- WARN: don't modify this order, cmp may be automatically it
 }
 
 for _, load_module in ipairs(modules) do
