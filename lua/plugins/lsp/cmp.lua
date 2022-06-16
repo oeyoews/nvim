@@ -26,6 +26,8 @@ if not lspformat_ok then
   return
 end
 
+-- if this servers not installed, cmp will callback nvim-lsp-install to install them
+-- fix: how to config according filetype automation install servers
 local lsp_servers = require("plugins.lsp.servers").servers
 
 local symbol_map = {

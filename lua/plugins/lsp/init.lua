@@ -1,6 +1,5 @@
 local package = "plugins.lsp"
 
--- fixme: have an autmoation and ensured install is conflict
 local modules = {
   "treesitter",
   "lspinstall", -- preinstall some servers
