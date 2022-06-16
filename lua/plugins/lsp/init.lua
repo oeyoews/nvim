@@ -1,16 +1,16 @@
 local package = "plugins.lsp"
 
 local modules = {
-  "lsp",
   "lspinstall",
-  "null_ls",
-  "lspconfig",
-  "fidget",
-  "lsp_signature",
   "treesitter",
+  "lsp",
+  "null_ls",
+  "fidget",
+  "lspconfig",
+  "lsp_signature",
   "lspsaga",
   "trouble",
-  -- "spellsitter",
+  "spellsitter",
 }
 
 for _, load_module in ipairs(modules) do

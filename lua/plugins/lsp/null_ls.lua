@@ -10,6 +10,13 @@ local diagnostics = null_ls.builtins.diagnostics
 
 local formatting = null_ls.builtins.formatting
 
+local filetypes = {
+  "lua",
+  "yaml",
+  "markdown",
+  "vim",
+}
+
 local sources = {
   diagnostics.markdownlint, -- need install markdownlint
   -- builtin.formatting.prettierd.with,
@@ -18,16 +25,11 @@ local sources = {
   -- builtin.completion.spell,
   -- builtin.code_actions.shellcheck
   diagnostics.codespell.with({
-    disabled_filetypes = { "c" },
-    filetypes = {
-      -- NOTE: not mix two styles
-      -- c = false,
-      "markdown",
-      "lua",
-      "python",
-      "vim",
-      "gitcommit",
+    disabled_filetypes = {
+      "c",
+      "json",
     },
+    filetypes = filetypes,
   }), -- need install codespell
 }
 

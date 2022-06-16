@@ -34,6 +34,7 @@ local plugins = {
   "nvim-lua/plenary.nvim",
 
   -- # Temporary
+  "lewis6991/spellsitter.nvim",
   -- #Ui
   {
     "nvim-treesitter/nvim-treesitter",
@@ -187,5 +188,4 @@ nnoremap <silent> <leader>so <cmd>luafile %<cr> :lua vim.notify("reload current 
 
 --[[
   "declancm/cinnamon.nvim",
-  "lewis6991/spellsitter.nvim",
 --]]
