@@ -16,6 +16,7 @@ local modules = {
   "whichkey",
   "toggleterm",
   "clipboard-image",
+  "neo-tree",
   -- "nvim_tree",
 }
 

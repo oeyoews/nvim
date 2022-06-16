@@ -1,3 +1,3 @@
 vim.cmd([[
-nnoremap <silent>fn :Neotree<cr>
+  nnoremap <silent> <space>fn :NeoTreeShowToggle<cr>
 ]])
