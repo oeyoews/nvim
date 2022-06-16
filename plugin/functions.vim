@@ -58,10 +58,6 @@ function! FindPlugin() abort
   find ~/.config/nvim/lua/plugins/init.lua
 endfunction
 
-function! FindLsp() abort
-  find ~/.config/nvim/lua/plugins/lsp/lsp.lua
-endfunction
-
 function! FindInit() abort
   find ~/.config/nvim/init.lua
 endfunction
@@ -69,7 +65,6 @@ endfunction
 " open nvim config file
 nnoremap <silent> <space>fi <cmd>call FindInit()<cr>
 nnoremap <silent> <space>fp <cmd>call FindPlugin()<cr>
-nnoremap <silent> <space>fl <cmd>call FindLsp()<cr>
 
 nnoremap <silent> <space>hh <cmd>help vanilla.txt<cr>
 
