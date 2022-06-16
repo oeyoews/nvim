@@ -42,7 +42,6 @@ again to toggle lowercase letters
 * [?] json add double how effect config
 * [ ] add format stylua by ci/cd
 * [ ] insert mode to hide cursorline
-* [ ] https://github.com/AstroNvim/AstroNvim, learn it option setting and lsp multi separate setting: fix lua global vim setting
 * [ ] automatically install filetype server when first open
 * [ ] bug: treesitter multi download
 * config opt(load)
@@ -72,6 +71,7 @@ again to toggle lowercase letters
 * [x] config dashboard
 * [x] this emjoi shadow bug, maybe is kitty terminal(switch to wezterm compare)
 * [x] some error tip from feline(active)
+* [x] https://github.com/AstroNvim/AstroNvim, learn it option setting and lsp multi separate setting: fix lua global vim setting
 
 ## NOTE
 

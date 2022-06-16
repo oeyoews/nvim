@@ -30,6 +30,8 @@ capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 capabilities.offsetEncoding = { "utf-16" }
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
+local settings = require("plugins.lsp.settings").settings
+
 -- For general Lsp server
 -- bug: this will callback all servers to connect, and insall all need servers by no adjust filetype
 for _, lsp_server in ipairs(lsp_servers) do
@@ -40,6 +42,7 @@ for _, lsp_server in ipairs(lsp_servers) do
     --format code
     on_attach = lsp_format.on_attach,
     debounce_text_changes = 150,
+    settings = settings,
     -- link lsp-servers
     capabilities = capabilities,
   })
