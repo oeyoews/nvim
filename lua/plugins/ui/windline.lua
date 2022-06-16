@@ -6,4 +6,4 @@ if not ok then
 end
 
 -- option bubble(2)
-require('wlsample.evil_line')
+require("wlsample.evil_line")

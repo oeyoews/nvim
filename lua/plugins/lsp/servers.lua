@@ -15,7 +15,7 @@ M.servers = {
   "pyright",
   "gopls",
   "sumneko_lua",
-  'tsserver',
+  "tsserver",
   --'texlab',
   -- 'golangci_lint_ls',
   -- 'yamlls',
