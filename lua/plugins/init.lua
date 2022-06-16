@@ -4,21 +4,18 @@ local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 
 if fn.empty(fn.glob(install_path)) > 0 then
   packer_bootstrap = fn.system({
-    "git",
-    "clone",
-    "--depth",
-    "1",
+    "git", "clone", "--depth", "1",
     "https://github.com/wbthomason/packer.nvim",
     install_path,
   })
   vim.cmd("packadd packer.nvim")
 end
 
-local ok, packer = pcall(require, "packer")
+local packer_ok, packer = pcall(require, "packer")
 
-if not ok then
+if not packer_ok then
   vim.notify("packer not founded")
-  return false
+  return
 end
 
 local util = require("packer.util")
@@ -104,12 +101,10 @@ local plugins = {
   },
   {
     "iamcco/markdown-preview.nvim",
-    cmd = "MarkdownPreview",
     run = function()
       vim.fn["mkdp#util#install"]()
     end,
   },
-  -- 'b0o/incline.nvim',
   {
     "ekickx/clipboard-image.nvim",
     ft = "markdown",
@@ -179,22 +174,23 @@ packer.startup(function(use)
     packer.sync()
   end
 
+  -- automatically packer_compiled on startup
+  packer.compile()
+
   -- automatically install missing plugin(s)
   packer.install()
-
-  -- automatically packer_compiled on startup
-  vim.cmd([[PackerCompile]])
 end)
 
 vim.cmd([[
-nnoremap <Leader>vc <Cmd>PackerClean<CR>
-nnoremap <Leader>vi <Cmd>PackerInstall<cr>
-nnoremap <Leader>vs <Cmd>PackerSync<CR>
-nnoremap <Leader>vU <Cmd>PackerCompile<CR>
-nnoremap <silent> <leader>sO <cmd>luafile ~/.config/nvim/lua/plugins/init.lua<cr> :lua vim.notify("reload packer file")<cr>
-nnoremap <silent> <leader>so <cmd>luafile %<cr> :lua vim.notify("reload current file")<cr>
+  nnoremap <Leader>vc <Cmd>PackerClean<CR>
+  nnoremap <Leader>vi <Cmd>PackerInstall<cr>
+  nnoremap <Leader>vs <Cmd>PackerSync<CR>
+  nnoremap <Leader>vU <Cmd>PackerCompile<CR>
+  nnoremap <silent> <leader>sO <cmd>luafile ~/.config/nvim/lua/plugins/init.lua<cr> :lua vim.notify("reload packer file")<cr>
+  nnoremap <silent> <leader>so <cmd>luafile %<cr> :lua vim.notify("reload current file")<cr>
 ]])
 
 --[[
   "declancm/cinnamon.nvim",
+  'b0o/incline.nvim',
 --]]
