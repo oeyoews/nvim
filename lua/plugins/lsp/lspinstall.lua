@@ -8,8 +8,8 @@ end
 local lspinstall_servers = require("plugins.lsp.servers").servers
 
 lsp_installer.setup({
-  automatic_installation = true, -- automatic_installation is confliction for ensure_installed
-  -- ensure_installed = lspinstall_servers,
+  automatic_installation = false, -- automatic_installation is confliction for ensure_installed
+  ensure_installed = lspinstall_servers,
   ui = {
     icons = {
       server_installed = "🍺",
