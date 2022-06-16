@@ -1,10 +1,10 @@
 local M = {}
 
 local function config_dapi_and_sign()
-  local dap_install = require "dap-install"
-  dap_install.setup {
-    installation_path = vim.fn.stdpath "data" .. "/dapinstall/",
-  }
+  local dap_install = require("dap-install")
+  dap_install.setup({
+    installation_path = vim.fn.stdpath("data") .. "/dapinstall/",
+  })
 
   local dap_breakpoint = {
     error = {
@@ -33,7 +33,7 @@ local function config_dapi_and_sign()
 end
 
 local function config_dapui()
-  local dap, dapui = require "dap", require "dapui"
+  local dap, dapui = require("dap"), require("dapui")
 
   local debug_open = function()
     dapui.open()
@@ -52,18 +52,18 @@ local function config_dapui()
   dap.listeners.before.event_terminated["dapui_config"] = function()
     debug_close()
   end
-  dap.listeners.before.event_exited["dapui_config"]     = function()
+  dap.listeners.before.event_exited["dapui_config"] = function()
     debug_close()
   end
-  dap.listeners.before.disconnect["dapui_config"]       = function()
+  dap.listeners.before.disconnect["dapui_config"] = function()
     debug_close()
   end
 end
 
 local function config_debuggers()
-  local dap = require "dap"
+  local dap = require("dap")
   -- TODO: wait dap-ui for fixing temrinal layout
-  dap.defaults.fallback.terminal_win_cmd = '30vsplit new' -- this will be overrode by dapui
+  dap.defaults.fallback.terminal_win_cmd = "30vsplit new" -- this will be overrode by dapui
   dap.set_log_level("DEBUG")
 
   -- load from json file

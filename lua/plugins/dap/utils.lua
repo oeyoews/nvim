@@ -5,7 +5,7 @@ M.starts_with = function(str, start)
 end
 
 M.ends_with = function(str, ending)
-  return ending == "" or str:sub(- #ending) == ending
+  return ending == "" or str:sub(-#ending) == ending
 end
 
 -- file exist?
@@ -20,14 +20,12 @@ M.exists = function(file)
   return ok, err
 end
 
-
 M.SaveAndExit = function()
   -- write all buffer first
   vim.api.nvim_command(":wa")
   -- quit all buffer
   vim.api.nvim_command(":qa")
 end
-
 
 -- gtags
 M.GtagsRefernce = function()

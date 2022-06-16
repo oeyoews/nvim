@@ -1,16 +1,16 @@
 local M = {}
-local dap = require 'dap'
+local dap = require("dap")
 
 -- refresh config
 M.reload_continue = function()
-  package.loaded['user.dap.dap-config'] = nil
-  require('user.dap.dap-config').setup()
+  package.loaded["user.dap.dap-config"] = nil
+  require("user.dap.dap-config").setup()
   dap.continue()
 end
 
 -- support passing args
 M.find_next_start = function(str, cur_idx)
-  while cur_idx <= #str and str:sub(cur_idx, cur_idx) == ' ' do
+  while cur_idx <= #str and str:sub(cur_idx, cur_idx) == " " do
     cur_idx = cur_idx + 1
   end
   return cur_idx
@@ -19,7 +19,7 @@ end
 --  vim.fn.split(argument_string, " ", true)
 M.str2argtable = function(str)
   -- trim spaces
-  str = string.gsub(str, '^%s*(.-)%s*$', '%1')
+  str = string.gsub(str, "^%s*(.-)%s*$", "%1")
   local arg_list = {}
 
   local start = 1
@@ -42,7 +42,7 @@ M.str2argtable = function(str)
         i = start
       end
       -- find next start
-    elseif c == ' ' then
+    elseif c == " " then
       arg_list[#arg_list + 1] = str:sub(start, i - 1)
       start = M.find_next_start(str, i + 1)
       i = start
@@ -58,10 +58,9 @@ M.str2argtable = function(str)
   return arg_list
 end
 
-
 -- persist breakpoint
 local bp_base_dir = os.getenv("HOME") .. "/.cache/dap-breakpoint/"
-local breakpoints = require('dap.breakpoints')
+local breakpoints = require("dap.breakpoints")
 local utils = require("plugins.dap.utils")
 
 function M.store_breakpoints()
@@ -81,7 +80,7 @@ function M.store_breakpoints()
   -- build bps json file
   local buf_name = vim.api.nvim_buf_get_name(0)
   buf_name = buf_name:gsub("/", "-")
-  local fp = io.open(bp_base_dir .. buf_name:sub(2, #buf_name) .. '.json', 'w')
+  local fp = io.open(bp_base_dir .. buf_name:sub(2, #buf_name) .. ".json", "w")
 
   -- write bps into json file
   local json_str = vim.fn.json_encode(bps)
@@ -95,13 +94,13 @@ function M.load_breakpoints()
   -- build bps json file
   local buf_name = vim.api.nvim_buf_get_name(0)
   buf_name = buf_name:gsub("/", "-")
-  local fp = io.open(bp_base_dir .. buf_name:sub(2, #buf_name) .. '.json', 'r')
+  local fp = io.open(bp_base_dir .. buf_name:sub(2, #buf_name) .. ".json", "r")
   if fp == nil then
     return
   end
 
   -- read breakpoints from json file
-  local content = fp:read('*a')
+  local content = fp:read("*a")
   local bps = vim.fn.json_decode(content)
   for bufname, buf_bps in pairs(bps) do
     if vim.api.nvim_buf_get_name(0) == bufname then
@@ -111,7 +110,7 @@ function M.load_breakpoints()
         local opts = {
           condition = bp.condition,
           log_message = bp.logMessage,
-          hit_condition = bp.hitCondition
+          hit_condition = bp.hitCondition,
         }
         breakpoints.set(opts, bufnr, line)
       end
