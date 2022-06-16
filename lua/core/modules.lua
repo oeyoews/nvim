@@ -11,6 +11,7 @@ local modules = {
     "tools", -- some tools
     "ui", -- ui configuration
     "lsp", -- lsp settings
+    -- "dap",
   },
 }
 

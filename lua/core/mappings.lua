@@ -48,7 +48,7 @@ nnoremap <leader>qh q:
 nnoremap q <nop>
 
 nnoremap <leader>w <C-w>
-nnoremap <silent> <leader>bm :messages<cr>
+nnoremap <silent> <leader>bM :messages<cr>
 
 " clear or highlight search words
 "nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>

@@ -40,14 +40,6 @@ local plugins = {
   {
     "akinsho/toggleterm.nvim",
   },
-  -- DAP
-  {
-    "ravenxrz/DAPInstall.nvim", -- help us install several debuggers
-    "mfussenegger/nvim-dap",
-    "rcarriga/nvim-dap-ui",
-    "theHamsta/nvim-dap-virtual-text",
-    "jbyuki/one-small-step-for-vimkind",
-  },
   {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v2.x",
@@ -196,7 +188,6 @@ packer.startup(function(use)
   packer.install()
   -- automatically packer_compiled on startup
   packer.compile()
-
 end)
 
 vim.cmd([[
@@ -211,10 +202,18 @@ vim.cmd([[
 --[[
   "declancm/cinnamon.nvim",
   'b0o/incline.nvim',
+{
+  "michaelb/sniprun",
+  run = "bash ./install.sh",
+  cmd = "SnipRun",
+},
+  {
+    "ravenxrz/DAPInstall.nvim", -- help us install several debuggers
+    "mfussenegger/nvim-dap",
+    "rcarriga/nvim-dap-ui",
+    "theHamsta/nvim-dap-virtual-text",
+    {
+      "jbyuki/one-small-step-for-vimkind",
+    },
+  },
 --]]
--- runner
--- {
---   "michaelb/sniprun",
---   run = "bash ./install.sh",
---   cmd = "SnipRun",
--- },

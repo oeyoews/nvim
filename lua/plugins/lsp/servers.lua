@@ -19,9 +19,8 @@ M.servers = {
   -- 'golangci_lint_ls',
   "yamlls",
   "vimls",
-  "jdtls",
 }
 
 return M
 
--- vim:cc=80:ft=lua
+-- vim:ft=lua

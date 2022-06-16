@@ -12,9 +12,11 @@ local formatting = null_ls.builtins.formatting
 
 local disabled_filetypes = {
   -- "c",
+  "java",
   "json",
 }
 
+-- @filetypes
 local enabale_filetypes = require("plugins.lsp.filetypes").filetypes
 
 -- append gitcommit for null_ls's codespell

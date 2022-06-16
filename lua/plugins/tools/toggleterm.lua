@@ -1,5 +1,5 @@
-require("toggleterm").setup {
-  direction = 'float',
+require("toggleterm").setup({
+  direction = "float",
 
   float_opts = {
     -- The border key is *almost* the same as 'nvim_open_win'
@@ -7,7 +7,7 @@ require("toggleterm").setup {
     -- the 'curved' border is a custom border type
     -- not natively supported but implemented in this plugin.
     --'single' | 'double' | 'shadow' | 'curved' | ... other options supported by win open
-    border = 'curved',
+    border = "curved",
     winblend = 3,
   },
   highlights = {
@@ -17,13 +17,13 @@ require("toggleterm").setup {
       -- guibg = ,
     },
     NormalFloat = {
-      link = 'Normal'
+      link = "Normal",
     },
     FloatBorder = {
       guifg = "#3D59A1",
     },
   },
-}
+})
 
 vim.cmd([[
   nnoremap <silent> <leader>tk :ToggleTerm<cr>

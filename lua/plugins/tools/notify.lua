@@ -45,5 +45,5 @@ notify.setup({
 })
 
 vim.cmd([[
-nnoremap <silent> <leader>bM :Notifications<cr>
+nnoremap <silent> <leader>bm :Notifications<cr>
 ]])
