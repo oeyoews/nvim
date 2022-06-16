@@ -30,7 +30,6 @@ capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 capabilities.offsetEncoding = { "utf-16" }
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-
 local override = {
   gopls = {
     settings = {
@@ -55,7 +54,6 @@ local override = {
 -- For general Lsp server
 -- bug: this will callback all servers to connect, and insall all need servers by no adjust filetype
 for _, lsp_server in ipairs(lsp_servers) do
-
   local config = {
     --format code
     on_attach = lsp_format.on_attach,
@@ -68,7 +66,6 @@ for _, lsp_server in ipairs(lsp_servers) do
 
   lspconfig[lsp_server].setup({ config })
 end
-
 
 vim.cmd([[
   nnoremap <silent> <leader>li :LspInfo<cr>

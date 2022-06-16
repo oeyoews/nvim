@@ -17,7 +17,7 @@ M.servers = {
   "tsserver",
   --'texlab',
   -- 'golangci_lint_ls',
-  'yamlls',
+  "yamlls",
   "vimls",
 }
 

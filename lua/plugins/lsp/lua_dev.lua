@@ -2,11 +2,10 @@ local opts = {
   settings = {
     Lua = {
       diagnostics = {
-        globals = { "vim",},
+        globals = { "vim" },
       },
       workspace = {
-        library = {
-        },
+        library = {},
         maxPreload = 100000,
         preloadFileSize = 10000,
       },
