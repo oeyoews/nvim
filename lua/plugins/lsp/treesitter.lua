@@ -12,32 +12,8 @@ for _, config in pairs(require("nvim-treesitter.parsers").get_parser_configs()) 
 end
 --]]
 
-local ensure_installed = {
-  "bash",
-  "c",
-  "css",
-  --"comment",
-  "html",
-  "json",
-  "lua",
-  "norg",
-  "make",
-  "markdown",
-  "python",
-  "go",
-  "gomod",
-  "javascript",
-  --"java",
-  "vim",
-  --"vue",
-  "yaml",
-  "toml",
-  --"typescript",
-  --"org",
-  -- "query",
-  -- todo details
-  -- "norg", "norg_meta", "norg_table",
-}
+local ensure_installed = require("plugins.lsp.filetypes").setup
+
 -- tips: tsmoduleinfo
 tree_configs.setup({
   autotag = {

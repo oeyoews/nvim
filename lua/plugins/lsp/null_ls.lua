@@ -12,16 +12,10 @@ local formatting = null_ls.builtins.formatting
 
 local disabled_filetypes = {
   "c",
+  "json",
 }
 
-local enabale_filetypes = {
-  "lua",
-  "yaml",
-  "markdown",
-  "vim",
-  "gitcommit",
-  "python",
-}
+local enabale_filetypes = require("plugins.lsp.filetypes").setup
 
 local sources = {
   diagnostics.markdownlint, -- need install markdownlint
