@@ -15,6 +15,7 @@ local modules = {
   "telescope",
   "whichkey",
   "toggleterm",
+  "clipboard-image",
   -- "nvim_tree",
 }
 
