@@ -15,6 +15,8 @@ local filetypes = {
   "yaml",
   "markdown",
   "vim",
+  "gitcommit",
+  "python",
 }
 
 local sources = {
