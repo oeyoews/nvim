@@ -4,75 +4,65 @@ g.did_load_filetypes = 0
 g.do_filetype_lua = 1
 g.python3_host_prog = "/usr/bin/python3"
 
-opt.textwidth = 80
--- global statusline @nvim_0.7
-opt.laststatus = 3
-
--- opt.colorcolumn = "99999" -- fixes indentline for now
-opt.completeopt = { "menuone", "noselect" }
-opt.pumheight = 10
--- opt.guifont = "monospace:h27"
-
--- time
-opt.updatetime = 200
-opt.timeoutlen = 1000
-
--- disable nvim intro
-opt.shortmess:append("acsI")
-opt.splitright = true
-opt.splitbelow = true
-
--- Indent
-opt.expandtab = true
-opt.shiftwidth = 2
-opt.smartindent = true
-opt.tabstop = 2
-opt.softtabstop = 2
-opt.signcolumn = "yes"
-opt.mouse = "a"
-opt.fillchars = { eob = " " }
-opt.cursorline = true
-opt.smartindent = true
-opt.lazyredraw = true
-opt.termguicolors = true
-opt.undofile = true
-opt.ttyfast = true
-
--- opt.signcolumn = true
-opt.autochdir = true
-opt.wrap = true
-
--- Number
-opt.numberwidth = 2
-opt.number = true
-opt.ruler = false
-
 -- opt.clipboard = "unnamedplus"
-opt.title = true
-opt.titlestring = "%<%F%=%l/%L - nvim"
-opt.list = true
-opt.linebreak = true
-opt.hidden = true
-opt.ignorecase = true
-opt.confirm = true
-opt.showcmd = false
-opt.showmode = false
-opt.backup = false
-opt.swapfile = false
-opt.foldenable = false
-opt.incsearch = true
-opt.hlsearch = true
-opt.vb = true
-opt.shell = "/bin/zsh"
-opt.spelllang = { "en", "cjk" }
-opt.listchars = { tab = " " }
-
--- set shadafile path
+-- set shadafile(neovim) path
 vim.schedule(function()
   vim.opt.shadafile = vim.fn.expand("$HOME") .. "/.local/share/nvim/shada/main.shada"
   vim.cmd([[ silent! rsh ]])
 end)
 
--- vim.cmd([[
--- set whichwrap+=<,>,[,]
--- ]])
+local default_options = {
+  number = true,
+  textwidth = 80,
+  laststatus = 3,
+  updatetime = 200,
+  timeoutlen = 1000,
+  splitright = true,
+  splitbelow = true,
+  expandtab = true,
+  smartindent = true,
+  shiftwidth = 2,
+  tabstop = 2,
+  softtabstop = 2,
+  mouse = "a",
+  cursorline = true,
+  lazyredraw = true,
+  termguicolors = true,
+  undofile = true,
+  ttyfast = true,
+  title = true,
+  list = true,
+  linebreak = true,
+  hidden = true,
+  ignorecase = true,
+  confirm = true,
+  showcmd = false,
+  showmode = false,
+  backup = false,
+  swapfile = false,
+  foldenable = false,
+  incsearch = true,
+  hlsearch = true,
+  vb = true,
+  autochdir = true,
+  wrap = true,
+  numberwidth = 2,
+  ruler = false,
+  signcolumn = "yes", -- silent side number shake
+  pumheight = 10, -- ??
+  titlestring = "%<%F%=%l/%L - nvim",
+  shell = "/bin/zsh",
+  completeopt = { "menuone", "noselect" },
+  fillchars = { eob = " " },
+  spelllang = { "en", "cjk" },
+  listchars = { tab = " " },
+
+}
+
+-- can't put pairs options
+opt.shortmess:append("acsI")
+opt.whichwrap:append "<,>,[,],h,l" -- wrap in line end
+
+for k, v in pairs(default_options) do
+  vim.opt[k] = v
+end

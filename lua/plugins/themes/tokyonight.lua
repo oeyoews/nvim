@@ -7,7 +7,7 @@ if not status_ok then
   return
 end
 
--- Example config in Lua
+-- option: storm, day, night
 g.tokyonight_style = "storm"
 g.tokyonight_italic_functions = true
 g.tokyonight_italic_variables = true
