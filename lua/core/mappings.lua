@@ -4,7 +4,6 @@ g.mapleader = " "
 
 vim.cmd([[
 " BUG: last line highlight is not correct
-"
 "let g:mapleader = " "
 " let g:mapleader = "\<Space>"
 
@@ -26,6 +25,7 @@ vnoremap << <gv
 
 " command mode
 nnoremap <leader><leader> :
+vnoremap <leader><leader> :
 
 " buffer
 nnoremap <silent> <leader><tab> :bp<CR>

@@ -36,34 +36,23 @@ local plugins = {
   "kyazdani42/nvim-web-devicons",
   "nvim-lua/plenary.nvim",
 
-  -- # Temporary
-
+  -- @Temporary
+  {
+    "akinsho/toggleterm.nvim",
+  },
   -- DAP
   {
+    "ravenxrz/DAPInstall.nvim", -- help us install several debuggers
     "mfussenegger/nvim-dap",
-    requires = {
-      "leoluz/nvim-dap-go",
-      "mfussenegger/nvim-dap-python",
-      {
-        "rcarriga/nvim-dap-ui",
-      },
-      {
-        "theHamsta/nvim-dap-virtual-text",
-      },
-      "jbyuki/one-small-step-for-vimkind",
-    },
+    "rcarriga/nvim-dap-ui",
+    "theHamsta/nvim-dap-virtual-text",
+    "jbyuki/one-small-step-for-vimkind",
   },
   {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v2.x",
   },
 
-  -- runner
-  {
-    "michaelb/sniprun",
-    run = "bash ./install.sh",
-    cmd = "SnipRun",
-  },
   "p00f/clangd_extensions.nvim", -- TODO config it after finish lsp config
   "lewis6991/spellsitter.nvim",
   "folke/lua-dev.nvim",
@@ -149,7 +138,9 @@ local plugins = {
     -- cmd = 'Telescope',
   },
   "phaazon/hop.nvim",
-  "kyazdani42/nvim-tree.lua",
+  {
+    "kyazdani42/nvim-tree.lua",
+  },
   {
     "dstein64/vim-startuptime",
     commit = "61f122ebc41e9bcf1793c752a728db59feee77bb",
@@ -201,11 +192,11 @@ packer.startup(function(use)
     packer.sync()
   end
 
+  -- automatically install missing plugin(s)
+  packer.install()
   -- automatically packer_compiled on startup
   packer.compile()
 
-  -- automatically install missing plugin(s)
-  packer.install()
 end)
 
 vim.cmd([[
@@ -221,3 +212,9 @@ vim.cmd([[
   "declancm/cinnamon.nvim",
   'b0o/incline.nvim',
 --]]
+-- runner
+-- {
+--   "michaelb/sniprun",
+--   run = "bash ./install.sh",
+--   cmd = "SnipRun",
+-- },
