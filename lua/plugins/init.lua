@@ -37,14 +37,8 @@ local plugins = {
   "nvim-lua/plenary.nvim",
 
   -- @Temporary
-  {
-    "akinsho/toggleterm.nvim",
-  },
-  {
-    "nvim-neo-tree/neo-tree.nvim",
-    branch = "v2.x",
-  },
-
+  "akinsho/toggleterm.nvim",
+  "nvim-neo-tree/neo-tree.nvim",
   "p00f/clangd_extensions.nvim", -- TODO config it after finish lsp config
   "lewis6991/spellsitter.nvim",
   "folke/lua-dev.nvim",
@@ -195,15 +189,3 @@ vim.cmd([[
   nnoremap <silent> <leader>sO <cmd>luafile ~/.config/nvim/lua/plugins/init.lua<cr> :lua vim.notify("reload packer file")<cr>
   nnoremap <silent> <leader>so <cmd>luafile %<cr> :lua vim.notify("reload current file")<cr>
 ]])
-
---[[
-  "declancm/cinnamon.nvim",
-  'b0o/incline.nvim',
-  "michaelb/sniprun",
-    "ravenxrz/DAPInstall.nvim", -- help us install several debuggers
-    "mfussenegger/nvim-dap",
-    "rcarriga/nvim-dap-ui",
-    "theHamsta/nvim-dap-virtual-text",
-      "jbyuki/one-small-step-for-vimkind",
-    "kyazdani42/nvim-tree.lua",
---]]
