@@ -181,7 +181,8 @@ nnoremap <Leader>vc <Cmd>PackerClean<CR>
 nnoremap <Leader>vi <Cmd>PackerInstall<cr>
 nnoremap <Leader>vs <Cmd>PackerSync<CR>
 nnoremap <Leader>vU <Cmd>PackerCompile<CR>
-nnoremap <leader>so <cmd>luafile ~/.config/nvim/lua/plugins/init.lua<cr>
+nnoremap <silent> <leader>sO <cmd>luafile ~/.config/nvim/lua/plugins/init.lua<cr> :lua vim.notify("reload packer file")<cr>
+nnoremap <silent> <leader>so <cmd>luafile %<cr> :lua vim.notify("reload current file")<cr>
 ]])
 
 --[[
