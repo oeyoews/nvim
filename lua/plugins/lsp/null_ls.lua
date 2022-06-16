@@ -29,7 +29,6 @@ local sources = {
   diagnostics.codespell.with({
     disabled_filetypes = {
       "c",
-      "json",
     },
     filetypes = filetypes,
   }), -- need install codespell
