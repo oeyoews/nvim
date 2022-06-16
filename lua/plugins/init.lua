@@ -37,9 +37,32 @@ local plugins = {
   "nvim-lua/plenary.nvim",
 
   -- # Temporary
+
+  -- DAP
+  {
+    "mfussenegger/nvim-dap",
+    requires = {
+      "leoluz/nvim-dap-go",
+      "mfussenegger/nvim-dap-python",
+      {
+        "rcarriga/nvim-dap-ui",
+      },
+      {
+        "theHamsta/nvim-dap-virtual-text",
+      },
+      "jbyuki/one-small-step-for-vimkind",
+    },
+  },
   {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v2.x",
+  },
+
+  -- runner
+  {
+    "michaelb/sniprun",
+    run = "bash ./install.sh",
+    cmd = "SnipRun",
   },
   "p00f/clangd_extensions.nvim", -- TODO config it after finish lsp config
   "lewis6991/spellsitter.nvim",
@@ -97,6 +120,7 @@ local plugins = {
   },
 
   -- @Tools
+  "tpope/vim-surround",
   "abecodes/tabout.nvim",
   {
     "nvim-neorg/neorg",

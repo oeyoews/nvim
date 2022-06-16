@@ -19,6 +19,7 @@ M.servers = {
   -- 'golangci_lint_ls',
   "yamlls",
   "vimls",
+  "jdtls",
 }
 
 return M

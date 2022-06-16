@@ -20,6 +20,7 @@ M.filetypes = {
   "vim",
   "yaml",
   "toml",
+  "java",
   --"org",
   -- "query",
 }
