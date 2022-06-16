@@ -56,10 +56,7 @@ local plugins = {
   "oeyoews/windline.nvim",
   "lukas-reineke/indent-blankline.nvim",
   "akinsho/bufferline.nvim",
-  {
-    "windwp/nvim-ts-autotag",
-    ft = { "html", "xml" },
-  },
+  "windwp/nvim-ts-autotag",
 
   -- @LSP
   "williamboman/nvim-lsp-installer",

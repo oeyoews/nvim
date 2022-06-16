@@ -54,7 +54,10 @@ local symbol_map = {
 
 local sources = {
   { name = "nvim_lsp" },
-  { name = "buffer", keyword_length = 3 },
+  {
+    name = "buffer",
+    keyword_length = 4
+  },
   { name = "ultisnips" },
   { name = "path" },
   { name = "neorg" },
