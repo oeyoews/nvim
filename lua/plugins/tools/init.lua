@@ -14,8 +14,8 @@ local modules = {
   "tabout",
   "telescope",
   "whichkey",
-  "nvim_tree",
   "toggleterm",
+  -- "nvim_tree",
 }
 
 for _, load_module in ipairs(modules) do

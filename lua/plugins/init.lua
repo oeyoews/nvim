@@ -97,32 +97,19 @@ local plugins = {
   -- @Tools
   "tpope/vim-surround",
   "abecodes/tabout.nvim",
-  {
-    "nvim-neorg/neorg",
-    -- ft = 'norg'
-  },
+  "nvim-neorg/neorg",
   {
     "iamcco/markdown-preview.nvim",
     run = function()
       vim.fn["mkdp#util#install"]()
     end,
   },
-  {
-    "ekickx/clipboard-image.nvim",
-    ft = "markdown",
-  },
+  "ekickx/clipboard-image.nvim",
   "Pocco81/HighStr.nvim",
-  {
-    "itchyny/calendar.vim",
-    cmd = "Calendar",
-  },
+  "itchyny/calendar.vim",
   "yianwillis/vimcdoc",
   "folke/which-key.nvim",
-  {
-    "nvim-telescope/telescope.nvim",
-    -- command will cause some order mass, can't recognize this plugin
-    -- cmd = 'Telescope',
-  },
+  "nvim-telescope/telescope.nvim",
   "phaazon/hop.nvim",
   {
     "dstein64/vim-startuptime",
