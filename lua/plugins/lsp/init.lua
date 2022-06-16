@@ -5,9 +5,9 @@ local modules = {
   "lspinstall", -- preinstall some servers
   -- "lua_dev",
   "cmp", -- config completion
-  "clangd_extensions",
-  "lspconfig",
   "null_ls",
+  "lspconfig",
+  "clangd_extensions",
   "fidget",
   "lsp_signature",
   "lspsaga",

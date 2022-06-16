@@ -64,7 +64,7 @@ for _, lsp_server in ipairs(lsp_servers) do
     capabilities = capabilities,
   }
 
-  config = vim.tbl_extend("force", config, override[lsp_server] or {})
+  -- config = vim.tbl_extend("force", config, override[lsp_server] or {})
 
   lspconfig[lsp_server].setup({ config })
 end
