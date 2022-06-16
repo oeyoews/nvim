@@ -14,4 +14,5 @@ end
 --]]
 
 -- disable to read shadafile
-vim.opt.shadafile = "NONE"
+-- HACK: this shadafile like viminfo, to story command history
+-- vim.opt.shadafile = "NONE"

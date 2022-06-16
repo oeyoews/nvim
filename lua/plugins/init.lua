@@ -34,6 +34,7 @@ local plugins = {
   "nvim-lua/plenary.nvim",
 
   -- # Temporary
+  "NvChad/base46",
   {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v2.x",

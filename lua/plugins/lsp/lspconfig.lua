@@ -20,6 +20,7 @@ end
 -- fix: how to config according filetype automation install servers
 local lsp_servers = require("plugins.lsp.servers").servers
 
+-- remove clangd, use clangd_extension to replace
 table.remove(lsp_servers, 1)
 
 -- @nvim_cmp
@@ -37,9 +38,14 @@ local settings = require("plugins.lsp.settings").settings
 for _, lsp_server in ipairs(lsp_servers) do
   -- config = vim.tbl_extend("force", config, override[lsp_server] or {})
 
+  local on_attach = function(client)
+    lsp_format.on_attach(client)
+  end
+
   lspconfig[lsp_server].setup({
     --format code
-    on_attach = lsp_format.on_attach,
+    -- on_attach = lsp_format.on_attach,
+    on_attach = on_attach,
     debounce_text_changes = 150,
     settings = settings,
     -- link lsp-servers
