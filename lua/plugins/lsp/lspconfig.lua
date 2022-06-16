@@ -1,3 +1,42 @@
+local lspconfig_ok, lspconfig = pcall(require, "lspconfig")
+
+if not lspconfig_ok then
+  vim.notify("lspconfig not fouded")
+  return
+end
+
+-- @lspformat
+-- fixme: split it
+local lspformat_ok, lsp_format = pcall(require, "lsp-format")
+
+if not lspformat_ok then
+  vim.notify("lsp_format not founded")
+  return
+end
+
+-- if this servers not installed, cmp will callback nvim-lsp-install to install them
+-- fix: how to config according filetype automation install servers
+local lsp_servers = require("plugins.lsp.servers").servers
+
+-- @nvim_cmp
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+
+capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
+
+-- bug: this will callback all servers to connect, and insall all need servers by no adjust filetype
+for _, lsp_server in ipairs(lsp_servers) do
+  lspconfig[lsp_server].setup({
+    -- ??
+    flags = {
+      debounce_text_changes = 150,
+    },
+    --format code
+    on_attach = lsp_format.on_attach,
+    -- link lsp-servers
+    capabilities = capabilities,
+  })
+end
+
 vim.diagnostic.config({
   virtual_text = {
     prefix = "",
