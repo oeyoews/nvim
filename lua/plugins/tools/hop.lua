@@ -1,7 +1,7 @@
 local hop_ok, hop = pcall(require, "hop")
 
 if not hop_ok then
-  return false
+  return
 end
 
 hop.setup()

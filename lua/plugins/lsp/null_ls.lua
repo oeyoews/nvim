@@ -3,7 +3,7 @@ local ok, null_ls = pcall(require, "null-ls")
 
 if not ok then
   vim.notify("null-ls not founded")
-  return false
+  return
 end
 
 local diagnostics = null_ls.builtins.diagnostics

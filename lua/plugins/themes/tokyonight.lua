@@ -1,9 +1,10 @@
-local status_ok, tokyonight = pcall(require, "tokyonight")
 local g = vim.g
+
+local status_ok, tokyonight = pcall(require, "tokyonight")
 
 if not status_ok then
   vim.notify("tokyonight not found")
-  return false
+  return
 end
 
 -- Example config in Lua

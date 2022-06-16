@@ -2,7 +2,7 @@ local autopairs_ok, autopairs = pcall(require, "nvim-autopairs")
 
 if not autopairs_ok then
   vim.notify("autopairs not founded")
-  return false
+  return
 end
 
 autopairs.setup({})

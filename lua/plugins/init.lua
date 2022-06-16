@@ -34,7 +34,6 @@ local plugins = {
   "nvim-lua/plenary.nvim",
 
   -- # Temporary
-  "lewis6991/spellsitter.nvim",
   -- #Ui
   {
     "nvim-treesitter/nvim-treesitter",
@@ -186,5 +185,6 @@ nnoremap <leader>so <cmd>luafile ~/.config/nvim/lua/plugins/init.lua<cr>
 ]])
 
 --[[
-    'declancm/cinnamon.nvim',
+  "declancm/cinnamon.nvim",
+  "lewis6991/spellsitter.nvim",
 --]]

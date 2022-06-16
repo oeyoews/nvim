@@ -9,21 +9,21 @@ local cmp_ok, cmp = pcall(require, "cmp")
 
 if not cmp_ok then
   vim.notify("cmp not founded")
-  return false
+  return
 end
 
 local lspkind_ok, lspkind = pcall(require, "lspkind")
 
 if not lspkind_ok then
   vim.notify("lspkind not founded")
-  return false
+  return
 end
 
 local lspformat_ok, lsp_format = pcall(require, "lsp-format")
 
 if not lspformat_ok then
   vim.notify("lsp_format not founded")
-  return false
+  return
 end
 
 local lsp_servers = require("plugins.lsp.servers").servers

@@ -1,7 +1,7 @@
 local ok, filetype = pcall(require, "filetype")
 
 if not ok then
-  return false
+  return
 end
 
 filetype.setup({

@@ -1,3 +1,5 @@
+-- Description: install lsp servers
+
 local M = {}
 
 M.servers = {

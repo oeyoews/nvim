@@ -2,7 +2,7 @@ local which_key_ok, which_key = pcall(require, "which-key")
 
 if not which_key_ok then
   vim.notify("whickey not founded")
-  return false
+  return
 end
 
 which_key.setup({

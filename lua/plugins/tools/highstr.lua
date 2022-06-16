@@ -2,7 +2,7 @@ local ok, high_str = pcall(require, "high-str")
 
 if not ok then
   vim.notify("highstr not founded")
-  return false
+  return
 end
 
 high_str.setup({
@@ -19,11 +19,11 @@ high_str.setup({
     color_6 = { "#0000FF", "smart" }, -- Just blue
     color_7 = { "#FFC0CB", "smart" }, -- Blush pink
     color_8 = { "#FFF9E3", "smart" }, -- Cosmic latte
-    color_9 = { "#7d5c34", "smart" }, -- Fallow brown
+    color_9 = { "#7d5c34", "smart" }, -- Follow brown
   },
 })
 
 vim.cmd([[
-vnoremap <silent> <f3> :<c-u>HSHighlight 2<CR>
-vnoremap <silent> <f4> :<c-u>HSRmHighlight<CR>
+  vnoremap <silent> <f3> :<c-u>HSHighlight 2<CR>
+  vnoremap <silent> <f4> :<c-u>HSRmHighlight<CR>
 ]])

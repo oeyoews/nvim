@@ -1,7 +1,8 @@
 local ok, incline = pcall(require, "incline")
 
 if not ok then
-  return false
+  vim.notify("incline not founded")
+  return
 end
 
 incline.setup()

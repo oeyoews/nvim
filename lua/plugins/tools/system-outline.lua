@@ -1,7 +1,7 @@
 local ok, symbolsoutline = pcall(require, "symbols-outline")
 
 if not ok then
-  return false
+  return
 end
 
 symbolsoutline.setup({
