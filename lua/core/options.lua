@@ -56,13 +56,12 @@ local default_options = {
   completeopt = { "menuone", "noselect" },
   fillchars = { eob = " " },
   spelllang = { "en", "cjk" },
-  listchars = { tab = " " },
-
+  listchars = { tab = "  " },
 }
 
 -- can't put pairs options
 opt.shortmess:append("acsI")
-opt.whichwrap:append "<,>,[,],h,l" -- wrap in line end
+opt.whichwrap:append("<,>,[,],h,l") -- wrap in line end
 
 for k, v in pairs(default_options) do
   vim.opt[k] = v

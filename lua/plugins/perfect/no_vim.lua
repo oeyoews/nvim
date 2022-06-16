@@ -4,11 +4,9 @@ local M = {}
 M.settings = {
   g = vim.g,
   opt = vim.opt,
-  fn = vim.fn
+  fn = vim.fn,
 }
 
-function no_vim()
-
-end
+function no_vim() end
 
 return M

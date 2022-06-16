@@ -18,6 +18,7 @@ end
 
 -- if this servers not installed, cmp will callback nvim-lsp-install to install them
 -- fix: how to config according filetype automation install servers
+-- @servers_lua
 local lsp_servers = require("plugins.lsp.servers").servers
 
 -- remove clangd, use clangd_extension to replace

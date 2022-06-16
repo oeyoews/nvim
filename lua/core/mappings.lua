@@ -93,3 +93,5 @@ nnoremap <silent> <space>yp :<C-U>let @+=expand('%:p') <bar> lua vim.notify(" ðŸ
 " toggle spell
 nnoremap <space>ss <cmd>set invspell <bar> lua vim.notify("Toggle Spell")<cr>
 ]])
+
+-- TODO: https://github.com/LunarVim/LunarVim/blob/rolling/lua/lvim/keymappings.lua
