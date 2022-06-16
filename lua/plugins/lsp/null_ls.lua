@@ -10,7 +10,11 @@ local diagnostics = null_ls.builtins.diagnostics
 
 local formatting = null_ls.builtins.formatting
 
-local filetypes = {
+local disabled_filetypes = {
+  "c",
+}
+
+local enabale_filetypes = {
   "lua",
   "yaml",
   "markdown",
@@ -27,10 +31,8 @@ local sources = {
   -- builtin.completion.spell,
   -- builtin.code_actions.shellcheck
   diagnostics.codespell.with({
-    disabled_filetypes = {
-      "c",
-    },
-    filetypes = filetypes,
+    disabled_filetypes = disabled_filetypes,
+    filetypes = enabale_filetypes,
   }), -- need install codespell
 }
 
