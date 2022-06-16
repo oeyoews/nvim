@@ -5,13 +5,7 @@
 
 --vim.cmd [[highlight default GH guifg=#3bb6c4 guibg=NONE]]
 
-local cmp_ok, cmp = pcall(require, "cmp")
-
-if not cmp_ok then
-  vim.notify("cmp not founded")
-  return
-end
-
+-- @lspkind
 local lspkind_ok, lspkind = pcall(require, "lspkind")
 
 if not lspkind_ok then
@@ -19,10 +13,27 @@ if not lspkind_ok then
   return
 end
 
+-- @lspformat
 local lspformat_ok, lsp_format = pcall(require, "lsp-format")
 
 if not lspformat_ok then
   vim.notify("lsp_format not founded")
+  return
+end
+
+-- @lspconfig
+local lspconfig_ok, lspconfig = pcall(require, "lspconfig")
+
+if not lspconfig_ok then
+  vim.notify("lspconfig not fouded")
+  return
+end
+
+-- @nvim_cmp
+local cmp_ok, cmp = pcall(require, "cmp")
+
+if not cmp_ok then
+  vim.notify("cmp not founded")
   return
 end
 
@@ -59,6 +70,16 @@ local symbol_map = {
   Event = "",
   Operator = "",
   TypeParameter = "𝙏",
+}
+
+local sources = {
+  { name = "nvim_lsp" },
+  { name = "buffer", keyword_length = 3 },
+  { name = "ultisnips" },
+  { name = "path" },
+  { name = "neorg" },
+  { name = "emoji" },
+  { name = "nvim-lua" },
 }
 
 cmp.setup({
@@ -117,28 +138,13 @@ cmp.setup({
   },
 
   -- sources
-  sources = {
-    { name = "nvim_lsp" },
-    { name = "buffer", keyword_length = 3 },
-    { name = "ultisnips" },
-    { name = "path" },
-    { name = "neorg" },
-    { name = "emoji" },
-    { name = "nvim-lua" },
-  },
+  sources = sources,
 })
-
--- fixme
-local lspconfig_ok, lspconfig = pcall(require, "lspconfig")
-
-if not lspconfig_ok then
-  vim.notify("lspconfig not fouded")
-  return
-end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
+
 
 -- bug: this will callback all servers to connect, and insall all need servers by no adjust filetype
 for _, lsp_server in ipairs(lsp_servers) do

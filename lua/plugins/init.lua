@@ -34,6 +34,7 @@ local plugins = {
   "nvim-lua/plenary.nvim",
 
   -- # Temporary
+  "p00f/clangd_extensions.nvim", -- TODO config it after finish lsp config
   "lewis6991/spellsitter.nvim",
   "folke/lua-dev.nvim",
   -- #Ui

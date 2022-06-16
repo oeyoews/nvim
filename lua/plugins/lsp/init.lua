@@ -5,7 +5,6 @@ local modules = {
   "lspinstall", -- preinstall some servers
   -- "lua_dev",
   "cmp", -- config completion
-  "lspconfig", -- config lsp
   "null_ls",
   "fidget",
   "lsp_signature",
