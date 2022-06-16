@@ -4,22 +4,22 @@ local M = {}
 M.lua = {
   diagnostics = {
     globals = {
-      "vim"
+      "vim",
     },
     disable = {
-      "lowercase-global"
-    }
+      "lowercase-global",
+    },
   },
   workspace = {
     library = {
       -- [vim.fn.expand "$VIMRUNTIME/lua"] = true,
-      [vim.fn.stdpath "config" .. "/lua"] = true,
+      [vim.fn.stdpath("config") .. "/lua"] = true,
     },
   },
 }
 
 M.settings = {
-  Lua = M.lua
+  Lua = M.lua,
 }
 
 return M

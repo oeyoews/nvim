@@ -24,9 +24,12 @@ end
 local util = require("packer.util")
 
 local plugins = {
+  -- @Manager
   "wbthomason/packer.nvim",
-  -- @Perfect
+
+  -- @Necessary
   -- fixme: filetype need in impatient after to fix treesitter install times
+  "MunifTanjim/nui.nvim",
   "lewis6991/impatient.nvim",
   "nathom/filetype.nvim",
   "rcarriga/nvim-notify",
@@ -34,6 +37,10 @@ local plugins = {
   "nvim-lua/plenary.nvim",
 
   -- # Temporary
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v2.x",
+  },
   "p00f/clangd_extensions.nvim", -- TODO config it after finish lsp config
   "lewis6991/spellsitter.nvim",
   "folke/lua-dev.nvim",
