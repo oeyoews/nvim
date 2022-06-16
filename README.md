@@ -39,6 +39,7 @@ again to toggle lowercase letters
 
 ## TODO
 
+* [?] json add double how effect config
 * [ ] add format stylua by ci/cd
 * [ ] insert mode to hide cursorline
 * [ ] https://github.com/AstroNvim/AstroNvim, learn it option setting and lsp multi separate setting: fix lua global vim setting

@@ -30,27 +30,6 @@ capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 capabilities.offsetEncoding = { "utf-16" }
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-local override = {
-  gopls = {
-    settings = {
-      analyses = {
-        unusedparams = true,
-      },
-      staticcheck = true,
-    },
-  },
-  tsserver = {
-    single_file_support = true,
-    init_options = {
-      hostInfo = "neovim",
-      preferences = {
-        includeCompletionsWithSnippetText = true,
-        includeCompletionsForImportStatements = true,
-      },
-    },
-  },
-}
-
 -- For general Lsp server
 -- bug: this will callback all servers to connect, and insall all need servers by no adjust filetype
 for _, lsp_server in ipairs(lsp_servers) do
@@ -70,17 +49,6 @@ vim.cmd([[
   nnoremap <silent> <leader>li :LspInfo<cr>
 ]])
 
--- HACK: ref: self comment to avoid double quote error :https://blog.51cto.com/u_15346415/3673795
---[=[
-vim.diagnostic.config({
-  virtual_text = {
-    prefix = "",
-  },
-  signs = true,
-  underline = true,
-  update_in_insert = false,
-})
-
 -- icon note this order in last
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
   underline = true,
@@ -90,7 +58,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
   virtual_text = {
     spacing = 2,
     source = "always",
-    prefix = "",
+    prefix = "🐕", -- define virtual_text icon
   },
   float = {
     focusable = false,
@@ -98,10 +66,12 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
     border = "rounded",
     source = "always",
     header = "",
-    prefix = "",
+    prefix = "",
   },
 })
 
+-- HACK: ref: self comment to avoid double quote error :https://blog.51cto.com/u_15346415/3673795
+--[=[
 vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
   border = "single",
   silent = true,
