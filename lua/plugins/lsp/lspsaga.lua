@@ -55,6 +55,7 @@ nnoremap <silent>K :Lspsaga hover_doc<CR>
 nnoremap <silent> <C-f> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>
 nnoremap <silent> <C-b> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>
 nnoremap <silent> gs :Lspsaga signature_help<CR>
+" gD use vanilla
 nnoremap <silent> gd :Lspsaga preview_definition<CR>
 nnoremap <silent> gh :Lspsaga lsp_finder<CR>
 nnoremap <silent>gr :Lspsaga rename<CR>

@@ -3,10 +3,10 @@
 local M = {}
 
 M.servers = {
+  "clangd", -- WARN: don't modify this position or table order, unless use table self sort method to solve it
   "bashls",
   -- 'cssls',
   "cmake",
-  "clangd",
   -- 'diagnosticls',
   "html",
   "jsonls",
@@ -22,3 +22,5 @@ M.servers = {
 }
 
 return M
+
+-- vim:cc=80:ft=lua

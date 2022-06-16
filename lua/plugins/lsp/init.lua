@@ -4,7 +4,8 @@ local modules = {
   "treesitter",
   "lspinstall", -- preinstall some servers
   -- "lua_dev",
-  -- "cmp", -- config completion
+  "cmp", -- config completion
+  "clangd_extensions",
   "lspconfig",
   "null_ls",
   "fidget",

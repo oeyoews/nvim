@@ -1,3 +1,5 @@
+-- lspconfig.lua
+
 local lspconfig_ok, lspconfig = pcall(require, "lspconfig")
 
 if not lspconfig_ok then
@@ -18,25 +20,62 @@ end
 -- fix: how to config according filetype automation install servers
 local lsp_servers = require("plugins.lsp.servers").servers
 
+table.remove(lsp_servers, 1)
+
 -- @nvim_cmp
+-- fixme: split it ???
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
+capabilities.offsetEncoding = { "utf-16" }
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 
+
+local override = {
+  gopls = {
+    settings = {
+      analyses = {
+        unusedparams = true,
+      },
+      staticcheck = true,
+    },
+  },
+  tsserver = {
+    single_file_support = true,
+    init_options = {
+      hostInfo = "neovim",
+      preferences = {
+        includeCompletionsWithSnippetText = true,
+        includeCompletionsForImportStatements = true,
+      },
+    },
+  },
+}
+
+-- For general Lsp server
 -- bug: this will callback all servers to connect, and insall all need servers by no adjust filetype
 for _, lsp_server in ipairs(lsp_servers) do
-  lspconfig[lsp_server].setup({
-    -- ??
-    flags = {
-      debounce_text_changes = 150,
-    },
+
+  local config = {
     --format code
     on_attach = lsp_format.on_attach,
+    debounce_text_changes = 150,
     -- link lsp-servers
     capabilities = capabilities,
-  })
+  }
+
+  config = vim.tbl_extend("force", config, override[lsp_server] or {})
+
+  lspconfig[lsp_server].setup({ config })
 end
 
+
+vim.cmd([[
+  nnoremap <silent> <leader>li :LspInfo<cr>
+]])
+
+-- HACK: ref: self comment to avoid double quote error :https://blog.51cto.com/u_15346415/3673795
+--[=[
 vim.diagnostic.config({
   virtual_text = {
     prefix = "",
@@ -72,11 +111,8 @@ vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.s
   silent = true,
   focusable = false,
   close_events = { "InsertCharPre", "CursorMoved" },
-  anchor = "SW",
   relative = "cursor",
   row = -1,
 })
 
-vim.cmd([[
-  nnoremap <silent> <leader>li :LspInfo<cr>
-]])
+--]=]

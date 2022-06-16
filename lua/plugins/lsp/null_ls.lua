@@ -11,11 +11,16 @@ local diagnostics = null_ls.builtins.diagnostics
 local formatting = null_ls.builtins.formatting
 
 local disabled_filetypes = {
-  "c",
+  -- "c",
   "json",
 }
 
 local enabale_filetypes = require("plugins.lsp.filetypes").filetypes
+
+-- append gitcommit for null_ls's codespell
+-- table.insert(enabale_filetypes, "gitcommit")
+-- ref: http://static.kancloud.cn/kancloud/lua_style_guide/66331
+enabale_filetypes[#enabale_filetypes + 1] = "gitcommit"
 
 local sources = {
   -- builtin.formatting.prettierd.with,
