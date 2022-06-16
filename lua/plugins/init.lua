@@ -131,9 +131,6 @@ local plugins = {
   },
   "phaazon/hop.nvim",
   {
-    "kyazdani42/nvim-tree.lua",
-  },
-  {
     "dstein64/vim-startuptime",
     commit = "61f122ebc41e9bcf1793c752a728db59feee77bb",
   },
@@ -202,18 +199,11 @@ vim.cmd([[
 --[[
   "declancm/cinnamon.nvim",
   'b0o/incline.nvim',
-{
   "michaelb/sniprun",
-  run = "bash ./install.sh",
-  cmd = "SnipRun",
-},
-  {
     "ravenxrz/DAPInstall.nvim", -- help us install several debuggers
     "mfussenegger/nvim-dap",
     "rcarriga/nvim-dap-ui",
     "theHamsta/nvim-dap-virtual-text",
-    {
       "jbyuki/one-small-step-for-vimkind",
-    },
-  },
+    "kyazdani42/nvim-tree.lua",
 --]]
