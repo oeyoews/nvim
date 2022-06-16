@@ -35,6 +35,7 @@ local plugins = {
 
   -- # Temporary
   "lewis6991/spellsitter.nvim",
+  "folke/lua-dev.nvim",
   -- #Ui
   {
     "nvim-treesitter/nvim-treesitter",
