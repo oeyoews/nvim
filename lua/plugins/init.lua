@@ -61,10 +61,7 @@ local plugins = {
       "honza/vim-snippets",
       "SirVer/ultisnips",
       "quangnguyen30192/cmp-nvim-ultisnips",
-      {
-        "hrsh7th/cmp-emoji",
-        ft = "markdown",
-      },
+      "hrsh7th/cmp-emoji",
     },
   },
 
