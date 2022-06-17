@@ -20,15 +20,14 @@ autocmd FileType lspinfo,startuptime,help,qf,quickrun,snippets,tsplayground nnor
 
 augroup source_file
   autocmd!
-  autocmd BufWritePost *.vim source %
+  " autocmd BufWritePost *.vim source %
   autocmd BufWritePost ~/.config/nvim/lua/**/*.lua luafile %
-  " autocmd BufWritePre *.yaml,*.vim :normal gg=G
 augroup END
 
 augroup cursorline_goggle
-  autocmd InsertEnter * setl nocursorline
-  autocmd InsertLeave * setl cursorline
-  autocmd FileType help setl nocursorline
+  autocmd InsertEnter * setlocal nocursorline
+  autocmd InsertLeave * setlocal cursorline
+  autocmd FileType help setlocal nocursorline
 augroup END
 " status: deprecated
 " can't reconzie styula.toml

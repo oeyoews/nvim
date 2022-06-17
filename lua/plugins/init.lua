@@ -1,5 +1,5 @@
--- FileName: init.lua
--- Description: packer plugin list
+-- @FileName: init.lua
+-- @Description: packer plugin list
 
 local packer_ok, packer = pcall(require, "packer")
 
