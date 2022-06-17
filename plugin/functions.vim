@@ -144,4 +144,6 @@ function! FormatFile() abort
   call setpos('.', save_cursor)
 endfunction
 
-autocmd BufWritePre *.yaml,*.vim call FormatFile()
+augroup FormatCommand
+  autocmd BufWritePre *.yaml,*.vim call FormatFile()
+augroup END
