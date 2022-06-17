@@ -25,6 +25,7 @@ augroup source_file
   autocmd InsertEnter * setl nocursorline
   autocmd InsertLeave * setl cursorline
   autocmd FileType help setl nocursorline
+  autocmd BufWritePost *.yaml :normal gg=G
 augroup END
 
 " status: deprecated
