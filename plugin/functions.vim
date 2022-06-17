@@ -41,14 +41,14 @@ nnoremap <silent> <leader>ts :call ToggleStatusLine()<CR>
 
 
 function! FindVanilla() abort
-    " this variable how to be quoted
-" let &vanilla = stdpath('config') . '/doc/vanilla.tx'
-"   if !empty(glob(&vanilla))
-"    echo &vanilla
-"   else
-"       echom "this &vanilla not fouded"
-"   endif
-    find ~/.config/nvim/doc/vanilla.txt
+  " this variable how to be quoted
+  " let &vanilla = stdpath('config') . '/doc/vanilla.tx'
+  "   if !empty(glob(&vanilla))
+  "    echo &vanilla
+  "   else
+  "       echom "this &vanilla not fouded"
+  "   endif
+  find ~/.config/nvim/doc/vanilla.txt
 endfunction
 
 nnoremap <silent> <space>eh <cmd>call FindVanilla()<cr>
@@ -92,15 +92,15 @@ nnoremap <leader>bb  <Cmd>e `mktemp -t scratch-XXXXXX`<CR>
 " set complete+=k~/.config/nvim/dict/myself.md
 
 "function! ToggleSpelling()
-  "if &spell
-    "setlocal nospell
-    ""echo &spell
-    "echo "disable spell"
-  "else
-    "setlocal spell
-    ""echo &spell
-    "echo "enable spell"
-  "endif
+"if &spell
+"setlocal nospell
+""echo &spell
+"echo "disable spell"
+"else
+"setlocal spell
+""echo &spell
+"echo "enable spell"
+"endif
 "endfunction
 
 " TODO
@@ -137,3 +137,11 @@ let g:tex_conceal='abdmg'
 " autocmd! FileType *.tex set filetype=tex
 
 "set conceallevel=2
+
+function! FormatFile() abort
+  let save_cursor = getpos('.')
+  normal! gg=G
+  call setpos('.', save_cursor)
+endfunction
+
+autocmd BufWritePre *.yaml,*.vim call FormatFile()

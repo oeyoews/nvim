@@ -22,12 +22,14 @@ augroup source_file
   autocmd!
   autocmd BufWritePost *.vim source %
   autocmd BufWritePost ~/.config/nvim/lua/**/*.lua luafile %
+  " autocmd BufWritePre *.yaml,*.vim :normal gg=G
+augroup END
+
+augroup cursorline_goggle
   autocmd InsertEnter * setl nocursorline
   autocmd InsertLeave * setl cursorline
   autocmd FileType help setl nocursorline
-  autocmd BufWritePost *.yaml :normal gg=G
 augroup END
-
 " status: deprecated
 " can't reconzie styula.toml
 " BUG: cause lsp sumneko can't work, not recommend use FileType easyily
