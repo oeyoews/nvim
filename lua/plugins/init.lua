@@ -1,25 +1,13 @@
-local fn = vim.fn
-
-local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
-
-if fn.empty(fn.glob(install_path)) > 0 then
-  packer_bootstrap = fn.system({
-    "git",
-    "clone",
-    "--depth",
-    "1",
-    "https://github.com/wbthomason/packer.nvim",
-    install_path,
-  })
-  vim.cmd("packadd packer.nvim")
-end
-
 local packer_ok, packer = pcall(require, "packer")
 
 if not packer_ok then
   vim.notify("packer not founded")
   return
 end
+
+local fn = vim.fn
+
+local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 
 local util = require("packer.util")
 
@@ -59,8 +47,7 @@ local plugins = {
   "akinsho/bufferline.nvim",
   "windwp/nvim-ts-autotag",
 
-  -- @LSP
-  "williamboman/nvim-lsp-installer",
+  -- @Completion
   {
     "hrsh7th/nvim-cmp",
     requires = {
@@ -79,6 +66,7 @@ local plugins = {
   },
 
   -- @Lspconfig
+  "williamboman/nvim-lsp-installer",
   {
     "neovim/nvim-lspconfig",
     requires = {
@@ -133,6 +121,19 @@ local plugins = {
     cmd = "QuickRun",
   },
 }
+
+-- @Packer
+if fn.empty(fn.glob(install_path)) > 0 then
+  packer_bootstrap = fn.system({
+    "git",
+    "clone",
+    "--depth",
+    "1",
+    "https://github.com/wbthomason/packer.nvim",
+    install_path,
+  })
+  vim.cmd("packadd packer.nvim")
+end
 
 packer.init({
   config = {
