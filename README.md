@@ -35,6 +35,7 @@ again to toggle lowercase letters
 
 ## TODO
 
+* [ ] learn use visual-line multi curline
 * [?] json add double how effect config
 * [ ] add format stylua by ci/cd
 * [ ] insert mode to hide cursorline

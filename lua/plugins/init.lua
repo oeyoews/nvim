@@ -84,6 +84,7 @@ local plugins = {
   },
 
   -- @Tools
+  "mg979/vim-visual-multi",
   "tpope/vim-surround",
   "abecodes/tabout.nvim",
   "nvim-neorg/neorg",
