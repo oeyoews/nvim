@@ -2,8 +2,10 @@
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
+-- ref: https://github.com/LunarVim/LunarVim/issues/2597
 capabilities.offsetEncoding = { "utf-16" }
-capabilities.textDocument.completion.completionItem.snippetSupport = true
+-- ref: https://github.com/nvim-lua/completion-nvim/issues/258
+-- capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local ok, clangd_extensions = pcall(require, "clangd_extensions")
 

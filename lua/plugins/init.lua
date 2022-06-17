@@ -94,6 +94,7 @@ local plugins = {
   "folke/which-key.nvim",
   "nvim-telescope/telescope.nvim",
   "phaazon/hop.nvim",
+  "ggandor/lightspeed.nvim",
   "numToStr/Comment.nvim",
   "folke/persistence.nvim",
   "folke/todo-comments.nvim",

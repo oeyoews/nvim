@@ -35,6 +35,7 @@ again to toggle lowercase letters
 
 ## TODO
 
+* [ ] learn lightspeed
 * [ ] learn use visual-line multi curline
 * [?] json add double how effect config
 * [ ] add format stylua by ci/cd
@@ -59,7 +60,6 @@ again to toggle lowercase letters
   * :snowflake:  this emoji will cause this bug in kitty(only)
 
 * [ ] config new theme for material, like tilde,
-* [ ] learn The lighgtspeed plugins usage
 * add shortkeys in vim to open browser html
 * [?] fix the zh bug(maybe also is terminal)
 * [x] add random banner and random color startup
