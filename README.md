@@ -35,6 +35,7 @@ again to toggle lowercase letters
 
 ## TODO
 
+* highlight paraness
 * [ ] learn lightspeed
 * [ ] learn use visual-line multi curline
 * [?] json add double how effect config

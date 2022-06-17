@@ -50,7 +50,7 @@ local default_options = {
   numberwidth = 2,
   ruler = false,
   signcolumn = "yes", -- silent side number shake
-  pumheight = 10, -- ??
+  -- pumheight = 10, -- ??
   titlestring = "%<%F%=%l/%L - nvim",
   shell = "/bin/zsh",
   completeopt = { "menuone", "noselect" },
