@@ -4,7 +4,7 @@
 
 ![](img/2022-06-17-01-20-01.png)
 
-# 🕊️ Introd
+# Introd
 
 ## Dependencies
 

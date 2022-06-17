@@ -32,7 +32,6 @@ local default_options = {
   termguicolors = true,
   undofile = true,
   ttyfast = true,
-  title = true,
   list = true,
   linebreak = true,
   hidden = true,
@@ -51,6 +50,7 @@ local default_options = {
   ruler = false,
   signcolumn = "yes", -- silent side number shake
   -- pumheight = 10, -- ??
+  title = false,
   titlestring = "%<%F%=%l/%L - nvim",
   shell = "/bin/zsh",
   completeopt = { "menuone", "noselect" },

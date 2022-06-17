@@ -25,11 +25,11 @@ local enabale_filetypes = require("plugins.lsp.filetypes").filetypes
 enabale_filetypes[#enabale_filetypes + 1] = "gitcommit"
 
 local sources = {
-  -- builtin.formatting.prettierd.with,
-  -- builtin.diagnostics.misspell,
   -- builtin.diagnostics.gitlint, -- need install gitlint
-  -- builtin.completion.spell,
   -- builtin.code_actions.shellcheck
+  formatting.prettierd.with({
+    filetypes = enabale_filetypes,
+  }),
   diagnostics.markdownlint, -- need install markdownlint
   diagnostics.codespell.with({
     disabled_filetypes = disabled_filetypes,
