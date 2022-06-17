@@ -1,4 +1,9 @@
 vim.cmd([[
+
+" bug: for custom, custom it is no work
+" hi StatusLine  cterm=bold,reverse guifg=#a9b1d6 guibg=#2f3341
+
+hi  Normal guifg=#A2ACCD
 hi NormalFloat  ctermbg=NONE guibg=NONE
 
 hi Visual         ctermbg=242 gui=reverse
@@ -18,13 +23,13 @@ hi Keyword   guifg=#9D7CD8 gui=bold
 hi VertSplit guibg=none guifg=#353b45 gui=bold cterm=reverse
 
 " set cursor color
-hi Cursorn guifg=none guibg=none
-hi Cursori guifg=red guibg=red
+hi Cursorn guifg=none guibg=none gui=bold
+hi Cursori guifg=red cterm=bold
 set guicursor=n-v-c:block-Cursorn/lCursorn,i-ci-ve:ver25-Cursori/lCursori,r-cr:hor20,o:hor50
 
 " yank highlight
 autocmd TextYankPost * lua vim.highlight.on_yank {higroup="IncSearch",
-      \ timeout=550, on_visual=true}
+      \ timeout=500, on_visual=true}
 
 " restore the cursor location
 autocmd! BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif

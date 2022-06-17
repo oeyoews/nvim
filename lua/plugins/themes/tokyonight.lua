@@ -9,10 +9,6 @@ end
 
 -- option: storm, day, night
 g.tokyonight_style = "storm"
-g.tokyonight_italic_functions = false
-g.tokyonight_italic_variables = false
-g.tokyonight_sidebars = { "qf", "vista_kind", "terminal", "packer" }
-g.tokyonight_hide_inactive_statusline = false
 
 -- Change the "hint" color to the "orange" color, and make the "error" color bright red
 -- g.tokyonight_colors = { hint = "orange", error = "#ff0000" }
