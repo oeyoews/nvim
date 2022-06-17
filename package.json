@@ -1,6 +1,6 @@
 {
   "name": "nvim",
-  "version": "3.19.0",
+  "version": "3.19.1",
   "repository": "https://gitlab.com/oeyoews/nvim.git",
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
