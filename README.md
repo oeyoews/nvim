@@ -40,7 +40,7 @@ again to toggle lowercase letters
 * [ ] learn use visual-line multi curline
 * [?] json add double how effect config
 * [ ] add format stylua by ci/cd
-* [ ] insert mode to hide cursorline
+* [x] insert mode to hide cursorline
 * [ ] automatically install filetype server when first open
 * [ ] bug: treesitter multi download
 * config opt(load)
