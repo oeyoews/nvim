@@ -1,3 +1,6 @@
+-- FileName: init.lua
+-- Description: packer plugin list
+
 local packer_ok, packer = pcall(require, "packer")
 
 if not packer_ok then
