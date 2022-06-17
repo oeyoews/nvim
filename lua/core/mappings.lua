@@ -93,6 +93,14 @@ nnoremap <silent> <space>yp :<C-U>let @+=expand('%:p') <bar> lua vim.notify(" ðŸ
 
 " toggle spell
 nnoremap <space>ss <cmd>set invspell <bar> lua vim.notify("Toggle Spell")<cr>
+
+nnoremap <silent> <space>hh <cmd>help vanilla.txt<cr>
+
+nnoremap <leader>bs  <Cmd>e /tmp/scratch.txt<CR>
+nnoremap <leader>bb  <Cmd>e `mktemp -t scratch-XXXXXX`<CR>
+
 ]])
 
 -- TODO: https://github.com/LunarVim/LunarVim/blob/rolling/lua/lvim/keymappings.lua
+--
+

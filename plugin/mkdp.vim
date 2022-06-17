@@ -14,18 +14,21 @@ let g:mkdp_markdown_css = ''
 let g:mkdp_highlight_css = ''
 let g:mkdp_browser = ''
 let g:mkdp_preview_options = {
-    \ 'mkit': {},
-    \ 'katex': {},
-    \ 'uml': {},
-    \ 'maid': {},
-    \ 'disable_sync_scroll': 0,
-    \ 'sync_scroll_type': 'middle',
-    \ 'hide_yaml_meta': 1,
-    \ 'sequence_diagrams': {},
-    \ 'flowchart_diagrams': {},
-    \ 'content_editable': v:false,
-    \ 'disable_filename': 0,
-    \ 'toc': {}
-    \ }
+      \ 'mkit': {},
+      \ 'katex': {},
+      \ 'uml': {},
+      \ 'maid': {},
+      \ 'disable_sync_scroll': 0,
+      \ 'sync_scroll_type': 'middle',
+      \ 'hide_yaml_meta': 1,
+      \ 'sequence_diagrams': {},
+      \ 'flowchart_diagrams': {},
+      \ 'content_editable': v:false,
+      \ 'disable_filename': 0,
+      \ 'toc': {}
+      \ }
 
-autocmd! FileType markdown,html,txt nnoremap <silent> <leader>fmm :MarkdownPreviewToggle<CR>
+augroup markdownpreview
+  autocmd!
+  autocmd FileType markdown,html,txt nnoremap <silent> <leader>fmm :MarkdownPreviewToggle<CR>
+augroup END
