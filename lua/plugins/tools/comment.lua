@@ -1,3 +1,6 @@
+-- @FileName: comment.lua
+-- @Description: neovim comment code
+
 local status_ok, comment = pcall(require, "Comment")
 
 if not status_ok then

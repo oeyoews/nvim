@@ -21,7 +21,7 @@ autocmd FileType lspinfo,startuptime,help,qf,quickrun,snippets,tsplayground nnor
 augroup source_file
   autocmd!
   " autocmd BufWritePost *.vim source %
-  autocmd BufWritePost ~/.config/nvim/lua/**/*.lua luafile %
+  " autocmd BufWritePost ~/.config/nvim/lua/**/*.lua luafile %
 augroup END
 
 augroup cursorline_goggle

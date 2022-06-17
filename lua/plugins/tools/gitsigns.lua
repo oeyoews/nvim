@@ -1,3 +1,6 @@
+-- @FileName: gitsigns.lua
+-- @Description: git signcolumn
+
 local status_ok, gitsigns = pcall(require, "gitsigns")
 
 if not status_ok then
@@ -6,8 +9,7 @@ if not status_ok then
 end
 
 gitsigns.setup({
-  numhl = true, -- Toggle with `:Gitsigns toggle_numhl`
-  current_line_blame = true, -- Toggle with `:Gitsigns toggle_current_line_blame`
+  current_line_blame = true,
   current_line_blame_opts = {
     virt_text = false,
     delay = 100,

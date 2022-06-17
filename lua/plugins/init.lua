@@ -188,3 +188,9 @@ vim.cmd([[
   nnoremap <silent> <leader>sO <cmd>luafile ~/.config/nvim/lua/plugins/init.lua<cr> :lua vim.notify("reload packer file")<cr>
   nnoremap <silent> <leader>so <cmd>luafile %<cr> :lua vim.notify("reload current file")<cr>
 ]])
+
+-- {
+--   "rcarriga/vim-ultest",
+--   requires = { "vim-test/vim-test" },
+--   run = ":UpdateRemotePlugins"
+-- },
