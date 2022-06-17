@@ -51,7 +51,7 @@ lspsaga.setup({ -- defaults ...
 
 vim.cmd([[
 nnoremap <silent> <space>le <cmd>Lspsaga code_action<cr>
-nnoremap <silent>K :Lspsaga hover_doc<CR>
+nnoremap <silent>gK :Lspsaga hover_doc<CR>
 nnoremap <silent> <C-f> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>
 nnoremap <silent> <C-b> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>
 nnoremap <silent> gs :Lspsaga signature_help<CR>
