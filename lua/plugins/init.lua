@@ -38,20 +38,21 @@ local plugins = {
 
   -- @Temporary
   "akinsho/toggleterm.nvim",
-  "nvim-neo-tree/neo-tree.nvim",
-  "p00f/clangd_extensions.nvim", -- TODO config it after finish lsp config
   "lewis6991/spellsitter.nvim",
-  "folke/lua-dev.nvim",
-  -- #Ui
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    cmd = "Neotree",
+  },
+
+  -- @Ui
   {
     "nvim-treesitter/nvim-treesitter",
-    -- cmd = { "TSInstall", "TSUpdate", "TSUninstall", },
     run = ":TSUpdate",
-    requires = {
-      "nvim-treesitter/nvim-treesitter-refactor",
-      "p00f/nvim-ts-rainbow",
-    },
   },
+
+  -- @Treesitter
+  "nvim-treesitter/nvim-treesitter-refactor",
+  "p00f/nvim-ts-rainbow",
   "norcalli/nvim-colorizer.lua",
   "oeyoews/windline.nvim",
   "lukas-reineke/indent-blankline.nvim",
@@ -76,6 +77,8 @@ local plugins = {
       },
     },
   },
+
+  -- @Lspconfig
   {
     "neovim/nvim-lspconfig",
     requires = {
@@ -84,41 +87,46 @@ local plugins = {
       "ray-x/lsp_signature.nvim",
       "jose-elias-alvarez/null-ls.nvim",
       "j-hui/fidget.nvim",
+      "p00f/clangd_extensions.nvim", -- TODO config it after finish lsp config
+      {
+        "folke/trouble.nvim",
+        cmd = "TroubleToggle",
+      },
     },
-  },
-  {
-    "folke/trouble.nvim",
-    cmd = "TroubleToggle",
   },
 
   -- @Tools
   "tpope/vim-surround",
   "abecodes/tabout.nvim",
   "nvim-neorg/neorg",
+  "ekickx/clipboard-image.nvim",
+  "Pocco81/HighStr.nvim",
+  "yianwillis/vimcdoc",
+  "folke/which-key.nvim",
+  "nvim-telescope/telescope.nvim",
+  "phaazon/hop.nvim",
+  "numToStr/Comment.nvim",
+  "folke/persistence.nvim",
+  "folke/todo-comments.nvim",
+  "lewis6991/gitsigns.nvim",
+  "windwp/nvim-autopairs",
   {
     "iamcco/markdown-preview.nvim",
     run = function()
       vim.fn["mkdp#util#install"]()
     end,
   },
-  "ekickx/clipboard-image.nvim",
-  "Pocco81/HighStr.nvim",
-  "itchyny/calendar.vim",
-  "yianwillis/vimcdoc",
-  "folke/which-key.nvim",
-  "nvim-telescope/telescope.nvim",
-  "phaazon/hop.nvim",
   {
     "dstein64/vim-startuptime",
     commit = "61f122ebc41e9bcf1793c752a728db59feee77bb",
   },
-  "kevinhwang91/rnvimr",
-  "numToStr/Comment.nvim",
-  "folke/persistence.nvim",
-  "folke/todo-comments.nvim",
-  "lewis6991/gitsigns.nvim",
   {
-    "windwp/nvim-autopairs",
+    "kevinhwang91/rnvimr",
+    cmd = "RnvimrToggle",
+  },
+  {
+    "itchyny/calendar.vim",
+    cmd = "Calendar",
   },
   {
     "thinca/vim-quickrun",
