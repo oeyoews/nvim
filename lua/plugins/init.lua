@@ -169,8 +169,9 @@ packer.startup(function(use)
     packer.sync()
   end
 
-  -- automatically install missing plugin(s)
+  -- automatically install missing plugin(s) on startup
   packer.install()
+
   -- automatically packer_compiled on startup
   packer.compile()
 end)
