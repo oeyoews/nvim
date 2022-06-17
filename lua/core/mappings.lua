@@ -103,4 +103,3 @@ nnoremap <leader>bb  <Cmd>e `mktemp -t scratch-XXXXXX`<CR>
 
 -- TODO: https://github.com/LunarVim/LunarVim/blob/rolling/lua/lvim/keymappings.lua
 --
-

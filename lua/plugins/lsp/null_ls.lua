@@ -31,7 +31,7 @@ local sources = {
   diagnostics.markdownlint.with({
     filetypes = {
       "markdown",
-    }
+    },
   }), -- need install markdownlint
   diagnostics.codespell.with({
     disabled_filetypes = disabled_filetypes,
