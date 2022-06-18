@@ -13,9 +13,9 @@ lsp_installer.setup({
   ui = {
     border = "rounded", -- default to "none"
     icons = {
-      server_installed = " ",
+      server_installed = "",
       server_pending = " ",
-      server_uninstalled = " ﮊ",
+      server_uninstalled = "ﮊ",
     },
   },
   github = {
