@@ -2,11 +2,11 @@ local package = "plugins.lsp"
 
 local modules = {
   "lspinstall", -- preinstall some servers
-  "treesitter",
-  "null_ls",
-  "cmp", -- config completion
-  "clangd_extensions",
+  "nvim-cmp", -- config completion
   "lspconfig",
+  "clangd_extensions",
+  "treesitter",
+  "null_ls", -- bug
   "fidget",
   "lsp_signature",
   "lspsaga",

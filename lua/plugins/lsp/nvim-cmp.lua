@@ -5,19 +5,19 @@
 
 --vim.cmd [[highlight default GH guifg=#3bb6c4 guibg=NONE]]
 
--- @lspkind
-local lspkind_ok, lspkind = pcall(require, "lspkind")
-
-if not lspkind_ok then
-  vim.notify("lspkind not founded")
-  return
-end
-
 -- @nvim_cmp
 local cmp_ok, cmp = pcall(require, "cmp")
 
 if not cmp_ok then
   vim.notify("cmp not founded")
+  return
+end
+
+-- @lspkind
+local lspkind_ok, lspkind = pcall(require, "lspkind")
+
+if not lspkind_ok then
+  vim.notify("lspkind not founded")
   return
 end
 
@@ -54,15 +54,15 @@ local symbol_map = {
 
 local sources = {
   { name = "nvim_lsp" },
+  { name = "ultisnips" },
   {
     name = "buffer",
     keyword_length = 4,
   },
-  { name = "ultisnips" },
+  { name = "nvim-lua" },
   { name = "path" },
   { name = "neorg" },
   { name = "emoji" },
-  { name = "nvim-lua" },
 }
 
 cmp.setup({
