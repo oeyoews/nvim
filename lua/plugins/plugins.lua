@@ -19,7 +19,6 @@ local plugins = {
   "wbthomason/packer.nvim",
 
   -- @Necessary
-  -- fixme: filetype need in impatient after to fix treesitter install times
   "lewis6991/impatient.nvim",
   "nathom/filetype.nvim",
   "rcarriga/nvim-notify",
@@ -138,13 +137,13 @@ packer.init({
     },
   },
   display = {
-    working_sym = "ﲊ",
-    error_sym = "✗",
-    done_sym = " ",
-    removed_sym = " ",
-    moved_sym = "",
+    -- working_sym = "ﲊ",
+    -- error_sym = "✗",
+    -- done_sym = " ",
+    -- removed_sym = " ",
+    -- moved_sym = "",
     open_fn = function()
-      return require("packer.util").float({ border = "double" })
+      return require("packer.util").float({ border = "single" })
     end,
   },
   git = {
