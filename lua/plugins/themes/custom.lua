@@ -4,7 +4,7 @@ vim.cmd([[
 " hi StatusLine  cterm=bold,reverse guifg=#a9b1d6 guibg=#2f3341
 
 hi  Normal guifg=#A2ACCD
-hi NormalFloat  ctermbg=NONE guibg=NONE
+" hi NormalFloat  ctermbg=NONE guibg=NONE
 
 hi Visual         ctermbg=242 gui=reverse
 
