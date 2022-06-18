@@ -49,7 +49,7 @@ for _, lsp_server in ipairs(lsp_servers) do
     -- on_attach = lsp_format.on_attach,
     on_attach = on_attach,
     debounce_text_changes = 150,
-    settings = settings,
+    -- settings = settings,
     -- link lsp-servers
     capabilities = capabilities,
   })
