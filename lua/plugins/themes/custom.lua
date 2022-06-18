@@ -12,6 +12,8 @@ hi Search     ctermfg=16 ctermbg=76 guifg=#292b2e guibg=#86dc2f
 hi CursorLineNr      gui=none guibg=none
 hi Keyword   guifg=#9D7CD8 gui=bold
 hi VertSplit guibg=none guifg=#353b45 gui=bold cterm=reverse
+hi MatchParen  gui=underline
+hi MatchWord cterm=underline gui=underline
 
 " set cursor color
 hi Cursorn guifg=none guibg=none gui=bold

@@ -20,7 +20,6 @@ local plugins = {
 
   -- @Necessary
   -- fixme: filetype need in impatient after to fix treesitter install times
-  "MunifTanjim/nui.nvim",
   "lewis6991/impatient.nvim",
   "nathom/filetype.nvim",
   "rcarriga/nvim-notify",
@@ -30,13 +29,12 @@ local plugins = {
   -- @Temporary
   "lewis6991/spellsitter.nvim",
 
-  -- @Ui
+  -- @Treesitter
   {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   },
-
-  -- @Treesitter
+  "nvim-treesitter/nvim-treesitter-context",
   "nvim-treesitter/nvim-treesitter-refactor",
   "p00f/nvim-ts-rainbow",
   "norcalli/nvim-colorizer.lua",
@@ -79,10 +77,6 @@ local plugins = {
   },
 
   -- @Tools
-  {
-    "nvim-neo-tree/neo-tree.nvim",
-    cmd = "Neotree",
-  },
   "fhill2/telescope-ultisnips.nvim",
   "akinsho/toggleterm.nvim",
   "tpope/vim-surround",
@@ -189,14 +183,3 @@ vim.cmd([[
   nnoremap <silent> <leader>so <cmd>luafile %<cr>:lua vim.notify("reload current file")<cr>
   nnoremap <silent> <leader>sO <cmd>luafile ~/.config/nvim/lua/plugins/plugins.lua<cr>:lua vim.notify("reload packer file")<cr>
 ]])
-
--- {
---   "rcarriga/vim-ultest",
---   requires = { "vim-test/vim-test" },
---   run = ":UpdateRemotePlugins"
--- },
--- "gfeiyou/command-center.nvim",
--- "ggandor/lightspeed.nvim",
-    -- "nvim-treesitter/nvim-treesitter-context",
-    -- "mg979/vim-visual-multi",
-  -- "andymass/vim-matchup",

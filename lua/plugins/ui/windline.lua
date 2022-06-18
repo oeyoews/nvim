@@ -5,5 +5,5 @@ if not ok then
   return false
 end
 
--- option bubble(2)
+-- option bubble(2) vscode
 require("wlsample.evil_line")
