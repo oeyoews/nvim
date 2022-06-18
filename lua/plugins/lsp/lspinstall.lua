@@ -11,6 +11,7 @@ lsp_installer.setup({
   automatic_installation = false, -- automatic_installation is confliction for ensure_installed
   ensure_installed = lspinstall_servers,
   ui = {
+    border = "rounded", -- default to "none"
     icons = {
       server_installed = "🍺",
       server_pending = "🔏",

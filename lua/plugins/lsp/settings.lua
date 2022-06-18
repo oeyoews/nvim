@@ -18,7 +18,9 @@ M.lua = {
   }, ]]
 }
 
-M.json = {}
+M.json = {
+  -- schemas = full_schemas
+}
 
 M.settings = {
   Lua = M.lua,
