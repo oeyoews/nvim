@@ -146,7 +146,7 @@ packer.init({
   git = {
     clone_timeout = 6000,
   },
-  autoremove = false,
+  autoremove = true,
   compile_path = util.join_paths(vim.fn.stdpath("data"), "compile", "packer_compiled.lua"),
 })
 
