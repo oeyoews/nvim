@@ -35,15 +35,14 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local settings = require("plugins.lsp.settings").settings
 
+local on_attach = function(client)
+  lsp_format.on_attach(client)
+end
+
 -- For general Lsp server
 -- bug: this will callback all servers to connect, and insall all need servers by no adjust filetype
 for _, lsp_server in ipairs(lsp_servers) do
   -- config = vim.tbl_extend("force", config, override[lsp_server] or {})
-
-  local on_attach = function(client)
-    lsp_format.on_attach(client)
-  end
-
   lspconfig[lsp_server].setup({
     --format code
     -- on_attach = lsp_format.on_attach,

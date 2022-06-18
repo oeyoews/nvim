@@ -1,5 +1,6 @@
 -- Description: install lsp servers
 
+-- TODO: add settings will cause jsonls not work
 local M = {}
 
 M.servers = {
@@ -9,14 +10,13 @@ M.servers = {
   "cmake",
   -- 'diagnosticls',
   "html",
-  "jsonls",
-  -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
+  "jsonls", -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
   "pyright",
   "gopls",
+  -- 'golangci_lint_ls',
   "sumneko_lua",
   "tsserver",
   --'texlab',
-  -- 'golangci_lint_ls',
   "yamlls",
   "vimls",
 }
