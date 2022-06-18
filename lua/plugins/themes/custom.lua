@@ -15,7 +15,7 @@ hi VertSplit guibg=none guifg=#353b45 gui=bold cterm=reverse
 
 " set cursor color
 hi Cursorn guifg=none guibg=none gui=bold
-hi Cursori guifg=red cterm=bold
+hi Cursori guifg=red guibg=red
 set guicursor=n-v-c:block-Cursorn/lCursorn,i-ci-ve:ver25-Cursori/lCursori,r-cr:hor20,o:hor50
 
 " yank highlight
