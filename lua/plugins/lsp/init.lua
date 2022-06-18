@@ -3,7 +3,6 @@ local package = "plugins.lsp"
 local modules = {
   "treesitter",
   "lspinstall", -- preinstall some servers
-  -- "lua_dev",
   "cmp", -- config completion
   "null_ls",
   "lspconfig",
