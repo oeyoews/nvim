@@ -1,12 +1,12 @@
 local package = "plugins.lsp"
 
 local modules = {
-  "treesitter",
   "lspinstall", -- preinstall some servers
-  "cmp", -- config completion
+  "treesitter",
   "null_ls",
-  "lspconfig",
+  "cmp", -- config completion
   "clangd_extensions",
+  "lspconfig",
   "fidget",
   "lsp_signature",
   "lspsaga",
