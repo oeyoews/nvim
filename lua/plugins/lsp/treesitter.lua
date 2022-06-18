@@ -15,8 +15,8 @@ end
 local ensure_installed = require("plugins.lsp.filetypes").filetypes
 
 local disable_filetypes = {
-  "python",
-  "yml",
+  -- "python",
+  -- "yml",
 }
 
 local rainbow_colors = {
@@ -59,7 +59,7 @@ tree_configs.setup({
 
   highlight = {
     enable = true,
-    additional_vim_regex_highlighting = false,
+    additional_vim_regex_highlighting = true,
   },
 
   -- nvim-ts-rainbow
