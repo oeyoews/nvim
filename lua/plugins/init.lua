@@ -28,6 +28,7 @@ local plugins = {
   "nvim-lua/plenary.nvim",
 
   -- @Temporary
+  "fhill2/telescope-ultisnips.nvim",
   "akinsho/toggleterm.nvim",
   "lewis6991/spellsitter.nvim",
   {
@@ -191,3 +192,4 @@ vim.cmd([[
 --   requires = { "vim-test/vim-test" },
 --   run = ":UpdateRemotePlugins"
 -- },
+-- "gfeiyou/command-center.nvim",

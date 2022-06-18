@@ -66,6 +66,13 @@ telescope.setup({
   },
 })
 
+-- extensitension
+require('telescope').load_extension('ultisnips')
+
+vim.cmd([[
+nnoremap <silent> <leader>tu :Telescope ultisnips<cr>
+]])
+
 vim.cmd([[
 nnoremap <leader>ff <cmd>Telescope find_files <cr>
 nnoremap <leader>to <cmd>Telescope oldfiles <cr>
