@@ -1,1 +1,2 @@
-hi MatchParen ctermbg=blue guibg=#ce537a cterm=italic gui=italic
+hi MatchParen guifg=green cterm=italic gui=underline
+hi MatchWord ctermfg=red  cterm=underline gui=underline
