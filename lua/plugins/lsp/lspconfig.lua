@@ -94,7 +94,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
 })
 
 -- @Override sumneko_lua
-lspconfig.sumneko_lua.setup {
+lspconfig.sumneko_lua.setup({
   on_attach = on_attach,
-  settings = settings
-}
+  settings = settings,
+})

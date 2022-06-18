@@ -21,7 +21,6 @@ if not lspkind_ok then
   return
 end
 
-
 local function border(hl_name)
   return {
     { "╭", hl_name },
@@ -127,13 +126,13 @@ cmp.setup({
   window = {
     -- completion = cmp.config.window.bordered(),
     completion = {
-      border = border "CmpBorder",
+      border = border("CmpBorder"),
       winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None",
     },
     -- documentation = cmp.config.window.bordered(),
     documentation = {
-      border = border "CmpBorder",
-    }
+      border = border("CmpBorder"),
+    },
   },
 
   experimental = {

@@ -3,7 +3,7 @@ local M = {}
 -- filetype: lua
 M.lua = {
   telemetry = {
-    enable = false
+    enable = false,
   },
   diagnostics = {
     globals = {

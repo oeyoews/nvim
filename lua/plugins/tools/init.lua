@@ -25,7 +25,7 @@ for _, load_module in ipairs(modules) do
     -- vim.api.nvim_err_writeln("Failed to load " .. load_module .. "\n\n" .. fault)
     local plugin = "Modules"
     vim.notify(
-    --[[ {
+      --[[ {
       }, ]]
       "Failed to load " .. load_module,
       "warn",
