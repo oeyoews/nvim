@@ -15,13 +15,17 @@ telescope.setup({
       n = { ["q"] = actions.close },
     },
     -- # 
-    --  ➤ 
-    prompt_prefix = "🔍 ",
-    -- selection_strategy = "reset",
+    --  ➤   🔍
+    prompt_prefix = " ",
+    selection_strategy = "reset",
     sorting_strategy = "ascending",
     layout_strategy = "horizontal",
     selection_caret = " ",
     entry_prefix = " ",
+    border = {},
+    color_devicons = true,
+    use_less = true,
+    borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
     layout_config = {
       horizontal = {
         prompt_position = "top",
@@ -35,34 +39,6 @@ telescope.setup({
       height = 0.80,
       preview_cutoff = 120,
     },
-    -- FIXME: to shorten it
-    -- pickers = {
-    --   find_files = {
-    --     theme = theme,
-    --     --preview = false,
-    --   },
-    --   oldfiles = {
-    --     theme = theme,
-    --   },
-    --   buffers = {
-    --     theme = theme,
-    --   },
-    --   live_grep = {
-    --     theme = theme,
-    --   },
-    --   colorscheme = {
-    --     theme = theme,
-    --   },
-    --   keymaps = {
-    --     theme = theme,
-    --   },
-    --   filetypes = {
-    --     theme = theme,
-    --   },
-    --   current_buffer_fuzzy_find = {
-    --     theme = theme,
-    --   },
-    -- },
   },
 })
 

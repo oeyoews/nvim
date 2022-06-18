@@ -10,7 +10,7 @@ lspsaga.setup({ -- defaults ...
   use_saga_diagnostic_sign = true,
   error_sign = " ",
   warn_sign = " ",
-  hint_sign = " ",
+  hint_sign = "",
   infor_sign = " ", -- NOTE: can't have space
   diagnostic_header_icon = " ",
   code_action_icon = "💡",
@@ -60,7 +60,4 @@ nnoremap <silent> gd :Lspsaga preview_definition<CR>
 nnoremap <silent> gh :Lspsaga lsp_finder<CR>
 nnoremap <silent>gr :Lspsaga rename<CR>
 nnoremap <silent> <leader>cd :Lspsaga show_line_diagnostics<CR>
-nnoremap <silent><leader>cc <cmd>lua require'lspsaga.diagnostic'.show_cursor_diagnostics()<CR>
-" nnoremap <silent> [e :Lspsaga diagnostic_jump_next<CR>
-" nnoremap <silent> ]e :Lspsaga diagnostic_jump_prev<CR>
 ]])

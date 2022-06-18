@@ -1,6 +1,3 @@
-" have some bug , if source it twice in xx.vim and xx.lua(because of vim.cmd)
-" it's conflict for ranger, maybe it's it terminal job
-
 command! -nargs=1 Out enew|pu=execute('<args>')
 command! Scripts split | enew|pu=execute('scriptnames')
 command! -nargs=1 -complete=highlight HI enew|pu=execute('hi <args>')
@@ -133,6 +130,7 @@ nnoremap <silent> <space>fp <cmd>call FindPlugin()<cr>
 "set conceallevel=2
 
 augroup FormatCommand
+  au!
   autocmd BufWritePre *.yaml,*.vim call FormatFile()
 augroup END
 

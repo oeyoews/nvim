@@ -38,7 +38,6 @@ local plugins = {
 
   -- @Treesitter
   "nvim-treesitter/nvim-treesitter-refactor",
-  "nvim-treesitter/nvim-treesitter-context",
   "p00f/nvim-ts-rainbow",
   "norcalli/nvim-colorizer.lua",
   "oeyoews/windline.nvim",
@@ -87,7 +86,6 @@ local plugins = {
   "fhill2/telescope-ultisnips.nvim",
   "akinsho/toggleterm.nvim",
   "andymass/vim-matchup",
-  "mg979/vim-visual-multi",
   "tpope/vim-surround",
   "abecodes/tabout.nvim",
   "nvim-neorg/neorg",
@@ -200,3 +198,5 @@ vim.cmd([[
 -- },
 -- "gfeiyou/command-center.nvim",
 -- "ggandor/lightspeed.nvim",
+-- "nvim-treesitter/nvim-treesitter-context",
+-- "mg979/vim-visual-multi",

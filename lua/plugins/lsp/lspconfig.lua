@@ -1,5 +1,5 @@
--- FileName: lspconfig.lua
--- Description: config neovim lsp
+-- @FileName: lspconfig.lua
+-- @Description: config neovim lsp
 
 local lspconfig_ok, lspconfig = pcall(require, "lspconfig")
 
@@ -9,7 +9,6 @@ if not lspconfig_ok then
 end
 
 -- @lspformat
--- fixme: split it
 local lspformat_ok, lsp_format = pcall(require, "lsp-format")
 
 if not lspformat_ok then
@@ -77,13 +76,12 @@ vim.cmd([[
 -- icon note this order in last
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
   underline = true,
-  -- false to save some consume
   update_in_insert = false,
   severity_sort = false,
   virtual_text = {
     spacing = 2,
     source = "always",
-    prefix = "🐕 ", -- define virtual_text icon
+    prefix = "",
   },
   float = {
     focusable = false,
@@ -95,15 +93,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
   },
 })
 
--- HACK: ref: self comment to avoid double quote error :https://blog.51cto.com/u_15346415/3673795
---[=[
-vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
-  border = "single",
-  silent = true,
-  focusable = false,
-  close_events = { "InsertCharPre", "CursorMoved" },
-  relative = "cursor",
-  row = -1,
-})
-
---]=]
+-- @Override sumneko_lua
+lspconfig.sumneko_lua.setup {
+  settings = settings
+}

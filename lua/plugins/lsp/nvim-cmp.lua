@@ -37,8 +37,8 @@ end
 
 local symbol_map = {
   --         
+  -- Keyword = "🔐",
   -- Function = "",
-  -- Keyword = "",
   Text = "",
   Method = "",
   Function = "ƒ",
@@ -52,7 +52,7 @@ local symbol_map = {
   Unit = "",
   Value = "",
   Enum = "",
-  Keyword = "🔐",
+  Keyword = "",
   Snippet = "",
   Color = "",
   Reference = "",
