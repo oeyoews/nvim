@@ -11,6 +11,7 @@ for _, config in pairs(require("nvim-treesitter.parsers").get_parser_configs()) 
 end
 --]]
 
+-- @files: plugins/lsp/filetypes.lua
 local ensure_installed = require("plugins.lsp.filetypes").filetypes
 
 local disable_filetypes = {
