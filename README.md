@@ -35,6 +35,7 @@ again to toggle lowercase letters
 
 ## TODO
 
+* [ ] integrate husky and (prettier)
 * highlight paraness
 * [ ] learn lightspeed
 * [ ] learn use visual-line multi curline
