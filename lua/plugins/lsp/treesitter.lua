@@ -6,7 +6,7 @@ if not nvim_treesitter_ok then
 end
 
 -- @Mirror_nvim_treesitter
-require("nvim-treesitter.install").prefer_git = true
+--[[ require("nvim-treesitter.install").prefer_git = true
 local parsers = require("nvim-treesitter.parsers").get_parser_configs()
 for _, config in pairs(parsers) do
   local mirror = config.install_info.url
@@ -14,7 +14,7 @@ for _, config in pairs(parsers) do
     "https://github.com/",
     "https://hub.fastgit.xyz/"
   )
-end
+end ]]
 
 -- @files: plugins/lsp/filetypes.lua
 local ensure_installed = require("plugins.lsp.filetypes").filetypes

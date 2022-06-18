@@ -147,7 +147,7 @@ packer.init({
     clone_timeout = 6000,
     --@Mirror_packer
     -- default_url_format = 'https://github.com/%s.git',
-    default_url_format = 'https://hub.fastgit.xyz/%s.git',
+    -- default_url_format = 'https://hub.fastgit.xyz/%s.git',
   },
   autoremove = true,
   compile_path = util.join_paths(vim.fn.stdpath("data"), "compile", "packer_compiled.lua"),
