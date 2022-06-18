@@ -18,8 +18,13 @@ M.lua = {
   }, ]]
 }
 
+M.json = {
+
+}
+
 M.settings = {
   Lua = M.lua,
+  json = M.json,
 }
 
 return M
