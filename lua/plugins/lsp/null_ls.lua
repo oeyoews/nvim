@@ -12,7 +12,7 @@ local formatting = null_ls.builtins.formatting
 
 local disabled_filetypes = {
   -- "c",
-  "java",
+  -- "java",
   "json",
 }
 
