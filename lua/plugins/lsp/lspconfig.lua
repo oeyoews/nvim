@@ -39,6 +39,11 @@ local on_attach = function(client)
   lsp_format.on_attach(client)
 end
 
+local prettier = {
+  formatCommand = [[prettier --stdin-filepath ${INPUT} ${--tab-width:tab_width}]],
+  formatStdin = true,
+}
+
 -- For general Lsp server
 -- bug: this will callback all servers to connect, and insall all need servers by no adjust filetype
 for _, lsp_server in ipairs(lsp_servers) do

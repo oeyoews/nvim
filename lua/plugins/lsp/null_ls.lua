@@ -27,7 +27,13 @@ enabale_filetypes[#enabale_filetypes + 1] = "gitcommit"
 local sources = {
   -- builtin.diagnostics.gitlint, -- need install gitlint
   -- builtin.code_actions.shellcheck
-  -- formatting.prettierd.with({  }),
+  formatting.prettier.with({
+    filetypes = {
+      "json",
+      'yaml',
+    },
+
+  }),
   diagnostics.markdownlint.with({
     filetypes = {
       "markdown",
