@@ -4,12 +4,17 @@ if not nvim_treesitter_ok then
   vim.notify("nvim_treesitter not founded")
   return
 end
---[[
--- mirror in China TODO: verify  it
-for _, config in pairs(require("nvim-treesitter.parsers").get_parser_configs()) do
-  config.install_info.url = config.install_info.url:gsub("https://github.com/", "https://hub.fastgit.xyz/")
+
+-- @Mirror_nvim_treesitter
+require("nvim-treesitter.install").prefer_git = true
+local parsers = require("nvim-treesitter.parsers").get_parser_configs()
+for _, config in pairs(parsers) do
+  local mirror = config.install_info.url
+  mirror = mirror:gsub(
+    "https://github.com/",
+    "https://hub.fastgit.xyz/"
+  )
 end
---]]
 
 -- @files: plugins/lsp/filetypes.lua
 local ensure_installed = require("plugins.lsp.filetypes").filetypes
