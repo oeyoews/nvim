@@ -4,11 +4,12 @@
 -- clear (N)vim vanilla color, notice this order, before theme or other color plugins
 -- vim.cmd([[ hi clear ]])
 
-local package = "plugins" -- load package
+-- load package
+local package = "plugins"
 
 local modules = {
   enable_modules = {
-    "init",
+    "plugins", -- first plugins list
     "perfect", -- performance
     "themes", -- some themes
     "ui", -- ui configuration
@@ -16,10 +17,6 @@ local modules = {
     "lsp", -- lsp settings
   },
 }
-
--- for _, load_module in ipairs(modules.enable_modules) do
---   require(package .. "." .. load_module)
--- end
 
 for _, load_module in ipairs(modules.enable_modules) do
 
@@ -31,15 +28,11 @@ for _, load_module in ipairs(modules.enable_modules) do
     -- vim.api.nvim_err_writeln("Failed to load " .. load_module .. "\n\n")
     local plugin = "Modules"
     vim.notify(
-    --[[ {
-      }, ]]
       "Failed to load " .. load_module,
       "warn",
       {
         title = plugin,
       }
     )
-    -- return
   end
-  -- require(package .. "." .. load_module)
 end

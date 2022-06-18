@@ -28,15 +28,7 @@ local plugins = {
   "nvim-lua/plenary.nvim",
 
   -- @Temporary
-  "andymass/vim-matchup",
-  "nvim-treesitter/nvim-treesitter-context",
-  "fhill2/telescope-ultisnips.nvim",
-  "akinsho/toggleterm.nvim",
   "lewis6991/spellsitter.nvim",
-  {
-    "nvim-neo-tree/neo-tree.nvim",
-    cmd = "Neotree",
-  },
 
   -- @Ui
   {
@@ -46,6 +38,7 @@ local plugins = {
 
   -- @Treesitter
   "nvim-treesitter/nvim-treesitter-refactor",
+  "nvim-treesitter/nvim-treesitter-context",
   "p00f/nvim-ts-rainbow",
   "norcalli/nvim-colorizer.lua",
   "oeyoews/windline.nvim",
@@ -87,6 +80,13 @@ local plugins = {
   },
 
   -- @Tools
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    cmd = "Neotree",
+  },
+  "fhill2/telescope-ultisnips.nvim",
+  "akinsho/toggleterm.nvim",
+  "andymass/vim-matchup",
   "mg979/vim-visual-multi",
   "tpope/vim-surround",
   "abecodes/tabout.nvim",
@@ -97,7 +97,6 @@ local plugins = {
   "folke/which-key.nvim",
   "nvim-telescope/telescope.nvim",
   "phaazon/hop.nvim",
-  "ggandor/lightspeed.nvim",
   "numToStr/Comment.nvim",
   "folke/persistence.nvim",
   "folke/todo-comments.nvim",
@@ -195,3 +194,4 @@ vim.cmd([[
 --   run = ":UpdateRemotePlugins"
 -- },
 -- "gfeiyou/command-center.nvim",
+-- "ggandor/lightspeed.nvim",
