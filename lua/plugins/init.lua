@@ -28,6 +28,8 @@ local plugins = {
   "nvim-lua/plenary.nvim",
 
   -- @Temporary
+  "andymass/vim-matchup",
+  "nvim-treesitter/nvim-treesitter-context",
   "fhill2/telescope-ultisnips.nvim",
   "akinsho/toggleterm.nvim",
   "lewis6991/spellsitter.nvim",

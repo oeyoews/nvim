@@ -4,7 +4,6 @@ if not nvim_treesitter_ok then
   vim.notify("nvim_treesitter not founded")
   return
 end
-
 --[[
 -- mirror in China TODO: verify  it
 for _, config in pairs(require("nvim-treesitter.parsers").get_parser_configs()) do
