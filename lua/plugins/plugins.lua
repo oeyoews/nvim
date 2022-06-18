@@ -5,8 +5,6 @@ local fn = vim.fn
 
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 
-local util = require("packer.util")
-
 local plugins = {
   -- @Manager
   "wbthomason/packer.nvim",
@@ -110,7 +108,6 @@ local plugins = {
 }
 
 -- @Packer
-
 -- autoomatically install packer
 if fn.empty(fn.glob(install_path)) > 0 then
   print("cloning packer ... ")
@@ -131,6 +128,8 @@ if not packer_ok then
   vim.notify("packer not founded")
   return
 end
+
+local util = require("packer.util")
 
 packer.init({
   config = {
