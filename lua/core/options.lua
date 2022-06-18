@@ -1,4 +1,5 @@
-local g, opt = vim.g, vim.opt
+local g = vim.g
+local opt = vim.opt
 
 g.did_load_filetypes = 0
 g.do_filetype_lua = 1

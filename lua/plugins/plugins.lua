@@ -1,13 +1,6 @@
 -- @FileName: init.lua
 -- @Description: packer plugin list
 
-local packer_ok, packer = pcall(require, "packer")
-
-if not packer_ok then
-  vim.notify("packer not founded")
-  return
-end
-
 local fn = vim.fn
 
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
@@ -117,7 +110,10 @@ local plugins = {
 }
 
 -- @Packer
+
+-- autoomatically install packer
 if fn.empty(fn.glob(install_path)) > 0 then
+  print("cloning packer ... ")
   packer_bootstrap = fn.system({
     "git",
     "clone",
@@ -127,6 +123,13 @@ if fn.empty(fn.glob(install_path)) > 0 then
     install_path,
   })
   vim.cmd("packadd packer.nvim")
+end
+
+local packer_ok, packer = pcall(require, "packer")
+
+if not packer_ok then
+  vim.notify("packer not founded")
+  return
 end
 
 packer.init({
