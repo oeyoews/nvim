@@ -21,6 +21,20 @@ if not lspkind_ok then
   return
 end
 
+
+local function border(hl_name)
+  return {
+    { "╭", hl_name },
+    { "─", hl_name },
+    { "╮", hl_name },
+    { "│", hl_name },
+    { "╯", hl_name },
+    { "─", hl_name },
+    { "╰", hl_name },
+    { "│", hl_name },
+  }
+end
+
 local symbol_map = {
   --         
   -- Function = "",
@@ -111,8 +125,15 @@ cmp.setup({
 
   -- config default window
   window = {
-    completion = cmp.config.window.bordered(),
-    documentation = cmp.config.window.bordered(),
+    -- completion = cmp.config.window.bordered(),
+    completion = {
+      border = border "CmpBorder",
+      winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None",
+    },
+    -- documentation = cmp.config.window.bordered(),
+    documentation = {
+      border = border "CmpBorder",
+    }
   },
 
   experimental = {

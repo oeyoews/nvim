@@ -31,7 +31,28 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 capabilities.offsetEncoding = { "utf-16" }
-capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+capabilities.documentFormattingProvider = false
+capabilities.documentRangeFormattingProvider = false
+
+-- capabilities.textDocument.completion.completionItem.snippetSupport = true
+capabilities.textDocument.completion.completionItem = {
+  documentationFormat = { "markdown", "plaintext" },
+  snippetSupport = true,
+  preselectSupport = true,
+  insertReplaceSupport = true,
+  labelDetailsSupport = true,
+  deprecatedSupport = true,
+  commitCharactersSupport = true,
+  tagSupport = { valueSet = { 1 } },
+  resolveSupport = {
+    properties = {
+      "documentation",
+      "detail",
+      "additionalTextEdits",
+    },
+  },
+}
 
 local settings = require("plugins.lsp.settings").settings
 
@@ -44,11 +65,9 @@ end
 for _, lsp_server in ipairs(lsp_servers) do
   -- config = vim.tbl_extend("force", config, override[lsp_server] or {})
   lspconfig[lsp_server].setup({
-    -- settings = settings,
     on_attach = on_attach,
-    debounce_text_changes = 150,
-    -- link lsp-servers
     capabilities = capabilities,
+    -- settings = settings,
   })
 end
 
