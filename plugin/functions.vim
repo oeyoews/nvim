@@ -55,7 +55,7 @@ function! FindVanilla() abort
 endfunction
 
 function! FindPlugin() abort
-  find ~/.config/nvim/lua/plugins/plugins.lua.lua
+  find ~/.config/nvim/lua/plugins/plugins.lua
 endfunction
 
 function! FindInit() abort
