@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.26.0](https://gitlab.com/oeyoews/nvim/compare/v3.25.4...v3.26.0) (2022-06-18)
+
+
+### Bug Fixes
+
+* add husky scripts ([38f02e1](https://gitlab.com/oeyoews/nvim/commit/38f02e1af1e0e9de07c147165487dc11724a2244))
+* remove commit in format.sh ([af05f10](https://gitlab.com/oeyoews/nvim/commit/af05f10aee78470ee116a2c22c55d89593cbc4cf))
+
+
+### Features
+
+* add husky ([6386cdb](https://gitlab.com/oeyoews/nvim/commit/6386cdb85ab672d3bbfd56debd7ad0a3c88d4773))
+
 ## [2.26.1](https://gitlab.com/oeyoews/nvim/compare/v2.26.0...v2.26.1) (2022-06-14)
 
 
