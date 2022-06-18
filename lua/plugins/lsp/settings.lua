@@ -2,6 +2,9 @@ local M = {}
 
 -- filetype: lua
 M.lua = {
+  telemetry = {
+    enable = false
+  },
   diagnostics = {
     globals = {
       "vim",
@@ -18,13 +21,11 @@ M.lua = {
   }, ]]
 }
 
-M.json = {
-  -- schemas = full_schemas
-}
+M.json = {}
 
 M.settings = {
   Lua = M.lua,
-  -- json = M.json,
+  json = M.json,
 }
 
 return M

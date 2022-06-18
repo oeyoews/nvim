@@ -35,6 +35,7 @@ again to toggle lowercase letters
 
 ## TODO
 
+* [ ] config setting conflict
 * [ ] integrate husky and (prettier)
 * highlight paraness
 * [ ] learn lightspeed
