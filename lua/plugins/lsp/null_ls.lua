@@ -30,9 +30,8 @@ local sources = {
   formatting.prettier.with({
     filetypes = {
       "json",
-      'yaml',
+      "yaml",
     },
-
   }),
   diagnostics.markdownlint.with({
     filetypes = {

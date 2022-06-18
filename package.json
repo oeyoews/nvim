@@ -15,6 +15,6 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "format": "stylua lua/"
+    "format": "bash scripts/format.sh"
   }
 }

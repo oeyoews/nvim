@@ -19,7 +19,6 @@ local modules = {
 -- end
 
 for _, load_module in ipairs(modules) do
-
   load_module = package .. "." .. load_module
 
   local status_ok, _ = pcall(require, load_module)
@@ -29,7 +28,7 @@ for _, load_module in ipairs(modules) do
     -- vim.api.nvim_err_writeln("Failed to load " .. load_module .. "\n\n" .. fault)
     local plugin = "Modules"
     vim.notify(
-    --[[ {
+      --[[ {
       }, ]]
       "Failed to load " .. load_module,
       -- "debug to load " .. load_module,
