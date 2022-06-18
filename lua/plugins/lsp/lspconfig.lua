@@ -29,12 +29,6 @@ table.remove(lsp_servers, 1)
 -- fixme: split it ???
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
-capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
-capabilities.offsetEncoding = { "utf-16" }
-
-capabilities.documentFormattingProvider = false
-capabilities.documentRangeFormattingProvider = false
-
 -- capabilities.textDocument.completion.completionItem.snippetSupport = true
 capabilities.textDocument.completion.completionItem = {
   documentationFormat = { "markdown", "plaintext" },
@@ -53,6 +47,11 @@ capabilities.textDocument.completion.completionItem = {
     },
   },
 }
+capabilities.offsetEncoding = { "utf-16" }
+capabilities.documentFormattingProvider = false
+capabilities.documentRangeFormattingProvider = false
+
+capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 
 local settings = require("plugins.lsp.settings").settings
 
