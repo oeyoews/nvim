@@ -21,6 +21,7 @@ local plugins = {
   "nvim-lua/plenary.nvim",
 
   -- @Temporary
+  "kevinhwang91/nvim-hlslens",
   "lewis6991/spellsitter.nvim",
   "danymat/neogen",
 
