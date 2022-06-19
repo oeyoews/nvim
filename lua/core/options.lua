@@ -50,7 +50,7 @@ local default_options = {
   numberwidth = 4,
   ruler = false,
   signcolumn = "yes", -- silent side number shake
-  pumheight = 8, -- show complete menu numbers
+  -- pumheight = 10, -- show complete menu numbers
   title = false,
   titlestring = "%<%F%=%l/%L - nvim",
   shell = "/bin/zsh",
