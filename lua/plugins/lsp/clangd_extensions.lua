@@ -1,11 +1,12 @@
 -- @nvim_cmp
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
-capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 -- ref: https://github.com/LunarVim/LunarVim/issues/2597
 capabilities.offsetEncoding = { "utf-16" }
 -- ref: https://github.com/nvim-lua/completion-nvim/issues/258
 capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 
 local ok, clangd_extensions = pcall(require, "clangd_extensions")
 
@@ -16,7 +17,7 @@ end
 
 clangd_extensions.setup({
   server = {
-    on_attach = function(client, bufnr)
+    on_attach = function(client, _)
       if client.resolved_capabilities.document_highlight then
         vim.api.nvim_exec(
           [[
