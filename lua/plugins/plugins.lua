@@ -15,7 +15,7 @@ local plugins = {
 
   -- @Necessary
   "lewis6991/impatient.nvim",
-  -- "nathom/filetype.nvim",
+  "nathom/filetype.nvim",
   "rcarriga/nvim-notify",
   "kyazdani42/nvim-web-devicons",
   "nvim-lua/plenary.nvim",
@@ -190,3 +190,5 @@ vim.cmd([[
   nnoremap <silent> <leader>sO <cmd>so ~/.config/nvim/lua/plugins/plugins.lua <bar> lua vim.notify("reload packer file")<cr>
 ]])
 -- "b0o/SchemaStore.nvim",
+-- "paopaol/cmp-doxygen",
+-- "nvim-treesitter/nvim-treesitter-textobjects",

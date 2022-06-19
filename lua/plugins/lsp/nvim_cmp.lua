@@ -97,6 +97,7 @@ local sources = {
     name = "buffer",
     keyword_length = 4,
   },
+  { name = 'doxygen' },
   { name = "nvim-lua" },
   { name = "path" },
   { name = "neorg" },
