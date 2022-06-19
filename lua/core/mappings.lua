@@ -36,6 +36,8 @@ nnoremap <silent> <leader>bx <cmd>enew<cr>
 nnoremap <silent> <space>qq :q<CR>
 " nnoremap <silent> <space>qy :set confirm q<CR>
 nnoremap <silent> <space>qa :qa<CR>
+"  nnoremap <silent> <space>qe :e!<cr>
+
 
 " better jump
 noremap L $

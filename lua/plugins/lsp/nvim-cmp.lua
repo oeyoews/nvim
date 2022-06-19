@@ -58,6 +58,36 @@ local symbol_map = {
   TypeParameter = "𝙏",
 }
 
+local mapping = {
+  ["<C-n>"] = cmp.mapping(cmp.mapping.select_next_item(), { "i", "s" }),
+  -- ["<C-p>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "s" }),
+  ["<C-p>"] = cmp.mapping(function(fallback)
+    if not cmp.visible() then
+      cmp.visible()
+    else
+      cmp.select_next_item()
+    end
+    fallback()
+  end, {
+    "i",
+    "s",
+  }),
+  ["<tab>"] = cmp.mapping(function(fallback)
+    if cmp.visible() then
+      cmp.select_next_item()
+    else
+      fallback()
+    end
+  end, {
+    "i",
+    "s",
+  }),
+  ["<S-Tab>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "s" }),
+  ["<CR>"] = cmp.mapping.confirm({ select = false }),
+  ["<C-c>"] = cmp.mapping.close(),
+  -- ['<C-e>'] = cmp.mapping.complete(),
+}
+
 local sources = {
   { name = "nvim_lsp" },
   { name = "ultisnips", },
@@ -116,24 +146,7 @@ cmp.setup({
   },
 
   -- mappings
-  mapping = {
-    ["<C-n>"] = cmp.mapping(cmp.mapping.select_next_item(), { "i", "s" }),
-    ["<C-p>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "s" }),
-    ["<tab>"] = cmp.mapping(function(fallback)
-      if cmp.visible() then
-        cmp.select_next_item()
-      else
-        fallback()
-      end
-    end, {
-      "i",
-      "s",
-    }),
-    ["<S-Tab>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "s" }),
-    ["<CR>"] = cmp.mapping.confirm({ select = false }),
-    ["<C-c>"] = cmp.mapping.close(),
-    -- ['<C-e>'] = cmp.mapping.complete(),
-  },
+  mapping = mapping,
 
   -- menu
   formatting = {
