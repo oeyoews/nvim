@@ -17,6 +17,7 @@ local plugins = {
   "nvim-lua/plenary.nvim",
 
   -- @Temporary
+  -- "SmiteshP/nvim-navic",
   "lewis6991/spellsitter.nvim",
 
   -- @Treesitter
@@ -110,7 +111,7 @@ local plugins = {
 -- @Packer
 -- autoomatically install packer
 if fn.empty(fn.glob(install_path)) > 0 then
-  print("cloning packer ... ")
+  print("Cloning packer ... waiting")
   packer_bootstrap = fn.system({
     "git",
     "clone",
@@ -120,6 +121,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
     install_path,
   })
   vim.cmd("packadd packer.nvim")
+  print("Finish install packer")
 end
 
 local packer_ok, packer = pcall(require, "packer")

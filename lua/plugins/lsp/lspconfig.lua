@@ -16,6 +16,8 @@ if not lspformat_ok then
   return
 end
 
+-- local navic = require("nvim-navic")
+
 -- if this servers not installed, cmp will callback nvim-lsp-install to install them
 -- fix: how to config according filetype automation install servers
 -- @servers_lua
