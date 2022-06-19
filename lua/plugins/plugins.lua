@@ -121,7 +121,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
     install_path,
   })
   vim.cmd("packadd packer.nvim")
-  print("Finish install packer")
+  vim.notify("Finish install packer")
 end
 
 local packer_ok, packer = pcall(require, "packer")
