@@ -12,6 +12,7 @@ local modules = {
   "lspsaga",
   "trouble",
   "spellsitter",
+  "context",
 }
 
 -- for _, load_module in ipairs(modules) do
