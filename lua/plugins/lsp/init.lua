@@ -8,7 +8,7 @@ local modules = {
   -- "clangd_extensions",
   "null_ls", -- bug
   "fidget",
-  "lsp_signature",
+  -- "lsp_signature",
   "lspsaga",
   "trouble",
   "spellsitter",
