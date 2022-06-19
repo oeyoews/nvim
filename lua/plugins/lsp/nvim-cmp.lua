@@ -50,15 +50,15 @@ local mapping = {
   ["<S-Tab>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "s" }),
   ["<CR>"] = cmp.mapping.confirm({ select = false }),
   ["<C-c>"] = cmp.mapping.close(),
-  ['<C-y>'] = cmp.mapping.complete(),
-  ['<C-n>'] = function()
+  ["<C-y>"] = cmp.mapping.complete(),
+  ["<C-n>"] = function()
     if not cmp.visible() then
       cmp.complete()
     else
       cmp.select_next_item()
     end
   end,
-  ['<C-p>'] = function()
+  ["<C-p>"] = function()
     if not cmp.visible() then
       cmp.complete()
     else
@@ -79,7 +79,7 @@ local mapping = {
 
 local sources = {
   { name = "nvim_lsp" },
-  { name = "ultisnips", },
+  { name = "ultisnips" },
   {
     name = "buffer",
     keyword_length = 4,
