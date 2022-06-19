@@ -22,7 +22,7 @@ end
 local lsp_servers = require("plugins.lsp.servers").servers
 
 -- remove clangd, use clangd_extension to replace
-table.remove(lsp_servers, 1)
+-- table.remove(lsp_servers, 1)
 -- table.remove(lsp_servers, 1)
 
 -- @nvim_cmp

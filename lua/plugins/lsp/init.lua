@@ -5,7 +5,7 @@ local modules = {
   "lspinstall", -- preinstall some servers
   "nvim-cmp", -- config completion
   "lspconfig",
-  "clangd_extensions",
+  -- "clangd_extensions",
   "null_ls", -- bug
   "fidget",
   "lsp_signature",
