@@ -1,8 +1,3 @@
---  comment this to fix cr
-vim.cmd([[
-  set completeopt=menu,menuone
-]])
-
 --vim.cmd [[highlight default GH guifg=#3bb6c4 guibg=NONE]]
 
 -- @nvim_cmp
@@ -64,7 +59,7 @@ local symbol_map = {
 
 local sources = {
   { name = "nvim_lsp" },
-  { name = "ultisnips" },
+  { name = "ultisnips", },
   {
     name = "buffer",
     keyword_length = 4,
