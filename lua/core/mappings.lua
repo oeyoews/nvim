@@ -71,8 +71,6 @@ nnoremap <silent> <esc> :noh<return><C-L><esc>
 "autocmd FileType norg
 "vnoremap <space>nn mzI+<esc>A+<esc>`z
 
-nnoremap <silent> <SPACE>tf <Cmd>only<bar> lua vim.notify("🍺 FullScreen")<cr>
-
 nnoremap <silent> <leader>tn <cmd>set invnumber<cr>
 
 " BUG: still have some bugs(for gnome paste plugins)
