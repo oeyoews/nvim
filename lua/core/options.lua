@@ -55,7 +55,18 @@ local default_options = {
   titlestring = "%<%F%=%l/%L - nvim",
   shell = "/bin/zsh",
   completeopt = { "menuone", "noselect" },
-  fillchars = { eob = " " },
+  -- https://github.com/LunarVim/LunarVim/issues/2294#issuecomment-1045810429
+  -- eob to hide tilder
+  fillchars = {
+    eob = " ", -- suppress ~ at EndOfBuffer
+    vert = "⣿", -- alternatives │▕
+    fold = " ",
+    diff = "╱", -- alternatives = ⣿ ░ ─
+    msgsep = " ",
+    foldopen = "▾",
+    foldsep = "│",
+    foldclose = "▸",
+  },
   spelllang = { "en", "cjk" },
   listchars = { tab = "  " },
 }

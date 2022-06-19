@@ -8,9 +8,11 @@ M.lua = {
   diagnostics = {
     globals = {
       "vim",
+      "append",
     },
     disable = {
       "lowercase-global",
+      "undefined-field",
     },
   },
   --[[ workspace = {
