@@ -46,7 +46,7 @@ local default_options = {
   hlsearch = true,
   vb = true,
   autochdir = true,
-  wrap = false,
+  wrap = true,
   numberwidth = 4,
   ruler = false,
   signcolumn = "yes", -- silent side number shake
@@ -59,13 +59,13 @@ local default_options = {
   -- eob to hide tilder
   fillchars = {
     eob = " ", -- suppress ~ at EndOfBuffer
-    vert = "⣿", -- alternatives │▕
-    fold = " ",
-    diff = "╱", -- alternatives = ⣿ ░ ─
-    msgsep = " ",
-    foldopen = "▾",
-    foldsep = "│",
-    foldclose = "▸",
+    -- vert = "⣿", -- alternatives │▕
+    -- fold = " ",
+    -- diff = "╱", -- alternatives = ⣿ ░ ─
+    -- msgsep = " ",
+    -- foldopen = "▾",
+    -- foldsep = "│",
+    -- foldclose = "▸",
   },
   spelllang = { "en", "cjk" },
   listchars = { tab = "  " },
@@ -73,7 +73,7 @@ local default_options = {
 
 -- can't put pairs options
 opt.shortmess:append("acsI")
-opt.whichwrap:append("<,>,[,]") -- wrap in line end
+opt.whichwrap:append("<,>,[,],h,l") -- wrap in line end
 
 for k, v in pairs(default_options) do
   vim.opt[k] = v
