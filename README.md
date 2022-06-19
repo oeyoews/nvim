@@ -37,6 +37,10 @@ again to toggle lowercase letters
 
 ## TODO
 
+<details>
+<summary>More</summary>
+
+
 * [ ] vim-plug or packer.nvim index probleb
 * [ ] config setting conflict
 * [ ] integrate husky and (prettier)
@@ -75,6 +79,8 @@ again to toggle lowercase letters
 * [x] this emjoi shadow bug, maybe is kitty terminal(switch to wezterm compare)
 * [x] some error tip from feline(active)
 * [x] https://github.com/AstroNvim/AstroNvim, learn it option setting and lsp multi separate setting: fix lua global vim setting
+
+</details>
 
 ## NOTE
 
