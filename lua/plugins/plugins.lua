@@ -1,3 +1,7 @@
+---@module "plugins"
+---@author oeyoews
+---@license MIT
+
 -- @FileName: init.lua
 -- @Description: packer plugin list
 
@@ -18,6 +22,7 @@ local plugins = {
 
   -- @Temporary
   "lewis6991/spellsitter.nvim",
+  "danymat/neogen",
 
   -- @Treesitter
   {

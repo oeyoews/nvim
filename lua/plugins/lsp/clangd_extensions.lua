@@ -21,10 +21,6 @@ clangd_extensions.setup({
       if client.resolved_capabilities.document_highlight then
         vim.api.nvim_exec(
           [[
-            "" Just adding collor highlight.
-            :hi LspReferenceRead cterm=bold ctermbg=red guibg=#3d3d3d
-            :hi LspReferenceText cterm=bold ctermbg=red guibg=#3d3d3d
-            :hi LspReferenceWrite cterm=bold ctermbg=red guibg=#3d3d3d
                 augroup lsp_document_highlight
                  autocmd! * <buffer>
                  "autocmd!

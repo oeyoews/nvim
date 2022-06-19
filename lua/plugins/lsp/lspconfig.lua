@@ -16,8 +16,6 @@ if not lspformat_ok then
   return
 end
 
--- local navic = require("nvim-navic")
-
 -- if this servers not installed, cmp will callback nvim-lsp-install to install them
 -- fix: how to config according filetype automation install servers
 -- @servers_lua
@@ -102,23 +100,3 @@ lspconfig.sumneko_lua.setup({
   on_attach = on_attach,
   settings = settings,
 })
-
--- lspconfig.jsonls.setup({
---   on_attach = on_attach,
---   capabilities = capabilities,
---   settings = {
---     json = {
---       validate = { enable = true },
---       schemas = require("schemastore").json.schemas(),
---     },
---   },
---   setup = {
---     commands = {
---       Format = {
---         function()
---           vim.lsp.buf.range_formatting({}, { 0, 0 }, { vim.fn.line "$", 0 })
---         end,
---       },
---     },
---   },
--- })

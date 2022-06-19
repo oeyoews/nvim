@@ -40,16 +40,16 @@ function! ToggleStatusLine() abort
   lua vim.notify("ToggleStatusLine")
 endfunction
 
-function! FindVanilla() abort
-  " this variable how to be quoted
-  " let &vanilla = stdpath('config') . '/doc/vanilla.tx'
-  "   if !empty(glob(&vanilla))
-  "    echo &vanilla
-  "   else
-  "       echom "this &vanilla not fouded"
-  "   endif
-  find ~/.config/nvim/doc/vanilla.txt
-endfunction
+" function! FindVanilla() abort
+"   " this variable how to be quoted
+"   " let &vanilla = stdpath('config') . '/doc/vanilla.tx'
+"   "   if !empty(glob(&vanilla))
+"   "    echo &vanilla
+"   "   else
+"   "       echom "this &vanilla not fouded"
+"   "   endif
+"   find ~/.config/nvim/doc/vanilla.txt
+" endfunction
 
 function! FindPlugin() abort
   find ~/.config/nvim/lua/plugins/plugins.lua
@@ -144,7 +144,7 @@ nnoremap <silent> <space>tK <cmd>call Terminal()<cr>i
 
 nnoremap <silent> <leader>ts :call ToggleStatusLine()<CR>
 
-nnoremap <silent> <space>eh <cmd>call FindVanilla()<cr>
+" nnoremap <silent> <space>eh <cmd>call FindVanilla()<cr>
 
 " NOTE: This same file type will overwrite
 
