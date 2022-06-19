@@ -1,3 +1,4 @@
+---[=[
 local status_ok, notify = pcall(require, "notify")
 
 if not status_ok then
@@ -47,3 +48,5 @@ notify.setup({
 vim.cmd([[
 nnoremap <silent> <leader>bm :Notifications<cr>
 ]])
+
+--]=]
