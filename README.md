@@ -6,6 +6,8 @@
 
 # Introd
 
+`nvim-version` nvim-0.7.0
+
 ## Dependencies
 
 * python-pynvim(neovim)
