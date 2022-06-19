@@ -59,19 +59,23 @@ local symbol_map = {
 }
 
 local mapping = {
-  ["<C-n>"] = cmp.mapping(cmp.mapping.select_next_item(), { "i", "s" }),
-  -- ["<C-p>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "s" }),
-  ["<C-p>"] = cmp.mapping(function(fallback)
+  ['<C-n>'] = function()
     if not cmp.visible() then
-      cmp.visible()
+      cmp.complete()
     else
       cmp.select_next_item()
     end
-    fallback()
-  end, {
-    "i",
-    "s",
-  }),
+  end,
+  ['<C-p>'] = function()
+    if not cmp.visible() then
+      cmp.complete()
+    else
+      cmp.select_prev_item()
+    end
+  end,
+  ['<C-e>'] = cmp.mapping.complete(),
+  -- ["<C-n>"] = cmp.mapping(cmp.mapping.select_next_item(), { "i", "s" }),
+  -- ["<C-p>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "s" }),
   ["<tab>"] = cmp.mapping(function(fallback)
     if cmp.visible() then
       cmp.select_next_item()
@@ -85,7 +89,6 @@ local mapping = {
   ["<S-Tab>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "s" }),
   ["<CR>"] = cmp.mapping.confirm({ select = false }),
   ["<C-c>"] = cmp.mapping.close(),
-  -- ['<C-e>'] = cmp.mapping.complete(),
 }
 
 local sources = {
@@ -165,6 +168,9 @@ cmp.setup({
     }),
   },
 
+  completion = {
+    autocomplete = false,
+  },
   experimental = {
     --ghost_text = {hl_group = 'GH'}
     ghost_text = true,
