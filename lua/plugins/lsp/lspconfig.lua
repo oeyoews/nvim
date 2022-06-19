@@ -25,6 +25,7 @@ local lsp_servers = require("plugins.lsp.servers").servers
 
 -- remove clangd, use clangd_extension to replace
 table.remove(lsp_servers, 1)
+-- table.remove(lsp_servers, 1)
 
 -- @nvim_cmp
 -- fixme: split it ???
@@ -101,3 +102,23 @@ lspconfig.sumneko_lua.setup({
   on_attach = on_attach,
   settings = settings,
 })
+
+-- lspconfig.jsonls.setup({
+--   on_attach = on_attach,
+--   capabilities = capabilities,
+--   settings = {
+--     json = {
+--       validate = { enable = true },
+--       schemas = require("schemastore").json.schemas(),
+--     },
+--   },
+--   setup = {
+--     commands = {
+--       Format = {
+--         function()
+--           vim.lsp.buf.range_formatting({}, { 0, 0 }, { vim.fn.line "$", 0 })
+--         end,
+--       },
+--     },
+--   },
+-- })

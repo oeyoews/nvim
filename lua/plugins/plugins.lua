@@ -17,7 +17,6 @@ local plugins = {
   "nvim-lua/plenary.nvim",
 
   -- @Temporary
-  -- "SmiteshP/nvim-navic",
   "lewis6991/spellsitter.nvim",
 
   -- @Treesitter
@@ -184,3 +183,4 @@ vim.cmd([[
   nnoremap <silent> <leader>so <cmd>so % <bar> lua vim.notify("reload current file")<cr>
   nnoremap <silent> <leader>sO <cmd>so ~/.config/nvim/lua/plugins/plugins.lua <bar> lua vim.notify("reload packer file")<cr>
 ]])
+-- "b0o/SchemaStore.nvim",
