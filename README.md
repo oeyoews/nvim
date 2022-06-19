@@ -10,6 +10,10 @@
 
 ## Dependencies
 
+<details>
+<!--<details open="open">-->
+<summary>TOC</summary>
+
 * python-pynvim(neovim)
 * python3(ultisnips)
 * npm(for lsp-installer)
@@ -18,6 +22,8 @@
 * make(for install)
 * ranger(file manager)
 * need install noto-font-emoji or nerd font
+
+</details>
 
 ## Install
 
