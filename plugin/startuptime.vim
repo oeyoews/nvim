@@ -1,5 +1,5 @@
 " BUG: break session restore
-nnoremap <leader>vt <cmd>StartupTime --tries 5<cr>
+" nnoremap <leader>vt <cmd>StartupTime --tries 5<cr>
 
 " don't use autocmd! , or use autogroup
 augroup startuptime_setting

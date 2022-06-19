@@ -51,17 +51,18 @@ endfunction
 "   find ~/.config/nvim/doc/vanilla.txt
 " endfunction
 
-function! FindPlugin() abort
-  find ~/.config/nvim/lua/plugins/plugins.lua
-endfunction
-
+" function! FindPlugin() abort
+"   find ~/.config/nvim/lua/plugins/plugins.lua
+" endfunction
+"
 function! FindInit() abort
   find ~/.config/nvim/init.lua
 endfunction
 
 " open nvim config file
 nnoremap <silent> <space>fi <cmd>call FindInit()<cr>
-nnoremap <silent> <space>fp <cmd>call FindPlugin()<cr>
+" nnoremap <silent> <space>fp <cmd>call FindPlugin()<cr>
+" nnoremap <silent> <space>fi :edit ~/.config/nvim/init.lua<cr>
 
 " TODO: write a function, adjust it's dir
 "nnoremap <space>fd <cmd>e ~/dotfiles/notes/draft/`date -I`.md<cr>
@@ -129,11 +130,11 @@ nnoremap <silent> <space>fp <cmd>call FindPlugin()<cr>
 
 "set conceallevel=2
 
-augroup FormatCommand
-  au!
-  autocmd BufWritePre *.yaml,*.vim call FormatFile()
-augroup END
-
+" augroup FormatCommand
+"   au!
+"   autocmd BufWritePre *.yaml,*.vim call FormatFile()
+" augroup END
+"
 augroup refreshdotfile
   autocmd!
   au BufWritePost ~/.local/share/chezmoi/dot_* :call ChezmoiSource()
