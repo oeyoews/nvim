@@ -50,11 +50,10 @@ local default_options = {
   numberwidth = 4,
   ruler = false,
   signcolumn = "yes", -- silent side number shake
-  -- pumheight = 10, -- ??
+  pumheight = 8, -- show complete menu numbers
   title = false,
   titlestring = "%<%F%=%l/%L - nvim",
   shell = "/bin/zsh",
-  completeopt = { "menuone", "noselect" },
   -- https://github.com/LunarVim/LunarVim/issues/2294#issuecomment-1045810429
   -- eob to hide tilder
   fillchars = {

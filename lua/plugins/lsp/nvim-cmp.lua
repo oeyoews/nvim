@@ -1,7 +1,7 @@
 --  comment this to fix cr
--- vim.cmd([[
--- set completeopt=menu,menuone,noselect,noinsert
--- ]])
+vim.cmd([[
+  set completeopt=menu,menuone
+]])
 
 --vim.cmd [[highlight default GH guifg=#3bb6c4 guibg=NONE]]
 
@@ -21,23 +21,20 @@ if not lspkind_ok then
   return
 end
 
-local function border(hl_name)
-  return {
-    { "╭", hl_name },
-    { "─", hl_name },
-    { "╮", hl_name },
-    { "│", hl_name },
-    { "╯", hl_name },
-    { "─", hl_name },
-    { "╰", hl_name },
-    { "│", hl_name },
-  }
-end
+-- local function border(hl_name)
+--   return {
+--     { "╭", hl_name },
+--     { "─", hl_name },
+--     { "╮", hl_name },
+--     { "│", hl_name },
+--     { "╯", hl_name },
+--     { "─", hl_name },
+--     { "╰", hl_name },
+--     { "│", hl_name },
+--   }
+-- end
 
 local symbol_map = {
-  --         
-  -- Keyword = "🔐",
-  -- Function = "",
   Text = "",
   Method = "",
   Function = "ƒ",
@@ -79,6 +76,30 @@ local sources = {
 }
 
 cmp.setup({
+  enabled = function()
+    -- disable completion in comments
+    local context = require("cmp.config.context")
+    -- keep command mode completion enabled when cursor is in a comment
+    if vim.api.nvim_get_mode().mode == "c" then
+      return true
+    else
+      return not context.in_treesitter_capture("comment") and not context.in_syntax_group("Comment")
+    end
+  end,
+  -- config default window
+  window = {
+    -- completion = cmp.config.window.bordered(),
+    completion = {
+      -- border = border;
+      winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None",
+    },
+    -- documentation = cmp.config.window.bordered(),
+    documentation = {
+      -- border = border("CmpBorder"),
+      winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None",
+    },
+  },
+
   view = {
     entries = "custom", -- can be "custom", "wildmenu" or "native"
     --entries = { name = 'custom', selection_order = 'near_cursor' }
@@ -131,19 +152,6 @@ cmp.setup({
         emoji = "(Emo)",
       },
     }),
-  },
-
-  -- config default window
-  window = {
-    -- completion = cmp.config.window.bordered(),
-    completion = {
-      border = border("CmpBorder"),
-      winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None",
-    },
-    -- documentation = cmp.config.window.bordered(),
-    documentation = {
-      border = border("CmpBorder"),
-    },
   },
 
   experimental = {

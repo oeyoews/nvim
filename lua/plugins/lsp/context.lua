@@ -1,7 +1,7 @@
 local ok, treesitter_context = pcall(require, "treesitter-context")
 
 if not ok then
-  vim.notify('treesitter_context not founded')
+  vim.notify("treesitter_context not founded")
   return
 end
 
