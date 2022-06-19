@@ -53,7 +53,7 @@ vim.cmd([[
 nnoremap <leader>ff <cmd>Telescope find_files <cr>
 nnoremap <leader>to <cmd>Telescope oldfiles <cr>
 nnoremap <leader>tbb <cmd>Telescope buffers <cr>
-nnoremap <leader>tc <Cmd>Telescope colorscheme <Cr>
+nnoremap <leader>th <Cmd>Telescope colorscheme <Cr>
 nnoremap <leader>tF <Cmd>Telescope filetypes<Cr>
 
 " search string in current dir
