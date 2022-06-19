@@ -16,20 +16,6 @@ if not lspkind_ok then
   return
 end
 
-
--- local function border(hl_name)
---   return {
---     { "╭", hl_name },
---     { "─", hl_name },
---     { "╮", hl_name },
---     { "│", hl_name },
---     { "╯", hl_name },
---     { "─", hl_name },
---     { "╰", hl_name },
---     { "│", hl_name },
---   }
--- end
-
 local symbol_map = {
   Text = "",
   Method = "",
@@ -59,6 +45,12 @@ local symbol_map = {
 }
 
 local mapping = {
+  -- ["<C-n>"] = cmp.mapping(cmp.mapping.select_next_item(), { "i", "s" }),
+  -- ["<C-p>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "s" }),
+  ["<S-Tab>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "s" }),
+  ["<CR>"] = cmp.mapping.confirm({ select = false }),
+  ["<C-c>"] = cmp.mapping.close(),
+  ['<C-y>'] = cmp.mapping.complete(),
   ['<C-n>'] = function()
     if not cmp.visible() then
       cmp.complete()
@@ -73,9 +65,6 @@ local mapping = {
       cmp.select_prev_item()
     end
   end,
-  ['<C-y>'] = cmp.mapping.complete(),
-  -- ["<C-n>"] = cmp.mapping(cmp.mapping.select_next_item(), { "i", "s" }),
-  -- ["<C-p>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "s" }),
   ["<tab>"] = cmp.mapping(function(fallback)
     if cmp.visible() then
       cmp.select_next_item()
@@ -86,9 +75,6 @@ local mapping = {
     "i",
     "s",
   }),
-  ["<S-Tab>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "s" }),
-  ["<CR>"] = cmp.mapping.confirm({ select = false }),
-  ["<C-c>"] = cmp.mapping.close(),
 }
 
 local sources = {
