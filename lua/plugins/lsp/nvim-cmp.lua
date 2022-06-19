@@ -73,7 +73,7 @@ local mapping = {
       cmp.select_prev_item()
     end
   end,
-  ['<C-e>'] = cmp.mapping.complete(),
+  ['<C-y>'] = cmp.mapping.complete(),
   -- ["<C-n>"] = cmp.mapping(cmp.mapping.select_next_item(), { "i", "s" }),
   -- ["<C-p>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "s" }),
   ["<tab>"] = cmp.mapping(function(fallback)
