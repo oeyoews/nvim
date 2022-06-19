@@ -16,6 +16,7 @@ if not lspkind_ok then
   return
 end
 
+
 -- local function border(hl_name)
 --   return {
 --     { "╭", hl_name },
@@ -68,6 +69,15 @@ local sources = {
   { name = "path" },
   { name = "neorg" },
   { name = "emoji" },
+}
+
+local menu = {
+  nvim_lsp = "LSP)",
+  buffer = "Buffer",
+  ultisnips = "Snippet",
+  nvim_lua = "Lua",
+  path = "Path",
+  emoji = "Emoji",
 }
 
 cmp.setup({
@@ -138,14 +148,7 @@ cmp.setup({
       mode = "symbol",
       --mode = "symbol_text",
       maxwidth = 50,
-      menu = {
-        nvim_lsp = "(LSP)",
-        buffer = "(Buf)",
-        ultisnips = "(Sni)",
-        nvim_lua = "(Lua)",
-        path = "(Pat)",
-        emoji = "(Emo)",
-      },
+      menu = menu,
     }),
   },
 
