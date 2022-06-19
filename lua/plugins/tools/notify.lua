@@ -2,7 +2,7 @@
 local status_ok, notify = pcall(require, "notify")
 
 if not status_ok then
-  vim.notify("notify module not found!", "warn")
+  vim.notify("notify not found!", "warn")
   return
 end
 

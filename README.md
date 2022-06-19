@@ -35,6 +35,7 @@ again to toggle lowercase letters
 
 ## TODO
 
+* [ ] vim-plug or packer.nvim index probleb
 * [ ] config setting conflict
 * [ ] integrate husky and (prettier)
 * highlight paraness
@@ -50,7 +51,7 @@ again to toggle lowercase letters
 * [ ] format lua(include vim), this treesitter
 * [ ] learn lua: doom-nvim, nvchad to deeply look
 * [ ] add highlight symbols under cursor functions(terminal gnome support)
-* [ ] use packer.nvim to replace vim-plug
+* [x] use packer.nvim to replace vim-plug
 * [ ] tidy vanilla.txt, maybe can write vanilla.markdown, last to txt
 * [ ] config tab space show in different filetype
 * [ ] move plugins/*.lua to lua folder, and to pure lua config
