@@ -47,22 +47,6 @@ local terminal_colors = {
 
 -- tips: tsmoduleinfo
 tree_configs.setup({
-  textobjects = {
-    select = {
-      enable = false,
-
-      -- Automatically jump forward to textobj, similar to targets.vim
-      lookahead = true,
-
-      keymaps = {
-        -- You can use the capture groups defined in textobjects.scm
-        ["af"] = "@function.outer",
-        ["if"] = "@function.inner",
-        ["ac"] = "@class.outer",
-        ["ic"] = "@class.inner",
-      },
-    },
-  },
   autotag = {
     enable = true,
   },
