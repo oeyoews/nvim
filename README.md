@@ -42,7 +42,7 @@ again to toggle lowercase letters
 ## TODO
 
 <details>
-<summary>More</summary>
+<summary>INFO</summary>
 
 
 * [ ] vim-plug or packer.nvim index probleb
