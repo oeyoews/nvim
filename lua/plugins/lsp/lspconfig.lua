@@ -47,10 +47,13 @@ capabilities.textDocument.completion.completionItem = {
     },
   },
 }
+
+-- for null-ls bug
 capabilities.offsetEncoding = { "utf-16" }
 capabilities.documentFormattingProvider = false
 capabilities.documentRangeFormattingProvider = false
 
+-- for ufo plugin
 capabilities.textDocument.foldingRange = {
   dynamicRegistration = false,
   lineFoldingOnly = true
