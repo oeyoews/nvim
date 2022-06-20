@@ -27,4 +27,5 @@ vim.cmd([[
   nnoremap <silent> <leader>hL vaw:<c-u>HSHighlight 2<CR>
   nnoremap <silent> <leader>cl V:<c-u>HSRmHighlight<CR>
   vnoremap <silent> <f3> :<c-u>HSHighlight 2<CR>
+  vnoremap <silent> <f4> :<c-u>HSRmHighlight<CR>
 ]])

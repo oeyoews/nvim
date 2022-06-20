@@ -15,7 +15,7 @@
 <summary>TOC</summary>
 
 * python-pynvim(neovim)
-* python3(ultisnips)
+* python(ultisnips)
 * npm(for lsp-installer)
 * go(lsp server)
 * shellcheck, codespell
@@ -27,9 +27,7 @@
 
 ## Install
 
-```bash
-make && make install
-```
+`nvim`
 
 > tips: vim-plug: enter to show more information, R to reinstall failed plugins
 

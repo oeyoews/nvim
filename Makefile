@@ -1,6 +1,4 @@
 installDep:
-	sudo pacman -S ranger python-neovim nodejs -y
+	sudo pacman -S ranger python-neovim nodejs go python shellcheck make noto-fonts-emoji neovim -y
 
 # .PHONY: install
-install:
-	nvim -c PlugInstall
