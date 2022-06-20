@@ -152,7 +152,7 @@ packer.init({
     -- default_url_format = 'https://hub.fastgit.xyz/%s.git',
   },
   autoremove = true,
-  compile_path = util.join_paths(vim.fn.stdpath("data"), "compile", "packer_compiled.lua"),
+  compile_path = util.join_paths(fn.stdpath("data"), "compile", "packer_compiled.lua"),
 })
 
 packer.startup(function(use)
