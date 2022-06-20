@@ -100,3 +100,14 @@ lspconfig.sumneko_lua.setup({
   on_attach = on_attach,
   settings = settings,
 })
+
+--[[ lspconfig.efm.setup {
+  on_attach = on_attach,
+  init_options = { documentFormatting = true },
+  filetypes = { 'yaml', },
+  settings = {
+    languages = {
+      yaml = { prettier },
+    },
+  },
+} ]]
