@@ -151,7 +151,7 @@ nnoremap <silent> <leader>ts :call ToggleStatusLine()<CR>
 
 augroup quickquit
   autocmd!
-  autocmd FileType lspinfo,startuptime,help,qf,quickrun,snippets,tsplayground nnoremap <silent> q :q<cr>
+  autocmd FileType lspinfo,startuptime,help,qf,quickrun,snippets,tsplayground nnoremap <buffer> <silent> q :q<cr>
 augroup END
 
 augroup cursorline_goggle
