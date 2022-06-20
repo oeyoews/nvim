@@ -51,13 +51,12 @@ lspsaga.setup({ -- defaults ...
 
 vim.cmd([[
 nnoremap <silent> <space>le <cmd>Lspsaga code_action<cr>
-nnoremap <silent>gK :Lspsaga hover_doc<CR>
+nnoremap <silent> <leader>gk :Lspsaga hover_doc<CR>
 nnoremap <silent> <C-f> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>
 nnoremap <silent> <C-b> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>
-nnoremap <silent> gs :Lspsaga signature_help<CR>
-" gD use vanilla
-nnoremap <silent> gd :Lspsaga preview_definition<CR>
+nnoremap <silent> <leader>gs :Lspsaga signature_help<CR>
+nnoremap <silent> <leader>gd :Lspsaga preview_definition<CR>
 nnoremap <silent> gh :Lspsaga lsp_finder<CR>
-nnoremap <silent>gr :Lspsaga rename<CR>
+nnoremap <silent> gr :Lspsaga rename<CR>
 nnoremap <silent> <leader>cd :Lspsaga show_line_diagnostics<CR>
 ]])
