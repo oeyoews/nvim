@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.34.0](https://gitlab.com/oeyoews/nvim/compare/v3.33.5...v3.34.0) (2022-06-20)
+
+
+### Features
+
+* add sh filetype to bash ([274aef5](https://gitlab.com/oeyoews/nvim/commit/274aef54038d1ca8f3f9c4953679f1243b7288e2))
+
 ## [3.33.5](https://gitlab.com/oeyoews/nvim/compare/v3.33.4...v3.33.5) (2022-06-20)
 
 
