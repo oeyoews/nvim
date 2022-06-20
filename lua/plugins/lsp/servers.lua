@@ -12,7 +12,7 @@ M.servers = {
   -- 'diagnosticls',
   "html",
   "pyright",
-  "gopls",
+  -- "gopls",
   -- 'golangci_lint_ls',
   "sumneko_lua",
   "tsserver",
