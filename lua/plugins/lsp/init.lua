@@ -13,7 +13,6 @@ local modules = {
   "trouble",
   "spellsitter",
   "context",
-  "ufo",
 }
 
 -- for _, load_module in ipairs(modules) do
