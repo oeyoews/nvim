@@ -12,7 +12,7 @@
 
 <details>
 <!--<details open="open">-->
-<summary>TOC</summary>
+<summary>INFO</summary>
 
 * python-pynvim(neovim)
 * python(ultisnips)
