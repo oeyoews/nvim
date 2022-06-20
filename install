@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+sudo pacman -S ranger python-neovim nodejs go python shellcheck make noto-fonts-emoji neovim -y
