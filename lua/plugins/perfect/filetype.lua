@@ -8,6 +8,7 @@ filetype.setup({
   overrides = {
     complex = {
       [".service"] = "systemd",
+      [".sh"] = "bash",
     },
   },
 })
