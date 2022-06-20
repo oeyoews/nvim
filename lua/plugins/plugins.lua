@@ -17,6 +17,7 @@ local plugins = {
   "nvim-lua/plenary.nvim",
 
   -- @Temporary
+  'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async',
   "kevinhwang91/nvim-hlslens",
   "lewis6991/spellsitter.nvim",
 

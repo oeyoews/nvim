@@ -62,9 +62,9 @@ local default_options = {
     -- fold = " ",
     -- diff = "╱", -- alternatives = ⣿ ░ ─
     -- msgsep = " ",
-    -- foldopen = "▾",
-    -- foldsep = "│",
-    -- foldclose = "▸",
+    foldopen = "▾",
+    foldsep = "│",
+    foldclose = "▸",
   },
   spelllang = { "en", "cjk" },
   listchars = { tab = "  " },

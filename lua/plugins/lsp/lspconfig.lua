@@ -51,6 +51,11 @@ capabilities.offsetEncoding = { "utf-16" }
 capabilities.documentFormattingProvider = false
 capabilities.documentRangeFormattingProvider = false
 
+capabilities.textDocument.foldingRange = {
+  dynamicRegistration = false,
+  lineFoldingOnly = true
+}
+
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 
 local settings = require("plugins.lsp.settings").settings
