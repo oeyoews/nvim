@@ -59,15 +59,19 @@ local default_options = {
   fillchars = {
     eob = " ", -- suppress ~ at EndOfBuffer
     -- vert = "⣿", -- alternatives │▕
-    -- fold = " ",
     -- diff = "╱", -- alternatives = ⣿ ░ ─
     -- msgsep = " ",
-    foldopen = "▾",
-    foldsep = "│",
-    foldclose = "▸",
+    -- foldsep = "│",
+    -- foldclose = "▸",
+    -- foldopen = "▾",
+    fold = " ",
+    foldopen = "",
+    foldsep = " ",
+    foldclose = "",
   },
+  -- 
   spelllang = { "en", "cjk" },
-  listchars = { tab = "  " },
+  listchars = { tab = " " },
 }
 
 -- can't put pairs options
