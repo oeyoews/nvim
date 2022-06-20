@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.37.0](https://gitlab.com/oeyoews/nvim/compare/v3.36.0...v3.37.0) (2022-06-20)
+
+
+### Features
+
+* use icon-picker to replace cmp-emoji ([ae3585a](https://gitlab.com/oeyoews/nvim/commit/ae3585aad8f095e29177173f203c054b1069c3cb))
+
 # [3.36.0](https://gitlab.com/oeyoews/nvim/compare/v3.35.0...v3.36.0) (2022-06-20)
 
 
