@@ -23,6 +23,7 @@ local enabale_filetypes = require("plugins.lsp.filetypes").filetypes
 -- table.insert(enabale_filetypes, "gitcommit")
 -- ref: http://static.kancloud.cn/kancloud/lua_style_guide/66331
 enabale_filetypes[#enabale_filetypes + 1] = "gitcommit"
+enabale_filetypes[#enabale_filetypes + 1] = "sh"
 
 local sources = {
   -- builtin.diagnostics.gitlint, -- need install gitlint
