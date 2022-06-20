@@ -23,6 +23,7 @@ local plugins = {
   "kevinhwang91/nvim-hlslens",
   "lewis6991/spellsitter.nvim",
   "ziontee113/icon-picker.nvim",
+  "sindrets/diffview.nvim",
 
   -- @Treesitter
   {
