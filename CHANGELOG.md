@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.35.0](https://gitlab.com/oeyoews/nvim/compare/v3.34.0...v3.35.0) (2022-06-20)
+
+
+### Features
+
+* add .vscode ([24a3975](https://gitlab.com/oeyoews/nvim/commit/24a3975b5bd86df1c6af54dfcc2681850a8807aa))
+
 # [3.34.0](https://gitlab.com/oeyoews/nvim/compare/v3.33.5...v3.34.0) (2022-06-20)
 
 
