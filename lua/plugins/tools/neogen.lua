@@ -1,7 +1,3 @@
---@module module
---@author
---@license
-
 local ok, neogen = pcall(require, "neogen")
 
 if not ok then
@@ -14,7 +10,8 @@ neogen.setup({
   languages = {
     lua = {
       template = {
-        -- annotation_convention = "emmylua" -- for a full list of annotation_conventions, see supported-languages below,
+        -- emmylua
+        annotation_convention = "emmylua" -- for a full list of annotation_conventions, see supported-languages below,
       },
     },
   },

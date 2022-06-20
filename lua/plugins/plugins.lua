@@ -19,7 +19,6 @@ local plugins = {
   -- @Temporary
   "kevinhwang91/nvim-hlslens",
   "lewis6991/spellsitter.nvim",
-  "danymat/neogen",
 
   -- @Treesitter
   {
@@ -188,3 +187,4 @@ vim.cmd([[
 -- "b0o/SchemaStore.nvim",
 -- "paopaol/cmp-doxygen",
 -- "nvim-treesitter/nvim-treesitter-textobjects",
+-- "danymat/neogen",
