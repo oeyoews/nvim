@@ -15,11 +15,14 @@ local plugins = {
   "rcarriga/nvim-notify",
   "kyazdani42/nvim-web-devicons",
   "nvim-lua/plenary.nvim",
+  "kevinhwang91/promise-async",
+  "stevearc/dressing.nvim",
 
   -- @Temporary
-  'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async',
+  "kevinhwang91/nvim-ufo",
   "kevinhwang91/nvim-hlslens",
   "lewis6991/spellsitter.nvim",
+  "ziontee113/icon-picker.nvim",
 
   -- @Treesitter
   {
@@ -46,7 +49,6 @@ local plugins = {
       "honza/vim-snippets",
       "SirVer/ultisnips",
       "quangnguyen30192/cmp-nvim-ultisnips",
-      "hrsh7th/cmp-emoji",
     },
   },
 
@@ -189,3 +191,4 @@ vim.cmd([[
 -- "paopaol/cmp-doxygen",
 -- "nvim-treesitter/nvim-treesitter-textobjects",
 -- "danymat/neogen",
+-- "hrsh7th/cmp-emoji",

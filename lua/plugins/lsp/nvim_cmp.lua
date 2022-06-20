@@ -100,7 +100,6 @@ local sources = {
   { name = "nvim-lua" },
   { name = "path" },
   { name = "neorg" },
-  { name = "emoji" },
 }
 
 local menu = {
