@@ -1,7 +1,3 @@
----@module "plugins"
----@author oeyoews
----@license MIT
-
 -- @FileName: init.lua
 -- @Description: packer plugin list
 

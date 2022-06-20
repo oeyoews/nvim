@@ -3,7 +3,7 @@ local package = "plugins.perfect"
 local modules = {
   "impatient",
   "disable",
-  -- "filetype",
+  "filetype",
 }
 
 -- for _, load_module in ipairs(modules) do
