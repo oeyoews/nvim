@@ -32,35 +32,35 @@
 <details>
 <summary>INFO</summary>
 
-* [ ] vim-plug or packer.nvim index probleb
-* [ ] config setting conflict
+* [x] vim-plug or packer.nvim index probleb
+* [x] config setting conflict
 * [ ] integrate husky and (prettier)
-* highlight paraness
+* [x] highlight paraness
 * [ ] learn lightspeed
-* [ ] learn use visual-line multi curline
+* [x] learn use visual-line multi curline
 * [?] json add double how effect config
 * [ ] add format stylua by ci/cd
 * [x] insert mode to hide cursorline
-* [ ] automatically install filetype server when first open
+* [x] automatically install filetype server when first open
 * [ ] bug: treesitter multi download
-* config opt(load)
-* learn packer, test packer automatically
-* [ ] format lua(include vim), this treesitter
-* [ ] learn lua: doom-nvim, nvchad to deeply look
-* [ ] add highlight symbols under cursor functions(terminal gnome support)
+* [x] config opt(load)
+* [x] learn packer, test packer automatically
+* [x] format lua(include vim), this treesitter
+* [x] learn lua: doom-nvim, nvchad to deeply look
+* [x] add highlight symbols under cursor functions(terminal gnome support)
 * [x] use packer.nvim to replace vim-plug
-* [ ] tidy vanilla.txt, maybe can write vanilla.markdown, last to txt
-* [ ] config tab space show in different filetype
-* [ ] move plugins/*.lua to lua folder, and to pure lua config
+* [x] tidy vanilla.txt, maybe can write vanilla.markdown, last to txt
+* [x] config tab space show in different filetype
+* [x] move plugins/*.lua to lua folder, and to pure lua config
 * [ ] add window number switch number(mousenum)
 * [x] solve gitsign utf8
-* [ ] how to add templates in nvim
+* [x] how to add templates in nvim
 * [x] config norg table
 * [x] config format
 * [x] some sitution will cause error line repeat(maybe emoji or refresh time error)
-  * :snowflake:  this emoji will cause this bug in kitty(only)
+  * [x] snowflake:  this emoji will cause this bug in kitty(only)
 
-* [ ] config new theme for material, like tilde,
+* [x] config new theme for material, like tilde,
 * add shortkeys in vim to open browser html
 * [?] fix the zh bug(maybe also is terminal)
 * [x] add random banner and random color startup
