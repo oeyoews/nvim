@@ -14,6 +14,7 @@ end)
 
 local default_options = {
   number = true,
+  relativenumber = true,
   -- textwidth = 80,
   laststatus = 3,
   updatetime = 200,
