@@ -14,10 +14,10 @@
 <!--<details open="open">-->
 <summary>INFO</summary>
 
+* fzf
 * python-pynvim(neovim)
 * python(ultisnips)
 * npm(for lsp-installer)
-* go(lsp server)
 * shellcheck, codespell
 * make(for install)
 * ranger(file manager)
