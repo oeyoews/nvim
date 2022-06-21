@@ -18,7 +18,7 @@ local plugins = {
 
   -- @Temporary
   "lewis6991/spellsitter.nvim",
-  "ziontee113/icon-picker.nvim",
+  "ziontee113/icon-picker.nvim", -- require dressing.nvim
 
   -- @Treesitter
   {
