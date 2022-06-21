@@ -2,12 +2,7 @@
 [![pipeline status](https://gitlab.com/oeyoews/nvim/badges/nvim/pipeline.svg)](https://gitlab.com/oeyoews/nvim/-/commits/nvim)
 [![Latest Release](https://gitlab.com/oeyoews/nvim/-/badges/release.svg)](https://gitlab.com/oeyoews/nvim/-/releases)
 
-<details>
-<!--<details open="open">-->
-<summary>Image</summary>
 ![](img/2022-06-17-01-20-01.png)
-
-</details>
 
 # Introd
 
