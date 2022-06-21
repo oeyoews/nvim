@@ -10,16 +10,18 @@ local plugins = {
   "wbthomason/packer.nvim",
 
   -- @Necessary
+  -- "VonHeikemen/searchbox.nvim",
+  "MunifTanjim/nui.nvim",
   "lewis6991/impatient.nvim",
   "nathom/filetype.nvim",
   "rcarriga/nvim-notify",
   "kyazdani42/nvim-web-devicons",
   "nvim-lua/plenary.nvim",
-  "kevinhwang91/promise-async",
+  -- "kevinhwang91/promise-async",
   "stevearc/dressing.nvim",
 
   -- @Temporary
-  "kevinhwang91/nvim-ufo",
+  -- "kevinhwang91/nvim-ufo",
   "kevinhwang91/nvim-hlslens",
   "lewis6991/spellsitter.nvim",
   "ziontee113/icon-picker.nvim",

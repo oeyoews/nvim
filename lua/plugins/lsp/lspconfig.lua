@@ -54,10 +54,10 @@ capabilities.documentFormattingProvider = false
 capabilities.documentRangeFormattingProvider = false
 
 -- for ufo plugin
-capabilities.textDocument.foldingRange = {
-  dynamicRegistration = false,
-  lineFoldingOnly = true
-}
+-- capabilities.textDocument.foldingRange = {
+--   dynamicRegistration = false,
+--   lineFoldingOnly = true
+-- }
 
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 
