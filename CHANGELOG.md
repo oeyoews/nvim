@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.38.0](https://gitlab.com/oeyoews/nvim/compare/v3.37.5...v3.38.0) (2022-06-21)
+
+
+### Features
+
+* enable relativenumber ([dbc1b82](https://gitlab.com/oeyoews/nvim/commit/dbc1b8205a6354eae75603d1a622f96d890eb29d))
+
 ## [3.37.5](https://gitlab.com/oeyoews/nvim/compare/v3.37.4...v3.37.5) (2022-06-21)
 
 
