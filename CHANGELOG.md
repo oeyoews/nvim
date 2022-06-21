@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.37.4](https://gitlab.com/oeyoews/nvim/compare/v3.37.3...v3.37.4) (2022-06-21)
+
+
+### Bug Fixes
+
+* remove mkdp ([8a94436](https://gitlab.com/oeyoews/nvim/commit/8a94436735f1ed2ffce77cf628a4f0957d87da01))
+
 ## [3.37.3](https://gitlab.com/oeyoews/nvim/compare/v3.37.2...v3.37.3) (2022-06-21)
 
 
