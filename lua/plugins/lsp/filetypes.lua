@@ -3,23 +3,15 @@
 local M = {}
 
 M.filetypes = {
-  "bash",
   "c",
-  "css",
-  "html",
+  "bash",
   "json",
-  "lua",
-  "norg",
-  "make",
-  "markdown",
-  "python",
-  "go",
-  "gomod",
-  "javascript",
-  "typescript",
-  "vim",
-  "yaml",
-  "toml",
+  "lua", "vim",
+  "yaml", "toml",
+  "python", "go",
+  "make", "gomod",
+  "markdown", "norg",
+  "css", "html", "javascript",
 }
 
 return M
