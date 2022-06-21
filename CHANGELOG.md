@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.37.2](https://gitlab.com/oeyoews/nvim/compare/v3.37.1...v3.37.2) (2022-06-21)
+
+
+### Bug Fixes
+
+* disable ufo ([acf7e65](https://gitlab.com/oeyoews/nvim/commit/acf7e65bba5e4bcff3161597fc48efb237f9b81e))
+
 ## [3.37.1](https://gitlab.com/oeyoews/nvim/compare/v3.37.0...v3.37.1) (2022-06-20)
 
 
