@@ -11,7 +11,6 @@
 ## Dependencies
 
 <details>
-<!--<details open="open">-->
 <summary>INFO</summary>
 
 * fzf

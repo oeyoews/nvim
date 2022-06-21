@@ -18,7 +18,6 @@ local plugins = {
   "stevearc/dressing.nvim",
 
   -- @Temporary
-  -- "numToStr/FTerm.nvim",
   "kevinhwang91/nvim-hlslens",
   "lewis6991/spellsitter.nvim",
   "ziontee113/icon-picker.nvim",
@@ -78,7 +77,6 @@ local plugins = {
   "nvim-neorg/neorg",
   "ekickx/clipboard-image.nvim",
   "Pocco81/HighStr.nvim",
-  -- "yianwillis/vimcdoc",
   "folke/which-key.nvim",
   "nvim-telescope/telescope.nvim",
   "phaazon/hop.nvim",
