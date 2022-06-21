@@ -73,7 +73,7 @@ local plugins = {
   "fhill2/telescope-ultisnips.nvim",
   "akinsho/toggleterm.nvim",
   "tpope/vim-surround",
-  "abecodes/tabout.nvim",
+  "oeyoews/tabout.nvim",
   "nvim-neorg/neorg",
   "ekickx/clipboard-image.nvim",
   "Pocco81/HighStr.nvim",
