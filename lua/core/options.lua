@@ -14,7 +14,7 @@ end)
 
 local default_options = {
   number = true,
-  textwidth = 80,
+  -- textwidth = 80,
   laststatus = 3,
   updatetime = 200,
   timeoutlen = 1000,
