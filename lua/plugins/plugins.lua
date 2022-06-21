@@ -1,12 +1,11 @@
--- @FileName: init.lua
--- @Description: packer plugin list
+-- @FileName: plugins.lua
 
 local fn = vim.fn
 
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 
 local plugins = {
-  -- @Manager
+  -- @NeovimManager
   "wbthomason/packer.nvim",
 
   -- @Necessary
@@ -103,7 +102,7 @@ local plugins = {
   },
 }
 
--- @Packer
+-- @PackerSettings
 -- autoomatically install packer
 if fn.empty(fn.glob(install_path)) > 0 then
   print("Cloning packer ... waiting")
