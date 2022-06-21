@@ -18,6 +18,7 @@ local plugins = {
   "stevearc/dressing.nvim",
 
   -- @Temporary
+  -- "numToStr/FTerm.nvim",
   "kevinhwang91/nvim-hlslens",
   "lewis6991/spellsitter.nvim",
   "ziontee113/icon-picker.nvim",
