@@ -10,7 +10,6 @@ local plugins = {
   "wbthomason/packer.nvim",
 
   -- @Necessary
-  "MunifTanjim/nui.nvim",
   "lewis6991/impatient.nvim",
   "nathom/filetype.nvim",
   "rcarriga/nvim-notify",
