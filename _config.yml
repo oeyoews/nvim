@@ -1,0 +1,6 @@
+# @FileName: _config.yml
+
+#title: nvim
+#description: nvim config
+theme: jekyll-theme-cayman
+show_downloads: true
