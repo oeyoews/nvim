@@ -19,9 +19,9 @@ hi MatchParen  gui=underline
 hi MatchWord cterm=underline gui=underline
 
 " set cursor color
-hi Cursorn guifg=none guibg=none gui=bold
-hi Cursori guifg=red guibg=red
-set guicursor=n-v-c:block-Cursorn/lCursorn,i-ci-ve:ver25-Cursori/lCursori,r-cr:hor20,o:hor50
+" hi Cursorn guifg=none guibg=none gui=bold
+" hi Cursori guifg=red guibg=red
+" set guicursor=n-v-c:block-Cursorn/lCursorn,i-ci-ve:ver25-Cursori/lCursori,r-cr:hor20,o:hor50
 
 " yank highlight
 autocmd TextYankPost * lua vim.highlight.on_yank {higroup="IncSearch",
