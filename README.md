@@ -6,8 +6,7 @@
 
 # Introd
 
-`nvim-version` nvim-0.7.0
-
+`nvim-version` 0.7
 ## Dependencies
 
 <details>
