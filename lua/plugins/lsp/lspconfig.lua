@@ -70,12 +70,19 @@ end
 -- For general Lsp server
 -- bug: this will callback all servers to connect, and insall all need servers by no adjust filetype
 for _, lsp_server in ipairs(lsp_servers) do
-  -- config = vim.tbl_extend("force", config, override[lsp_server] or {})
+  -- sumneko
+  -- if lsp_server == "sumneko" then
+  --   lspconfig[lsp_server].setup({
+  --     on_attach = on_attach,
+  --     capabilities = capabilities,
+  --     settings = settings,
+  --   })
+  -- else
   lspconfig[lsp_server].setup({
     on_attach = on_attach,
     capabilities = capabilities,
-    -- settings = settings,
   })
+  -- end
 end
 
 vim.cmd([[
@@ -108,14 +115,3 @@ lspconfig.sumneko_lua.setup({
   on_attach = on_attach,
   settings = settings,
 })
-
---[[ lspconfig.efm.setup {
-  on_attach = on_attach,
-  init_options = { documentFormatting = true },
-  filetypes = { 'yaml', },
-  settings = {
-    languages = {
-      yaml = { prettier },
-    },
-  },
-} ]]

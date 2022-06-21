@@ -8,7 +8,7 @@ M.lua = {
   diagnostics = {
     globals = {
       "vim",
-      "append",
+      -- "append",
     },
     disable = {
       "lowercase-global",
