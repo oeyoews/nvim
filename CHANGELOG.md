@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.37.5](https://gitlab.com/oeyoews/nvim/compare/v3.37.4...v3.37.5) (2022-06-21)
+
+
+### Bug Fixes
+
+* remove cursor color settings ([51bfa6b](https://gitlab.com/oeyoews/nvim/commit/51bfa6b8cfa0fb4a158dd80ac0ebf0b2dd36e32d))
+
 ## [3.37.4](https://gitlab.com/oeyoews/nvim/compare/v3.37.3...v3.37.4) (2022-06-21)
 
 
