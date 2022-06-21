@@ -8,7 +8,7 @@ filetype.setup({
   overrides = {
     complex = {
       [".service"] = "systemd",
-      [".sh"] = "bash",
+      -- [".sh"] = "bash",  -- bug for markdown in special directory
     },
   },
 })
