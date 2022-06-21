@@ -77,7 +77,7 @@ local plugins = {
   "nvim-neorg/neorg",
   "ekickx/clipboard-image.nvim",
   "Pocco81/HighStr.nvim",
-  "yianwillis/vimcdoc",
+  -- "yianwillis/vimcdoc",
   "folke/which-key.nvim",
   "nvim-telescope/telescope.nvim",
   "phaazon/hop.nvim",
