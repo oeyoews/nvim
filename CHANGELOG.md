@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.37.3](https://gitlab.com/oeyoews/nvim/compare/v3.37.2...v3.37.3) (2022-06-21)
+
+
+### Bug Fixes
+
+* disable markdownlint ([20c65c9](https://gitlab.com/oeyoews/nvim/commit/20c65c98519200f4af2e6bf8ac05d2edc00382ac))
+
 ## [3.37.2](https://gitlab.com/oeyoews/nvim/compare/v3.37.1...v3.37.2) (2022-06-21)
 
 
