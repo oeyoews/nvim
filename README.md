@@ -28,11 +28,6 @@
 
 `nvim`
 
-## ✨ Feature
-
-* `Ctrl L` in insert mode, press it, you can input uppercase letters, press it
-again to toggle lowercase letters
-
 ## TODO
 
 <details>
@@ -78,8 +73,3 @@ again to toggle lowercase letters
 * [x] https://github.com/AstroNvim/AstroNvim, learn it option setting and lsp multi separate setting: fix lua global vim setting
 
 </details>
-
-## NOTE
-
-* not rename Ultisnips
-* because this GFW, please multi try to install all plugins
