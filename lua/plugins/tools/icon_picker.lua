@@ -1,7 +1,7 @@
 local ok, icon_picker = pcall(require, "icon-picker")
 
 if not ok then
-  vim.notify('icon_picker not founded')
+  vim.notify("icon_picker not founded")
   return
 end
 
