@@ -5,10 +5,8 @@ local modules = {
   "lspinstall", -- preinstall some servers
   "nvim_cmp", -- config completion
   "lspconfig",
-  -- "clangd_extensions",
   "null_ls", -- bug
   "fidget",
-  -- "lsp_signature",
   "lspsaga",
   "trouble",
   "spellsitter",
@@ -29,7 +27,7 @@ for _, load_module in ipairs(modules) do
     -- vim.api.nvim_err_writeln("Failed to load " .. load_module .. "\n\n" .. fault)
     local plugin = "Modules"
     vim.notify(
-      --[[ {
+    --[[ {
       }, ]]
       "Failed to load " .. load_module,
       -- "debug to load " .. load_module,

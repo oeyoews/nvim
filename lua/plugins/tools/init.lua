@@ -15,11 +15,8 @@ local modules = {
   "telescope",
   "whichkey",
   "toggleterm",
-  "hlsens",
   "icon_picker",
   "calendar",
-  -- "ufo",
-  -- "mkdp",
 }
 
 for _, load_module in ipairs(modules) do
