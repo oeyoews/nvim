@@ -1,8 +1,13 @@
+<details>
+<!--<details open="open">-->
+<summary>Image</summary>
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![pipeline status](https://gitlab.com/oeyoews/nvim/badges/nvim/pipeline.svg)](https://gitlab.com/oeyoews/nvim/-/commits/nvim)
 [![Latest Release](https://gitlab.com/oeyoews/nvim/-/badges/release.svg)](https://gitlab.com/oeyoews/nvim/-/releases)
 
 ![](img/2022-06-17-01-20-01.png)
+
+</details>
 
 # Introd
 
@@ -29,11 +34,6 @@
 
 `nvim`
 
-> tips: vim-plug: enter to show more information, R to reinstall failed plugins
-
----
-
-<!-- 🥙 -->
 ## ✨ Feature
 
 * `Ctrl L` in insert mode, press it, you can input uppercase letters, press it
@@ -43,7 +43,6 @@ again to toggle lowercase letters
 
 <details>
 <summary>INFO</summary>
-
 
 * [ ] vim-plug or packer.nvim index probleb
 * [ ] config setting conflict
