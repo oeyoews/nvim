@@ -10,18 +10,15 @@ local plugins = {
   "wbthomason/packer.nvim",
 
   -- @Necessary
-  -- "VonHeikemen/searchbox.nvim",
   "MunifTanjim/nui.nvim",
   "lewis6991/impatient.nvim",
   "nathom/filetype.nvim",
   "rcarriga/nvim-notify",
   "kyazdani42/nvim-web-devicons",
   "nvim-lua/plenary.nvim",
-  -- "kevinhwang91/promise-async",
   "stevearc/dressing.nvim",
 
   -- @Temporary
-  -- "kevinhwang91/nvim-ufo",
   "kevinhwang91/nvim-hlslens",
   "lewis6991/spellsitter.nvim",
   "ziontee113/icon-picker.nvim",
@@ -90,12 +87,6 @@ local plugins = {
   "folke/todo-comments.nvim",
   "lewis6991/gitsigns.nvim",
   "windwp/nvim-autopairs",
-  {
-    "iamcco/markdown-preview.nvim",
-    run = function()
-      vim.fn["mkdp#util#install"]()
-    end,
-  },
   {
     "dstein64/vim-startuptime",
     commit = "61f122ebc41e9bcf1793c752a728db59feee77bb",
@@ -190,9 +181,3 @@ vim.cmd([[
   nnoremap <silent> <leader>so <cmd>so % <bar> lua vim.notify("reload current file")<cr>
   nnoremap <silent> <leader>sO <cmd>so ~/.config/nvim/lua/plugins/plugins.lua <bar> lua vim.notify("reload packer file")<cr>
 ]])
-
--- "b0o/SchemaStore.nvim",
--- "paopaol/cmp-doxygen",
--- "nvim-treesitter/nvim-treesitter-textobjects",
--- "danymat/neogen",
--- "hrsh7th/cmp-emoji",

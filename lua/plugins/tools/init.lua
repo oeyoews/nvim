@@ -18,6 +18,7 @@ local modules = {
   "hlsens",
   "icon_picker",
   -- "ufo",
+  -- "mkdp",
 }
 
 for _, load_module in ipairs(modules) do
