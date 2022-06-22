@@ -28,18 +28,6 @@ let g:rnvimr_ranger_cmd = ['ranger', '--cmd=set draw_borders both']
 " Link CursorLine into RnvimrNormal highlight in the Floating window
 highlight link RnvimrNormal CursorLine
 
-" nnoremap <silent> <M-o> :RnvimrToggle<CR>
-tnoremap <silent> <M-o> <C-\><C-n>:RnvimrToggle<CR>
-
-" Resize floating window by all preset layouts
-" tnoremap <silent> <M-i> <C-\><C-n>:RnvimrResize<CR>
-
-" Resize floating window by special preset layouts
-" tnoremap <silent> <M-l> <C-\><C-n>:RnvimrResize 1,8,9,11,5<CR>
-
-" Resize floating window by single preset layout
-" tnoremap <silent> <M-y> <C-\><C-n>:RnvimrResize 6<CR>
-
 " Map Rnvimr action
 let g:rnvimr_action = {
             \ '<C-t>': 'NvimEdit tabedit',
@@ -89,6 +77,7 @@ let g:rnvimr_layout = {
 
 " rnvimr TODO highlight
 nnoremap <silent> <leader>ft :RnvimrToggle<CR>
+
 " Fullscreen for initial layout
 let g:rnvimr_layout = {
            \ 'relative': 'editor',

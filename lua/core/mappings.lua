@@ -101,6 +101,8 @@ nnoremap <leader>bb  <Cmd>e `mktemp -t scratch-XXXXXX`<CR>
       " ["<C-c>"] = { "<cmd> %y+ <CR>", "  copy whole file" },
 nnoremap <silent> <leader>tl :set invlist<cr>
 
+" fzf's vimplugin
+nnoremap <silent> <leader>fu :FZF<cr>
 
 ]])
 

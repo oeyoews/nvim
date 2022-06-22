@@ -17,6 +17,7 @@ local plugins = {
   "stevearc/dressing.nvim",
 
   -- @Temporary
+  "oeyoews/vim-better-whitespace",
   "ziontee113/icon-picker.nvim", -- require dressing.nvim
 
   -- @Treesitter

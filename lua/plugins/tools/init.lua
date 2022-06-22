@@ -17,6 +17,7 @@ local modules = {
   "toggleterm",
   "icon_picker",
   "calendar",
+  "quickrun",
 }
 
 for _, load_module in ipairs(modules) do
