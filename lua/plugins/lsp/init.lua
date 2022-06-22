@@ -5,8 +5,8 @@ local modules = {
   "lspinstall", -- preinstall some servers
   "nvim_cmp", -- config completion
   "lspconfig",
-  "null_ls", -- bug
-  "fidget",
+  -- "null_ls", -- bug
+  -- "fidget",
   "lspsaga",
   "spellsitter",
 }
