@@ -152,10 +152,11 @@ nnoremap <silent> <leader>ts :call ToggleStatusLine()<CR>
 augroup quickquit
   autocmd!
   autocmd FileType null-ls-info,lspinfo,startuptime,help,qf,quickrun,snippets,tsplayground nnoremap <buffer> <silent> q :q<cr>
+  autocmd FileType startuptime,help setlocal nocursorline nonumber norelativenumber
 augroup END
 
 augroup cursorline_goggle
+  au!
   autocmd InsertEnter * setlocal nocursorline
   autocmd InsertLeave * setlocal cursorline
-  autocmd FileType help setlocal nocursorline
 augroup END
