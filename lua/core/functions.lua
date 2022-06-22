@@ -1,43 +1,44 @@
+vim.cmd([[
 command! -nargs=1 Out enew|pu=execute('<args>')
 command! Scripts split | enew|pu=execute('scriptnames')
 command! -nargs=1 -complete=highlight HI enew|pu=execute('hi <args>')
 command! -nargs=?  -complete=color Themes colorscheme <args>
 
 function! FormatFile() abort
-  let save_cursor = getpos('.')
-  normal! gg=G
-  call setpos('.', save_cursor)
+let save_cursor = getpos('.')
+normal! gg=G
+call setpos('.', save_cursor)
 endfunction
 
 function! Terminal()
-  " TODO: have conflict for ranger(TermOpen)
-  "setlocal filetype=omz
-  "au! TermOpen * call feedkeys("i")
-  autocmd! TermClose * call feedkeys("\<esc>")
-  split | terminal
-  setlocal nornu nonu
-  setlocal nocursorline
+" TODO: have conflict for ranger(TermOpen)
+"setlocal filetype=omz
+"au! TermOpen * call feedkeys("i")
+autocmd! TermClose * call feedkeys("\<esc>")
+split | terminal
+setlocal nornu nonu
+setlocal nocursorline
 endfunction
 
 " config chezmoi
 function! ChezmoiSource() abort
-  " exec zsh not use , just int current vim work
-  !chezmoi apply --source-path "%"
+" exec zsh not use , just int current vim work
+!chezmoi apply --source-path "%"
 endfunction
 
 function! ToggleStatusLine() abort
-  " laststatus default is 2
-  if &laststatus
-    set laststatus=0
-  else
-    set laststatus=3
-  endif
+" laststatus default is 2
+if &laststatus
+set laststatus=0
+else
+set laststatus=3
+endif
 
-  " disable lastline right info set ruler!
-  " set noruler
-  " let statusline = 2
-  " let &laststatus = statusline
-  lua vim.notify("ToggleStatusLine")
+" disable lastline right info set ruler!
+" set noruler
+" let statusline = 2
+" let &laststatus = statusline
+lua vim.notify("ToggleStatusLine")
 endfunction
 
 " function! FindVanilla() abort
@@ -52,11 +53,11 @@ endfunction
 " endfunction
 
 function! FindPlugin() abort
-  find ~/.config/nvim/lua/plugins/plugins.lua
+find ~/.config/nvim/lua/plugins/plugins.lua
 endfunction
 "
 function! FindInit() abort
-  find ~/.config/nvim/init.lua
+find ~/.config/nvim/init.lua
 endfunction
 
 " open nvim config file
@@ -136,8 +137,8 @@ nnoremap <silent> <space>fp <cmd>call FindPlugin()<cr>
 " augroup END
 "
 augroup refreshdotfile
-  autocmd!
-  au BufWritePost ~/.local/share/chezmoi/dot_* :call ChezmoiSource()
+autocmd!
+au BufWritePost ~/.local/share/chezmoi/dot_* :call ChezmoiSource()
 augroup END
 
 " add i in the end of line, to enter insert mode
@@ -150,13 +151,14 @@ nnoremap <silent> <leader>ts :call ToggleStatusLine()<CR>
 " NOTE: This same file type will overwrite
 
 augroup quickquit
-  autocmd!
-  autocmd FileType null-ls-info,lspinfo,startuptime,help,qf,quickrun,snippets,tsplayground nnoremap <buffer> <silent> q :q<cr>
-  autocmd FileType startuptime,help setlocal nocursorline nonumber norelativenumber
+autocmd!
+autocmd FileType null-ls-info,lspinfo,startuptime,help,qf,quickrun,snippets,tsplayground nnoremap <buffer> <silent> q :q<cr>
+autocmd FileType startuptime,help setlocal nocursorline nonumber norelativenumber
 augroup END
 
 augroup cursorline_goggle
-  au!
-  autocmd InsertEnter * setlocal nocursorline
-  autocmd InsertLeave * setlocal cursorline
+au!
+autocmd InsertEnter * setlocal nocursorline
+autocmd InsertLeave * setlocal cursorline
 augroup END
+]])

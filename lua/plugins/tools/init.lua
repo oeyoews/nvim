@@ -18,6 +18,7 @@ local modules = {
   "icon_picker",
   "calendar",
   "quickrun",
+  "ranger",
 }
 
 for _, load_module in ipairs(modules) do

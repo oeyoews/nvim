@@ -14,6 +14,7 @@ local modules = {
     "ui", -- ui configuration
     "tools", -- some tools
     "lsp", -- lsp settings
+    "test",
   },
 }
 
