@@ -8,12 +8,11 @@ if not cmp_ok then
   return
 end
 
--- @lspkind
+-- -- @lspkind
 local lspkind_ok, lspkind = pcall(require, "lspkind")
 
 if not lspkind_ok then
   vim.notify("lspkind not founded")
-  return
 end
 
 local function border(hl_name)
