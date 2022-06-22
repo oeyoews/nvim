@@ -28,20 +28,20 @@
 <details>
 <summary>INFO</summary>
 
+* python-pynvim
+* python
+* kitty
+* noto-font-emoji
+* nodejs
 * fzf
-* python-pynvim(neovim)
-* python(ultisnips)
-* npm(for lsp-installer)
-* shellcheck, codespell
-* make(for install)
-* ranger(file manager)
-* need install noto-font-emoji or nerd font
+* ranger
+* shellcheck
 
 </details>
 
 ## Install
 
-`nvim`
+* Just execute `nvim`
 
 ## TODO
 
