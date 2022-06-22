@@ -5,10 +5,6 @@ local modules = {
   "custom",
 }
 
--- for _, load_module in ipairs(modules) do
---   require(package .. "." .. load_module)
--- end
-
 for _, load_module in ipairs(modules) do
   load_module = package .. "." .. load_module
 
@@ -17,15 +13,11 @@ for _, load_module in ipairs(modules) do
     -- vim.api.nvim_err_writeln("Failed to load " .. load_module .. "\n\n" .. fault)
     local plugin = "Modules"
     vim.notify(
-      --[[ {
-      }, ]]
       "Failed to load " .. load_module,
       "warn",
       {
         title = plugin,
       }
     )
-    -- return
   end
-  -- require(package .. "." .. load_module)
 end

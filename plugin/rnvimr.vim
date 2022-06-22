@@ -84,14 +84,14 @@ let g:rnvimr_presets = [
             \ ]
 
 " Fullscreen for initial layout
-" let g:rnvimr_layout = {
-"            \ 'relative': 'editor',
-"            \ 'width': &columns,
-"            \ 'height': &lines - 2,
-"            \ 'col': 0,
-"            \ 'row': 0,
-"            \ 'style': 'minimal'
-"            \ }
+let g:rnvimr_layout = {
+           \ 'relative': 'editor',
+           \ 'width': &columns,
+           \ 'height': &lines - 2,
+           \ 'col': 0,
+           \ 'row': 0,
+           \ 'style': 'minimal'
+           \ }
 "
 " Only use initial preset layout
 " let g:rnvimr_presets = [{}]

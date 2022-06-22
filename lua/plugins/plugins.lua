@@ -55,7 +55,6 @@ local plugins = {
     requires = {
       "tami5/lspsaga.nvim",
       "lukas-reineke/lsp-format.nvim",
-      -- "ray-x/lsp_signature.nvim",
       "jose-elias-alvarez/null-ls.nvim",
       "j-hui/fidget.nvim",
       "p00f/clangd_extensions.nvim", -- TODO config it after finish lsp config

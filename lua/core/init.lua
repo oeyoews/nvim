@@ -4,6 +4,7 @@
 local package = "core" -- require package
 
 local modules = {
+  "disabale",
   "options", -- basic options
   "mappings", -- basic mappings
   "modules", -- enable modules

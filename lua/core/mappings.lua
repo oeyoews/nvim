@@ -3,7 +3,6 @@ local g = vim.g
 g.mapleader = " "
 
 vim.cmd([[
-" BUG: last line highlight is not correct
 "let g:mapleader = " "
 " let g:mapleader = "\<Space>"
 
@@ -44,7 +43,7 @@ noremap L $
 noremap H 0
 
 " note this <cr> not have virtual space
-nnoremap <silent> <leader>fs :w<cr>
+nnoremap  <leader>fs :w<cr><C-l>
 
 nnoremap <leader>qh q:
 
@@ -98,6 +97,10 @@ nnoremap <space>ss <cmd>set invspell <bar> lua vim.notify("Toggle Spell")<cr>
 
 nnoremap <leader>bs  <Cmd>e /tmp/scratch.txt<CR>
 nnoremap <leader>bb  <Cmd>e `mktemp -t scratch-XXXXXX`<CR>
+
+      " ["<C-c>"] = { "<cmd> %y+ <CR>", "  copy whole file" },
+
+nnoremap <silent> <C-s> :<C-U>w<cr>:lua vim.notify("﬚  save file")<cr>
 
 ]])
 

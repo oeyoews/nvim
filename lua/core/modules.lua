@@ -2,7 +2,6 @@
 -- @Description: module manager
 
 -- clear (N)vim vanilla color, notice this order, before theme or other color plugins
--- vim.cmd([[ hi clear ]])
 
 -- load package
 local package = "plugins"
