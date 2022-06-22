@@ -175,7 +175,7 @@ let g:UltiSnipsExpandTrigger="<C-e>"
 let g:UltiSnipsJumpForwardTrigger="<C-J>"
 let g:UltiSnipsJumpBackwardTrigger="<C-K>"
 let g:UltiSnipsSnippetDirectories = [
-      \ stdpath('config') . '/Ultisnips/',
+      \ stdpath('config') . '/snippets/Ultisnips/',
       \ ]
 let g:UltiSnipsEditSplit="vertical"
 
