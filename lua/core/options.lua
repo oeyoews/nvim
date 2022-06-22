@@ -34,7 +34,6 @@ local default_options = {
   termguicolors = true,
   undofile = true,
   ttyfast = true,
-  list = true,
   linebreak = true,
   hidden = true,
   confirm = true,
@@ -72,7 +71,11 @@ local default_options = {
   },
   -- 
   spelllang = { "en", "cjk" },
-  listchars = { tab = " " }, -- set noexpandtab && :%ret! 4
+  list = false,
+  listchars = {
+    tab = " ",
+    space = "•",
+  }, -- set noexpandtab && :%ret! 4
 }
 
 -- can't put pairs options

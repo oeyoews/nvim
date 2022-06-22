@@ -73,7 +73,6 @@ nnoremap <silent> <esc> :noh<return><C-L><esc>
 
 nnoremap <silent> <leader>tn <cmd>set invnumber<cr>
 
-" BUG: still have some bugs(for gnome paste plugins)
 " copy and yank with system
 " selsct some text, copy it ro system clipboard
 vnoremap <space>yy "+y
@@ -82,11 +81,11 @@ vnoremap <space>yy "+y
 "
 " == yank
 "nnoremap <space>yy "*Y <cmd> echom "Finish to copy your system clipboard"<cr>
-nnoremap <space>yy "*Y <cmd> lua vim.notify("📋 Copy text to SystemClipBoard")<cr>
+nnoremap <space>yy "*Y <cmd> lua vim.notify("Copy text to SystemClipBoard")<cr>
 
 " copy
 "noremap <space>P "*P
-noremap <space>pp "*p <cmd> lua vim.notify("🗒️ Copy text from SystemClipBoard")<cr>
+noremap <space>pp "*p <cmd> lua vim.notify("Copy text from SystemClipBoard")<cr>
 
 "nnoremap <silent> <space>yp :<C-U>let @+=expand('%:p') <bar> echom "Finished copy fpath."<cr>
 nnoremap <silent> <space>yp :<C-U>let @+=expand('%:p') <bar> lua vim.notify(" 🦜 Copy Fpath")<cr>
@@ -100,6 +99,7 @@ nnoremap <leader>bs  <Cmd>e /tmp/scratch.txt<CR>
 nnoremap <leader>bb  <Cmd>e `mktemp -t scratch-XXXXXX`<CR>
 
       " ["<C-c>"] = { "<cmd> %y+ <CR>", "  copy whole file" },
+nnoremap <silent> <leader>tl :set invlist<cr>
 
 
 ]])
