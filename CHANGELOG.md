@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.38.2](https://gitlab.com/oeyoews/nvim/compare/v3.38.1...v3.38.2) (2022-06-22)
+
+
+### Bug Fixes
+
+* remove nvim-cmp disable comment completion for markdown bug ([6af472a](https://gitlab.com/oeyoews/nvim/commit/6af472a31671de1124fdbb3f9217496e96c4a4ff))
+
 ## [3.38.1](https://gitlab.com/oeyoews/nvim/compare/v3.38.0...v3.38.1) (2022-06-22)
 
 
