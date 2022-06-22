@@ -44,6 +44,9 @@ local plugins = {
       "honza/vim-snippets",
       "SirVer/ultisnips",
       "quangnguyen30192/cmp-nvim-ultisnips",
+      "fhill2/telescope-ultisnips.nvim",
+      "oeyoews/tabout.nvim",
+      "numToStr/Comment.nvim",
     },
   },
 
@@ -54,41 +57,25 @@ local plugins = {
     requires = {
       "tami5/lspsaga.nvim",
       "lukas-reineke/lsp-format.nvim",
-      "p00f/clangd_extensions.nvim", -- TODO config it after finish lsp config
     },
   },
 
   -- @Tools
-  "fhill2/telescope-ultisnips.nvim",
   "akinsho/toggleterm.nvim",
-  "oeyoews/tabout.nvim",
   "nvim-neorg/neorg",
   "ekickx/clipboard-image.nvim",
   "Pocco81/HighStr.nvim",
   "folke/which-key.nvim",
   "nvim-telescope/telescope.nvim",
   "phaazon/hop.nvim",
-  "numToStr/Comment.nvim",
   "folke/persistence.nvim",
   "folke/todo-comments.nvim",
   "lewis6991/gitsigns.nvim",
   "windwp/nvim-autopairs",
-  {
-    "dstein64/vim-startuptime",
-    commit = "61f122ebc41e9bcf1793c752a728db59feee77bb",
-  },
-  {
-    "kevinhwang91/rnvimr",
-    cmd = "RnvimrToggle",
-  },
-  {
-    "itchyny/calendar.vim",
-    cmd = "Calendar",
-  },
-  {
-    "thinca/vim-quickrun",
-    cmd = "QuickRun",
-  },
+  "oeyoews/vim-startuptime",
+  "kevinhwang91/rnvimr",
+  "itchyny/calendar.vim",
+  "thinca/vim-quickrun",
 }
 
 -- @PackerSettings
