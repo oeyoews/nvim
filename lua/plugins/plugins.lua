@@ -152,5 +152,4 @@ vim.cmd([[
   nnoremap <Leader>vU <Cmd>PackerCompile<CR>
   nnoremap <silent> <leader>so <cmd>so % <bar> lua vim.notify("reload current file")<cr>
   nnoremap <silent> <leader>sO <cmd>so ~/.config/nvim/lua/plugins/plugins.lua <bar> lua vim.notify("reload packer file")<cr>
-
 ]])
