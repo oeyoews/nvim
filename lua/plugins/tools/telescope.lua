@@ -7,15 +7,12 @@ end
 
 local actions = require("telescope.actions")
 
-local theme = "dropdown"
-
 telescope.setup({
   defaults = {
     mappings = {
       n = { ["q"] = actions.close },
     },
-    -- # 
-    --  ➤   🔍
+    -- #   ➤   🔍
     prompt_prefix = "🔍",
     selection_strategy = "reset",
     sorting_strategy = "ascending",
@@ -68,8 +65,8 @@ nnoremap <leader>tm <cmd>Telescope keymaps<cr>
 highlight TelescopeBorder         guifg=#bd93f9
 highlight TelescopePromptBorder   guifg=#F7768E
 highlight TelescopeResultsBorder  guifg=#bd93f9
-highlight TelescopePreviewBorder  guifg=#bd93f9
+highlight TelescopePreviewBorder  guifg=#7CB740
 
 " Color the prompt prefix
-highlight TelescopePromptPrefix   guifg=#F7768E
+highlight TelescopePromptPrefix   guifg=#F7768E gui=bold
 ]])
