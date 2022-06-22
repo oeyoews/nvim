@@ -25,7 +25,6 @@ local plugins = {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   },
-  "nvim-treesitter/nvim-treesitter-context",
   "nvim-treesitter/nvim-treesitter-refactor",
   "p00f/nvim-ts-rainbow",
   "norcalli/nvim-colorizer.lua",

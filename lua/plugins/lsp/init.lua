@@ -9,7 +9,6 @@ local modules = {
   "fidget",
   "lspsaga",
   "spellsitter",
-  "context",
 }
 
 -- for _, load_module in ipairs(modules) do
