@@ -9,6 +9,7 @@ treesitter_context.setup({
   enable = false,
 })
 
+
 vim.cmd([[
   nnoremap <silent> <leader>tC :TSContextToggle<cr>:lua vim.notify("toggle TSContext")<cr>
 ]])

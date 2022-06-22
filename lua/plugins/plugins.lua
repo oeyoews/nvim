@@ -58,17 +58,12 @@ local plugins = {
       "jose-elias-alvarez/null-ls.nvim",
       "j-hui/fidget.nvim",
       "p00f/clangd_extensions.nvim", -- TODO config it after finish lsp config
-      {
-        "folke/trouble.nvim",
-        cmd = "TroubleToggle",
-      },
     },
   },
 
   -- @Tools
   "fhill2/telescope-ultisnips.nvim",
   "akinsho/toggleterm.nvim",
-  "tpope/vim-surround",
   "oeyoews/tabout.nvim",
   "nvim-neorg/neorg",
   "ekickx/clipboard-image.nvim",
@@ -174,4 +169,5 @@ vim.cmd([[
   nnoremap <Leader>vU <Cmd>PackerCompile<CR>
   nnoremap <silent> <leader>so <cmd>so % <bar> lua vim.notify("reload current file")<cr>
   nnoremap <silent> <leader>sO <cmd>so ~/.config/nvim/lua/plugins/plugins.lua <bar> lua vim.notify("reload packer file")<cr>
+
 ]])

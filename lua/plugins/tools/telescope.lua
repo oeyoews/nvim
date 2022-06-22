@@ -52,6 +52,8 @@ nnoremap <leader>to <cmd>Telescope oldfiles <cr>
 nnoremap <leader>tbb <cmd>Telescope buffers <cr>
 nnoremap <leader>th <Cmd>Telescope colorscheme <Cr>
 nnoremap <leader>tF <Cmd>Telescope filetypes<Cr>
+nnoremap <leader>tg <Cmd>Telescope git_status<Cr>
+nnoremap <leader>tr <Cmd>Telescope resume<Cr>
 
 " search string in current dir
 nnoremap <leader>ps <Cmd>Telescope live_grep<Cr>
