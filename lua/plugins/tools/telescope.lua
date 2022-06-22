@@ -20,7 +20,7 @@ telescope.setup({
     selection_strategy = "reset",
     sorting_strategy = "ascending",
     layout_strategy = "horizontal",
-    selection_caret = " ",
+    selection_caret = "",
     entry_prefix = " ",
     border = {},
     color_devicons = true,
@@ -66,10 +66,10 @@ nnoremap <leader>tm <cmd>Telescope keymaps<cr>
 
 " Border highlight groups
 highlight TelescopeBorder         guifg=#bd93f9
-highlight TelescopePromptBorder   guifg=#bd93f9
+highlight TelescopePromptBorder   guifg=#F7768E
 highlight TelescopeResultsBorder  guifg=#bd93f9
 highlight TelescopePreviewBorder  guifg=#bd93f9
 
 " Color the prompt prefix
-" highlight TelescopePromptPrefix   guifg=green
+highlight TelescopePromptPrefix   guifg=#F7768E
 ]])

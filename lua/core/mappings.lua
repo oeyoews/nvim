@@ -43,7 +43,8 @@ noremap L $
 noremap H 0
 
 " note this <cr> not have virtual space
-nnoremap  <leader>fs :w<cr><C-l>
+nnoremap <silent> <leader>fs :w<cr>
+nnoremap <silent> <C-s> :<C-U>w<cr>:lua vim.notify("﬚  save file")<cr>
 
 nnoremap <leader>qh q:
 
@@ -100,7 +101,6 @@ nnoremap <leader>bb  <Cmd>e `mktemp -t scratch-XXXXXX`<CR>
 
       " ["<C-c>"] = { "<cmd> %y+ <CR>", "  copy whole file" },
 
-nnoremap <silent> <C-s> :<C-U>w<cr>:lua vim.notify("﬚  save file")<cr>
 
 ]])
 
