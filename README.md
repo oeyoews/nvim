@@ -47,6 +47,7 @@
 <details>
 <summary>INFO</summary>
 
+* [ ] cursor shake for null-ls
 * [x] vim-plug or packer.nvim index probleb
 * [x] config setting conflict
 * [ ] integrate husky and (prettier)
