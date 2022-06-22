@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.38.1](https://gitlab.com/oeyoews/nvim/compare/v3.38.0...v3.38.1) (2022-06-22)
+
+
+### Bug Fixes
+
+* revert [#13](https://gitlab.com/oeyoews/nvim/issues/13) for vim-startuptime ([4d1be73](https://gitlab.com/oeyoews/nvim/commit/4d1be73c13ca809bc523e873c390a517a93c263e))
+
 # [3.38.0](https://gitlab.com/oeyoews/nvim/compare/v3.37.5...v3.38.0) (2022-06-21)
 
 
