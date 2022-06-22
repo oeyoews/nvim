@@ -21,7 +21,8 @@
 └── yarn.lock
 ```
 
-`nvim-version` 0.7
+`nvim-version` 0.7.0+
+
 ## Dependencies
 
 <details>
