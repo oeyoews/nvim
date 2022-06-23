@@ -18,7 +18,6 @@ M.filetypes = {
   "norg",
   "css",
   "html",
-  "javascript",
 }
 
 return M

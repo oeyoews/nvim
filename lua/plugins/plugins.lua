@@ -26,10 +26,6 @@ local plugins = {
   },
   "nvim-treesitter/nvim-treesitter-refactor",
   "p00f/nvim-ts-rainbow",
-  "norcalli/nvim-colorizer.lua",
-  "oeyoews/windline.nvim",
-  "lukas-reineke/indent-blankline.nvim",
-  "akinsho/bufferline.nvim",
   "windwp/nvim-ts-autotag",
 
   -- @Completion
@@ -60,6 +56,10 @@ local plugins = {
   },
 
   -- @Tools
+  "lukas-reineke/indent-blankline.nvim",
+  "norcalli/nvim-colorizer.lua",
+  "oeyoews/windline.nvim",
+  "akinsho/bufferline.nvim",
   "akinsho/toggleterm.nvim",
   "nvim-neorg/neorg",
   "ekickx/clipboard-image.nvim",
