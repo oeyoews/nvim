@@ -11,10 +11,10 @@ function _G.Toggle_venn()
     vim.b.venn_enabled = true
     vim.cmd [[setlocal ve=all]]
     -- draw a line on HJKL keystokes
-    vim.api.nvim_buf_set_keymap(0, "n", "J", "<C-v>j:VBox<CR>", { noremap = true })
-    vim.api.nvim_buf_set_keymap(0, "n", "K", "<C-v>k:VBox<CR>", { noremap = true })
-    vim.api.nvim_buf_set_keymap(0, "n", "L", "<C-v>l:VBox<CR>", { noremap = true })
-    vim.api.nvim_buf_set_keymap(0, "n", "H", "<C-v>h:VBox<CR>", { noremap = true })
+    vim.api.nvim_buf_set_keymap(0, "n", "J", "<C-v>j:VBox<CR>", { noremap = true, silent = true })
+    vim.api.nvim_buf_set_keymap(0, "n", "K", "<C-v>k:VBox<CR>", { noremap = true, silent = true })
+    vim.api.nvim_buf_set_keymap(0, "n", "L", "<C-v>l:VBox<CR>", { noremap = true, silent = true })
+    vim.api.nvim_buf_set_keymap(0, "n", "H", "<C-v>h:VBox<CR>", { noremap = true, silent = true })
     -- draw a box by pressing "f" with visual selection
     vim.api.nvim_buf_set_keymap(0, "v", "f", ":VBox<CR>", { noremap = true })
   else
@@ -25,22 +25,5 @@ function _G.Toggle_venn()
 end
 
 vim.cmd([[
-
-function! ToggleVenn() abort
-
-  let s:veen = 0
-
-  if s:veen
-     setlocal ve=none
-  let s:veen = 0
-  else
-    setlocal ve=all
-  let s:veen = 1
-  endif
-  lua Toggle_venn()
-  lua vim.notify("Toggle Venn")
-endfunction
-
-nnoremap <silent> <leader>tv  <cmd>call ToggleVenn()<cr>
-
+nnoremap <silent> <leader>tv  <cmd>lua Toggle_venn()<cr>:lua vim.notify("Toggle venn")<cr>
 ]])

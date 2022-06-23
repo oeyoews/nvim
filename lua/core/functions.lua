@@ -4,6 +4,19 @@ command! Scripts split | enew|pu=execute('scriptnames')
 command! -nargs=1 -complete=highlight HI enew|pu=execute('hi <args>')
 command! -nargs=?  -complete=color Themes colorscheme <args>
 
+" function! ToggleVenn() abort
+"   let s:veen = 0
+"   if s:veen
+"      setlocal ve=none
+"   let s:veen = 0
+"   else
+"     setlocal ve=all
+"   let s:veen = 1
+"   endif
+"   lua Toggle_venn()
+"   lua vim.notify("Toggle Venn")
+" endfunction
+
 function! FormatFile() abort
 let save_cursor = getpos('.')
 normal! gg=G
