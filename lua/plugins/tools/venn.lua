@@ -1,9 +1,3 @@
-vim.cmd([[
-if has("nvim-0.8.0")
-set cmdheight=0
-endif
-]])
-
 -- venn.nvim: enable or disable keymappings
 function _G.Toggle_venn()
   local venn_enabled = vim.inspect(vim.b.venn_enabled)

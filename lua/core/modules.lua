@@ -8,13 +8,13 @@ local package = "plugins"
 
 local modules = {
   enable_modules = {
-    "plugins", -- first plugins list
+    "packer", -- first plugins list
     "perfect", -- performance
     "themes", -- some themes
     "ui", -- ui configuration
     "tools", -- some tools
     "lsp", -- lsp settings
-    "test",
+    "night",
   },
 }
 

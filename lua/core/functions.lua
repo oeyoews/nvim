@@ -66,7 +66,7 @@ endfunction
 " endfunction
 
 function! FindPlugin() abort
-find ~/.config/nvim/lua/plugins/plugins.lua
+find ~/.config/nvim/lua/plugins/packer/plugins.lua
 endfunction
 "
 function! FindInit() abort
