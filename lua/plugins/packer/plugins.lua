@@ -48,7 +48,6 @@ M.plugins = {
     "neovim/nvim-lspconfig",
     requires = {
       "tami5/lspsaga.nvim",
-      "lukas-reineke/lsp-format.nvim",
     },
   },
 
