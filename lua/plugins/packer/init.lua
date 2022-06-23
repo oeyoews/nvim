@@ -47,7 +47,7 @@ packer.init({
     -- default_url_format = 'https://github.com/%s.git',
     -- default_url_format = 'https://hub.fastgit.xyz/%s.git',
   },
-  autoremove = true,
+  autoremove = false,
   compile_path = util.join_paths(fn.stdpath("data"), "compile", "packer_compiled.lua"),
 })
 
