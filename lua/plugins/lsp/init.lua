@@ -3,7 +3,7 @@ local package = "plugins.lsp"
 local modules = {
   "treesitter",
   "lspinstall", -- preinstall some servers
-  "nvim_cmp", -- config completion
+  "cmp", -- config completion
   "lspconfig",
   "lspsaga",
 }
