@@ -1,5 +1,3 @@
--- Description: install lsp servers
-
 -- TODO: add settings will cause jsonls not work
 local M = {}
 

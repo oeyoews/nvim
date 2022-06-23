@@ -1,6 +1,3 @@
--- @FileName: lspconfig.lua
--- @Description: config neovim lsp
-
 local lspconfig_ok, lspconfig = pcall(require, "lspconfig")
 
 if not lspconfig_ok then

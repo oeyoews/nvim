@@ -1,6 +1,3 @@
--- @FileName: init.lua
--- @Description: init
-
 local package = "core" -- require package
 
 local modules = {

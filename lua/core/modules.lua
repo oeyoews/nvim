@@ -1,6 +1,3 @@
--- @FileName: modules.lua
--- @Description: module manager
-
 -- clear (N)vim vanilla color, notice this order, before theme or other color plugins
 
 -- load package
