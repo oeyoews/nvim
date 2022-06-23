@@ -1,6 +1,3 @@
--- @FileName: gitsigns.lua
--- @Description: git signcolumn
-
 local status_ok, gitsigns = pcall(require, "gitsigns")
 
 if not status_ok then

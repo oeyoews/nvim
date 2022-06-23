@@ -1,5 +1,3 @@
--- Description: install lsp servers
-
 local M = {}
 
 M.filetypes = {
