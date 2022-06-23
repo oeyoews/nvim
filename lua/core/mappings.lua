@@ -71,7 +71,7 @@ nnoremap <silent> <esc> :noh<return><C-L><esc>
 "autocmd FileType norg
 "vnoremap <space>nn mzI+<esc>A+<esc>`z
 
-nnoremap <silent> <leader>tn <cmd>set invnumber<cr>
+nnoremap <silent> <leader>tn <cmd>setlocal invnumber<cr>
 
 " copy and yank with system
 " selsct some text, copy it ro system clipboard
@@ -91,7 +91,7 @@ noremap <space>pp "*p <cmd> lua vim.notify("Copy text from SystemClipBoard")<cr>
 nnoremap <silent> <space>yp :<C-U>let @+=expand('%:p') <bar> lua vim.notify(" 🦜 Copy Fpath")<cr>
 
 " toggle spell
-nnoremap <space>ss <cmd>set invspell <bar> lua vim.notify("Toggle Spell")<cr>
+nnoremap <space>ss <cmd>setlocal invspell <bar> lua vim.notify("Toggle Spell")<cr>
 
 " nnoremap <silent> <space>hh <cmd>help vanilla.txt<cr>
 
@@ -99,7 +99,7 @@ nnoremap <leader>bs  <Cmd>e /tmp/scratch.txt<CR>
 nnoremap <leader>bb  <Cmd>e `mktemp -t scratch-XXXXXX`<CR>
 
       " ["<C-c>"] = { "<cmd> %y+ <CR>", "  copy whole file" },
-nnoremap <silent> <leader>tl :set invlist<cr>
+nnoremap <silent> <leader>tl :setlocal invlist<cr>
 
 " fzf's vimplugin
 nnoremap <silent> <leader>fu :FZF<cr>
