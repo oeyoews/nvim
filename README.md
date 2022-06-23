@@ -6,11 +6,15 @@
 
 # Introd
 
+
+
+
+
+```bash
     ┏━━━━━━━━┓
     ┃ NEOVIM ┃
     ┗━━━━━━━━┛
 
-```tree
 ├── CHANGELOG.md
 ├── _config.yml
 ├── img
