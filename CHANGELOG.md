@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.40.0](https://gitlab.com/oeyoews/nvim/compare/v3.39.2...v3.40.0) (2022-06-23)
+
+
+### Features
+
+* add pcallplus for module manage ([990b104](https://gitlab.com/oeyoews/nvim/commit/990b1042c52ac9a79511f32f11aae2513f5713fa))
+
 ## [3.39.2](https://gitlab.com/oeyoews/nvim/compare/v3.39.1...v3.39.2) (2022-06-23)
 
 
