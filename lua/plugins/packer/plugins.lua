@@ -25,21 +25,17 @@ M.plugins = {
   "p00f/nvim-ts-rainbow",
 
   -- @Completion
-  {
-    "hrsh7th/nvim-cmp",
-    requires = {
-      "hrsh7th/cmp-buffer",
-      "hrsh7th/cmp-nvim-lsp",
-      "onsails/lspkind-nvim",
-      "hrsh7th/cmp-path",
-      "honza/vim-snippets",
-      "SirVer/ultisnips",
-      "quangnguyen30192/cmp-nvim-ultisnips",
-      "fhill2/telescope-ultisnips.nvim",
-      "oeyoews/tabout.nvim",
-      "numToStr/Comment.nvim",
-    },
-  },
+  "honza/vim-snippets",
+  "SirVer/ultisnips",
+  "fhill2/telescope-ultisnips.nvim",
+  "oeyoews/tabout.nvim",
+  "quangnguyen30192/cmp-nvim-ultisnips",
+  "hrsh7th/nvim-cmp",
+  "hrsh7th/cmp-nvim-lsp",
+  "hrsh7th/cmp-buffer",
+  "onsails/lspkind-nvim",
+  "hrsh7th/cmp-path",
+  "numToStr/Comment.nvim",
 
   -- @Lspconfig
   "williamboman/nvim-lsp-installer",
