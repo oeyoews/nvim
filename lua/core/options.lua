@@ -50,6 +50,7 @@ local default_options = {
   numberwidth = 4,
   ruler = false,
   signcolumn = "yes", -- silent side number shake
+  history = 500,
   -- pumheight = 10, -- show complete menu numbers
   title = false,
   titlestring = "%<%F%=%l/%L - nvim",
