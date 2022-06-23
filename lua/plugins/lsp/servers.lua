@@ -8,8 +8,8 @@ M.servers = {
   "bashls",
   "sumneko_lua",
   "vimls",
-  "cmake",
   "jsonls", -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
+  -- "cmake",
   -- "pyright",
   -- 'cssls',
   -- 'diagnosticls',

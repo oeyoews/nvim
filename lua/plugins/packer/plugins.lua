@@ -1,20 +1,18 @@
 local M = {}
 
 M.plugins = {
-  -- @NeovimManager
-  "wbthomason/packer.nvim",
+  -- @Temporary
+  "oeyoews/vim-better-whitespace",
+  "ziontee113/icon-picker.nvim",
 
   -- @Necessary
+  "wbthomason/packer.nvim",
   "lewis6991/impatient.nvim",
   "nathom/filetype.nvim",
   "rcarriga/nvim-notify",
   "kyazdani42/nvim-web-devicons",
   "nvim-lua/plenary.nvim",
   "stevearc/dressing.nvim",
-
-  -- @Temporary
-  "oeyoews/vim-better-whitespace",
-  "ziontee113/icon-picker.nvim", -- require dressing.nvim
 
   -- @Treesitter
   "nvim-treesitter/nvim-treesitter-refactor",
