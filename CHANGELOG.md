@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.39.0](https://gitlab.com/oeyoews/nvim/compare/v3.38.2...v3.39.0) (2022-06-23)
+
+
+### Features
+
+* add venn.nvim ([81adb86](https://gitlab.com/oeyoews/nvim/commit/81adb86098fd904502385b60974d2a5045fb496a))
+
 ## [3.38.2](https://gitlab.com/oeyoews/nvim/compare/v3.38.1...v3.38.2) (2022-06-22)
 
 
