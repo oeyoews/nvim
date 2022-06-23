@@ -25,6 +25,22 @@ function _G.Toggle_venn()
 end
 
 vim.cmd([[
-set ve=all
-nnoremap <silent> <leader>tv  :lua Toggle_venn()<CR>:lua vim.notify("toggle venn")<cr>
+
+function! ToggleVenn() abort
+
+  let s:veen = 0
+
+  if s:veen
+     setlocal ve=none
+  let s:veen = 0
+  else
+    setlocal ve=all
+  let s:veen = 1
+  endif
+  lua Toggle_venn()
+  lua vim.notify("Toggle Venn")
+endfunction
+
+nnoremap <silent> <leader>tv  <cmd>call ToggleVenn()<cr>
+
 ]])
