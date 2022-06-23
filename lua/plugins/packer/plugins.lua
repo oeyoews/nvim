@@ -13,8 +13,7 @@ M.plugins = {
   "stevearc/dressing.nvim",
 
   -- @Temporary
-  "jbyuki/venn.nvim",
-  -- "oeyoews/vim-better-whitespace",
+  "oeyoews/vim-better-whitespace",
   "ziontee113/icon-picker.nvim", -- require dressing.nvim
 
   -- @Treesitter
@@ -54,6 +53,7 @@ M.plugins = {
   },
 
   -- @Tools
+  "jbyuki/venn.nvim",
   "lukas-reineke/indent-blankline.nvim",
   "norcalli/nvim-colorizer.lua",
   "oeyoews/windline.nvim",
