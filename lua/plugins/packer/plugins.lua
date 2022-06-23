@@ -17,12 +17,12 @@ M.plugins = {
   "ziontee113/icon-picker.nvim", -- require dressing.nvim
 
   -- @Treesitter
+  "nvim-treesitter/nvim-treesitter-refactor",
+  "p00f/nvim-ts-rainbow",
   {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   },
-  "nvim-treesitter/nvim-treesitter-refactor",
-  "p00f/nvim-ts-rainbow",
 
   -- @Completion
   "honza/vim-snippets",

@@ -24,8 +24,8 @@ hi MatchWord cterm=underline gui=underline
 " hi Cursori guifg=red guibg=red
 " set guicursor=n-v-c:block-Cursorn/lCursorn,i-ci-ve:ver25-Cursori/lCursori,r-cr:hor20,o:hor50
 
-" yank highlight
-autocmd TextYankPost * lua vim.highlight.on_yank {higroup="IncSearch",
+" yank highlight  is conflict to venn.nvim
+autocmd! TextYankPost * lua vim.highlight.on_yank {higroup="IncSearch",
       \ timeout=500, on_visual=true}
 
 " restore the cursor location
