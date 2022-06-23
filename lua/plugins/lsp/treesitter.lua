@@ -47,20 +47,14 @@ local terminal_colors = {
 
 -- tips: tsmoduleinfo
 tree_configs.setup({
-  autotag = {
-    enable = true,
-  },
-
   indent = {
     enable = true,
     disable = disable_filetypes,
   },
-  -- install some different parsers automatically
 
+  -- install some different parsers automatically
   sync_install = false,
-  ---[[
   ensure_installed = ensure_installed,
-  --]]
 
   highlight = {
     enable = true,
@@ -71,7 +65,7 @@ tree_configs.setup({
   rainbow = {
     enable = true,
     extended_mode = true,
-    max_file_lines = 1000,
+    max_file_lines = 500,
     colors = rainbow_colors,
     termcolors = terminal_colors,
   },

@@ -23,7 +23,6 @@ M.plugins = {
   },
   "nvim-treesitter/nvim-treesitter-refactor",
   "p00f/nvim-ts-rainbow",
-  "windwp/nvim-ts-autotag",
 
   -- @Completion
   {

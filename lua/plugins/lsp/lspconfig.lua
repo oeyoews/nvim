@@ -8,14 +8,6 @@ if not lspconfig_ok then
   return
 end
 
--- @lspformat
-local lspformat_ok, lsp_format = pcall(require, "lsp-format")
-
-if not lspformat_ok then
-  vim.notify("lsp_format not founded")
-  return
-end
-
 -- if this servers not installed, cmp will callback nvim-lsp-install to install them
 -- fix: how to config according filetype automation install servers
 -- @servers_lua
