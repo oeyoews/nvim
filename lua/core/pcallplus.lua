@@ -3,9 +3,7 @@
 local M = {}
 
 function M.setup(package, modules)
-
   for _, load_module in ipairs(modules) do
-
     load_module = package .. "." .. load_module
 
     local status_ok, _ = pcall(require, load_module)
@@ -16,7 +14,6 @@ function M.setup(package, modules)
       })
     end
   end
-
 end
 
 return M
