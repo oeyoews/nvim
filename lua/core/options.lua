@@ -13,7 +13,6 @@ vim.schedule(function()
 end)
 
 local default_options = {
-  number = true,
   relativenumber = false,
   -- textwidth = 80,
   laststatus = 0, -- 3
@@ -47,6 +46,7 @@ local default_options = {
   vb = true,
   autochdir = true,
   wrap = true,
+  number = false,
   numberwidth = 4,
   ruler = false,
   signcolumn = "yes", -- silent side number shake
