@@ -13,13 +13,11 @@ lspsaga.setup({ -- defaults ...
   hint_sign = "",
   infor_sign = " ", -- NOTE: can't have space
   diagnostic_header_icon = " ",
-  code_action_icon = "💡",
+  code_action_icon = "﫢",
   code_action_prompt = {
     enable = true,
     sign = true,
     sign_priority = 40,
-    -- disable for code icon
-    -- to prevent emoji lightbulb error
     virtual_text = false,
   },
   finder_definition_icon = "  ",
