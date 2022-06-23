@@ -4,7 +4,16 @@ if not ok then
   vim.notify("indent_blankline not founded")
 end
 
+vim.cmd [[highlight IndentBlanklineIndent1 guifg=#E06C75 gui=nocombine]]
+
 indent_blankline.setup({
   show_current_context = true,
   show_current_context_start = true,
 })
+
+-- #E06C75
+-- #E5C07B
+-- #98C379
+-- #56B6C2
+-- #61AFEF
+-- #C678DD
