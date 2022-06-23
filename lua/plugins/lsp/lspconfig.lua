@@ -50,6 +50,7 @@ capabilities.documentRangeFormattingProvider = false
 
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 
+-- bug: will save again, to shake this screen
 local on_attach = function(client)
   lsp_format.on_attach(client)
 end

@@ -14,7 +14,7 @@ M.plugins = {
 
   -- @Temporary
   "jbyuki/venn.nvim",
-  "oeyoews/vim-better-whitespace",
+  -- "oeyoews/vim-better-whitespace",
   "ziontee113/icon-picker.nvim", -- require dressing.nvim
 
   -- @Treesitter
@@ -66,7 +66,6 @@ M.plugins = {
   "nvim-telescope/telescope.nvim",
   "phaazon/hop.nvim",
   "folke/persistence.nvim",
-  "folke/todo-comments.nvim",
   "lewis6991/gitsigns.nvim",
   "windwp/nvim-autopairs",
   "oeyoews/vim-startuptime",

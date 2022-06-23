@@ -43,7 +43,7 @@ noremap L $
 noremap H 0
 
 " note this <cr> not have virtual space
-nnoremap <silent> <leader>fs :w<cr><esc>
+nnoremap <silent> <leader>fs :w<cr>
 nnoremap <silent> <C-s> :<C-U>w<cr>:lua vim.notify("﬚  save file")<cr>
 
 nnoremap <leader>qh q:

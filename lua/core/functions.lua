@@ -151,7 +151,7 @@ nnoremap <silent> <space>fp <cmd>call FindPlugin()<cr>
 "
 augroup refreshdotfile
 autocmd!
-au BufWritePost ~/.local/share/chezmoi/dot_* :call ChezmoiSource()
+au BufWrite ~/.local/share/chezmoi/dot_* :call ChezmoiSource()
 augroup END
 
 " add i in the end of line, to enter insert mode
