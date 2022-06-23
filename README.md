@@ -6,14 +6,10 @@
 
 # Introd
 
-
-
-
-
-```bash
-    ┏━━━━━━━━┓
-    ┃ NEOVIM ┃
-    ┗━━━━━━━━┛
+```
+    ┏━━━━━━━━┓        ┏━━━━━━━━┓
+    ┃ NEOVIM ┃───────►┃ 0.7.0+ ┃
+    ┗━━━━━━━━┛        ┗━━━━━━━━┛
 
 ├── CHANGELOG.md
 ├── _config.yml
@@ -29,7 +25,6 @@
 └── yarn.lock
 ```
 
-`nvim-version` 0.7.0+
 
 ## Dependencies
 
