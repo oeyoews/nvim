@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.39.1](https://gitlab.com/oeyoews/nvim/compare/v3.39.0...v3.39.1) (2022-06-23)
+
+
+### Bug Fixes
+
+* remove lsp-format ([5b8502e](https://gitlab.com/oeyoews/nvim/commit/5b8502eafd03f58d3746fb4f3921fae7c17e0c52))
+
 # [3.39.0](https://gitlab.com/oeyoews/nvim/compare/v3.38.2...v3.39.0) (2022-06-23)
 
 
