@@ -41,10 +41,10 @@ M.plugins = {
   "tami5/lspsaga.nvim",
 
   -- @Tools
-  "jbyuki/venn.nvim",
-  "lukas-reineke/indent-blankline.nvim",
   "oeyoews/windline.nvim",
   "akinsho/bufferline.nvim",
+  "jbyuki/venn.nvim",
+  "lukas-reineke/indent-blankline.nvim",
   "akinsho/toggleterm.nvim",
   "nvim-neorg/neorg",
   "ekickx/clipboard-image.nvim",
