@@ -19,9 +19,9 @@ hi VertSplit guifg=#BB9AF7
 hi MatchParen  gui=underline
 hi MatchWord cterm=underline gui=underline
 
-" set cursor color
-hi Cursorn guifg=none guibg=none gui=bold
-hi Cursori guifg=red guibg=#ce537a gui=bold
+" set cursor color in gnome-terminal return normal is still insert color red
+hi Cursorn guifg=none guibg=none  " to fit gnome-terminal serial cursor
+hi Cursori guifg=red guibg=red
 set guicursor=n-v-c:block-Cursorn/lCursorn,i-ci-ve:ver25-Cursori/lCursori,r-cr:hor20,o:hor50
 
 " yank highlight  is conflict to venn.nvim
