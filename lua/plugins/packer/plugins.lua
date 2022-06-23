@@ -37,22 +37,18 @@ M.plugins = {
 
   -- @Lspconfig
   "williamboman/nvim-lsp-installer",
-  {
-    "neovim/nvim-lspconfig",
-    requires = {
-      "tami5/lspsaga.nvim",
-    },
-  },
+  "neovim/nvim-lspconfig",
+  "tami5/lspsaga.nvim",
 
   -- @Tools
   "jbyuki/venn.nvim",
   "lukas-reineke/indent-blankline.nvim",
-  "norcalli/nvim-colorizer.lua",
   "oeyoews/windline.nvim",
   "akinsho/bufferline.nvim",
   "akinsho/toggleterm.nvim",
   "nvim-neorg/neorg",
   "ekickx/clipboard-image.nvim",
+  "norcalli/nvim-colorizer.lua",
   "Pocco81/HighStr.nvim",
   "folke/which-key.nvim",
   "nvim-telescope/telescope.nvim",
