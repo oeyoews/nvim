@@ -4,8 +4,6 @@ if not ok then
   vim.notify("indent_blankline not founded")
 end
 
-vim.cmd [[highlight IndentBlanklineIndent1 guifg=#E06C75 gui=nocombine]]
-
 indent_blankline.setup({
   show_current_context = true,
   show_current_context_start = true,
