@@ -8,9 +8,9 @@
 
 <div align="center">
 
-[![Neovim Minimum Version](https://img.shields.io/badge/Neovim-0.7.0-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=white)](https://github.com/neovim/neovim)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
-<img src="https://img.shields.io/github/license/oeyoews/nvim?style=flat-square&logo=GNU&label=License&color=df967f" alt="License" />
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-SemanticRelease-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
+[![Neovim Minimum Version](https://img.shields.io/badge/Neovim-0.7.0-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=green)](https://github.com/neovim/neovim)
+<img src="https://img.shields.io/badge/License-AGPL--3.0-e10079.svg?style=flat-square&logo=GNU&color=df967f&label=License"/>
 
 <img src="img/2022-06-17-01-20-01.png" width=512/>
 </div>
