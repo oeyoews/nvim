@@ -4,19 +4,21 @@ if not lspsaga_ok then
   vim.notify("lspsaga not founded")
 end
 
-lspsaga.setup({ -- defaults ...
+--  
+lspsaga.setup({
   debug = false,
   use_saga_diagnostic_sign = true,
-  error_sign = "", --  
-  warn_sign = "", --  
-  hint_sign = "",
-  infor_sign = " ", -- NOTE: can't have space 
-  diagnostic_header_icon = " ",
-  code_action_icon = "﫢",
+  error_sign = "", --   
+  warn_sign = "", --  
+  hint_sign = "", --  﫢 ﴞ➤
+  infor_sign = "", -- NOTE: can't have space    
+  diagnostic_header_icon = " ", -- 
+  code_action_icon = "ﴞ ",
+  rename_prompt_prefix = " ",
   code_action_prompt = {
     enable = true,
     sign = true,
-    sign_priority = 40,
+    sign_priority = 20,
     virtual_text = false,
   },
   finder_definition_icon = "  ",
@@ -41,7 +43,6 @@ lspsaga.setup({ -- defaults ...
   definition_preview_icon = "  ",
   -- "single" "double" "round" "plus"
   border_style = "round",
-  rename_prompt_prefix = "➤ ",
   server_filetype_map = {},
   diagnostic_prefix_format = "%d. ",
 })
