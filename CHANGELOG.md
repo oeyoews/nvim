@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.42.0](https://gitlab.com/oeyoews/nvim/compare/v3.41.0...v3.42.0) (2022-06-24)
+
+
+### Features
+
+* add hello ([964e34a](https://gitlab.com/oeyoews/nvim/commit/964e34ac30586c968195cf1b026ec67be2be2845))
+
 # [3.41.0](https://gitlab.com/oeyoews/nvim/compare/v3.40.0...v3.41.0) (2022-06-24)
 
 
