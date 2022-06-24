@@ -15,7 +15,7 @@ snippet pp "adjust plugin"
 local ok, ${1:name} = pcall(require, "$1")
 
 if not ok then
-	vim.notify('$1 not founded')
+	vim.notify("$1 not founded")
 end
 
 $1.setup({$2})
