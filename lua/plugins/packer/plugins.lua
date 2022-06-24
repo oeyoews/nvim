@@ -3,7 +3,6 @@ local M = {}
 M.plugins = {
   -- @Temporary
   "oeyoews/vim-better-whitespace",
-  "ziontee113/icon-picker.nvim",
 
   -- @Necessary
   "wbthomason/packer.nvim",
@@ -41,6 +40,7 @@ M.plugins = {
   "tami5/lspsaga.nvim",
 
   -- @Tools
+  "ziontee113/icon-picker.nvim",
   "oeyoews/windline.nvim",
   "akinsho/bufferline.nvim",
   "jbyuki/venn.nvim",
