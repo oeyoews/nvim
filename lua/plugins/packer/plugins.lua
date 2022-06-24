@@ -11,7 +11,6 @@ M.plugins = {
   "wbthomason/packer.nvim",
   "lewis6991/impatient.nvim",
   "nathom/filetype.nvim",
-  -- "rcarriga/nvim-notify",
   "kyazdani42/nvim-web-devicons",
   "nvim-lua/plenary.nvim",
   "stevearc/dressing.nvim",

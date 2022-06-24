@@ -26,13 +26,13 @@ local disable_filetypes = {
 }
 
 local rainbow_colors = {
-  "#F7768E", --Magenta
+  "#F7768E",
   "#8169B4",
-  "#689d6a", --green
-  "#d79921", --yellow
-  "#a89984", --grey
-  "#d65d0e", --orange
-  "#458588", --cyan
+  "#689d6a",
+  "#d79921",
+  "#a89984",
+  "#d65d0e",
+  "#458588",
 }
 
 local terminal_colors = {
