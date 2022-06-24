@@ -7,7 +7,7 @@ local plugins = require("plugins/packer/plugins")
 -- @PackerSettings
 -- autoomatically install packer
 if fn.empty(fn.glob(install_path)) > 0 then
-  print("  Cloning packer   Waiting  ")
+  print("   Cloning packer   Waiting  ")
   packer_bootstrap = fn.system({
     "git",
     "clone",
@@ -17,7 +17,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
     install_path,
   })
   vim.cmd("packadd packer.nvim")
-  print("  Finish install packer")
+  print("   Finish install packer")
 end
 
 local packer = require("packer")
