@@ -1,9 +1,4 @@
-local telescope_ok, telescope = pcall(require, "telescope")
-
-if not telescope_ok then
-  vim.notify("telescope not founded")
-  return
-end
+local telescope = require("telescope")
 
 local actions = require("telescope.actions")
 

@@ -20,12 +20,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
   vim.notify("Finish install packer")
 end
 
-local packer_ok, packer = pcall(require, "packer")
-
-if not packer_ok then
-  vim.notify("packer not founded")
-  return
-end
+local packer = require("packer")
 
 local util = require("packer.util")
 

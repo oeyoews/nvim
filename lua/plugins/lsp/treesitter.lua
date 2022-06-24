@@ -1,8 +1,4 @@
-local nvim_treesitter_ok, tree_configs = pcall(require, "nvim-treesitter.configs")
-
-if not nvim_treesitter_ok then
-  vim.notify("nvim_treesitter not founded")
-end
+local tree_configs = require("nvim-treesitter.configs")
 
 -- @Mirror_nvim_treesitter
 --[[ require("nvim-treesitter.install").prefer_git = true

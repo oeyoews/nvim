@@ -1,9 +1,4 @@
-local ok, high_str = pcall(require, "high-str")
-
-if not ok then
-  vim.notify("highstr not founded")
-  return
-end
+local high_str = require("high-str")
 
 high_str.setup({
   verbosity = 0,

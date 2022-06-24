@@ -1,7 +1,3 @@
-local ok, _ = pcall(require, "windline")
-
-if not ok then
-  vim.notify("windline not founded")
-end
+local _ = require("windline")
 
 require("wlsample.evil_line")

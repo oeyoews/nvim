@@ -1,9 +1,4 @@
-local ok, lsp_installer = pcall(require, "nvim-lsp-installer")
-
-if not ok then
-  vim.notify("nvim-lsp-installer not founded")
-  return
-end
+local lsp_installer = require("nvim-lsp-installer")
 
 local lspinstall_servers = require("plugins.lsp.servers").servers
 

@@ -1,8 +1,4 @@
-local ok, bufferline = pcall(require, "bufferline")
-
-if not ok then
-  vim.notify("bufferline not founded")
-end
+local bufferline = require("bufferline")
 
 bufferline.setup({})
 

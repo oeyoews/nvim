@@ -1,9 +1,4 @@
-local persistence_ok, persistence = pcall(require, "persistence")
-
-if not persistence_ok then
-  vim.notify("persistence not founded")
-  return
-end
+local persistence = require("persistence")
 
 persistence.setup({ dir = vim.fn.expand(vim.fn.stdpath("data") .. "/.sessions/") })
 

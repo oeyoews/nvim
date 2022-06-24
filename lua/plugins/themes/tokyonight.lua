@@ -1,11 +1,6 @@
 local g = vim.g
 
-local status_ok, tokyonight = pcall(require, "tokyonight")
-
-if not status_ok then
-  vim.notify("tokyonight not found")
-  return
-end
+local tokyonight = require("tokyonight")
 
 -- option: storm, day, night
 g.tokyonight_style = "storm"

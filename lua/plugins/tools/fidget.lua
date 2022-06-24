@@ -1,8 +1,4 @@
-local ok, fidget = pcall(require, "fidget")
-
-if not ok then
-  vim.notify('fidget not founded')
-end
+local fidget = require("fidget")
 
 fidget.setup({
   text = {
@@ -14,5 +10,4 @@ fidget.setup({
   window = {
     relative = "editor",
   },
-
 })

@@ -1,4 +1,6 @@
-require("toggleterm").setup({
+local toggleterm = require("toggleterm")
+
+toggleterm.setup({
   direction = "float",
 
   float_opts = {

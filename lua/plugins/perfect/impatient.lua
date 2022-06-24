@@ -1,7 +1,3 @@
-local present, impatient = pcall(require, "impatient")
+local impatient = require("impatient")
 
-if present then
-  impatient.enable_profile()
-else
-  vim.notify("impatient not founded")
-end
+impatient.enable_profile()

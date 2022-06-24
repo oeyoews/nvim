@@ -1,12 +1,7 @@
 --vim.cmd [[highlight default GH guifg=#3bb6c4 guibg=NONE]]
 
 -- @nvim_cmp
-local cmp_ok, cmp = pcall(require, "cmp")
-
-if not cmp_ok then
-  vim.notify("cmp not founded")
-  return
-end
+local cmp = require("cmp")
 
 -- -- @lspkind
 local lspkind_ok, lspkind = pcall(require, "lspkind")
@@ -36,7 +31,7 @@ local symbol_map = {
   Field = "",
   Variable = "",
   Class = "𝓒",
-  Interface = "",  -- 
+  Interface = "", -- 
   Module = "",
   Property = "ﰠ",
   Unit = "",

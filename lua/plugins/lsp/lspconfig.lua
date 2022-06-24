@@ -1,9 +1,4 @@
-local lspconfig_ok, lspconfig = pcall(require, "lspconfig")
-
-if not lspconfig_ok then
-  vim.notify("lspconfig not fouded")
-  return
-end
+local lspconfig = require("lspconfig")
 
 -- if this servers not installed, cmp will callback nvim-lsp-install to install them
 -- fix: how to config according filetype automation install servers

@@ -1,8 +1,4 @@
-local lspsaga_ok, lspsaga = pcall(require, "lspsaga")
-
-if not lspsaga_ok then
-  vim.notify("lspsaga not founded")
-end
+local lspsaga = require("lspsaga")
 
 --  
 lspsaga.setup({
@@ -13,7 +9,7 @@ lspsaga.setup({
   hint_sign = "", --  﫢 ﴞ➤
   infor_sign = "", -- NOTE: can't have space    
   diagnostic_header_icon = " ", -- 
-  code_action_icon = "ﴞ ",
+  code_action_icon = "💡", -- ﴞ
   rename_prompt_prefix = " ",
   code_action_prompt = {
     enable = true,

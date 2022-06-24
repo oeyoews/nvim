@@ -1,9 +1,4 @@
-local ok, neorg = pcall(require, "neorg")
-
-if not ok then
-  vim.notify("neorg not founded")
-  return
-end
+local neorg = require("neorg")
 
 local function load_completion()
   neorg.modules.load_module("core.norg.completion", nil, {

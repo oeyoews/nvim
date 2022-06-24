@@ -1,10 +1,5 @@
 ---[=[
-local status_ok, notify = pcall(require, "notify")
-
-if not status_ok then
-  vim.notify("notify not found!", "warn")
-  return
-end
+local notify = require("notify")
 
 vim.notify = notify
 notify.setup({
