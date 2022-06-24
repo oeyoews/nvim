@@ -9,7 +9,7 @@ function M.setup(package, modules)
     local status_ok, _ = pcall(require, load_module)
     if not status_ok then
       local plugin = "Modules"
-      vim.notify(" Failed to load " .. load_module, "warn", {
+      vim.notify("   Failed to load " .. load_module, "warn", {
         title = plugin,
       })
     end

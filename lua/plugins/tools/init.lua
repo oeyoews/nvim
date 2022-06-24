@@ -1,7 +1,6 @@
 local package = "plugins.tools"
 
 local modules = {
-  "notify", -- first
   "hop",
   "colorizer",
   "gitsigns",

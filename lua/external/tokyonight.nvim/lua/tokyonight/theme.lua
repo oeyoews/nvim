@@ -269,15 +269,6 @@ function M.setup(config)
     LspTroubleCount = { fg = c.magenta, bg = c.fg_gutter },
     LspTroubleNormal = { fg = c.fg_sidebar, bg = c.bg_sidebar },
 
-    -- ts-ranbow
-    rainbowcol1 = { fg = c.dark3 },
-    rainbowcol2 = { fg = c.yellow },
-    rainbowcol3 = { fg = c.blue2 },
-    rainbowcol4 = { fg = c.orange },
-    rainbowcol5 = { fg = c.purple },
-    rainbowcol6 = { fg = c.green1 },
-    rainbowcol7 = { fg = c.red },
-
     -- Illuminate
     illuminatedWord = { bg = c.fg_gutter },
     illuminatedCurWord = { bg = c.fg_gutter },

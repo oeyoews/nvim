@@ -2,14 +2,16 @@ local M = {}
 
 M.plugins = {
   -- @Temporary
-  "oeyoews/vim-better-whitespace",
-  "j-hui/fidget.nvim",
+
+  -- @External
+  "~/.config/nvim/lua/external/tokyonight.nvim",
+  "~/.config/nvim/lua/external/nvim-notify",
 
   -- @Necessary
   "wbthomason/packer.nvim",
   "lewis6991/impatient.nvim",
   "nathom/filetype.nvim",
-  "rcarriga/nvim-notify",
+  -- "rcarriga/nvim-notify",
   "kyazdani42/nvim-web-devicons",
   "nvim-lua/plenary.nvim",
   "stevearc/dressing.nvim",
@@ -41,6 +43,8 @@ M.plugins = {
   "tami5/lspsaga.nvim",
 
   -- @Tools
+  "oeyoews/vim-better-whitespace",
+  "j-hui/fidget.nvim",
   "ziontee113/icon-picker.nvim",
   "oeyoews/windline.nvim",
   "akinsho/bufferline.nvim",
