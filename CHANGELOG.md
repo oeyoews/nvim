@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.44.0](https://gitlab.com/oeyoews/nvim/compare/v3.43.0...v3.44.0) (2022-06-24)
+
+
+### Features
+
+* embed notify and tokyonight ([aa77880](https://gitlab.com/oeyoews/nvim/commit/aa77880a3db3317088ff8045741ca996f18c32ff))
+
 # [3.43.0](https://gitlab.com/oeyoews/nvim/compare/v3.42.0...v3.43.0) (2022-06-24)
 
 
