@@ -104,6 +104,8 @@ nnoremap <silent> <leader>tl :setlocal invlist<cr>
 " fzf's vimplugin
 nnoremap <silent> <leader>fu :FZF<cr>
 
+nnoremap <silent> <leader>hello :lua vim.notify("  Hello, Neovim", "info", {title="welcome"})<cr>
+
 ]])
 
 -- TODO: https://github.com/LunarVim/LunarVim/blob/rolling/lua/lvim/keymappings.lua
