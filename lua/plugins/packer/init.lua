@@ -33,9 +33,9 @@ packer.init({
     },
   },
   display = {
-    working_sym = '⟳', -- The symbol for a plugin being installed/updated
-    error_sym = '✗', -- The symbol for a plugin with an error in installation/updating
-    done_sym = '✓',
+    working_sym = '', -- The symbol for a plugin being installed/updated
+    error_sym = '', -- The symbol for a plugin with an error in installation/updating
+    done_sym = '',
     open_fn = function()
       return require("packer.util").float({ border = "single" })
     end,
