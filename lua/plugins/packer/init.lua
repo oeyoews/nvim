@@ -17,7 +17,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
     install_path,
   })
   vim.cmd("packadd packer.nvim")
-  vim.notify("Finish install packer")
+  vim.notify("  Finish install packer")
 end
 
 local packer = require("packer")
