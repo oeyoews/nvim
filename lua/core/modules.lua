@@ -1,9 +1,9 @@
 local package = "plugins"
 
 local modules = {
-  "external",
   "packer", -- first plugins list
   "perfect", -- performance
+  "external",
   "ui", -- ui configuration
   "tools", -- some tools
   "lsp", -- lsp settings
