@@ -1,4 +1,10 @@
-local tree_configs = require("nvim-treesitter.configs")
+local ok, nvim_treesitter_configs = pcall(require, "nvim-treesitter.configs")
+
+if not ok then
+  vim.notify('tree_configs not founded')
+  return
+end
+
 
 -- @Mirror_nvim_treesitter
 --[[ require("nvim-treesitter.install").prefer_git = true
@@ -20,9 +26,9 @@ local disable_filetypes = {
 }
 
 local rainbow_colors = {
-  "#689d6a", --green
+  "#F7768E", --Magenta
   "#8169B4",
-  "#b16286", --Magenta
+  "#689d6a", --green
   "#d79921", --yellow
   "#a89984", --grey
   "#d65d0e", --orange
@@ -40,7 +46,7 @@ local terminal_colors = {
 }
 
 -- tips: tsmoduleinfo
-tree_configs.setup({
+nvim_treesitter_configs.setup({
   indent = {
     enable = true,
     disable = disable_filetypes,
