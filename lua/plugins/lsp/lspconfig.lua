@@ -59,7 +59,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
   virtual_text = {
     spacing = 2,
     source = "always",
-    -- '●', '▎', 'x'
+    -- '●', '▎', 'x' 
     -- prefix = "●",
     prefix = "",
   },

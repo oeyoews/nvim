@@ -55,7 +55,7 @@ M.plugins = {
   "nvim-telescope/telescope.nvim",
   "phaazon/hop.nvim",
   "folke/persistence.nvim",
-  -- "lewis6991/gitsigns.nvim",
+  "lewis6991/gitsigns.nvim",
   "windwp/nvim-autopairs",
   "oeyoews/vim-startuptime",
   "kevinhwang91/rnvimr",
