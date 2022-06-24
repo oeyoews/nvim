@@ -19,6 +19,7 @@ local modules = {
   "ranger",
   "venn",
   "fidget",
+  "mkdp",
 }
 
 require("core.pcallplus").setup(package, modules)
