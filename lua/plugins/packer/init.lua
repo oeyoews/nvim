@@ -41,7 +41,7 @@ packer.init({
     end,
   },
   git = {
-    clone_timeout = 60,
+    clone_timeout = 6000,
     --@Mirror_packer
     -- default_url_format = 'https://github.com/%s.git',
     -- default_url_format = 'https://hub.fastgit.xyz/%s.git',

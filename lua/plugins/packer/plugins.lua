@@ -44,7 +44,7 @@ M.plugins = {
   -- @Tools
   {
     "iamcco/markdown-preview.nvim",
-     run = function() vim.fn["mkdp#util#install"]() end,
+    run = "cd app && npm install",
   },
   "oeyoews/vim-better-whitespace",
   "j-hui/fidget.nvim",
