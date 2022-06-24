@@ -8,7 +8,9 @@
 
 <div align="center">
 
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-SemanticRelease-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release) [![Neovim Minimum Version](https://img.shields.io/badge/Neovim-0.7.0-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=green)](https://github.com/neovim/neovim) <img src="https://img.shields.io/badge/License-AGPL--3.0-e10079.svg?style=flat-square&logo=GNU&color=df967f&label=License"/>
+![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-SemanticRelease-e10079.svg?style=flat-square)
+![Neovim Minimum Version](https://img.shields.io/badge/Neovim-0.7.0-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=green)
+![License](https://img.shields.io/badge/License-AGPL--3.0-e10079.svg?style=flat-square&logo=GNU&color=df967f&label=License)
 
 <img src="img/2022-06-17-01-20-01.png" width=512/>
 </div>
