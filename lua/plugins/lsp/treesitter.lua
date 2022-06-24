@@ -20,12 +20,11 @@ local disable_filetypes = {
 }
 
 local rainbow_colors = {
-  "#a89984", --grey
-  -- "#cc241d", --red
+  "#689d6a", --green
   "#8169B4",
   "#b16286", --Magenta
   "#d79921", --yellow
-  "#689d6a", --green
+  "#a89984", --grey
   "#d65d0e", --orange
   "#458588", --cyan
 }

@@ -1,7 +1,13 @@
 --vim.cmd [[highlight default GH guifg=#3bb6c4 guibg=NONE]]
 
 -- @nvim_cmp
-local cmp = require("cmp")
+local ok, cmp = pcall(require, "cmp")
+
+if not ok then
+  vim.notify('cmp not founded')
+  return
+end
+
 
 -- -- @lspkind
 local lspkind_ok, lspkind = pcall(require, "lspkind")
