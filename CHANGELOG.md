@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.41.0](https://gitlab.com/oeyoews/nvim/compare/v3.40.0...v3.41.0) (2022-06-24)
+
+
+### Features
+
+* add new config for fidget ([2e332f8](https://gitlab.com/oeyoews/nvim/commit/2e332f8b8dd863515f729085c8bb7291bad5949e))
+
 # [3.40.0](https://gitlab.com/oeyoews/nvim/compare/v3.39.2...v3.40.0) (2022-06-23)
 
 
