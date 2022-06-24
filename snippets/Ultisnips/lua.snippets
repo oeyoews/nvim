@@ -16,7 +16,6 @@ local ok, ${1:name} = pcall(require, "$1")
 
 if not ok then
 	vim.notify('$1 not founded')
-	return
 end
 
 $1.setup({$2})

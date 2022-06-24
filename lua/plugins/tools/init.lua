@@ -19,6 +19,7 @@ local modules = {
   "quickrun",
   "ranger",
   "venn",
+  "fidget",
 }
 
 require("core.pcallplus").setup(package, modules)

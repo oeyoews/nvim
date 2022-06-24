@@ -3,6 +3,7 @@ local M = {}
 M.plugins = {
   -- @Temporary
   "oeyoews/vim-better-whitespace",
+  "j-hui/fidget.nvim",
 
   -- @Necessary
   "wbthomason/packer.nvim",

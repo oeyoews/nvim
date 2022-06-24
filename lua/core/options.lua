@@ -15,7 +15,7 @@ end)
 local default_options = {
   relativenumber = false,
   -- textwidth = 80,
-  laststatus = 0, -- 3
+  laststatus = 3, -- 3, 0
   updatetime = 200,
   timeoutlen = 1000,
   splitright = true,
