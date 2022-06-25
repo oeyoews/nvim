@@ -7,7 +7,8 @@
 </div>
 
 <div align="center">
-
+<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/oeyoews/nvim?label=Size&logo=git&style=flat-square">
+<img src="https://img.shields.io/github/directory-file-count/oeyoews/nvim?color=green&label=Files&logo=Gnu&logoColor=violet&style=flat-square" alt="files">
 <img src="https://img.shields.io/badge/Maintain-Yes-blueviolet.svg?style=flat-square&logo=Chakra-Ui&color=90E59A&logoColor=green" alt="status" >
 <img src="https://img.shields.io/badge/System-Linux-white.svg?style=flat-square&logo=linux&logoColor=white&color=BB9AF7" alt="system">
 <img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-Semantic-e10079.svg?style=flat-square" alt="Semantic Release"/>
@@ -25,7 +26,6 @@
 <img src="img/2022-06-17-01-20-01.png" width=512/>
 
 </div>
-
 
 ## Introd
 
