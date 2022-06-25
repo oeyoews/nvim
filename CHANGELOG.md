@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.45.1](https://gitlab.com/oeyoews/nvim/compare/v3.45.0...v3.45.1) (2022-06-25)
+
+
+### Bug Fixes
+
+* for md to html about badges snip ([f77903f](https://gitlab.com/oeyoews/nvim/commit/f77903fa8b3854bb455fef0a370c2bbdc16016a6))
+
 # [3.45.0](https://gitlab.com/oeyoews/nvim/compare/v3.44.0...v3.45.0) (2022-06-24)
 
 
