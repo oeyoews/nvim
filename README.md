@@ -11,10 +11,11 @@
 ![System](https://img.shields.io/badge/System-Linux-white.svg?style=flat-square&logo=linux&logoColor=9ECE6A&color=BB9AF7)
 ![Semantic](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-Semantic-e10079.svg?style=flat-square)
 ![License](https://img.shields.io/badge/License-AGPL--3.0-e10079.svg?style=flat-square&logo=GNU&color=df967f&label=License)
-![Neovim Minimum Version](https://img.shields.io/badge/Neovim-0.7.0-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=green)
+![Neovim](https://img.shields.io/badge/Neovim-0.7.0-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=green)
 ![Github](https://img.shields.io/badge/Github-Yes-green.svg?style=flat-square&logo=github&label=Github)
 ![Gitlab](https://img.shields.io/badge/Gitlab-Yes-ffcc00.svg?style=flat-square&logo=gitlab&label=Gitlab)
 ![GitHub Tag](https://img.shields.io/gitlab/v/tag/oeyoews/nvim?color=green&logo=FastAPI&style=flat-square)
+![Git](https://img.shields.io/badge/GIT-Yes-green.svg?style=flat-square&logo=git&label=GIT)
 
 <img src="img/2022-06-17-01-20-01.png" width=512/>
 </div>
