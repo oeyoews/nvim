@@ -104,7 +104,7 @@ nnoremap <silent> <leader>tl :setlocal invlist<cr>
 " fzf's vimplugin
 nnoremap <silent> <leader>fu :FZF<cr>
 
-nnoremap <silent> <leader>hello :lua vim.notify("  Hello, Neovim", "info", {title="welcome"})<cr>
+nnoremap <silent> <leader>helo :lua vim.notify("  Hello, Neovim", "info", {title="welcome"})<cr>
 
 ]])
 
