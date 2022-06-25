@@ -1,10 +1,9 @@
 <h1 align="center">NEOVIM</h1>
 
 <div align="center">
-  <span> • </span>
-	<a href="https://oeyoews.github.io/nvim">Home</a>
-  <span> • </span>
-</div>
+	<a href="https://oeyoews.github.io/nvim">🏠Home</a>
+  <!-- <span> • </span> -->
+</div> &nbsp;
 
 <div align="center">
 
@@ -116,7 +115,6 @@
 * [x] config format
 * [x] some sitution will cause error line repeat(maybe emoji or refresh time error)
   * [x] snowflake:  this emoji will cause this bug in kitty(only)
-
 * [x] config new theme for material, like tilde,
 * add shortkeys in vim to open browser html
 * [?] fix the zh bug(maybe also is terminal)
