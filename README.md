@@ -1,4 +1,4 @@
-<h1 align="center"> Nvim </h1>
+<h1 align="center">NEOVIM</h1>
 
 <div align="center">
   <span> • </span>
