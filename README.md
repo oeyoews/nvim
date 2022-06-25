@@ -17,6 +17,7 @@
 ![GitHub Tag](https://img.shields.io/gitlab/v/tag/oeyoews/nvim?color=green&logo=FastAPI&style=flat-square)
 ![Git](https://img.shields.io/badge/GIT-Yes-green.svg?style=flat-square&logo=git&label=GIT)
 ![Shell](https://img.shields.io/badge/Shell-zsh-white.svg?style=flat-square&logo=Gnu-Bash&logoColor=9ECE6A&color=BB9AF7)
+![Lang](https://img.shields.io/badge/Lang-lua-blueviolet.svg?style=flat-square&logo=lua&color=90E59A&logoColor=blue)
 
 <img src="img/2022-06-17-01-20-01.png" width=512/>
 </div>
