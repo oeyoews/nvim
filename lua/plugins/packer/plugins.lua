@@ -2,6 +2,7 @@ local M = {}
 
 M.plugins = {
   -- @Temporary
+  "cappyzawa/trim.nvim",
 
   -- @External
   "~/.config/nvim/lua/external/tokyonight.nvim",
@@ -42,11 +43,7 @@ M.plugins = {
   "tami5/lspsaga.nvim",
 
   -- @Tools
-  {
-    "iamcco/markdown-preview.nvim",
-    run = "cd app && npm install",
-  },
-  "oeyoews/vim-better-whitespace",
+  -- "oeyoews/vim-better-whitespace",
   "j-hui/fidget.nvim",
   "ziontee113/icon-picker.nvim",
   "oeyoews/windline.nvim",
@@ -68,6 +65,11 @@ M.plugins = {
   "kevinhwang91/rnvimr",
   "itchyny/calendar.vim",
   "thinca/vim-quickrun",
+  "oeyoews/vim-capslock",
+  {
+    "iamcco/markdown-preview.nvim",
+    run = "cd app && npm install",
+  },
 }
 
 return M

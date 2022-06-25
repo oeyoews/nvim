@@ -20,6 +20,7 @@ local modules = {
   "venn",
   "fidget",
   "mkdp",
+  "trim",
 }
 
 require("core.pcallplus").setup(package, modules)
