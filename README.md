@@ -1,7 +1,7 @@
 <h1 align="center">NEOVIM</h1>
 
 <div align="center">
-	<a href="https://oeyoews.github.io/nvim">🏠•Home</a>
+	🏠 • <a href="https://oeyoews.github.io/nvim">Home</a>
 </div> &nbsp;
 
 <div align="center">
