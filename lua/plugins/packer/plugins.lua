@@ -2,6 +2,7 @@ local M = {}
 
 M.plugins = {
   -- @Temporary
+  -- "oeyoews/vim-better-whitespace",
   "cappyzawa/trim.nvim",
 
   -- @External
@@ -43,7 +44,6 @@ M.plugins = {
   "tami5/lspsaga.nvim",
 
   -- @Tools
-  -- "oeyoews/vim-better-whitespace",
   "j-hui/fidget.nvim",
   "ziontee113/icon-picker.nvim",
   "oeyoews/windline.nvim",
