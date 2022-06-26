@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.45.2](https://gitlab.com/oeyoews/nvim/compare/v3.45.1...v3.45.2) (2022-06-26)
+
+
+### Bug Fixes
+
+* rm _config.yml ([5f15db1](https://gitlab.com/oeyoews/nvim/commit/5f15db1a4c46654c794bf25e31bfbb05bb098a10))
+
 ## [3.45.1](https://gitlab.com/oeyoews/nvim/compare/v3.45.0...v3.45.1) (2022-06-25)
 
 
