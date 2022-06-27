@@ -1,3 +1,4 @@
+-- first load impatient plugin
 require("plugins.perfect.impatient")
 
 local modules = {
@@ -5,7 +6,8 @@ local modules = {
   "options", -- basic options
   "mappings", -- basic mappings
   "functions", -- basic functions
-  "modules", -- enable modules
+  "modules", -- load plugin settings modules
 }
 
+-- neovim configuration loading entry
 require("core.pcallplus").setup("core", modules)
