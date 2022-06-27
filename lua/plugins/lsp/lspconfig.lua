@@ -3,7 +3,7 @@ local lspconfig = require("lspconfig")
 -- if this servers not installed, cmp will callback nvim-lsp-install to install them
 -- fix: how to config according filetype automation install servers
 -- @servers_lua
-local lsp_servers = require("plugins.lsp.servers").servers
+local lsp_servers = require("plugins.lsp.servers")
 
 local lspformat = require("lsp-format")
 
@@ -40,7 +40,7 @@ local on_attach = function(client)
   lspformat.on_attach(client)
 end
 -- For general Lsp server
-for _, lsp_server in ipairs(lsp_servers) do
+for _, lsp_server in ipairs(lsp_servers.servers) do
   lspconfig[lsp_server].setup({
     on_attach = on_attach,
     capabilities = capabilities,

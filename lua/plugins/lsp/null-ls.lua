@@ -12,7 +12,9 @@ local disabled_filetypes = {
 }
 
 -- @filetypes
-local enabale_filetypes = require("plugins.lsp.filetypes").filetypes
+local enabale_filetypes = require("plugins.lsp.filetypes")
+
+enabale_filetypes = enabale_filetypes.filetypes
 
 -- append gitcommit for null_ls's codespell
 -- table.insert(enabale_filetypes, "gitcommit")
