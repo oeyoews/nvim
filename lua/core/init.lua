@@ -1,10 +1,10 @@
 local package = "core" -- require package
 
 local modules = {
-  "disable",
+  "disable", -- disable settings
   "options", -- basic options
   "mappings", -- basic mappings
-  "functions",
+  "functions", -- basic functions
   "modules", -- enable modules
 }
 
