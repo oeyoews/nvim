@@ -4,7 +4,7 @@
 local ok, cmp = pcall(require, "cmp")
 
 if not ok then
-  vim.notify("cmp not founded")
+  vim.notify("  cmp not founded")
   return
 end
 
