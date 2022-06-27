@@ -60,7 +60,7 @@ nvim_treesitter_configs.setup({
     additional_vim_regex_highlighting = false,
   },
 
-  -- nvim-ts-rainbow
+  -- plugin: nvim-ts-rainbow
   rainbow = {
     enable = true,
     extended_mode = true,

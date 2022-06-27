@@ -1,4 +1,3 @@
----[=[
 local notify = require("notify")
 
 vim.notify = notify
@@ -44,5 +43,3 @@ notify.setup({
 vim.cmd([[
 nnoremap <silent> <leader>bm :Notifications<cr>
 ]])
-
---]=]

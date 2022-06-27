@@ -11,13 +11,10 @@ M.servers = {
   -- "cmake",
   -- "pyright",
   -- 'cssls',
-  -- 'diagnosticls',
-  -- "efm",
   -- "html",
   -- "gopls",
   -- 'golangci_lint_ls',
   -- "tsserver",
-  --'texlab',
 }
 
 return M
