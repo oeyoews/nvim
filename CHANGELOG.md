@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://gitlab.com/oeyoews/nvim/compare/v4.0.0...v4.0.1) (2022-06-27)
+
+
+### Bug Fixes
+
+* split impatient for modules.lua ([b46b8ca](https://gitlab.com/oeyoews/nvim/commit/b46b8cace33dbf002afcc01071fd86a1fbf5d5e2))
+
 # [4.0.0](https://gitlab.com/oeyoews/nvim/compare/v3.46.0...v4.0.0) (2022-06-27)
 
 
