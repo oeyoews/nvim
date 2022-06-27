@@ -1,76 +1,76 @@
 local M = {}
 
 M.plugins = {
-  -- @Temporary
-  "cappyzawa/trim.nvim",
-
-  -- @External
-  "~/.config/nvim/lua/external/tokyonight.nvim",
-  "~/.config/nvim/lua/external/nvim-notify",
-
-  -- @Necessary
+  -- @PACKER
   "wbthomason/packer.nvim",
-  "lewis6991/impatient.nvim",
+
+  -- @PERFECT
   "nathom/filetype.nvim",
-  "kyazdani42/nvim-web-devicons",
-  "nvim-lua/plenary.nvim",
-  "stevearc/dressing.nvim",
 
-  -- @Treesitter
-  "nvim-treesitter/nvim-treesitter-refactor",
-  "p00f/nvim-ts-rainbow",
-  {
-    "nvim-treesitter/nvim-treesitter",
-    run = ":TSUpdate",
-  },
-
-  -- @Completion
-  "honza/vim-snippets",
-  "SirVer/ultisnips",
-  "fhill2/telescope-ultisnips.nvim",
-  "oeyoews/tabout.nvim",
-  "quangnguyen30192/cmp-nvim-ultisnips",
-  "hrsh7th/nvim-cmp",
-  "hrsh7th/cmp-nvim-lsp",
-  "hrsh7th/cmp-buffer",
-  "onsails/lspkind-nvim",
-  "hrsh7th/cmp-path",
-  "numToStr/Comment.nvim",
-
-  -- @Lspconfig
-  "williamboman/nvim-lsp-installer",
-  "neovim/nvim-lspconfig",
-  "tami5/lspsaga.nvim",
-  "jose-elias-alvarez/null-ls.nvim",
-  "lukas-reineke/lsp-format.nvim",
-
-  -- @Tools
-  "j-hui/fidget.nvim",
-  "ziontee113/icon-picker.nvim",
-  "oeyoews/windline.nvim",
-  "akinsho/bufferline.nvim",
-  "jbyuki/venn.nvim",
+  -- @UI
+  "~/.config/nvim/lua/builtin/tokyonight.nvim",
   "lukas-reineke/indent-blankline.nvim",
-  "akinsho/toggleterm.nvim",
-  "nvim-neorg/neorg",
-  "ekickx/clipboard-image.nvim",
-  "norcalli/nvim-colorizer.lua",
-  "Pocco81/HighStr.nvim",
-  "folke/which-key.nvim",
-  "nvim-telescope/telescope.nvim",
+  "akinsho/bufferline.nvim",
+  "oeyoews/windline.nvim",
+  "~/.config/nvim/lua/builtin/nvim-notify",
+
+  -- @TOOLS
   "phaazon/hop.nvim",
-  "folke/persistence.nvim",
+  "norcalli/nvim-colorizer.lua",
   "lewis6991/gitsigns.nvim",
+  "numToStr/Comment.nvim",
   "windwp/nvim-autopairs",
-  "oeyoews/vim-startuptime",
-  "kevinhwang91/rnvimr",
+  "Pocco81/HighStr.nvim",
+  "nvim-neorg/neorg",
+  "folke/persistence.nvim",
+  "oeyoews/tabout.nvim",
+  "nvim-telescope/telescope.nvim",
+  "folke/which-key.nvim",
+  "akinsho/toggleterm.nvim",
+  "ziontee113/icon-picker.nvim",
   "itchyny/calendar.vim",
-  "thinca/vim-quickrun",
-  "oeyoews/vim-capslock",
+  "kevinhwang91/rnvimr",
+  "jbyuki/venn.nvim",
+  "j-hui/fidget.nvim",
   {
     "iamcco/markdown-preview.nvim",
     run = "cd app && npm install",
   },
+  "cappyzawa/trim.nvim",
+  "ekickx/clipboard-image.nvim",
+  "oeyoews/vim-startuptime",
+  "thinca/vim-quickrun",
+  "oeyoews/vim-capslock",
+
+  -- @NECESSARY
+  "lewis6991/impatient.nvim",
+  "kyazdani42/nvim-web-devicons",
+  "nvim-lua/plenary.nvim",
+  "stevearc/dressing.nvim",
+
+  -- @LSP
+  {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  },
+  "williamboman/nvim-lsp-installer",
+  "hrsh7th/nvim-cmp",
+  "neovim/nvim-lspconfig",
+  "jose-elias-alvarez/null-ls.nvim",
+  "tami5/lspsaga.nvim",
+  "lukas-reineke/lsp-format.nvim",
+  "nvim-treesitter/nvim-treesitter-refactor",
+  "p00f/nvim-ts-rainbow",
+  "honza/vim-snippets",
+  "SirVer/ultisnips",
+  "fhill2/telescope-ultisnips.nvim",
+  "quangnguyen30192/cmp-nvim-ultisnips",
+  "hrsh7th/cmp-nvim-lsp",
+  "hrsh7th/cmp-buffer",
+  "onsails/lspkind-nvim",
+  "hrsh7th/cmp-path",
+
+  -- @TEMPORARY
 
   -- @Disabable
   {
