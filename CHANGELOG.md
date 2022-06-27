@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.46.0](https://gitlab.com/oeyoews/nvim/compare/v3.45.2...v3.46.0) (2022-06-27)
+
+
+### Features
+
+* config prettier lspformat and null-ls ([bca8f9b](https://gitlab.com/oeyoews/nvim/commit/bca8f9b4ac17d5a77dad022bedaa8608b4357586))
+
 ## [3.45.2](https://gitlab.com/oeyoews/nvim/compare/v3.45.1...v3.45.2) (2022-06-26)
 
 
