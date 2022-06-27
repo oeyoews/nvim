@@ -8,11 +8,11 @@ M.plugins = {
   "nathom/filetype.nvim",
 
   -- @UI
-  "~/.config/nvim/lua/builtin/tokyonight.nvim",
+  -- "~/.config/nvim/lua/builtin/tokyonight.nvim",
   "lukas-reineke/indent-blankline.nvim",
   "akinsho/bufferline.nvim",
   "oeyoews/windline.nvim",
-  "~/.config/nvim/lua/builtin/nvim-notify",
+  -- "~/.config/nvim/lua/builtin/nvim-notify",
 
   -- @TOOLS
   "phaazon/hop.nvim",
