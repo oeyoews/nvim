@@ -16,7 +16,7 @@ notify.setup({
   render = "default",
 
   -- Default timeout for notifications
-  timeout = 300,
+  timeout = 1000,
 
   -- Max number of columns for messages
   max_width = nil,
