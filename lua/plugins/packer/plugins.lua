@@ -4,16 +4,6 @@ M.plugins = {
   -- @Temporary
   "cappyzawa/trim.nvim",
 
-  -- @Disabable
-  {
-    "oeyoews/vim-better-whitespace",
-    disable = true,
-  },
-  {
-    "mfussenegger/nvim-lint",
-    disable = true,
-  },
-
   -- @External
   "~/.config/nvim/lua/external/tokyonight.nvim",
   "~/.config/nvim/lua/external/nvim-notify",
@@ -80,6 +70,16 @@ M.plugins = {
   {
     "iamcco/markdown-preview.nvim",
     run = "cd app && npm install",
+  },
+
+  -- @Disabable
+  {
+    "oeyoews/vim-better-whitespace",
+    disable = true,
+  },
+  {
+    "mfussenegger/nvim-lint",
+    disable = true,
   },
 }
 

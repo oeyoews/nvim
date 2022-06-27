@@ -63,7 +63,6 @@ modules = {
   night = {
     "init",
   },
-
 }
 
 require("core.pcall_modules").setup("plugins", modules)
