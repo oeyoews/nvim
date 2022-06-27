@@ -6,6 +6,7 @@ M.servers = {
   "bashls",
   "sumneko_lua",
   "vimls",
+  "yamlls",
   "jsonls", -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
   -- "cmake",
   -- "pyright",
@@ -17,7 +18,6 @@ M.servers = {
   -- 'golangci_lint_ls',
   -- "tsserver",
   --'texlab',
-  -- "yamlls",
 }
 
 return M

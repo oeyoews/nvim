@@ -126,6 +126,6 @@
 * [x] config dashboard
 * [x] this emjoi shadow bug, maybe is kitty terminal(switch to wezterm compare)
 * [x] some error tip from feline(active)
-* [x] https://github.com/AstroNvim/AstroNvim, learn it option setting and lsp multi separate setting: fix lua global vim setting
+* [x] <https://github.com/AstroNvim/AstroNvim>, learn it option setting and lsp multi separate setting: fix lua global vim setting
 
 </details>

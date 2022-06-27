@@ -2,8 +2,17 @@ local M = {}
 
 M.plugins = {
   -- @Temporary
-  -- "oeyoews/vim-better-whitespace",
   "cappyzawa/trim.nvim",
+
+  -- @Disabable
+  {
+    "oeyoews/vim-better-whitespace",
+    disable = true,
+  },
+  {
+    "mfussenegger/nvim-lint",
+    disable = true,
+  },
 
   -- @External
   "~/.config/nvim/lua/external/tokyonight.nvim",
@@ -42,6 +51,8 @@ M.plugins = {
   "williamboman/nvim-lsp-installer",
   "neovim/nvim-lspconfig",
   "tami5/lspsaga.nvim",
+  "jose-elias-alvarez/null-ls.nvim",
+  "lukas-reineke/lsp-format.nvim",
 
   -- @Tools
   "j-hui/fidget.nvim",

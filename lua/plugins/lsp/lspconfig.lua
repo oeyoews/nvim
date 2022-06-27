@@ -5,6 +5,8 @@ local lspconfig = require("lspconfig")
 -- @servers_lua
 local lsp_servers = require("plugins.lsp.servers").servers
 
+local lspformat = require("lsp-format")
+
 -- @nvim_cmp
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
@@ -34,10 +36,13 @@ capabilities.documentRangeFormattingProvider = false
 
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 
+local on_attach = function(client)
+  lspformat.on_attach(client)
+end
 -- For general Lsp server
 for _, lsp_server in ipairs(lsp_servers) do
   lspconfig[lsp_server].setup({
-    -- on_attach = on_attach,
+    on_attach = on_attach,
     capabilities = capabilities,
   })
 end
@@ -54,8 +59,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
   virtual_text = {
     spacing = 2,
     source = "always",
-    -- '●', '▎', 'x'      
-    prefix = " ",
+    prefix = " ", -- '●', '▎', 'x'      
   },
   float = {
     focusable = false,

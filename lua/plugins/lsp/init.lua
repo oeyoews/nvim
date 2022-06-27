@@ -5,6 +5,7 @@ local modules = {
   "lspinstall", -- preinstall some servers
   "cmp", -- config completion
   "lspconfig",
+  "null-ls",
   "lspsaga",
 }
 
