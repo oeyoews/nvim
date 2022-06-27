@@ -1,26 +1,37 @@
 local modules = {}
 
 modules = {
+  -- @night
   night = {
     "init",
   },
+
+  -- @packer
   packer = {
     "init",
   },
+
+  -- @perfect
   perfect = {
     "impatient",
     "filetype",
   },
+
+  -- @external
   external = {
     "tokyonight",
     "custom",
     "notify",
   },
+
+  -- @ui
   ui = {
     "indent",
     "bufferline",
     "windline",
   },
+
+  -- @tools
   tools = {
     "hop",
     "colorizer",
@@ -43,6 +54,8 @@ modules = {
     "mkdp",
     "trim",
   },
+
+  -- @lsp
   lsp = {
     "treesitter",
     "lspinstall", -- preinstall some servers

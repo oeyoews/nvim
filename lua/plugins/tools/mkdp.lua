@@ -31,6 +31,6 @@ let g:mkdp_preview_options = {
 
 augroup markdownpreview
   autocmd!
-  autocmd FileType markdown,html,txt nnoremap <silent> <leader>fm :MarkdownPreviewToggle<CR>
+  autocmd FileType markdown,html,txt nnoremap <silent> <leader>fM :MarkdownPreviewToggle<CR>
 augroup END
 ]])
