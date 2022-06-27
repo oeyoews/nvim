@@ -71,7 +71,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
   },
 })
 
-require("lspconfig").sumneko_lua.setup({
+lspconfig.sumneko_lua.setup({
   settings = {
     Lua = {
       runtime = {
