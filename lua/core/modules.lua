@@ -3,7 +3,7 @@ local modules = {}
 modules = {
   -- @packer
   packer = {
-    "init",
+    "packer",
   },
 
   -- @perfect
@@ -13,13 +13,13 @@ modules = {
 
   -- @external
   external = {
-    "tokyonight",
-    "custom",
     "notify",
   },
 
   -- @ui
   ui = {
+    "tokyonight",
+    "custom",
     "indent",
     "bufferline",
     "windline",
@@ -61,7 +61,7 @@ modules = {
 
   -- @night
   night = {
-    "init",
+    "night",
   },
 }
 
