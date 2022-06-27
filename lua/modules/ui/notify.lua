@@ -1,6 +1,7 @@
 local notify = require("notify")
 
 vim.notify = notify
+
 notify.setup({
   -- Animation style (see below for details)
   -- option: fade slide fade_in_slide_out
