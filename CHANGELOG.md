@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://gitlab.com/oeyoews/nvim/compare/v4.0.1...v4.1.0) (2022-06-27)
+
+
+### Features
+
+* rename plugins to modules and embed builtin really ([f7166a1](https://gitlab.com/oeyoews/nvim/commit/f7166a1945b990517faaba4cb5f4f0cd78a16809))
+
 ## [4.0.1](https://gitlab.com/oeyoews/nvim/compare/v4.0.0...v4.0.1) (2022-06-27)
 
 
