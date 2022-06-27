@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://gitlab.com/oeyoews/nvim/compare/v3.46.0...v4.0.0) (2022-06-27)
+
+
+### Features
+
+* use modules to replace multi init.lua ([4eed507](https://gitlab.com/oeyoews/nvim/commit/4eed507640bcae0039b0f979711824c3779f793b))
+
+
+### BREAKING CHANGES
+
+* use modules
+
 # [3.46.0](https://gitlab.com/oeyoews/nvim/compare/v3.45.2...v3.46.0) (2022-06-27)
 
 
