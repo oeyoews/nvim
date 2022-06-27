@@ -11,11 +11,6 @@ modules = {
     "filetype", -- optimize filetype startup time
   },
 
-  -- @external
-  external = {
-    "notify", -- better notification in neovim
-  },
-
   -- @ui
   ui = {
     "tokyonight", -- neovim theme
@@ -23,6 +18,8 @@ modules = {
     "indent", -- show indent line
     "bufferline", -- buffer manager
     "windline", -- statusline
+    "notify", -- better notification in neovim
+    "night", -- neovim ngihtly settings
   },
 
   -- @tools
@@ -57,11 +54,6 @@ modules = {
     "lspconfig", -- configurate lsp settings
     "null-ls", -- complete lsp configuration
     "lspsaga", -- setup lspconfig ui
-  },
-
-  -- @night
-  night = {
-    "night", -- neovim ngihtly settings
   },
 }
 

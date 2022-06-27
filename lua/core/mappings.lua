@@ -37,7 +37,6 @@ nnoremap <silent> <space>qq :q<CR>
 nnoremap <silent> <space>qa :qa<CR>
 "  nnoremap <silent> <space>qe :e!<cr>
 
-
 " better jump
 noremap L $
 noremap H 0
@@ -109,4 +108,3 @@ nnoremap <silent> <leader>helo :lua vim.notify("  Hello, Neovim", "info", {ti
 ]])
 
 -- TODO: https://github.com/LunarVim/LunarVim/blob/rolling/lua/lvim/keymappings.lua
---
