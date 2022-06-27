@@ -1,5 +1,5 @@
 -- first load impatient plugin
-require("plugins.perfect.impatient")
+require("modules.perfect.impatient")
 
 local modules = {
   "disable", -- disable settings

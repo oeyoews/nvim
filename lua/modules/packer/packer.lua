@@ -2,7 +2,7 @@ local fn = vim.fn
 
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 
-local plugins = require("plugins.packer.plugins")
+local plugins = require("modules.packer.plugins")
 
 -- @PackerSettings
 -- autoomatically install packer

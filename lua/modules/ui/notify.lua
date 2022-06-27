@@ -16,7 +16,7 @@ notify.setup({
   render = "default",
 
   -- Default timeout for notifications
-  timeout = 500,
+  timeout = 300,
 
   -- Max number of columns for messages
   max_width = nil,
@@ -41,5 +41,5 @@ notify.setup({
 })
 
 vim.cmd([[
-nnoremap <silent> <leader>bm :Notifications<cr>
+  nnoremap <silent> <leader>bm :Notifications<cr>
 ]])
