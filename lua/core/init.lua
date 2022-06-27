@@ -1,3 +1,5 @@
+require("plugins.perfect.impatient")
+
 local package = "core" -- require package
 
 local modules = {

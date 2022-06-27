@@ -1,11 +1,6 @@
 local modules = {}
 
 modules = {
-  -- @night
-  night = {
-    "init",
-  },
-
   -- @packer
   packer = {
     "init",
@@ -13,7 +8,6 @@ modules = {
 
   -- @perfect
   perfect = {
-    "impatient",
     "filetype",
   },
 
@@ -64,6 +58,12 @@ modules = {
     "null-ls",
     "lspsaga",
   },
+
+  -- @night
+  night = {
+    "init",
+  },
+
 }
 
 require("core.pcall_modules").setup(modules)
