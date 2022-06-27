@@ -34,7 +34,9 @@ local sources = {
   --   },
   -- }), -- need install markdownlint
   -- diagnostics.yamllint, -- need install yamllint
-  formatting.prettier, -- install prettier
+  formatting.prettier.with({
+    disabled_filetypes = disabled_filetypes,
+  }), -- install prettier
   diagnostics.codespell.with({
     disabled_filetypes = disabled_filetypes,
     filetypes = enabale_filetypes,
