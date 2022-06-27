@@ -2,7 +2,7 @@ vim.cmd([[
 let g:mkdp_echo_preview_url = 1
 " let g:mkdp_open_to_the_world = 1  -- nedd network
 let g:mkdp_filetypes = [ 'markdown', 'txt', 'html']
-let g:mkdp_theme = 'dark'
+" let g:mkdp_theme = 'dark'
 let g:mkdp_port = '8099'
 let g:mkdp_page_title = '「${name}」'
 
@@ -31,6 +31,6 @@ let g:mkdp_preview_options = {
 
 augroup markdownpreview
   autocmd!
-  autocmd FileType markdown,html,txt nnoremap <silent> <leader>fmm :MarkdownPreviewToggle<CR>
+  autocmd FileType markdown,html,txt nnoremap <silent> <leader>fm :MarkdownPreviewToggle<CR>
 augroup END
 ]])

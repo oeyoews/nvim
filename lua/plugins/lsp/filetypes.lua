@@ -13,6 +13,7 @@ M.filetypes = {
   "make",
   "gomod",
   "markdown",
+  "markdown_inline",
   "norg",
   "css",
   "html",
