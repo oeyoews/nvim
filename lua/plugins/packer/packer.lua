@@ -51,7 +51,7 @@ packer.init({
 })
 
 packer.startup(function(use)
-  for _, plugin in pairs(plugins) do
+  for _, plugin in pairs(plugins.plugins) do
     use(plugin)
   end
 
