@@ -66,4 +66,4 @@ modules = {
 
 }
 
-require("core.pcall_modules").setup(modules)
+require("core.pcall_modules").setup("plugins", modules)

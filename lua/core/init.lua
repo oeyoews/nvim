@@ -1,7 +1,5 @@
 require("plugins.perfect.impatient")
 
-local package = "core" -- require package
-
 local modules = {
   "disable", -- disable settings
   "options", -- basic options
@@ -10,4 +8,4 @@ local modules = {
   "modules", -- enable modules
 }
 
-require("core.pcallplus").setup(package, modules)
+require("core.pcallplus").setup("core", modules)
