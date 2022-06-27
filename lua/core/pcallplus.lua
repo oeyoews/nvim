@@ -1,5 +1,6 @@
 -- module pcall
 
+-- todo: this details debug info can't show
 local M = {}
 
 function M.setup(package, modules)
