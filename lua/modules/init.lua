@@ -42,13 +42,13 @@ modules = {
     "toggleterm", -- embed terminal
     "calendar", -- GTD?
     "quickrun", -- quickly run your code
-    "ranger", -- use ranger in neovim
     "venn", -- drawing diagram
     "fidget", -- visualize lsp status
     "mkdp", -- open markdown preview in your browser
     "trim", -- delete any blank line and trailing whitespace
     "icon_picker", -- select so much icons
     "color_picker", -- color picker
+    "ranger", -- use ranger in neovim
   },
 }
 
