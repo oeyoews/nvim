@@ -13,12 +13,10 @@ modules = {
 
   -- @UI
   ui = {
-    "tokyonight", -- neovim theme
     "custom", -- custom theme configuration
     "indent", -- show indent line
     "bufferline", -- buffer manager
     "windline", -- statusline
-    "notify", -- better notification in neovim
     "night", -- neovim ngihtly settings
   },
 
@@ -60,4 +58,8 @@ modules = {
 
 -- load plugin modules
 local entry = "modules"
+
+-- todo: sort this pairs order
+require("modules.ui.tokyonight") -- better notification in neovim
+require("modules.ui.notify") -- better notification in neovim
 require("core.pcall_modules").setup(entry, modules)

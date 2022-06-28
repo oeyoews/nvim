@@ -3,9 +3,9 @@
 -- todo: this details debug info can't show
 local M = {}
 
-function M.setup(package, modules)
+function M.setup(entry, modules)
   for _, load_module in ipairs(modules) do
-    load_module = package .. "." .. load_module
+    load_module = entry .. "." .. load_module
 
     local status_ok, _ = pcall(require, load_module)
     if not status_ok then

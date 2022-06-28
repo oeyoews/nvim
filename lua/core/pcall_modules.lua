@@ -13,7 +13,7 @@ function M.setup(entry, modules)
 
       if not status_ok then
         local plugin = "Modules"
-        vim.notify("   Failed to load " .. path, "warn", {
+        vim.notify("   Failed to load " .. connect_path, "warn", {
           title = plugin,
         })
       end
