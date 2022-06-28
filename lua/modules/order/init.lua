@@ -1,9 +1,12 @@
 local modules = {
   order = {
     "impatient",
-    "packer",
     "filetype",
+    "disable",
+    "options",
+    "functions",
     "mappings",
+    "packer",
     "tokyonight",
     "custom",
     "notify",

@@ -1,12 +1,6 @@
 local M = {}
 
 M.modules = {
-  -- @utils
-  utils = {
-    "disable", -- disable settings
-    "options", -- basic options
-    "functions", -- basic functions
-  },
 
   -- @LANG
   lang = {

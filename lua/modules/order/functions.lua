@@ -4,10 +4,6 @@ command! Scripts split | enew|pu=execute('scriptnames')
 command! -nargs=1 -complete=highlight HI enew|pu=execute('hi <args>')
 command! -nargs=?  -complete=color Themes colorscheme <args>
 
-if has("nvim-0.8.0")
-  set cmdheight=0
-  endif
-
 " function! ToggleVenn() abort
 "   let g:veen = 0
 "   if g:veen
