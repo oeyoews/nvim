@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.4.0](https://gitlab.com/oeyoews/nvim/compare/v5.3.1...v5.4.0) (2022-06-28)
+
+
+### Features
+
+* merge all message for notify ([007878d](https://gitlab.com/oeyoews/nvim/commit/007878d4ac1d3ef61eb7a35b2d928942ea5ae068))
+
 ## [5.3.1](https://gitlab.com/oeyoews/nvim/compare/v5.3.0...v5.3.1) (2022-06-28)
 
 
