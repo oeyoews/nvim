@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://gitlab.com/oeyoews/nvim/compare/v4.5.1...v5.0.0) (2022-06-28)
+
+
+### Code Refactoring
+
+* **struct:** remove core folder ([baf7355](https://gitlab.com/oeyoews/nvim/commit/baf7355991e45297d891aceb0d628f505a277b6e))
+
+
+### BREAKING CHANGES
+
+* **struct:** use module single folder
+
 ## [4.5.1](https://gitlab.com/oeyoews/nvim/compare/v4.5.0...v4.5.1) (2022-06-28)
 
 
