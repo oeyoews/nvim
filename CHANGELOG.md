@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.1](https://gitlab.com/oeyoews/nvim/compare/v5.2.0...v5.2.1) (2022-06-28)
+
+
+### Bug Fixes
+
+* remove packer to order ([b79e93a](https://gitlab.com/oeyoews/nvim/commit/b79e93af42a6b7a88c6f6d338bfc3f4875bf0b25))
+
 # [5.2.0](https://gitlab.com/oeyoews/nvim/compare/v5.1.1...v5.2.0) (2022-06-28)
 
 
