@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.5.0](https://gitlab.com/oeyoews/nvim/compare/v4.4.0...v4.5.0) (2022-06-28)
+
+
+### Features
+
+* use theme_toggle function for tokyonight ([64d8003](https://gitlab.com/oeyoews/nvim/commit/64d8003303a11a19202f03f3833938dfc0b19490))
+
 # [4.4.0](https://gitlab.com/oeyoews/nvim/compare/v4.3.0...v4.4.0) (2022-06-28)
 
 
