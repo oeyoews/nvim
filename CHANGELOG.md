@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.4.0](https://gitlab.com/oeyoews/nvim/compare/v4.3.0...v4.4.0) (2022-06-28)
+
+
+### Features
+
+* use lang replace lsp folder name ([8417585](https://gitlab.com/oeyoews/nvim/commit/8417585917184345b664dd33879da7df13136a09))
+
 # [4.3.0](https://gitlab.com/oeyoews/nvim/compare/v4.2.0...v4.3.0) (2022-06-28)
 
 
