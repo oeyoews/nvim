@@ -1,7 +1,5 @@
--- first load impatient plugin
-require("modules.perfect.impatient")
-
 local modules = {
+  "impatient", -- need first loading impatient plugin
   "disable", -- disable settings
   "options", -- basic options
   "mappings", -- basic mappings

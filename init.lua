@@ -6,4 +6,5 @@
 --- ┗━━━━━━━━━━━━━━━━━━WIP┛
 --]oeyoews]
 
+-- entry
 require("core")

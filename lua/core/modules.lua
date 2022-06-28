@@ -7,8 +7,10 @@ modules = {
   },
 
   -- @PERFECt
-  perfect = {
-    -- "filetype", -- optimize filetype startup time
+  order = {
+    "filetype", -- optimize filetype startup time
+    "tokyonight",
+    "notify",
   },
 
   -- @UI
@@ -58,10 +60,5 @@ modules = {
 
 -- load plugin modules
 local entry = "modules"
-
--- todo: sort this pairs order
-require("modules.perfect.filetype")
-require("modules.ui.tokyonight") -- better notification in neovim
-require("modules.ui.notify") -- better notification in neovim
 
 require("core.pcall_modules").setup(entry, modules)
