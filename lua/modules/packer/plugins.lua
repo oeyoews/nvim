@@ -1,11 +1,12 @@
 local M = {}
 
 M.plugins = {
-  -- @PACKER
-  "wbthomason/packer.nvim",
-
+  "lewis6991/impatient.nvim",
   -- @PERFECT
   "nathom/filetype.nvim",
+
+  -- @PACKER
+  "wbthomason/packer.nvim",
 
   -- @UI
   "lukas-reineke/indent-blankline.nvim",
@@ -41,7 +42,6 @@ M.plugins = {
   "oeyoews/vim-capslock",
 
   -- @NECESSARY
-  "lewis6991/impatient.nvim",
   "kyazdani42/nvim-web-devicons",
   "nvim-lua/plenary.nvim",
   "stevearc/dressing.nvim",

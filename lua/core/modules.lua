@@ -8,7 +8,7 @@ modules = {
 
   -- @PERFECt
   perfect = {
-    "filetype", -- optimize filetype startup time
+    -- "filetype", -- optimize filetype startup time
   },
 
   -- @UI
@@ -34,7 +34,6 @@ modules = {
     "telescope", -- can do anything
     "whichkey", -- show your key bindings
     "toggleterm", -- embed terminal
-    "icon_picker", -- select so much icons
     "calendar", -- GTD?
     "quickrun", -- quickly run your code
     "ranger", -- use ranger in neovim
@@ -42,6 +41,7 @@ modules = {
     "fidget", -- visualize lsp status
     "mkdp", -- open markdown preview in your browser
     "trim", -- delete any blank line and trailing whitespace
+    "icon_picker", -- select so much icons
     "color_picker", -- color picker
   },
 
@@ -60,6 +60,8 @@ modules = {
 local entry = "modules"
 
 -- todo: sort this pairs order
+require("modules.perfect.filetype")
 require("modules.ui.tokyonight") -- better notification in neovim
 require("modules.ui.notify") -- better notification in neovim
+
 require("core.pcall_modules").setup(entry, modules)
