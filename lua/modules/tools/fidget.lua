@@ -3,7 +3,7 @@ local fidget = require("fidget")
 fidget.setup({
   text = {
     spinner = "dots_pulse",
-    done = "﫟",
+    done = "", -- 﫟
   },
   align = {
     bottom = true,
