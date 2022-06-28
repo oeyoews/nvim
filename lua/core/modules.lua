@@ -1,17 +1,17 @@
 local modules = {}
 
 modules = {
-  -- @packer
+  -- @PACKER
   packer = {
     "packer", -- neovim plugin manager
   },
 
-  -- @perfect
+  -- @PERFECt
   perfect = {
     "filetype", -- optimize filetype startup time
   },
 
-  -- @ui
+  -- @UI
   ui = {
     "tokyonight", -- neovim theme
     "custom", -- custom theme configuration
@@ -22,7 +22,7 @@ modules = {
     "night", -- neovim ngihtly settings
   },
 
-  -- @tools
+  -- @TOOLS
   tools = {
     "hop", -- jump anywhere
     "colorizer", -- show color in neovim
@@ -44,9 +44,10 @@ modules = {
     "fidget", -- visualize lsp status
     "mkdp", -- open markdown preview in your browser
     "trim", -- delete any blank line and trailing whitespace
+    "color_picker", -- color picker
   },
 
-  -- @lsp
+  -- @LSP
   lsp = {
     "treesitter", -- friendly highlight your code
     "lspinstall", -- preinstall some servers

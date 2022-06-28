@@ -71,6 +71,7 @@ M.plugins = {
   "hrsh7th/cmp-path",
 
   -- @TEMPORARY
+  "ziontee113/color-picker.nvim",
 
   -- @Disabable
   {
