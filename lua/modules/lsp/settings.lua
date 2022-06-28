@@ -1,5 +1,6 @@
 local M = {}
 
+-- sumneko settings
 M.lua = {
   Lua = {
     diagnostics = {
