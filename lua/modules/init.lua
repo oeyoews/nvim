@@ -14,6 +14,7 @@ M.modules = {
 
   -- @TOOLS
   tools = {
+    "trouble",
     "indent", -- show indent line
     "windline", -- statusline
     "hop", -- jump anywhere

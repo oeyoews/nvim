@@ -30,6 +30,10 @@ M.plugins = {
       "p00f/nvim-ts-rainbow",
     },
   },
+  {
+    "folke/trouble.nvim",
+    requires = "kyazdani42/nvim-web-devicons",
+  },
   "williamboman/nvim-lsp-installer",
   "hrsh7th/nvim-cmp",
   "neovim/nvim-lspconfig",
