@@ -1,11 +1,6 @@
 local modules = {}
 
 modules = {
-  -- @PACKER
-  packer = {
-    "packer", -- neovim plugin manager
-  },
-
   -- @utils
   utils = {
     "disable", -- disable settings

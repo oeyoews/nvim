@@ -1,6 +1,7 @@
 local modules = {
   order = {
     "impatient",
+    "packer",
     "filetype",
     "mappings",
     "tokyonight",
