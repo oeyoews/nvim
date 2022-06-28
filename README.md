@@ -38,19 +38,6 @@
 <details>
 <summary>INFO</summary>
 
-```
-       ┌────────────────┐
-       ├─►lua/modules◄──┤
-       ├──┬─────────────┤
-       │  ├──►lang      │
-       │  ├──►order     │
-       │  ├──►packer    │
-       │  ├──►tools     │
-       │  └──►utils     │
-       └────────────────┘
-
-```
-
 </details>
 
 ## Dependencies
