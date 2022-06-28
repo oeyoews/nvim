@@ -72,6 +72,6 @@ packer.startup(function(use)
 end)
 
 vim.cmd([[
-  nnoremap <Leader>vs <Cmd>PackerSync<CR>
-  nnoremap <silent> <leader>so <cmd>so % <bar> lua vim.notify("reload current file")<cr>
+  nnoremap <space>vs <Cmd>PackerSync<CR>
+  nnoremap <silent> <space>so <cmd>so % <bar> lua vim.notify("reload current file")<cr>
 ]])

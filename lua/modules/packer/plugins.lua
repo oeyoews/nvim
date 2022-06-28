@@ -14,34 +14,6 @@ M.plugins = {
   "akinsho/bufferline.nvim",
   "oeyoews/windline.nvim",
 
-  -- @TOOLS
-  "phaazon/hop.nvim",
-  "norcalli/nvim-colorizer.lua",
-  "lewis6991/gitsigns.nvim",
-  "numToStr/Comment.nvim",
-  "windwp/nvim-autopairs",
-  "Pocco81/HighStr.nvim",
-  "nvim-neorg/neorg",
-  "folke/persistence.nvim",
-  "oeyoews/tabout.nvim",
-  "nvim-telescope/telescope.nvim",
-  "folke/which-key.nvim",
-  "akinsho/toggleterm.nvim",
-  "ziontee113/icon-picker.nvim",
-  "itchyny/calendar.vim",
-  "kevinhwang91/rnvimr",
-  "jbyuki/venn.nvim",
-  "j-hui/fidget.nvim",
-  {
-    "iamcco/markdown-preview.nvim",
-    run = "cd app && npm install",
-  },
-  "cappyzawa/trim.nvim",
-  "ekickx/clipboard-image.nvim",
-  "oeyoews/vim-startuptime",
-  "thinca/vim-quickrun",
-  "oeyoews/vim-capslock",
-
   -- @NECESSARY
   "kyazdani42/nvim-web-devicons",
   "nvim-lua/plenary.nvim",
@@ -73,6 +45,35 @@ M.plugins = {
 
   -- @TEMPORARY
   "ziontee113/color-picker.nvim", -- https://www.youtube.com/watch?v=eWRoxJatH8A
+
+  -- @TOOLS
+  "nvim-telescope/telescope.nvim",
+  "phaazon/hop.nvim",
+  "norcalli/nvim-colorizer.lua",
+  "lewis6991/gitsigns.nvim",
+  "numToStr/Comment.nvim",
+  "windwp/nvim-autopairs",
+  "Pocco81/HighStr.nvim",
+  "nvim-neorg/neorg",
+  "folke/persistence.nvim",
+  "oeyoews/tabout.nvim",
+  "folke/which-key.nvim",
+  "akinsho/toggleterm.nvim",
+  "ziontee113/icon-picker.nvim",
+  "itchyny/calendar.vim",
+  "kevinhwang91/rnvimr",
+  "jbyuki/venn.nvim",
+  "j-hui/fidget.nvim",
+  {
+    "iamcco/markdown-preview.nvim",
+    run = "cd app && npm install",
+  },
+  "cappyzawa/trim.nvim",
+  "ekickx/clipboard-image.nvim",
+  "oeyoews/vim-startuptime",
+  "thinca/vim-quickrun",
+  "oeyoews/vim-capslock",
+
 }
 
 return M

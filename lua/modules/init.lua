@@ -10,7 +10,6 @@ modules = {
   utils = {
     "disable", -- disable settings
     "options", -- basic options
-    "mappings", -- basic mappings
     "functions", -- basic functions
   },
 
@@ -58,4 +57,4 @@ local entry = "modules"
 -- need order load
 require("modules.order")
 
-require("modules.utils.pcall_modules").setup(entry, modules)
+require("modules.utils.pcall").setup(entry, modules)

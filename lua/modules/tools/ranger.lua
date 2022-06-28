@@ -65,7 +65,6 @@ let g:rnvimr_presets = [
 " Only use initial preset layout
 " let g:rnvimr_presets = [{}]
 
-
 " Customize the initial layout
 let g:rnvimr_layout = {
 \ 'relative': 'editor',
@@ -76,9 +75,6 @@ let g:rnvimr_layout = {
 \ 'style': 'minimal'
 \ }
 
-" rnvimr TODO highlight
-nnoremap <silent> <leader>ft :RnvimrToggle<CR>
-
 " Fullscreen for initial layout
 let g:rnvimr_layout = {
 \ 'relative': 'editor',
@@ -88,4 +84,8 @@ let g:rnvimr_layout = {
 \ 'row': 0,
 \ 'style': 'minimal'
 \ }
+
+" rnvimr TODO highlight
+nnoremap <silent> <leader>ft :RnvimrToggle<CR>
+
 ]])
