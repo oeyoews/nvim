@@ -72,28 +72,6 @@ M.plugins = {
 
   -- @TEMPORARY
   "ziontee113/color-picker.nvim", -- https://www.youtube.com/watch?v=eWRoxJatH8A
-  "voldikss/vim-translator",
-
-  -- @Disabable
-  {
-    "rmagatti/goto-preview",
-    config = function()
-      require("goto-preview").setup({})
-    end,
-    disable = true,
-  },
-  {
-    "ianva/vim-youdao-translater",
-    disable = true,
-  },
-  {
-    "oeyoews/vim-better-whitespace",
-    disable = true,
-  },
-  {
-    "mfussenegger/nvim-lint",
-    disable = true,
-  },
 }
 
 return M

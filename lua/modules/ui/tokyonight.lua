@@ -16,6 +16,7 @@ end
 local theme = theme_toggle()
 
 g.tokyonight_style = theme
+
 tokyonight.colorscheme()
 
 -- option: storm(normal), day, night
