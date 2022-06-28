@@ -12,7 +12,7 @@ local disabled_filetypes = {
 }
 
 -- @filetypes
-local enabale_filetypes = require("modules.lang.filetypes")
+local enabale_filetypes = require("modules.langs.filetypes")
 
 enabale_filetypes = enabale_filetypes.filetypes
 

@@ -3,9 +3,9 @@ local lspconfig = require("lspconfig")
 -- if this servers not installed, cmp will callback nvim-lsp-install to install them
 -- fix: how to config according filetype automation install servers
 -- @servers_lua
-local lsp_servers = require("modules.lang.servers")
+local lsp_servers = require("modules.langs.servers")
 
-local settings = require("modules.lang.settings")
+local settings = require("modules.langs.settings")
 
 local lspformat = require("lsp-format")
 

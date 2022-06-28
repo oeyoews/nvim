@@ -3,7 +3,7 @@ local M = {}
 M.modules = {
 
   -- @LANG
-  lang = {
+  langs = {
     "treesitter", -- friendly highlight your code
     "lspinstall", -- preinstall some servers
     "cmp", -- config completion
