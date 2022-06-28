@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.2.0](https://gitlab.com/oeyoews/nvim/compare/v4.1.0...v4.2.0) (2022-06-28)
+
+
+### Features
+
+* correct lsp settings ([b8f6a24](https://gitlab.com/oeyoews/nvim/commit/b8f6a2429f06e50237212c31d0538bf1ff81aaa2))
+
 # [4.1.0](https://gitlab.com/oeyoews/nvim/compare/v4.0.1...v4.1.0) (2022-06-27)
 
 
