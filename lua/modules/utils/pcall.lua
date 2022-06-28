@@ -1,6 +1,9 @@
 local M = {}
 
-function M.setup(entry, modules)
+function M.setup(modules, entry)
+  -- setup second entry default value
+  entry = entry or "modules"
+
   for package, module in pairs(modules) do
     for _, load_module in ipairs(module) do
       local path = { entry, package, load_module }

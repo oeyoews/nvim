@@ -73,7 +73,6 @@ M.plugins = {
   "oeyoews/vim-startuptime",
   "thinca/vim-quickrun",
   "oeyoews/vim-capslock",
-
 }
 
 return M

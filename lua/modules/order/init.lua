@@ -10,6 +10,4 @@ local modules = {
   },
 }
 
-local entry = "modules"
-
-require("modules.utils.pcall").setup(entry, modules)
+require("modules.utils.pcall").setup(modules)

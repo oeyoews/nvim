@@ -51,10 +51,7 @@ modules = {
   },
 }
 
--- load plugin modules
-local entry = "modules"
-
 -- need order load
 require("modules.order")
 
-require("modules.utils.pcall").setup(entry, modules)
+require("modules.utils.pcall").setup(modules)
