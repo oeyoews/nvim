@@ -1,6 +1,15 @@
-require("modules.order.impatient")
-require("modules.order.filetype")
-require("modules.order.tokyonight")
-require("modules.order.custom")
-require("modules.order.bufferline")
-require("modules.order.notify")
+local modules = {
+  order = {
+    "impatient",
+    "filetype",
+    "mappings",
+    "tokyonight",
+    "custom",
+    "notify",
+    "bufferline",
+  },
+}
+
+local entry = "modules"
+
+require("modules.utils.pcall").setup(entry, modules)
