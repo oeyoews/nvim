@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.5.1](https://gitlab.com/oeyoews/nvim/compare/v4.5.0...v4.5.1) (2022-06-28)
+
+
+### Bug Fixes
+
+* adjust load color ([d6cd213](https://gitlab.com/oeyoews/nvim/commit/d6cd2132a6caa5e9fd1c06af6f036c10ebb91468))
+
 # [4.5.0](https://gitlab.com/oeyoews/nvim/compare/v4.4.0...v4.5.0) (2022-06-28)
 
 
