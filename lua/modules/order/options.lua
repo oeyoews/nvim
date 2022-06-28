@@ -58,13 +58,13 @@ local default_options = {
   -- https://github.com/LunarVim/LunarVim/issues/2294#issuecomment-1045810429
   -- eob to hide tilder
   fillchars = {
-    horiz = '━',
-    horizup = '┻',
-    horizdown = '┳',
-    vert = '┃',
-    vertleft = '┨',
-    vertright = '┣',
-    verthoriz = '╋',
+    horiz = "━",
+    horizup = "┻",
+    horizdown = "┳",
+    vert = "┃",
+    vertleft = "┨",
+    vertright = "┣",
+    verthoriz = "╋",
     eob = " ", -- suppress ~ at EndOfBuffer
     -- vert = "⣿", -- alternatives │▕
     -- diff = "╱", -- alternatives = ⣿ ░ ─

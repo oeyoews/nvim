@@ -57,8 +57,8 @@ M.plugins = {
     "folke/todo-comments.nvim",
     requires = "nvim-lua/plenary.nvim",
     config = function()
-      require("todo-comments").setup {}
-    end
+      require("todo-comments").setup({})
+    end,
   },
   "nvim-telescope/telescope.nvim",
   "phaazon/hop.nvim",

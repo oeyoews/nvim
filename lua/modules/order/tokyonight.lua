@@ -11,7 +11,7 @@ local theme = theme_toggle()
 
 vim.g.tokyonight_style = theme
 
-package.loaded['tokyonight.config'] = nil
+package.loaded["tokyonight.config"] = nil
 local tokyonight = require("tokyonight")
 
 tokyonight.colorscheme()

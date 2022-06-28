@@ -147,7 +147,7 @@ nnoremap <silent> <space>fi <cmd>call FindInit()<cr>
 "
 augroup refreshdotfile
 autocmd!
-au BufWrite ~/.local/share/chezmoi/dot_* :call ChezmoiSource()
+au BufWrite ~/.local/share/chezmoi/dot_*/**/ :call ChezmoiSource()
 augroup END
 
 " add i in the end of line, to enter insert mode
