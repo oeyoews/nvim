@@ -53,7 +53,7 @@ M.plugins = {
     requires = {
       "nvim-treesitter/nvim-treesitter-refactor",
       "p00f/nvim-ts-rainbow",
-    }
+    },
   },
   "williamboman/nvim-lsp-installer",
   "hrsh7th/nvim-cmp",
