@@ -10,4 +10,6 @@ local modules = {
 }
 
 -- neovim configuration loading entry
-require("core.pcallplus").setup("core", modules)
+local entry = "core"
+
+require("core.pcallplus").setup(entry, modules)

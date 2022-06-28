@@ -59,4 +59,5 @@ modules = {
 }
 
 -- load plugin modules
-require("core.pcall_modules").setup("modules", modules)
+local entry = "modules"
+require("core.pcall_modules").setup(entry, modules)
