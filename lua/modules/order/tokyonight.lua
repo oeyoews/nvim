@@ -1,9 +1,3 @@
-local g = vim.g
-
-local tokyonight = require("tokyonight")
-
--- math.randomseed(os.time())
-
 local function theme_toggle()
   local h = tonumber(os.date("%H"))
   if h > 8 and h < 20 then
@@ -15,7 +9,10 @@ end
 
 local theme = theme_toggle()
 
-g.tokyonight_style = theme
+vim.g.tokyonight_style = theme
+
+package.loaded['tokyonight.config'] = nil
+local tokyonight = require("tokyonight")
 
 tokyonight.colorscheme()
 

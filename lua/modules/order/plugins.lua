@@ -3,6 +3,8 @@ local M = {}
 M.plugins = {
   "lewis6991/impatient.nvim",
 
+  -- "rebelot/kanagawa.nvim",
+
   -- @PERFECT
   "nathom/filetype.nvim",
 
@@ -47,6 +49,13 @@ M.plugins = {
   "ziontee113/color-picker.nvim", -- https://www.youtube.com/watch?v=eWRoxJatH8A
 
   -- @TOOLS
+  {
+    "folke/todo-comments.nvim",
+    requires = "nvim-lua/plenary.nvim",
+    config = function()
+      require("todo-comments").setup {}
+    end
+  },
   "nvim-telescope/telescope.nvim",
   "phaazon/hop.nvim",
   "norcalli/nvim-colorizer.lua",
