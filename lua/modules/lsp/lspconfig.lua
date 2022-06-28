@@ -5,6 +5,8 @@ local lspconfig = require("lspconfig")
 -- @servers_lua
 local lsp_servers = require("modules.lsp.servers")
 
+local settings = require("modules.lsp.settings")
+
 local lspformat = require("lsp-format")
 
 -- @nvim_cmp
@@ -39,12 +41,21 @@ capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 local on_attach = function(client)
   lspformat.on_attach(client)
 end
+
 -- For general Lsp server
 for _, lsp_server in ipairs(lsp_servers.servers) do
-  lspconfig[lsp_server].setup({
-    on_attach = on_attach,
-    capabilities = capabilities,
-  })
+  if lsp_server == "sumneko_lua" then
+    lspconfig[lsp_server].setup({
+      on_attach = on_attach,
+      capabilities = capabilities,
+      settings = settings.lua,
+    })
+  else
+    lspconfig[lsp_server].setup({
+      on_attach = on_attach,
+      capabilities = capabilities,
+    })
+  end
 end
 
 vim.cmd([[
