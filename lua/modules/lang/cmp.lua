@@ -102,8 +102,8 @@ local sources = {
 }
 
 local menu = {
-  nvim_lsp = "LSP)",
-  buffer = "Buffer",
+  nvim_lsp = " ",
+  buffer = " ﬘",
   ultisnips = "Snippet",
   nvim_lua = "Lua",
   path = "Path",

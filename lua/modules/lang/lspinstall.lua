@@ -1,6 +1,6 @@
 local lsp_installer = require("nvim-lsp-installer")
 
-local lspinstall_servers = require("modules.lsp.servers").servers
+local lspinstall_servers = require("modules.lang.servers").servers
 
 lsp_installer.setup({
   automatic_installation = false, -- automatic_installation is confliction for ensure_installed

@@ -47,8 +47,8 @@ modules = {
     "color_picker", -- color picker
   },
 
-  -- @LSP
-  lsp = {
+  -- @LANG
+  lang = {
     "treesitter", -- friendly highlight your code
     "lspinstall", -- preinstall some servers
     "cmp", -- config completion

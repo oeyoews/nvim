@@ -46,7 +46,7 @@ M.plugins = {
   "nvim-lua/plenary.nvim",
   "stevearc/dressing.nvim",
 
-  -- @LSP
+  -- @LANG
   {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
@@ -71,9 +71,21 @@ M.plugins = {
   "hrsh7th/cmp-path",
 
   -- @TEMPORARY
-  "ziontee113/color-picker.nvim",
+  "ziontee113/color-picker.nvim", -- https://www.youtube.com/watch?v=eWRoxJatH8A
+  "voldikss/vim-translator",
 
   -- @Disabable
+  {
+    'rmagatti/goto-preview',
+    config = function()
+      require('goto-preview').setup {}
+    end,
+    disable = true,
+  },
+  {
+    "ianva/vim-youdao-translater",
+    disable = true,
+  },
   {
     "oeyoews/vim-better-whitespace",
     disable = true,
