@@ -72,6 +72,10 @@ packer.startup(function(use)
 end)
 
 vim.cmd([[
+  function! FindPlugin() abort
+  find ~/.config/nvim/lua/modules/order/plugins.lua
+  endfunction
   nnoremap <space>vs <Cmd>PackerSync<CR>
   nnoremap <silent> <space>so <cmd>so % <bar> lua vim.notify("reload current file")<cr>
+  nnoremap <silent> <space>fp <cmd>call FindPlugin()<cr>
 ]])
