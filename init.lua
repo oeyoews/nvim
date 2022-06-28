@@ -7,4 +7,7 @@
 --]oeyoews]
 
 -- entry
-require("core")
+require("modules.order")
+
+-- load modules
+require("modules.modules")

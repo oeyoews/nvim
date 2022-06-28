@@ -6,24 +6,19 @@ modules = {
     "packer", -- neovim plugin manager
   },
 
-  -- @PERFECt
-  order = {
-    "filetype", -- optimize filetype startup time
-    "tokyonight",
-    "notify",
-  },
-
-  -- @UI
-  ui = {
-    "custom", -- custom theme configuration
-    "indent", -- show indent line
-    "bufferline", -- buffer manager
-    "windline", -- statusline
-    "night", -- neovim ngihtly settings
+  -- @utils
+  utils = {
+    "disable", -- disable settings
+    "options", -- basic options
+    "mappings", -- basic mappings
+    "functions", -- basic functions
   },
 
   -- @TOOLS
   tools = {
+    "filetype", -- optimize filetype startup time
+    "indent", -- show indent line
+    "windline", -- statusline
     "hop", -- jump anywhere
     "colorizer", -- show color in neovim
     "gitsigns", -- show git changes in signcolumn
@@ -61,4 +56,14 @@ modules = {
 -- load plugin modules
 local entry = "modules"
 
-require("core.pcall_modules").setup(entry, modules)
+-- optimize startup time, need first loading impatient plugin
+local ok, impatient = pcall(require, "impatient")
+
+if not ok then
+  vim.notify("   impatient not founded")
+  return
+end
+
+impatient.enable_profile()
+
+require("modules.utils.pcall_modules").setup(entry, modules)

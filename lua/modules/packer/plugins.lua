@@ -2,13 +2,14 @@ local M = {}
 
 M.plugins = {
   "lewis6991/impatient.nvim",
+
   -- @PERFECT
   "nathom/filetype.nvim",
 
   -- @PACKER
   "wbthomason/packer.nvim",
 
-  -- @UI
+  -- @ORDER
   "lukas-reineke/indent-blankline.nvim",
   "akinsho/bufferline.nvim",
   "oeyoews/windline.nvim",
