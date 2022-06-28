@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.1](https://gitlab.com/oeyoews/nvim/compare/v5.3.0...v5.3.1) (2022-06-28)
+
+
+### Bug Fixes
+
+* adjust modules file ([fe6caf0](https://gitlab.com/oeyoews/nvim/commit/fe6caf0acb60ce44bdf47a181e2a26299174452d))
+
 # [5.3.0](https://gitlab.com/oeyoews/nvim/compare/v5.2.1...v5.3.0) (2022-06-28)
 
 
