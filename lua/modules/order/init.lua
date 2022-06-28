@@ -1,3 +1,5 @@
+require("modules.order.impatient")
+require("modules.order.filetype")
 require("modules.order.tokyonight")
 require("modules.order.custom")
 require("modules.order.bufferline")

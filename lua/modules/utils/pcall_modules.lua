@@ -7,9 +7,6 @@ function M.setup(entry, modules)
       connect_path = table.concat(path, ".")
       local status_ok, _ = pcall(require, connect_path)
 
-      -- path = entry .. "." .. package .. "." .. load_module
-      -- local status_ok, _ = pcall(require, path)
-
       if not status_ok then
         local plugin = "Modules"
         vim.notify("   Failed to load " .. connect_path, "warn", {

@@ -6,8 +6,5 @@
 --- ┗━━━━━━━━━━━━━━━━━━WIP┛
 --]oeyoews]
 
--- entry
-require("modules.order")
-
 -- load modules
-require("modules.modules")
+require("modules")

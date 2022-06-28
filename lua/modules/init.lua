@@ -14,9 +14,18 @@ modules = {
     "functions", -- basic functions
   },
 
+  -- @LANG
+  lang = {
+    "treesitter", -- friendly highlight your code
+    "lspinstall", -- preinstall some servers
+    "cmp", -- config completion
+    "lspconfig", -- configurate lsp settings
+    "null-ls", -- complete lsp configuration
+    "lspsaga", -- setup lspconfig ui
+  },
+
   -- @TOOLS
   tools = {
-    "filetype", -- optimize filetype startup time
     "indent", -- show indent line
     "windline", -- statusline
     "hop", -- jump anywhere
@@ -41,29 +50,12 @@ modules = {
     "icon_picker", -- select so much icons
     "color_picker", -- color picker
   },
-
-  -- @LANG
-  lang = {
-    "treesitter", -- friendly highlight your code
-    "lspinstall", -- preinstall some servers
-    "cmp", -- config completion
-    "lspconfig", -- configurate lsp settings
-    "null-ls", -- complete lsp configuration
-    "lspsaga", -- setup lspconfig ui
-  },
 }
 
 -- load plugin modules
 local entry = "modules"
 
--- optimize startup time, need first loading impatient plugin
-local ok, impatient = pcall(require, "impatient")
-
-if not ok then
-  vim.notify("   impatient not founded")
-  return
-end
-
-impatient.enable_profile()
+-- need order load
+require("modules.order")
 
 require("modules.utils.pcall_modules").setup(entry, modules)
