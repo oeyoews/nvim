@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://gitlab.com/oeyoews/nvim/compare/v5.0.0...v5.1.0) (2022-06-28)
+
+
+### Features
+
+* continue change some module struct ([fe70d17](https://gitlab.com/oeyoews/nvim/commit/fe70d17bd115d5460113d4ce68db71a71562fd88))
+
 # [5.0.0](https://gitlab.com/oeyoews/nvim/compare/v4.5.1...v5.0.0) (2022-06-28)
 
 
