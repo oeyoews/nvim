@@ -50,6 +50,10 @@ M.plugins = {
   {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
+    requires = {
+      "nvim-treesitter/nvim-treesitter-refactor",
+      "p00f/nvim-ts-rainbow",
+    }
   },
   "williamboman/nvim-lsp-installer",
   "hrsh7th/nvim-cmp",
@@ -57,8 +61,6 @@ M.plugins = {
   "jose-elias-alvarez/null-ls.nvim",
   "tami5/lspsaga.nvim",
   "lukas-reineke/lsp-format.nvim",
-  "nvim-treesitter/nvim-treesitter-refactor",
-  "p00f/nvim-ts-rainbow",
   "honza/vim-snippets",
   "SirVer/ultisnips",
   "fhill2/telescope-ultisnips.nvim",
