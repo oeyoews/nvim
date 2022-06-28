@@ -75,7 +75,7 @@ find ~/.config/nvim/init.lua
 endfunction
 
 function! FindModules() abort
-find ~/.config/nvim/lua/modules/init.lua
+find ~/.config/nvim/oeyoews_modules.lua
 endfunction
 
 " open nvim config file

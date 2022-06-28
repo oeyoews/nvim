@@ -1,6 +1,6 @@
-local modules = {}
+local M = {}
 
-modules = {
+M.modules = {
   -- @utils
   utils = {
     "disable", -- disable settings
@@ -46,7 +46,4 @@ modules = {
   },
 }
 
--- need order load
-require("modules.order")
-
-require("modules.utils.pcall").setup(modules)
+return M

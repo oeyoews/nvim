@@ -1,10 +1,10 @@
---[oeyoews[
---- ┏━━━━━━━init.lua━━━━━━┓
---- ┃ 1━━━━┓       2━━━━┓ ┃────────┐
---- ┃ ┃core┃━━━━━━►┃init┃ ┃        │
---- ┃ ┗━━━━┛       ┗━━━━┛ ┃        └─────► by @oeyoews 2022-06-24T02:18:33
---- ┗━━━━━━━━━━━━━━━━━━WIP┛
---]oeyoews]
+-- neovim version need
+if vim.fn.has("nvim-0.7") ~= 1 then
+  vim.notify("   Please update your neovim to latest")
+  return
+end
 
--- load modules
-require("modules")
+-- need order load
+require("modules.order")
+
+require("modules.utils.pcall").setup(require("oeyoews_modules").modules)
