@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0](https://gitlab.com/oeyoews/nvim/compare/v5.1.1...v5.2.0) (2022-06-28)
+
+
+### Features
+
+* setup default value ([c0660dc](https://gitlab.com/oeyoews/nvim/commit/c0660dc6cbc129c220d054832756d3572d5450fe))
+
 ## [5.1.1](https://gitlab.com/oeyoews/nvim/compare/v5.1.0...v5.1.1) (2022-06-28)
 
 
