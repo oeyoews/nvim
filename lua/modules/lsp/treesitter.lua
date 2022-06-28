@@ -2,6 +2,7 @@ local ok, nvim_treesitter_configs = pcall(require, "nvim-treesitter.configs")
 
 if not ok then
   vim.notify("  tree_configs not founded")
+  return
 end
 
 -- @Mirror_nvim_treesitter
