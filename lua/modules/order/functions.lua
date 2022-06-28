@@ -70,13 +70,8 @@ function! FindInit() abort
 find ~/.config/nvim/init.lua
 endfunction
 
-function! FindModules() abort
-find ~/.config/nvim/oeyoews_modules.lua
-endfunction
-
 " open nvim config file
 nnoremap <silent> <space>fi <cmd>call FindInit()<cr>
-nnoremap <silent> <space>fm <cmd>call FindModules()<cr>
 " nnoremap <silent> <space>fi :edit ~/.config/nvim/init.lua<cr>
 
 " TODO: write a function, adjust it's dir

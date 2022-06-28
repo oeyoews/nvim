@@ -13,4 +13,4 @@ end
 require("modules.order")
 
 -- load plugin modules
-require("modules.utils.pcall").setup(require("oeyoews_modules").modules)
+require("modules.utils.pcall").setup(require("modules").modules)
