@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.3.0](https://gitlab.com/oeyoews/nvim/compare/v4.2.0...v4.3.0) (2022-06-28)
+
+
+### Features
+
+* add color picker ([7a378c9](https://gitlab.com/oeyoews/nvim/commit/7a378c97dbeec93284c52900a5a837835862e6b9))
+
 # [4.2.0](https://gitlab.com/oeyoews/nvim/compare/v4.1.0...v4.2.0) (2022-06-28)
 
 
