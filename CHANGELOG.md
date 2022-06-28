@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.3.0](https://gitlab.com/oeyoews/nvim/compare/v5.2.1...v5.3.0) (2022-06-28)
+
+
+### Features
+
+* split modules file to external ([8f2a286](https://gitlab.com/oeyoews/nvim/commit/8f2a2861cba90b8971a8ef8003f95d3ec75fc0c9))
+
 ## [5.2.1](https://gitlab.com/oeyoews/nvim/compare/v5.2.0...v5.2.1) (2022-06-28)
 
 
