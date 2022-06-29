@@ -2,7 +2,6 @@ column_width = 120
 line_endings = "Unix"
 indent_type = "Spaces"
 indent_width = 2
-# option: ForceSingle
-quote_style = "AutoPreferDouble"
+quote_style = "AutoPreferDouble" # option: ForceSingle
 # call_parentheses = "Always"
 no_call_parentheses = false
