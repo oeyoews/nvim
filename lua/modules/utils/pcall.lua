@@ -1,5 +1,6 @@
 local M = {}
 
+-- PERF: add log file
 -- suit for three layer modules
 function M.setup(modules, entry)
   -- setup second entry default value
