@@ -1,17 +1,4 @@
-snippet cb "block" b
----[[
-$1
---]]
-endsnippet
-
-#--[=[
-snippet cc "comment"
---[=[
-
-$1--]=]
-endsnippet
-
-snippet pp "adjust plugin"
+snippet pp "adjust plugin" b
 local ok, ${1:name} = pcall(require, "$1")
 
 if not ok then
@@ -35,13 +22,13 @@ end
 return M
 endsnippet
 
-snippet template "lua template"
+snippet template "lua template" b
 -- @fileName: ${0:`!p snip.rv = (snip.basename or "name") + ".lua"`}
 -- @description: $1
 
 endsnippet
 
-snippet M "M module"
+snippet M "M module" b
 local M = {}
 
 $1
