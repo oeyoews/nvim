@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.3](https://gitlab.com/oeyoews/nvim/compare/v5.5.2...v5.5.3) (2022-06-29)
+
+
+### Bug Fixes
+
+* remove automatically insntall plugin ([dddc66d](https://gitlab.com/oeyoews/nvim/commit/dddc66d3434edf4fea972e3c4fc4d5309bcd2692))
+
 ## [5.5.2](https://gitlab.com/oeyoews/nvim/compare/v5.5.1...v5.5.2) (2022-06-29)
 
 
