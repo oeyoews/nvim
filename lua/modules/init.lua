@@ -14,10 +14,10 @@ M.modules = {
 
   -- @TOOLS
   tools = {
+    "windline", -- statusline
     "todo_comments",
     "trouble",
     "indent", -- show indent line
-    "windline", -- statusline
     "hop", -- jump anywhere
     "colorizer", -- show color in neovim
     "gitsigns", -- show git changes in signcolumn
