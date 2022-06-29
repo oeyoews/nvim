@@ -33,7 +33,13 @@ M.plugins = {
     requires = "kyazdani42/nvim-web-devicons",
   },
   "williamboman/nvim-lsp-installer",
-  "hrsh7th/nvim-cmp",
+  {
+    "hrsh7th/nvim-cmp",
+    requires = {
+      "quangnguyen30192/cmp-nvim-ultisnips",
+      "hrsh7th/cmp-buffer",
+    }
+  },
   "neovim/nvim-lspconfig",
   "jose-elias-alvarez/null-ls.nvim",
   "tami5/lspsaga.nvim",
@@ -41,9 +47,7 @@ M.plugins = {
   "honza/vim-snippets",
   "SirVer/ultisnips",
   "fhill2/telescope-ultisnips.nvim",
-  "quangnguyen30192/cmp-nvim-ultisnips",
   "hrsh7th/cmp-nvim-lsp",
-  "hrsh7th/cmp-buffer",
   "onsails/lspkind-nvim",
   "hrsh7th/cmp-path",
 
