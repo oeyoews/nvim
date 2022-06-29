@@ -10,7 +10,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
   -- PERF:  add sleep function to beeter output
   vim.notify(
     [[   You have not inistall packer.nvim
-   Cloning packer]],
+   Cloning packer.nvim]],
     "info"
   )
   packer_bootstrap = fn.system({
@@ -66,8 +66,8 @@ packer.startup(function(use)
     -- packer.sync()
     packer.install()
   else
-    -- automatically packer_compiled on startup
     packer.install()
+    -- automatically packer_compiled on startup
     packer.compile()
     packer.clean()
   end
