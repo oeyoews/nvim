@@ -73,9 +73,9 @@ packer.startup(function(use)
     packer.install()
   else
     -- automatically packer_compiled on startup
-    -- clean ??
     packer.install()
     packer.compile()
+    packer.clean()
   end
 end)
 
