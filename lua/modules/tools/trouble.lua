@@ -1,8 +1,4 @@
-local ok, trouble = pcall(require, "trouble")
-
-if not ok then
-  vim.notify("trouble not founded")
-end
+local trouble = require("trouble")
 
 trouble.setup({})
 
