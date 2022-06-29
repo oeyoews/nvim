@@ -4,17 +4,8 @@ local g = vim.g
 -- @nvim_cmp
 local ok, cmp = pcall(require, "cmp")
 
-if not ok then
-  vim.notify("  cmp not founded")
-  return
-end
-
 -- -- @lspkind
 local lspkind_ok, lspkind = pcall(require, "lspkind")
-
-if not lspkind_ok then
-  vim.notify("lspkind not founded")
-end
 
 local function border(hl_name)
   return {
