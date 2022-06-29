@@ -1,8 +1,7 @@
 local modules = {
   order = {
-    "impatient",
-    "disable",
     "filetype",
+    "disable",
     "options",
     "functions",
     "mappings",

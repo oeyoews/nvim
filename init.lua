@@ -7,6 +7,9 @@ if vim.fn.has("nvim-0.8.0") == 1 then
   vim.opt.cmdheight = 0
 end
 
+-- optimize startup time, need first loading impatient plugin
+require("impatient")
+
 -- PERF: better way?
 require("modules.order")
 
