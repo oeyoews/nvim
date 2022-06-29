@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.4](https://gitlab.com/oeyoews/nvim/compare/v5.5.3...v5.5.4) (2022-06-29)
+
+
+### Bug Fixes
+
+* add title parameter for pcall ([9a9dfbb](https://gitlab.com/oeyoews/nvim/commit/9a9dfbb1602e62ef392ab86084846100d5a89e2d))
+
 ## [5.5.3](https://gitlab.com/oeyoews/nvim/compare/v5.5.2...v5.5.3) (2022-06-29)
 
 
