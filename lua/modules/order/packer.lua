@@ -69,16 +69,20 @@ packer.startup(function(use)
     if packer.config.compile_path then
       os.remove(packer.config.compile_path)
     end
-    packer.sync()
+    -- packer.sync()
+    packer.install()
   else
     -- automatically packer_compiled on startup
+    -- clean ??
+    packer.install()
     packer.compile()
   end
 end)
 
 vim.cmd([[
-  nnoremap <silent> <space>vs <Cmd>PackerSync<CR>
-  nnoremap <silent> <space>si <cmd>PackerInstall<cr>
+  nnoremap <silent> <space>ps <Cmd>PackerSync<CR>
+  nnoremap <silent> <space>pi <cmd>PackerInstall<cr>
+  nnoremap <silent> <space>pc <cmd>PackerClean<cr>
   nnoremap <silent> <space>so <cmd>so % <bar> lua vim.notify("reload current file")<cr>
   nnoremap <silent> <space>fp <cmd>find ~/.config/nvim/lua/modules/order/plugins.lua<cr>
 ]])

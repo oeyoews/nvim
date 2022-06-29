@@ -24,9 +24,10 @@ which_key.setup({
 })
 
 which_key.register({
-  f = { name = "+file" },
-  b = { name = "+buffer" },
-  w = { name = "+winnow" },
-  l = { name = "+lang" },
-  t = { name = "+toggle" },
+  f = { name = "+FILE" },
+  b = { name = "+BUFFER" },
+  w = { name = "+WINNOW" },
+  l = { name = "+LANG" },
+  t = { name = "+TOGGLE" },
+  p = { name = "+PACKER" },
 }, { prefix = "<space>" })
