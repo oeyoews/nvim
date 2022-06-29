@@ -2,7 +2,7 @@ local hop = require("hop")
 
 hop.setup()
 
-keymap = {
+local keymap = {
   hopmap = {
     ["<leader>"] = {
       h = {
@@ -10,8 +10,9 @@ keymap = {
         w = { "<cmd>HopWord<cr>", "Hop Word" },
         l = { "<cmd>HopLine<cr>", "Hop Line" },
         a = { "<cmd>HopAnywhere<cr>", "Hop Anywhere" },
-      }
-    }, }
+      },
+    },
+  },
 }
 
 local which_key = require("which-key")
