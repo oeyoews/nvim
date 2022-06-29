@@ -5,13 +5,6 @@ g.did_load_filetypes = 0
 g.do_filetype_lua = 1
 g.python3_host_prog = "/usr/bin/python3"
 
--- opt.clipboard = "unnamedplus"
--- set shadafile(neovim) path
-vim.schedule(function()
-  vim.opt.shadafile = vim.fn.expand("$HOME") .. "/.local/share/nvim/shada/main.shada"
-  vim.cmd([[ silent! rsh ]])
-end)
-
 local default_options = {
   relativenumber = false,
   -- textwidth = 80,
@@ -94,3 +87,10 @@ opt.whichwrap:append("<,>,[,]") -- wrap in line end
 for k, v in pairs(default_options) do
   vim.opt[k] = v
 end
+
+-- opt.clipboard = "unnamedplus"
+-- set shadafile(neovim) path
+vim.schedule(function()
+  vim.opt.shadafile = vim.fn.expand("$HOME") .. "/.local/share/nvim/shada/main.shada"
+  vim.cmd([[ silent! rsh ]])
+end)
