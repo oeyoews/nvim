@@ -21,7 +21,6 @@ if fn.empty(fn.glob(install_path)) > 0 then
     "https://github.com/wbthomason/packer.nvim",
     install_path,
   })
-  -- vim.cmd("packadd packer.nvim")
   vim.notify([[   Finish install packer.nvim]], "info")
 end
 
@@ -60,6 +59,10 @@ packer.startup(function(use)
     use(plugin)
   end
 
+  -- automatically install missing plugin(s) on startup
+  -- BUG: have confilct for cloning, need press extra key
+  -- packer.install()
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
@@ -67,17 +70,16 @@ packer.startup(function(use)
       os.remove(packer.config.compile_path)
     end
     packer.sync()
+  else
+    -- automatically packer_compiled on startup
+    packer.compile()
   end
 
-  -- automatically install missing plugin(s) on startup
-  packer.install()
-
-  -- automatically packer_compiled on startup
-  packer.compile()
 end)
 
 vim.cmd([[
-  nnoremap <space>vs <Cmd>PackerSync<CR>
+  nnoremap <silent> <space>vs <Cmd>PackerSync<CR>
+  nnoremap <silent> <space>si <cmd>PackerInstall<cr>
   nnoremap <silent> <space>so <cmd>so % <bar> lua vim.notify("reload current file")<cr>
   nnoremap <silent> <space>fp <cmd>find ~/.config/nvim/lua/modules/order/plugins.lua<cr>
 ]])
