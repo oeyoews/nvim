@@ -40,6 +40,7 @@
 <details>
 <summary>• TODO</summary>
 
+- [x] emulate key pressing
 - [x] cursor shake for null-ls
 - [x] vim-plug or packer.nvim index probleb
 - [x] config setting conflict
