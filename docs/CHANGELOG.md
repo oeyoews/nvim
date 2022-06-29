@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.2](https://gitlab.com/oeyoews/nvim/compare/v5.5.1...v5.5.2) (2022-06-29)
+
+
+### Bug Fixes
+
+* add adjust for plenary ([0436b9b](https://gitlab.com/oeyoews/nvim/commit/0436b9be8347c79f4c881a0beeb4f3ab35f94d7d))
+
 ## [5.5.1](https://gitlab.com/oeyoews/nvim/compare/v5.5.0...v5.5.1) (2022-06-29)
 
 
