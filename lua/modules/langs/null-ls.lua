@@ -12,9 +12,9 @@ local disabled_filetypes = {
 }
 
 -- @filetypes
-local enabale_filetypes = require("modules.langs.filetypes")
+local enabale_filetypes = require("modules.langs.parsers")
 
-enabale_filetypes = enabale_filetypes.filetypes
+enabale_filetypes = enabale_filetypes.parsers
 
 -- append gitcommit for null_ls's codespell
 -- table.insert(enabale_filetypes, "gitcommit")

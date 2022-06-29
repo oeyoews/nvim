@@ -17,7 +17,9 @@ for _, config in pairs(parsers) do
 end ]]
 
 -- @files: plugins/lsp/filetypes.lua
-local ensure_installed = require("modules.langs.filetypes").filetypes
+local ensure_installed = require("modules.langs.parsers")
+
+ensure_installed = ensure_installed.parsers
 
 local disable_filetypes = {
   -- "python",

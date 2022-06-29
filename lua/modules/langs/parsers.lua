@@ -1,6 +1,6 @@
 local M = {}
 
-M.filetypes = {
+M.parsers = {
   "c",
   "bash",
   "json",

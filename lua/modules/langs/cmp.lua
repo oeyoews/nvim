@@ -169,8 +169,9 @@ cmp.setup({
 
 vim.cmd([[
 " NOTE: this ctrl e shortkeys is conflict nvim-cmp's mapping, so can't in the
-" note: can't put this after, tab will replace c-e
-" same files
+" note: can't put this after, tab will replace c-e " same files
+" use 0 to setup this mappings
+
 let g:UltiSnipsExpandTrigger="<C-e>"
 let g:UltiSnipsJumpForwardTrigger="<C-J>"
 let g:UltiSnipsJumpBackwardTrigger="<C-K>"
