@@ -43,7 +43,13 @@ function M.setup(modules, entry)
 
   -- output error modules
   if length > 0 then
-    local async = require("plenary.async")
+    local ok, async = pcall(require, "plenary.async")
+
+    if not ok then
+      vim.notify("plenary_async not founded")
+      return
+    end
+
     async.run(function()
       vim.notify.async(" Failed to load these modules \n" .. error_msg, "warn", {
         title = title,
