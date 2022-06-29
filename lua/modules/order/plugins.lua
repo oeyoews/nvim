@@ -38,7 +38,7 @@ M.plugins = {
     requires = {
       "quangnguyen30192/cmp-nvim-ultisnips",
       "hrsh7th/cmp-buffer",
-    }
+    },
   },
   "neovim/nvim-lspconfig",
   "jose-elias-alvarez/null-ls.nvim",

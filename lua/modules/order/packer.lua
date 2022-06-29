@@ -8,9 +8,11 @@ local plugins = require("modules.order.plugins")
 -- autoomatically install packer
 if fn.empty(fn.glob(install_path)) > 0 then
   -- PERF:  add sleep function to beeter output
-  print([[
-   You have not inistall packer.nvim
-   Cloning packer]])
+  vim.notify(
+    [[   You have not inistall packer.nvim
+   Cloning packer]],
+    "info"
+  )
   packer_bootstrap = fn.system({
     "git",
     "clone",
@@ -20,7 +22,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
     install_path,
   })
   -- vim.cmd("packadd packer.nvim")
-  print("   Finish install packer.nvim")
+  vim.notify([[   Finish install packer.nvim]], "info")
 end
 
 local packer = require("packer")
