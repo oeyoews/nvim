@@ -80,7 +80,7 @@ vnoremap <space>yy "+y
 "
 " == yank
 "nnoremap <space>yy "*Y <cmd> echom "Finish to copy your system clipboard"<cr>
-nnoremap <space>yy "*Y <cmd> lua vim.notify("Copy text to SystemClipBoard")<cr>
+nnoremap <space>yy "*Y
 
 " copy
 "noremap <space>P "*P
