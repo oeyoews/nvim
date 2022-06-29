@@ -51,10 +51,7 @@ local telescope_notifications = function(opts)
               { entry.value.message[1], "Normal" },
             })
           end,
-          ordinal = notif.title[1] .. " " .. notif.title[2] .. " " .. table.concat(
-            notif.message,
-            " "
-          ),
+          ordinal = notif.title[1] .. " " .. notif.title[2] .. " " .. table.concat(notif.message, " "),
         }
       end,
     }),

@@ -69,7 +69,7 @@ local ultisnips = function(opts)
         return {
           value = entry,
           display = make_display,
-          ordinal = entry.filename .. ' ' .. entry.name .. ' ' .. entry.desc,
+          ordinal = entry.filename .. " " .. entry.name .. " " .. entry.desc,
           preview_command = function(entry, bufnr)
             if entry.value.filepath ~= nil then
               filecontent = vim.fn.readfile(entry.value.filepath)
@@ -79,9 +79,7 @@ local ultisnips = function(opts)
               for i, line in pairs(filecontent) do
                 if i > entry.value.linenr - 1 then
                   count = count + 1
-                  if line:find("^endsnippet") ~= nil
-                      or line:find("^snippet%s[^%s]") ~= nil and count ~= 1
-                  then
+                  if line:find("^endsnippet") ~= nil or line:find("^snippet%s[^%s]") ~= nil and count ~= 1 then
                     break
                   end
                   table.insert(snippet, line)
@@ -90,7 +88,7 @@ local ultisnips = function(opts)
 
               vim.api.nvim_buf_set_option(bufnr, "filetype", "snippets")
             else
-              snippet = { 'No preview available' }
+              snippet = { "No preview available" }
             end -- if entry.value.filepath ~= nil
             vim.api.nvim_buf_set_lines(bufnr, 0, -1, false, snippet)
           end,

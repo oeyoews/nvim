@@ -49,14 +49,13 @@ function M.setup(modules, entry)
         title = title,
         on_open = function(win)
           local buf = vim.api.nvim_win_get_buf(win)
-          vim.api.nvim_buf_set_option(buf, "filetype", "markdown")
+          vim.api.nvim_buf_set_option(buf, "filetype", "lua")
         end,
       }).events.close()
       vim.notify.async(" Error Messages \n" .. error_tree, "error", {
         title = title,
       })
     end)
-
   end
 end
 
