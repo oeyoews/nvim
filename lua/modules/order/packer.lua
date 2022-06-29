@@ -30,18 +30,12 @@ local util = require("packer.util")
 
 packer.init({
   max_jobs = 4,
-  config = {
-    profile = {
-      enable = false,
-      threshold = 1, -- the amount in ms that a plugins load time must be over for it to be included in the profile
-    },
-  },
   display = {
     working_sym = "", -- The symbol for a plugin being installed/updated
     error_sym = "", -- The symbol for a plugin with an error in installation/updating
     done_sym = "",
     open_fn = function()
-      return require("packer.util").float({ border = "single" })
+      return util.float({ border = "single" })
     end,
   },
   git = {

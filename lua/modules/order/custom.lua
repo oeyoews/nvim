@@ -8,8 +8,8 @@ vim.cmd([[
 
 hi  Normal guifg=#A2ACCD
 hi Visual         ctermbg=242 gui=reverse
-hi Pmenu        ctermfg=0 ctermbg=13 guifg=#a9b1d6 guibg=#3b4261
-hi PmenuSbar    ctermbg=248 guibg=#2A2E3F
+" hi Pmenu        ctermfg=0 ctermbg=13 guifg=#a9b1d6 guibg=#3b4261
+" hi PmenuSbar    ctermbg=248 guibg=#2A2E3F
 " hi PmenuSel     ctermfg=242 ctermbg=0 guifg=#282c34 guibg=#73b8f1
 hi IncSearch  cterm=bold ctermfg=16 ctermbg=167 guifg=#292b2e guibg=#ce537a
 " hi Search     ctermfg=16 ctermbg=76 guifg=#292b2e guibg=#7CB740
