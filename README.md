@@ -35,12 +35,10 @@
 
 ## Install
 
-- Just clone this repo and execute `nvim`
-
-## TODO
+- Just clone this repository and execute `nvim` in your terminal
 
 <details>
-<summary>INFO</summary>
+<summary>• TODO</summary>
 
 - [x] cursor shake for null-ls
 - [x] vim-plug or packer.nvim index probleb
