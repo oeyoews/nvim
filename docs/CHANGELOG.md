@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.5.0](https://gitlab.com/oeyoews/nvim/compare/v5.4.0...v5.5.0) (2022-06-29)
+
+
+### Features
+
+* embed telescope extensions ([8e5df9f](https://gitlab.com/oeyoews/nvim/commit/8e5df9fb939db76b9722e37d9c39433394e15108))
+
 # [5.4.0](https://gitlab.com/oeyoews/nvim/compare/v5.3.1...v5.4.0) (2022-06-28)
 
 
