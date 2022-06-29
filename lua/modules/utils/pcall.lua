@@ -42,10 +42,9 @@ function M.setup(modules, title, entry)
 
   -- output error modules
   if length > 0 then
-    local ok, async = pcall(require, "plenary.async")
+    local plenary_ok, async = pcall(require, "plenary.async")
 
-    if not ok then
-      vim.notify("plenary_async not founded")
+    if not plenary_ok then
       return
     end
 
