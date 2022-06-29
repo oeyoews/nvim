@@ -1,6 +1,6 @@
 local bufferline = require("bufferline")
 
-bufferline.setup({})
+bufferline.setup()
 
 vim.cmd([[
   nnoremap <silent> <leader>bp :BufferLinePick<CR>

@@ -1,4 +1,6 @@
-require("trim").setup({
+local trim = require("trim")
+
+trim.setup({
   -- if you want to ignore markdown file.
   -- you can specify filetypes.
   disable = { "python" },
