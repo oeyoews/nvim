@@ -33,29 +33,6 @@
 
 </div>
 
-## Introd
-
-<details>
-<summary>INFO</summary>
-
-</details>
-
-## Dependencies
-
-<details>
-<summary>INFO</summary>
-
-- python-pynvim
-- python
-- kitty
-- noto-font-emoji
-- nodejs
-- fzf
-- ranger
-- shellcheck
-
-</details>
-
 ## Install
 
 - Just clone this repo and execute `nvim`
