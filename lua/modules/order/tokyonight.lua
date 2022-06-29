@@ -1,3 +1,5 @@
+-- feature: toggle theme night and storm
+
 local function theme_toggle()
   local h = tonumber(os.date("%H"))
   if h > 8 and h < 20 then
@@ -12,6 +14,7 @@ local theme = theme_toggle()
 vim.g.tokyonight_style = theme
 
 package.loaded["tokyonight.config"] = nil
+
 local tokyonight = require("tokyonight")
 
 tokyonight.colorscheme()
