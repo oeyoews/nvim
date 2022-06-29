@@ -24,13 +24,13 @@ M.modules = {
     "comment", -- fast comment your code
     "autopairs", -- automatically match your half
     "highstr", -- highlight select text
-    "neorg", -- replace emace org mode
+    -- "neorg", -- replace emace org mode
     "persistence", -- session manager
     "tabout", -- jump brackets base nvim-treesitter
     "telescope", -- can do anything
     "whichkey", -- show your key bindings
     "toggleterm", -- embed terminal
-    "calendar", -- GTD?
+    -- "calendar", -- GTD?
     "quickrun", -- quickly run your code
     "venn", -- drawing diagram
     "fidget", -- visualize lsp status

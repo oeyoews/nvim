@@ -81,7 +81,7 @@ M.plugins = {
   },
   "cappyzawa/trim.nvim",
   "ekickx/clipboard-image.nvim",
-  "oeyoews/vim-startuptime",
+  -- "oeyoews/vim-startuptime",
   "thinca/vim-quickrun",
   "oeyoews/vim-capslock",
 }
