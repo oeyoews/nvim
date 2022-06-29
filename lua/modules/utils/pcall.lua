@@ -1,7 +1,6 @@
 local M = {}
 
 -- PERF: add update command git -C
--- PERF: add log file
 
 -- just suit for three layer modules
 function M.setup(modules, entry)
@@ -14,11 +13,14 @@ function M.setup(modules, entry)
   for package, module in pairs(modules) do
     for _, load_module in ipairs(module) do
       local path = { entry, package, load_module }
+      -- link path to load module
       connect_path = table.concat(path, ".")
       -- PERF: logging?
       local status_ok, _ = pcall(require, connect_path)
+      -- link path use separator for logging
       connect_path2 = table.concat(path, "  ")
       if not status_ok then
+        -- storage error_module in tabale
         error_modules[#error_modules + 1] = connect_path2
       end
     end
