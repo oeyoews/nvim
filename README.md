@@ -73,12 +73,11 @@
 - [x] config new theme for material, like tilde,
 - [x] add shortkeys in vim to open browser html
 - [?] fix the zh bug(maybe also is terminal)
-- [x] add random banner and random color startup
-- <https://github.com/goolord/alpha-nvim/discussions/16#discussioncomment-2386902>
+- [x] add random banner and random color startup <https://github.com/goolord/alpha-nvim/discussions/16#discussioncomment-2386902>
 - [x] first install automatically install
 - [x] config dashboard
 - [x] this emjoi shadow bug, maybe is kitty terminal(switch to wezterm compare)
 - [x] some error tip from feline(active)
-- [x] <https://github.com/AstroNvim/AstroNvim>, learn it option setting and lsp multi separate setting: fix lua global vim setting
+- [x] learn it option setting and lsp multi separate setting: fix lua global vim setting, <https://github.com/AstroNvim/AstroNvim>,
 
 </details>
