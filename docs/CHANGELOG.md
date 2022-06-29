@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.6.0](https://gitlab.com/oeyoews/nvim/compare/v5.5.5...v5.6.0) (2022-06-29)
+
+
+### Features
+
+* add packer.clean automatically ([78e74bd](https://gitlab.com/oeyoews/nvim/commit/78e74bd755823045be6102ecbdaefe5c7211a3ba))
+
 ## [5.5.5](https://gitlab.com/oeyoews/nvim/compare/v5.5.4...v5.5.5) (2022-06-29)
 
 
