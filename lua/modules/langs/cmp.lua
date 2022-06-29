@@ -1,4 +1,5 @@
 --vim.cmd [[highlight default GH guifg=#3bb6c4 guibg=NONE]]
+local g = vim.g
 
 -- @nvim_cmp
 local ok, cmp = pcall(require, "cmp")
@@ -167,6 +168,8 @@ cmp.setup({
   sources = sources,
 })
 
+g.UltiSnipsEditSplit = "vertical"
+
 vim.cmd([[
 " NOTE: this ctrl e shortkeys is conflict nvim-cmp's mapping, so can't in the
 " note: can't put this after, tab will replace c-e " same files
@@ -175,10 +178,10 @@ vim.cmd([[
 let g:UltiSnipsExpandTrigger="<C-e>"
 let g:UltiSnipsJumpForwardTrigger="<C-J>"
 let g:UltiSnipsJumpBackwardTrigger="<C-K>"
+" don't use snippets this special directory
 let g:UltiSnipsSnippetDirectories = [
       \ stdpath('config') . '/ultisnips/',
       \ ]
-let g:UltiSnipsEditSplit="vertical"
 
 nnoremap <silent> <SPACE>ee :UltiSnipsEdit<CR>G
 nnoremap <silent> <SPACE>ea :UltiSnipsEdit all<CR>
