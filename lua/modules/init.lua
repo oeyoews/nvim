@@ -14,6 +14,7 @@ M.modules = {
 
   -- @TOOLS
   tools = {
+    "todo_comments",
     "trouble",
     "indent", -- show indent line
     "windline", -- statusline
