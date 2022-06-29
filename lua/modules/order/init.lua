@@ -14,4 +14,4 @@ local modules = {
   },
 }
 
-require("modules.utils.pcall").setup(modules)
+require("modules.utils.pcall").setup(modules, "order modules")

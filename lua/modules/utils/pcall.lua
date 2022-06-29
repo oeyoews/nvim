@@ -3,9 +3,11 @@ local M = {}
 -- PERF: add update command git -C
 
 -- just suit for three layer modules
-function M.setup(modules, entry)
+function M.setup(modules, title, entry)
   -- setup second entry default value
   entry = entry or "modules"
+  -- notification title
+  title = title or "Modules Messages"
 
   -- storage error modules in for loop
   local error_modules = {}
@@ -29,9 +31,6 @@ function M.setup(modules, entry)
       end
     end
   end
-
-  -- notification title
-  local title = "Modules Messages"
 
   -- link error_modules path from for loop
   local error_msg = table.concat(error_modules, "\n")
