@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.6.3](https://gitlab.com/oeyoews/nvim/compare/v5.6.2...v5.6.3) (2022-06-29)
+
+
+### Bug Fixes
+
+* remove startuptime plugin ([caef9d6](https://gitlab.com/oeyoews/nvim/commit/caef9d65cb30a8d64f0b34b83b00b5fb83b710df))
+
 ## [5.6.2](https://gitlab.com/oeyoews/nvim/compare/v5.6.1...v5.6.2) (2022-06-29)
 
 
