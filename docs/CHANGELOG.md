@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.1](https://gitlab.com/oeyoews/nvim/compare/v5.5.0...v5.5.1) (2022-06-29)
+
+
+### Bug Fixes
+
+* loadextension by mappings ([1da170e](https://gitlab.com/oeyoews/nvim/commit/1da170ec06c44ada57e92d955c6bbfe1bc7f92cb))
+
 # [5.5.0](https://gitlab.com/oeyoews/nvim/compare/v5.4.0...v5.5.0) (2022-06-29)
 
 
