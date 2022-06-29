@@ -33,12 +33,6 @@ setlocal nornu nonu
 setlocal nocursorline
 endfunction
 
-" config chezmoi
-function! ChezmoiSource() abort
-" exec zsh not use , just int current vim work
-!chezmoi apply --source-path "%"
-endfunction
-
 function! ToggleStatusLine() abort
 " laststatus default is 2
 if &laststatus
@@ -145,10 +139,15 @@ nnoremap <silent> <space>fi <cmd>call FindInit()<cr>
 "   autocmd BufWritePre *.yaml,*.vim call FormatFile()
 " augroup END
 "
-augroup refreshdotfile
-autocmd!
-au BufWrite ~/.local/share/chezmoi/dot_*/**/ :call ChezmoiSource()
-augroup END
+" config chezmoi
+" exec zsh not use , just int current vim work
+" function! ChezmoiSource() abort
+" !chezmoi apply --source-path "%"
+" endfunction
+" augroup refreshdotfile
+" autocmd!
+" au BufWrite ~/.local/share/chezmoi/dot_*/**/ :call ChezmoiSource()
+" augroup END
 
 " add i in the end of line, to enter insert mode
 nnoremap <silent> <space>tK <cmd>call Terminal()<cr>i
