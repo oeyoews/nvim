@@ -7,7 +7,7 @@ function M.setup(modules, entry)
   -- setup second entry default value
   entry = entry or "modules"
 
-  local title = "Modules"
+  local title = "Modules Messages"
   local total_error = {}
 
   for package, module in pairs(modules) do
@@ -16,8 +16,9 @@ function M.setup(modules, entry)
       connect_path = table.concat(path, ".")
       local status_ok, _ = pcall(require, connect_path)
 
+      connect_path2 = table.concat(path, "  ")
       if not status_ok then
-        total_error[#total_error + 1] = connect_path
+        total_error[#total_error + 1] = connect_path2
       end
     end
   end
@@ -26,8 +27,8 @@ function M.setup(modules, entry)
 
   local length = #total_error
 
-  if length >= 1 then
-    vim.notify("Failed to load these modules\n" .. error_msg, "warn", {
+  if length > 0 then
+    vim.notify(" Failed to load these modules \n" .. error_msg, "info", {
       title = title,
     })
   end

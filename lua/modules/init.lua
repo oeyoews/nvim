@@ -43,10 +43,7 @@ M.modules = {
 }
 
 vim.cmd([[
-function! FindModules() abort
-find ~/.config/nvim/lua/modules/init.lua
-endfunction
-nnoremap <silent> <space>fm <cmd>call FindModules()<cr>
+nnoremap <silent> <space>fm <cmd>find ~/.config/nvim/lua/modules/init.lua<cr>
 ]])
 
 return M
