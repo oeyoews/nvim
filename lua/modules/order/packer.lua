@@ -30,7 +30,9 @@ local util = require("packer.util")
 
 packer.init({
   max_jobs = 4,
+  auto_clean = true,
   display = {
+    prompt_border = "single",
     working_sym = "", -- The symbol for a plugin being installed/updated
     error_sym = "", -- The symbol for a plugin with an error in installation/updating
     done_sym = "",
@@ -63,13 +65,11 @@ packer.startup(function(use)
     if packer.config.compile_path then
       os.remove(packer.config.compile_path)
     end
-    -- packer.sync()
-    packer.install()
+    packer.sync()
   else
     packer.install()
     -- automatically packer_compiled on startup
     packer.compile()
-    packer.clean()
   end
 end)
 

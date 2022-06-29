@@ -34,14 +34,12 @@ telescope.setup({
   },
 })
 
--- extensitension
--- require("telescope").load_extension("ultisnips")
-
 vim.cmd([[
+" extensions
 nnoremap <silent> <leader>tu :lua require("telescope").load_extension("ultisnips")<cr>:Telescope ultisnips<cr>
-]])
+noremap <silent>  <space>tp :lua require('telescope').extensions.packer.packer()<cr>
+nnoremap <silent> <space>bm :lua require('telescope').extensions.notify.notify()<cr>
 
-vim.cmd([[
 nnoremap <leader>ff <cmd>Telescope find_files <cr>
 nnoremap <leader>to <cmd>Telescope oldfiles <cr>
 nnoremap <leader>tbb <cmd>Telescope buffers <cr>
@@ -51,12 +49,9 @@ nnoremap <leader>tg <Cmd>Telescope git_status<Cr>
 nnoremap <leader>tr <Cmd>Telescope resume<Cr>
 
 " search string in current dir
-nnoremap <leader>ps <Cmd>Telescope live_grep<Cr>
+nnoremap <leader>ts <Cmd>Telescope live_grep<Cr>
 
 nnoremap <leader>tm <cmd>Telescope keymaps<cr>
-" nnoremap <leader>ss <cmd>Telescope current_buffer_fuzzy_find<cr>
-
-" nnoremap <C-k> <cmd>lua vim.lsp.buf.signature_help() <cr>
 
 " Border highlight groups
 highlight TelescopeBorder         guifg=#bd93f9

@@ -22,19 +22,19 @@ M.modules = {
     "colorizer", -- show color in neovim
     "gitsigns", -- show git changes in signcolumn
     "comment", -- fast comment your code
-    "autopairs", -- automatically match your half
     "highstr", -- highlight select text
+    -- "autopairs", -- automatically match your half
     -- "neorg", -- replace emace org mode
+    -- "mkdp", -- open markdown preview in your browser
     "persistence", -- session manager
     "tabout", -- jump brackets base nvim-treesitter
     "telescope", -- can do anything
     "whichkey", -- show your key bindings
     "toggleterm", -- embed terminal
-    -- "calendar", -- GTD?
+    "calendar", -- GTD?
     "quickrun", -- quickly run your code
     "venn", -- drawing diagram
     "fidget", -- visualize lsp status
-    "mkdp", -- open markdown preview in your browser
     "trim", -- delete any blank line and trailing whitespace
     "icon_picker", -- select so much icons
     "color_picker", -- color picker

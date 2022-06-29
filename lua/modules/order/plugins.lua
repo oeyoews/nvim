@@ -58,32 +58,51 @@ M.plugins = {
     "folke/todo-comments.nvim",
     requires = "nvim-lua/plenary.nvim",
   },
-  "nvim-telescope/telescope.nvim",
+  {
+    "nvim-telescope/telescope.nvim",
+    requires = {
+      "nvim-telescope/telescope-packer.nvim",
+    }
+  },
   "phaazon/hop.nvim",
   "norcalli/nvim-colorizer.lua",
   "lewis6991/gitsigns.nvim",
   "numToStr/Comment.nvim",
-  "windwp/nvim-autopairs",
+  {
+    "windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup() end,
+    event = "InsertEnter",
+  },
   "Pocco81/HighStr.nvim",
-  "nvim-neorg/neorg",
+  -- bug:
+  {
+    "nvim-neorg/neorg",
+    config = function() require("modules.tools.neorg").setup() end,
+    ft = "norg",
+  },
   "folke/persistence.nvim",
   "oeyoews/tabout.nvim",
   "folke/which-key.nvim",
   "akinsho/toggleterm.nvim",
   "ziontee113/icon-picker.nvim",
-  "itchyny/calendar.vim",
-  "kevinhwang91/rnvimr",
   "jbyuki/venn.nvim",
   "j-hui/fidget.nvim",
+  "itchyny/calendar.vim",
+  "kevinhwang91/rnvimr",
   {
     "iamcco/markdown-preview.nvim",
+    config = function()
+      vim.g.mkdp_auto_close = 0
+    end,
     run = "cd app && npm install",
+    cmd = "MarkdownPreview",
+    ft = "markdown",
   },
   "cappyzawa/trim.nvim",
   "ekickx/clipboard-image.nvim",
-  -- "oeyoews/vim-startuptime",
   "thinca/vim-quickrun",
   "oeyoews/vim-capslock",
+  { "oeyoews/vim-startuptime", cmd = "StartupTime" },
 }
 
 return M
