@@ -21,5 +21,6 @@ notify.setup({
 })
 
 vim.cmd([[
-  nnoremap <silent> <leader>bm :Notifications<cr>
+" nnoremap <silent> <leader>bm :Notifications<cr>
+nnoremap <silent> <space>bm :lua require('telescope').extensions.notify.notify()<cr>
 ]])

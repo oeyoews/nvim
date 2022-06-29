@@ -46,7 +46,6 @@ M.plugins = {
   "lukas-reineke/lsp-format.nvim",
   "honza/vim-snippets",
   "SirVer/ultisnips",
-  "fhill2/telescope-ultisnips.nvim",
   "hrsh7th/cmp-nvim-lsp",
   "onsails/lspkind-nvim",
   "hrsh7th/cmp-path",
