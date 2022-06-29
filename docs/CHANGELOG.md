@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.6.1](https://gitlab.com/oeyoews/nvim/compare/v5.6.0...v5.6.1) (2022-06-29)
+
+
+### Bug Fixes
+
+* remove custom pemnu color ([6532372](https://gitlab.com/oeyoews/nvim/commit/6532372111c6c596fa2965975b48fad8fe9dccfb))
+
 # [5.6.0](https://gitlab.com/oeyoews/nvim/compare/v5.5.5...v5.6.0) (2022-06-29)
 
 
