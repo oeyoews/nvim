@@ -5,11 +5,11 @@ lspsaga.setup({
   debug = false,
   use_saga_diagnostic_sign = true,
   error_sign = "", --     
-  warn_sign = "", --  
+  warn_sign = "ﳗ", --      ﳗ 
   hint_sign = "", --  﫢 ﴞ➤
-  infor_sign = "", -- NOTE: can't have space    
+  infor_sign = " ", -- NOTE: can't have space    
   diagnostic_header_icon = " ", -- 
-  rename_prompt_prefix = " ",
+  rename_prompt_prefix = " ",
   code_action_icon = "ﴞ ", -- ﴞ
   code_action_prompt = {
     enable = false,

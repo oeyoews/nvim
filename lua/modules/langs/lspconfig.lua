@@ -70,7 +70,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
   virtual_text = {
     spacing = 2,
     source = "always",
-    prefix = " ", -- '●', '▎', 'x'      
+    prefix = "ﴞ ", -- '●', '▎', 'x'       🖍️   
   },
   float = {
     focusable = false,

@@ -8,8 +8,8 @@ M.modules = {
     "lspinstall", -- preinstall some servers
     "cmp", -- config completion
     "lspconfig", -- configurate lsp settings
-    "null-ls", -- complete lsp configuration
     "lspsaga", -- setup lspconfig ui
+    "null-ls", -- complete lsp configuration
   },
 
   -- @TOOLS
