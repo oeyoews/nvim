@@ -1,5 +1,6 @@
 local M = {}
 
+-- PERF: add update command git -C
 -- PERF: add log file
 -- suit for three layer modules
 function M.setup(modules, entry)
