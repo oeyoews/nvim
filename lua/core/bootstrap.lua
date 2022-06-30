@@ -1,11 +1,14 @@
-local ok, impatient = pcall(require, "impatient")
+local _, _ = pcall(require, "impatient")
 
-local filetype = require("filetype")
+local filetype_ok, filetype = pcall(require, "filetype")
 
-filetype.setup({
-  overrides = {
-    complex = {
-      [".service"] = "systemd",
+if filetype_ok then
+
+  filetype.setup({
+    overrides = {
+      complex = {
+        [".service"] = "systemd",
+      },
     },
-  },
-})
+  })
+end
