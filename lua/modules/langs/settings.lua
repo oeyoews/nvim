@@ -1,7 +1,7 @@
 local M = {}
 
 -- configuate sumneko settings
-M.lua = {
+M.sumneko_lua = {
   Lua = {
     diagnostics = {
       globals = { "vim" },
@@ -16,10 +16,18 @@ M.lua = {
 }
 
 -- NOTE: need close your ladder to connect this website
-M.json = {
+M.jsonls = {
   json = {
     schemas = require("schemastore").json.schemas(),
     validate = { enable = true },
+  },
+}
+
+M.yamlls = {
+  yaml = {
+    schemas = {
+      -- ["https://json.schemastore.org/github-workflow.json"] = "/.github/workflows/*"
+    },
   },
 }
 

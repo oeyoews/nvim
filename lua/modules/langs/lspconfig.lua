@@ -56,34 +56,11 @@ end
 -- For general Lsp server
 -- todo: only overside single settings
 for _, lsp_server in ipairs(lsp_servers.servers) do
-  -- if lsp_server == "sumneko_lua" then
   lspconfig[lsp_server].setup({
     on_attach = on_attach,
     capabilities = capabilities,
-    --[=[
-    settings = function()
-      if lsp_server == "sumneko_lua" then
-        return settings.lua
-      elseif lsp_server == "jsonls" then
-        return settings.json
-      else
-        return settings
-      end
-    end
-    --]=]
+    settings = settings[lsp_server]
   })
-  -- elseif lsp_server == "jsonls" then
-  --   lspconfig[lsp_server].setup({
-  --     on_attach = on_attach,
-  --     capabilities = capabilities,
-  --     settings = settings.json,
-  --   })
-  -- else
-  --   lspconfig[lsp_server].setup({
-  --     on_attach = on_attach,
-  --     capabilities = capabilities,
-  --   })
-  -- end
 end
 
 vim.cmd([[
