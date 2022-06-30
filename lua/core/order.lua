@@ -11,3 +11,5 @@ local core_modules = {
 }
 
 require("core.utils.pcall").setup("core", core_modules)
+
+-- vim: ft=lua
