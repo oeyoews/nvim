@@ -1,6 +1,7 @@
 local M = {}
 
 M.plugins = {
+  "b0o/schemastore.nvim",
   -- @dependencies
   "lewis6991/impatient.nvim",
   "nathom/filetype.nvim",

@@ -54,6 +54,7 @@ local on_attach = function(client)
 end
 
 -- For general Lsp server
+-- todo: only overside single settings
 for _, lsp_server in ipairs(lsp_servers.servers) do
   if lsp_server == "sumneko_lua" then
     lspconfig[lsp_server].setup({
@@ -61,7 +62,14 @@ for _, lsp_server in ipairs(lsp_servers.servers) do
       capabilities = capabilities,
       settings = settings.lua,
     })
+  elseif lsp_server == "jsonls" then
+    lspconfig[lsp_server].setup({
+      on_attach = on_attach,
+      capabilities = capabilities,
+      settings = settings.json,
+    })
   else
+
     lspconfig[lsp_server].setup({
       on_attach = on_attach,
       capabilities = capabilities,
