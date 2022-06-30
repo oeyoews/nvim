@@ -29,6 +29,7 @@ local packer = require("packer")
 local util = require("packer.util")
 
 packer.init({
+
   max_jobs = 4,
   auto_clean = false,
   display = {
@@ -48,6 +49,9 @@ packer.init({
   },
   autoremove = false,
   compile_path = util.join_paths(fn.stdpath("data"), "compile", "packer_compiled.lua"),
+  -- tips: :lua require("packer"),snapshot("v1") to generate a snapshot
+  snapshot = "v1.0.0",
+  snapshot_path = util.join_paths(fn.stdpath("config"), "snapshot"),
 })
 
 packer.startup(function(use)
