@@ -50,8 +50,8 @@
   "vim-quickrun": {
     "commit": "276f39a"
   },
-  "telescope.nvim": {
-    "commit": "b98b9a9"
+  "clipboard-image.nvim": {
+    "commit": "ed2ddad"
   },
   "trouble.nvim": {
     "commit": "da61737"
@@ -92,8 +92,8 @@
   "impatient.nvim": {
     "commit": "969f2c5"
   },
-  "clipboard-image.nvim": {
-    "commit": "ed2ddad"
+  "telescope.nvim": {
+    "commit": "b98b9a9"
   },
   "rnvimr": {
     "commit": "5877509"
