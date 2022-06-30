@@ -5,6 +5,7 @@ M.parsers = {
   "bash",
   "json",
   "jsonc",
+  "json5",
   "javascript",
   "lua",
   "vim",
