@@ -1,4 +1,4 @@
-require("impatient")
+local ok, impatient = pcall(require, "impatient")
 
 local filetype = require("filetype")
 
