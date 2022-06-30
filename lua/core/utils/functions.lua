@@ -145,7 +145,7 @@ endfunction
 " add i in the end of line, to enter insert mode
 nnoremap <silent> <space>tk <cmd>call Terminal()<cr>i
 
-nnoremap <silent> <leader>ts :call ToggleStatusLine()<CR>
+nnoremap <silent> <space>tS :call ToggleStatusLine()<CR>
 
 " nnoremap <silent> <space>eh <cmd>call FindVanilla()<cr>
 

@@ -2,10 +2,10 @@ local core_modules = {
   utils = {
     "disable",
     "options",
-    "functions",
     "mappings",
+    "functions", -- need after mappings
     "tokyonight",
-    "custom",
+    "custom", -- need after tokyonight
     "notify",
   },
 }
