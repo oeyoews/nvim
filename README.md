@@ -40,6 +40,7 @@
 <details>
 <summary>• TODO</summary>
 
+- [ ] control module to install or uninstall plugins
 - [ ] use packer make packersnapshot
 - [ ] emulate key pressing
 - [x] cursor shake for null-ls

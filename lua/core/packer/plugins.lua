@@ -48,7 +48,7 @@ M.plugins = {
     "nvim-telescope/telescope.nvim",
     requires = {
       "nvim-telescope/telescope-packer.nvim",
-      "ziontee113/color-picker.nvim", -- https://www.youtube.com/watch?v=eWRoxJatH8A
+      -- "ziontee113/color-picker.nvim", -- https://www.youtube.com/watch?v=eWRoxJatH8A
     }
   },
   "phaazon/hop.nvim",
@@ -56,16 +56,13 @@ M.plugins = {
   "lewis6991/gitsigns.nvim",
   "numToStr/Comment.nvim",
   "windwp/nvim-autopairs",
-  "Pocco81/HighStr.nvim",
-  "nvim-neorg/neorg",
   "folke/persistence.nvim",
   "oeyoews/tabout.nvim",
   "folke/which-key.nvim",
-  "akinsho/toggleterm.nvim",
+  -- "akinsho/toggleterm.nvim",
   "ziontee113/icon-picker.nvim",
-  "jbyuki/venn.nvim",
+  -- "jbyuki/venn.nvim",
   "j-hui/fidget.nvim",
-  "itchyny/calendar.vim",
   "kevinhwang91/rnvimr",
   {
     "iamcco/markdown-preview.nvim",
@@ -74,8 +71,11 @@ M.plugins = {
   "cappyzawa/trim.nvim",
   "ekickx/clipboard-image.nvim",
   "thinca/vim-quickrun",
-  "oeyoews/vim-capslock",
-  "oeyoews/vim-startuptime",
+  -- "nvim-neorg/neorg",
+  -- "Pocco81/HighStr.nvim",
+  -- "itchyny/calendar.vim",
+  -- "oeyoews/vim-capslock",
+  -- "oeyoews/vim-startuptime",
 }
 
 return M
