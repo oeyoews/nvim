@@ -6,7 +6,7 @@ fidget.setup({
     done = "", -- 﫟
   },
   align = {
-    bottom = true,
+    bottom = false,
   },
   window = {
     relative = "editor",
