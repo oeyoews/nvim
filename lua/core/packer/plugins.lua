@@ -74,7 +74,7 @@ M.plugins = {
   -- "Pocco81/HighStr.nvim",
   -- "itchyny/calendar.vim",
   -- "oeyoews/vim-capslock",
-  -- "oeyoews/vim-startuptime",
+  "oeyoews/vim-startuptime",
   -- "ziontee113/color-picker.nvim", -- https://www.youtube.com/watch?v=eWRoxJatH8A
   -- {
   --   "catppuccin/nvim",
