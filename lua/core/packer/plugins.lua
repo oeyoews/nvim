@@ -1,10 +1,7 @@
 local M = {}
 
 M.plugins = {
-  {
-    "catppuccin/nvim",
-    as = "catppuccin"
-  },
+  "olimorris/onedarkpro.nvim",
   -- @dependencies
   "lewis6991/impatient.nvim",
   "nathom/filetype.nvim",

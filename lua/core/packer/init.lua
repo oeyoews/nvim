@@ -30,7 +30,7 @@ local util = require("packer.util")
 
 packer.init({
   max_jobs = 4,
-  auto_clean = true,
+  auto_clean = false,
   display = {
     prompt_border = "single",
     working_sym = "", -- The symbol for a plugin being installed/updated

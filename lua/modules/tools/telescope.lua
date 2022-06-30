@@ -8,16 +8,14 @@ telescope.setup({
       n = { ["q"] = actions.close },
     },
     -- #   ➤   🔍
-    prompt_prefix = "🔍",
+    prompt_prefix = " ",
     selection_strategy = "reset",
     sorting_strategy = "ascending",
     layout_strategy = "horizontal",
     selection_caret = "",
     entry_prefix = " ",
-    border = {},
     color_devicons = true,
     use_less = true,
-    borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
     layout_config = {
       horizontal = {
         prompt_position = "top",
