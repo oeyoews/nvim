@@ -8,10 +8,10 @@ M.servers = {
   "vimls",
   "yamlls",
   "jsonls", -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
-  -- "cmake",
+  "cmake",
   "pyright",
-  -- 'cssls',
-  -- "html",
+  'cssls',
+  "html",
   "gopls",
   -- 'golangci_lint_ls',
   -- "tsserver",

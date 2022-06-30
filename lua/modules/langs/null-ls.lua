@@ -8,7 +8,9 @@ local formatting = null_ls.builtins.formatting
 local disabled_filetypes = {
   -- "c",
   -- "java",
+  "jsonc",
   "json",
+  "html",
 }
 
 -- @filetypes
@@ -38,6 +40,7 @@ local sources = {
   -- diagnostics.yamllint, -- need install yamllint
   formatting.prettier.with({
     disabled_filetypes = disabled_filetypes,
+    filetypes = enabale_filetypes.parsers,
   }), -- install prettier
   diagnostics.codespell.with({
     disabled_filetypes = disabled_filetypes,

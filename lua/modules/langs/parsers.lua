@@ -4,6 +4,8 @@ M.parsers = {
   "c",
   "bash",
   "json",
+  "jsonc",
+  "javascript",
   "lua",
   "vim",
   "yaml",
@@ -14,9 +16,9 @@ M.parsers = {
   "gomod",
   "markdown",
   "markdown_inline",
-  "norg",
   "css",
   "html",
+  -- "norg",
 }
 
 return M
