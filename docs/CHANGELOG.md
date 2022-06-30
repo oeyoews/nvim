@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.7.0](https://gitlab.com/oeyoews/nvim/compare/v5.6.7...v5.7.0) (2022-06-30)
+
+
+### Features
+
+* use variable to replace if loop ([875099a](https://gitlab.com/oeyoews/nvim/commit/875099a289ccba7fc9d4c2c6a740ee505ccd7889))
+
 ## [5.6.7](https://gitlab.com/oeyoews/nvim/compare/v5.6.6...v5.6.7) (2022-06-30)
 
 
