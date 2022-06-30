@@ -53,10 +53,9 @@ nnoremap <leader>tm <cmd>Telescope keymaps<cr>
 
 " Border highlight groups
 highlight TelescopeBorder         guifg=#bd93f9
-highlight TelescopePromptBorder   guifg=#F7768E
-highlight TelescopeResultsBorder  guifg=#bd93f9
+" highlight TelescopeResultsBorder  guifg=#bd93f9
 highlight TelescopePreviewBorder  guifg=#7CB740
-
-" Color the prompt prefix
+highlight TelescopePromptBorder   guifg=#F7768E
 highlight TelescopePromptPrefix   guifg=#F7768E gui=bold
+
 ]])
