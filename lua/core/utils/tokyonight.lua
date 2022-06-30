@@ -5,7 +5,7 @@ local function switch_theme_ai()
   local theme = "storm"
 
   -- toggle night theme in nighttime
-  if h < 8 and h > 20 then
+  if h < 8 or h > 20 then
     theme = "night"
   end
 
