@@ -61,25 +61,13 @@ M.plugins = {
   "ziontee113/icon-picker.nvim",
   "j-hui/fidget.nvim",
   "kevinhwang91/rnvimr",
+  "cappyzawa/trim.nvim",
+  "ekickx/clipboard-image.nvim",
+  "thinca/vim-quickrun",
   {
     "iamcco/markdown-preview.nvim",
     run = "cd app && npm install",
   },
-  "cappyzawa/trim.nvim",
-  "ekickx/clipboard-image.nvim",
-  "thinca/vim-quickrun",
-  -- "akinsho/toggleterm.nvim",
-  -- "jbyuki/venn.nvim",
-  -- "nvim-neorg/neorg",
-  -- "Pocco81/HighStr.nvim",
-  -- "itchyny/calendar.vim",
-  -- "oeyoews/vim-capslock",
-  "oeyoews/vim-startuptime",
-  -- "ziontee113/color-picker.nvim", -- https://www.youtube.com/watch?v=eWRoxJatH8A
-  -- {
-  --   "catppuccin/nvim",
-  --   as = "catppuccin"
-  -- },
 }
 
 return M
