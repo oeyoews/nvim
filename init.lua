@@ -11,6 +11,6 @@ require("core.bootstrap")
 
 require("core.packer")
 
-require("core")
+require("core.order")
 
 require("modules")
