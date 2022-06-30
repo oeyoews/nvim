@@ -2,11 +2,11 @@ local fidget = require("fidget")
 
 fidget.setup({
   text = {
-    spinner = "dots_pulse",
-    done = "", -- 﫟
+    spinner = "moon",
+    done = "🌕", -- 﫟
   },
   align = {
-    bottom = false,
+    bottom = true,
   },
   window = {
     relative = "editor",
