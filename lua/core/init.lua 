@@ -1,0 +1,18 @@
+--[[
+local core_modules = {
+  utils = {
+    "impatient",
+    "options",
+    "disable",
+    "functions",
+    "mappings",
+    "tokyonight",
+    "custom",
+    "notify",
+  }
+}
+
+require("core.utils.pcall").setup("core", core_modules)
+--]]
+
+print("Hello")

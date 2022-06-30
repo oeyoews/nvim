@@ -2,8 +2,11 @@ local M = {}
 
 -- PERF: add update command git -C
 
--- just suit for three layer modules
-function M.setup(modules, title, entry)
+-- @field: entry(optional) string
+-- @field: modules string
+-- @field: title(optional) string
+-- description: just suit for three layer modules
+function M.setup(entry, modules, title)
   -- setup second entry default value
   entry = entry or "modules"
   -- notification title

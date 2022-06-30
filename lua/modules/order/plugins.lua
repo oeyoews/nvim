@@ -1,23 +1,18 @@
 local M = {}
 
 M.plugins = {
+  -- @dependencies
   "lewis6991/impatient.nvim",
-
-  -- @PERFECT
   "nathom/filetype.nvim",
-
-  -- @PACKER
   "wbthomason/packer.nvim",
+  "nvim-lua/plenary.nvim",
+  "kyazdani42/nvim-web-devicons",
+  "stevearc/dressing.nvim",
 
   -- @ORDER
   "lukas-reineke/indent-blankline.nvim",
   "akinsho/bufferline.nvim",
   "oeyoews/windline.nvim",
-
-  -- @NECESSARY
-  "kyazdani42/nvim-web-devicons",
-  "nvim-lua/plenary.nvim",
-  "stevearc/dressing.nvim",
 
   -- @LANG
   {
@@ -28,10 +23,7 @@ M.plugins = {
       "p00f/nvim-ts-rainbow",
     },
   },
-  {
-    "folke/trouble.nvim",
-    requires = "kyazdani42/nvim-web-devicons",
-  },
+  "folke/trouble.nvim",
   "williamboman/nvim-lsp-installer",
   {
     "hrsh7th/nvim-cmp",
@@ -50,36 +42,22 @@ M.plugins = {
   "onsails/lspkind-nvim",
   "hrsh7th/cmp-path",
 
-  -- @TEMPORARY
-  "ziontee113/color-picker.nvim", -- https://www.youtube.com/watch?v=eWRoxJatH8A
-
   -- @TOOLS
-  {
-    "folke/todo-comments.nvim",
-    requires = "nvim-lua/plenary.nvim",
-  },
+  "folke/todo-comments.nvim",
   {
     "nvim-telescope/telescope.nvim",
     requires = {
       "nvim-telescope/telescope-packer.nvim",
+      "ziontee113/color-picker.nvim", -- https://www.youtube.com/watch?v=eWRoxJatH8A
     }
   },
   "phaazon/hop.nvim",
   "norcalli/nvim-colorizer.lua",
   "lewis6991/gitsigns.nvim",
   "numToStr/Comment.nvim",
-  {
-    "windwp/nvim-autopairs",
-    config = function() require("nvim-autopairs").setup() end,
-    event = "InsertEnter",
-  },
+  "windwp/nvim-autopairs",
   "Pocco81/HighStr.nvim",
-  -- bug:
-  {
-    "nvim-neorg/neorg",
-    config = function() require("modules.tools.neorg").setup() end,
-    ft = "norg",
-  },
+  "nvim-neorg/neorg",
   "folke/persistence.nvim",
   "oeyoews/tabout.nvim",
   "folke/which-key.nvim",
@@ -91,18 +69,13 @@ M.plugins = {
   "kevinhwang91/rnvimr",
   {
     "iamcco/markdown-preview.nvim",
-    config = function()
-      vim.g.mkdp_auto_close = 0
-    end,
     run = "cd app && npm install",
-    cmd = "MarkdownPreview",
-    ft = "markdown",
   },
   "cappyzawa/trim.nvim",
   "ekickx/clipboard-image.nvim",
   "thinca/vim-quickrun",
   "oeyoews/vim-capslock",
-  { "oeyoews/vim-startuptime", cmd = "StartupTime" },
+  "oeyoews/vim-startuptime",
 }
 
 return M

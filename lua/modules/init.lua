@@ -23,9 +23,9 @@ M.modules = {
     "gitsigns", -- show git changes in signcolumn
     "comment", -- fast comment your code
     "highstr", -- highlight select text
-    -- "autopairs", -- automatically match your half
-    -- "neorg", -- replace emace org mode
-    -- "mkdp", -- open markdown preview in your browser
+    "autopairs", -- automatically match your half
+    "neorg", -- replace emace org mode
+    "mkdp", -- open markdown preview in your browser
     "persistence", -- session manager
     "tabout", -- jump brackets base nvim-treesitter
     "telescope", -- can do anything

@@ -1,16 +1,16 @@
 local modules = {
   order = {
     "filetype",
-    "disable",
-    "options",
-    "functions",
-    "mappings",
-    "tokyonight",
-    "custom",
+    -- "disable",
+    -- "options",
+    -- "functions",
+    -- "mappings",
+    -- "tokyonight",
+    -- "custom",
     "packer",
-    "notify",
+    -- "notify",
     "bufferline",
   },
 }
 
-require("modules.utils.pcall").setup(modules, "order modules")
+require("core.utils.pcall").setup(modules, "order modules")
