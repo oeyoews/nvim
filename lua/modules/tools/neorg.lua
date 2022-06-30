@@ -3,7 +3,6 @@ local neorg = require("neorg")
 local M = {}
 
 function M.setup()
-
   local function load_completion()
     neorg.modules.load_module("core.norg.completion", nil, {
       engine = "nvim-cmp", -- Choose your completion engine here

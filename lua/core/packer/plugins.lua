@@ -48,8 +48,7 @@ M.plugins = {
     "nvim-telescope/telescope.nvim",
     requires = {
       "nvim-telescope/telescope-packer.nvim",
-      -- "ziontee113/color-picker.nvim", -- https://www.youtube.com/watch?v=eWRoxJatH8A
-    }
+    },
   },
   "phaazon/hop.nvim",
   "norcalli/nvim-colorizer.lua",
@@ -76,6 +75,7 @@ M.plugins = {
   -- "itchyny/calendar.vim",
   -- "oeyoews/vim-capslock",
   -- "oeyoews/vim-startuptime",
+  -- "ziontee113/color-picker.nvim", -- https://www.youtube.com/watch?v=eWRoxJatH8A
 }
 
 return M

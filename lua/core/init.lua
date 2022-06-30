@@ -6,7 +6,7 @@ local core_modules = {
     "tokyonight",
     "custom",
     "notify",
-  }
+  },
 }
 
 require("core.utils.pcall").setup("core", core_modules)
