@@ -5,7 +5,7 @@ lspsaga.setup({
   debug = false,
   use_saga_diagnostic_sign = true,
   error_sign = "", --     
-  warn_sign = "ﳗ", --      ﳗ 
+  warn_sign = "", --      ﳗ 
   hint_sign = "", --  﫢 ﴞ➤
   infor_sign = " ", -- NOTE: can't have space    
   diagnostic_header_icon = " ", -- 

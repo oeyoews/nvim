@@ -106,11 +106,11 @@ cmp.setup({
   -- config default window
   window = {
     -- completion = cmp.config.window.bordered(),
+    -- documentation = cmp.config.window.bordered(),
     completion = {
       border = border("CmpBorder"),
       winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None",
     },
-    -- documentation = cmp.config.window.bordered(),
     documentation = {
       border = border("CmpBorder"),
       winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None",
