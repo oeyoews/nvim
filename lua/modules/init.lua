@@ -2,6 +2,13 @@ local modules = {}
 
 modules = {
 
+  ui = {
+    "lspsaga", -- setup lspconfig ui
+    "bufferline",
+    "windline", -- statusline
+    "fidget", -- visualize lsp status
+  },
+
   -- @LANG
   langs = {
     "treesitter", -- friendly highlight your code
@@ -9,13 +16,10 @@ modules = {
     "cmp", -- config completion
     "lspconfig", -- configurate lsp settings
     "null-ls", -- complete lsp configuration
-    "lspsaga", -- setup lspconfig ui
   },
 
   -- @TOOLS
   tools = {
-    "bufferline",
-    "windline", -- statusline
     "todo_comments",
     "trouble",
     "indent", -- show indent line
@@ -23,23 +27,22 @@ modules = {
     "colorizer", -- show color in neovim
     "gitsigns", -- show git changes in signcolumn
     "comment", -- fast comment your code
-    -- "highstr", -- highlight select text
     "autopairs", -- automatically match your half
-    -- "neorg", -- replace emace org mode
     "mkdp", -- open markdown preview in your browser
     "persistence", -- session manager
     "tabout", -- jump brackets base nvim-treesitter
     "telescope", -- can do anything
     "whichkey", -- show your key bindings
-    -- "toggleterm", -- embed terminal
-    -- "calendar", -- GTD?
     "quickrun", -- quickly run your code
-    -- "venn", -- drawing diagram
-    "fidget", -- visualize lsp status
     "trim", -- delete any blank line and trailing whitespace
     "icon_picker", -- select so much icons
-    -- "color_picker", -- color picker
     "ranger", -- use ranger in neovim
+    -- "highstr", -- highlight select text
+    -- "neorg", -- replace emace org mode
+    -- "toggleterm", -- embed terminal
+    -- "calendar", -- GTD?
+    -- "venn", -- drawing diagram
+    -- "color_picker", -- color picker
   },
 }
 

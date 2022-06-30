@@ -59,9 +59,7 @@ M.plugins = {
   "folke/persistence.nvim",
   "oeyoews/tabout.nvim",
   "folke/which-key.nvim",
-  -- "akinsho/toggleterm.nvim",
   "ziontee113/icon-picker.nvim",
-  -- "jbyuki/venn.nvim",
   "j-hui/fidget.nvim",
   "kevinhwang91/rnvimr",
   {
@@ -71,6 +69,8 @@ M.plugins = {
   "cappyzawa/trim.nvim",
   "ekickx/clipboard-image.nvim",
   "thinca/vim-quickrun",
+  -- "akinsho/toggleterm.nvim",
+  -- "jbyuki/venn.nvim",
   -- "nvim-neorg/neorg",
   -- "Pocco81/HighStr.nvim",
   -- "itchyny/calendar.vim",
