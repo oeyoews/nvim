@@ -10,9 +10,10 @@ M.servers = {
   "jsonls", -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
   "cmake",
   "pyright",
-  'cssls',
+  "cssls",
   "html",
   "gopls",
+  "eslint",
   -- 'golangci_lint_ls',
   -- "tsserver",
 }

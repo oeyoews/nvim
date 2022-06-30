@@ -153,7 +153,7 @@ nnoremap <silent> <space>tS :call ToggleStatusLine()<CR>
 
 augroup quickquit
 autocmd!
-autocmd FileType null-ls-info,lspinfo,startuptime,help,qf,quickrun,snippets,tsplayground nnoremap <buffer> <silent> q :q<cr>
+autocmd FileType notify,null-ls-info,lspinfo,startuptime,help,qf,quickrun,snippets,tsplayground nnoremap <buffer> <silent> q :q<cr>
 autocmd FileType startuptime,help setlocal nocursorline nonumber norelativenumber
 augroup END
 
