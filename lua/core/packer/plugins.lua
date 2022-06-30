@@ -1,7 +1,6 @@
 local M = {}
 
 M.plugins = {
-  "olimorris/onedarkpro.nvim",
   -- @dependencies
   "lewis6991/impatient.nvim",
   "nathom/filetype.nvim",
@@ -77,6 +76,10 @@ M.plugins = {
   -- "oeyoews/vim-capslock",
   -- "oeyoews/vim-startuptime",
   -- "ziontee113/color-picker.nvim", -- https://www.youtube.com/watch?v=eWRoxJatH8A
+  -- {
+  --   "catppuccin/nvim",
+  --   as = "catppuccin"
+  -- },
 }
 
 return M

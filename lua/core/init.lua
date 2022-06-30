@@ -4,6 +4,7 @@ local core_modules = {
     "functions",
     "mappings",
     "tokyonight",
+    -- "catppuccin",
     "custom",
     "notify",
   },
