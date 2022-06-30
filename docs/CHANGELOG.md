@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.6.4](https://gitlab.com/oeyoews/nvim/compare/v5.6.3...v5.6.4) (2022-06-30)
+
+
+### Bug Fixes
+
+* change file filetype bug ([12ff70f](https://gitlab.com/oeyoews/nvim/commit/12ff70f9f3ad42dbc8c8ca1f478061c959c0313d))
+
 ## [5.6.3](https://gitlab.com/oeyoews/nvim/compare/v5.6.2...v5.6.3) (2022-06-29)
 
 
