@@ -15,18 +15,3 @@ end
 
 -- main
 switch_theme_ai()
-
--- PERF: how to change all colors after change tokyonight theme
--- https://github.com/folke/tokyonight.nvim/issues/108
-local M = {}
-
-function M.setup(theme)
-  package.loaded["tokyonight.config"] = nil
-  -- setup default value: night
-  theme = theme or "night"
-
-  vim.g.tokyonight_style = theme
-  require("tokyonight").colorscheme()
-end
-
-return M
