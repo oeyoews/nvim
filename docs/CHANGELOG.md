@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.6.6](https://gitlab.com/oeyoews/nvim/compare/v5.6.5...v5.6.6) (2022-06-30)
+
+
+### Bug Fixes
+
+* use pylsp replace pyright ([efb52f4](https://gitlab.com/oeyoews/nvim/commit/efb52f48d38b95e0d6204af0aab38919f0fa69ae))
+
 ## [5.6.5](https://gitlab.com/oeyoews/nvim/compare/v5.6.4...v5.6.5) (2022-06-30)
 
 
