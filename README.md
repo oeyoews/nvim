@@ -40,6 +40,7 @@
 <details>
 <summary>• TODO</summary>
 
+- [ ] tiny all which-key mappings
 - [ ] control module to install or uninstall plugins
 - [ ] use packer make packersnapshot
 - [ ] emulate key pressing
