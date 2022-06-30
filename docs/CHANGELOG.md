@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.6.7](https://gitlab.com/oeyoews/nvim/compare/v5.6.6...v5.6.7) (2022-06-30)
+
+
+### Bug Fixes
+
+* use or for toggle theme for new functions ([87de297](https://gitlab.com/oeyoews/nvim/commit/87de297e3f97623fdebb6f6a5a021f33025f6053))
+
 ## [5.6.6](https://gitlab.com/oeyoews/nvim/compare/v5.6.5...v5.6.6) (2022-06-30)
 
 
