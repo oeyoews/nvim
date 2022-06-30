@@ -1,7 +1,6 @@
 local M = {}
 
 M.plugins = {
-  "b0o/schemastore.nvim",
   -- @dependencies
   "lewis6991/impatient.nvim",
   "nathom/filetype.nvim",
@@ -35,6 +34,7 @@ M.plugins = {
   },
   "neovim/nvim-lspconfig",
   "jose-elias-alvarez/null-ls.nvim",
+  "b0o/schemastore.nvim",
   "tami5/lspsaga.nvim",
   "lukas-reineke/lsp-format.nvim",
   "honza/vim-snippets",
