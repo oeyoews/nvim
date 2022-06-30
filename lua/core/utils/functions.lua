@@ -143,7 +143,7 @@ endfunction
 " augroup END
 
 " add i in the end of line, to enter insert mode
-nnoremap <silent> <space>tK <cmd>call Terminal()<cr>i
+nnoremap <silent> <space>tk <cmd>call Terminal()<cr>i
 
 nnoremap <silent> <leader>ts :call ToggleStatusLine()<CR>
 
