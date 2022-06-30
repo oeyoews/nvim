@@ -15,9 +15,10 @@ M.lua = {
   },
 }
 
+-- NOTE: need close your ladder to connect this website
 M.json = {
   json = {
-    schemas = require('schemastore').json.schemas(),
+    schemas = require("schemastore").json.schemas(),
     validate = { enable = true },
   },
 }

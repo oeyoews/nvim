@@ -69,7 +69,6 @@ for _, lsp_server in ipairs(lsp_servers.servers) do
       settings = settings.json,
     })
   else
-
     lspconfig[lsp_server].setup({
       on_attach = on_attach,
       capabilities = capabilities,
