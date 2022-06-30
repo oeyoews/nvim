@@ -59,13 +59,6 @@ endfunction
 "   find ~/.config/nvim/doc/vanilla.txt
 " endfunction
 
-"
-function! FindInit() abort
-find ~/.config/nvim/init.lua
-endfunction
-
-" open nvim config file
-nnoremap <silent> <space>fi <cmd>call FindInit()<cr>
 " nnoremap <silent> <space>fi :edit ~/.config/nvim/init.lua<cr>
 
 " TODO: write a function, adjust it's dir

@@ -1,3 +1,5 @@
+require("impatient")
+
 local filetype = require("filetype")
 
 filetype.setup({

@@ -1,9 +1,6 @@
---[[
 local core_modules = {
   utils = {
-    "impatient",
     "options",
-    "disable",
     "functions",
     "mappings",
     "tokyonight",
@@ -13,6 +10,5 @@ local core_modules = {
 }
 
 require("core.utils.pcall").setup("core", core_modules)
---]]
 
-print("Hello")
+-- vim: ft=lua

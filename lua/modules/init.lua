@@ -1,6 +1,6 @@
-local M = {}
+local modules = {}
 
-M.modules = {
+modules = {
 
   -- @LANG
   langs = {
@@ -14,6 +14,7 @@ M.modules = {
 
   -- @TOOLS
   tools = {
+    "bufferline",
     "windline", -- statusline
     "todo_comments",
     "trouble",
@@ -42,8 +43,8 @@ M.modules = {
   },
 }
 
+require("core.utils.pcall").setup("modules", modules)
+
 vim.cmd([[
 nnoremap <silent> <space>fm <cmd>find ~/.config/nvim/lua/modules/init.lua<cr>
 ]])
-
-return M
