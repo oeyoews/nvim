@@ -10,7 +10,7 @@ local function switch_theme_ai()
   end
 
   vim.g.tokyonight_style = theme
-  require("tokyonight").colorscheme()
+  require("tokyonight").setup()
 end
 
 -- main

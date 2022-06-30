@@ -3,7 +3,7 @@ local theme = require("tokyonight.theme")
 
 local M = {}
 
-function M.colorscheme()
+function M.setup()
   util.load(theme.setup())
 end
 
