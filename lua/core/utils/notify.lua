@@ -1,4 +1,5 @@
--- add guicolor terminal
+vim.opt.termguicolors = true
+
 local notify = require("notify")
 
 vim.notify = notify
