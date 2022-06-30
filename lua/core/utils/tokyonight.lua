@@ -1,26 +1,31 @@
 -- feature: toggle theme night and storm
-
-local function theme_toggle()
+local function switch_theme_ai()
   local h = tonumber(os.date("%H"))
-  if h > 8 and h < 20 then
-    return "storm"
-  else
-    return "night"
+  -- default theme is storm in day
+  local theme = "storm"
+
+  -- toggle night theme in nighttime
+  if h < 8 and h > 20 then
+    theme = "night"
   end
+
+  vim.g.tokyonight_style = theme
+  require("tokyonight").colorscheme()
 end
 
-local theme = theme_toggle()
+-- main
+switch_theme_ai()
 
-vim.g.tokyonight_style = theme
+-- PERF: how to change all colors after change tokyonight theme
+local M = {}
 
-package.loaded["tokyonight.config"] = nil
+function M.setup(theme)
+  package.loaded["tokyonight.config"] = nil
+  -- setup default value: night
+  theme = theme or "night"
 
-local tokyonight = require("tokyonight")
+  vim.g.tokyonight_style = theme
+  require("tokyonight").colorscheme()
+end
 
-tokyonight.colorscheme()
-
--- option: storm(normal), day, night
--- g.tokyonight_style = "night"
-
--- Change the "hint" color to the "orange" color, and make the "error" color bright red
--- g.tokyonight_colors = { hint = "orange", error = "#ff0000" }
+return M
