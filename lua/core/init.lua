@@ -25,7 +25,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 -- fix firstly install packer, can't require packer
-vim.cmd [[packadd packer.nvim]]
+vim.cmd([[packadd packer.nvim]])
 
 local packer = require("packer")
 
@@ -80,20 +80,6 @@ packer.startup(function(use)
     packer.compile()
   end
 end)
-
-local _, _ = pcall(require, "impatient")
-
-local filetype_ok, filetype = pcall(require, "filetype")
-
-if filetype_ok then
-  filetype.setup({
-    overrides = {
-      complex = {
-        [".service"] = "systemd",
-      },
-    },
-  })
-end
 
 vim.cmd([[
   nnoremap <silent> <space>ps <Cmd>PackerSync<CR>

@@ -1,5 +1,6 @@
 local core_modules = {
   utils = {
+    "impatient",
     "night",
     "disable",
     "options",
