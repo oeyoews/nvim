@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.12.0](https://gitlab.com/oeyoews/nvim/compare/v5.11.0...v5.12.0) (2022-07-01)
+
+
+### Features
+
+* split to langs modules to user ([70d70ed](https://gitlab.com/oeyoews/nvim/commit/70d70ed0e9c2995046facd85d34bb3eb92cb8b33))
+
 # [5.11.0](https://gitlab.com/oeyoews/nvim/compare/v5.10.0...v5.11.0) (2022-07-01)
 
 
