@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.7.2](https://gitlab.com/oeyoews/nvim/compare/v5.7.1...v5.7.2) (2022-07-01)
+
+
+### Bug Fixes
+
+* add vim.cmd load packer.nvim firstly ([f6c8e50](https://gitlab.com/oeyoews/nvim/commit/f6c8e50e1ebfc9ef5331c9cd43dac883ff1b81d9))
+
 ## [5.7.1](https://gitlab.com/oeyoews/nvim/compare/v5.7.0...v5.7.1) (2022-07-01)
 
 
