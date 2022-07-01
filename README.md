@@ -41,8 +41,10 @@ NEOVIM
 
 - Just clone this repository and execute `nvim` in your terminal
 
+## TODO
+
 <details>
-<summary>• TODO</summary>
+<summary>TODO</summary>
 
 - [ ] theme: https://github.com/nshen/learn-neovim-lua/blob/main/lua/utils/change-colorscheme.lua
 - [ ] tiny all which-key mappings
