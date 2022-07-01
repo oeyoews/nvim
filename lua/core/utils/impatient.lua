@@ -7,6 +7,7 @@ if filetype_ok then
     overrides = {
       complex = {
         [".service"] = "systemd",
+        [".info"] = "json",
       },
     },
   })
