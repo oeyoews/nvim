@@ -12,7 +12,7 @@ for _, config in pairs(parsers) do
 end ]]
 
 -- @files: plugins/lsp/filetypes.lua
-local ensure_installed = require("modules.langs.parsers")
+local ensure_installed = require("user.parsers")
 
 ensure_installed = ensure_installed.parsers
 

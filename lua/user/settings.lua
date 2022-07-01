@@ -1,4 +1,5 @@
 -- @module: settings.lua
+-- @ref: modules.langs.lspconfig.lua
 
 local M = {}
 

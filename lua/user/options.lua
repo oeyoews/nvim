@@ -3,7 +3,7 @@
 local M = {}
 
 M.settings = {
-  debug_mode = true, -- @ref: core.utils.pcall
+  debug_mode = false, -- @ref: core.utils.pcall
   snapshot = nil, -- @ref: core.utils.bootstrap
 }
 

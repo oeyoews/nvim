@@ -14,8 +14,8 @@ local disabled_filetypes = {
   -- "javascript",
 }
 
--- @filetypes
-local enabale_filetypes = require("modules.langs.parsers")
+-- @parsers.lua
+local enabale_filetypes = require("user.parsers")
 
 enabale_filetypes = enabale_filetypes.parsers
 

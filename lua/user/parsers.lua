@@ -1,4 +1,5 @@
 -- @module: parsers.lua
+-- @ref: modules.langs.(null-ls.lua && treesitter.lua)
 
 local M = {}
 
