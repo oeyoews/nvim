@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.10.0](https://gitlab.com/oeyoews/nvim/compare/v5.9.0...v5.10.0) (2022-07-01)
+
+
+### Features
+
+* add *.info for json filetypes ([7370219](https://gitlab.com/oeyoews/nvim/commit/73702197152562c5e14aeb4382892606676ba78d))
+
 # [5.9.0](https://gitlab.com/oeyoews/nvim/compare/v5.8.0...v5.9.0) (2022-07-01)
 
 
