@@ -16,7 +16,7 @@ M.servers = {
   "yamlls",
   "html",
   "tsserver",
-  -- "rust_analyzer",
+  "rust_analyzer",
   -- "rls",
   -- "hls",
   -- "eslint",

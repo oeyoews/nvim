@@ -84,3 +84,7 @@
 <div>
 <img src="img/example01.png" align="bottom" width=256/>
 </div>
+
+## links
+
+* form: https://neovim.discourse.group
