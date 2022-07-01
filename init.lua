@@ -1,5 +1,9 @@
-require("core")
+local tbl = {
+  "core",
+  "core.utils",
+  "modules",
+}
 
-require("core.utils")
-
-require("modules")
+for _, v in ipairs(tbl) do
+  require(v)
+end
