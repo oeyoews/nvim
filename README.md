@@ -1,5 +1,7 @@
 <div align="center">
-<h1 align="center">🤿 NEOVIM</h1>
+<h1 align="center">
+NEOVIM
+</h1>
 </div>
 
 <div align="center">
