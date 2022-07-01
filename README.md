@@ -1,4 +1,7 @@
-<h1 align="center">NEOVIM</h1>
+<h1 align="center">
+<img src="img/neovim.png" alt="neovim" height=28>
+NEOVIM
+</h1>
 
 <div align="center">
 	🏠 <a href="https://oeyoews.github.io/nvim">Home</a>
