@@ -1,4 +1,4 @@
-<h1 align="center"> 🤿 NEOVIM </h1>
+<h1 align="center">🤿 NEOVIM</h1>
 
 <div align="center">
 	🏠 <a href="https://oeyoews.github.io/nvim">Home</a>
