@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.8.0](https://gitlab.com/oeyoews/nvim/compare/v5.7.2...v5.8.0) (2022-07-01)
+
+
+### Features
+
+* split to night.lua ([64ce253](https://gitlab.com/oeyoews/nvim/commit/64ce2531b82e714b349afc1f71194fa4738f3b9c))
+
 ## [5.7.2](https://gitlab.com/oeyoews/nvim/compare/v5.7.1...v5.7.2) (2022-07-01)
 
 
