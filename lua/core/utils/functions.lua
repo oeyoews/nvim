@@ -3,6 +3,7 @@ command! -nargs=1 Out enew|pu=execute('<args>')
 command! Scripts split | enew|pu=execute('scriptnames')
 command! -nargs=1 -complete=highlight HI enew|pu=execute('hi <args>')
 command! -nargs=?  -complete=color Themes colorscheme <args>
+" command! -nargs=?  -complete=file Snap PackerSnap <args>
 
 " function! ToggleVenn() abort
 "   let g:veen = 0
