@@ -3,6 +3,7 @@ local ok, ${1:name} = pcall(require, "$1")
 
 if not ok then
 	vim.notify("$1 not founded")
+	-- return
 end
 
 $1.setup($0)
@@ -10,16 +11,6 @@ endsnippet
 
 snippet vimn "vim votify"
 vim.notify("$1 not founded")
-endsnippet
-
-snippet module "M module template"
-local M = {}
-
-function M.setup()
-
-end
-
-return M
 endsnippet
 
 snippet template "lua template" b
@@ -32,4 +23,9 @@ snippet M "M module" b
 local M = {}
 $1
 return M
+endsnippet
+
+snippet module_comment "module comment"
+-- @module: ${1:`!p snip.rv = (snip.basename or "name") + ".lua"`}
+
 endsnippet

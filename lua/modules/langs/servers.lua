@@ -1,4 +1,5 @@
--- TODO: add settings will cause jsonls not work
+-- @module: servers.lua
+
 local M = {}
 
 M.servers = {

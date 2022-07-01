@@ -1,3 +1,5 @@
+-- @module: settings.lua
+
 local M = {}
 
 -- configuate sumneko settings

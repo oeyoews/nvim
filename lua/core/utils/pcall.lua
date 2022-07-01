@@ -1,3 +1,5 @@
+-- module: pcall.lua
+
 local M = {}
 
 -- PERF: add update command git -C

@@ -1,4 +1,4 @@
--- user.lua
+-- module: user.lua
 
 local M = {}
 

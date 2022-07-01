@@ -1,3 +1,5 @@
+-- @module: parsers.lua
+
 local M = {}
 
 M.parsers = {
