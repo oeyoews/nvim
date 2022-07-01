@@ -1,5 +1,6 @@
 local core_modules = {
   utils = {
+    "night",
     "disable",
     "options",
     "mappings",
