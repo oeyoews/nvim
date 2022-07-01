@@ -1,3 +1,7 @@
+vim.cmd([[
+nnoremap <silent> <space>fm <cmd>find ~/.config/nvim/lua/modules/init.lua<cr>
+]])
+
 local modules = {}
 
 modules = {
@@ -52,7 +56,3 @@ modules = {
 }
 
 require("core.utils.pcall").setup("modules", modules)
-
-vim.cmd([[
-nnoremap <silent> <space>fm <cmd>find ~/.config/nvim/lua/modules/init.lua<cr>
-]])

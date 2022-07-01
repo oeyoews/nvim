@@ -1,3 +1,7 @@
+vim.cmd([[
+  nnoremap <silent> <space>fp <cmd>find ~/.config/nvim/lua/modules/plugins.lua<cr>
+]])
+
 local M = {}
 
 M.plugins = {
