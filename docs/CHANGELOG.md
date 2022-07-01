@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.9.0](https://gitlab.com/oeyoews/nvim/compare/v5.8.0...v5.9.0) (2022-07-01)
+
+
+### Features
+
+* add some snapshots ([ffbe84b](https://gitlab.com/oeyoews/nvim/commit/ffbe84b2498dfcf595eb775f30df2205ea9bb377))
+
 # [5.8.0](https://gitlab.com/oeyoews/nvim/compare/v5.7.2...v5.8.0) (2022-07-01)
 
 
