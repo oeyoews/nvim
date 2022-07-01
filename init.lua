@@ -7,10 +7,8 @@ if vim.fn.has("nvim-0.8.0") == 1 then
   vim.opt.cmdheight = 0
 end
 
-require("core.packer")
+require("core")
 
-require("core.bootstrap")
-
-require("core.order")
+require("core.utils")
 
 require("modules")

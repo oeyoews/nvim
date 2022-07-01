@@ -2,7 +2,7 @@ local fn = vim.fn
 
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 
-local plugins = require("core.packer.plugins")
+local plugins = require("modules.plugins")
 
 -- @PackerSettings
 -- autoomatically install packer
@@ -28,6 +28,7 @@ local packer = require("packer")
 
 local util = require("packer.util")
 
+-- init packer
 packer.init({
 
   max_jobs = 4,
@@ -77,10 +78,24 @@ packer.startup(function(use)
   end
 end)
 
+local _, _ = pcall(require, "impatient")
+
+local filetype_ok, filetype = pcall(require, "filetype")
+
+if filetype_ok then
+  filetype.setup({
+    overrides = {
+      complex = {
+        [".service"] = "systemd",
+      },
+    },
+  })
+end
+
 vim.cmd([[
   nnoremap <silent> <space>ps <Cmd>PackerSync<CR>
   nnoremap <silent> <space>pi <cmd>PackerInstall<cr>
   nnoremap <silent> <space>pc <cmd>PackerClean<cr>
   nnoremap <silent> <space>so <cmd>so % <bar> lua vim.notify("reload current file")<cr>
-  nnoremap <silent> <space>fp <cmd>find ~/.config/nvim/lua/core/packer/plugins.lua<cr>
+  nnoremap <silent> <space>fp <cmd>find ~/.config/nvim/lua/modules/plugins.lua<cr>
 ]])

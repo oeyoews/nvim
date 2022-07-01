@@ -2,6 +2,17 @@ local modules = {}
 
 modules = {
 
+  -- deprecate config
+  misc = {
+    -- "highstr", -- highlight select text
+    -- "neorg", -- replace emace org mode
+    -- "toggleterm", -- embed terminal
+    -- "calendar", -- GTD?
+    -- "venn", -- drawing diagram
+    -- "color_picker", -- color picker
+  },
+
+  -- @ui
   ui = {
     "lspsaga", -- setup lspconfig ui
     "bufferline",
@@ -37,12 +48,6 @@ modules = {
     "trim", -- delete any blank line and trailing whitespace
     "icon_picker", -- select so much icons
     "ranger", -- use ranger in neovim
-    -- "highstr", -- highlight select text
-    -- "neorg", -- replace emace org mode
-    -- "toggleterm", -- embed terminal
-    -- "calendar", -- GTD?
-    -- "venn", -- drawing diagram
-    -- "color_picker", -- color picker
   },
 }
 
