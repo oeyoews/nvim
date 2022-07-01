@@ -37,6 +37,7 @@ vim.cmd([[
 nnoremap <silent> <leader>tu :lua require("telescope").load_extension("ultisnips")<cr>:Telescope ultisnips<cr>
 noremap <silent>  <space>tp :lua require('telescope').extensions.packer.packer()<cr>
 nnoremap <silent> <space>bm :lua require('telescope').extensions.notify.notify()<cr>
+" noremap <silent> <space>tP :lua require('telescope').load_extension('projects')<cr>
 
 nnoremap <leader>ff <cmd>Telescope find_files <cr>
 nnoremap <leader>to <cmd>Telescope oldfiles <cr>

@@ -8,6 +8,7 @@ modules = {
 
   -- deprecate config
   misc = {
+    -- "project",
     -- "highstr", -- highlight select text
     -- "neorg", -- replace emace org mode
     -- "toggleterm", -- embed terminal
