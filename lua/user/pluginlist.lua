@@ -1,8 +1,5 @@
--- module: plugins.lua
-
-vim.cmd([[
-  nnoremap <silent> <space>fp <cmd>find ~/.config/nvim/lua/modules/plugins.lua<cr>
-]])
+-- @module: plugins.lua
+-- @ref: core.utils.bootstrap.lua
 
 local M = {}
 

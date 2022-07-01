@@ -1,21 +1,7 @@
-vim.cmd([[
-nnoremap <silent> <space>fm <cmd>find ~/.config/nvim/lua/modules/init.lua<cr>
-]])
-
+-- @require: core.init.lua
 local modules = {}
 
 modules = {
-
-  -- deprecate config
-  misc = {
-    -- "project",
-    -- "highstr", -- highlight select text
-    -- "neorg", -- replace emace org mode
-    -- "toggleterm", -- embed terminal
-    -- "calendar", -- GTD?
-    -- "venn", -- drawing diagram
-    -- "color_picker", -- color picker
-  },
 
   -- @ui
   ui = {
@@ -53,6 +39,17 @@ modules = {
     "trim", -- delete any blank line and trailing whitespace
     "icon_picker", -- select so much icons
     "ranger", -- use ranger in neovim
+  },
+
+  -- deprecate config
+  misc = {
+    -- "project",
+    -- "highstr", -- highlight select text
+    -- "neorg", -- replace emace org mode
+    -- "toggleterm", -- embed terminal
+    -- "calendar", -- GTD?
+    -- "venn", -- drawing diagram
+    -- "color_picker", -- color picker
   },
 }
 
