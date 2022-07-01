@@ -1,15 +1,10 @@
 <div align="center">
-<h1 align="center">
-NEOVIM
-</h1>
+  <h2>NEOVIM</h2>
+  <img src="img/vim.png" alt="vim" align="center" width=144><hr>
+	🏠 <a href="https://oeyoews.github.io/nvim">Home</a> <hr>
 </div>
 
 <div align="center">
-	🏠 <a href="https://oeyoews.github.io/nvim">Home</a>
-</div> &nbsp;
-
-<div align="center">
-
 <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/oeyoews/nvim?color=cyan&logo=github&logoColor=violet&style=flat-square">
 <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/oeyoews/nvim?color=cyan&logo=github&logoColor=cyan&style=flat-square">
 <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/oeyoews/nvim?color=green&logo=github&logoColor=cyan&style=flat-square">
@@ -30,18 +25,11 @@ NEOVIM
 <img src="https://img.shields.io/badge/GIT-Yes-green.svg?style=flat-square&logo=git&label=GIT" alt="git">
 <img src="https://img.shields.io/badge/Shell-zsh-white.svg?style=flat-square&logo=Gnu-Bash&logoColor=9ECE6A&color=BB9AF7" alt="shell">
 <img src="https://img.shields.io/badge/Lang-lua-blueviolet.svg?style=flat-square&logo=lua&color=90E59A&logoColor=blue" alt="lang">
-
-<hr>
-
-<img src="img/2022-06-17-01-20-01.png" width=512/>
-
 </div>
 
 ## Install
 
 - Just clone this repository and execute `nvim` in your terminal
-
-## TODO
 
 <details>
 <summary>TODO</summary>
@@ -90,3 +78,11 @@ NEOVIM
 - [x] learn it option setting and lsp multi separate setting: fix lua global vim setting, <https://github.com/AstroNvim/AstroNvim>,
 
 </details>
+
+<hr>
+
+## examples
+
+<div>
+<img src="img/example01.png" align="bottom" width=256/>
+</div>

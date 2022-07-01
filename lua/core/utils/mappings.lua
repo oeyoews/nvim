@@ -107,6 +107,8 @@ nnoremap <silent> <leader>helo :lua vim.notify("  Hello, Neovim", "info", {ti
 
 nnoremap <silent> <space>fi <cmd>find ~/.config/nvim/init.lua<cr>
 
+noremap <silent> U <C-r>
+
 ]])
 
 -- TODO: https://github.com/LunarVim/LunarVim/blob/rolling/lua/lvim/keymappings.lua
