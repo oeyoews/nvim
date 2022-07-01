@@ -5,5 +5,8 @@ local tbl = {
 }
 
 for _, v in ipairs(tbl) do
-  require(v)
+  local ok, _ = pcall(require, v)
+  if not ok then
+    vim.notify(v .. " not founded")
+  end
 end

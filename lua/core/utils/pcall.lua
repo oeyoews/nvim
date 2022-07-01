@@ -59,9 +59,13 @@ function M.setup(entry, modules, title)
           vim.api.nvim_buf_set_option(buf, "filetype", "lua")
         end,
       }).events.close()
-      vim.notify.async(" Error Messages \n" .. error_tree, "error", {
-        title = title,
-      })
+      -- debug mode
+      debug_mode = require("core.utils.options").debug_mode
+      if debug_mode then
+        vim.notify.async(" Error Messages \n" .. error_tree, "error", {
+          title = title,
+        })
+      end
     end)
   end
 end
