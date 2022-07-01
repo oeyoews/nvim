@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.11.0](https://gitlab.com/oeyoews/nvim/compare/v5.10.0...v5.11.0) (2022-07-01)
+
+
+### Features
+
+* split user folder ([bc82dda](https://gitlab.com/oeyoews/nvim/commit/bc82dda95b4eae60c2fcf0ec5be8039446d01e63))
+
 # [5.10.0](https://gitlab.com/oeyoews/nvim/compare/v5.9.0...v5.10.0) (2022-07-01)
 
 
