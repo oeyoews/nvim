@@ -26,8 +26,8 @@
   "bufferline.nvim": {
     "commit": "68839d6"
   },
-  "nvim-autopairs": {
-    "commit": "4a95b39"
+  "cmp-nvim-lsp": {
+    "commit": "affe808"
   },
   "nvim-colorizer.lua": {
     "commit": "36c610a"
@@ -71,8 +71,8 @@
   "todo-comments.nvim": {
     "commit": "98b1ebf"
   },
-  "cmp-nvim-lsp": {
-    "commit": "affe808"
+  "nvim-autopairs": {
+    "commit": "4a95b39"
   },
   "nvim-treesitter-refactor": {
     "commit": "75f5895"

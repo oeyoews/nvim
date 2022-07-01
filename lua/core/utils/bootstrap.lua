@@ -53,8 +53,9 @@ packer.init({
   },
   autoremove = false,
   compile_path = util.join_paths(fn.stdpath("data"), "compile", "packer_compiled.lua"),
-  -- tips: :lua require("packer"),snapshot("default.json") or PackerSnap default.json to generate a snapshot
+  -- tips: :lua require("packer").snapshot("default.json") or PackerSnap default.json to generate a snapshot
   -- snapshot = "default.json",
+  snapshot = require("core.utils.user").settings.snapshot,
   snapshot_path = util.join_paths(fn.stdpath("config"), "snapshots"),
 })
 
