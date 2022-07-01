@@ -44,7 +44,8 @@ local default_options = {
   ruler = false,
   signcolumn = "yes", -- silent side number shake
   history = 500,
-  -- pumheight = 10, -- show complete menu numbers
+  pumheight = 10, -- show complete menu numbers
+  showtabline = 2,
   title = false,
   titlestring = "%<%F%=%l/%L - nvim",
   shell = "/bin/zsh",

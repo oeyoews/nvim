@@ -37,9 +37,9 @@ packer.init({
     working_sym = "", -- The symbol for a plugin being installed/updated
     error_sym = "", -- The symbol for a plugin with an error in installation/updating
     done_sym = "",
-    open_fn = function()
-      return util.float({ border = "single" })
-    end,
+    -- open_fn = function()
+    --   return util.float({ border = "single" })
+    -- end,
   },
   git = {
     clone_timeout = 6000,
