@@ -16,6 +16,7 @@ M.servers = {
   "yamlls",
   "html",
   "tsserver",
+  "rust_analyzer",
   -- "hls",
   -- "eslint",
   -- 'golangci_lint_ls',
