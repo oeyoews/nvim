@@ -62,7 +62,8 @@ function M.setup(entry, modules, title)
         end,
       }).events.close()
       -- debug mode
-      debug_mode = require("core.utils.user").settings.debug_mode
+      -- local debug_mode = require("core.utils.user").settings.debug_mode or false
+      local debug_mode = require("core.utils.user").settings.debug_mode
       if debug_mode then
         vim.notify.async(" Error Messages \n" .. error_tree, "error", {
           title = title,

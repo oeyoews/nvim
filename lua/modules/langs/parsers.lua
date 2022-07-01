@@ -21,6 +21,7 @@ M.parsers = {
   "markdown_inline",
   "css",
   "html",
+  "rust",
   -- "norg",
 }
 
