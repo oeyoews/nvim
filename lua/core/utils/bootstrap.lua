@@ -1,7 +1,6 @@
 local fn = vim.fn
 
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
-
 local plugins = require("modules.plugins")
 
 -- @PackerSettings
@@ -31,6 +30,10 @@ local packer = require("packer")
 
 local util = require("packer.util")
 
+local snapshot_path = util.join_paths(fn.stdpath("config"), "snapshots")
+
+local compile_path = util.join_paths(fn.stdpath("data"), "compile", "packer_compiled.lua")
+
 -- init packer
 packer.init({
 
@@ -52,11 +55,11 @@ packer.init({
     -- default_url_format = 'https://hub.fastgit.xyz/%s.git',
   },
   autoremove = false,
-  compile_path = util.join_paths(fn.stdpath("data"), "compile", "packer_compiled.lua"),
   -- tips: :lua require("packer").snapshot("default.json") or PackerSnap default.json to generate a snapshot
   -- snapshot = "default.json",
   snapshot = require("core.utils.user").settings.snapshot,
-  snapshot_path = util.join_paths(fn.stdpath("config"), "snapshots"),
+  snapshot_path = snapshot_path,
+  compile_path = compile_path,
 })
 
 packer.startup(function(use)

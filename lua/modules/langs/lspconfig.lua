@@ -86,3 +86,8 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
     prefix = "",
   },
 })
+
+vim.cmd([[
+" hover error lint
+autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
+]])

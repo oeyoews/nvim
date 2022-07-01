@@ -79,8 +79,6 @@
 
 </details>
 
-<hr>
-
 ## examples
 
 <div>
