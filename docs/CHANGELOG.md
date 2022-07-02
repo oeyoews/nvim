@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.14.0](https://gitlab.com/oeyoews/nvim/compare/v5.13.0...v5.14.0) (2022-07-02)
+
+
+### Features
+
+* add comment high ([ca14317](https://gitlab.com/oeyoews/nvim/commit/ca143174869ad12bf8193fd5a0cf947471af13ab))
+
 # [5.13.0](https://gitlab.com/oeyoews/nvim/compare/v5.12.0...v5.13.0) (2022-07-02)
 
 
