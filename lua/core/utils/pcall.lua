@@ -54,7 +54,7 @@ function M.setup(entry, modules, title)
     end
 
     async.run(function()
-      vim.notify.async(" Failed to load these modules \n" .. error_msg, "warn", {
+      vim.notify.async(" Failed to loaded modules \n" .. error_msg, "info", {
         title = title,
         on_open = function(win)
           local buf = vim.api.nvim_win_get_buf(win)
