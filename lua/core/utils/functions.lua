@@ -160,7 +160,7 @@ augroup END
 
 augroup cursorline_goggle
 au!
-autocmd InsertEnter * setlocal nocursorline
-autocmd InsertLeave * setlocal cursorline
+autocmd InsertEnter * setlocal nocursorline | setlocal rnu
+autocmd InsertLeave * setlocal cursorline | setlocal nornu
 augroup END
 ]])
