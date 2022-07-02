@@ -1,4 +1,5 @@
 -- @module: pcall.lua
+-- @ref: core.utils.init.lua && user.modules.lua
 
 local M = {}
 
@@ -25,7 +26,7 @@ function M.setup(entry, modules, title)
       -- link path to load module
       connect_path = table.concat(path, ".")
       -- link path use separator for logging
-      connect_path2 = table.concat(path, "  ")
+      connect_path2 = table.concat(path, "  ")
       -- local status_ok, _ = pcall(require, connect_path)
       local status_ok, error_log = pcall(require, connect_path)
       if not status_ok then
