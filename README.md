@@ -99,3 +99,4 @@
 ## links
 
 * form: https://neovim.discourse.group
+* emmylua comment: https://emmylua.github.io/zh_CN/annotation.html
