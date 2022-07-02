@@ -2,6 +2,8 @@
 local g = vim.g
 
 g.UltiSnipsJumpForwardTrigger = "<Plug>(ultisnips_jump_forward)"
+-- can't use two mappings
+-- g.UltiSnipsJumpBackwardTrigger = '<Plug>(ultisnips_jump_backward)'
 
 local t = function(str)
   return vim.api.nvim_replace_termcodes(str, true, true, true)
