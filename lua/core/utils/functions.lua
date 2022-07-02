@@ -160,7 +160,7 @@ augroup END
 
 augroup cursorline_goggle
 au!
-autocmd InsertEnter * setlocal nocursorline | setlocal rnu
-autocmd InsertLeave * setlocal cursorline | setlocal nornu
+autocmd InsertEnter * setlocal nocursorline " | setlocal rnu
+autocmd InsertLeave * setlocal cursorline " | setlocal nornu have bug for telescope prompt
 augroup END
 ]])

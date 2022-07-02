@@ -243,5 +243,5 @@ nnoremap <silent> <SPACE>ea :UltiSnipsEdit all<CR>
 ]])
 
 vim.cmd([[
-  autocmd FileType TelescopePrompt lua require("cmp").setup.buffer({ enabled = false })
+  autocmd FileType TelescopePrompt | lua require("cmp").setup.buffer({ enabled = false })
 ]])
