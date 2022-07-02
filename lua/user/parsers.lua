@@ -23,6 +23,7 @@ M.parsers = {
   "css",
   "html",
   "rust",
+  "comment", -- support @ highlight in comments
   -- "norg",
 }
 

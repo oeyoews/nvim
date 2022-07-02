@@ -1,6 +1,6 @@
 <div align="center">
-  <h2>NEOVIM</h2>
   <img src="img/vim.png" alt="vim" align="center" width=144><hr>
+  <h2>NEOVIM</h2>
 	🏠 <a href="https://oeyoews.github.io/nvim">Home</a> <hr>
 </div>
 
@@ -26,6 +26,17 @@
 <img src="https://img.shields.io/badge/Shell-zsh-white.svg?style=flat-square&logo=Gnu-Bash&logoColor=9ECE6A&color=BB9AF7" alt="shell">
 <img src="https://img.shields.io/badge/Lang-lua-blueviolet.svg?style=flat-square&logo=lua&color=90E59A&logoColor=blue" alt="lang">
 </div>
+<hr>
+
+# Table Of Contents
+
+<!-- vim-markdown-toc Marked -->
+
+* [Install](#install)
+* [examples](#examples)
+* [links](#links)
+
+<!-- vim-markdown-toc -->
 
 ## Install
 

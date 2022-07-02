@@ -22,6 +22,7 @@ modules = {
 
   -- @TOOLS
   tools = {
+    "neogen",
     "todo_comments",
     "trouble",
     "indent", -- show indent line

@@ -4,6 +4,8 @@
 local M = {}
 
 M.plugins = {
+  "mzlogin/vim-markdown-toc",
+  "danymat/neogen",
   -- @dependencies
   "lewis6991/impatient.nvim",
   "nathom/filetype.nvim",
