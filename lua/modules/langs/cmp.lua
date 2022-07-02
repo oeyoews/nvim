@@ -68,9 +68,10 @@ local mapping = {
       fallback()
     end
   end, { "i", "s" }),
+  ["<C-y>"] = cmp.mapping.complete(),
+  ["<C-Space>"] = cmp.mapping.complete(),
   ["<CR>"] = cmp.mapping.confirm({ select = false }),
   ["<C-c>"] = cmp.mapping.close(),
-  ["<C-y>"] = cmp.mapping.complete(),
   ["<C-n>"] = function()
     if not cmp.visible() then
       cmp.complete()
@@ -194,7 +195,7 @@ cmp.setup({
 
   -- @bug true is nothing, must to comment
   completion = {
-    -- autocomplete = false,
+    autocomplete = false,
   },
   experimental = {
     --ghost_text = {hl_group = 'GH'}
