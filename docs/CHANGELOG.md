@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.13.0](https://gitlab.com/oeyoews/nvim/compare/v5.12.0...v5.13.0) (2022-07-02)
+
+
+### Features
+
+* add "multi_icon" to config telescope prefix ([8122f65](https://gitlab.com/oeyoews/nvim/commit/8122f653d89907d030dba347641d3633ef7f459e))
+
 # [5.12.0](https://gitlab.com/oeyoews/nvim/compare/v5.11.0...v5.12.0) (2022-07-01)
 
 
