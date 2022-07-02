@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.15.1](https://gitlab.com/oeyoews/nvim/compare/v5.15.0...v5.15.1) (2022-07-02)
+
+
+### Bug Fixes
+
+* remove rnu for telescope bug ([0083ea5](https://gitlab.com/oeyoews/nvim/commit/0083ea5d0b7add80ff8884770d72742573cade8c))
+
 # [5.15.0](https://gitlab.com/oeyoews/nvim/compare/v5.14.0...v5.15.0) (2022-07-02)
 
 
