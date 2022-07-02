@@ -47,7 +47,7 @@ nnoremap <silent> <C-s> :<C-U>w<cr>:lua vim.notify("﬚  save file")<cr>
 
 nnoremap <leader>qh q:
 
-" nnoremap q <nop>
+nnoremap q <nop>
 
 nnoremap <leader>w <C-w>
 nnoremap <silent> <leader>bM :messages<cr>
