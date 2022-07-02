@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.15.0](https://gitlab.com/oeyoews/nvim/compare/v5.14.0...v5.15.0) (2022-07-02)
+
+
+### Features
+
+* use rnu in insermode ([1aade45](https://gitlab.com/oeyoews/nvim/commit/1aade4588bd990f128ddef019abfda856a3d43a1))
+
 # [5.14.0](https://gitlab.com/oeyoews/nvim/compare/v5.13.0...v5.14.0) (2022-07-02)
 
 
