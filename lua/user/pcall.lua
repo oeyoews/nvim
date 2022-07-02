@@ -1,4 +1,4 @@
--- module: pcall.lua
+-- @module: pcall.lua
 
 local M = {}
 

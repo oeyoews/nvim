@@ -54,4 +54,4 @@ modules = {
   },
 }
 
-require("core.utils.pcall").setup("modules", modules)
+require("user.pcall").setup("modules", modules)
