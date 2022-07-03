@@ -1,5 +1,7 @@
---- switch theme ai
-local switch_theme_ai = function()
+-- Automatically switch between dark and light themes during day and night
+-- Randomly switch themes during the day
+---@param opt string require theme
+local switch_theme_ai = function(opt)
   -- @bug: https://stackoverflow.com/questions/20154991/generating-uniform-random-numbers-in-lua
   math.randomseed(os.time())
   local theme = "storm"
@@ -14,9 +16,8 @@ local switch_theme_ai = function()
     theme = "night"
   end
   vim.g.tokyonight_style = theme
+  require(opt).setup()
 end
 
 -- main
-switch_theme_ai()
-
-require("tokyonight").setup()
+switch_theme_ai("tokyonight")
