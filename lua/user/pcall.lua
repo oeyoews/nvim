@@ -9,11 +9,13 @@ local M = {}
 ---@param entry string
 ---@param modules string
 ---@param title string
-function M.setup(entry, modules, title)
+M.setup = function(entry, modules, title)
   -- setup second entry default value
   entry = entry or "modules"
+  -- second entry
+  modules = modules
   -- notification title
-  title = title or "Modules Messages"
+  title = title or "Modules"
 
   -- storage error modules in for loop
   local error_modules = {}
@@ -55,7 +57,7 @@ function M.setup(entry, modules, title)
     end
 
     async.run(function()
-      vim.notify.async(" Failed to loaded modules \n" .. error_msg, "info", {
+      vim.notify.async("Failed to loaded modules \n" .. error_msg, "info", {
         title = title,
         on_open = function(win)
           local buf = vim.api.nvim_win_get_buf(win)
@@ -66,7 +68,7 @@ function M.setup(entry, modules, title)
       -- local debug_mode = require("core.utils.user").settings.debug_mode or false
       local debug_mode = require("user.options").settings.debug_mode
       if debug_mode then
-        vim.notify.async(" Error Messages \n" .. error_tree, "error", {
+        vim.notify.async("Error Messages \n" .. error_tree, "error", {
           title = title,
         })
       end
