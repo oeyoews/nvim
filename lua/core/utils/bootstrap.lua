@@ -58,13 +58,13 @@ packer.init({
   autoremove = false,
   -- tips: :lua require("packer").snapshot("default.json") or PackerSnap default.json to generate a snapshot
   -- snapshot = "default.json",
-  snapshot = require("user.options").settings.snapshot,
+  snapshot = require("user.options").snapshot,
   snapshot_path = snapshot_path,
   compile_path = compile_path,
 })
 
 packer.startup(function(use)
-  for _, plugin in pairs(plugins.plugins) do
+  for _, plugin in pairs(plugins) do
     use(plugin)
   end
 

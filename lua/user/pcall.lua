@@ -9,7 +9,8 @@ local M = {}
 ---@param entry string
 ---@param modules string
 ---@param title string
-M.setup = function(entry, modules, title)
+-- M.setup = function(entry, modules, title)
+function M.setup(entry, modules, title) -- TODO: function anonymous bug
   -- setup second entry default value
   entry = entry or "modules"
   -- second entry
@@ -66,7 +67,7 @@ M.setup = function(entry, modules, title)
       }).events.close()
       -- debug mode
       -- local debug_mode = require("core.utils.user").settings.debug_mode or false
-      local debug_mode = require("user.options").settings.debug_mode
+      local debug_mode = require("user.options").debug_mode
       if debug_mode then
         vim.notify.async("Error Messages \n" .. error_tree, "error", {
           title = title,

@@ -5,8 +5,9 @@ local tbl = {
 }
 
 for _, v in ipairs(tbl) do
-  local ok, _ = pcall(require, v)
+  local ok, errorMes = pcall(require, v)
   if not ok then
     vim.notify(v .. " not founded")
+    print(errorMes)
   end
 end

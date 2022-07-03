@@ -1,9 +1,9 @@
 -- @module: parsers.lua
 -- @ref: modules.langs.(null-ls.lua && treesitter.lua)
 
-local M = {}
+local parsers = {}
 
-M.parsers = {
+parsers = {
   "c",
   "bash",
   "json",
@@ -29,4 +29,4 @@ M.parsers = {
   -- "norg",
 }
 
-return M
+return parsers

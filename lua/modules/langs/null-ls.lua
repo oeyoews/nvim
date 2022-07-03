@@ -17,7 +17,7 @@ local disabled_filetypes = {
 -- @parsers.lua
 local enabale_filetypes = require("user.parsers")
 
-enabale_filetypes = enabale_filetypes.parsers
+-- enabale_filetypes = enabale_filetypes.parsers
 
 -- ref: http://static.kancloud.cn/kancloud/lua_style_guide/66331
 enabale_filetypes[#enabale_filetypes + 1] = "sh"

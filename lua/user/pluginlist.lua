@@ -1,9 +1,9 @@
 -- @module: plugins.lua
 -- @ref: core.utils.bootstrap.lua
 
-local M = {}
+local pluginlist = {}
 
-M.plugins = {
+pluginlist = {
   "arjunmahishi/run-code.nvim",
   "mzlogin/vim-markdown-toc",
   "danymat/neogen",
@@ -78,4 +78,4 @@ M.plugins = {
   },
 }
 
-return M
+return pluginlist

@@ -1,9 +1,9 @@
 -- @module: servers.lua
 -- @ref: modules.langs.( lspconfig.lua && lspinstall.lua )
 
-local M = {}
+local servers = {}
 
-M.servers = {
+servers = {
   "clangd", -- warn: don't modify this position or table order, unless use table self sort method to solve it
   "bashls",
   "sumneko_lua",
@@ -25,6 +25,6 @@ M.servers = {
   -- 'golangci_lint_ls',
 }
 
-return M
+return servers
 
 -- vim:ft=lua

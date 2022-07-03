@@ -57,7 +57,7 @@ end
 -- For general Lsp server
 -- todo: only overside single settings
 -- PERF: use opt to input multiple tables cmd
-for _, lsp_server in ipairs(lsp_servers.servers) do
+for _, lsp_server in pairs(lsp_servers) do
   lspconfig[lsp_server].setup({
     on_attach = on_attach,
     capabilities = capabilities,
