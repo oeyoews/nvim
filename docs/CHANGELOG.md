@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.16.0](https://gitlab.com/oeyoews/nvim/compare/v5.15.1...v5.16.0) (2022-07-03)
+
+
+### Features
+
+* use random to use random theme ([50b058a](https://gitlab.com/oeyoews/nvim/commit/50b058acda4750f2b3bff41e0aa1aec2a47f899d))
+
 ## [5.15.1](https://gitlab.com/oeyoews/nvim/compare/v5.15.0...v5.15.1) (2022-07-02)
 
 
