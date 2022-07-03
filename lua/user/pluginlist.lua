@@ -41,7 +41,7 @@ pluginlist = {
   },
   "neovim/nvim-lspconfig",
   "jose-elias-alvarez/null-ls.nvim",
-  "b0o/schemastore.nvim",
+  -- "b0o/schemastore.nvim",
   "tami5/lspsaga.nvim",
   "lukas-reineke/lsp-format.nvim",
   "honza/vim-snippets",

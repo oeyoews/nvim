@@ -21,12 +21,13 @@ M.sumneko_lua = {
 }
 
 -- NOTE: need close your ladder to connect this website
-M.jsonls = {
+--[[ M.jsonls = {
   json = {
     schemas = require("schemastore").json.schemas(),
     validate = { enable = true },
   },
 }
+--]]
 
 M.yamlls = {
   yaml = {

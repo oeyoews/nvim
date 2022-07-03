@@ -59,9 +59,9 @@ end
 -- PERF: use opt to input multiple tables cmd
 for _, lsp_server in pairs(lsp_servers) do
   lspconfig[lsp_server].setup({
+    settings = settings[lsp_server],
     on_attach = on_attach,
     capabilities = capabilities,
-    settings = settings[lsp_server],
   })
 end
 
