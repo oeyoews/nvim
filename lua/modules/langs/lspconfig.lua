@@ -40,15 +40,6 @@ capabilities.documentRangeFormattingProvider = false
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 
 -- https://github.com/neovim/nvim-lspconfig/wiki/Multiple-language-servers-FAQ#i-see-multiple-formatting-options-and-i-want-a-single-server-to-format-how-do-i-do-this
-local util = require("vim.lsp.util")
-
-local formatting_callback = function(client, bufnr)
-  vim.keymap.set("n", "<leader>f", function()
-    local params = util.make_formatting_params({})
-    client.request("textDocument/formatting", params, nil, bufnr)
-  end, { buffer = bufnr })
-end
----
 
 local on_attach = function(client)
   lspformat.on_attach(client)
