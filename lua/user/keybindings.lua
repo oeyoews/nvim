@@ -1,7 +1,5 @@
-local M = {}
-
 -- @ref: core.utils.mappings
-M.findfiles = function()
+local findfiles = function()
   vim.cmd([[
  nnoremap <silent> <space>fi <cmd>find ~/.config/nvim/init.lua<cr>
  nnoremap <silent> <space>fp <cmd>find ~/.config/nvim/lua/user/pluginlist.lua<cr>
@@ -10,4 +8,4 @@ M.findfiles = function()
 ]])
 end
 
-return M
+return findfiles

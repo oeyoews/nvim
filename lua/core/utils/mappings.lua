@@ -111,4 +111,6 @@ noremap <silent> U <C-r>
 
 -- TODO: https://github.com/LunarVim/LunarVim/blob/rolling/lua/lvim/keymappings.lua
 
-require("user.keybindings").findfiles()
+local findfile = require("user.keybindings")
+
+findfile()

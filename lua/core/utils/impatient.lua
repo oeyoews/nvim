@@ -1,4 +1,4 @@
-local _, _ = pcall(require, "impatient")
+pcall(require, "impatient")
 
 local filetype_ok, filetype = pcall(require, "filetype")
 

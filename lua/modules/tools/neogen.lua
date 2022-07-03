@@ -1,1 +1,1 @@
-require("neogen").setup()
+require("neogen")

@@ -1,5 +1,3 @@
-local g = vim.g
-
 -- disable some builtin vim plugins
 local default_plugins = {
   "2html_plugin",
@@ -35,5 +33,5 @@ local default_plugins = {
 }
 
 for _, plugin in pairs(default_plugins) do
-  g["loaded_" .. plugin] = 1
+  vim.g["loaded_" .. plugin] = 1
 end

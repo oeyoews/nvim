@@ -10,6 +10,7 @@ local M = {}
 ---@param modules string
 ---@param title string
 -- M.setup = function(entry, modules, title)
+-- function M.setup(entry, modules, title) -- TODO: function anonymous bug
 function M.setup(entry, modules, title) -- TODO: function anonymous bug
   -- setup second entry default value
   entry = entry or "modules"
