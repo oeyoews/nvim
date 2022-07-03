@@ -10,7 +10,7 @@ which_key.setup({
   },
 
   window = {
-    border = "single", -- none, single, double, shadow
+    border = "none", -- none, single, double, shadow
     position = "bottom", -- bottom, top
     padding = { 1, 1, 1, 1 }, -- extra window padding [top, right, bottom, left]
   },

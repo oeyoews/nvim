@@ -73,16 +73,17 @@ packer.startup(function(use)
   -- packer.install()
 
   -- Automatically set up your configuration after cloning packer.nvim
-  -- Put this at the end after all plugins
   if packer_bootstrap then
     if packer.config.compile_path then
+      -- WARN: danger command
       os.remove(packer.config.compile_path)
     end
     packer.sync()
   else
-    packer.install()
     -- automatically packer_compiled on startup
     packer.compile()
+    -- vim.notify("Done")
+    packer.install()
   end
 end)
 

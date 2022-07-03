@@ -4,6 +4,7 @@
 local M = {}
 
 M.plugins = {
+  "arjunmahishi/run-code.nvim",
   "mzlogin/vim-markdown-toc",
   "danymat/neogen",
   -- @dependencies

@@ -25,6 +25,7 @@ M.parsers = {
   "html",
   "rust",
   "comment", -- support @ highlight in comments
+  "vue",
   -- "norg",
 }
 

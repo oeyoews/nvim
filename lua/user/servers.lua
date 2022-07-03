@@ -17,6 +17,7 @@ M.servers = {
   "yamlls",
   "html",
   "tsserver",
+  "volar",
   -- "rust_analyzer",
   -- "rls",
   -- "hls",
