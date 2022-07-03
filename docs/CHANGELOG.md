@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.17.0](https://gitlab.com/oeyoews/nvim/compare/v5.16.2...v5.17.0) (2022-07-03)
+
+
+### Features
+
+* enable toml(taplo) ([76f859c](https://gitlab.com/oeyoews/nvim/commit/76f859cf41c6d2a743c5e7919d339a5916cfbcac))
+
 ## [5.16.2](https://gitlab.com/oeyoews/nvim/compare/v5.16.1...v5.16.2) (2022-07-03)
 
 
