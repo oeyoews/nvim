@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.16.1](https://gitlab.com/oeyoews/nvim/compare/v5.16.0...v5.16.1) (2022-07-03)
+
+
+### Bug Fixes
+
+* remove schemastore(can't show this plugin tips) ([7b2360c](https://gitlab.com/oeyoews/nvim/commit/7b2360cc1a8c4a85da51266f861fe1c4a6bcba24))
+
 # [5.16.0](https://gitlab.com/oeyoews/nvim/compare/v5.15.1...v5.16.0) (2022-07-03)
 
 
