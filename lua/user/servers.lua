@@ -18,8 +18,7 @@ servers = {
   "html",
   "tsserver",
   "volar",
-  -- "rust_analyzer",
-  -- "rls",
+  "rust_analyzer", -- need use rustup to install stable rust and setup toolchains
   -- "hls",
   -- "eslint",
   -- 'golangci_lint_ls',
