@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.16.2](https://gitlab.com/oeyoews/nvim/compare/v5.16.1...v5.16.2) (2022-07-03)
+
+
+### Bug Fixes
+
+* remove neogen jump next mappings ([bdd5637](https://gitlab.com/oeyoews/nvim/commit/bdd56373259b2b44a8f1030d67b56a0fa978fcc2))
+
 ## [5.16.1](https://gitlab.com/oeyoews/nvim/compare/v5.16.0...v5.16.1) (2022-07-03)
 
 
