@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.18.0](https://gitlab.com/oeyoews/nvim/compare/v5.17.0...v5.18.0) (2022-07-04)
+
+
+### Features
+
+* add hlargs plugin ([864770e](https://gitlab.com/oeyoews/nvim/commit/864770ea26795f355ac11e50aac1a901946deeb1))
+
 # [5.17.0](https://gitlab.com/oeyoews/nvim/compare/v5.16.2...v5.17.0) (2022-07-03)
 
 
