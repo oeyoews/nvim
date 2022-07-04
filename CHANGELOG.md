@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.19.0](https://gitlab.com/oeyoews/nvim/compare/v5.18.2...v5.19.0) (2022-07-04)
+
+
+### Features
+
+* add date mapping ([0d240e5](https://gitlab.com/oeyoews/nvim/commit/0d240e5b246ea44b7006088a1c6f4c820cc28a4d))
+
 ## [5.18.2](https://gitlab.com/oeyoews/nvim/compare/v5.18.1...v5.18.2) (2022-07-04)
 
 
