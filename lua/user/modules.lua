@@ -6,6 +6,7 @@ modules = {
 
   -- @ui
   ui = {
+    "hlargs",
     "lspsaga", -- setup lspconfig ui
     "bufferline",
     "windline", -- statusline

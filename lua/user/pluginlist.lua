@@ -4,6 +4,7 @@
 local pluginlist = {}
 
 pluginlist = {
+  "m-demare/hlargs.nvim",
   "arjunmahishi/run-code.nvim",
   "mzlogin/vim-markdown-toc",
   "danymat/neogen",
