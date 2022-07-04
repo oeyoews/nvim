@@ -2,16 +2,14 @@
 -- @ref: core.utils.init.lua && user.modules.lua
 
 local M = {}
---- just suit for three layer modules
 ---@param entry string
----@param modules string
-M.setup = function(entry, modules, m3)
-  -- storage error modules in for loop
+---@param m2 table
+---@param m3 table table
+M.setup = function(entry, m2, m3)
   local error_modules = {}
-  -- PERF: logging?
   local error_logs = {}
 
-  for _, module in ipairs(modules) do
+  for _, module in ipairs(m2) do
     for _, load_module in ipairs(m3[module]) do
       local path = { entry, module, load_module }
       -- link path to load module

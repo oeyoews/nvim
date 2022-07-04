@@ -6,7 +6,6 @@ M.modules = {
   "ui",
   "langs",
   "tools",
-  "misc",
 }
 
 M.m3 = {
@@ -19,13 +18,13 @@ M.m3 = {
     "options",
     "mappings",
     "functions", -- need after mappings
-    "tokyonight",
-    "custom", -- need after tokyonight
-    "notify",
   },
 
   -- @ui
   ui = {
+    "tokyonight",
+    "custom", -- need after tokyonight
+    "notify",
     "hlargs",
     "lspsaga", -- setup lspconfig ui
     "bufferline",
