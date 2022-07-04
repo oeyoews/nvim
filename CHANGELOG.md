@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.18.1](https://gitlab.com/oeyoews/nvim/compare/v5.18.0...v5.18.1) (2022-07-04)
+
+
+### Bug Fixes
+
+* move CHANGELOG to root ([8b5bb3b](https://gitlab.com/oeyoews/nvim/commit/8b5bb3bfe60ccde340045ba007c69ceb7b578a55))
+
 # [5.18.0](https://gitlab.com/oeyoews/nvim/compare/v5.17.0...v5.18.0) (2022-07-04)
 
 
