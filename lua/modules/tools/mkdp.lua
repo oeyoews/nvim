@@ -12,7 +12,7 @@ let g:mkdp_filetypes = [ 'markdown', 'txt', 'html']
 
 augroup markdownpreview
   autocmd!
-  autocmd FileType markdown nnoremap <silent> <leader>fM :MarkdownPreviewToggle<CR>
+  autocmd FileType markdown,html nnoremap <silent> <leader>fM :MarkdownPreviewToggle<CR>
 augroup END
 ]])
 --]=]

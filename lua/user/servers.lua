@@ -5,20 +5,22 @@ local servers = {}
 
 servers = {
   "clangd", -- warn: don't modify this position or table order, unless use table self sort method to solve it
-  "bashls",
+  "pylsp", -- support formatting
+  "jdtls",
+  "gopls",
   "sumneko_lua",
+  "volar",
+  "rust_analyzer", -- need use rustup to install stable rust and setup toolchains
+  "solargraph",
+  "bashls",
   "vimls",
   "jsonls", -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
   "cmake",
   -- "pyright",
-  "pylsp", -- support formatting
   "cssls",
-  "gopls",
   "yamlls",
   "html",
   "tsserver",
-  "volar",
-  "rust_analyzer", -- need use rustup to install stable rust and setup toolchains
   "taplo",
   -- "hls",
   -- "eslint",
