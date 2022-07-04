@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.18.2](https://gitlab.com/oeyoews/nvim/compare/v5.18.1...v5.18.2) (2022-07-04)
+
+
+### Bug Fixes
+
+* remove title variable ([dcb12c8](https://gitlab.com/oeyoews/nvim/commit/dcb12c862be143f65d923a183994b97ccebbfd99))
+
 ## [5.18.1](https://gitlab.com/oeyoews/nvim/compare/v5.18.0...v5.18.1) (2022-07-04)
 
 
