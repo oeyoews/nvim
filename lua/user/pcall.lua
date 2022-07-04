@@ -1,20 +1,15 @@
 -- @module: pcall.lua
 -- @ref: core.utils.init.lua && user.modules.lua
 
--- PERF: add update command git -C
-
+local M = {}
 --- just suit for three layer modules
 ---@param entry string
 ---@param modules string
--- M.setup = function(entry, modules, title)
--- function M.setup(entry, modules, title) -- TODO: function anonymous bug
-local setup = function(entry, modules) -- TODO: function anonymous bug
+M.setup = function(entry, modules)
   -- setup second entry default value
   entry = entry or "modules"
   -- second entry
   modules = modules
-  -- notification title
-  title = modules or "Modules"
 
   -- storage error modules in for loop
   local error_modules = {}
@@ -44,32 +39,18 @@ local setup = function(entry, modules) -- TODO: function anonymous bug
 
   local error_tree = table.concat(error_logs, "\n")
 
-  local plenary_ok, async = pcall(require, "plenary.async")
-
-  if not plenary_ok then
-    return
-  end
+  local async = require("plenary.async")
+  local notify = require("notify").async
+  local debug_mode = require("user.options").debug_mode
 
   if #error_modules ~= 0 then
-    -- async output errormessages
     async.run(function()
-      vim.notify.async("Failed to loaded modules \n" .. error_msg, "info", {
-        title = title,
-        on_open = function(win)
-          local buf = vim.api.nvim_win_get_buf(win)
-          vim.api.nvim_buf_set_option(buf, "filetype", "lua")
-        end,
-      }).events.close()
-      -- debug mode
-      -- local debug_mode = require("core.utils.user").settings.debug_mode or false
-      local debug_mode = require("user.options").debug_mode
+      notify("Failed to loaded modules \n" .. error_msg, "info", { title = "Modules" }).events.close()
       if debug_mode then
-        vim.notify.async("Error Messages \n" .. error_tree, "error", {
-          title = title,
-        })
+        notify("Error Messages \n" .. error_tree, "error", { title = "Debug" })
       end
     end)
   end
 end
 
-return setup
+return M

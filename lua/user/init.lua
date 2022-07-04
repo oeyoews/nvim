@@ -1,7 +1,5 @@
-local modules = require("user.modules")
-
-local setup = require("user.pcall")
-
 require("core.utils")
 
-setup("modules", modules)
+local modules = require("user.modules")
+
+require("user.pcall").setup("modules", modules)
