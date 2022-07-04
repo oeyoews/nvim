@@ -1,9 +1,28 @@
 -- @require: core.init.lua
 -- @see user.init.lua
+local M = {}
 
-local modules = {}
+M.modules = {
+  "ui",
+  "langs",
+  "tools",
+  "misc",
+}
 
-modules = {
+M.m3 = {
+
+  utils = {
+    "bootstrap",
+    "impatient",
+    "night",
+    "disable",
+    "options",
+    "mappings",
+    "functions", -- need after mappings
+    "tokyonight",
+    "custom", -- need after tokyonight
+    "notify",
+  },
 
   -- @ui
   ui = {
@@ -57,4 +76,4 @@ modules = {
   },
 }
 
-return modules
+return M

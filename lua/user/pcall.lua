@@ -5,20 +5,15 @@ local M = {}
 --- just suit for three layer modules
 ---@param entry string
 ---@param modules string
-M.setup = function(entry, modules)
-  -- setup second entry default value
-  entry = entry or "modules"
-  -- second entry
-  modules = modules
-
+M.setup = function(entry, modules, m3)
   -- storage error modules in for loop
   local error_modules = {}
   -- PERF: logging?
   local error_logs = {}
 
-  for package, module in pairs(modules) do
-    for _, load_module in ipairs(module) do
-      local path = { entry, package, load_module }
+  for _, module in ipairs(modules) do
+    for _, load_module in ipairs(m3[module]) do
+      local path = { entry, module, load_module }
       -- link path to load module
       connect_path = table.concat(path, ".")
       -- link path use separator for logging

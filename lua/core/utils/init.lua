@@ -1,4 +1,8 @@
 local core_modules = {
+  "utils",
+}
+
+local m3 = {
   utils = {
     "bootstrap",
     "impatient",
@@ -13,6 +17,8 @@ local core_modules = {
   },
 }
 
-require("user.pcall").setup("core", core_modules)
+local entry = "core"
+local modules = core_modules
+local m3 = m3
 
--- vim: ft=lua
+require("user.pcall").setup(entry, modules, m3)
