@@ -2,14 +2,17 @@
 -- Randomly switch themes during the day
 ---@param opt string require theme
 -- @see core.util.tokyonight.lua
+
+-- @bug: https://stackoverflow.com/questions/20154991/generating-uniform-random-numbers-in-lua
+math.randomseed(os.time())
+local theme = "storm"
+local hour_number = tonumber(os.date("%H"))
+local status = math.random(0, 1)
+
+-- default theme is storm in day
+--- toggle night theme in nighttime
+---@param opt string theme
 local sta = function(opt)
-  -- @bug: https://stackoverflow.com/questions/20154991/generating-uniform-random-numbers-in-lua
-  math.randomseed(os.time())
-  local theme = "storm"
-  local hour_number = tonumber(os.date("%H"))
-  local status = math.random(0, 1)
-  -- default theme is storm in day
-  -- toggle night theme in nighttime
   if hour_number < 8 or hour_number > 20 or status == 1 then
     theme = "night"
   end
