@@ -1,11 +1,12 @@
 -- @require: core.init.lua
--- @see user.init.lua
+-- @see init.lua
 local M = {}
 
 M.modules = {
   "ui",
   "langs",
   "tools",
+  "misc",
 }
 
 M.m3 = {
