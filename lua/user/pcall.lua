@@ -1,23 +1,20 @@
 -- @module: pcall.lua
 -- @ref: core.utils.init.lua && user.modules.lua
 
-local M = {}
-
 -- PERF: add update command git -C
 
 --- just suit for three layer modules
 ---@param entry string
 ---@param modules string
----@param title string
 -- M.setup = function(entry, modules, title)
 -- function M.setup(entry, modules, title) -- TODO: function anonymous bug
-function M.setup(entry, modules, title) -- TODO: function anonymous bug
+local setup = function(entry, modules) -- TODO: function anonymous bug
   -- setup second entry default value
   entry = entry or "modules"
   -- second entry
   modules = modules
   -- notification title
-  title = title or "Modules"
+  title = modules or "Modules"
 
   -- storage error modules in for loop
   local error_modules = {}
@@ -47,17 +44,14 @@ function M.setup(entry, modules, title) -- TODO: function anonymous bug
 
   local error_tree = table.concat(error_logs, "\n")
 
-  -- adjust error or not
-  local length = #error_modules
+  local plenary_ok, async = pcall(require, "plenary.async")
 
-  -- output error modules
-  if length > 0 then
-    local plenary_ok, async = pcall(require, "plenary.async")
+  if not plenary_ok then
+    return
+  end
 
-    if not plenary_ok then
-      return
-    end
-
+  if #error_modules ~= 0 then
+    -- async output errormessages
     async.run(function()
       vim.notify.async("Failed to loaded modules \n" .. error_msg, "info", {
         title = title,
@@ -78,4 +72,4 @@ function M.setup(entry, modules, title) -- TODO: function anonymous bug
   end
 end
 
-return M
+return setup

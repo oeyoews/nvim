@@ -1,4 +1,5 @@
 -- @require: core.init.lua
+-- @see user.init.lua
 
 local modules = {}
 
@@ -56,4 +57,4 @@ modules = {
   },
 }
 
-require("user.pcall").setup("modules", modules)
+return modules

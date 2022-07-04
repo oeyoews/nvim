@@ -13,6 +13,6 @@ local core_modules = {
   },
 }
 
-require("user.pcall").setup("core", core_modules)
+require("user.pcall")("core", core_modules)
 
 -- vim: ft=lua
