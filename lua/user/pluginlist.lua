@@ -36,7 +36,6 @@ pluginlist = {
   {
     "hrsh7th/nvim-cmp",
     requires = {
-      "hrsh7th/cmp-cmdline",
       "quangnguyen30192/cmp-nvim-ultisnips",
       "hrsh7th/cmp-buffer",
     },

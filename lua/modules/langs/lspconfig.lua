@@ -39,10 +39,6 @@ capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 
 -- https://github.com/neovim/nvim-lspconfig/wiki/Multiple-language-servers-FAQ#i-see-multiple-formatting-options-and-i-want-a-single-server-to-format-how-do-i-do-this
 
-local on_attach = function(client)
-  -- lspformat.on_attach(client)
-end
-
 -- For general Lsp server
 -- todo: only overside single settings
 -- PERF: use opt to input multiple tables cmd

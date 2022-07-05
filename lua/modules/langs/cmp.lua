@@ -60,9 +60,7 @@ local mapping = {
   -- ["<C-n>"] = cmp.mapping(cmp.mapping.select_next_item(), { "i", "s" }),
   -- ["<C-p>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "s" }),
   ["<S-Tab>"] = cmp.mapping(function(fallback)
-    if require("neogen").jumpable(true) then
-      require("neogen").jump_prev()
-    elseif cmp.visible() then
+    if cmp.visible() then
       cmp.select_prev_item()
     else
       fallback()
@@ -101,13 +99,6 @@ local mapping = {
         vim.api.nvim_feedkeys(t("<Plug>(ultisnips_jump_forward)"), "m", true)
       else
         fallback()
-      end
-    end,
-    c = function()
-      if cmp.visible() then
-        cmp.select_next_item({ behavior = cmp.SelectBehavior.Insert })
-      else
-        cmp.complete()
       end
     end,
   }),
@@ -202,24 +193,6 @@ cmp.setup({
 
   -- sources
   sources = sources,
-})
-
--- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
-cmp.setup.cmdline("/", {
-  mapping = cmp.mapping.preset.cmdline(),
-  sources = {
-    { name = "buffer" },
-  },
-})
-
--- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
-cmp.setup.cmdline(":", {
-  mapping = cmp.mapping.preset.cmdline(),
-  sources = cmp.config.sources({
-    { name = "path" },
-  }, {
-    { name = "cmdline" },
-  }),
 })
 
 g.UltiSnipsEditSplit = "vertical"
