@@ -1,7 +1,5 @@
 local fn = vim.fn
-
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
-
 local plugins = require("user.pluginlist")
 
 -- @PackerSettings
@@ -28,11 +26,8 @@ end
 vim.cmd([[packadd packer.nvim]])
 
 local packer = require("packer")
-
 local util = require("packer.util")
-
 local snapshot_path = util.join_paths(fn.stdpath("config"), "snapshots")
-
 local compile_path = util.join_paths(fn.stdpath("data"), "compile", "packer_compiled.lua")
 
 -- init packer

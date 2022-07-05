@@ -1,5 +1,4 @@
 local lsp_installer = require("nvim-lsp-installer")
-
 local lsp_servers = require("user.servers")
 
 lsp_installer.setup({

@@ -13,14 +13,11 @@ end ]]
 
 -- @files: plugins/lsp/filetypes.lua
 local ensure_installed = require("user.parsers")
-
 -- ensure_installed = ensure_installed.parsers
-
 local disable_filetypes = {
   -- "python",
   -- "yml",
 }
-
 local rainbow_colors = {
   "#F7768E",
   "#8169B4",
@@ -30,7 +27,6 @@ local rainbow_colors = {
   "#d65d0e",
   "#458588",
 }
-
 local terminal_colors = {
   "Red",
   "Green",

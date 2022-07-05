@@ -10,10 +10,9 @@ local t = function(str)
 end
 
 -- @nvim_cmp
-local ok, cmp = pcall(require, "cmp")
-
+local _, cmp = pcall(require, "cmp")
 -- -- @lspkind
-local lspkind_ok, lspkind = pcall(require, "lspkind")
+local _, lspkind = pcall(require, "lspkind")
 
 local function border(hl_name)
   return {
