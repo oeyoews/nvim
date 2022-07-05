@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.21.0](https://gitlab.com/oeyoews/nvim/compare/v5.20.0...v5.21.0) (2022-07-05)
+
+
+### Features
+
+* add vim-startuptime ([24c5b6a](https://gitlab.com/oeyoews/nvim/commit/24c5b6a7c2713ef3a8f4b7985d847e130c6f9862))
+
 # [5.20.0](https://gitlab.com/oeyoews/nvim/compare/v5.19.1...v5.20.0) (2022-07-05)
 
 
