@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.20.0](https://gitlab.com/oeyoews/nvim/compare/v5.19.1...v5.20.0) (2022-07-05)
+
+
+### Features
+
+* use spell source with null-ls ([707374e](https://gitlab.com/oeyoews/nvim/commit/707374e73fa5618340d65bb72d6112faf356bb17))
+
 ## [5.19.1](https://gitlab.com/oeyoews/nvim/compare/v5.19.0...v5.19.1) (2022-07-05)
 
 
