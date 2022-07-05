@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.21.1](https://gitlab.com/oeyoews/nvim/compare/v5.21.0...v5.21.1) (2022-07-05)
+
+
+### Bug Fixes
+
+* remove cmdline ([beeff6d](https://gitlab.com/oeyoews/nvim/commit/beeff6daabe2f514862e39b87b063cb0a6192652))
+
 # [5.21.0](https://gitlab.com/oeyoews/nvim/compare/v5.20.0...v5.21.0) (2022-07-05)
 
 
