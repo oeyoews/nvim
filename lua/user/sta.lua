@@ -16,6 +16,7 @@ local sta = function(opt)
   if hour_number < 8 or hour_number > 20 or status == 1 then
     theme = "night"
   end
+
   vim.g.tokyonight_style = theme
   require(opt).setup()
 end

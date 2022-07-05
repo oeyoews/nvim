@@ -33,7 +33,6 @@ M.setup = function(entry, m2, m3)
 
   -- link error_modules path from for loop
   error_msg = table.concat(error_modules, "\n")
-
   error_tree = table.concat(error_logs, "\n")
 
   -- async output message base plenary plugin
