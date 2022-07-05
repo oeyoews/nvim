@@ -1,5 +1,6 @@
 -- @require: core.init.lua
 -- @see init.lua
+
 local M = {}
 
 M.modules = {
@@ -10,7 +11,7 @@ M.modules = {
 }
 
 M.m3 = {
-
+  -- @utils
   utils = {
     "bootstrap",
     "impatient",
@@ -64,7 +65,7 @@ M.m3 = {
     "ranger", -- use ranger in neovim
   },
 
-  -- deprecate config
+  -- @deprecate_config
   misc = {
     -- "project",
     -- "highstr", -- highlight select text
