@@ -20,7 +20,7 @@ servers = {
   "cssls",
   "yamlls",
   "html",
-  "tsserver",
+  "tsserver", -- must in folder
   "taplo",
   -- "hls",
   -- "eslint",

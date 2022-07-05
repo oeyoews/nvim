@@ -8,8 +8,6 @@ local lsp_servers = require("user.servers")
 -- @settings.lua
 local settings = require("user.settings")
 
-local lspformat = require("lsp-format")
-
 -- @nvim_cmp
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
@@ -42,7 +40,7 @@ capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 -- https://github.com/neovim/nvim-lspconfig/wiki/Multiple-language-servers-FAQ#i-see-multiple-formatting-options-and-i-want-a-single-server-to-format-how-do-i-do-this
 
 local on_attach = function(client)
-  lspformat.on_attach(client)
+  -- lspformat.on_attach(client)
 end
 
 -- For general Lsp server
@@ -51,7 +49,7 @@ end
 for _, lsp_server in pairs(lsp_servers) do
   lspconfig[lsp_server].setup({
     settings = settings[lsp_server],
-    on_attach = on_attach,
+    -- on_attach = on_attach,
     capabilities = capabilities,
   })
 end

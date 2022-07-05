@@ -4,6 +4,7 @@
 local pluginlist = {}
 
 pluginlist = {
+  "mhartington/formatter.nvim",
   "m-demare/hlargs.nvim",
   "arjunmahishi/run-code.nvim",
   "mzlogin/vim-markdown-toc",
@@ -43,7 +44,6 @@ pluginlist = {
   "neovim/nvim-lspconfig",
   "jose-elias-alvarez/null-ls.nvim",
   "kkharji/lspsaga.nvim",
-  "lukas-reineke/lsp-format.nvim",
   "honza/vim-snippets",
   "SirVer/ultisnips",
   "hrsh7th/cmp-nvim-lsp",

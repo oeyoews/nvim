@@ -40,7 +40,8 @@ M.m3 = {
     "lspinstall", -- preinstall some servers
     "cmp", -- config completion
     "lspconfig", -- configurate lsp settings
-    "null-ls", -- complete lsp configuration
+    -- "null-ls", -- complete lsp configuration
+    "formatter",
   },
 
   -- @TOOLS
@@ -60,7 +61,7 @@ M.m3 = {
     "telescope", -- can do anything
     "whichkey", -- show your key bindings
     "quickrun", -- quickly run your code
-    "trim", -- delete any blank line and trailing whitespace
+    -- "trim", -- delete any blank line and trailing whitespace
     "icon_picker", -- select so much icons
     "ranger", -- use ranger in neovim
   },
