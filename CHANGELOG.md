@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.19.1](https://gitlab.com/oeyoews/nvim/compare/v5.19.0...v5.19.1) (2022-07-05)
+
+
+### Bug Fixes
+
+* rewrite filetype.lua(impatient) ([fd587bb](https://gitlab.com/oeyoews/nvim/commit/fd587bba23c11862d6163ba59fe99da3a27f5272))
+
 # [5.19.0](https://gitlab.com/oeyoews/nvim/compare/v5.18.2...v5.19.0) (2022-07-04)
 
 
