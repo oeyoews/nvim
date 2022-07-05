@@ -1,9 +1,10 @@
 -- NOTE: this null_ls can't return, unless really uninstall it
 local null_ls = require("null-ls")
-
 local diagnostics = null_ls.builtins.diagnostics
 local completion = null_ls.builtins.completion
 local formatting = null_ls.builtins.formatting
+-- @parsers.lua
+local enabale_filetypes = require("user.parsers")
 
 local disabled_filetypes = {
   -- "jsonc",
@@ -13,9 +14,6 @@ local disabled_filetypes = {
   -- "java",
   -- "javascript",
 }
-
--- @parsers.lua
-local enabale_filetypes = require("user.parsers")
 
 local sources = {
   -- completion.spell, -- ugly

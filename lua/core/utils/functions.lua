@@ -5,19 +5,6 @@ command! -nargs=1 -complete=highlight HI enew|pu=execute('hi <args>')
 command! -nargs=?  -complete=color Themes colorscheme <args>
 " command! -nargs=?  -complete=file Snap PackerSnap <args>
 
-" function! ToggleVenn() abort
-"   let g:veen = 0
-"   if g:veen
-"      setlocal nocuc
-"   let g:veen = 0
-"   else
-"     setlocal cuc
-"   let g:veen = 1
-"   endif
-"   lua Toggle_venn()
-"   lua vim.notify("Toggle Venn")
-" endfunction
-
 function! FormatFile() abort
 let save_cursor = getpos('.')
 normal! gg=G
@@ -26,7 +13,6 @@ endfunction
 
 function! Terminal()
 " TODO: have conflict for ranger(TermOpen)
-"setlocal filetype=omz
 "au! TermOpen * call feedkeys("i")
 autocmd! TermClose * call feedkeys("\<esc>")
 split | terminal
@@ -35,113 +21,15 @@ setlocal nocursorline
 endfunction
 
 function! ToggleStatusLine() abort
-" laststatus default is 2
 if &laststatus
 set laststatus=0
 else
 set laststatus=3
 endif
-
-" disable lastline right info set ruler!
-" set noruler
-" let statusline = 2
-" let &laststatus = statusline
-lua vim.notify("ToggleStatusLine")
 endfunction
 
-" function! FindVanilla() abort
-"   " this variable how to be quoted
-"   " let &vanilla = stdpath('config') . '/doc/vanilla.tx'
-"   "   if !empty(glob(&vanilla))
-"   "    echo &vanilla
-"   "   else
-"   "       echom "this &vanilla not fouded"
-"   "   endif
-"   find ~/.config/nvim/doc/vanilla.txt
-" endfunction
-
-" nnoremap <silent> <space>fi :edit ~/.config/nvim/init.lua<cr>
-
-" TODO: write a function, adjust it's dir
 "nnoremap <space>fd <cmd>e ~/dotfiles/notes/draft/`date -I`.md<cr>
 "nnoremap <space>fd <cmd>e ${NOTES}/markdown/$(date +"%d-%m-%Y").md<cr>
-
-" for spelling
-" for spell dir, en...add this file is auto, just for more file exist
-" set spellfile+=~/.config/nvim/spell/myspell.utf-8.add
-" is confilict spellfile
-"set dictionary=~/.config/nvim/dict/myself.md
-
-" use ctrl k && ctrl l
-"set dictionary+=~/.config/nvim/dict/myself.txt
-" h 'complete' or may use ctrl x && ctrl k
-" ctrl x && ctrl L(copy line)
-" ctrl x && ctrl f(complete filename)
-"
-" set complete+=k~/.config/nvim/dict/myself.md
-
-"function! ToggleSpelling()
-"if &spell
-"setlocal nospell
-""echo &spell
-"echo "disable spell"
-"else
-"setlocal spell
-""echo &spell
-"echo "enable spell"
-"endif
-"endfunction
-
-" TODO
-"nnoremap <space>ss <cmd>call ToggleSpelling()<cr>
-" " is's silent
-" TODO:: auto disappeard in some seconds
-
-" need set spell
-" fastly quick fix spell error
-" TODO: ???
-" inoremap <silent> <A-h> <c-g>u<Esc>[s1z=`]a<c-g>u
-"nnoremap <A-h> <c-g>u<Esc>[s1z=`]a<c-g>u
-
-"nnoremap <space>qe z=
-
-" personal tips
-" nnoremap <leader>ed  <Cmd>e ~/.config/nvim/dict/myself.md<CR>
-" spell good words
-" nnoremap <leader>es  <Cmd>e ~/.config/nvim/spell/myspell.utf-8.add<CR>
-"
-" exec "nohlsearch"
-
-" EditorConfigReload
-" let g:EditorConfig_verbose=1
-
-"let g:vimtex_view_method='zathura'
-" need set this conceallevel to level 2, to fix width to large
-"
-" let g:tex_flavor='latex'
-" let g:vimtex_quickfix_mode=0
-" let g:tex_conceal='abdmg'
-
-" fixed latex filetype(plaintex)
-" autocmd BufRead,BufNewFile *.tex set filetype=tex
-" autocmd! FileType *.tex set filetype=tex
-
-"set conceallevel=2
-
-" augroup FormatCommand
-"   au!
-"   autocmd BufWritePre *.yaml,*.vim call FormatFile()
-" augroup END
-"
-" config chezmoi
-" exec zsh not use , just int current vim work
-" function! ChezmoiSource() abort
-" !chezmoi apply --source-path "%"
-" endfunction
-" augroup refreshdotfile
-" autocmd!
-" au BufWrite ~/.local/share/chezmoi/dot_*/**/ :call ChezmoiSource()
-" augroup END
 
 " add i in the end of line, to enter insert mode
 nnoremap <silent> <space>tk <cmd>call Terminal()<cr>i
