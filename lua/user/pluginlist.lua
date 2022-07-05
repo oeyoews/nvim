@@ -72,6 +72,7 @@ pluginlist = {
   "cappyzawa/trim.nvim",
   "ekickx/clipboard-image.nvim",
   "thinca/vim-quickrun",
+  "oeyoews/vim-startuptime",
   {
     "iamcco/markdown-preview.nvim",
     run = "cd app && npm install",
