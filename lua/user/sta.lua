@@ -5,18 +5,16 @@
 
 -- @bug: https://stackoverflow.com/questions/20154991/generating-uniform-random-numbers-in-lua
 math.randomseed(os.time())
-local theme = "storm"
-local hour_number = tonumber(os.date("%H"))
+local theme = "night"
+local nvim_time = tonumber(os.date("%H"))
 local status = math.random(0, 1)
 
--- default theme is storm in day
---- toggle night theme in nighttime
+--- only in day , have opportunity get day theme
 ---@param opt string theme
 local sta = function(opt)
-  if hour_number < 8 or hour_number > 20 or status == 1 then
-    theme = "night"
+  if nvim_time > 8 and nvim_time < 20 and status == 1 then
+    theme = "storm"
   end
-
   vim.g.tokyonight_style = theme
   require(opt).setup()
 end
