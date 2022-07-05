@@ -16,14 +16,6 @@ require("formatter").setup({
     -- Formatter configurations for filetype "lua" go here
     -- and will be executed in order
     -- TODO: how to less it [opt] == function xxx end
-    html = prettier,
-    css = prettier,
-    javascript = prettier,
-    json = prettier,
-    yaml = prettier,
-    python = {
-      require("formatter.filetypes.python").autopep8, -- python3 -m pip install --upgrade autopep8
-    },
     lua = {
       require("formatter.filetypes.lua").stylua,
     },
@@ -33,9 +25,17 @@ require("formatter").setup({
     go = {
       require("formatter.filetypes.go").gofmt,
     },
+    python = {
+      require("formatter.filetypes.python").autopep8, -- python3 -m pip install --upgrade autopep8
+    },
     rust = {
       require("formatter.filetypes.rust").rustfmt,
     },
+    html = prettier,
+    css = prettier,
+    javascript = prettier,
+    json = prettier,
+    yaml = prettier,
     -- Use the special "*" filetype for defining formatter configurations on
     -- any filetype
     ["*"] = {

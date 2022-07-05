@@ -40,7 +40,7 @@ M.m3 = {
     "lspinstall", -- preinstall some servers
     "cmp", -- config completion
     "lspconfig", -- configurate lsp settings
-    -- "null-ls", -- complete lsp configuration
+    "null-ls", -- complete lsp configuration
     "formatter",
   },
 
