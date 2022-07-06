@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.23.0](https://gitlab.com/oeyoews/nvim/compare/v5.22.0...v5.23.0) (2022-07-06)
+
+
+### Features
+
+* add sumneko_lua_locale_cn options ([56eaf5f](https://gitlab.com/oeyoews/nvim/commit/56eaf5fdeddcdd209c88bef0d1b1a37f5bee57f2))
+
 # [5.22.0](https://gitlab.com/oeyoews/nvim/compare/v5.21.1...v5.22.0) (2022-07-06)
 
 
