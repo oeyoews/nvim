@@ -4,6 +4,7 @@
 local pluginlist = {}
 
 pluginlist = {
+  "folke/lua-dev.nvim",
   "mhartington/formatter.nvim",
   "m-demare/hlargs.nvim",
   "arjunmahishi/run-code.nvim",

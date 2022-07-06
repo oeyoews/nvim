@@ -114,3 +114,9 @@ noremap <silent> U <C-r>
 local findfile = require("user.keybindings")
 
 findfile()
+
+-- nnoremap <leader>bb  <Cmd>e `mktemp -t scratch-XXXXXX`<CR>
+
+-- TODO:
+-- tmpfile = os.tmpname()
+-- nvim_ fp

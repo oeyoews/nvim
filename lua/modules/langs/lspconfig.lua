@@ -78,3 +78,12 @@ vim.cmd([[
 " hover error lint
 " autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
 ]])
+
+local luadev = require("lua-dev").setup({
+  -- add any options here, or leave empty to use the default settings
+  -- lspconfig = {
+  --   cmd = {"lua-language-server"}
+  -- },
+})
+
+lspconfig.sumneko_lua.setup(luadev)
