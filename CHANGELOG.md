@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.27.0](https://gitlab.com/oeyoews/nvim/compare/v5.26.0...v5.27.0) (2022-07-06)
+
+
+### Features
+
+* config neorg ([0a0e0a6](https://gitlab.com/oeyoews/nvim/commit/0a0e0a61fde11b33008d7001ab6b584da2c64c2f))
+
 # [5.26.0](https://gitlab.com/oeyoews/nvim/compare/v5.25.1...v5.26.0) (2022-07-06)
 
 
