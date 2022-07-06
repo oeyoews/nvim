@@ -28,20 +28,24 @@ local luadev = require("lua-dev").setup({
   },
 })
 
+local enable_lsp = require("user.options").enable_lsp
+
 -- https://github.com/neovim/nvim-lspconfig/wiki/Multiple-language-servers-FAQ#i-see-multiple-formatting-options-and-i-want-a-single-server-to-format-how-do-i-do-this
 
 -- For general Lsp server
 -- todo: only overside single settings
 -- PERF: use opt to input multiple tables cmd
-for _, lsp_server in pairs(lsp_servers) do
-  if lsp_server == "sumneko_lua" then
-    lspconfig[lsp_server].setup(luadev)
-  else
-    lspconfig[lsp_server].setup({
-      settings = settings[lsp_server],
-      -- on_attach = on_attach,
-      capabilities = capabilities,
-    })
+if enable_lsp then
+  for _, lsp_server in pairs(lsp_servers) do
+    if lsp_server == "sumneko_lua" then
+      lspconfig[lsp_server].setup(luadev)
+    else
+      lspconfig[lsp_server].setup({
+        settings = settings[lsp_server],
+        -- on_attach = on_attach,
+        capabilities = capabilities,
+      })
+    end
   end
 end
 
