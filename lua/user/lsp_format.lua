@@ -64,8 +64,9 @@ M.format = function(options)
 
   local clients = vim.tbl_values(vim.lsp.buf_get_clients())
   for i = #clients, 1, -1 do
-    if vim.tbl_contains(format_options.exclude or {}, clients[i].name)
-        or not vim.tbl_contains(M.buffers[bufnr] or {}, clients[i].id)
+    if
+      vim.tbl_contains(format_options.exclude or {}, clients[i].name)
+      or not vim.tbl_contains(M.buffers[bufnr] or {}, clients[i].id)
     then
       table.remove(clients, i)
     end
@@ -160,11 +161,12 @@ M._handler = function(err, result, ctx)
     vim.fn.bufload(ctx.bufnr)
     vim.api.nvim_buf_set_var(ctx.bufnr, "format_changedtick", vim.api.nvim_buf_get_var(ctx.bufnr, "changedtick"))
   end
-  if not ctx.params.options.force
-      and (
+  if
+    not ctx.params.options.force
+    and (
       vim.api.nvim_buf_get_var(ctx.bufnr, "format_changedtick") ~= vim.api.nvim_buf_get_var(ctx.bufnr, "changedtick")
-          or vim.startswith(vim.api.nvim_get_mode().mode, "i")
-      )
+      or vim.startswith(vim.api.nvim_get_mode().mode, "i")
+    )
   then
     M._next()
     return

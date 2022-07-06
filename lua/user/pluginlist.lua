@@ -4,6 +4,7 @@
 local pluginlist = {}
 
 pluginlist = {
+  "oeyoews/neorg",
   -- @luaversion: 5.1
   "folke/lua-dev.nvim",
   "mhartington/formatter.nvim",

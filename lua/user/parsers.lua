@@ -26,7 +26,8 @@ parsers = {
   "rust",
   "comment", -- support @ highlight in comments
   "vue",
-  -- "norg",
+  "org",
+  "norg",
 }
 
 return parsers

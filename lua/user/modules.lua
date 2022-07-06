@@ -74,7 +74,7 @@ M.m3 = {
   misc = {
     -- "project",
     -- "highstr", -- highlight select text
-    -- "neorg", -- replace emace org mode
+    "neorg", -- replace emace org mode
     -- "toggleterm", -- embed terminal
     -- "calendar", -- GTD?
     -- "venn", -- drawing diagram
