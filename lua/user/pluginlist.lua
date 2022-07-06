@@ -4,6 +4,12 @@
 local pluginlist = {}
 
 pluginlist = {
+  -- {
+  --   "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+  --   config = function()
+  --     require("lsp_lines").register_lsp_virtual_lines()
+  --   end,
+  -- },
   "oeyoews/neorg",
   -- @luaversion: 5.1
   "folke/lua-dev.nvim",
