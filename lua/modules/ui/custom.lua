@@ -24,7 +24,7 @@ hi Cursorn guifg=none guibg=none  " to fit gnome-terminal serial cursor
 hi Cursori guifg=red guibg=red
 set guicursor=n-v-c:block-Cursorn/lCursorn,i-ci-ve:ver25-Cursori/lCursori,r-cr:hor20,o:hor50
 
-hi Yank  cterm=bold ctermfg=16 ctermbg=167 guifg=#292b2e guifg=#ce537a gui=underline
+hi Yank  cterm=bold ctermfg=16 ctermbg=167 guifg=#292b2e guibg=#ce537a gui=underline
 " yank highlight  is conflict to venn.nvim
 autocmd! TextYankPost * silent! lua vim.highlight.on_yank {
       \ higroup="Yank",
