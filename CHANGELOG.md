@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.25.1](https://gitlab.com/oeyoews/nvim/compare/v5.25.0...v5.25.1) (2022-07-06)
+
+
+### Bug Fixes
+
+* fix sta ([8f64deb](https://gitlab.com/oeyoews/nvim/commit/8f64debf3c76d29f6d10f1d711f3991fb7cc4175))
+
 # [5.25.0](https://gitlab.com/oeyoews/nvim/compare/v5.24.0...v5.25.0) (2022-07-06)
 
 
