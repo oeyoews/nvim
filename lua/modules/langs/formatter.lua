@@ -22,6 +22,10 @@ require("formatter").setup({
     c = {
       require("formatter.filetypes.c").clangformat,
     },
+    -- cmake = {
+    -- bug
+    -- require("formatter.filetypes.cmake").cmakeformat,
+    -- },
     go = {
       require("formatter.filetypes.go").gofmt,
     },

@@ -18,6 +18,10 @@ end
 
 local sumneko_lua_locale = sumneko_lua_locale_adjust()
 
+local on_attach = function(client)
+  require("lsp-format").on_attach(client)
+end
+
 -- @ref: https://github.com/lxyoucan/nvim/blob/c84b07f078d20d175a4a3b48a73705b61997bd9f/lua/lspconf/lua.lua#L85
 -- cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua", "--locale=zh-cn"},
 local luadev = require("lua-dev").setup({
@@ -25,6 +29,8 @@ local luadev = require("lua-dev").setup({
   lspconfig = {
     -- --locale=en-us
     cmd = { "lua-language-server", sumneko_lua_locale },
+    on_attach = on_attach,
+    -- capabilities = capabilities, -- ???
   },
 })
 
@@ -42,7 +48,7 @@ if enable_lsp then
     else
       lspconfig[lsp_server].setup({
         settings = settings[lsp_server],
-        -- on_attach = on_attach,
+        on_attach = on_attach,
         capabilities = capabilities,
       })
     end

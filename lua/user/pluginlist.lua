@@ -4,6 +4,7 @@
 local pluginlist = {}
 
 pluginlist = {
+  "lukas-reineke/lsp-format.nvim",
   "folke/lua-dev.nvim",
   "mhartington/formatter.nvim",
   "m-demare/hlargs.nvim",
