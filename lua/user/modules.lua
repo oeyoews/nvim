@@ -3,6 +3,10 @@
 
 local M = {}
 
+M.utils = {
+  "utils",
+}
+
 M.modules = {
   "ui",
   "langs",
