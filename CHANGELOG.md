@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.26.0](https://gitlab.com/oeyoews/nvim/compare/v5.25.1...v5.26.0) (2022-07-06)
+
+
+### Features
+
+* embed lsp-format plugin ([3f4f7e2](https://gitlab.com/oeyoews/nvim/commit/3f4f7e203a48c88fdd4dcca5be08cfaf711cf815))
+
 ## [5.25.1](https://gitlab.com/oeyoews/nvim/compare/v5.25.0...v5.25.1) (2022-07-06)
 
 
