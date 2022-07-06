@@ -3,48 +3,30 @@ local lspconfig = require("lspconfig")
 -- if this servers not installed, cmp will callback nvim-lsp-install to install them
 -- fix: how to config according filetype automation install servers
 
--- @servers.lua
+-- @see servers.lua
 local lsp_servers = require("user.servers")
--- @settings.lua
+-- @see settings.lua
 local settings = require("user.settings")
 
--- @nvim_cmp
-local capabilities = vim.lsp.protocol.make_client_capabilities()
+local capabilities = require("user.capabilities")
+
+local sumneko_lua_locale_adjust = function()
+  if require("user.options").sumneko_lua_locale_cn then
+    return "--locale=zh-cn"
+  end
+end
+
+local sumneko_lua_locale = sumneko_lua_locale_adjust()
 
 -- @ref: https://github.com/lxyoucan/nvim/blob/c84b07f078d20d175a4a3b48a73705b61997bd9f/lua/lspconf/lua.lua#L85
 -- cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua", "--locale=zh-cn"},
 local luadev = require("lua-dev").setup({
   -- add any options here, or leave empty to use the default settings
   lspconfig = {
-    cmd = { "lua-language-server", "--locale=zh-cn" },
+    -- --locale=en-us
+    cmd = { "lua-language-server", sumneko_lua_locale },
   },
 })
-
--- capabilities.textDocument.completion.completionItem.snippetSupport = true
-capabilities.textDocument.completion.completionItem = {
-  documentationFormat = { "markdown", "plaintext" },
-  snippetSupport = true,
-  preselectSupport = true,
-  insertReplaceSupport = true,
-  labelDetailsSupport = true,
-  deprecatedSupport = true,
-  commitCharactersSupport = true,
-  tagSupport = { valueSet = { 1 } },
-  resolveSupport = {
-    properties = {
-      "documentation",
-      "detail",
-      "additionalTextEdits",
-    },
-  },
-}
-
--- for null-ls bug
-capabilities.offsetEncoding = { "utf-16" }
-capabilities.documentFormattingProvider = false
-capabilities.documentRangeFormattingProvider = false
-
-capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 
 -- https://github.com/neovim/nvim-lspconfig/wiki/Multiple-language-servers-FAQ#i-see-multiple-formatting-options-and-i-want-a-single-server-to-format-how-do-i-do-this
 

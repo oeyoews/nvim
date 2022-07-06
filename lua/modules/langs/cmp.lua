@@ -1,6 +1,7 @@
 --vim.cmd [[highlight default GH guifg=#3bb6c4 guibg=NONE]]
 local g = vim.g
 
+g.UltiSnipsEditSplit = "vertical"
 g.UltiSnipsJumpForwardTrigger = "<Plug>(ultisnips_jump_forward)"
 -- can't use two mappings
 -- g.UltiSnipsJumpBackwardTrigger = '<Plug>(ultisnips_jump_backward)'
@@ -194,8 +195,6 @@ cmp.setup({
   sources = sources,
 })
 
-g.UltiSnipsEditSplit = "vertical"
-
 vim.cmd([[
 " NOTE: this ctrl e shortkeys is conflict nvim-cmp's mapping, so can't in the
 " note: can't put this after, tab will replace c-e " same files
@@ -211,8 +210,6 @@ let g:UltiSnipsSnippetDirectories = [
 
 nnoremap <silent> <SPACE>ee :UltiSnipsEdit<CR>G
 nnoremap <silent> <SPACE>ea :UltiSnipsEdit all<CR>
-]])
 
-vim.cmd([[
-  autocmd FileType TelescopePrompt | lua require("cmp").setup.buffer({ enabled = false })
+autocmd FileType TelescopePrompt | lua require("cmp").setup.buffer({ enabled = false })
 ]])
