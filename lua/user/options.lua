@@ -1,5 +1,6 @@
 -- module: user.lua
 
+-- vim.g.enable_lsp = true :TODO
 local settings = {}
 
 settings = {
