@@ -11,6 +11,15 @@ local settings = require("user.settings")
 -- @nvim_cmp
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
+-- @ref: https://github.com/lxyoucan/nvim/blob/c84b07f078d20d175a4a3b48a73705b61997bd9f/lua/lspconf/lua.lua#L85
+-- cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua", "--locale=zh-cn"},
+local luadev = require("lua-dev").setup({
+  -- add any options here, or leave empty to use the default settings
+  lspconfig = {
+    cmd = { "lua-language-server", "--locale=zh-cn" },
+  },
+})
+
 -- capabilities.textDocument.completion.completionItem.snippetSupport = true
 capabilities.textDocument.completion.completionItem = {
   documentationFormat = { "markdown", "plaintext" },
@@ -43,11 +52,15 @@ capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 -- todo: only overside single settings
 -- PERF: use opt to input multiple tables cmd
 for _, lsp_server in pairs(lsp_servers) do
-  lspconfig[lsp_server].setup({
-    settings = settings[lsp_server],
-    -- on_attach = on_attach,
-    capabilities = capabilities,
-  })
+  if lsp_server == "sumneko_lua" then
+    lspconfig[lsp_server].setup(luadev)
+  else
+    lspconfig[lsp_server].setup({
+      settings = settings[lsp_server],
+      -- on_attach = on_attach,
+      capabilities = capabilities,
+    })
+  end
 end
 
 vim.cmd([[
@@ -78,12 +91,3 @@ vim.cmd([[
 " hover error lint
 " autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
 ]])
-
-local luadev = require("lua-dev").setup({
-  -- add any options here, or leave empty to use the default settings
-  -- lspconfig = {
-  --   cmd = {"lua-language-server"}
-  -- },
-})
-
-lspconfig.sumneko_lua.setup(luadev)
