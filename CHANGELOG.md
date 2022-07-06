@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.22.0](https://gitlab.com/oeyoews/nvim/compare/v5.21.1...v5.22.0) (2022-07-06)
+
+
+### Features
+
+* add lua-dev ([980b6fe](https://gitlab.com/oeyoews/nvim/commit/980b6fe41394491a07f030cf6567c3affdabe451))
+
 ## [5.21.1](https://gitlab.com/oeyoews/nvim/compare/v5.21.0...v5.21.1) (2022-07-05)
 
 
