@@ -22,8 +22,8 @@ capabilities.textDocument.completion.completionItem = {
 
 -- for null-ls bug
 capabilities.offsetEncoding = { "utf-16" }
-capabilities.documentFormattingProvider = false
-capabilities.documentRangeFormattingProvider = false
+-- capabilities.documentFormattingProvider = false
+-- capabilities.documentRangeFormattingProvider = false
 
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 
