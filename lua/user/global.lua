@@ -69,6 +69,7 @@ oeyoews.parsers = {
 
 -- @pluginlist
 oeyoews.pluginlist = {
+  "sindrets/winshift.nvim",
   "oeyoews/neorg",
   -- @luaversion: 5.1
   "folke/lua-dev.nvim",

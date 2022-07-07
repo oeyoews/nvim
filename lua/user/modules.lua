@@ -50,6 +50,7 @@ M.m3 = {
 
   -- @TOOLS
   tools = {
+    "winshift",
     "neogen",
     "todo_comments",
     "trouble",
