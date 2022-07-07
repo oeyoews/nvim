@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.27.1](https://gitlab.com/oeyoews/nvim/compare/v5.27.0...v5.27.1) (2022-07-07)
+
+
+### Bug Fixes
+
+* adjust notify max_width and add cmp mappings scroll ([51d8695](https://gitlab.com/oeyoews/nvim/commit/51d86959e2ca703569d8a40f08f936e9f2465db8))
+
 # [5.27.0](https://gitlab.com/oeyoews/nvim/compare/v5.26.0...v5.27.0) (2022-07-06)
 
 
