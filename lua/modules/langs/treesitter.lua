@@ -11,8 +11,6 @@ for _, config in pairs(parsers) do
   )
 end ]]
 
--- @files: plugins/lsp/filetypes.lua
-local ensure_installed = require("user.parsers")
 -- ensure_installed = ensure_installed.parsers
 local disable_filetypes = {
   -- "python",
@@ -46,7 +44,7 @@ nvim_treesitter_configs.setup({
 
   -- install some different parsers automatically
   sync_install = false,
-  ensure_installed = ensure_installed,
+  ensure_installed = oeyoews.parsers,
 
   highlight = {
     enable = true,

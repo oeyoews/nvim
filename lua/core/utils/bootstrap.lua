@@ -1,6 +1,5 @@
 local fn = vim.fn
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
-local plugins = require("user.pluginlist")
 
 -- @PackerSettings
 -- autoomatically install packer
@@ -53,13 +52,13 @@ packer.init({
   autoremove = false,
   -- tips: :lua require("packer").snapshot("default.json") or PackerSnap default.json to generate a snapshot
   -- snapshot = "default.json",
-  snapshot = require("user.options").snapshot,
+  snapshot = oeyoews.options.snapshot,
   snapshot_path = snapshot_path,
   compile_path = compile_path,
 })
 
 packer.startup(function(use)
-  for _, plugin in pairs(plugins) do
+  for _, plugin in pairs(oeyoews.pluginlist) do
     use(plugin)
   end
 

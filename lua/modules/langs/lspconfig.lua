@@ -3,15 +3,13 @@ local lspconfig = require("lspconfig")
 -- if this servers not installed, cmp will callback nvim-lsp-install to install them
 -- fix: how to config according filetype automation install servers
 
--- @see servers.lua
-local lsp_servers = require("user.servers")
 -- @see settings.lua
 local settings = require("user.settings")
 
 local capabilities = require("user.capabilities")
 
 local sumneko_lua_locale_adjust = function()
-  if require("user.options").sumneko_lua_locale_cn then
+  if oeyoews.options.sumneko_lua_locale_cn then
     return "--locale=zh-cn"
   end
 end
@@ -34,15 +32,13 @@ local luadev = require("lua-dev").setup({
   },
 })
 
-local enable_lsp = require("user.options").enable_lsp
-
 -- https://github.com/neovim/nvim-lspconfig/wiki/Multiple-language-servers-FAQ#i-see-multiple-formatting-options-and-i-want-a-single-server-to-format-how-do-i-do-this
 
 -- For general Lsp server
 -- todo: only overside single settings
 -- PERF: use opt to input multiple tables cmd
-if enable_lsp then
-  for _, lsp_server in pairs(lsp_servers) do
+if oeyoews.options.enable_lsp then
+  for _, lsp_server in pairs(oeyoews.servers) do
     if lsp_server == "sumneko_lua" then
       lspconfig[lsp_server].setup(luadev)
     else

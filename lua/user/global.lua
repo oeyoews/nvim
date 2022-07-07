@@ -1,15 +1,74 @@
--- @module: plugins.lua
--- @ref: core.utils.bootstrap.lua
+local M = {}
 
-local pluginlist = {}
+oeyoews = {}
 
-pluginlist = {
-  -- {
-  --   "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
-  --   config = function()
-  --     require("lsp_lines").register_lsp_virtual_lines()
-  --   end,
-  -- },
+-- @options
+oeyoews.options = {
+  enable_lsp = true, -- @see lspconfig.lua
+  sumneko_lua_locale_cn = false, -- @see lspconfig.lua
+  toggle_theme_auto = true, -- @see sta.lua
+  debug_mode = true, -- @ref: user.pcall.lua
+  -- rolling.json default.json v1.0.0.json
+  snapshot = nil, -- @see bootstrap.lua
+  -- snapshot = "default.json", -- @ref: core.utils.bootstrap
+}
+
+-- @servers
+oeyoews.servers = {
+  "clangd", -- warn: don't modify this position or table order, unless use table self sort method to solve it
+  "pylsp", -- support formatting
+  -- "jdtls", -- java
+  "gopls",
+  "sumneko_lua",
+  "volar", -- vue
+  "rust_analyzer", -- need use rustup to install stable rust and setup toolchains
+  -- "solargraph", -- ruby
+  "bashls",
+  "vimls",
+  "jsonls", -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
+  "cmake",
+  -- "pyright",
+  "cssls",
+  "yamlls",
+  "html",
+  "tsserver", -- must in folder
+  -- "taplo", -- toml
+  -- "hls",
+  -- "eslint",
+  -- 'golangci_lint_ls',
+}
+
+-- @parsers
+oeyoews.parsers = {
+  "c",
+  "cmake",
+  "bash",
+  "json",
+  "jsonc",
+  "json5",
+  "java",
+  "javascript",
+  "lua",
+  "vim",
+  "yaml",
+  "toml",
+  "python",
+  "go",
+  "make",
+  "gomod",
+  "markdown",
+  "markdown_inline",
+  "css",
+  "html",
+  "rust",
+  "comment", -- support @ highlight in comments
+  "vue",
+  "org",
+  "norg",
+}
+
+-- @pluginlist
+oeyoews.pluginlist = {
   "oeyoews/neorg",
   -- @luaversion: 5.1
   "folke/lua-dev.nvim",
@@ -87,4 +146,4 @@ pluginlist = {
   },
 }
 
-return pluginlist
+return M

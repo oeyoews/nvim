@@ -1,9 +1,8 @@
 local lsp_installer = require("nvim-lsp-installer")
-local lsp_servers = require("user.servers")
 
 lsp_installer.setup({
   automatic_installation = false, -- automatic_installation is confliction for ensure_installed
-  ensure_installed = lsp_servers.servers,
+  ensure_installed = oeyoews.servers,
   ui = {
     border = "rounded", -- default to "none"
     icons = {

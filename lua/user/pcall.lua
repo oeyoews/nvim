@@ -1,7 +1,6 @@
 -- @module: pcall.lua
 -- @ref: core.utils.init.lua && user.modules.lua
 
-local debug_mode = require("user.options").debug_mode
 local notify = require("notify").async
 local async = require("plenary.async")
 local error_modules = {}
@@ -39,7 +38,7 @@ M.setup = function(entry, m2, m3)
   if #error_modules ~= 0 then
     async.run(function()
       notify("Failed to loaded modules \n" .. error_msg, "info", { title = "Modules" }).events.close()
-      if debug_mode then
+      if oeyoews.options.debug_mode then
         notify("Error Messages \n" .. error_tree, "error", { title = "Debug" })
       end
     end)
