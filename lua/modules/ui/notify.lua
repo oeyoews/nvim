@@ -9,8 +9,7 @@ notify.setup({
 
   timeout = 100,
 
-  -- Minimum width for notification windows
-  minimum_width = 50,
+  max_width = 65,
 
   -- Icons for the different levels
   icons = {
