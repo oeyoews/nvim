@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.28.0](https://gitlab.com/oeyoews/nvim/compare/v5.27.1...v5.28.0) (2022-07-07)
+
+
+### Features
+
+* add winshift ([f180645](https://gitlab.com/oeyoews/nvim/commit/f1806450604a239b602c8a6853f00fb5c87acbdf))
+
 ## [5.27.1](https://gitlab.com/oeyoews/nvim/compare/v5.27.0...v5.27.1) (2022-07-07)
 
 
