@@ -6,6 +6,12 @@ for index, value in ipairs(oeyoews.servers) do
   end
 end
 
+oeyoews.list_servers = function()
+  for _, value in pairs(oeyoews.servers) do
+    print(value)
+  end
+end
+
 lsp_installer.setup({
   automatic_installation = false, -- automatic_installation is confliction for ensure_installed
   ensure_installed = oeyoews.servers,
