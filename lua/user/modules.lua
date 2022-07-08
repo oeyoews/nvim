@@ -52,7 +52,6 @@ M.m3 = {
   tools = {
     "neogen",
     "todo_comments",
-    "trouble",
     "indent", -- show indent line
     "hop", -- jump anywhere
     "colorizer", -- show color in neovim
@@ -81,6 +80,7 @@ M.m3 = {
     -- "color_picker", -- color picker
     -- "hlargs",
     -- "winshift",
+    -- "trouble",
   },
 }
 

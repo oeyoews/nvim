@@ -96,7 +96,6 @@ oeyoews.pluginlist = {
       "p00f/nvim-ts-rainbow",
     },
   },
-  "folke/trouble.nvim",
   "williamboman/nvim-lsp-installer",
   {
     "hrsh7th/nvim-cmp",
