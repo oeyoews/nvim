@@ -68,12 +68,9 @@ oeyoews.parsers = {
 
 -- @pluginlist
 oeyoews.pluginlist = {
-  "sindrets/winshift.nvim",
-  "oeyoews/neorg",
   -- @luaversion: 5.1
   "folke/lua-dev.nvim",
   "mhartington/formatter.nvim",
-  "m-demare/hlargs.nvim",
   "arjunmahishi/run-code.nvim",
   "mzlogin/vim-markdown-toc",
   "danymat/neogen",

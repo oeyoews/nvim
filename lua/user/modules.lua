@@ -32,7 +32,6 @@ M.m3 = {
     "tokyonight",
     "custom", -- need after tokyonight
     "notify",
-    "hlargs",
     "lspsaga", -- setup lspconfig ui
     "bufferline",
     "windline", -- statusline
@@ -51,7 +50,6 @@ M.m3 = {
 
   -- @TOOLS
   tools = {
-    "winshift",
     "neogen",
     "todo_comments",
     "trouble",
@@ -76,11 +74,13 @@ M.m3 = {
   misc = {
     -- "project",
     -- "highstr", -- highlight select text
-    "neorg", -- replace emace org mode
+    -- "neorg", -- replace emace org mode
     -- "toggleterm", -- embed terminal
     -- "calendar", -- GTD?
     -- "venn", -- drawing diagram
     -- "color_picker", -- color picker
+    -- "hlargs",
+    -- "winshift",
   },
 }
 
