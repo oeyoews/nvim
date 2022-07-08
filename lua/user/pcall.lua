@@ -35,7 +35,7 @@ M.setup = function(entry, m2, m3)
   error_tree = table.concat(error_logs, "\n")
 
   -- async output message base plenary plugin
-  if #error_modules ~= 0 then
+  if async_ok and #error_modules ~= 0 then
     async.run(function()
       notify("Failed to loaded modules \n" .. error_msg, "info", { title = "Modules" }).events.close()
       if oeyoews.options.debug_mode then
