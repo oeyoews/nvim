@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.29.0](https://gitlab.com/oeyoews/nvim/compare/v5.28.0...v5.29.0) (2022-07-08)
+
+
+### Features
+
+* add listservers function ([ef77b72](https://gitlab.com/oeyoews/nvim/commit/ef77b726b9b5448df08ed77681f2d87aa5140db2))
+
 # [5.28.0](https://gitlab.com/oeyoews/nvim/compare/v5.27.1...v5.28.0) (2022-07-07)
 
 
