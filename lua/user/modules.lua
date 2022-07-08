@@ -17,8 +17,9 @@ M.modules = {
 M.m3 = {
   -- @utils
   utils = {
-    "bootstrap",
     "impatient",
+    "global",
+    "bootstrap",
     "night",
     "disable",
     "options",

@@ -1,10 +1,10 @@
+-- it's slow very, not use it
 -- @BUG version: use so % to debug,  return value counters
 -- note this return is 0, is not false in lua, need receive multiple value
-local go_status = os.execute("go env $GOROOT >> /dev/null 2>&1")
-
-if go_status == 0 then
+--[[ if os.execute("go env $GOROOT >> /dev/null 2>&1") == 0 then
   oeyoews.servers[#oeyoews.servers + 1] = "gopls"
 end
+--]]
 
 local lsp_installer = require("nvim-lsp-installer")
 
