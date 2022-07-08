@@ -18,7 +18,7 @@ oeyoews.servers = {
   "clangd", -- warn: don't modify this position or table order, unless use table self sort method to solve it
   "pylsp", -- support formatting
   -- "jdtls", -- java
-  "gopls",
+  -- "gopls", -- config in lspinstall, don't write it here
   "sumneko_lua",
   "volar", -- vue
   "rust_analyzer", -- need use rustup to install stable rust and setup toolchains
