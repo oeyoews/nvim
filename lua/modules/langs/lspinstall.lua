@@ -1,5 +1,12 @@
 local lsp_installer = require("nvim-lsp-installer")
 
+for index, value in ipairs(oeyoews.servers) do
+  if value == "gopls" and os.execute("go env $GOROOT") ~= "/usr/bin/go" then
+    table.remove(oeyoews.servers, index)
+  end
+  break
+end
+
 lsp_installer.setup({
   automatic_installation = false, -- automatic_installation is confliction for ensure_installed
   ensure_installed = oeyoews.servers,
