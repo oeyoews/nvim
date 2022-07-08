@@ -147,4 +147,11 @@ oeyoews.pluginlist = {
   },
 }
 
+-- @functions
+oeyoews.list_servers = function()
+  for _, value in pairs(oeyoews.servers) do
+    print(value)
+  end
+end
+
 return M

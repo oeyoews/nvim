@@ -1,18 +1,12 @@
-local lsp_installer = require("nvim-lsp-installer")
-
-local go_status = os.execute("go env $GOROOT >> /dev/null 2>&1")
-
 -- @BUG version: use so % to debug,  return value counters
 -- note this return is 0, is not false in lua, need receive multiple value
+local go_status = os.execute("go env $GOROOT >> /dev/null 2>&1")
+
 if go_status == 0 then
   oeyoews.servers[#oeyoews.servers + 1] = "gopls"
 end
 
-oeyoews.list_servers = function()
-  for _, value in pairs(oeyoews.servers) do
-    print(value)
-  end
-end
+local lsp_installer = require("nvim-lsp-installer")
 
 lsp_installer.setup({
   automatic_installation = false, -- automatic_installation is confliction for ensure_installed
