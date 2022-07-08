@@ -15,23 +15,22 @@ oeyoews.options = {
 
 -- @servers
 oeyoews.servers = {
-  "clangd", -- warn: don't modify this position or table order, unless use table self sort method to solve it
-  "pylsp", -- support formatting
+  "sumneko_lua",
+  "jsonls", -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
+  -- "clangd", -- warn: don't modify this position or table order, unless use table self sort method to solve it
+  -- "pylsp", -- support formatting
   -- "jdtls", -- java
   -- "gopls", -- config in lspinstall, don't write it here
-  "sumneko_lua",
-  "volar", -- vue
-  "rust_analyzer", -- need use rustup to install stable rust and setup toolchains
+  -- "volar", -- vue
+  -- "rust_analyzer", -- need use rustup to install stable rust and setup toolchains
   -- "solargraph", -- ruby
-  "bashls",
-  "vimls",
-  "jsonls", -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
-  "cmake",
-  -- "pyright",
-  "cssls",
-  "yamlls",
-  "html",
-  "tsserver", -- must in folder
+  -- "bashls",
+  -- "vimls",
+  -- "cmake",
+  -- "cssls",
+  -- "yamlls",
+  -- "html",
+  -- "tsserver", -- must in folder
   -- "taplo", -- toml
   -- "hls",
   -- "eslint",
