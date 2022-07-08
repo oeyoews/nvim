@@ -11,7 +11,7 @@ M.modules = {
   "ui",
   "langs",
   "tools",
-  "misc",
+  -- "misc",
 }
 
 M.m3 = {
