@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.29.2](https://gitlab.com/oeyoews/nvim/compare/v5.29.1...v5.29.2) (2022-07-08)
+
+
+### Bug Fixes
+
+* remove os.execute ([13ffd92](https://gitlab.com/oeyoews/nvim/commit/13ffd9282afa4491c6625f2272ddfbe922e46cbb))
+
 ## [5.29.1](https://gitlab.com/oeyoews/nvim/compare/v5.29.0...v5.29.1) (2022-07-08)
 
 
