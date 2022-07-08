@@ -1,5 +1,7 @@
+-- nvim [_G] global variables
 local M = {}
 
+-- init oeyoews table
 oeyoews = {}
 
 -- @options

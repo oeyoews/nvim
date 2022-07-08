@@ -1,3 +1,4 @@
+--- install packer.nvim firstly
 local fn = vim.fn
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 
@@ -29,9 +30,8 @@ local util = require("packer.util")
 local snapshot_path = util.join_paths(fn.stdpath("config"), "snapshots")
 local compile_path = util.join_paths(fn.stdpath("data"), "compile", "packer_compiled.lua")
 
--- init packer
+-- init packer, and it's some settings
 packer.init({
-
   max_jobs = 4,
   auto_clean = false,
   display = {
@@ -58,6 +58,7 @@ packer.init({
 })
 
 packer.startup(function(use)
+  -- load pluginlist
   for _, plugin in pairs(oeyoews.pluginlist) do
     use(plugin)
   end
@@ -81,6 +82,7 @@ packer.startup(function(use)
   end
 end)
 
+-- keybindings
 vim.cmd([[
   nnoremap <silent> <space>ps <Cmd>PackerSync<CR>
   nnoremap <silent> <space>pi <cmd>PackerInstall<cr>

@@ -1,3 +1,4 @@
+-- use impatient to optimize startuptime
 pcall(require, "impatient")
 
 local filetype_ok, filetype = pcall(require, "filetype")
