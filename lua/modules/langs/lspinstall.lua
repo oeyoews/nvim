@@ -1,13 +1,13 @@
 local lsp_installer = require("nvim-lsp-installer")
 
-local _, _, status = os.execute("go env $GOROOT >> /dev/null 2>&1")
+local status = os.execute("go env $GOROOT >> /dev/null 2>&1")
 
--- @BUG return value counters
--- for index, value in ipairs(oeyoews.servers) do
---   if value == "gopls" and status ~= 0 then
---     table.remove(oeyoews.servers, index)
---   end
--- end
+-- @BUG version: use so % to debug,  return value counters
+for index, value in ipairs(oeyoews.servers) do
+  if value == "gopls" and not status then
+    table.remove(oeyoews.servers, index)
+  end
+end
 
 oeyoews.list_servers = function()
   for _, value in pairs(oeyoews.servers) do
