@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.29.1](https://gitlab.com/oeyoews/nvim/compare/v5.29.0...v5.29.1) (2022-07-08)
+
+
+### Bug Fixes
+
+* use == 0 to fix it ([035e2c4](https://gitlab.com/oeyoews/nvim/commit/035e2c497970fe833e5174a8d6b1b5a15fc272f3))
+
 # [5.29.0](https://gitlab.com/oeyoews/nvim/compare/v5.28.0...v5.29.0) (2022-07-08)
 
 
