@@ -1,10 +1,10 @@
 local lsp_installer = require("nvim-lsp-installer")
 
-local _, _, status = os.execute("go env $GOROOT >> /dev/null 2>&1")
+local go_status = os.execute("go env $GOROOT >> /dev/null 2>&1")
 
 -- @BUG version: use so % to debug,  return value counters
 -- note this return is 0, is not false in lua, need receive multiple value
-if status then
+if go_status == 0 then
   oeyoews.servers[#oeyoews.servers + 1] = "gopls"
 end
 
