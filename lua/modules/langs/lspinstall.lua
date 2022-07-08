@@ -4,7 +4,6 @@ for index, value in ipairs(oeyoews.servers) do
   if value == "gopls" and type(os.execute("go env $GOROOT")) == "number" then
     table.remove(oeyoews.servers, index)
   end
-  break
 end
 
 lsp_installer.setup({
