@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.31.0](https://gitlab.com/oeyoews/nvim/compare/v5.30.0...v5.31.0) (2022-07-09)
+
+
+### Features
+
+* add navic-comps ([a43779f](https://gitlab.com/oeyoews/nvim/commit/a43779fc89b232695879d06a662c22f4cc1efe66))
+
 # [5.30.0](https://gitlab.com/oeyoews/nvim/compare/v5.29.2...v5.30.0) (2022-07-09)
 
 
