@@ -19,7 +19,7 @@ oeyoews.options = {
 oeyoews.servers = {
   "sumneko_lua",
   "jsonls", -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
-  -- "clangd", -- warn: don't modify this position or table order, unless use table self sort method to solve it
+  "clangd", -- warn: don't modify this position or table order, unless use table self sort method to solve it
   -- "pylsp", -- support formatting
   -- "jdtls", -- java
   -- "gopls", -- config in lspinstall, don't write it here
@@ -71,6 +71,7 @@ oeyoews.parsers = {
 -- @pluginlist
 oeyoews.pluginlist = {
   -- @luaversion: 5.1
+  "SmiteshP/nvim-navic",
   "folke/lua-dev.nvim",
   "mhartington/formatter.nvim",
   "arjunmahishi/run-code.nvim",

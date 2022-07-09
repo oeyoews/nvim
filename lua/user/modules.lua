@@ -43,6 +43,7 @@ M.m3 = {
     "treesitter", -- friendly highlight your code
     "lspinstall", -- preinstall some servers
     "cmp", -- config completion
+    "navic",
     "lspconfig", -- configurate lsp settings
     "null-ls", -- complete lsp configuration
     "formatter",
