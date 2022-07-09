@@ -74,7 +74,6 @@ oeyoews.pluginlist = {
   "SmiteshP/nvim-navic",
   "folke/lua-dev.nvim",
   "mhartington/formatter.nvim",
-  "arjunmahishi/run-code.nvim",
   "mzlogin/vim-markdown-toc",
   "danymat/neogen",
   -- @dependencies
