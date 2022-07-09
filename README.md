@@ -45,6 +45,7 @@
 <details>
 <summary>TODO</summary>
 
+- [ ] inlay hints
 - [ ] learn vim.api(nvim)
 - [ ] link null-ls make a logger file
 - [ ] theme: https://github.com/nshen/learn-neovim-lua/blob/main/lua/utils/change-colorscheme.lua
