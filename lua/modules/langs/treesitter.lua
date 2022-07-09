@@ -44,7 +44,9 @@ nvim_treesitter_configs.setup({
 
   -- install some different parsers automatically
   sync_install = false,
-  ensure_installed = oeyoews.parsers,
+  -- use auto_install to replace ensure_installed
+  auto_install = true,
+  -- ensure_installed = oeyoews.parsers,
 
   highlight = {
     enable = true,
