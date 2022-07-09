@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.30.0](https://gitlab.com/oeyoews/nvim/compare/v5.29.2...v5.30.0) (2022-07-09)
+
+
+### Features
+
+* use aut_install replace ensure_install for treesitter ([e1849b4](https://gitlab.com/oeyoews/nvim/commit/e1849b400b034ce0926e599f7aad8df035f75164))
+
 ## [5.29.2](https://gitlab.com/oeyoews/nvim/compare/v5.29.1...v5.29.2) (2022-07-08)
 
 
