@@ -39,6 +39,7 @@ local luadev = require("lua-dev").setup({
 
 -- For general Lsp server
 -- todo: only overside single settings
+-- https://github.com/JavaHello/nvim/blob/nvim-lsp/lua/kide/lsp/init.lua
 -- PERF: use opt to input multiple tables cmd
 if oeyoews.options.enable_lsp then
   for _, lsp_server in pairs(oeyoews.servers) do
@@ -53,6 +54,7 @@ if oeyoews.options.enable_lsp then
         capabilities = capabilities,
       })
     end
+    -- pcall(require, "modules.langs.server_settings.sumneko_lua")
   end
 end
 
