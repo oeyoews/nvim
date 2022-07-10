@@ -27,7 +27,7 @@ oeyoews.servers = {
   -- "rust_analyzer", -- need use rustup to install stable rust and setup toolchains
   -- "solargraph", -- ruby
   -- "bashls",
-  -- "vimls",
+  "vimls",
   -- "cmake",
   -- "cssls",
   -- "yamlls",
