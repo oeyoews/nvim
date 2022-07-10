@@ -66,6 +66,7 @@ oeyoews.parsers = {
   "vue",
   "org",
   "norg",
+  "help",
 }
 
 -- @pluginlist
@@ -145,10 +146,9 @@ oeyoews.pluginlist = {
 }
 
 -- @functions
-oeyoews.list_servers = function()
-  for _, value in pairs(oeyoews.servers) do
-    print(value)
-  end
+oeyoews.lsp = function()
+  local opt = table.concat(oeyoews.servers, "   ")
+  print(opt)
 end
 
 return M

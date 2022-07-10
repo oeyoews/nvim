@@ -19,11 +19,10 @@ if fn.empty(fn.glob(install_path)) > 0 then
     "https://github.com/wbthomason/packer.nvim",
     install_path,
   })
-  vim.notify([[   Finish install packer.nvim]], "info")
+  vim.notify([[   Finish install packer.nvim]], "info")
+  -- fix firstly install packer, can't require packer
+  vim.cmd([[packadd packer.nvim]])
 end
-
--- fix firstly install packer, can't require packer
-vim.cmd([[packadd packer.nvim]])
 
 local packer = require("packer")
 local util = require("packer.util")
