@@ -6,6 +6,7 @@ oeyoews = {}
 
 -- @options
 oeyoews.options = {
+  enable_cmdheight = false, -- util 22/07/11, it's still have some bug
   enable_lsp = true, -- @see lspconfig.lua
   sumneko_lua_locale_cn = false, -- @see lspconfig.lua
   toggle_theme_auto = true, -- @see sta.lua
