@@ -4,21 +4,21 @@
 local M = {}
 
 -- configuate sumneko settings
-M.sumneko_lua = {
-  settings = {
-    Lua = {
-      diagnostics = {
-        globals = { "vim" },
-      },
-      workspace = {
-        library = {
-          -- [vim.fn.expand("$VIMRUNTIME/lua")] = true,
-          [vim.fn.stdpath("config") .. "/lua"] = true,
-        },
-      },
-    },
-  }
-}
+-- M.sumneko_lua = {
+--   settings = {
+--     Lua = {
+--       diagnostics = {
+--         globals = { "vim" },
+--       },
+--       workspace = {
+--         library = {
+--           -- [vim.fn.expand("$VIMRUNTIME/lua")] = true,
+--           [vim.fn.stdpath("config") .. "/lua"] = true,
+--         },
+--       },
+--     },
+--   }
+-- }
 
 -- NOTE: need close your ladder to connect this website
 -- M.jsonls = {
