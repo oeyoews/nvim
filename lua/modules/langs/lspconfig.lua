@@ -41,25 +41,30 @@ local luadev = require("lua-dev").setup({
 -- todo: only overside single settings
 -- https://github.com/JavaHello/nvim/blob/nvim-lsp/lua/kide/lsp/init.lua
 -- PERF: use opt to input multiple tables cmd
-if oeyoews.options.enable_lsp then
-  for _, lsp_server in pairs(oeyoews.servers) do
-    -- TODO: split it like astronvim.lsp.handlers
-    -- local opts = require("modules.langs.server_settings")
-    if lsp_server == "sumneko_lua" then
-      lspconfig[lsp_server].setup(luadev)
-    else
-      lspconfig[lsp_server].setup(
-      -- settings.lsp_server
-        {
-          settings = settings[lsp_server],
-          on_attach = on_attach,
-          capabilities = capabilities,
-        }
-      )
+
+local lsp_setup = function()
+  if oeyoews.options.enable_lsp then
+    for _, lsp_server in pairs(oeyoews.servers) do
+      -- TODO: split it like astronvim.lsp.handlers
+      -- local opts = require("modules.langs.server_settings")
+      if lsp_server == "sumneko_lua" then
+        lspconfig[lsp_server].setup(luadev)
+      else
+        lspconfig[lsp_server].setup(
+        -- settings.lsp_server
+          {
+            settings = settings[lsp_server],
+            on_attach = on_attach,
+            capabilities = capabilities,
+          }
+        )
+      end
+      -- pcall(require, "modules.langs.server_settings.sumneko_lua")
     end
-    -- pcall(require, "modules.langs.server_settings.sumneko_lua")
   end
 end
+
+lsp_setup()
 
 vim.cmd([[
   nnoremap <silent> <leader>li :LspInfo<cr>
