@@ -73,6 +73,7 @@ oeyoews.parsers = {
 -- @pluginlist
 oeyoews.pluginlist = {
   -- @luaversion: 5.1
+  -- "fgheng/winbar.nvim", night
   "SmiteshP/nvim-navic",
   "folke/lua-dev.nvim",
   "mhartington/formatter.nvim",
