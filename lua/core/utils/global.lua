@@ -65,7 +65,6 @@ oeyoews.parsers = {
   "rust",
   "comment", -- support @ highlight in comments
   "vue",
-  "org",
   "norg",
   "help",
 }
@@ -73,7 +72,6 @@ oeyoews.parsers = {
 -- @pluginlist
 oeyoews.pluginlist = {
   -- @luaversion: 5.1
-  -- "fgheng/winbar.nvim", night
   "SmiteshP/nvim-navic",
   "folke/lua-dev.nvim",
   "mhartington/formatter.nvim",
