@@ -41,6 +41,7 @@ oeyoews.servers = {
 }
 
 -- @parsers
+--[[
 oeyoews.parsers = {
   "c",
   "cpp",
@@ -69,6 +70,7 @@ oeyoews.parsers = {
   "norg",
   "help",
 }
+--]]
 
 -- @pluginlist
 oeyoews.pluginlist = {
