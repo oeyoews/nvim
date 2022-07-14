@@ -43,6 +43,7 @@ oeyoews.servers = {
 -- @parsers
 oeyoews.parsers = {
   "c",
+  "cpp",
   "cmake",
   "bash",
   "json",
