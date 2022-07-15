@@ -1,11 +1,8 @@
---- install packer.nvim firstly
 local fn = vim.fn
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 
--- @PackerSettings
--- autoomatically install packer
+--- install packer.nvim firstly
 if fn.empty(fn.glob(install_path)) > 0 then
-  -- PERF:  add sleep function to beeter output
   vim.notify(
     [[   You have not inistall packer.nvim  Cloning packer.nvim ...]],
     "info"

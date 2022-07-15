@@ -40,38 +40,6 @@ oeyoews.servers = {
   -- 'golangci_lint_ls',
 }
 
--- @parsers
---[[
-oeyoews.parsers = {
-  "c",
-  "cpp",
-  "cmake",
-  "bash",
-  "json",
-  "jsonc",
-  "json5",
-  "java",
-  "javascript",
-  "lua",
-  "vim",
-  "yaml",
-  "toml",
-  "python",
-  "go",
-  "make",
-  "gomod",
-  "markdown",
-  "markdown_inline",
-  "css",
-  "html",
-  "rust",
-  "comment", -- support @ highlight in comments
-  "vue",
-  "norg",
-  "help",
-}
---]]
-
 -- @pluginlist
 oeyoews.pluginlist = {
   -- @luaversion: 5.1
@@ -87,12 +55,10 @@ oeyoews.pluginlist = {
   "nvim-lua/plenary.nvim",
   "kyazdani42/nvim-web-devicons",
   "stevearc/dressing.nvim",
-
   -- @ORDER
   "lukas-reineke/indent-blankline.nvim",
   "akinsho/bufferline.nvim",
   "oeyoews/windline.nvim",
-
   -- @LANG
   {
     "nvim-treesitter/nvim-treesitter",
@@ -118,7 +84,6 @@ oeyoews.pluginlist = {
   "hrsh7th/cmp-nvim-lsp",
   "onsails/lspkind-nvim",
   "hrsh7th/cmp-path",
-
   -- @TOOLS
   "folke/todo-comments.nvim",
   {
