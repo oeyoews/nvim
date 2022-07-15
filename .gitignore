@@ -31,7 +31,6 @@ luac.out
 *.so.*
 *.dylib
 
-
 *.log*
 cache
 src
@@ -44,3 +43,5 @@ tags
 *.tar.gz
 
 packer_compiled.lua
+
+/spell/
