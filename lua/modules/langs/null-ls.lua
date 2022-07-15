@@ -1,6 +1,6 @@
 if vim.fn.executable("codespell") == 0 then
   if oeyoews.options.debug_mode then
-    local msg_null = ("Please install codespell to use null-ls's codespell")
+    local msg_null = "Please install codespell to use null-ls's codespell"
     vim.notify(msg_null)
   end
   return
