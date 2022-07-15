@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.32.0](https://gitlab.com/oeyoews/nvim/compare/v5.31.0...v5.32.0) (2022-07-15)
+
+
+### Features
+
+* use vim.fn.executable to replace os.executable ([1d08b8e](https://gitlab.com/oeyoews/nvim/commit/1d08b8e54a22c93a27ad75e5cf187ad9be11623f))
+
 # [5.31.0](https://gitlab.com/oeyoews/nvim/compare/v5.30.0...v5.31.0) (2022-07-09)
 
 
