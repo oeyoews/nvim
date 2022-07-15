@@ -47,7 +47,7 @@
 <summary>TODO</summary>
 
 - [ ] inlay hints
-- [ ] learn vim.api(nvim)
+- [ ] learn vim.api(nvim), such use  vim.fn.executable to replace os.executable
 - [ ] link null-ls make a logger file
 - [ ] theme: https://github.com/nshen/learn-neovim-lua/blob/main/lua/utils/change-colorscheme.lua
 - [ ] tiny all which-key mappings
