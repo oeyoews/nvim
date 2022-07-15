@@ -113,13 +113,6 @@ oeyoews.pluginlist = {
   },
 }
 
--- @functions
--- @TODO: use float window to show this info with nvim ui api
-oeyoews.print_lsp_servers = function()
-  local opt = table.concat(oeyoews.servers, "   ")
-  return opt
-end
-
 --- check servers
 ---@param server string
 ---@param server_require_binary  string or 1 number
