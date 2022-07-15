@@ -149,9 +149,10 @@ oeyoews.pluginlist = {
 }
 
 -- @functions
-oeyoews.lsp = function()
+-- @TODO: use float window to show this info with nvim ui api
+oeyoews.print_lsp_servers = function()
   local opt = table.concat(oeyoews.servers, "   ")
-  print(opt)
+  return opt
 end
 
 return M
