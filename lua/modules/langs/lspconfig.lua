@@ -51,7 +51,7 @@ local lsp_setup = function()
         lspconfig[lsp_server].setup(luadev)
       else
         lspconfig[lsp_server].setup(
-        -- settings.lsp_server
+          -- settings.lsp_server
           {
             settings = settings[lsp_server],
             on_attach = on_attach,

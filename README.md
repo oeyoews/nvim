@@ -40,7 +40,7 @@
 
 ## Install
 
-- install pynvim codespell
+- install pynvim
 - Just clone this repository and execute `nvim` in your terminal
 
 <details>

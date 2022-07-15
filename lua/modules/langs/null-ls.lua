@@ -1,3 +1,8 @@
+if vim.fn.executable("codespell") == 0 then
+  vim.notify("Please install codespell")
+  return
+end
+
 -- NOTE: this null_ls can't return, unless really uninstall it
 local null_ls = require("null-ls")
 local diagnostics = null_ls.builtins.diagnostics

@@ -9,3 +9,8 @@ end
 if oeyoews.options.enable_cmdheight and vim.fn.has("nvim-0.8.0") == 1 then
   vim.opt.cmdheight = 0
 end
+
+--[[ if vim.fn.has("npm") ~= 1 then
+  vim.notify("npm exist")
+  return
+end ]]
