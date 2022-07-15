@@ -1,18 +1,17 @@
 -- it's slow very, not use it
 -- @BUG version: use so % to debug,  return value counters
 -- note this return is 0, is not false in lua, need receive multiple value
----[[
--- if vim.fn.executable("go env $GOROOT >> /dev/null 2>&1") == 1 then
 
-if vim.fn.executable("go") == 1 then
-  oeyoews.servers[#oeyoews.servers + 1] = "gopls"
-end
+local csl = {
+  gopls = "go",
+  jsonls = "npm",
+  vimls = "npm",
+  -- or serverName = 1,
+}
 
-if vim.fn.executable("npm") == 1 then
-  oeyoews.servers[#oeyoews.servers + 1] = "jsonls"
-  oeyoews.servers[#oeyoews.servers + 1] = "vimls"
+for server, binary in pairs(csl) do
+  oeyoews.check_servers(server, binary)
 end
---]]
 
 local lsp_installer = require("nvim-lsp-installer")
 

@@ -155,4 +155,15 @@ oeyoews.print_lsp_servers = function()
   return opt
 end
 
+--- check servers
+---@param server string
+---@param server_require_binary  string or 1 number
+oeyoews.check_servers = function(server, server_require_binary)
+  if vim.fn.executable(server_require_binary) == 1 then
+    oeyoews.servers[#oeyoews.servers + 1] = server
+  else
+    vim.notify("Please install " .. server_require_binary)
+  end
+end
+
 return M
