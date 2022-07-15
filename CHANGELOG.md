@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.32.1](https://gitlab.com/oeyoews/nvim/compare/v5.32.0...v5.32.1) (2022-07-15)
+
+
+### Bug Fixes
+
+* use return replace print directly ([0da81da](https://gitlab.com/oeyoews/nvim/commit/0da81da61fed02b790aa2f061945608dd8df4f74))
+
 # [5.32.0](https://gitlab.com/oeyoews/nvim/compare/v5.31.0...v5.32.0) (2022-07-15)
 
 
