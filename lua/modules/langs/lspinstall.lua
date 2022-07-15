@@ -1,7 +1,3 @@
--- it's slow very, not use it
--- @BUG version: use so % to debug,  return value counters
--- note this return is 0, is not false in lua, need receive multiple value
-
 local csl = {
   gopls = "go",
   jsonls = "npm",

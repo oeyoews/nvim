@@ -19,8 +19,8 @@ oeyoews.options = {
 -- @servers
 oeyoews.servers = {
   "sumneko_lua",
-  -- "jsonls", -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
   "clangd", -- warn: don't modify this position or table order, unless use table self sort method to solve it
+  -- "jsonls", -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
   -- "pylsp", -- support formatting
   -- "jdtls", -- java
   -- "gopls", -- config in lspinstall, don't write it here
