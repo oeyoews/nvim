@@ -7,8 +7,7 @@ local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
   -- PERF:  add sleep function to beeter output
   vim.notify(
-    [[   You have not inistall packer.nvim
-   Cloning packer.nvim]],
+    [[   You have not inistall packer.nvim  Cloning packer.nvim ...]],
     "info"
   )
   packer_bootstrap = fn.system({
@@ -19,7 +18,6 @@ if fn.empty(fn.glob(install_path)) > 0 then
     "https://github.com/wbthomason/packer.nvim",
     install_path,
   })
-  vim.notify([[   Finish install packer.nvim]], "info")
   -- fix firstly install packer, can't require packer
   vim.cmd([[packadd packer.nvim]])
 end
@@ -62,10 +60,6 @@ packer.startup(function(use)
     use(plugin)
   end
 
-  -- automatically install missing plugin(s) on startup
-  -- BUG: have confilct for cloning, need press extra key
-  -- packer.install()
-
   -- Automatically set up your configuration after cloning packer.nvim
   if packer_bootstrap then
     if packer.config.compile_path then
@@ -76,7 +70,6 @@ packer.startup(function(use)
   else
     -- automatically packer_compiled on startup
     packer.compile()
-    -- vim.notify("Done")
     packer.install()
   end
 end)
