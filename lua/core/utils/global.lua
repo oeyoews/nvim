@@ -10,7 +10,7 @@ oeyoews.options = {
   enable_lsp = true, -- @see lspconfig.lua
   sumneko_lua_locale_cn = false, -- @see lspconfig.lua
   toggle_theme_auto = true, -- @see sta.lua
-  debug_mode = false, -- @ref: user.pcall.lua
+  debug_mode = false, -- @ref: user.pcall.lua @TODO: use keybinds to toggle this options in config
   -- rolling.json default.json v1.0.0.json
   snapshot = nil, -- @see bootstrap.lua
   -- snapshot = "default.json", -- @ref: core.utils.bootstrap
@@ -162,11 +162,9 @@ oeyoews.check_servers = function(server, server_require_binary)
   if vim.fn.executable(server_require_binary) == 1 then
     oeyoews.servers[#oeyoews.servers + 1] = server
   else
-    if oeyoews.debug_mode then
-      -- use string.format
-      -- vim.notify("Please install " .. server_require_binary .. "to use", server)
+    if oeyoews.options.debug_mode then
       local warn_server = string.format("Please install %s to use %s", server_require_binary, server)
-      return warn_server
+      vim.notify(warn_server)
     end
   end
 end
