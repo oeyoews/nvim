@@ -1,11 +1,11 @@
 <div align="center">
   <img src="img/vim.png" alt="vim" align="center" width=144><hr>
-  <h2>?çÉ Neovim</h2>
-  <p> ?í° A personal neovim configuration</p>
-    ?è† <a href="https://oeyoews.github.io/nvim">Home</a>
-  ?îó <a href="">Links </a>
-  ‚¨??∏?  <a  href="">Download</a>
-  ?î∞ <a  href="">More</a>
+  <h2>üçÉ Neovim</h2>
+  <p> üí° A personal neovim configuration</p>
+	üè† <a href="https://oeyoews.github.io/nvim">Home</a>&nbsp;
+  üîó <a href="">Links </a>&nbsp;
+  ‚¨áÔ∏è  <a  href="">Download</a>&nbsp;
+  üî∞ <a  href="">More</a>&nbsp;
   <hr>
 </div>
 
@@ -52,93 +52,49 @@
 <summary>TODO</summary>
 
 - [ ] inlay hints
-
 - [ ] learn vim.api(nvim), such use  vim.fn.executable to replace os.executable
-
 - [ ] link null-ls make a logger file
-
 - [ ] theme: https://github.com/nshen/learn-neovim-lua/blob/main/lua/utils/change-colorscheme.lua
-
 - [ ] tiny all which-key mappings
-
 - [ ] control module to install or uninstall plugins
-
 - [ ] use packer make packersnapshot
-
 - [ ] emulate key pressing
-
 - [x] cursor shake for null-ls
-
 - [x] vim-plug or packer.nvim index probleb
-
 - [x] config setting conflict
-
 - [x] integrate husky and (prettier)
-
 - [x] highlight paraness
-
 - [x] learn lightspeed
-
 - [x] learn use visual-line multi curline
-
 - [?] json add double how effect config
-
 - [x] add format stylua by ci/cd
-
 - [x] insert mode to hide cursorline
-
 - [x] automatically install filetype server when first open
-
 - [?] bug: treesitter multi download
-
 - [x] config opt(load)
-
 - [x] learn packer, test packer automatically
-
 - [x] format lua(include vim), this treesitter
-
 - [x] learn lua: doom-nvim, nvchad to deeply look
-
 - [x] add highlight symbols under cursor functions(terminal gnome support)
-
 - [x] use packer.nvim to replace vim-plug
-
 - [x] tidy vanilla.txt, maybe can write vanilla.markdown, last to txt
-
 - [x] config tab space show in different filetype
-
 - [x] move plugins/\*.lua to lua folder, and to pure lua config
-
 - [x] add window number switch number(mousenum)
-
 - [x] solve gitsign utf8
-
 - [x] how to add templates in nvim
-
 - [x] config norg table
-
 - [x] config format
-
 - [x] some sitution will cause error line repeat(maybe emoji or refresh time error)
-
 - [x] snowflake: this emoji will cause this bug in kitty(only)
-
 - [x] config new theme for material, like tilde,
-
 - [x] add shortkeys in vim to open browser html
-
 - [?] fix the zh bug(maybe also is terminal)
-
 - [x] add random banner and random color startup <https://github.com/goolord/alpha-nvim/discussions/16#discussioncomment-2386902>
-
 - [x] first install automatically install
-
 - [x] config dashboard
-
 - [x] this emjoi shadow bug, maybe is kitty terminal(switch to wezterm compare)
-
 - [x] some error tip from feline(active)
-
 - [x] learn it option setting and lsp multi separate setting: fix lua global vim setting, <https://github.com/AstroNvim/AstroNvim>,
 
 </details>
@@ -147,12 +103,6 @@
 
 | <img src="img/vim.png" align="bottom" width=128/> | <img src="img/example01.png" align="bottom" width=256/> |
 |:-------------------------------------------------:|:-------------------------------------------------------:|
-
-<!-- <div align="center"> -->
-
-<!-- <img src="img/example01.png" align="bottom" width=256/> -->
-
-<!-- </div> -->
 
 ## Links
 
