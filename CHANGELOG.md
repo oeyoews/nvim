@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.32.2](https://gitlab.com/oeyoews/nvim/compare/v5.32.1...v5.32.2) (2022-07-16)
+
+
+### Reverts
+
+* Revert "🧋 This is an automatic push" ([6826b8f](https://gitlab.com/oeyoews/nvim/commit/6826b8f3b903f554775671920cc0d8670fb8d3e8))
+
 ## [5.32.1](https://gitlab.com/oeyoews/nvim/compare/v5.32.0...v5.32.1) (2022-07-15)
 
 
