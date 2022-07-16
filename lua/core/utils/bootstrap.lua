@@ -73,4 +73,5 @@ vim.cmd([[
   nnoremap <silent> <space>ps <Cmd>PackerSync<CR>
   nnoremap <silent> <space>pi <cmd>PackerInstall<cr>
   nnoremap <silent> <space>pc <cmd>PackerClean<cr>
+  nnoremap <space>pr <cmd>PackerSnapshot rolling.json<cr>
 ]])
