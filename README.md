@@ -10,7 +10,7 @@
 </div>
 
 <div align="center">
-<img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/oeyoews/nvim?color=cyan&logo=github&logoColor=violet&style=flat-square">
+<!-- <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/oeyoews/nvim?color=cyan&logo=github&logoColor=violet&style=flat-square"> -->
 <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/oeyoews/nvim?color=cyan&logo=github&logoColor=cyan&style=flat-square">
 <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/oeyoews/nvim?color=green&logo=github&logoColor=cyan&style=flat-square">
 <img src="https://img.shields.io/badge/Desktop-Gnome-blueviolet.svg?style=flat-square&logo=gnome&color=90E59A&logoColor=cyan" alt="desktop">
