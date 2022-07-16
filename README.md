@@ -38,7 +38,7 @@
 <!-- vim-markdown-toc Marked -->
 
 * [Install](#install)
-* [examples](#examples)
+* [ShowCases](#showcases)
 * [Links](#links)
 
 <!-- vim-markdown-toc -->
@@ -99,7 +99,7 @@
 
 </details>
 
-## examples
+## ShowCases
 
 | <img src="img/vim.png" align="bottom" width=128/> | <img src="img/example01.png" align="bottom" width=256/> |
 |:-------------------------------------------------:|:-------------------------------------------------------:|
