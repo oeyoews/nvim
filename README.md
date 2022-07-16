@@ -1,10 +1,15 @@
 <div align="center">
   <img src="img/vim.png" alt="vim" align="center" width=144><hr>
-  <h2>NEOVIM</h2>
-	🏠 <a href="https://oeyoews.github.io/nvim">Home</a> <hr>
+  <h2>🍃 Neovim</h2>
+  <p> 💡 A personal neovim configuration</p>
+	🏠 <a href="https://oeyoews.github.io/nvim">Home</a>&nbsp;
+  🔗 <a href="">Links </a>&nbsp;
+  ⬇️  <a  href="">Download</a>&nbsp;
+  🔰 <a  href="">More</a>&nbsp;
+  <hr>
 </div>
 
-<div align="left">
+<div align="center">
 <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/oeyoews/nvim?color=cyan&logo=github&logoColor=violet&style=flat-square">
 <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/oeyoews/nvim?color=cyan&logo=github&logoColor=cyan&style=flat-square">
 <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/oeyoews/nvim?color=green&logo=github&logoColor=cyan&style=flat-square">
@@ -34,7 +39,7 @@
 
 * [Install](#install)
 * [examples](#examples)
-* [links](#links)
+* [Links](#links)
 
 <!-- vim-markdown-toc -->
 
@@ -100,7 +105,7 @@
 <img src="img/example01.png" align="bottom" width=256/>
 </div>
 
-## links
+## Links
 
 * form: https://neovim.discourse.group
 * emmylua comment: https://emmylua.github.io/zh_CN/annotation.html
