@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.33.0](https://gitlab.com/oeyoews/nvim/compare/v5.32.2...v5.33.0) (2022-07-20)
+
+
+### Features
+
+* **nvim_tree:** use nvim_tree plugin ([2dba556](https://gitlab.com/oeyoews/nvim/commit/2dba556f1e1d61233d5f163e62f520039fd306b1))
+
 ## [5.32.2](https://gitlab.com/oeyoews/nvim/compare/v5.32.1...v5.32.2) (2022-07-16)
 
 
