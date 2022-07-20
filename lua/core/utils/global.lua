@@ -43,6 +43,7 @@ oeyoews.servers = {
 -- @pluginlist
 oeyoews.pluginlist = {
   -- @luaversion: 5.1
+  "kyazdani42/nvim-tree.lua",
   "SmiteshP/nvim-navic",
   "folke/lua-dev.nvim",
   "mhartington/formatter.nvim",

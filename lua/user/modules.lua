@@ -51,6 +51,7 @@ M.m3 = {
 
   -- @TOOLS
   tools = {
+    "nvim_tree",
     "neogen",
     "todo_comments",
     "indent", -- show indent line
