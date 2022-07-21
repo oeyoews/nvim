@@ -9,7 +9,7 @@ M.utils = {
   "utils",
 }
 
----
+--- manually specific
 M.modules = {
   "ui",
   "langs",
@@ -20,7 +20,7 @@ M.modules = {
 ---
 M.m3 = {
   -- @utils
-  utils = {
+  ["utils"] = {
     "impatient",
     "global",
     "bootstrap",
@@ -76,7 +76,7 @@ M.m3 = {
   },
 
   -- @deprecate_config
-  misc = {
+  ["misc"] = {
     -- "project",
     -- "highstr", -- highlight select text
     -- "neorg", -- replace emace org mode

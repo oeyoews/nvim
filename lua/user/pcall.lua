@@ -7,23 +7,23 @@ local error_modules = {}
 local error_logs = {}
 local error_msg = {}
 local error_tree = {}
-local connect_path = nil
-local connect_path2 = nil
+local load_dot_path = nil
+local debug_format_msg = nil
 
 -- TODO: rename variable
 local M = {}
----@param entry string entry firstly
----@param m2 table module second index
----@param m3 table table module
-M.setup = function(entry, m2, m3)
-  for _, module in ipairs(m2) do
-    for _, load_module in ipairs(m3[module]) do
-      connect_path = string.format("%s.%s.%s", entry, module, load_module)
-      connect_path2 = string.format("%s  %s  %s", entry, module, load_module)
-      local status_ok, error_log = pcall(require, connect_path)
-      if not status_ok then
+---@param dir string entry firstly
+---@param load_module table module second index
+---@param load_files table table module
+M.setup = function(dir, load_module, load_files)
+  for _, module in pairs(load_module) do
+    for _, file in pairs(load_files[module]) do
+      load_dot_path = string.format("%s.%s.%s", dir, module, file)
+      debug_format_msg = string.format("%s  %s  %s", dir, module, file)
+      local load_status_ok, error_log = pcall(require, load_dot_path)
+      if not load_status_ok then
         -- storage error_module in tabale
-        error_modules[#error_modules + 1] = connect_path2
+        error_modules[#error_modules + 1] = debug_format_msg
         -- storage logging message
         error_logs[#error_logs + 1] = error_log
       end
