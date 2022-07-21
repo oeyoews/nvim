@@ -3,17 +3,21 @@
 
 local M = {}
 
+--- bootstrap firstly
 M.utils = {
   "utils",
 }
 
+---
 M.modules = {
+  -- "utils",
   "ui",
   "langs",
   "tools",
   -- "misc",
 }
 
+---
 M.m3 = {
   -- @utils
   utils = {
