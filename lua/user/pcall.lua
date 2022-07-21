@@ -16,6 +16,7 @@ local M = {}
 ---@param load_module table module second index
 ---@param load_files table table module
 M.setup = function(dir, load_module, load_files)
+  -- local module_get = forget , but different dir bug, can't use
   for _, module in pairs(load_module) do
     for _, file in pairs(load_files[module]) do
       load_dot_path = string.format("%s.%s.%s", dir, module, file)
