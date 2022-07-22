@@ -18,7 +18,7 @@ M.modules = {
 }
 
 ---
-M.m3 = {
+M.files = {
   -- @utils
   ["utils"] = {
     "impatient",
