@@ -1,3 +1,1 @@
-vim.cmd([[
-  nnoremap <silent> <SPACE>ll <Cmd>w <bar> QuickRun<CR>
-]])
+vim.keymap.set("n", "<space>ll", "<cmd>w <bar> QuickRun<cr>", { desc = "" })

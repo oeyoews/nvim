@@ -37,6 +37,7 @@ telescope.setup({
 
 vim.cmd([[
 " extensions
+" TODO map
 nnoremap <silent> <leader>tu :lua require("telescope").load_extension("ultisnips")<cr>:Telescope ultisnips<cr>
 noremap <silent>  <space>tp :lua require('telescope').extensions.packer.packer()<cr>
 nnoremap <silent> <space>bm :lua require('telescope').extensions.notify.notify()<cr>

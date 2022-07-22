@@ -2,6 +2,4 @@ local bufferline = require("bufferline")
 
 bufferline.setup()
 
-vim.cmd([[
-  nnoremap <silent> <leader>bp :BufferLinePick<CR>
-]])
+vim.keymap.set("n", "<space>bp", "<cmd>BufferLinePick<cr>", { desc = "" })

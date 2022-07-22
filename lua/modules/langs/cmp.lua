@@ -210,8 +210,8 @@ let g:UltiSnipsSnippetDirectories = [
       \ stdpath('config') . '/ultisnips/',
       \ ]
 
-nnoremap <silent> <SPACE>ee :UltiSnipsEdit<CR>G
-nnoremap <silent> <SPACE>ea :UltiSnipsEdit all<CR>
-
 autocmd FileType TelescopePrompt | lua require("cmp").setup.buffer({ enabled = false })
 ]])
+
+vim.keymap.set("n", "<space>ee", "<cmd>UltiSnipsEdit<cr>", { desc = "edit snippet" })
+vim.keymap.set("n", "<space>ea", "<cmd>UltiSnipsEdit all<cr>", { desc = "edia all snippet geterally" })

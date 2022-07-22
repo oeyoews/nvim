@@ -29,3 +29,7 @@ snippet module_comment "module comment"
 -- @module: ${1:`!p snip.rv = (snip.basename or "name") + ".lua"`}
 -- @ref:
 endsnippet
+
+snippet map "set keymap" bA
+vim.keymap.set("n", "<space>$1", "<cmd>$2<cr>", { desc = "" })
+endsnippet

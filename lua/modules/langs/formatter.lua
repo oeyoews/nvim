@@ -50,10 +50,4 @@ require("formatter").setup({
   },
 })
 
-vim.cmd([[
-nnoremap <silent> <leader>bf :Format<CR>
-" augroup FormatAutogroup
-"   autocmd!
-"   autocmd BufWritePost * FormatWrite
-" augroup END
-]])
+vim.keymap.set("n", "<space>bf", "<cmd>Format<cr>", { desc = "Format code with lsp-format" })

@@ -1,5 +1,6 @@
 -- @ref: core.utils.mappings
 local findfiles = function()
+  -- TODO: map
   vim.cmd([[
  nnoremap <silent> <space>fi <cmd>find ~/.config/nvim/init.lua<cr>
  nnoremap <silent> <space>fg <cmd>find ~/.config/nvim/lua/core/utils/global.lua<cr>

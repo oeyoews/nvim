@@ -44,6 +44,7 @@ lspsaga.setup({
 })
 
 vim.cmd([[
+" TODO map
 nnoremap <silent> <space>le <cmd>Lspsaga code_action<cr>
 nnoremap <silent> <leader>gk :Lspsaga hover_doc<CR>
 nnoremap <silent> <C-f> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>

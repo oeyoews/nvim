@@ -16,3 +16,6 @@ local hopmap = {
 local which_key = require("which-key")
 
 which_key.register(hopmap)
+
+-- TODO
+-- vim.keymap.set("n", "<space>hw", )
