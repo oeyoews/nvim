@@ -128,4 +128,15 @@ oeyoews.check_servers = function(server, server_require_binary)
   end
 end
 
+--- vim.keymap.set()
+---@param kmap table
+oeyoews.kmap = function(kmap)
+  local keymap_set = function(tbl)
+    vim.keymap.set(tbl[1], tbl[2], tbl[3], { desc = tbl[4] or "description is coming" })
+  end
+  for _, v in ipairs(kmap) do
+    keymap_set(v)
+  end
+end
+
 return M

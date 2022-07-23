@@ -3,9 +3,9 @@ local g = vim.g
 
 g.mapleader = " "
 
-vim.keymap.set("n", "<space>helo", function()
-  vim.notify("  Hello, Neovim", "info", { title = "welcome" })
-end, { desc = "hello, neovim" })
+-- vim.keymap.set("n", "<space>helo", function()
+--   vim.notify("  Hello, Neovim", "info", { title = "welcome" })
+-- end, { desc = "hello, neovim" })
 vim.keymap.set("n", "U", "<C-r>", { desc = "undo" })
 vim.keymap.set("n", "q", "")
 vim.keymap.set("n", "<space>bd", "<cmd>bdelete<cr>", { desc = "delete current buffer" })
@@ -19,6 +19,23 @@ vim.keymap.set("v", "<<", "<gv", { desc = "left indent" })
 vim.keymap.set("n", "<space><tab>", "<cmd>bp<cr>", { desc = "previout buffer" })
 vim.keymap.set("n", "<space>bn", "<cmd>bn<cr>", { desc = "next buffer" })
 vim.keymap.set("n", "<space>bx", "<cmd>ene<cr>", { desc = "new buffer" })
+
+-- mapping
+local keymappings_set = {}
+
+keymappings_set = {
+  { "n", "<space>helo", function()
+    vim.notify("  Hello, Neovim", "info", { title = "welcome" })
+  end, { desc = "hello, neovim" } },
+  { "n", "<leader>w", "<C-W>", "map window prefix" },
+  { "n", "<leader>fs", ":w<cr>", "save file" },
+  { "n", "<leader>bM", ":messages<cr>", "messages" },
+  { "n", "<leader>tn", ":setlocal invnumber<cr>", "toggle show number" },
+  { "n", "<leader>ss", ":setlocal invspell<cr>", "toggle spell" },
+  { "n", "<leader>tl", ":setlocal invlist<cr>", "toggle list" },
+}
+
+oeyoews.kmap(keymappings_set)
 
 vim.cmd([[
 "let g:mapleader = " "
@@ -37,13 +54,10 @@ vim.cmd([[
 "  nnoremap <silent> <space>qe :e!<cr>
 
 " note this <cr> not have virtual space
-nnoremap <silent> <leader>fs :w<cr>
 nnoremap <silent> <C-s> :<C-U>w<cr>:lua vim.notify("﬚  save file")<cr>
 
-nnoremap <leader>qh q:
-
-nnoremap <leader>w <C-w>
-nnoremap <silent> <leader>bM :messages<cr>
+" bug todo-comment
+" nnoremap <leader>qh q:
 
 " clear or highlight search words
 "nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>
@@ -54,12 +68,10 @@ nnoremap <silent> <leader>bM :messages<cr>
 nnoremap <silent> <esc> :noh<return><C-L><esc>
 
 " is same to neorg start, but is no effect
-"nnoremap <silent> <space>tn <cmd>setlocal invnumber<cr>
+" nnoremap <silent> <leader>tn <cmd>setlocal invnumber<cr>
 
 "autocmd FileType norg
 "vnoremap <space>nn mzI+<esc>A+<esc>`z
-
-nnoremap <silent> <leader>tn <cmd>setlocal invnumber<cr>
 
 " copy and yank with system
 " selsct some text, copy it ro system clipboard
@@ -78,16 +90,10 @@ noremap <space>pp "*p
 "nnoremap <silent> <space>yp :<C-U>let @+=expand('%:p') <bar> echom "Finished copy fpath."<cr>
 nnoremap <silent> <space>yp :<C-U>let @+=expand('%:p') <bar> lua vim.notify(" 🦜 Copy Fpath")<cr>
 
-" toggle spell
-nnoremap <space>ss <cmd>setlocal invspell <bar> lua vim.notify("Toggle Spell")<cr>
-
-" nnoremap <silent> <space>hh <cmd>help vanilla.txt<cr>
-
 nnoremap <leader>bs  <Cmd>e /tmp/scratch.txt<CR>
 nnoremap <leader>bb  <Cmd>e `mktemp -t neovim-scratch-XXXXXX`<CR>
 
       " ["<C-c>"] = { "<cmd> %y+ <CR>", "  copy whole file" },
-nnoremap <silent> <leader>tl :setlocal invlist<cr>
 
 " fzf's vimplugin
 nnoremap <silent> <leader>fu :FZF<cr>
