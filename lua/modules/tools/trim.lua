@@ -1,10 +1,7 @@
 local trim = require("trim")
 
 trim.setup({
-  -- if you want to ignore markdown file.
-  -- you can specify filetypes.
   disable = { "python" },
-
   -- if you want to ignore space of top
   patterns = {
     [[%s/\s\+$//e]],

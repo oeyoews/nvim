@@ -9,11 +9,11 @@ end, { desc = "hello, neovim" })
 vim.keymap.set("n", "U", "<C-r>", { desc = "undo" })
 vim.keymap.set("n", "q", "")
 vim.keymap.set("n", "<space>bd", "<cmd>bdelete<cr>", { desc = "delete current buffer" })
-vim.keymap.set({ "n", "v", }, "<space><space>", ":", { desc = "command mode" })
+vim.keymap.set({ "n", "v" }, "<space><space>", ":", { desc = "command mode" })
 vim.keymap.set("i", "jk", "<esc>", { desc = "escape insert mode" })
 vim.keymap.set("n", "<space>qq", "<cmd>q<cr>", { desc = "quit neovim" })
-vim.keymap.set({ "n", "v", }, "H", "0", { desc = "jump head of line" })
-vim.keymap.set({ "n", "v", }, "L", "$", { desc = "jump end of line" })
+vim.keymap.set({ "n", "v" }, "H", "0", { desc = "jump head of line" })
+vim.keymap.set({ "n", "v" }, "L", "$", { desc = "jump end of line" })
 
 vim.cmd([[
 "let g:mapleader = " "

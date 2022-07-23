@@ -1,3 +1,1 @@
-local autopairs = require("nvim-autopairs")
-
-autopairs.setup()
+require("nvim-autopairs").setup()

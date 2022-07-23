@@ -1,4 +1,1 @@
-local sta = require("user.sta")
-
--- main
-sta("tokyonight")
+require("user.sta").setup()

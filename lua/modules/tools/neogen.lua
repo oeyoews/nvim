@@ -1,3 +1,1 @@
-local neogen = require("neogen")
-
-neogen.setup()
+require("neogen").setup()

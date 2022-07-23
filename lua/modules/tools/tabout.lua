@@ -1,3 +1,1 @@
-local tabout = require("tabout")
-
-tabout.setup()
+require("tabout").setup()
