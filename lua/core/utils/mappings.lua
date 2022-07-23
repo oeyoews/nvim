@@ -2,6 +2,7 @@ local g = vim.g
 
 g.mapleader = " "
 
+-- TODO: map
 vim.cmd([[
 "let g:mapleader = " "
 " let g:mapleader = "\<Space>"
@@ -29,7 +30,7 @@ vnoremap <leader><leader> :
 " buffer
 nnoremap <silent> <leader><tab> :bp<CR>
 nnoremap <silent> <leader>bn :bn<CR>
-nnoremap <silent> <leader>bx <cmd>enew<cr>
+nnoremap <silent> <leader>bx <cmd>ene<cr>
 
 " quit window
 nnoremap <silent> <space>qq :q<CR>

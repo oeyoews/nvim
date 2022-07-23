@@ -68,10 +68,7 @@ packer.startup(function(use)
   end
 end)
 
--- keybindings
-vim.cmd([[
-  nnoremap <silent> <space>ps <Cmd>PackerSync<CR>
-  nnoremap <silent> <space>pi <cmd>PackerInstall<cr>
-  nnoremap <silent> <space>pc <cmd>PackerClean<cr>
-  nnoremap <space>pr <cmd>PackerSnapshot rolling.json<cr>
-]])
+vim.keymap.set("n", "<space>pc", "<cmd>PackerClean<cr>", { desc = "clean plugin" })
+vim.keymap.set("n", "<space>pi", "<cmd>PackerInstall<cr>", { desc = "install plugin" })
+vim.keymap.set("n", "<space>ps", "<cmd>PackerSync<cr>", { desc = "update plugin" })
+vim.keymap.set("n", "<space>pr", "<cmd>PackerSnapshot rolling.json<cr>", { desc = "back neovim plugin" })
