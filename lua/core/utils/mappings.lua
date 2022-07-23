@@ -2,10 +2,11 @@ vim.g.mapleader = " "
 
 local keymappings_set = {}
 
--- bug
+-- bug, not use this silent = true
 vim.keymap.set({ "n", "v" }, "<space><space>", ":", { desc = "cmd mode" })
 
 keymappings_set = {
+  { "<space><space>", ":", "command mode", { "n", "v" }, false },
   { "<space>fu", ":FZF<cr>", "fzf" },
   { "<space>bb", ":e `mktemp -t neovim-scratch-XXXXXX`<cr>", "edit temp file" },
   { "<space>ba", ":%bw<cr>", "removw all buffers" },
