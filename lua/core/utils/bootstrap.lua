@@ -56,10 +56,10 @@ packer.startup(function(use)
 
   -- Automatically set up your configuration after cloning packer.nvim
   if packer_bootstrap then
-    if packer.config.compile_path then
-      -- WARN: danger command
-      os.remove(packer.config.compile_path)
-    end
+    -- if packer.config.compile_path then
+    --   -- WARN: danger command
+    --   os.remove(packer.config.compile_path)
+    -- end
     packer.sync()
   else
     -- automatically packer_compiled on startup
@@ -72,3 +72,8 @@ vim.keymap.set("n", "<space>pc", "<cmd>PackerClean<cr>", { desc = "clean plugin"
 vim.keymap.set("n", "<space>pi", "<cmd>PackerInstall<cr>", { desc = "install plugin" })
 vim.keymap.set("n", "<space>ps", "<cmd>PackerSync<cr>", { desc = "update plugin" })
 vim.keymap.set("n", "<space>pr", "<cmd>PackerSnapshot rolling.json<cr>", { desc = "back neovim plugin" })
+
+--[[ vim.keymap.set("n", "<space>tP", function()
+  package.loaded['pack'] = nil
+  require('packer') -- loads an updated version of module 'modname'
+end, { desc = "reload packer" }) ]]

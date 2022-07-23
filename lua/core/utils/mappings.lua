@@ -2,12 +2,12 @@ local g = vim.g
 
 g.mapleader = " "
 
--- TODO: map
+vim.keymap.set("n", "<space>bd", "<cmd>bdelete<cr>", { desc = "delete current buffer" })
+
 vim.cmd([[
 "let g:mapleader = " "
 " let g:mapleader = "\<Space>"
 
-nnoremap <leader>bd <cmd>bdelete<cr>
 " create blankline nto formatoptions
 "nnoremap <silent> <leader>o :set paste<cr>o<esc>:set nopaste<cr>
 "nnoremap <silent> <leader>O :set paste<cr>O<esc>:set nopaste<cr>
