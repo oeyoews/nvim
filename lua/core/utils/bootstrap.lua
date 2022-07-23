@@ -71,7 +71,7 @@ end)
 vim.keymap.set("n", "<space>pc", "<cmd>PackerClean<cr>", { desc = "clean plugin" })
 vim.keymap.set("n", "<space>pi", "<cmd>PackerInstall<cr>", { desc = "install plugin" })
 vim.keymap.set("n", "<space>ps", "<cmd>PackerSync<cr>", { desc = "update plugin" })
-vim.keymap.set("n", "<space>pr", "<cmd>PackerSnapshot rolling.json<cr>", { desc = "back neovim plugin" })
+vim.keymap.set("n", "<space>pr", "<cmd>PackerSnapshot rolling.json<cr>", { desc = "backup neovim plugin" })
 
 --[[ vim.keymap.set("n", "<space>tP", function()
   package.loaded['pack'] = nil
