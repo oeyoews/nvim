@@ -43,15 +43,9 @@ lspsaga.setup({
   diagnostic_prefix_format = "%d. ",
 })
 
-vim.cmd([[
-" TODO map
-nnoremap <silent> <space>le <cmd>Lspsaga code_action<cr>
-nnoremap <silent> <leader>gk :Lspsaga hover_doc<CR>
-nnoremap <silent> <C-f> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>
-nnoremap <silent> <C-b> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>
-nnoremap <silent> <leader>gs :Lspsaga signature_help<CR>
-nnoremap <silent> <leader>gd :Lspsaga preview_definition<CR>
-nnoremap <silent> gh :Lspsaga lsp_finder<CR>
-nnoremap <silent> gr :Lspsaga rename<CR>
-nnoremap <silent> <leader>cd :Lspsaga show_line_diagnostics<CR>
-]])
+vim.keymap.set("n", "<space>le", "<cmd>Lspsaga code_action<cr>", { desc = "intelligent code tip" })
+vim.keymap.set("n", "<space>gk", "<cmd>Lspsaga hover_doc<cr>", { desc = "hover lsp doc" })
+vim.keymap.set("n", "<space>gh", "<cmd>Lspsaga lsp_finder<cr>", { desc = "lsp finder" })
+vim.keymap.set("n", "gr", "<cmd>Lspsaga rename<cr>", { desc = "lsp rename" })
+vim.keymap.set("n", "<space>gd", "<cmd>Lspsaga preview_definition<cr>", { desc = "preview_definition" })
+vim.keymap.set("n", "<space>gs", "<cmd>Lspsaga signature_help<cr>", { desc = "signature_help" })

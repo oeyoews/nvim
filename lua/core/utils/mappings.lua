@@ -14,6 +14,11 @@ vim.keymap.set("i", "jk", "<esc>", { desc = "escape insert mode" })
 vim.keymap.set("n", "<space>qq", "<cmd>q<cr>", { desc = "quit neovim" })
 vim.keymap.set({ "n", "v" }, "H", "0", { desc = "jump head of line" })
 vim.keymap.set({ "n", "v" }, "L", "$", { desc = "jump end of line" })
+vim.keymap.set("v", ">>", ">gv", { desc = "right indent" })
+vim.keymap.set("v", "<<", "<gv", { desc = "left indent" })
+vim.keymap.set("n", "<space><tab>", "<cmd>bp<cr>", { desc = "previout buffer" })
+vim.keymap.set("n", "<space>bn", "<cmd>bn<cr>", { desc = "next buffer" })
+vim.keymap.set("n", "<space>bx", "<cmd>ene<cr>", { desc = "new buffer" })
 
 vim.cmd([[
 "let g:mapleader = " "
@@ -26,15 +31,6 @@ vim.cmd([[
 " load current config file
 " nnoremap <leader>so <cmd>so % <bar> lua vim.notify("Finished refresh current file.")<cr>
 " nnoremap <silent> <leader>so <cmd>luafile %<cr> :lua vim.notify("Finished refresh current file.")<cr>
-
-" continue indent
-vnoremap >> >gv
-vnoremap << <gv
-
-" buffer
-nnoremap <silent> <leader><tab> :bp<CR>
-nnoremap <silent> <leader>bn :bn<CR>
-nnoremap <silent> <leader>bx <cmd>ene<cr>
 
 " quit window
 " nnoremap <silent> <space>qy :set confirm q<CR>
