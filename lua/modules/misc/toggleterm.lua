@@ -27,6 +27,4 @@ toggleterm.setup({
   },
 })
 
-vim.cmd([[
-  nnoremap <silent> <leader>tk :ToggleTerm<cr>
-]])
+vim.keymap.set("n", "<space>tk", "<cmd>ToggleTerm<cr>", { desc = "" })

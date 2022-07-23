@@ -74,8 +74,6 @@ let g:rnvimr_layout = {
 \ 'row': 0,
 \ 'style': 'minimal'
 \ }
-
-" rnvimr TODO highlight
 ]])
 
 vim.keymap.set("n", "<space>ft", "<cmd>RnvimrToggle<cr>", { desc = "ranger" })

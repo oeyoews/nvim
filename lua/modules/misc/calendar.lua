@@ -1,4 +1,5 @@
 vim.cmd([[
 let g:calendar_cache_directory = stdpath('data') . '/calendar'
-nnoremap <silent> <leader>Tc :Calendar<cr>
 ]])
+
+vim.keymap.set("n", "<space>Tc", "<cmd>Calendar<cr>", { desc = "" })

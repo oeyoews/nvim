@@ -17,6 +17,4 @@ function _G.Toggle_venn()
   end
 end
 
-vim.cmd([[
-nnoremap <silent> <leader>tv  <cmd>lua Toggle_venn()<cr>
-]])
+vim.keymap.set("n", "<space>tv", "<cmd>Toggle_venn<cr>", { desc = "" })
