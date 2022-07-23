@@ -1,5 +1,7 @@
 -- @ref: core.utils.mappings
-local findfiles = function()
+local M = {}
+
+M.custom_map = function()
   vim.keymap.set(
     "n",
     "<space>fi",
@@ -29,4 +31,4 @@ local findfiles = function()
   end, { desc = "show time" })
 end
 
-return findfiles
+return M

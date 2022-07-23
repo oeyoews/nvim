@@ -54,25 +54,19 @@ end, { desc = "T ==> packer" })
 
 vim.keymap.set("n", "<space>ff", "<cmd>Telescope find_files<cr>", { desc = "find files" })
 vim.keymap.set("n", "<space>to", "<cmd>Telescope oldfiles<cr>", { desc = "recent files" })
-vim.keymap.set("n", "<space>tbb", "<cmd>Telescope buffers<cr>", { desc = "" })
-vim.keymap.set("n", "<C-P>", "<cmd>Telescope commands<cr>", { desc = "" })
+vim.keymap.set("n", "<space>tbb", "<cmd>Telescope buffers<cr>", { desc = "list all buffers" })
+vim.keymap.set("n", "<C-P>", "<cmd>Telescope commands<cr>", { desc = "command mode" })
+vim.keymap.set("n", "<space>th", "<cmd>Telescope colorscheme<cr>", { desc = "list themes" })
+vim.keymap.set("n", "<space>tr", "<cmd>Telescope resume<cr>", { desc = "restore telescope last window" })
+vim.keymap.set("n", "<space>tF", "<cmd>Telescope filetypes<cr>", { desc = "set filetypes" })
+vim.keymap.set("n", "<space>ts", "<cmd>Telescope live_grep<cr>", { desc = "grep" })
+vim.keymap.set("n", "<space>tm", "<cmd>Telescope keymaps<cr>", { desc = "list keymaps" })
 
 vim.cmd([[
-nnoremap <leader>th <Cmd>Telescope colorscheme <Cr>
-nnoremap <leader>tF <Cmd>Telescope filetypes<Cr>
-nnoremap <leader>tg <Cmd>Telescope git_status<Cr>
-nnoremap <leader>tr <Cmd>Telescope resume<Cr>
-
-" search string in current dir
-nnoremap <leader>ts <Cmd>Telescope live_grep<Cr>
-
-nnoremap <leader>tm <cmd>Telescope keymaps<cr>
-
 " Border highlight groups
 highlight TelescopeBorder         guifg=#bd93f9
 " highlight TelescopeResultsBorder  guifg=#bd93f9
 highlight TelescopePreviewBorder  guifg=#7CB740
 highlight TelescopePromptBorder   guifg=#F7768E
 highlight TelescopePromptPrefix   guifg=#F7768E gui=bold
-
 ]])

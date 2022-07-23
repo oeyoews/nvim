@@ -111,14 +111,10 @@ noremap <silent> U <C-r>
 nnoremap <silent> <space>ba :%bw<cr>
 ]])
 
--- TODO: https://github.com/LunarVim/LunarVim/blob/rolling/lua/lvim/keymappings.lua
-
-local findfile = require("user.keybindings")
-
-findfile()
+-- ref: https://github.com/LunarVim/LunarVim/blob/rolling/lua/lvim/keymappings.lua
+require("user.keybindings").custom_map()
 
 -- nnoremap <leader>bb  <Cmd>e `mktemp -t scratch-XXXXXX`<CR>
 
 -- TODO:
 -- tmpfile = os.tmpname()
--- nvim_ fp
