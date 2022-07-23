@@ -2,6 +2,9 @@ vim.g.mapleader = " "
 
 local keymappings_set = {}
 
+-- bug
+vim.keymap.set({ "n", "v" }, "<space><space>", ":", { desc = "cmd mode" })
+
 keymappings_set = {
   { "<space>fu", ":FZF<cr>", "fzf" },
   { "<space>bb", ":e `mktemp -t neovim-scratch-XXXXXX`<cr>", "edit temp file" },
@@ -14,10 +17,9 @@ keymappings_set = {
     end,
     { desc = "hello, neovim" },
   },
-  { "<space><space>", ":", "command mode", { "n", "v" } },
   { "H", "0", "jump head of line", { "n", "v" } },
   { "L", "$", "jump end of line", { "n", "v" } },
-  { "q", "disable macro in normal mode", { "n", "v" } },
+  { "q", "", "disable macro in normal mode", { "n", "v" } },
   { "jk", "<esc>", "escape insert mode", "i" },
   { ">>", ">gv", "right indent", "v" },
   { "<<", "<gv", "left indent", "v" },

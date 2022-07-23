@@ -20,13 +20,13 @@ setlocal nornu nonu
 setlocal nocursorline
 endfunction
 
-function! ToggleStatusLine() abort
-if &laststatus
-set laststatus=0
-else
-set laststatus=3
-endif
-endfunction
+" function! ToggleStatusLine() abort
+" if &laststatus
+" set laststatus=0
+" else
+" set laststatus=3
+" endif
+" endfunction
 
 "nnoremap <space>fd <cmd>e ~/dotfiles/notes/draft/`date -I`.md<cr>
 "nnoremap <space>fd <cmd>e ${NOTES}/markdown/$(date +"%d-%m-%Y").md<cr>
@@ -52,3 +52,18 @@ autocmd InsertEnter * setlocal nocursorline " | setlocal rnu
 autocmd InsertLeave * setlocal cursorline " | setlocal nornu have bug for telescope prompt
 augroup END
 ]])
+
+-- local function toggleStatusLine()
+--   if vim.opt.laststatus == 3 then
+--     vim.opt.laststatus = 0
+--     return;
+--   end
+--   if vim.opt.laststatus == 0 then
+--     vim.opt.laststatus = 3
+--     return;
+--   end
+-- end
+--
+-- vim.keymap.set("n", "<space>tS", function()
+--   toggleStatusLine()
+-- end, { desc = "toggleStatusLine(lua)" })
