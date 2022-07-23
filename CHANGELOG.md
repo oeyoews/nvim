@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.34.0](https://gitlab.com/oeyoews/nvim/compare/v5.33.1...v5.34.0) (2022-07-23)
+
+
+### Features
+
+* **kmap:** add kmap function ([1dcd592](https://gitlab.com/oeyoews/nvim/commit/1dcd59243fdd71fa519adde5669ac0adfc7682b8))
+
 ## [5.33.1](https://gitlab.com/oeyoews/nvim/compare/v5.33.0...v5.33.1) (2022-07-23)
 
 
