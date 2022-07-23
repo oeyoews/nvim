@@ -2,11 +2,10 @@ vim.g.mapleader = " "
 
 local keymappings_set = {}
 
--- bug, not use this silent = true
+--  not use this silent = true
 vim.keymap.set({ "n", "v" }, "<space><space>", ":", { desc = "cmd mode" })
 
 keymappings_set = {
-  { "<space><space>", ":", "command mode", { "n", "v" }, false },
   { "<space>fu", ":FZF<cr>", "fzf" },
   { "<space>bb", ":e `mktemp -t neovim-scratch-XXXXXX`<cr>", "edit temp file" },
   { "<space>ba", ":%bw<cr>", "removw all buffers" },
@@ -86,9 +85,6 @@ noremap <space>pp "*p
 
 "nnoremap <silent> <space>yp :<C-U>let @+=expand('%:p') <bar> echom "Finished copy fpath."<cr>
 nnoremap <silent> <space>yp :<C-U>let @+=expand('%:p') <bar> lua vim.notify(" 🦜 Copy Fpath")<cr>
-
-      " ["<C-c>"] = { "<cmd> %y+ <CR>", "  copy whole file" },
-
 ]])
 
 -- load custom_map
