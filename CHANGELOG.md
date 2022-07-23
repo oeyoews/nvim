@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.33.1](https://gitlab.com/oeyoews/nvim/compare/v5.33.0...v5.33.1) (2022-07-23)
+
+
+### Performance Improvements
+
+* **packer:** remove packer remove cmd ([332389e](https://gitlab.com/oeyoews/nvim/commit/332389e16f557f23c599298d0587eb95dc0f2fee))
+
 # [5.33.0](https://gitlab.com/oeyoews/nvim/compare/v5.32.2...v5.33.0) (2022-07-20)
 
 
