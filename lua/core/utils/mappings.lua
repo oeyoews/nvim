@@ -1,39 +1,38 @@
--- ref: https://github.com/LunarVim/LunarVim/blob/rolling/lua/lvim/keymappings.lua
-local g = vim.g
+vim.g.mapleader = " "
 
-g.mapleader = " "
-
--- mapping
 local keymappings_set = {}
 
 keymappings_set = {
+  { "<space>fu", ":FZF<cr>", "fzf" },
+  { "<space>bb", ":e `mktemp -t neovim-scratch-XXXXXX`<cr>", "edit temp file" },
+  { "<space>ba", ":%bw<cr>", "removw all buffers" },
+  { "<space>bs", ":e /tmp/scratch.txt<cr>", "edit scratch.txt" },
   {
-    "n",
     "<space>helo",
     function()
       vim.notify("  Hello, Neovim", "info", { title = "welcome" })
     end,
     { desc = "hello, neovim" },
   },
-  { { "n", "v" }, "<space><space>", ":", "command mode" },
-  { { "n", "v" }, "H", "0", "jump head of line" },
-  { { "n", "v" }, "L", "$", "jump end of line" },
-  { "n", "U", "<C-r>", "undo change" },
-  { "n", "q", "disable macro in normal mode" },
-  { "n", "<space>bd", "<cmd>bdelete<cr>", "delete current buffer" },
-  { "i", "jk", "<esc>", "escape insert mode" },
-  { "n", "<space>qq", "<cmd>q<cr>", "quit neovim" },
-  { "v", ">>", ">gv", "right indent" },
-  { "v", "<<", "<gv", "left indent" },
-  { "n", "<space><tab>", "<cmd>bp<cr>", "previout buffer" },
-  { "n", "<space>bn", "<cmd>bn<cr>", "next buffer" },
-  { "n", "<space>bx", "<cmd>ene<cr>", "new buffer" },
-  { "n", "<leader>w", "<C-W>", "map window prefix" },
-  { "n", "<leader>fs", ":w<cr>", "save file" },
-  { "n", "<leader>bM", ":messages<cr>", "messages" },
-  { "n", "<leader>tn", ":setlocal invnumber<cr>", "toggle show number" },
-  { "n", "<leader>ss", ":setlocal invspell<cr>", "toggle spell" },
-  { "n", "<leader>tl", ":setlocal invlist<cr>", "toggle list" },
+  { "<space><space>", ":", "command mode", { "n", "v" } },
+  { "H", "0", "jump head of line", { "n", "v" } },
+  { "L", "$", "jump end of line", { "n", "v" } },
+  { "q", "disable macro in normal mode", { "n", "v" } },
+  { "jk", "<esc>", "escape insert mode", "i" },
+  { ">>", ">gv", "right indent", "v" },
+  { "<<", "<gv", "left indent", "v" },
+  { "U", "<C-r>", "undo change" },
+  { "<space>bd", "<cmd>bdelete<cr>", "delete current buffer" },
+  { "<space>qq", "<cmd>q<cr>", "quit neovim" },
+  { "<space><tab>", "<cmd>bp<cr>", "previout buffer" },
+  { "<space>bn", "<cmd>bn<cr>", "next buffer" },
+  { "<space>bx", "<cmd>ene<cr>", "new buffer" },
+  { "<leader>w", "<C-W>", "map window prefix" },
+  { "<leader>fs", ":w<cr>", "save file" },
+  { "<leader>bM", ":messages<cr>", "messages" },
+  { "<leader>tn", ":setlocal invnumber<cr>", "toggle show number" },
+  { "<leader>ss", ":setlocal invspell<cr>", "toggle spell" },
+  { "<leader>tl", ":setlocal invlist<cr>", "toggle list" },
 }
 
 oeyoews.kmap(keymappings_set)
@@ -53,12 +52,6 @@ vim.cmd([[
 " quit window
 " nnoremap <silent> <space>qy :set confirm q<CR>
 "  nnoremap <silent> <space>qe :e!<cr>
-
-" note this <cr> not have virtual space
-nnoremap <silent> <C-s> :<C-U>w<cr>:lua vim.notify("﬚  save file")<cr>
-
-" bug todo-comment
-" nnoremap <leader>qh q:
 
 " clear or highlight search words
 "nnoremap <silent> <SPACE>sc <cmd>nohlsearch<cr>
@@ -91,15 +84,8 @@ noremap <space>pp "*p
 "nnoremap <silent> <space>yp :<C-U>let @+=expand('%:p') <bar> echom "Finished copy fpath."<cr>
 nnoremap <silent> <space>yp :<C-U>let @+=expand('%:p') <bar> lua vim.notify(" 🦜 Copy Fpath")<cr>
 
-nnoremap <leader>bs  <Cmd>e /tmp/scratch.txt<CR>
-nnoremap <leader>bb  <Cmd>e `mktemp -t neovim-scratch-XXXXXX`<CR>
-
       " ["<C-c>"] = { "<cmd> %y+ <CR>", "  copy whole file" },
 
-" fzf's vimplugin
-nnoremap <silent> <leader>fu :FZF<cr>
-
-nnoremap <silent> <space>ba :%bw<cr>
 ]])
 
 -- load custom_map

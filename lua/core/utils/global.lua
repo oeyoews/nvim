@@ -128,11 +128,13 @@ oeyoews.check_servers = function(server, server_require_binary)
   end
 end
 
+-- TODO: set prefix option
 --- vim.keymap.set()
 ---@param kmap table
 oeyoews.kmap = function(kmap)
   local keymap_set = function(tbl)
-    vim.keymap.set(tbl[1], tbl[2], tbl[3], { desc = tbl[4] or "description is coming" })
+    tbl[4] = tbl[4] or "n"
+    vim.keymap.set(tbl[4], tbl[1], tbl[2], { desc = tbl[3] or "description is coming", silent = true })
   end
   for _, v in ipairs(kmap) do
     keymap_set(v)
