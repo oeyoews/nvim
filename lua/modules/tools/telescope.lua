@@ -35,22 +35,33 @@ telescope.setup({
   },
 })
 
-vim.cmd([[
-" extensions
-" TODO map
-nnoremap <silent> <leader>tu :lua require("telescope").load_extension("ultisnips")<cr>:Telescope ultisnips<cr>
-noremap <silent>  <space>tp :lua require('telescope').extensions.packer.packer()<cr>
-nnoremap <silent> <space>bm :lua require('telescope').extensions.notify.notify()<cr>
-" noremap <silent> <space>tP :lua require('telescope').load_extension('projects')<cr>
+vim.keymap.set(
+  "n",
+  "<space>tu",
+  function()
+    return require("telescope").load_extension("ultisnips"), require("telescope").extensions.ultisnips.ultisnips()
+  end, --[[ "<cmd>Telescope ultisnips<cr>", ]]
+  { desc = "load and start telescope ultisnips" }
+)
 
-nnoremap <leader>ff <cmd>Telescope find_files <cr>
-nnoremap <leader>to <cmd>Telescope oldfiles <cr>
-nnoremap <leader>tbb <cmd>Telescope buffers <cr>
+vim.keymap.set("n", "<space>bm", function()
+  require("telescope").extensions.notify.notify()
+end, { desc = "T ==> notify" })
+
+vim.keymap.set("n", "<space>tp", function()
+  require("telescope").extensions.packer.packer()
+end, { desc = "T ==> packer" })
+
+vim.keymap.set("n", "<space>ff", "<cmd>Telescope find_files<cr>", { desc = "find files" })
+vim.keymap.set("n", "<space>to", "<cmd>Telescope oldfiles<cr>", { desc = "recent files" })
+vim.keymap.set("n", "<space>tbb", "<cmd>Telescope buffers<cr>", { desc = "" })
+vim.keymap.set("n", "<C-P>", "<cmd>Telescope commands<cr>", { desc = "" })
+
+vim.cmd([[
 nnoremap <leader>th <Cmd>Telescope colorscheme <Cr>
 nnoremap <leader>tF <Cmd>Telescope filetypes<Cr>
 nnoremap <leader>tg <Cmd>Telescope git_status<Cr>
 nnoremap <leader>tr <Cmd>Telescope resume<Cr>
-noremap <silent> <C-P> <cmd>Telescope commands<cr>
 
 " search string in current dir
 nnoremap <leader>ts <Cmd>Telescope live_grep<Cr>

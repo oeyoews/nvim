@@ -1,6 +1,11 @@
 -- @ref: core.utils.mappings
 local findfiles = function()
-  vim.keymap.set("n", "<space>fi", "<cmd>find ~/.config/nvim/init.lua<cr>", { desc = "edit init.lua config" })
+  vim.keymap.set(
+    "n",
+    "<space>fi",
+    "<cmd>find ~/.config/nvim/init.lua<cr>",
+    { desc = "edit init.lua(main) neovim config" }
+  )
   vim.keymap.set(
     "n",
     "<space>fm",

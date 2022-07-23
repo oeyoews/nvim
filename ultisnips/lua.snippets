@@ -21,7 +21,7 @@ endsnippet
 
 snippet M "M module" b
 local M = {}
-$1
+$0
 return M
 endsnippet
 
@@ -31,5 +31,5 @@ snippet module_comment "module comment"
 endsnippet
 
 snippet map "set keymap" bA
-vim.keymap.set("n", "<space>$1", "<cmd>$2<cr>", { desc = "" })
+vim.keymap.set("n", "<space>$1", "<cmd>$2<cr>", { desc = "$0" })
 endsnippet
