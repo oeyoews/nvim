@@ -3,30 +3,31 @@ local g = vim.g
 
 g.mapleader = " "
 
--- vim.keymap.set("n", "<space>helo", function()
---   vim.notify("  Hello, Neovim", "info", { title = "welcome" })
--- end, { desc = "hello, neovim" })
-vim.keymap.set("n", "U", "<C-r>", { desc = "undo" })
-vim.keymap.set("n", "q", "")
-vim.keymap.set("n", "<space>bd", "<cmd>bdelete<cr>", { desc = "delete current buffer" })
-vim.keymap.set({ "n", "v" }, "<space><space>", ":", { desc = "command mode" })
-vim.keymap.set("i", "jk", "<esc>", { desc = "escape insert mode" })
-vim.keymap.set("n", "<space>qq", "<cmd>q<cr>", { desc = "quit neovim" })
-vim.keymap.set({ "n", "v" }, "H", "0", { desc = "jump head of line" })
-vim.keymap.set({ "n", "v" }, "L", "$", { desc = "jump end of line" })
-vim.keymap.set("v", ">>", ">gv", { desc = "right indent" })
-vim.keymap.set("v", "<<", "<gv", { desc = "left indent" })
-vim.keymap.set("n", "<space><tab>", "<cmd>bp<cr>", { desc = "previout buffer" })
-vim.keymap.set("n", "<space>bn", "<cmd>bn<cr>", { desc = "next buffer" })
-vim.keymap.set("n", "<space>bx", "<cmd>ene<cr>", { desc = "new buffer" })
-
 -- mapping
 local keymappings_set = {}
 
 keymappings_set = {
-  { "n", "<space>helo", function()
-    vim.notify("  Hello, Neovim", "info", { title = "welcome" })
-  end, { desc = "hello, neovim" } },
+  {
+    "n",
+    "<space>helo",
+    function()
+      vim.notify("  Hello, Neovim", "info", { title = "welcome" })
+    end,
+    { desc = "hello, neovim" },
+  },
+  { { "n", "v" }, "<space><space>", ":", "command mode" },
+  { { "n", "v" }, "H", "0", "jump head of line" },
+  { { "n", "v" }, "L", "$", "jump end of line" },
+  { "n", "U", "<C-r>", "undo change" },
+  { "n", "q", "disable macro in normal mode" },
+  { "n", "<space>bd", "<cmd>bdelete<cr>", "delete current buffer" },
+  { "i", "jk", "<esc>", "escape insert mode" },
+  { "n", "<space>qq", "<cmd>q<cr>", "quit neovim" },
+  { "v", ">>", ">gv", "right indent" },
+  { "v", "<<", "<gv", "left indent" },
+  { "n", "<space><tab>", "<cmd>bp<cr>", "previout buffer" },
+  { "n", "<space>bn", "<cmd>bn<cr>", "next buffer" },
+  { "n", "<space>bx", "<cmd>ene<cr>", "new buffer" },
   { "n", "<leader>w", "<C-W>", "map window prefix" },
   { "n", "<leader>fs", ":w<cr>", "save file" },
   { "n", "<leader>bM", ":messages<cr>", "messages" },
