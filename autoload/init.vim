@@ -1,10 +1,3 @@
-" deprecated
-function! init#formatfile() abort
-let save_cursor = getpos('.')
-normal! gg=G
-call setpos('.', save_cursor)
-endfunction
-
 function! init#terminal() abort
 " TODO: have conflict for ranger(TermOpen)
 au! TermOpen * call feedkeys("i")
