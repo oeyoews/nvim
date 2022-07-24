@@ -3,7 +3,7 @@ vim.g.mapleader = " "
 local keymappings_set = {}
 
 --  @not use this silent = true
-vim.keymap.set({ "n", "v" }, "<space><space>", ":", { desc = "cmd mode" })
+vim.keymap.set({ "n", "v" }, "<space><space>", ":", { desc = "  cmd mode" })
 -- vnoremap <space>yy "+y
 keymappings_set = {
   { "<space>yp", ":<C-U>let @+=expand('%:p')<cr>", " copy file path" },
@@ -21,7 +21,7 @@ keymappings_set = {
   { ">>", ">gv", "right indent", "v" },
   { "<<", "<gv", "left indent", "v" },
   { "U", "<C-r>", "undo change" },
-  { "<space>bd", "<cmd>bdelete<cr>", "delete current buffer" },
+  { "<space>bd", "<cmd>bdelete<cr>", " delete current buffer" },
   { "<space>qq", "<cmd>q<cr>", "quit neovim" },
   { "<space><tab>", "<cmd>bp<cr>", "  goto previout buffer" },
   { "<space>bn", "<cmd>bn<cr>", "  goto next buffer" },
