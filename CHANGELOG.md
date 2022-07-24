@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.35.0](https://gitlab.com/oeyoews/nvim/compare/v5.34.0...v5.35.0) (2022-07-24)
+
+
+### Features
+
+* **icon:** add icon for shortkey desc ([7030865](https://gitlab.com/oeyoews/nvim/commit/7030865f5722aaf730c57573387a6415b21d0d08))
+
 # [5.34.0](https://gitlab.com/oeyoews/nvim/compare/v5.33.1...v5.34.0) (2022-07-23)
 
 
