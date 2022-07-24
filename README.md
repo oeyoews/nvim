@@ -119,8 +119,9 @@
 
 ## ShowCases
 
-| <img src="img/vim.png" align="bottom" width=128/> | <img src="img/example01.png" align="bottom" width=256/> |
-|:-------------------------------------------------:|:-------------------------------------------------------:|
+|    <img src="img/vim.png" align="bottom" width=128/>    | <img src="img/example01.png" align="bottom" width=256/> |
+|:-------------------------------------------------------:|:-------------------------------------------------------:|
+| <img src="img/example02.png" align="bottom" width=256/> |                           etc                           |
 
 ## Links
 

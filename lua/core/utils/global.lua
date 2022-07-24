@@ -42,6 +42,7 @@ oeyoews.servers = {
 
 -- @pluginlist
 oeyoews.pluginlist = {
+  "dhruvasagar/vim-table-mode",
   -- @luaversion: 5.1
   "kyazdani42/nvim-tree.lua",
   "SmiteshP/nvim-navic",
