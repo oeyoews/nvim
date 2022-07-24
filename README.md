@@ -42,6 +42,7 @@
 * [Install](#install)
 * [Features](#features)
 * [TODO](#todo)
+* [More details](#more-details)
 * [Links](#links)
 
 <!-- vim-markdown-toc -->
@@ -133,6 +134,10 @@ git clone --depth 1 https://gitlab.com/oeyoews/nvim.git ~/.config/nvim  # please
 - [x] learn it option setting and lsp multi separate setting: fix lua global vim setting, <https://github.com/AstroNvim/AstroNvim>,
 
 </details>
+
+## More details
+
+* For more details, please read the code
 
 ## Links
 
