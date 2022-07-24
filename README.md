@@ -37,12 +37,24 @@
 
 <!-- vim-markdown-toc Marked -->
 
+* [ShowCases](#showcases)
+* [What's that](#what's-that)
 * [Install](#install)
 * [Features](#features)
-* [ShowCases](#showcases)
+* [TODO](#todo)
 * [Links](#links)
 
 <!-- vim-markdown-toc -->
+
+## ShowCases
+
+|    <img src="img/vim.png" align="bottom" width=128/>    | <img src="img/example01.png" align="bottom" width=256/> |
+|:-------------------------------------------------------:|:-------------------------------------------------------:|
+| <img src="img/example02.png" align="bottom" width=256/> |                           etc                           |
+
+## What's that
+
+💡 A personal neovim configuration
 
 ## Install
 
@@ -69,8 +81,10 @@ git clone --depth 1 https://gitlab.com/oeyoews/nvim.git ~/.config/nvim  # please
 * backup plugin snapshot with packer
 * etc
 
+## TODO
+
 <details>
-<summary>TODO</summary>
+<summary>🚀</summary>
 
 - [ ] inlay hints
 - [ ] learn vim.api(nvim), such use  vim.fn.executable to replace os.executable
@@ -119,12 +133,6 @@ git clone --depth 1 https://gitlab.com/oeyoews/nvim.git ~/.config/nvim  # please
 - [x] learn it option setting and lsp multi separate setting: fix lua global vim setting, <https://github.com/AstroNvim/AstroNvim>,
 
 </details>
-
-## ShowCases
-
-|    <img src="img/vim.png" align="bottom" width=128/>    | <img src="img/example01.png" align="bottom" width=256/> |
-|:-------------------------------------------------------:|:-------------------------------------------------------:|
-| <img src="img/example02.png" align="bottom" width=256/> |                           etc                           |
 
 ## Links
 
