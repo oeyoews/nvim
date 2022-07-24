@@ -50,4 +50,4 @@ require("formatter").setup({
   },
 })
 
-vim.keymap.set("n", "<space>bf", "<cmd>Format<cr>", { desc = "Format code with lsp-format" })
+vim.keymap.set("n", "<space>bf", "<cmd>Format<cr>", { desc = "ﯔ Format code with lsp-format" })

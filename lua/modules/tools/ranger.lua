@@ -76,4 +76,4 @@ let g:rnvimr_layout = {
 \ }
 ]])
 
-vim.keymap.set("n", "<space>ft", "<cmd>RnvimrToggle<cr>", { desc = "ranger" })
+vim.keymap.set("n", "<space>ft", "<cmd>RnvimrToggle<cr>", { desc = " ranger" })

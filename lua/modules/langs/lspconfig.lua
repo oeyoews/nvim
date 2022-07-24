@@ -66,7 +66,7 @@ end
 
 lsp_setup()
 
-vim.keymap.set("n", "<space>li", "<cmd>LspInfo<cr>", { desc = "show lspinfo" })
+vim.keymap.set("n", "<space>li", "<cmd>LspInfo<cr>", { desc = "  show lspinfo" })
 
 -- icon note this order in last
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {

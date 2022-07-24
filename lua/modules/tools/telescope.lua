@@ -35,32 +35,33 @@ telescope.setup({
   },
 })
 
+vim.keymap.set("n", "<space>ff", "<cmd>Telescope find_files<cr>", { desc = " find files" })
+vim.keymap.set("n", "<space>to", "<cmd>Telescope oldfiles<cr>", { desc = " recent files" })
+vim.keymap.set("n", "<space>tbb", "<cmd>Telescope buffers<cr>", { desc = " list all buffers" })
+vim.keymap.set("n", "<C-P>", "<cmd>Telescope commands<cr>", { desc = "command mode" })
+vim.keymap.set("n", "<space>th", "<cmd>Telescope colorscheme<cr>", { desc = "  list themes" })
+vim.keymap.set("n", "<space>tr", "<cmd>Telescope resume<cr>", { desc = "ﴗ restore telescope last window" })
+vim.keymap.set("n", "<space>tF", "<cmd>Telescope filetypes<cr>", { desc = " set filetypes" })
+vim.keymap.set("n", "<space>ts", "<cmd>Telescope live_grep<cr>", { desc = "grep" })
+vim.keymap.set("n", "<space>tm", "<cmd>Telescope keymaps<cr>", { desc = "  list keymaps" })
+vim.keymap.set("n", "<space>hh", "<cmd>Telescope help_tags<cr>", { desc = " list help" })
+
 vim.keymap.set(
   "n",
   "<space>tu",
   function()
     return require("telescope").load_extension("ultisnips"), require("telescope").extensions.ultisnips.ultisnips()
   end, --[[ "<cmd>Telescope ultisnips<cr>", ]]
-  { desc = "load and start telescope ultisnips" }
+  { desc = " load and start telescope ultisnips" }
 )
 
 vim.keymap.set("n", "<space>bm", function()
   require("telescope").extensions.notify.notify()
-end, { desc = "T ==> notify" })
+end, { desc = " () notify" })
 
 vim.keymap.set("n", "<space>tp", function()
   require("telescope").extensions.packer.packer()
-end, { desc = "T ==> packer" })
-
-vim.keymap.set("n", "<space>ff", "<cmd>Telescope find_files<cr>", { desc = "find files" })
-vim.keymap.set("n", "<space>to", "<cmd>Telescope oldfiles<cr>", { desc = "recent files" })
-vim.keymap.set("n", "<space>tbb", "<cmd>Telescope buffers<cr>", { desc = "list all buffers" })
-vim.keymap.set("n", "<C-P>", "<cmd>Telescope commands<cr>", { desc = "command mode" })
-vim.keymap.set("n", "<space>th", "<cmd>Telescope colorscheme<cr>", { desc = "list themes" })
-vim.keymap.set("n", "<space>tr", "<cmd>Telescope resume<cr>", { desc = "restore telescope last window" })
-vim.keymap.set("n", "<space>tF", "<cmd>Telescope filetypes<cr>", { desc = "set filetypes" })
-vim.keymap.set("n", "<space>ts", "<cmd>Telescope live_grep<cr>", { desc = "grep" })
-vim.keymap.set("n", "<space>tm", "<cmd>Telescope keymaps<cr>", { desc = "list keymaps" })
+end, { desc = "  packer" })
 
 vim.cmd([[
 " Border highlight groups
