@@ -2,14 +2,6 @@ vim.g.mapleader = " "
 
 local keymappings_set = {}
 
-vim.keymap.set("n", "<space>tS", function()
-  vim.fn["init#sline"]()
-end, { desc = " toggle statusline" })
-
-vim.keymap.set("n", "<space>tk", function()
-  vim.fn["init#terminal"]()
-end, { desc = "  terminal" })
-
 -- "nnoremap <space>fd <cmd>e ~/dotfiles/notes/draft/`date -I`.md<cr>
 --  @not use this silent = true
 vim.keymap.set({ "n", "v" }, "<space><space>", ":", { desc = "  cmd mode" })
@@ -17,7 +9,7 @@ keymappings_set = {
   {
     "<space>fd",
     ":e /tmp/`date -I`.md<cr>",
-    " edit markdown"
+    " edit markdown",
   },
   { "<space>yp", ":<C-U>let @+=expand('%:p')<cr>", " copy file path" },
   { "<space>pp", '"*p', " past to neovim" },
@@ -53,7 +45,7 @@ oeyoews.kmap(keymappings_set)
 -- load custom_map
 require("user.keybindings").setup()
 
--- todo
+-- autocmd todo
 vim.cmd([[
 command! -nargs=1 Out ene|pu=execute('<args>')
 command! Scripts split | ene|pu=execute('scriptnames')
@@ -72,3 +64,31 @@ autocmd InsertEnter * setlocal nocursorline " | setlocal rnu
 autocmd InsertLeave * setlocal cursorline " | setlocal nornu have bug for telescope prompt
 augroup END
 ]])
+
+-- functions
+vim.cmd([[
+function! Terminal() abort
+" TODO: have conflict for ranger(TermOpen)
+au! TermOpen * call feedkeys("i")
+autocmd! TermClose * call feedkeys("\<esc>")
+split | terminal
+setlocal nornu nonu
+setlocal nocursorline
+endfunction
+
+function! Sline() abort
+if &laststatus
+set laststatus=0
+else
+set laststatus=3
+endif
+endfunction
+]])
+
+vim.keymap.set("n", "<space>tS", function()
+  vim.fn["Sline"]()
+end, { desc = " toggle statusline" })
+
+vim.keymap.set("n", "<space>tk", function()
+  vim.fn["Terminal"]()
+end, { desc = "  terminal" })
