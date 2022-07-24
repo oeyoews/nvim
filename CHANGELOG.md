@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.39.0](https://gitlab.com/oeyoews/nvim/compare/v5.38.0...v5.39.0) (2022-07-24)
+
+
+### Features
+
+* **icon:** add override icons ([3c0544b](https://gitlab.com/oeyoews/nvim/commit/3c0544b63f613d864527915a2efdaa06b3d234de))
+
 # [5.38.0](https://gitlab.com/oeyoews/nvim/compare/v5.37.0...v5.38.0) (2022-07-24)
 
 
