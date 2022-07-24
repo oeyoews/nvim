@@ -4,11 +4,11 @@ local keymappings_set = {}
 
 --  @not use this silent = true
 vim.keymap.set({ "n", "v" }, "<space><space>", ":", { desc = "  cmd mode" })
--- vnoremap <space>yy "+y
 keymappings_set = {
   { "<space>yp", ":<C-U>let @+=expand('%:p')<cr>", " copy file path" },
   { "<space>pp", '"*p', " past to neovim" },
   { "<space>yy", '"*Y', " past to system" },
+  { "<space>yy", '"+y', " past to system", "v" },
   { "<esc>", ":noh<cr><C-L><esc>", " clear highlight and screen" },
   { "<space>fu", ":FZF<cr>", "fzf" },
   { "<space>bb", ":e `mktemp -t neovim-scratch-XXXXXX`<cr>", " edit temp file" },
