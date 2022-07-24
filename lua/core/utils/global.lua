@@ -144,9 +144,7 @@ end
 
 -- Automatically switch between dark and light themes during day and night
 -- Randomly switch themes during the day
----@param opt string require theme
 -- @see core.util.tokyonight.lua
-
 --- only in day , have opportunity get day theme
 oeyoews.sta = function(conf)
   -- @bug: https://stackoverflow.com/questions/20154991/generating-uniform-random-numbers-in-lua
