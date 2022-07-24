@@ -1,1 +1,1 @@
-require("user.sta").setup()
+oeyoews.sta()
