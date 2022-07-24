@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.38.0](https://gitlab.com/oeyoews/nvim/compare/v5.37.0...v5.38.0) (2022-07-24)
+
+
+### Features
+
+* **function:** remove autoload use vim.cmd replace ([594afb2](https://gitlab.com/oeyoews/nvim/commit/594afb27878a0696487029cb4b666adaf7f9772c))
+
 # [5.37.0](https://gitlab.com/oeyoews/nvim/compare/v5.36.0...v5.37.0) (2022-07-24)
 
 
