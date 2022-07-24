@@ -31,6 +31,7 @@ M.files = {
 
   -- @ui
   ui = {
+    "web_icons",
     "tokyonight",
     "custom", -- need after tokyonight
     "notify",
