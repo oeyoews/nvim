@@ -43,6 +43,7 @@
 * [Features](#features)
 * [TODO](#todo)
 * [More details](#more-details)
+* [Wiki](#wiki)
 * [Links](#links)
 
 <!-- vim-markdown-toc -->
@@ -137,7 +138,9 @@ git clone --depth 1 https://gitlab.com/oeyoews/nvim.git ~/.config/nvim  # please
 
 ## More details
 
-* For more details, please read the code
+* For more details, please read the code or check this [📖 nvim wiki](https://gitlab.com/oeyoews/nvim/-/wikis/home)
+
+## Wiki
 
 ## Links
 
