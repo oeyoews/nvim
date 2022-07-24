@@ -27,7 +27,6 @@ M.files = {
     "disable",
     "options",
     "mappings",
-    "functions", -- need after mappings
   },
 
   -- @ui

@@ -5,6 +5,12 @@ local M = {}
 M.setup = function()
   vim.keymap.set(
     "n",
+    "<space>fb",
+    "<cmd>find ~/.config/nvim/lua/core/utils/bootstrap.lua<cr>",
+    { desc = " jump bootstrap" }
+  )
+  vim.keymap.set(
+    "n",
     "<space>fi",
     "<cmd>find ~/.config/nvim/init.lua<cr>",
     { desc = "ﳐ edit init.lua(main) neovim config" }

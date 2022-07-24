@@ -2,9 +2,23 @@ vim.g.mapleader = " "
 
 local keymappings_set = {}
 
+vim.keymap.set("n", "<space>tS", function()
+  vim.fn["init#sline"]()
+end, { desc = " toggle statusline" })
+
+vim.keymap.set("n", "<space>tk", function()
+  vim.fn["init#terminal"]()
+end, { desc = "  terminal" })
+
+-- "nnoremap <space>fd <cmd>e ~/dotfiles/notes/draft/`date -I`.md<cr>
 --  @not use this silent = true
 vim.keymap.set({ "n", "v" }, "<space><space>", ":", { desc = "  cmd mode" })
 keymappings_set = {
+  {
+    "<space>fd",
+    ":e /tmp/`date -I`.md<cr>",
+    " edit markdown"
+  },
   { "<space>yp", ":<C-U>let @+=expand('%:p')<cr>", " copy file path" },
   { "<space>pp", '"*p', " past to neovim" },
   { "<space>yy", '"*Y', " past to system" },
@@ -38,3 +52,23 @@ keymappings_set = {
 oeyoews.kmap(keymappings_set)
 -- load custom_map
 require("user.keybindings").setup()
+
+-- todo
+vim.cmd([[
+command! -nargs=1 Out ene|pu=execute('<args>')
+command! Scripts split | ene|pu=execute('scriptnames')
+command! -nargs=1 -complete=highlight HI ene|pu=execute('hi <args>')
+command! -nargs=?  -complete=color Themes colorscheme <args>
+
+augroup quickquit
+autocmd!
+autocmd FileType notify,null-ls-info,lspinfo,startuptime,help,qf,quickrun,snippets,tsplayground nnoremap <buffer> <silent> q :q<cr>
+autocmd FileType startuptime,help setlocal nocursorline nonumber norelativenumber
+augroup END
+
+augroup cursorline_goggle
+au!
+autocmd InsertEnter * setlocal nocursorline " | setlocal rnu
+autocmd InsertLeave * setlocal cursorline " | setlocal nornu have bug for telescope prompt
+augroup END
+]])
