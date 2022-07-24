@@ -14,7 +14,6 @@ M.modules = {
   "ui",
   "langs",
   "tools",
-  -- "misc",
 }
 
 ---
@@ -60,7 +59,6 @@ M.files = {
     "todo_comments",
     "indent", -- show indent line
     "hop", -- jump anywhere
-    "colorizer", -- show color in neovim
     "gitsigns", -- show git changes in signcolumn
     "comment", -- fast comment your code
     "autopairs", -- automatically match your half
@@ -77,6 +75,7 @@ M.files = {
 
   -- @deprecate_config
   ["misc"] = {
+    -- "colorizer", -- show color in neovim
     -- "project",
     -- "highstr", -- highlight select text
     -- "neorg", -- replace emace org mode
