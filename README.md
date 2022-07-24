@@ -33,7 +33,7 @@
 </div>
 <hr>
 
-# Table Of Contents
+# Toc
 
 <!-- vim-markdown-toc Marked -->
 
@@ -125,6 +125,6 @@
 
 ## Links
 
-* form: https://neovim.discourse.group
-* emmylua comment: https://emmylua.github.io/zh_CN/annotation.html
-* https://neovimcraft.com/
+* [neovim form](https://neovim.discourse.group)
+* [emmylua comment](https://emmylua.github.io/zh_CN/annotation.html)
+* [neovimcraft](https://neovimcraft.com/)
