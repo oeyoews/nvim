@@ -1,7 +1,8 @@
 -- @ref: core.utils.mappings
 local M = {}
 
-M.custom_map = function()
+--- load custom keymap setup
+M.setup = function()
   vim.keymap.set(
     "n",
     "<space>fi",
