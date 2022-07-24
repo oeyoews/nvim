@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.36.0](https://gitlab.com/oeyoews/nvim/compare/v5.35.0...v5.36.0) (2022-07-24)
+
+
+### Features
+
+* **plugin:** add table mode ([c0c1ffb](https://gitlab.com/oeyoews/nvim/commit/c0c1ffb7f0e5c8a0ea8605012d784eeb36f41f02))
+
 # [5.35.0](https://gitlab.com/oeyoews/nvim/compare/v5.34.0...v5.35.0) (2022-07-24)
 
 
