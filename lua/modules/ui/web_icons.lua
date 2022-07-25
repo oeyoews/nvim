@@ -13,7 +13,7 @@ require 'nvim-web-devicons'.setup {
       name = "Tid",
     },
     default_icon = {
-      icon = "ﮫ",
+      icon = "",
       color = "#519aba",
       cterm_color = "66",
       name = "Default",
