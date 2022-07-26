@@ -14,7 +14,7 @@ for server, binary in pairs(csl) do
 end
 --]]
 
-require 'mason-tool-installer'.setup {
+require("mason-tool-installer").setup({
   -- todo
   ensure_installed = {
     "codespell",
@@ -29,8 +29,8 @@ require 'mason-tool-installer'.setup {
   -- will happen on startup. You can use `:MasonToolsUpdate` to install
   -- tools and check for updates.
   -- Default: true
-  run_on_start = true
-}
+  run_on_start = true,
+})
 
 local csl = {
   gopls = "go",

@@ -19,12 +19,12 @@ oeyoews.options = {
 oeyoews.mason_servers = {
   -- conflict lspconfig
   -- { 'bash-language-server', auto_update = false },
-  'shellcheck',
-  'lua-language-server',
+  -- 'shellcheck',
+  -- 'lua-language-server',
   -- 'vim-language-server',
   -- 'gopls', -- go
   -- 'stylua',  --cargo
-  'codespell'
+  "codespell",
 }
 
 -- @servers @deprecated
