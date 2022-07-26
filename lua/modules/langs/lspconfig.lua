@@ -3,9 +3,6 @@ local lspconfig = require("lspconfig")
 -- if this servers not installed, cmp will callback nvim-lsp-install to install them
 -- fix: how to config according filetype automation install servers
 
--- @see settings.lua
-local settings = require("user.settings")
-
 local capabilities = require("user.capabilities")
 
 local sumneko_lua_locale_adjust = function()
@@ -53,7 +50,7 @@ local lsp_setup = function()
         lspconfig[lsp_server].setup(
           -- settings.lsp_server
           {
-            settings = settings[lsp_server],
+            -- settings = settings[lsp_server],
             on_attach = on_attach,
             capabilities = capabilities,
           }
