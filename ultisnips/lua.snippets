@@ -1,0 +1,35 @@
+snippet pp "adjust plugin" b
+local ok, ${1:name} = pcall(require, "$1")
+
+if not ok then
+	vim.notify("$1 not founded")
+	-- return
+end
+
+$1.setup($0)
+endsnippet
+
+snippet vimn "vim votify"
+vim.notify("$1 not founded")
+endsnippet
+
+snippet template "lua template" b
+-- @fileName: ${0:`!p snip.rv = (snip.basename or "name") + ".lua"`}
+-- @description: $1
+
+endsnippet
+
+snippet M "M module" b
+local M = {}
+$0
+return M
+endsnippet
+
+snippet module_comment "module comment"
+-- @module: ${1:`!p snip.rv = (snip.basename or "name") + ".lua"`}
+-- @ref:
+endsnippet
+
+snippet kmap "set keymap" bA
+vim.keymap.set("n", "<space>$1", "<cmd>$2<cr>", { desc = "$0" })
+endsnippet

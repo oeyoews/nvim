@@ -1,0 +1,23 @@
+snippet inc "include" b
+#include <stdio.h>
+$0
+endsnippet
+
+snippet hello "A example Hello" b
+#include <stdio.h>
+
+int main(void)
+{
+	// A hello example
+	printf("Hello, linux!\n");
+	$1
+	return 0;
+}
+endsnippet
+
+snippet template "Power Algorithm Header Template" b
+// FileName: ${0:`!p snip.rv = (snip.basename or "name") + ".c"`}
+// Author: oeyoews
+// Create Time: `date`
+// Description: $1
+endsnippet

@@ -1,0 +1,173 @@
+snippet links "link_self"
+[${1:Text}](${2:url})
+endsnippet
+
+snippet cbox "checkbox [x]" b
+* [ ] $1
+endsnippet
+
+snippet md "template" b
+<!-- `date` -->
+# ${1:Title head}
+
+## ${2:Title level 2}
+
+- ${3:content}
+endsnippet
+
+snippet deline "del"
+~~$1~~
+endsnippet
+
+snippet cbl "container" b
+::: $1
+$2
+:::
+endsnippet
+
+snippet form "formtter"
+---
+sidebar: auto
+---
+$1
+endsnippet
+
+#how to delete some whitespace before title
+#snippet # "description" bA
+###$1
+#endsnippet
+
+# w && i
+# default is w
+snippet cc "description" A
+[ ]
+endsnippet
+
+# md `\date`
+snippet hugo "hugo formtter"
+---
+title: $1
+date: `!v strftime("%Y-%m-%dT%H:%M:%S+08:00")`
+tags: []
+---
+
+$2
+
+<!--more-->
+
+$4
+endsnippet
+
+snippet more "more hugo"
+<!--more-->
+endsnippet
+
+snippet imgg "img github"
+![$1](https://cdn.jsdelivr.net/gh/oeyoews/img/$2)
+endsnippet
+
+# note: in gitlab, not support this zoom parameter, you can add width parameter
+snippet imgh "img github"
+<img src="https://cdn.jsdelivr.net/gh/oeyoews/img/$1.png"/>
+endsnippet
+
+snippet https "cdn"
+https://cdn.jsdelivr.net/gh/oeyoews/img/
+endsnippet
+
+snippet dis8 "ISO format datetime" w
+`!v strftime("%Y-%m-%dT%H:%M:%S+08:00")`
+endsnippet
+
+snippet p "p flag"
+<p style="text-align: right;color: brown;font-size: 1px">
+$1
+</p>
+endsnippet
+
+snippet details "deatils"
+<details>
+<summary>${1:TOC}</summary>
+$0
+</details>
+endsnippet
+
+snippet details2 "details2"
+<div style="text-align: left;background: white;border-radius: 4px; float:none; padding: 5px;">
+
+<details>
+<summary>More</summary>
+$1
+</details>
+
+</div>
+endsnippet
+
+snippet lv "link videos"
+<a href="$1" target="_blank">${2:text}</a>
+endsnippet
+
+# https://simpleicons.org/
+snippet semantic "Semantic"
+<img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-Semantic-e10079.svg?style=flat-square" alt="Semantic Release"/>
+endsnippet
+
+snippet neovim "Neovim"
+<img src="https://img.shields.io/badge/Neovim-0.7.0-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=green" alt="neovim">
+endsnippet
+
+snippet license "License"
+<img src="https://img.shields.io/badge/License-GPL--3.0-green.svg?style=flat-square&logo=GNU&color=df967f&label=License" alt="license">
+endsnippet
+
+snippet gitb "GIT"
+<img src="https://img.shields.io/badge/GIT-Yes-green.svg?style=flat-square&logo=git&label=GIT" alt="git">
+endsnippet
+
+snippet github "Github"
+<img src="https://img.shields.io/badge/Github-Yes-green.svg?style=flat-square&logo=github&label=Github&logoColor=cyan" alt="github">
+endsnippet
+
+snippet gitlab "Gitlab"
+<img src="https://img.shields.io/badge/Gitlab-Yes-ffcc00.svg?style=flat-square&logo=gitlab&label=Gitlab" alt="gitlab">
+endsnippet
+
+snippet tagb	 "Tag"
+<img src="https://img.shields.io/gitlab/v/tag/oeyoews/$1?color=green&logo=FastAPI&style=flat-square" alt="tag">
+endsnippet
+
+snippet system "Linux"
+<img src="https://img.shields.io/badge/System-Linux-white.svg?style=flat-square&logo=linux&logoColor=white&color=BB9AF7" alt="system">
+endsnippet
+
+snippet shell "shell"
+<img src="https://img.shields.io/badge/Shell-zsh-white.svg?style=flat-square&logo=Gnu-Bash&logoColor=9ECE6A&color=BB9AF7" alt="shell">
+endsnippet
+
+snippet lang "lang"
+<img src="https://img.shields.io/badge/Lang-$1-blueviolet.svg?style=flat-square&logo=$1&color=90E59A&logoColor=blue" alt="lang">
+endsnippet
+
+snippet head "head"
+<h1 align="center">$1</h1>
+
+<div align="center">
+
+</div>
+
+endsnippet
+
+snippet status "status"
+<img src="https://img.shields.io/badge/Maintain-Yes-blueviolet.svg?style=flat-square&logo=Chakra-Ui&color=90E59A&logoColor=green" alt="status" >
+endsnippet
+
+snippet chunk "chunk"
+<div align="center">
+<img src="https://img.shields.io/badge/Lang-$1-blueviolet.svg?style=flat-square&logo=$1&color=90E59A&logoColor=blue" alt="lang">
+<img src="https://img.shields.io/badge/System-Linux-white.svg?style=flat-square&logo=linux&logoColor=white&color=BB9AF7" alt="system">
+<img src="https://img.shields.io/gitlab/v/tag/oeyoews/$2?color=green&logo=FastAPI&style=flat-square" alt="tag">
+<img src="https://img.shields.io/badge/Gitlab-Yes-ffcc00.svg?style=flat-square&logo=gitlab&label=Gitlab" alt="gitlab">
+<img src="https://img.shields.io/badge/Github-Yes-green.svg?style=flat-square&logo=github&label=Github&logoColor=cyan" alt="github">
+<img src="https://img.shields.io/badge/GIT-Yes-green.svg?style=flat-square&logo=git&label=GIT" alt="git">
+</div>
+endsnippet

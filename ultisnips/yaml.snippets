@@ -1,0 +1,98 @@
+snippet stale "stale"
+# Number of days of inactivity before an issue becomes stale
+daysUntilStale: 30
+# Number of days of inactivity before a stale issue is closed
+daysUntilClose: 7
+# Issues with these labels will never be considered stale
+exemptLabels:
+  - pinned
+  - security
+# Label to use when marking an issue as stale
+staleLabel: wontfix
+# Comment to post when marking an issue as stale. Set to `false` to disable
+markComment: >
+  This issue has been automatically marked as stale because it has not had
+  recent activity. It will be closed if no further activity occurs. Thank you
+  for your contributions.
+# Comment to post when closing a stale issue. Set to `false` to disable
+closeComment: false
+endsnippet
+
+snippet jekyll "jekyll-theme-cayman"
+# @FileName: _config.yml
+
+#title: $1
+#description:
+theme: jekyll-theme-cayman
+show_downloads: false
+endsnippet
+
+snippet clang-format "clang-format template"
+BasedOnStyle:  Google
+Language: Cpp
+ColumnLimit: 100
+IndentWidth: 2
+TabWidth: 8
+UseTab: Never
+IndentCaseLabels: false
+BreakBeforeBraces: Custom
+AlignEscapedNewlinesLeft: false
+AllowShortFunctionsOnASingleLine: false
+AlignTrailingComments: true
+SpacesBeforeTrailingComments: 2
+PenaltyReturnTypeOnItsOwnLine: 200
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+BinPackParameters: false
+BreakBeforeBinaryOperators: true
+BreakBeforeTernaryOperators: true
+ContinuationIndentWidth: 2
+AlwaysBreakAfterDefinitionReturnType: None
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: No
+AlwaysBreakTemplateDeclarations: No
+AlignEscapedNewlines: DontAlign
+BinPackArguments: false
+BraceWrapping:
+  AfterClass:      false
+  AfterControlStatement: false
+  AfterEnum:       false
+  AfterFunction:   true
+  AfterObjCDeclaration: false
+  AfterStruct:     false
+  AfterUnion:      false
+  BeforeCatch:     false
+  BeforeElse:      false
+  IndentBraces:    false
+PointerAlignment: Right
+SortIncludes: true
+Cpp11BracedListStyle: false
+IncludeCategories:
+  - Regex:           '<[/[:alnum:].]+>'
+    Priority:        0
+  - Regex:           '^"(nvim|vim)/'
+    Priority:        1
+    SortPriority:    1
+    CaseSensitive:   false
+AlignConsecutiveMacros: AcrossEmptyLines
+IndentPPDirectives: AfterHash
+SpaceBeforeParens: ControlStatementsExceptControlMacros
+PPIndentWidth: 1
+ForEachMacros:
+  - FOR_ALL_AUEVENTS
+  - FOR_ALL_AUPATS_IN_EVENT
+  - FOR_ALL_BUFFERS
+  - FOR_ALL_BUFFERS_BACKWARDS
+  - FOR_ALL_FRAMES
+  - FOR_ALL_QFL_ITEMS
+  - FOR_ALL_SIGNS_IN_BUF
+  - FOR_ALL_TABS
+  - FOR_ALL_TAB_WINDOWS
+  - FOR_ALL_WINDOWS_IN_TAB
+  - RBUFFER_EACH
+  - RBUFFER_EACH_REVERSE
+  - RBUFFER_UNTIL_EMPTY
+  - RBUFFER_UNTIL_FULL
+  - kl_iter
+endsnippet
