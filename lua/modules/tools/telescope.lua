@@ -14,7 +14,7 @@ telescope.setup({
     selection_strategy = "reset",
     sorting_strategy = "ascending",
     layout_strategy = "horizontal",
-    selection_caret = " ", --  
+    selection_caret = " ", --  
     entry_prefix = "  ",
     multi_icon = " ",
     color_devicons = true,

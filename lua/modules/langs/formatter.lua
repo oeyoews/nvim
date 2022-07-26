@@ -26,7 +26,7 @@ require("formatter").setup({
     --   -- bug formatter error
     --   require("formatter.filetypes.cmake").cmakeformat,
     -- },
-    go = {
+    --[[ go = {
       require("formatter.filetypes.go").gofmt,
     },
     python = {
@@ -34,7 +34,7 @@ require("formatter").setup({
     },
     rust = {
       require("formatter.filetypes.rust").rustfmt,
-    },
+    }, ]]
     html = prettier,
     css = prettier,
     javascript = prettier,
@@ -50,4 +50,4 @@ require("formatter").setup({
   },
 })
 
-vim.keymap.set("n", "<space>bf", "<cmd>Format<cr>", { desc = "ﯔ Format code with lsp-format" })
+vim.keymap.set("n", "<space>bf", "<cmd>Format<cr>", { desc = "𝐅 format code with formatter" })
