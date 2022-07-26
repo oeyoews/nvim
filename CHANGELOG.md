@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.42.1](https://gitlab.com/oeyoews/nvim/compare/v5.42.0...v5.42.1) (2022-07-26)
+
+
+### Bug Fixes
+
+* **icon:** update icon adopt alacritty ([71ee542](https://gitlab.com/oeyoews/nvim/commit/71ee54241fda8c8db4ffa6ab6c8262170dcd2f50))
+
 # [5.42.0](https://gitlab.com/oeyoews/nvim/compare/v5.41.0...v5.42.0) (2022-07-26)
 
 
