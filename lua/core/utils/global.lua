@@ -10,26 +10,26 @@ oeyoews.options = {
   enable_lsp = true, -- @see lspconfig.lua
   sumneko_lua_locale_cn = false, -- @see lspconfig.lua
   toggle_theme_auto = true, -- @see sta.lua
-  debug_mode = true, -- @ref: user.pcall.lua @TODO: use keybinds to toggle this options in config
+  debug_mode = false, -- @ref: user.pcall.lua @TODO: use keybinds to toggle this options in config
   -- rolling.json default.json v1.0.0.json
   snapshot = nil, -- @see bootstrap.lua
   -- snapshot = "default.json", -- @ref: core.utils.bootstrap
 }
 
--- @servers
+-- @servers @deprecated
 oeyoews.servers = {
+  "gopls",
+  "jsonls",
+  "vimls",
   "sumneko_lua",
-  "clangd", -- warn: don't modify this position or table order, unless use table self sort method to solve it
-  -- "jsonls", -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
-  -- "pylsp", -- support formatting
+  "bashls",
+  "clangd", -- this install is very slow TODO
+  "pylsp", -- support formatting
+  "cmake", -- navic not support this @TODO
   -- "jdtls", -- java
-  -- "gopls", -- config in lspinstall, don't write it here
   -- "volar", -- vue
   -- "rust_analyzer", -- need use rustup to install stable rust and setup toolchains
   -- "solargraph", -- ruby
-  -- "bashls",
-  -- "vimls",
-  -- "cmake",
   -- "cssls",
   -- "yamlls",
   -- "html",
@@ -38,6 +38,14 @@ oeyoews.servers = {
   -- "hls",
   -- "eslint",
   -- 'golangci_lint_ls',
+}
+
+oeyoews.mason = {
+  -- for null-ls
+  "stylua",
+  "codespell",
+  "prettier", -- for formatter
+  "shellcheck", -- bashls
 }
 
 -- @pluginlist
@@ -70,7 +78,10 @@ oeyoews.pluginlist = {
       "p00f/nvim-ts-rainbow",
     },
   },
-  "williamboman/nvim-lsp-installer",
+  -- "williamboman/nvim-lsp-installer",
+  "williamboman/mason.nvim",
+  "williamboman/mason-lspconfig.nvim",
+  "WhoIsSethDaniel/mason-tool-installer.nvim",
   {
     "hrsh7th/nvim-cmp",
     requires = {
@@ -115,7 +126,8 @@ oeyoews.pluginlist = {
   },
 }
 
---- check servers
+--- check servers maybe can use checkhelth mason
+--- @status deprecated
 ---@param server string
 ---@param server_require_binary  string or 1 number
 oeyoews.check_servers = function(server, server_require_binary)

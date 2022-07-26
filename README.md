@@ -90,7 +90,7 @@ git clone --depth 1 https://gitlab.com/oeyoews/nvim.git ~/.config/nvim  # please
 
 - [ ] inlay hints
 - [ ] learn vim.api(nvim), such use  vim.fn.executable to replace os.executable
-- [ ] link null-ls make a logger file
+- [ ] link null-ls or mason.nvim make a logger file
 - [ ] theme: https://github.com/nshen/learn-neovim-lua/blob/main/lua/utils/change-colorscheme.lua
 - [ ] tiny all which-key mappings
 - [ ] control module to install or uninstall plugins

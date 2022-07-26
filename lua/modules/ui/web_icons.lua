@@ -1,5 +1,11 @@
-require 'nvim-web-devicons'.setup {
+require("nvim-web-devicons").setup({
   override = {
+    sh = {
+      icon = "",
+      color = "yellow",
+      cterm_color = "67",
+      name = "Sh",
+    },
     md = {
       icon = "",
       color = "#519aba",
@@ -18,6 +24,6 @@ require 'nvim-web-devicons'.setup {
       cterm_color = "66",
       name = "Default",
     },
-  };
-  default = true;
-}
+  },
+  default = true,
+})
