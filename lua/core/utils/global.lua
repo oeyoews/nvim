@@ -1,7 +1,3 @@
--- nvim [_G] global variables
-local M = {}
-
--- init oeyoews table
 oeyoews = {}
 
 oeyoews.nvim_version = vim.version().minor
@@ -128,21 +124,6 @@ oeyoews.pluginlist = {
   },
 }
 
---- check servers maybe can use checkhelth mason
---- @status deprecated
----@param server string
----@param server_require_binary  string or 1 number
-oeyoews.check_servers = function(server, server_require_binary)
-  if vim.fn.executable(server_require_binary) == 1 then
-    oeyoews.servers[#oeyoews.servers + 1] = server
-  else
-    if oeyoews.options.debug_mode then
-      local warn_server = string.format("Please install %s to use %s", server_require_binary, server)
-      vim.notify(warn_server)
-    end
-  end
-end
-
 -- TODO: set prefix option
 --- vim.keymap.set()
 ---@param kmap table
@@ -174,5 +155,3 @@ oeyoews.sta = function(conf)
   vim.g.tokyonight_style = theme
   require(conf).setup()
 end
-
-return M
