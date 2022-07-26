@@ -29,6 +29,9 @@ oeyoews.mason_servers = {
 
 -- @servers @deprecated
 oeyoews.servers = {
+  "gopls",
+  "jsonls",
+  "vimls",
   "sumneko_lua",
   "clangd", -- warn: don't modify this position or table order, unless use table self sort method to solve it
   -- "jsonls", -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
@@ -129,23 +132,13 @@ oeyoews.pluginlist = {
   },
 }
 
---- check servers
+--- check servers maybe can use checkhelth mason
+--- @status deprecated
 ---@param server string
 ---@param server_require_binary  string or 1 number
 oeyoews.check_servers = function(server, server_require_binary)
   if vim.fn.executable(server_require_binary) == 1 then
     oeyoews.servers[#oeyoews.servers + 1] = server
-  else
-    if oeyoews.options.debug_mode then
-      local warn_server = string.format("Please install %s to use %s", server_require_binary, server)
-      vim.notify(warn_server)
-    end
-  end
-end
-
-oeyoews.check_mason_servers = function(server, server_require_binary)
-  if vim.fn.executable(server_require_binary) == 1 then
-    oeyoews.servers[#oeyoews.mason_servers + 1] = server
   else
     if oeyoews.options.debug_mode then
       local warn_server = string.format("Please install %s to use %s", server_require_binary, server)
