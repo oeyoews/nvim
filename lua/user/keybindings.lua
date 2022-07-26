@@ -4,13 +4,7 @@ local M = {}
 --- load custom keymap setup
 M.setup = function()
   -- todo ref: https://github.com/NvChad/extensions/blob/main/lua/nvchad/updater/update.lua
-  vim.keymap.set("n", "<space>nu", "<cmd><cr>", { desc = "  update neovim config" })
-  vim.keymap.set(
-    "n",
-    "<space>fb",
-    "<cmd>find ~/.config/nvim/lua/core/utils/bootstrap.lua<cr>",
-    { desc = " jump bootstrap" }
-  )
+  -- vim.keymap.set("n", "<space>nu", "<cmd><cr>", { desc = "  update neovim config" })
   vim.keymap.set(
     "n",
     "<space>fi",
