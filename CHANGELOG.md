@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://gitlab.com/oeyoews/nvim/compare/v5.43.0...v6.0.0) (2022-07-26)
+
+
+### Features
+
+* **settings:** remove settings ([f3e4bd0](https://gitlab.com/oeyoews/nvim/commit/f3e4bd0c0f0ae8b9b2ba3ec2d83a181e28b4d838))
+
+
+### BREAKING CHANGES
+
+* **settings:** remove lspconfig settings.lua
+
 # [5.43.0](https://gitlab.com/oeyoews/nvim/compare/v5.42.1...v5.43.0) (2022-07-26)
 
 
