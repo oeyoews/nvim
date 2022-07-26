@@ -161,7 +161,8 @@ end
 -- @see core.util.tokyonight.lua
 --- only in day , have opportunity get day theme
 oeyoews.sta = function(conf)
-  -- @bug: https://stackoverflow.com/questions/20154991/generating-uniform-random-numbers-in-lua
+  -- TODO use variables to show theme in statusline
+  -- @bug: https://stackoverflow.com/questions/20154991/generating-uniform-random-numbers-in-lua 
   math.randomseed(os.time())
   local theme = "night"
   local nvim_time = tonumber(os.date("%H"))
