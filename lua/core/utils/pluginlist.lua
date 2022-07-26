@@ -75,3 +75,10 @@ oeyoews.pluginlist = {
     run = "cd app && npm install",
   },
 }
+
+vim.keymap.set(
+  "n",
+  "<space>fp",
+  "<cmd>find ~/.config/nvim/lua/core/utils/pluginlist.lua<cr>",
+  { desc = "  pluginlist" }
+)

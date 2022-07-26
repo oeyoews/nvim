@@ -25,12 +25,6 @@ M.setup = function()
   )
   vim.keymap.set(
     "n",
-    "<space>fg",
-    "<cmd>find ~/.config/nvim/lua/core/utils/global.lua<cr>",
-    { desc = " edit global config" }
-  )
-  vim.keymap.set(
-    "n",
     "<space>fk",
     "<cmd>find ~/.config/nvim/lua/user/keybindings.lua<cr>",
     { desc = " edit mapping config" }

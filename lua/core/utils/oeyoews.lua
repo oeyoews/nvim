@@ -35,3 +35,10 @@ oeyoews.mason = {
   -- bashls
   "shellcheck",
 }
+
+vim.keymap.set(
+  "n",
+  "<space>fo",
+  "<cmd>find ~/.config/nvim/lua/core/utils/oeyoews.lua<cr>",
+  { desc = " edit global config" }
+)
