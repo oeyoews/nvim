@@ -94,6 +94,7 @@ end
 -- opt.clipboard = "unnamedplus"
 -- set shadafile(neovim) path
 vim.schedule(function()
-  vim.opt.shadafile = vim.fn.expand("$HOME") .. "/.local/share/nvim/shada/main.shada"
+  -- vim.opt.shadafile = vim.fn.expand("$HOME") .. "/.local/share/nvim/shada/main.shada"
+  vim.opt.shadafile = vim.fn.stdpath(oeyoews.nvim_version > 7 and "state" or "data") .. "/shada/main.shada"
   vim.cmd([[ silent! rsh ]])
 end)

@@ -4,6 +4,8 @@ local M = {}
 -- init oeyoews table
 oeyoews = {}
 
+oeyoews.nvim_version = vim.version().minor
+
 -- @options
 oeyoews.options = {
   enable_cmdheight = false, -- util 22/07/11, it's still have some bug
