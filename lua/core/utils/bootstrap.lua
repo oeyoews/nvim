@@ -24,13 +24,13 @@ local compile_path = util.join_paths(fn.stdpath("data"), "compile", "packer_comp
 
 -- init packer, and it's some settings
 packer.init({
-  max_jobs = 4,
+  max_jobs = 8,
   auto_clean = false,
   display = {
     prompt_border = "single",
-    working_sym = "", -- The symbol for a plugin being installed/updated
-    error_sym = "", -- The symbol for a plugin with an error in installation/updating
-    done_sym = "",
+    working_sym = " ", -- The symbol for a plugin being installed/updated
+    error_sym = " ", -- The symbol for a plugin with an error in installation/updating
+    done_sym = " ",
     -- open_fn = function()
     --   return util.float({ border = "single" })
     -- end,
