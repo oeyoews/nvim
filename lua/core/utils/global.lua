@@ -23,7 +23,7 @@ oeyoews.servers = {
   "vimls",
   "sumneko_lua",
   "bashls",
-  "clangd", -- warn: don't modify this position or table order, unless use table self sort method to solve it
+  "clangd", -- this install is very slow TODO
   "pylsp", -- support formatting
   "cmake",
   -- "jdtls", -- java
