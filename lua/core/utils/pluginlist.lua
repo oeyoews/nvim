@@ -27,7 +27,6 @@ oeyoews.pluginlist = {
       "p00f/nvim-ts-rainbow",
     },
   },
-  -- "williamboman/nvim-lsp-installer",
   "williamboman/mason.nvim",
   "williamboman/mason-lspconfig.nvim",
   "WhoIsSethDaniel/mason-tool-installer.nvim",
