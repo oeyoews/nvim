@@ -16,7 +16,18 @@ oeyoews.options = {
   -- snapshot = "default.json", -- @ref: core.utils.bootstrap
 }
 
--- @servers
+oeyoews.mason_servers = {
+  -- conflict lspconfig
+  -- { 'bash-language-server', auto_update = false },
+  'shellcheck',
+  'lua-language-server',
+  -- 'vim-language-server',
+  -- 'gopls', -- go
+  -- 'stylua',  --cargo
+  'codespell'
+}
+
+-- @servers @deprecated
 oeyoews.servers = {
   "sumneko_lua",
   "clangd", -- warn: don't modify this position or table order, unless use table self sort method to solve it
@@ -54,6 +65,7 @@ oeyoews.pluginlist = {
   "lewis6991/impatient.nvim",
   "nathom/filetype.nvim",
   "wbthomason/packer.nvim",
+  "WhoIsSethDaniel/mason-tool-installer.nvim",
   "nvim-lua/plenary.nvim",
   "kyazdani42/nvim-web-devicons",
   "stevearc/dressing.nvim",
@@ -70,7 +82,8 @@ oeyoews.pluginlist = {
       "p00f/nvim-ts-rainbow",
     },
   },
-  "williamboman/nvim-lsp-installer",
+  -- "williamboman/nvim-lsp-installer",
+  "williamboman/mason.nvim",
   {
     "hrsh7th/nvim-cmp",
     requires = {
@@ -121,6 +134,17 @@ oeyoews.pluginlist = {
 oeyoews.check_servers = function(server, server_require_binary)
   if vim.fn.executable(server_require_binary) == 1 then
     oeyoews.servers[#oeyoews.servers + 1] = server
+  else
+    if oeyoews.options.debug_mode then
+      local warn_server = string.format("Please install %s to use %s", server_require_binary, server)
+      vim.notify(warn_server)
+    end
+  end
+end
+
+oeyoews.check_mason_servers = function(server, server_require_binary)
+  if vim.fn.executable(server_require_binary) == 1 then
+    oeyoews.servers[#oeyoews.mason_servers + 1] = server
   else
     if oeyoews.options.debug_mode then
       local warn_server = string.format("Please install %s to use %s", server_require_binary, server)

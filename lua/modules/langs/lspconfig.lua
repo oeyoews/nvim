@@ -44,14 +44,14 @@ local luadev = require("lua-dev").setup({
 
 local lsp_setup = function()
   if oeyoews.options.enable_lsp then
-    for _, lsp_server in pairs(oeyoews.servers) do
+    for _, lsp_server in pairs(oeyoews.mason_servers) do
       -- TODO: split it like astronvim.lsp.handlers
       -- local opts = require("modules.langs.server_settings")
-      if lsp_server == "sumneko_lua" then
+      if lsp_server == "lua-language-server" then
         lspconfig[lsp_server].setup(luadev)
       else
         lspconfig[lsp_server].setup(
-          -- settings.lsp_server
+        -- settings.lsp_server
           {
             settings = settings[lsp_server],
             on_attach = on_attach,

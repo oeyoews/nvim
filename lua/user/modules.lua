@@ -44,7 +44,8 @@ M.files = {
   -- @LANG
   langs = {
     "treesitter", -- friendly highlight your code
-    "lspinstall", -- preinstall some servers
+    -- "lspinstall", -- preinstall some servers
+    "mason",
     "cmp", -- config completion
     "navic",
     "lspconfig", -- configurate lsp settings
