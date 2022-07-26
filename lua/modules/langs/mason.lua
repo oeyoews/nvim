@@ -17,7 +17,8 @@ end
 require("mason-tool-installer").setup({
   -- todo
   ensure_installed = {
-    "codespell",
+    "codespell", -- for null-ls
+    "prettier" -- for formatter
   },
 
   -- if set to true this will check each tool for updates. If updates
@@ -45,4 +46,5 @@ end
 
 require("mason-lspconfig").setup({
   ensure_installed = oeyoews.servers,
+  automatic_installation = true,
 })

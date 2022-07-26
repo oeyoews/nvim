@@ -10,7 +10,7 @@ oeyoews.options = {
   enable_lsp = true, -- @see lspconfig.lua
   sumneko_lua_locale_cn = false, -- @see lspconfig.lua
   toggle_theme_auto = true, -- @see sta.lua
-  debug_mode = true, -- @ref: user.pcall.lua @TODO: use keybinds to toggle this options in config
+  debug_mode = false, -- @ref: user.pcall.lua @TODO: use keybinds to toggle this options in config
   -- rolling.json default.json v1.0.0.json
   snapshot = nil, -- @see bootstrap.lua
   -- snapshot = "default.json", -- @ref: core.utils.bootstrap
