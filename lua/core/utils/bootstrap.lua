@@ -1,6 +1,13 @@
 local fn = vim.fn
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 
+-- some neovim needs settings
+-- vim.fn.has("nvim-0.8.0")
+if oeyoews.nvim_version < 7 then
+  vim.notify("   Please update your neovim to latest")
+  return
+end
+
 --- install packer.nvim firstly
 if fn.empty(fn.glob(install_path)) > 0 then
   -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#1e222a" })

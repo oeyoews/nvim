@@ -25,7 +25,6 @@ M.files = {
     "functions",
     "pluginlist",
     "bootstrap",
-    "night",
     "disable",
     "options",
     "mappings",

@@ -1,6 +1,12 @@
 local g = vim.g
 local opt = vim.opt
 
+-- have "press enter or other command continue" error, and save shake for null-ls or normal conditions
+-- https://github.com/folke/which-key.nvim/issues/301
+if oeyoews.options.enable_cmdheight and oeyoews.nvim_version > 7 then
+  vim.opt.cmdheight = 0
+end
+
 -- use filetype.lua instead of filetype.vim. it's enabled by default in neovim 0.8 (nightly)
 if oeyoews.nvim_version < 8 then
   g.did_load_filetypes = 0
