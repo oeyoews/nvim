@@ -1,8 +1,12 @@
 local g = vim.g
 local opt = vim.opt
 
-g.did_load_filetypes = 0
-g.do_filetype_lua = 1
+-- use filetype.lua instead of filetype.vim. it's enabled by default in neovim 0.8 (nightly)
+if oeyoews.nvim_version < 8 then
+  g.did_load_filetypes = 0
+  g.do_filetype_lua = 1
+end
+
 g.python3_host_prog = "/usr/bin/python3"
 
 local default_options = {
