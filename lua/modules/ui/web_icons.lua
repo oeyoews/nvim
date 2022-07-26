@@ -1,7 +1,13 @@
 require("nvim-web-devicons").setup({
   override = {
+    ["rb"] = {
+      icon = "",
+      color = "#701516",
+      cterm_color = "52",
+      name = "Rb",
+    },
     sh = {
-      icon = "",
+      icon = " ",
       color = "yellow",
       cterm_color = "67",
       name = "Sh",

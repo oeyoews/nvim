@@ -1,9 +1,7 @@
 -- @pluginlist
 oeyoews.pluginlist = {
-  "dhruvasagar/vim-table-mode",
-  -- @luaversion: 5.1
   "kyazdani42/nvim-tree.lua",
-  "SmiteshP/nvim-navic",
+  -- @luaversion: 5.1
   "folke/lua-dev.nvim",
   "mhartington/formatter.nvim",
   "mzlogin/vim-markdown-toc",
@@ -18,6 +16,7 @@ oeyoews.pluginlist = {
   -- @ORDER
   "lukas-reineke/indent-blankline.nvim",
   "akinsho/bufferline.nvim",
+  "SmiteshP/nvim-navic",
   "oeyoews/windline.nvim",
   -- @LANG
   {
@@ -48,6 +47,7 @@ oeyoews.pluginlist = {
   "onsails/lspkind-nvim",
   "hrsh7th/cmp-path",
   -- @TOOLS
+  "dhruvasagar/vim-table-mode",
   "folke/todo-comments.nvim",
   {
     "nvim-telescope/telescope.nvim",

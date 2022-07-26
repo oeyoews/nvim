@@ -30,6 +30,8 @@ oeyoews.mason = {
   -- for null-ls
   "stylua",
   "codespell",
-  "prettier", -- for formatter
-  "shellcheck", -- bashls
+  -- for formatter
+  "prettier",
+  -- bashls
+  "shellcheck",
 }
