@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.43.0](https://gitlab.com/oeyoews/nvim/compare/v5.42.1...v5.43.0) (2022-07-26)
+
+
+### Features
+
+* **global:** split global.lua ([de88f25](https://gitlab.com/oeyoews/nvim/commit/de88f2512850ddc355cf3b0df5b1af8384a78dd1))
+
 ## [5.42.1](https://gitlab.com/oeyoews/nvim/compare/v5.42.0...v5.42.1) (2022-07-26)
 
 
