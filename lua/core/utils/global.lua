@@ -25,7 +25,7 @@ oeyoews.servers = {
   "bashls",
   "clangd", -- this install is very slow TODO
   "pylsp", -- support formatting
-  "cmake",
+  "cmake", -- navic not support this @TODO
   -- "jdtls", -- java
   -- "volar", -- vue
   -- "rust_analyzer", -- need use rustup to install stable rust and setup toolchains
