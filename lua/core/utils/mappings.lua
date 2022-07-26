@@ -43,7 +43,7 @@ keymappings_set = {
 -- core mapping
 oeyoews.kmap(keymappings_set)
 -- load custom_map
-require("user.keybindings").setup()
+require("user.keybindings")
 
 -- autocmd todo
 vim.cmd([[
