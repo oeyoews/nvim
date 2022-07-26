@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.40.0](https://gitlab.com/oeyoews/nvim/compare/v5.39.0...v5.40.0) (2022-07-26)
+
+
+### Features
+
+* **mason-lspconfig:** use mason-lspconfig test ([d096a6a](https://gitlab.com/oeyoews/nvim/commit/d096a6a87ef9ac3ddc74fb2cab60451eeb07404a))
+
 # [5.39.0](https://gitlab.com/oeyoews/nvim/compare/v5.38.0...v5.39.0) (2022-07-24)
 
 
