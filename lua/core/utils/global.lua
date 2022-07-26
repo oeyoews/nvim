@@ -65,7 +65,6 @@ oeyoews.pluginlist = {
   "lewis6991/impatient.nvim",
   "nathom/filetype.nvim",
   "wbthomason/packer.nvim",
-  "WhoIsSethDaniel/mason-tool-installer.nvim",
   "nvim-lua/plenary.nvim",
   "kyazdani42/nvim-web-devicons",
   "stevearc/dressing.nvim",
@@ -84,6 +83,8 @@ oeyoews.pluginlist = {
   },
   -- "williamboman/nvim-lsp-installer",
   "williamboman/mason.nvim",
+  "williamboman/mason-lspconfig.nvim",
+  "WhoIsSethDaniel/mason-tool-installer.nvim",
   {
     "hrsh7th/nvim-cmp",
     requires = {

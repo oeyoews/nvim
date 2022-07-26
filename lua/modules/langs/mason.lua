@@ -1,5 +1,6 @@
 require("mason").setup()
 
+--[[
 local csl = {
   gopls = "go",
   -- use npm adjust if
@@ -11,9 +12,13 @@ local csl = {
 for server, binary in pairs(csl) do
   oeyoews.check_mason_servers(server, binary)
 end
+--]]
 
 require 'mason-tool-installer'.setup {
-  ensure_installed = oeyoews.mason_servers,
+  -- todo
+  ensure_installed = {
+    "codespell",
+  },
 
   -- if set to true this will check each tool for updates. If updates
   -- are available the tool will be updated.
@@ -26,3 +31,18 @@ require 'mason-tool-installer'.setup {
   -- Default: true
   run_on_start = true
 }
+
+local csl = {
+  gopls = "go",
+  jsonls = "npm",
+  vimls = "npm",
+  -- or serverName = 1,
+}
+
+for server, binary in pairs(csl) do
+  oeyoews.check_servers(server, binary)
+end
+
+require("mason-lspconfig").setup({
+  ensure_installed = oeyoews.servers,
+})
