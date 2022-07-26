@@ -16,34 +16,20 @@ oeyoews.options = {
   -- snapshot = "default.json", -- @ref: core.utils.bootstrap
 }
 
-oeyoews.mason_servers = {
-  -- conflict lspconfig
-  -- { 'bash-language-server', auto_update = false },
-  -- 'shellcheck',
-  -- 'lua-language-server',
-  -- 'vim-language-server',
-  -- 'gopls', -- go
-  -- 'stylua',  --cargo
-  "codespell",
-}
-
 -- @servers @deprecated
 oeyoews.servers = {
   "gopls",
   "jsonls",
   "vimls",
   "sumneko_lua",
+  "bashls",
   "clangd", -- warn: don't modify this position or table order, unless use table self sort method to solve it
-  -- "jsonls", -- need install shellcheck(it dependency some haskell package, download aur's bin is fast), if lsp not work, please check :LspLog to see more information
-  -- "pylsp", -- support formatting
+  "pylsp", -- support formatting
+  "cmake",
   -- "jdtls", -- java
-  -- "gopls", -- config in lspinstall, don't write it here
   -- "volar", -- vue
   -- "rust_analyzer", -- need use rustup to install stable rust and setup toolchains
   -- "solargraph", -- ruby
-  -- "bashls",
-  -- "vimls",
-  -- "cmake",
   -- "cssls",
   -- "yamlls",
   -- "html",
@@ -52,6 +38,14 @@ oeyoews.servers = {
   -- "hls",
   -- "eslint",
   -- 'golangci_lint_ls',
+}
+
+oeyoews.mason = {
+  -- for null-ls
+  "stylua",
+  "codespell",
+  "prettier", -- for formatter
+  "shellcheck", -- bashls
 }
 
 -- @pluginlist
