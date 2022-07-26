@@ -22,6 +22,8 @@ M.files = {
   ["utils"] = {
     "impatient",
     "global",
+    "functions",
+    "pluginlist",
     "bootstrap",
     "night",
     "disable",

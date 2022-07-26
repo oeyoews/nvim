@@ -1,5 +1,6 @@
 oeyoews = {}
 
+-- nvim_version
 oeyoews.nvim_version = vim.version().minor
 
 -- @options
@@ -9,9 +10,7 @@ oeyoews.options = {
   sumneko_lua_locale_cn = false, -- @see lspconfig.lua
   toggle_theme_auto = true, -- @see sta.lua
   debug_mode = false, -- @ref: user.pcall.lua @TODO: use keybinds to toggle this options in config
-  -- rolling.json default.json v1.0.0.json
-  snapshot = nil, -- @see bootstrap.lua
-  -- snapshot = "default.json", -- @ref: core.utils.bootstrap
+  snapshot = nil, -- @see core.utils.bootstrap.lua @options: rolling.json, default.json, v1.0.0.json
 }
 
 -- @servers @deprecated
@@ -24,20 +23,9 @@ oeyoews.servers = {
   "clangd", -- this install is very slow TODO
   "pylsp", -- support formatting
   "cmake", -- navic not support this @TODO
-  -- "jdtls", -- java
-  -- "volar", -- vue
-  -- "rust_analyzer", -- need use rustup to install stable rust and setup toolchains
-  -- "solargraph", -- ruby
-  -- "cssls",
-  -- "yamlls",
-  -- "html",
-  -- "tsserver", -- must in folder
-  -- "taplo", -- toml
-  -- "hls",
-  -- "eslint",
-  -- 'golangci_lint_ls',
 }
 
+-- extra binary
 oeyoews.mason = {
   -- for null-ls
   "stylua",
@@ -45,113 +33,3 @@ oeyoews.mason = {
   "prettier", -- for formatter
   "shellcheck", -- bashls
 }
-
--- @pluginlist
-oeyoews.pluginlist = {
-  "dhruvasagar/vim-table-mode",
-  -- @luaversion: 5.1
-  "kyazdani42/nvim-tree.lua",
-  "SmiteshP/nvim-navic",
-  "folke/lua-dev.nvim",
-  "mhartington/formatter.nvim",
-  "mzlogin/vim-markdown-toc",
-  "danymat/neogen",
-  -- @dependencies
-  "lewis6991/impatient.nvim",
-  "nathom/filetype.nvim",
-  "wbthomason/packer.nvim",
-  "nvim-lua/plenary.nvim",
-  "kyazdani42/nvim-web-devicons",
-  "stevearc/dressing.nvim",
-  -- @ORDER
-  "lukas-reineke/indent-blankline.nvim",
-  "akinsho/bufferline.nvim",
-  "oeyoews/windline.nvim",
-  -- @LANG
-  {
-    "nvim-treesitter/nvim-treesitter",
-    run = ":TSUpdate",
-    requires = {
-      "nvim-treesitter/nvim-treesitter-refactor",
-      "p00f/nvim-ts-rainbow",
-    },
-  },
-  -- "williamboman/nvim-lsp-installer",
-  "williamboman/mason.nvim",
-  "williamboman/mason-lspconfig.nvim",
-  "WhoIsSethDaniel/mason-tool-installer.nvim",
-  {
-    "hrsh7th/nvim-cmp",
-    requires = {
-      "quangnguyen30192/cmp-nvim-ultisnips",
-      "hrsh7th/cmp-buffer",
-    },
-  },
-  "neovim/nvim-lspconfig",
-  "jose-elias-alvarez/null-ls.nvim",
-  "kkharji/lspsaga.nvim",
-  "honza/vim-snippets",
-  "SirVer/ultisnips",
-  "hrsh7th/cmp-nvim-lsp",
-  "onsails/lspkind-nvim",
-  "hrsh7th/cmp-path",
-  -- @TOOLS
-  "folke/todo-comments.nvim",
-  {
-    "nvim-telescope/telescope.nvim",
-    requires = {
-      "nvim-telescope/telescope-packer.nvim",
-    },
-  },
-  "phaazon/hop.nvim",
-  "norcalli/nvim-colorizer.lua",
-  "lewis6991/gitsigns.nvim",
-  "numToStr/Comment.nvim",
-  "windwp/nvim-autopairs",
-  "folke/persistence.nvim",
-  "oeyoews/tabout.nvim",
-  "folke/which-key.nvim",
-  "ziontee113/icon-picker.nvim",
-  "j-hui/fidget.nvim",
-  "kevinhwang91/rnvimr",
-  "cappyzawa/trim.nvim",
-  "ekickx/clipboard-image.nvim",
-  "thinca/vim-quickrun",
-  "oeyoews/vim-startuptime",
-  {
-    "iamcco/markdown-preview.nvim",
-    run = "cd app && npm install",
-  },
-}
-
--- TODO: set prefix option
---- vim.keymap.set()
----@param kmap table
-oeyoews.kmap = function(kmap)
-  local keymap_set = function(tbl)
-    tbl[4] = tbl[4] or "n"
-    vim.keymap.set(tbl[4], tbl[1], tbl[2], { desc = tbl[3] or "description is coming", silent = true })
-  end
-  for _, v in ipairs(kmap) do
-    keymap_set(v)
-  end
-end
-
--- Automatically switch between dark and light themes during day and night
--- Randomly switch themes during the day
--- @see core.util.tokyonight.lua
---- only in day , have opportunity get day theme
-oeyoews.sta = function(conf)
-  -- TODO use variables to show theme in statusline
-  -- @bug: https://stackoverflow.com/questions/20154991/generating-uniform-random-numbers-in-lua 
-  math.randomseed(os.time())
-  local theme = "night"
-  local nvim_time = tonumber(os.date("%H"))
-  local status = math.random(0, 1)
-  conf = "tokyonight" or conf
-  if oeyoews.options.toggle_theme_auto and nvim_time > 8 and nvim_time < 20 and status == 1 then
-    theme = "storm"
-  end
-  vim.g.tokyonight_style = theme
-  require(conf).setup()
-end
