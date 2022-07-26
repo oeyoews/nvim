@@ -17,7 +17,7 @@ keymappings_set = {
   { "<space>yy", '"+y', " past to system", "v" },
   { "<esc>", ":noh<cr><C-L><esc>", " clear highlight and screen" },
   { "<space>fu", ":FZF<cr>", "fzf" },
-  { "<space>bb", ":e `mktemp -t neovim-scratch-XXXXXX`<cr>", " edit temp file" },
+  { "<space>bb", ":e `mktemp -t nvim.scr.XXX`<cr>", " edit temp file" },
   { "<space>ba", ":%bw<cr>", " remove all buffers" },
   { "<space>bs", ":e /tmp/scratch.txt<cr>", " edit scratch.txt" },
   { "H", "0", " jump head of line", { "n", "v" } },
