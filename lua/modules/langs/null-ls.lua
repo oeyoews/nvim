@@ -13,12 +13,7 @@ local completion = null_ls.builtins.completion
 local formatting = null_ls.builtins.formatting
 
 local disabled_filetypes = {
-  -- "jsonc",
-  -- "json",
-  -- "html",
-  -- "c",
-  -- "java",
-  -- "javascript",
+  -- "jsonc", "json", "html", "c", "java", "javascript",
 }
 
 local sources = {

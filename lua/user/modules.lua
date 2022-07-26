@@ -3,8 +3,7 @@
 
 local M = {}
 
---- bootstrap firstly
--- this entry is different
+--- bootstrap firstly, this entry is different
 M.utils = {
   "utils",
 }
@@ -72,21 +71,6 @@ M.files = {
     "trim", -- delete any blank line and trailing whitespace
     "icon_picker", -- select so much icons
     "ranger", -- use ranger in neovim
-  },
-
-  -- @deprecate_config
-  ["misc"] = {
-    -- "colorizer", -- show color in neovim
-    -- "project",
-    -- "highstr", -- highlight select text
-    -- "neorg", -- replace emace org mode
-    -- "toggleterm", -- embed terminal
-    -- "calendar", -- GTD?
-    -- "venn", -- drawing diagram
-    -- "color_picker", -- color picker
-    -- "hlargs",
-    -- "winshift",
-    -- "trouble",
   },
 }
 
