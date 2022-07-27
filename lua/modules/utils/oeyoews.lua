@@ -15,7 +15,7 @@ oeyoews.options = {
   toggle_theme_auto = true,
   -- @ref: user.pcall.lua
   -- @TODO: use keybinds to toggle this options in config
-  debug_mode = true,
+  debug_mode = false,
   -- @see modules.utils.bootstrap.lua
   -- @options: rolling.json, default.json, v1.0.0.json
   snapshot = nil,
