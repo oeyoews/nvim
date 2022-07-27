@@ -1,6 +1,6 @@
 <div align="center">
   <img src="img/vim.png" alt="vim" align="center" width=144><hr>
-  <h2>🍃 Neovim</h2>
+  <h2>🇳  Neovim</h2>
   <p> 💡 A personal neovim configuration</p>
 	🏠 <a href="https://oeyoews.github.io/nvim">Home</a>&nbsp;
   🔗 <a href="">Links </a>&nbsp;
