@@ -42,8 +42,6 @@ keymappings_set = {
 
 -- core mapping
 oeyoews.kmap(keymappings_set)
--- load custom_map
-require("user.keybindings")
 
 -- autocmd todo
 vim.cmd([[
@@ -91,4 +89,17 @@ end, { desc = " toggle statusline" })
 
 vim.keymap.set("n", "<space>tk", function()
   vim.fn["Terminal"]()
-end, { desc = "  terminal" })
+end, { desc = "  terminal" })
+
+vim.keymap.set(
+  "n",
+  "<space>fi",
+  "<cmd>find ~/.config/nvim/init.lua<cr>",
+  { desc = "ﳐ edit init.lua(main) neovim config" }
+)
+vim.keymap.set("n", "<space>hd", function()
+  print(os.date("%Y-%m-%d %H:%M:%S %A %j days "))
+end, { desc = "愈show time" })
+vim.keymap.set("n", "<space>helo", function()
+  vim.notify("  Hello, Neovim", "info", { title = "welcome" })
+end, { desc = " hello, neovim" })
