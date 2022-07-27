@@ -23,7 +23,7 @@
 <img src="https://img.shields.io/badge/System-Linux-white.svg?style=flat-square&logo=linux&logoColor=cyan&color=BB9AF7" alt="system">
 <img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-Semantic-e10079.svg?style=flat-square" alt="Semantic Release"/>
 <img src="https://img.shields.io/badge/License-AGPL--3.0-green.svg?style=flat-square&logo=GNU&color=df967f&label=License" alt="license">
-<img src="https://img.shields.io/badge/Neovim-0.7.2-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=green" alt="neovim">
+<img src="https://img.shields.io/badge/Neovim-0.8.0-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=green" alt="neovim">
 <img src="https://img.shields.io/badge/Github-Yes-green.svg?style=flat-square&logo=github&label=Github&logoColor=cyan" alt="github">
 <img src="https://img.shields.io/badge/Gitlab-Yes-ffcc00.svg?style=flat-square&logo=gitlab&label=Gitlab" alt="gitlab">
 <img src="https://img.shields.io/gitlab/v/tag/oeyoews/nvim?color=green&logo=FastAPI&style=flat-square" alt="tag">
@@ -37,22 +37,22 @@
 
 <!-- vim-markdown-toc Marked -->
 
-* [ShowCases](#showcases)
-* [What's that](#what's-that)
-* [Install](#install)
-* [Features](#features)
-* [TODO](#todo)
-* [More details](#more-details)
-* [Wiki](#wiki)
-* [Links](#links)
+- [ShowCases](#showcases)
+- [What's that](#what's-that)
+- [Install](#install)
+- [Features](#features)
+- [TODO](#todo)
+- [More details](#more-details)
+- [Wiki](#wiki)
+- [Links](#links)
 
 <!-- vim-markdown-toc -->
 
 ## ShowCases
 
 |    <img src="img/vim.png" align="bottom" width=128/>    | <img src="img/example01.png" align="bottom" width=256/> |
-|:-------------------------------------------------------:|:-------------------------------------------------------:|
-| <img src="img/example02.png" align="bottom" width=256/> |     <img src="img/03.png" align="bottom" width=256/>    |
+| :-----------------------------------------------------: | :-----------------------------------------------------: |
+| <img src="img/example02.png" align="bottom" width=256/> |    <img src="img/03.png" align="bottom" width=256/>     |
 
 ## What's that
 
@@ -69,30 +69,31 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 
 ## Features
 
-* switch day-night nvim theme base time automatically
-* module manage nvim config, use pure lua
-* builtin plugins, like tokynight, notify and some telescope extensions .
-* install lsp-servers base your current development automatically
-* faster nvim startup, about (60~70) ms
-* support markdown-preview and past image in neovim
-* support ranger
-* hide tilde and show time in statusline
-* customize shortkeys
-* support codespell
-* hide cursorline in insert mode
-* customize snippets with ultisnips
-* backup plugin snapshot with packer
-* etc
+- switch day-night nvim theme base time automatically
+- module manage nvim config, use pure lua
+- builtin plugins, like tokynight, notify and some telescope extensions .
+- install lsp-servers base your current development automatically
+- faster nvim startup, about (60~70) ms
+- support markdown-preview and past image in neovim
+- support ranger
+- hide tilde and show time in statusline
+- customize shortkeys
+- support codespell
+- hide cursorline in insert mode
+- customize snippets with ultisnips
+- backup plugin snapshot with packer
+- etc
 
 ## TODO
 
 <details>
 <summary>🚀</summary>
 
+- [ ] update startuptime plugin to suit night
 - [ ] integrate bump plugins, format
 - [ ] use function to replace find file
 - [ ] inlay hints
-- [ ] learn vim.api(nvim), such use  vim.fn.executable to replace os.executable
+- [ ] learn vim.api(nvim), such use vim.fn.executable to replace os.executable
 - [ ] link null-ls or mason.nvim make a logger file
 - [ ] theme: https://github.com/nshen/learn-neovim-lua/blob/main/lua/utils/change-colorscheme.lua
 - [ ] tiny all which-key mappings
@@ -141,12 +142,12 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 
 ## More details
 
-* For more details, please read the code or check this [📖 nvim wiki](https://gitlab.com/oeyoews/nvim/-/wikis/home)
+- For more details, please read the code or check this [📖 nvim wiki](https://gitlab.com/oeyoews/nvim/-/wikis/home)
 
 ## Wiki
 
 ## Links
 
-* [neovim form](https://neovim.discourse.group)
-* [emmylua comment](https://emmylua.github.io/zh_CN/annotation.html)
-* [neovimcraft](https://neovimcraft.com/)
+- [neovim form](https://neovim.discourse.group)
+- [emmylua comment](https://emmylua.github.io/zh_CN/annotation.html)
+- [neovimcraft](https://neovimcraft.com/)
