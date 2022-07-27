@@ -13,7 +13,7 @@ end
 
 -- Automatically switch between dark and light themes during day and night
 -- Randomly switch themes during the day
--- @see core.util.tokyonight.lua
+-- @see modules.util.tokyonight.lua
 --- only in day , have opportunity get day theme
 oeyoews.sta = function(conf)
   -- TODO use variables to show theme in statusline

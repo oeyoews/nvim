@@ -15,7 +15,7 @@ oeyoews.options = {
   -- @ref: user.pcall.lua
   -- @TODO: use keybinds to toggle this options in config
   debug_mode = false,
-  -- @see core.utils.bootstrap.lua
+  -- @see modules.utils.bootstrap.lua
   -- @options: rolling.json, default.json, v1.0.0.json
   snapshot = nil,
 }
@@ -49,6 +49,6 @@ oeyoews.mason = {
 vim.keymap.set(
   "n",
   "<space>fo",
-  "<cmd>find ~/.config/nvim/lua/core/utils/oeyoews.lua<cr>",
+  "<cmd>find ~/.config/nvim/lua/modules/utils/oeyoews.lua<cr>",
   { desc = " edit global config" }
 )

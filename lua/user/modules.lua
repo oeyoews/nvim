@@ -3,13 +3,9 @@
 
 local M = {}
 
---- bootstrap firstly, this entry is different
-M.utils = {
-  "utils",
-}
-
 --- manually specific
 M.modules = {
+  "utils",
   "ui",
   "langs",
   "tools",

@@ -62,6 +62,6 @@ oeyoews.pluginlist = {
 vim.keymap.set(
   "n",
   "<space>fp",
-  "<cmd>find ~/.config/nvim/lua/core/utils/pluginlist.lua<cr>",
+  "<cmd>find ~/.config/nvim/lua/modules/utils/pluginlist.lua<cr>",
   { desc = " pluginlist" }
 )

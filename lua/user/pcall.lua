@@ -1,5 +1,5 @@
 -- @module: pcall.lua
--- @ref: core.utils.init.lua && user.modules.lua
+-- @ref: modules.utils.init.lua && user.modules.lua
 
 local notify = require("notify").async
 local _, async = pcall(require, "plenary.async")
