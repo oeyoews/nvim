@@ -86,8 +86,3 @@ vim.keymap.set(
   "<cmd>find ~/.config/nvim/lua/core/utils/bootstrap.lua<cr>",
   { desc = " jump bootstrap" }
 )
-
---[[ vim.keymap.set("n", "<space>tP", function()
-  package.loaded['pack'] = nil
-  require('packer') -- loads an updated version of module 'modname'
-end, { desc = "reload packer" }) ]]

@@ -1,42 +1,31 @@
 -- @pluginlist
 oeyoews.pluginlist = {
   "kyazdani42/nvim-tree.lua",
-  -- @luaversion: 5.1
   "folke/lua-dev.nvim",
   "mhartington/formatter.nvim",
   "mzlogin/vim-markdown-toc",
   "danymat/neogen",
-  -- @dependencies
   "lewis6991/impatient.nvim",
   "nathom/filetype.nvim",
   "wbthomason/packer.nvim",
   "nvim-lua/plenary.nvim",
   "kyazdani42/nvim-web-devicons",
   "stevearc/dressing.nvim",
-  -- @ORDER
   "lukas-reineke/indent-blankline.nvim",
   "akinsho/bufferline.nvim",
-  -- "SmiteshP/nvim-navic",
   "oeyoews/windline.nvim",
-  -- @LANG
   {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
-    requires = {
-      "nvim-treesitter/nvim-treesitter-refactor",
-      "p00f/nvim-ts-rainbow",
-    },
   },
+  "nvim-treesitter/nvim-treesitter-refactor",
+  "p00f/nvim-ts-rainbow",
   "williamboman/mason.nvim",
   "williamboman/mason-lspconfig.nvim",
   "WhoIsSethDaniel/mason-tool-installer.nvim",
-  {
-    "hrsh7th/nvim-cmp",
-    requires = {
-      "quangnguyen30192/cmp-nvim-ultisnips",
-      "hrsh7th/cmp-buffer",
-    },
-  },
+  "hrsh7th/nvim-cmp",
+  "quangnguyen30192/cmp-nvim-ultisnips",
+  "hrsh7th/cmp-buffer",
   "neovim/nvim-lspconfig",
   "jose-elias-alvarez/null-ls.nvim",
   "kkharji/lspsaga.nvim",
@@ -48,12 +37,8 @@ oeyoews.pluginlist = {
   -- @TOOLS
   "dhruvasagar/vim-table-mode",
   "folke/todo-comments.nvim",
-  {
-    "nvim-telescope/telescope.nvim",
-    requires = {
-      "nvim-telescope/telescope-packer.nvim",
-    },
-  },
+  "nvim-telescope/telescope.nvim",
+  "nvim-telescope/telescope-packer.nvim",
   "phaazon/hop.nvim",
   "norcalli/nvim-colorizer.lua",
   "lewis6991/gitsigns.nvim",
