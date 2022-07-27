@@ -83,6 +83,6 @@ vim.keymap.set("n", "<space>pr", "<cmd>PackerSnapshot rolling.json<cr>", { desc 
 vim.keymap.set(
   "n",
   "<space>fb",
-  "<cmd>find ~/.config/nvim/lua/core/utils/bootstrap.lua<cr>",
+  "<cmd>find ~/.config/nvim/lua/modules/utils/bootstrap.lua<cr>",
   { desc = " jump bootstrap" }
 )
