@@ -60,7 +60,8 @@
 
 ## Install
 
-- install pynvim and clone this repository
+- NOTE: just support nightly
+- install pynvim and nightly neovim and clone this repository
 
 ```bash
 # please backup your ~/.config/nvim folder or your nvim configuration firstly
