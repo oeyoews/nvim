@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0](https://gitlab.com/oeyoews/nvim/compare/v7.0.0...v7.1.0) (2022-07-27)
+
+
+### Features
+
+* **mason:** add some settings for server ([1a1b364](https://gitlab.com/oeyoews/nvim/commit/1a1b3643bf7ac430f73fd92e025e5197dbdd30e2))
+
 # [7.0.0](https://gitlab.com/oeyoews/nvim/compare/v6.0.0...v7.0.0) (2022-07-27)
 
 
