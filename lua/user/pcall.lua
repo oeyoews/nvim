@@ -31,7 +31,7 @@ M.setup = function(dir, load_module, load_files)
     if not notify_ok then
       vim.notify("Failed to loaded modules \n" .. vim.inspect(error_modules), log_level)
     end
-    -- notify("Failed to loaded modules \n" .. vim.inspect(error_modules), log_level, { title = "Modules" })
+    notify("Failed to loaded modules \n" .. vim.inspect(error_modules), log_level, { title = "Modules" })
   end
 end
 
