@@ -1,3 +1,7 @@
+if oeyoews.options.enable_clangd then
+  oeyoews.servers[#oeyoews.servers + 1] = "clangd"
+end
+
 if vim.fn.executable("npm") == 1 then
   oeyoews.mason[#oeyoews.mason + 1] = "prettier"
 end
