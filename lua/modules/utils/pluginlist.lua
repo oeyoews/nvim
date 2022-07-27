@@ -1,4 +1,7 @@
 oeyoews.pluginlist = {
+  "~/.config/nvim/builtin/notify",
+  "~/.config/nvim/builtin/telescope",
+  "~/.config/nvim/builtin/tokyonight",
   "kyazdani42/nvim-tree.lua",
   "folke/lua-dev.nvim",
   "mzlogin/vim-markdown-toc",

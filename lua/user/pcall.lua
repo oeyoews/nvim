@@ -1,7 +1,7 @@
 -- @module: pcall.lua
 -- @ref: init.lua
 
-local notify = require("notify")
+local notify_ok, notify = pcall(require, "notify")
 local error_modules = {}
 local error_logs = {}
 local load_dot_path = nil
@@ -28,7 +28,10 @@ M.setup = function(dir, load_module, load_files)
       error_modules[#error_modules + 1] = error_logs
       log_level = "error"
     end
-    notify("Failed to loaded modules \n" .. vim.inspect(error_modules), log_level, { title = "Modules" })
+    if not notify_ok then
+      vim.notify("Failed to loaded modules \n" .. vim.inspect(error_modules), log_level)
+    end
+    -- notify("Failed to loaded modules \n" .. vim.inspect(error_modules), log_level, { title = "Modules" })
   end
 end
 
