@@ -1,4 +1,3 @@
--- @pluginlist
 oeyoews.pluginlist = {
   "kyazdani42/nvim-tree.lua",
   "folke/lua-dev.nvim",
