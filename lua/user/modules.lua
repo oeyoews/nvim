@@ -44,7 +44,6 @@ M.files = {
     "cmp", -- config completion
     "lspconfig", -- configurate lsp settings
     "null-ls", -- complete lsp configuration
-    -- "formatter",
   },
 
   -- @TOOLS

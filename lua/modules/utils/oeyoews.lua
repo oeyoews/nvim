@@ -5,8 +5,7 @@ oeyoews.nvim_version = vim.version().minor
 
 -- @options
 oeyoews.options = {
-  first_install = false,
-  enable_clangd = false,
+  enable_clangd = true,
   enable_cmdheight = false,
   -- @see lspconfig.lua
   enable_lsp = true,
@@ -35,11 +34,7 @@ oeyoews.servers = {
 }
 
 -- extra binary
-oeyoews.mason = {
-  "stylua",
-  "codespell",
-  "shellcheck",
-}
+oeyoews.mason = {}
 
 vim.keymap.set(
   "n",

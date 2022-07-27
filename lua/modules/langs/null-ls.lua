@@ -1,11 +1,3 @@
-if vim.fn.executable("codespell") == 0 then
-  if oeyoews.options.debug_mode then
-    local msg_null = "Please install codespell to use null-ls's codespell"
-    vim.notify(msg_null)
-  end
-  return
-end
-
 local null_ls = require("null-ls")
 local diagnostics = null_ls.builtins.diagnostics
 local completion = null_ls.builtins.completion

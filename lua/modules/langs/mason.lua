@@ -4,8 +4,24 @@ if oeyoews.options.enable_clangd then
 end
 
 -- to less error tip
-if vim.fn.executable("npm") == 1 then
+if vim.fn.executable("prettier") and vim.fn.executable("npm") == 1 then
   oeyoews.mason[#oeyoews.mason + 1] = "prettier"
+end
+
+local check_mason = function(bin)
+  if vim.fn.executable(bin) == 0 then
+    oeyoews.mason[#oeyoews.mason + 1] = bin
+  end
+end
+
+local tbl = {
+  "codespell",
+  "stylua",
+  "shellcheck",
+}
+
+for _, value in ipairs(tbl) do
+  check_mason(value)
 end
 
 -- @note: if some servers not installed, please run `checkhelth mason`
@@ -30,7 +46,9 @@ require("mason-tool-installer").setup({
 require("mason-lspconfig").setup({
   -- ensure_installed = oeyoews.servers,
   -- use automatic_installation replace ensure_installed
-  automatic_installation = true,
+  automatic_installation = {
+    exclude = { "clangd" },
+  },
 })
 
 vim.keymap.set("n", "<space>lm", "<cmd>Mason<cr>", { desc = "𝓜  Show mason" })
