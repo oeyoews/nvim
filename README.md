@@ -70,6 +70,9 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 
 ## Features
 
+<details>
+<summary>🚀</summary>
+
 - switch day-night nvim theme base time automatically
 - module manage nvim config, use pure lua
 - builtin plugins, like tokynight, notify and some telescope extensions .
@@ -84,6 +87,8 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 - customize snippets with ultisnips
 - backup plugin snapshot with packer
 - etc
+
+</details>
 
 ## TODO
 
