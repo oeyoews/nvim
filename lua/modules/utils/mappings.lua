@@ -2,7 +2,6 @@ vim.g.mapleader = " "
 
 local keymappings_set = {}
 
--- "nnoremap <space>fd <cmd>e ~/dotfiles/notes/draft/`date -I`.md<cr>
 --  @not use this silent = true
 vim.keymap.set({ "n", "v" }, "<space><space>", ":", { desc = "  cmd mode" })
 keymappings_set = {

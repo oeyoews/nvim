@@ -52,7 +52,7 @@
 
 |    <img src="img/vim.png" align="bottom" width=128/>    | <img src="img/example01.png" align="bottom" width=256/> |
 |:-------------------------------------------------------:|:-------------------------------------------------------:|
-| <img src="img/example02.png" align="bottom" width=256/> |                           etc                           |
+| <img src="img/example02.png" align="bottom" width=256/> |     <img src="img/03.png" align="bottom" width=256/>    |
 
 ## What's that
 
