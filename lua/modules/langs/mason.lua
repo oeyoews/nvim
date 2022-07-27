@@ -1,11 +1,14 @@
+-- clangd is too large, install literally slow
 if oeyoews.options.enable_clangd then
   oeyoews.servers[#oeyoews.servers + 1] = "clangd"
 end
 
+-- to less error tip
 if vim.fn.executable("npm") == 1 then
   oeyoews.mason[#oeyoews.mason + 1] = "prettier"
 end
 
+-- @note: if some servers not installed, please run `checkhelth mason`
 require("mason").setup({
   ui = {
     icons = {
