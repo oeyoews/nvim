@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://gitlab.com/oeyoews/nvim/compare/v6.0.0...v7.0.0) (2022-07-27)
+
+
+### Features
+
+* **formatter:** remove formatter ([f5061cf](https://gitlab.com/oeyoews/nvim/commit/f5061cf244823a3bb41dcab405b884596bc736a9))
+* show version use vim.inspect ([706a31a](https://gitlab.com/oeyoews/nvim/commit/706a31ae07879315dd110515674f2b3ff791cf10))
+
+
+### BREAKING CHANGES
+
+* **formatter:** use night feature for null-ls
+
 # [6.0.0](https://gitlab.com/oeyoews/nvim/compare/v5.43.0...v6.0.0) (2022-07-26)
 
 
