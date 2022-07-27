@@ -14,6 +14,9 @@ require("mason").setup({
       package_uninstalled = " ",
     },
   },
+  github = {
+    download_url_template = "https://github.com/%s/releases/download/%s/%s",
+  },
 })
 
 require("mason-tool-installer").setup({
