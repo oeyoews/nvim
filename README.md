@@ -63,7 +63,8 @@
 - install pynvim and clone this repository
 
 ```bash
-git clone --depth 1 https://gitlab.com/oeyoews/nvim.git ~/.config/nvim  # please your ~/.config/nvim folder or your nvim configuration
+# please backup your ~/.config/nvim folder or your nvim configuration firstly
+cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 ```
 
 ## Features
