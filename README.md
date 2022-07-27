@@ -88,6 +88,7 @@ git clone --depth 1 https://gitlab.com/oeyoews/nvim.git ~/.config/nvim  # please
 <details>
 <summary>🚀</summary>
 
+- [ ] integrate bump plugins, format
 - [ ] use function to replace find file
 - [ ] inlay hints
 - [ ] learn vim.api(nvim), such use  vim.fn.executable to replace os.executable

@@ -73,7 +73,7 @@ vim.keymap.set(
   "n",
   "<space>fm",
   "<cmd>find ~/.config/nvim/lua/user/modules.lua<cr>",
-  { desc = "𝐦  edit modules config" }
+  { desc = "𝐦 edit modules config" }
 )
 
 return M
