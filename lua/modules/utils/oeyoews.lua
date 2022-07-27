@@ -5,6 +5,7 @@ oeyoews.nvim_version = vim.version().minor
 
 -- @options
 oeyoews.options = {
+  first_install = false,
   enable_clangd = false,
   enable_cmdheight = false,
   -- @see lspconfig.lua

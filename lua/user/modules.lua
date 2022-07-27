@@ -16,7 +16,6 @@ M.files = {
   -- @utils
   ["utils"] = {
     "impatient",
-    "oeyoews",
     "functions",
     "pluginlist",
     "bootstrap",

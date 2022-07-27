@@ -1,6 +1,10 @@
 -- @module: pcall.lua
 -- @ref: init.lua
 
+if oeyoews.options.first_install then
+  return
+end
+
 local notify_ok, notify = pcall(require, "notify")
 local error_modules = {}
 local error_logs = {}
