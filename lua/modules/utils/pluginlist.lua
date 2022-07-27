@@ -1,7 +1,6 @@
 oeyoews.pluginlist = {
   "kyazdani42/nvim-tree.lua",
   "folke/lua-dev.nvim",
-  "mhartington/formatter.nvim",
   "mzlogin/vim-markdown-toc",
   "danymat/neogen",
   "lewis6991/impatient.nvim",

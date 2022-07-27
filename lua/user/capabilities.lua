@@ -26,8 +26,12 @@ vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.s
 -- for null-ls bug
 capabilities.offsetEncoding = { "utf-16" }
 -- @ref: https://github.com/NvChad/NvChad/commit/429ce94da17d850ea022cf7bf188ec676e4c7be7
--- capabilities.documentFormattingProvider = false
--- capabilities.documentRangeFormattingProvider = false
+
+--[[ if oeyoews.nvim_version < 8 then
+  capabilities.documentFormattingProvider = false
+  capabilities.documentRangeFormattingProvider = false
+  capabilities.document_formatting = false -- 0.7 and earlier
+end ]]
 
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 

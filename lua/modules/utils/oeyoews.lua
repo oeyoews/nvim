@@ -28,11 +28,13 @@ oeyoews.servers = {
   "sumneko_lua",
   "bashls",
   -- this install is very slow TODO
+  -- support formatting
   "clangd",
+  "cmake",
   -- support formatting
   "pylsp",
-  -- navic not support this @TODO
-  "cmake",
+  "yamlls",
+  -- "html" -- not support lint
 }
 
 -- extra binary
