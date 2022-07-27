@@ -11,7 +11,7 @@ end
 --- install packer.nvim firstly
 if fn.empty(fn.glob(install_path)) > 0 then
   -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#1e222a" })
-  oeyoews.options.first_install = true
+  vim.notify(os.date(" ﲊ %Y-%m-%d %H:%M:%S %A"))
   vim.notify([[   You have not inistall packer.nvim  Cloning packer.nvim ...]], "info")
   packer_bootstrap = fn.system({
     "git",
