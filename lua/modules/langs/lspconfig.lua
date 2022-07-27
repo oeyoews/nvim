@@ -17,7 +17,6 @@ local sumneko_lua_locale = sumneko_lua_locale_adjust()
 
 local on_attach = function(client, bufnr)
   require("user.lsp_format").on_attach(client)
-  -- navic.attach(client, bufnr)
 end
 
 -- @ref: https://github.com/lxyoucan/nvim/blob/c84b07f078d20d175a4a3b48a73705b61997bd9f/lua/lspconf/lua.lua#L85
@@ -48,7 +47,7 @@ local lsp_setup = function()
         lspconfig[lsp_server].setup(luadev)
       else
         lspconfig[lsp_server].setup(
-          -- settings.lsp_server
+        -- settings.lsp_server
           {
             -- settings = settings[lsp_server],
             on_attach = on_attach,
@@ -73,7 +72,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
   virtual_text = {
     spacing = 2,
     source = "always",
-    prefix = "", -- '●', '▎', 'x'       🖍️   
+    prefix = "",
   },
   float = {
     focusable = false,

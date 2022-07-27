@@ -17,7 +17,7 @@ local disabled_filetypes = {
 
 local sources = {
   -- completion.spell, -- ugly
-  -- formatting.stylua, -- this is comflict for lsp, choice
+  formatting.stylua, -- this is comflict for lsp, choice
   diagnostics.codespell.with({}),
   -- @markdown
   -- diagnostics.markdownlint.with({
@@ -28,12 +28,13 @@ local sources = {
   -- diagnostics.yamllint, -- need install yamllint
 }
 
+-- autoformatlly format
+-- local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
+
 null_ls.setup({
   update_in_insert = false,
   debounce = 500,
   sources = sources,
-  -- autoformatlly format
-  -- local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
   -- on_attach = function(client, bufnr)
   --   if client.supports_method("textDocument/formatting") then
   --     vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
