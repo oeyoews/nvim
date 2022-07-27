@@ -13,8 +13,6 @@ end
 
 local sumneko_lua_locale = sumneko_lua_locale_adjust()
 
--- local navic = require("nvim-navic")
-
 local on_attach = function(client, bufnr)
   require("user.lsp_format").on_attach(client)
 end

@@ -5,7 +5,6 @@ oeyoews.nvim_version = vim.version().minor
 
 -- @options
 oeyoews.options = {
-  enable_clangd = true,
   enable_cmdheight = false,
   -- @see lspconfig.lua
   enable_lsp = true,
@@ -29,18 +28,15 @@ oeyoews.servers = {
   "sumneko_lua",
   "bashls",
   "cmake",
-  -- support formatting
+  "clangd",
   "pylsp",
   "yamlls",
-  -- "html" -- not support lint
 }
 
 -- extra binary
 oeyoews.mason = {
-  -- for null-ls
   "stylua",
   "codespell",
-  -- bashls
   "shellcheck",
 }
 

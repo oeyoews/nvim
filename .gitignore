@@ -46,3 +46,5 @@ packer_compiled.lua
 
 /spell/
 /test/
+
+wget*
