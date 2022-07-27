@@ -1,3 +1,13 @@
+if vim.fn.executable("clangd") == 0 then
+  if oeyoews.options.enable_clangd then
+    oeyoews.servers[#oeyoews.servers + 1] = "clangd"
+  end
+end
+
+if vim.fn.executable("npm") == 1 then
+  oeyoews.mason[#oeyoews.mason + 1] = "prettier"
+end
+
 require("mason").setup({
   ui = {
     icons = {
