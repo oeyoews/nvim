@@ -46,7 +46,6 @@ M.files = {
     "treesitter", -- friendly highlight your code
     "mason",
     "cmp", -- config completion
-    "navic",
     "lspconfig", -- configurate lsp settings
     "null-ls", -- complete lsp configuration
     "formatter",

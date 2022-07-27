@@ -16,7 +16,7 @@ oeyoews.pluginlist = {
   -- @ORDER
   "lukas-reineke/indent-blankline.nvim",
   "akinsho/bufferline.nvim",
-  "SmiteshP/nvim-navic",
+  -- "SmiteshP/nvim-navic",
   "oeyoews/windline.nvim",
   -- @LANG
   {
@@ -79,5 +79,5 @@ vim.keymap.set(
   "n",
   "<space>fp",
   "<cmd>find ~/.config/nvim/lua/core/utils/pluginlist.lua<cr>",
-  { desc = "  pluginlist" }
+  { desc = " pluginlist" }
 )

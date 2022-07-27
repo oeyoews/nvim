@@ -1,5 +1,11 @@
 require("nvim-web-devicons").setup({
   override = {
+    zsh = {
+      icon = " ",
+      color = "yellow",
+      cterm_color = "67",
+      name = "Zsh",
+    },
     ["rb"] = {
       icon = "",
       color = "#701516",
