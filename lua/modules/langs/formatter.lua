@@ -2,49 +2,27 @@ local util = require("formatter.util")
 local defaults = require("formatter.defaults")
 
 local prettier = {
-  -- require("formatter.filetypes.json").prettier,
   util.copyf(defaults.prettier),
 }
--- Provides the Format and FormatWrite commands
 require("formatter").setup({
-  -- Enable or disable logging
   logging = true,
-  -- Set the log level
   log_level = vim.log.levels.WARN,
-  -- All formatter configurations are opt-in
   filetype = {
-    -- Formatter configurations for filetype "lua" go here
-    -- and will be executed in order
     -- TODO: how to less it [opt] == function xxx end
+    -- support format file
     lua = {
       require("formatter.filetypes.lua").stylua,
     },
+    -- support format file
     c = {
       require("formatter.filetypes.c").clangformat,
     },
-    -- cmake = {
-    --   -- bug formatter error
-    --   require("formatter.filetypes.cmake").cmakeformat,
-    -- },
-    --[[ go = {
-      require("formatter.filetypes.go").gofmt,
-    },
-    python = {
-      require("formatter.filetypes.python").autopep8, -- python3 -m pip install --upgrade autopep8
-    },
-    rust = {
-      require("formatter.filetypes.rust").rustfmt,
-    }, ]]
     html = prettier,
     css = prettier,
     javascript = prettier,
     json = prettier,
     yaml = prettier,
-    -- Use the special "*" filetype for defining formatter configurations on
-    -- any filetype
     ["*"] = {
-      -- "formatter.filetypes.any" defines default configurations for any
-      -- filetype
       require("formatter.filetypes.any").remove_trailing_whitespace,
     },
   },
