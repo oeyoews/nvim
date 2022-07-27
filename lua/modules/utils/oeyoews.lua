@@ -28,9 +28,6 @@ oeyoews.servers = {
   "vimls",
   "sumneko_lua",
   "bashls",
-  -- this install is very slow TODO
-  -- support formatting
-  "clangd",
   "cmake",
   -- support formatting
   "pylsp",
