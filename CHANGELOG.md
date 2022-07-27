@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.2.0](https://gitlab.com/oeyoews/nvim/compare/v7.1.2...v7.2.0) (2022-07-27)
+
+
+### Features
+
+* **mason:** add check bin ([882de52](https://gitlab.com/oeyoews/nvim/commit/882de5295d0ec0ccec0dbcb86833266bb489e923))
+
 ## [7.1.2](https://gitlab.com/oeyoews/nvim/compare/v7.1.1...v7.1.2) (2022-07-27)
 
 
