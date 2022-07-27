@@ -48,6 +48,7 @@ vim.cmd([[
 command! -nargs=1 Out ene|pu=execute('<args>')
 command! Scripts split | ene|pu=execute('scriptnames')
 command! -nargs=1 -complete=highlight HI ene|pu=execute('hi <args>')
+command! -nargs=1  Put ene|pu=execute('<args>')
 command! -nargs=?  -complete=color Themes colorscheme <args>
 
 augroup quickquit
