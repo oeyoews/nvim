@@ -1,12 +1,16 @@
-local g = vim.g
+local tbl = {
+  rnvimr_enable_ex = true,
+  rnvimr_enable_picker = true,
+  rnvimr_edit_cmd = "drop",
+  rnvimr_draw_border = false,
+  rnvimr_hide_gitignore = true,
+  rnvimr_enable_bw = true,
+  rnvimr_shadow_winblend = 70,
+}
 
-g.rnvimr_enable_ex = true
-g.rnvimr_enable_picker = true
-g.rnvimr_edit_cmd = "drop"
-g.rnvimr_draw_border = false
-g.rnvimr_hide_gitignore = true
-g.rnvimr_enable_bw = true
-g.rnvimr_shadow_winblend = 70
+for i, v in pairs(tbl) do
+  vim.g[i] = v
+end
 
 vim.cmd([[
 
@@ -76,4 +80,4 @@ let g:rnvimr_layout = {
 \ }
 ]])
 
-vim.keymap.set("n", "<space>ft", "<cmd>RnvimrToggle<cr>", { desc = " ranger" })
+vim.keymap.set("n", "<space>ft", "<cmd>RnvimrToggle<cr>", { desc = "𝓡 ranger" })

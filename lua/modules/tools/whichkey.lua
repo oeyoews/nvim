@@ -22,9 +22,9 @@ which_key.setup({
 
 which_key.register({
   f = { name = " FILE" },
-  b = { name = " BUFFER" },
-  w = { name = "者WINNOW" },
-  l = { name = " LANG" },
+  b = { name = "𝑩 BUFFER" },
+  w = { name = "𝓦 WINNOW" },
+  l = { name = "𝑳 LANG" },
   t = { name = " Tools" },
-  p = { name = "ﮣ Plugin" },
+  p = { name = " Plugin" },
 }, { prefix = "<space>" })

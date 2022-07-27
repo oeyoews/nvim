@@ -3,6 +3,53 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://gitlab.com/oeyoews/nvim/compare/v5.43.0...v6.0.0) (2022-07-26)
+
+
+### Features
+
+* **settings:** remove settings ([f3e4bd0](https://gitlab.com/oeyoews/nvim/commit/f3e4bd0c0f0ae8b9b2ba3ec2d83a181e28b4d838))
+
+
+### BREAKING CHANGES
+
+* **settings:** remove lspconfig settings.lua
+
+# [5.43.0](https://gitlab.com/oeyoews/nvim/compare/v5.42.1...v5.43.0) (2022-07-26)
+
+
+### Features
+
+* **global:** split global.lua ([de88f25](https://gitlab.com/oeyoews/nvim/commit/de88f2512850ddc355cf3b0df5b1af8384a78dd1))
+
+## [5.42.1](https://gitlab.com/oeyoews/nvim/compare/v5.42.0...v5.42.1) (2022-07-26)
+
+
+### Bug Fixes
+
+* **icon:** update icon adopt alacritty ([71ee542](https://gitlab.com/oeyoews/nvim/commit/71ee54241fda8c8db4ffa6ab6c8262170dcd2f50))
+
+# [5.42.0](https://gitlab.com/oeyoews/nvim/compare/v5.41.0...v5.42.0) (2022-07-26)
+
+
+### Features
+
+* **notify:** update notify ([6ece70c](https://gitlab.com/oeyoews/nvim/commit/6ece70c0b4f28de5d25da2866eba7f5f4305f0b7))
+
+# [5.41.0](https://gitlab.com/oeyoews/nvim/compare/v5.40.0...v5.41.0) (2022-07-26)
+
+
+### Features
+
+* **version:** use vim.version().minor ([b56eea1](https://gitlab.com/oeyoews/nvim/commit/b56eea12dfa86e2d09b089da42e53157e35bd0bd))
+
+# [5.40.0](https://gitlab.com/oeyoews/nvim/compare/v5.39.0...v5.40.0) (2022-07-26)
+
+
+### Features
+
+* **mason-lspconfig:** use mason-lspconfig test ([d096a6a](https://gitlab.com/oeyoews/nvim/commit/d096a6a87ef9ac3ddc74fb2cab60451eeb07404a))
+
 # [5.39.0](https://gitlab.com/oeyoews/nvim/compare/v5.38.0...v5.39.0) (2022-07-24)
 
 

@@ -13,8 +13,7 @@ end ]]
 
 -- ensure_installed = ensure_installed.parsers
 local disable_filetypes = {
-  -- "python",
-  -- "yml",
+  -- "python", "yml",
 }
 local rainbow_colors = {
   "#F7768E",

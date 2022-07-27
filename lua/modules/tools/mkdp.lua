@@ -8,6 +8,7 @@ g.mkdp_theme = "dark"
 
 ---[=[
 vim.cmd([[
+" todo: how to convert to lua
 let g:mkdp_filetypes = [ 'markdown', 'txt', 'html']
 
 augroup markdownpreview

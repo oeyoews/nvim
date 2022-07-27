@@ -1,6 +1,13 @@
 local fn = vim.fn
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 
+-- some neovim needs settings
+-- vim.fn.has("nvim-0.8.0")
+if oeyoews.nvim_version < 7 then
+  vim.notify("   Please update your neovim to latest")
+  return
+end
+
 --- install packer.nvim firstly
 if fn.empty(fn.glob(install_path)) > 0 then
   -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#1e222a" })
@@ -24,13 +31,13 @@ local compile_path = util.join_paths(fn.stdpath("data"), "compile", "packer_comp
 
 -- init packer, and it's some settings
 packer.init({
-  max_jobs = 4,
+  max_jobs = 8,
   auto_clean = false,
   display = {
     prompt_border = "single",
-    working_sym = "", -- The symbol for a plugin being installed/updated
-    error_sym = "", -- The symbol for a plugin with an error in installation/updating
-    done_sym = "",
+    working_sym = " ", -- The symbol for a plugin being installed/updated
+    error_sym = " ", -- The symbol for a plugin with an error in installation/updating
+    done_sym = " ",
     -- open_fn = function()
     --   return util.float({ border = "single" })
     -- end,
@@ -73,8 +80,9 @@ vim.keymap.set("n", "<space>pc", "<cmd>PackerClean<cr>", { desc = "  clean pl
 vim.keymap.set("n", "<space>pi", "<cmd>PackerInstall<cr>", { desc = "  install plugin" })
 vim.keymap.set("n", "<space>ps", "<cmd>PackerSync<cr>", { desc = "  update plugin" })
 vim.keymap.set("n", "<space>pr", "<cmd>PackerSnapshot rolling.json<cr>", { desc = " backup neovim plugin" })
-
---[[ vim.keymap.set("n", "<space>tP", function()
-  package.loaded['pack'] = nil
-  require('packer') -- loads an updated version of module 'modname'
-end, { desc = "reload packer" }) ]]
+vim.keymap.set(
+  "n",
+  "<space>fb",
+  "<cmd>find ~/.config/nvim/lua/core/utils/bootstrap.lua<cr>",
+  { desc = " jump bootstrap" }
+)

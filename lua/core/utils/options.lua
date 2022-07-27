@@ -1,8 +1,18 @@
 local g = vim.g
 local opt = vim.opt
 
-g.did_load_filetypes = 0
-g.do_filetype_lua = 1
+-- have "press enter or other command continue" error, and save shake for null-ls or normal conditions
+-- https://github.com/folke/which-key.nvim/issues/301
+if oeyoews.options.enable_cmdheight and oeyoews.nvim_version > 7 then
+  vim.opt.cmdheight = 0
+end
+
+-- use filetype.lua instead of filetype.vim. it's enabled by default in neovim 0.8 (nightly)
+if oeyoews.nvim_version < 8 then
+  g.did_load_filetypes = 0
+  g.do_filetype_lua = 1
+end
+
 g.python3_host_prog = "/usr/bin/python3"
 
 local default_options = {
@@ -94,6 +104,7 @@ end
 -- opt.clipboard = "unnamedplus"
 -- set shadafile(neovim) path
 vim.schedule(function()
-  vim.opt.shadafile = vim.fn.expand("$HOME") .. "/.local/share/nvim/shada/main.shada"
+  -- vim.opt.shadafile = vim.fn.expand("$HOME") .. "/.local/share/nvim/shada/main.shada"
+  vim.opt.shadafile = vim.fn.stdpath(oeyoews.nvim_version > 7 and "state" or "data") .. "/shada/main.shada"
   vim.cmd([[ silent! rsh ]])
 end)

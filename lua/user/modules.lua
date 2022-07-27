@@ -3,8 +3,7 @@
 
 local M = {}
 
---- bootstrap firstly
--- this entry is different
+--- bootstrap firstly, this entry is different
 M.utils = {
   "utils",
 }
@@ -21,9 +20,10 @@ M.files = {
   -- @utils
   ["utils"] = {
     "impatient",
-    "global",
+    "oeyoews",
+    "functions",
+    "pluginlist",
     "bootstrap",
-    "night",
     "disable",
     "options",
     "mappings",
@@ -46,7 +46,6 @@ M.files = {
     "treesitter", -- friendly highlight your code
     "mason",
     "cmp", -- config completion
-    "navic",
     "lspconfig", -- configurate lsp settings
     "null-ls", -- complete lsp configuration
     "formatter",
@@ -72,21 +71,13 @@ M.files = {
     "icon_picker", -- select so much icons
     "ranger", -- use ranger in neovim
   },
-
-  -- @deprecate_config
-  ["misc"] = {
-    -- "colorizer", -- show color in neovim
-    -- "project",
-    -- "highstr", -- highlight select text
-    -- "neorg", -- replace emace org mode
-    -- "toggleterm", -- embed terminal
-    -- "calendar", -- GTD?
-    -- "venn", -- drawing diagram
-    -- "color_picker", -- color picker
-    -- "hlargs",
-    -- "winshift",
-    -- "trouble",
-  },
 }
+
+vim.keymap.set(
+  "n",
+  "<space>fm",
+  "<cmd>find ~/.config/nvim/lua/user/modules.lua<cr>",
+  { desc = "𝐦  edit modules config" }
+)
 
 return M

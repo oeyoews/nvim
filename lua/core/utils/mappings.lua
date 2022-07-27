@@ -17,7 +17,7 @@ keymappings_set = {
   { "<space>yy", '"+y', " past to system", "v" },
   { "<esc>", ":noh<cr><C-L><esc>", " clear highlight and screen" },
   { "<space>fu", ":FZF<cr>", "fzf" },
-  { "<space>bb", ":e `mktemp -t neovim-scratch-XXXXXX`<cr>", " edit temp file" },
+  { "<space>bb", ":e `mktemp -t nvim.scr.XXX`<cr>", " edit temp file" },
   { "<space>ba", ":%bw<cr>", " remove all buffers" },
   { "<space>bs", ":e /tmp/scratch.txt<cr>", " edit scratch.txt" },
   { "H", "0", " jump head of line", { "n", "v" } },
@@ -29,8 +29,8 @@ keymappings_set = {
   { "U", "<C-r>", "undo change" },
   { "<space>bd", "<cmd>bdelete<cr>", " delete current buffer" },
   { "<space>qq", "<cmd>q<cr>", "quit neovim" },
-  { "<space><tab>", "<cmd>bp<cr>", "  goto previout buffer" },
-  { "<space>bn", "<cmd>bn<cr>", "  goto next buffer" },
+  { "<space><tab>", "<cmd>bp<cr>", " goto previout buffer" },
+  { "<space>bn", "<cmd>bn<cr>", " goto next buffer" },
   { "<space>bx", "<cmd>ene<cr>", "🪐 new buffer" },
   { "<leader>w", "<C-W>", "map window prefix" },
   { "<leader>fs", ":w<cr>", " save file" },
@@ -42,8 +42,6 @@ keymappings_set = {
 
 -- core mapping
 oeyoews.kmap(keymappings_set)
--- load custom_map
-require("user.keybindings").setup()
 
 -- autocmd todo
 vim.cmd([[
@@ -91,4 +89,17 @@ end, { desc = " toggle statusline" })
 
 vim.keymap.set("n", "<space>tk", function()
   vim.fn["Terminal"]()
-end, { desc = "  terminal" })
+end, { desc = "  terminal" })
+
+vim.keymap.set(
+  "n",
+  "<space>fi",
+  "<cmd>find ~/.config/nvim/init.lua<cr>",
+  { desc = "ﳐ edit init.lua(main) neovim config" }
+)
+vim.keymap.set("n", "<space>hd", function()
+  print(os.date("%Y-%m-%d %H:%M:%S %A %j days "))
+end, { desc = "愈show time" })
+vim.keymap.set("n", "<space>helo", function()
+  vim.notify("  Hello, Neovim", "info", { title = "welcome" })
+end, { desc = " hello, neovim" })

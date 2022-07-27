@@ -9,7 +9,7 @@ telescope.setup({
         ["q"] = actions.close,
       },
     },
-    prompt_prefix = " ",
+    prompt_prefix = " ",
     selection_strategy = "reset",
     sorting_strategy = "ascending",
     layout_strategy = "horizontal",

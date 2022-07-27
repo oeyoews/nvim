@@ -88,6 +88,7 @@ git clone --depth 1 https://gitlab.com/oeyoews/nvim.git ~/.config/nvim  # please
 <details>
 <summary>🚀</summary>
 
+- [ ] use function to replace find file
 - [ ] inlay hints
 - [ ] learn vim.api(nvim), such use  vim.fn.executable to replace os.executable
 - [ ] link null-ls or mason.nvim make a logger file
