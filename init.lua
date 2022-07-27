@@ -1,5 +1,3 @@
-require("modules.utils.oeyoews")
-
 --   Main
 local files = require("user.modules").files
 local modules = require("user.modules").modules
