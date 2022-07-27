@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.1](https://gitlab.com/oeyoews/nvim/compare/v7.1.0...v7.1.1) (2022-07-27)
+
+
+### Bug Fixes
+
+* **lsp:** remove clangd setting ([f7a53d8](https://gitlab.com/oeyoews/nvim/commit/f7a53d86d29ef1dd32e6508f4faf70d0522018fb))
+
 # [7.1.0](https://gitlab.com/oeyoews/nvim/compare/v7.0.0...v7.1.0) (2022-07-27)
 
 
