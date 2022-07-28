@@ -1,33 +1,18 @@
 local null_ls = require("null-ls")
 local diagnostics = null_ls.builtins.diagnostics
-local completion = null_ls.builtins.completion
 local formatting = null_ls.builtins.formatting
 
-local disabled_filetypes = {
-  -- "jsonc", "json", "html", "c", "java", "javascript",
-}
-
 local sources = {
-  -- completion.spell, -- ugly
   formatting.stylua, -- this is comflict for lsp, choice
   formatting.prettier,
   diagnostics.codespell.with({}),
-  -- @markdown
-  -- diagnostics.markdownlint.with({
-  --   filetypes = {
-  --     "markdown",
-  --   },
-  -- }), -- need install markdownlint
-  -- diagnostics.yamllint, -- need install yamllint
 }
 
--- autoformatlly format
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 local lsp_formatting = function(bufnr)
   vim.lsp.buf.format({
     filter = function(client)
-      -- apply whatever logic you want (in this example, we'll only use null-ls)
       return client.name == "null-ls"
     end,
     bufnr = bufnr,

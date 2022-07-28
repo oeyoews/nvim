@@ -121,6 +121,7 @@ function get_tag()
     k = k + 1
   end
   f:close()
+  -- maybe io.read
   return files
 end
 
