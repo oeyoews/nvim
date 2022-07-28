@@ -48,6 +48,7 @@ M.files = {
 
   -- @TOOLS
   tools = {
+    "vim_startuptime",
     "nvim_tree",
     "neogen",
     "todo_comments",
@@ -57,7 +58,6 @@ M.files = {
     "comment", -- fast comment your code
     "autopairs", -- automatically match your half
     "mkdp", -- open markdown preview in your browser
-    "persistence", -- session manager
     "tabout", -- jump brackets base nvim-treesitter
     "telescope", -- can do anything
     "whichkey", -- show your key bindings
