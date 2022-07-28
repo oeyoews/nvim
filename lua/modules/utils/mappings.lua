@@ -98,16 +98,24 @@ vim.keymap.set(
   { desc = "ﳐ edit init.lua(main) neovim config" }
 )
 vim.keymap.set("n", "<space>hd", function()
-  print(os.date("%Y-%m-%d %H:%M:%S %A %j days "))
+  vim.notify(os.date("%Y-%m-%d %H:%M:%S %A  Day %j"), "info", { title = "Current Date" })
 end, { desc = "愈show time" })
 vim.keymap.set("n", "<space>helo", function()
   vim.notify("  Hello, Neovim", "info", { title = "welcome" })
 end, { desc = " hello, neovim" })
+
+local get_nvim_version = function()
+  local major = vim.version().major
+  local minor = vim.version().minor
+  local patch = vim.version().patch
+  return string.format(" %s.%s.%s", major, minor, patch)
+end
+
 vim.keymap.set("n", "<space>hv", function()
-  return vim.notify(vim.inspect(vim.version()), "info", { title = "nvim version" })
+  return vim.notify(get_nvim_version(), "info", { title = "Neovim Version" })
 end, { desc = "𝑽 show nvim version" })
 
-function get_tag()
+local get_tag = function()
   local files = {}
   local tmpfile = os.tmpname()
   os.execute("cd ~/.config/nvim/ && git describe --tags `git rev-list --tags --max-count=1`" .. " > " .. tmpfile)
@@ -126,7 +134,7 @@ function get_tag()
 end
 
 vim.keymap.set("n", "<space>ht", function()
-  vim.notify(" " .. get_tag()[1], "info", { title = "nvim custom version" })
+  vim.notify(" " .. get_tag()[1], "info", { title = "Config Version" })
 end, { desc = " show git latest tag" })
 
 vim.keymap.set("n", "<space>so", "<cmd>so %<cr>", { desc = " refresh current file" })
