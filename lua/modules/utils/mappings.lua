@@ -106,3 +106,24 @@ end, { desc = " hello, neovim" })
 vim.keymap.set("n", "<space>hv", function()
   return vim.notify(vim.inspect(vim.version()), "info", { title = "nvim version" })
 end, { desc = "𝑽 show nvim version" })
+
+function GetFiles()
+  local files = {}
+  local tmpfile = os.tmpname() -- "/tmp/xyzexxx.txt"
+  os.execute("cd ~/.config/nvim/ && git describe --tags `git rev-list --tags --max-count=1`" .. " > " .. tmpfile)
+  local f = io.open(tmpfile)
+  if not f then
+    return files
+  end
+  local k = 1
+  for line in f:lines() do
+    files[k] = line
+    k = k + 1
+  end
+  f:close()
+  return files
+end
+
+vim.keymap.set("n", "<space>ht", function()
+  vim.notify(" " .. GetFiles()[1], "info", { title = "git latest tag" })
+end, { desc = " show git latest tag" })
