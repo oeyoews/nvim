@@ -107,10 +107,9 @@ vim.keymap.set("n", "<space>hv", function()
   return vim.notify(vim.inspect(vim.version()), "info", { title = "nvim version" })
 end, { desc = "𝑽 show nvim version" })
 
-function GetFiles()
+function get_tag()
   local files = {}
-  -- local tmpfile = os.tmpname() -- "/tmp/xyzexxx.txt"
-  local tmpfile = "/tmp/nvim_tag.txt" -- "/tmp/xyzexxx.txt"
+  local tmpfile = os.tmpname()
   os.execute("cd ~/.config/nvim/ && git describe --tags `git rev-list --tags --max-count=1`" .. " > " .. tmpfile)
   local f = io.open(tmpfile)
   if not f then
@@ -126,7 +125,7 @@ function GetFiles()
 end
 
 vim.keymap.set("n", "<space>ht", function()
-  vim.notify(" " .. GetFiles()[1], "info", { title = "nvim custom version" })
+  vim.notify(" " .. get_tag()[1], "info", { title = "nvim custom version" })
 end, { desc = " show git latest tag" })
 
 vim.keymap.set("n", "<space>so", "<cmd>so %<cr>", { desc = " refresh current file" })
