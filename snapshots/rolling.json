@@ -1,12 +1,9 @@
 {
-  "persistence.nvim": {
-    "commit": "77cf5a6"
-  },
   "tabout.nvim": {
     "commit": "f4e6e65"
   },
   "packer.nvim": {
-    "commit": "ee56b9b"
+    "commit": "de10915"
   },
   "nvim-lspconfig": {
     "commit": "ba25b74"
@@ -29,8 +26,8 @@
   "bufferline.nvim": {
     "commit": "c4dd9b4"
   },
-  "nvim-autopairs": {
-    "commit": "972a797"
+  "cmp-nvim-lsp": {
+    "commit": "affe808"
   },
   "nvim-colorizer.lua": {
     "commit": "36c610a"
@@ -41,11 +38,11 @@
   "gitsigns.nvim": {
     "commit": "8b817e7"
   },
-  "indent-blankline.nvim": {
-    "commit": "4a58fe6"
-  },
   "dressing.nvim": {
     "commit": "e9d0de4"
+  },
+  "indent-blankline.nvim": {
+    "commit": "c15bbe9"
   },
   "lspkind-nvim": {
     "commit": "57e5b5d"
@@ -53,11 +50,11 @@
   "vim-quickrun": {
     "commit": "50f9ced"
   },
-  "clipboard-image.nvim": {
-    "commit": "ed2ddad"
+  "telescope.nvim": {
+    "commit": "b5833a6"
   },
   "vim-startuptime": {
-    "commit": "4c9fedb"
+    "commit": "8b608d2"
   },
   "Comment.nvim": {
     "commit": "78ab4e9"
@@ -69,7 +66,7 @@
     "commit": "21f02b6"
   },
   "mason.nvim": {
-    "commit": "cfd789c"
+    "commit": "269ee22"
   },
   "icon-picker.nvim": {
     "commit": "fddd49e"
@@ -77,8 +74,8 @@
   "todo-comments.nvim": {
     "commit": "98b1ebf"
   },
-  "cmp-nvim-lsp": {
-    "commit": "affe808"
+  "nvim-autopairs": {
+    "commit": "972a797"
   },
   "nvim-treesitter-refactor": {
     "commit": "75f5895"
@@ -96,7 +93,7 @@
     "commit": "f5c3193"
   },
   "nvim-treesitter": {
-    "commit": "42891dc"
+    "commit": "36ee489"
   },
   "mason-lspconfig.nvim": {
     "commit": "ad3b109"
@@ -104,8 +101,8 @@
   "impatient.nvim": {
     "commit": "2aa872d"
   },
-  "telescope.nvim": {
-    "commit": "b5833a6"
+  "clipboard-image.nvim": {
+    "commit": "ed2ddad"
   },
   "rnvimr": {
     "commit": "5877509"
@@ -120,7 +117,10 @@
     "commit": "c5a0c39"
   },
   "nvim-tree.lua": {
-    "commit": "64cc3c1"
+    "commit": "2928f8f"
+  },
+  "persisted.nvim": {
+    "commit": "0f5f24f"
   },
   "fidget.nvim": {
     "commit": "492492e"
@@ -136,9 +136,6 @@
   },
   "vim-snippets": {
     "commit": "c5d977c"
-  },
-  "formatter.nvim": {
-    "commit": "27ea7a8"
   },
   "markdown-preview.nvim": {
     "commit": "02cc387"
