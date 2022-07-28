@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.5.0](https://gitlab.com/oeyoews/nvim/compare/v7.4.0...v7.5.0) (2022-07-28)
+
+
+### Features
+
+* **tag:** show tag ([9c18a90](https://gitlab.com/oeyoews/nvim/commit/9c18a90463d95cc778bcd063216a72bcddfa654a))
+
 # [7.4.0](https://gitlab.com/oeyoews/nvim/compare/v7.3.0...v7.4.0) (2022-07-28)
 
 
