@@ -50,11 +50,11 @@ vim.keymap.set("n", "<space>tu", function()
 end, { desc = " load and start telescope ultisnips" })
 
 vim.keymap.set("n", "<space>bm", function()
-  require("telescope").extensions.notify.notify()
+  return require("telescope").extensions.notify.notify()
 end, { desc = " () notify" })
 
 vim.keymap.set("n", "<space>tp", function()
-  require("telescope").extensions.packer.packer()
+  return require("telescope").extensions.packer.packer()
 end, { desc = "  packer" })
 
 vim.cmd([[

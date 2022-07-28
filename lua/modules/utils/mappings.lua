@@ -33,7 +33,7 @@ keymappings_set = {
   { "<space>bx", "<cmd>ene<cr>", "🪐 new buffer" },
   { "<leader>w", "<C-W>", "map window prefix" },
   { "<leader>fs", ":w<cr>", " save file" },
-  { "<leader>bM", ":messages<cr>", "ﮠ messages" },
+  { "<leader>bM", ":messages<cr>", " messages" },
   { "<leader>tn", ":setlocal invnumber<cr>", "  toggle show number" },
   { "<leader>ss", ":setlocal invspell<cr>", "𝒮 toggle spell" },
   { "<leader>tl", ":setlocal invlist<cr>", "  toggle list" },
@@ -104,5 +104,5 @@ vim.keymap.set("n", "<space>helo", function()
   vim.notify("  Hello, Neovim", "info", { title = "welcome" })
 end, { desc = " hello, neovim" })
 vim.keymap.set("n", "<space>hv", function()
-  return vim.notify(vim.inspect(vim.version()))
+  return vim.notify(vim.inspect(vim.version()), "info", { title = "nvim version" })
 end, { desc = "𝑽 show nvim version" })
