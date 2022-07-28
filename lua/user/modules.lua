@@ -48,6 +48,7 @@ M.files = {
 
   -- @TOOLS
   tools = {
+    "persisted",
     "vim_startuptime",
     "nvim_tree",
     "neogen",

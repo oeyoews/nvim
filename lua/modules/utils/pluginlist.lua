@@ -47,7 +47,7 @@ oeyoews.pluginlist = {
   "lewis6991/gitsigns.nvim",
   "numToStr/Comment.nvim",
   "windwp/nvim-autopairs",
-  "rmagatti/auto-session",
+  "olimorris/persisted.nvim",
   "oeyoews/tabout.nvim",
   "folke/which-key.nvim",
   "ziontee113/icon-picker.nvim",
@@ -56,10 +56,7 @@ oeyoews.pluginlist = {
   "cappyzawa/trim.nvim",
   "ekickx/clipboard-image.nvim",
   "thinca/vim-quickrun",
-  {
-    "oeyoews/vim-startuptime",
-    branch = "dev",
-  },
+  "dstein64/vim-startuptime",
   {
     "iamcco/markdown-preview.nvim",
     run = "cd app && npm install",
