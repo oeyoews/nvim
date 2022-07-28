@@ -98,7 +98,7 @@ vim.keymap.set(
   { desc = "ﳐ edit init.lua(main) neovim config" }
 )
 vim.keymap.set("n", "<space>hd", function()
-  vim.notify(os.date("%Y-%m-%d %H:%M:%S %A  Day %j"), "info", { title = "Current Date" })
+  vim.notify(os.date("%Y-%m-%d %H:%M:%S %A Day %j"), "info", { title = "Current Date" })
 end, { desc = "愈show time" })
 vim.keymap.set("n", "<space>helo", function()
   vim.notify("  Hello, Neovim", "info", { title = "welcome" })
