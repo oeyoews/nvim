@@ -5,7 +5,7 @@ oeyoews.nvim_version = vim.version().minor
 
 -- @options
 oeyoews.options = {
-  enable_clangd = true,
+  enable_clangd = false,
   enable_cmdheight = false,
   -- @see lspconfig.lua
   enable_lsp = true,

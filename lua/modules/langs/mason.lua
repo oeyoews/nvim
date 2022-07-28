@@ -1,4 +1,10 @@
+local mason_exclude = {}
+
 -- clangd is too large, install literally slow, use system
+if vim.fn.executable("clangd") == 1 then
+  mason_exclude[#mason_exclude + 1] = "clangd"
+end
+
 if oeyoews.options.enable_clangd then
   oeyoews.servers[#oeyoews.servers + 1] = "clangd"
 end
@@ -47,7 +53,7 @@ require("mason-lspconfig").setup({
   -- ensure_installed = oeyoews.servers,
   -- use automatic_installation replace ensure_installed
   automatic_installation = {
-    exclude = { "clangd" }, -- if this system no clangd, you need comment this line to install clangd by mason
+    exclude = mason_exclude, -- if this system no clangd, you need comment this line to install clangd by mason
   },
 })
 
