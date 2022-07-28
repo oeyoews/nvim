@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.4.0](https://gitlab.com/oeyoews/nvim/compare/v7.3.0...v7.4.0) (2022-07-28)
+
+
+### Features
+
+* **persisted:** use persisted replace auto_session ([efb283d](https://gitlab.com/oeyoews/nvim/commit/efb283dcd6d91c5ad76ab3855cafb9ce777e21dc))
+
 # [7.3.0](https://gitlab.com/oeyoews/nvim/compare/v7.2.0...v7.3.0) (2022-07-28)
 
 
