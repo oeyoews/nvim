@@ -1,4 +1,4 @@
--- clangd is too large, install literally slow
+-- clangd is too large, install literally slow, use system
 if oeyoews.options.enable_clangd then
   oeyoews.servers[#oeyoews.servers + 1] = "clangd"
 end
@@ -47,7 +47,7 @@ require("mason-lspconfig").setup({
   -- ensure_installed = oeyoews.servers,
   -- use automatic_installation replace ensure_installed
   automatic_installation = {
-    exclude = { "clangd" },
+    exclude = { "clangd" }, -- if this system no clangd, you need comment this line to install clangd by mason
   },
 })
 
