@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.5.1](https://gitlab.com/oeyoews/nvim/compare/v7.5.0...v7.5.1) (2022-07-29)
+
+
+### Bug Fixes
+
+* **os.remove:** use os.remove to version tag ([df86547](https://gitlab.com/oeyoews/nvim/commit/df865478ab1a9216ed17b715060b73017eabef31))
+
 # [7.5.0](https://gitlab.com/oeyoews/nvim/compare/v7.4.0...v7.5.0) (2022-07-28)
 
 
