@@ -23,6 +23,7 @@ M.setup = function(dir, load_module, load_files)
     end
   end
 
+  -- use io.write to store error messages
   if #error_modules ~= 0 then
     if oeyoews.options.debug_mode then
       error_modules[#error_modules + 1] = error_logs

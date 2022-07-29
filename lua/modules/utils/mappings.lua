@@ -84,24 +84,23 @@ endfunction
 ]])
 
 vim.keymap.set("n", "<space>tS", function()
-  vim.fn["Sline"]()
+  return vim.fn["Sline"]()
 end, { desc = " toggle statusline" })
 
 vim.keymap.set("n", "<space>tk", function()
-  vim.fn["Terminal"]()
+  return vim.fn["Terminal"]()
 end, { desc = "  terminal" })
 
-vim.keymap.set(
-  "n",
-  "<space>fi",
-  "<cmd>find ~/.config/nvim/init.lua<cr>",
-  { desc = "ﳐ edit init.lua(main) neovim config" }
-)
+vim.keymap.set("n", "<space>fi", function()
+  local fi = string.format("%s/init.lua", vim.fn.stdpath("config"))
+  return vim.cmd(([[find %s]]):format(fi))
+end, { silent = true, desc = "ﳐ edit init.lua(main) neovim config" })
+
 vim.keymap.set("n", "<space>hd", function()
-  vim.notify(os.date("%Y-%m-%d %H:%M:%S %A Day %j"), "info", { title = "Current Date" })
+  return vim.notify(os.date("%Y-%m-%d %H:%M:%S %A Day %j"), "info", { title = "Current Date" })
 end, { desc = "愈show time" })
 vim.keymap.set("n", "<space>helo", function()
-  vim.notify("  Hello, Neovim", "info", { title = "welcome" })
+  return vim.notify("  Hello, Neovim", "info", { title = "welcome" })
 end, { desc = " hello, neovim" })
 
 local get_nvim_version = function()
@@ -117,9 +116,11 @@ end, { desc = "𝑽 show nvim version" })
 
 local get_tag = function()
   local files = {}
-  local tmpfile = os.tmpname()
-  os.execute("cd ~/.config/nvim/ && git describe --tags `git rev-list --tags --max-count=1`" .. " > " .. tmpfile)
-  local f = io.open(tmpfile)
+  local config_version_tmp = os.tmpname()
+  os.execute(
+    "cd ~/.config/nvim/ && git describe --tags `git rev-list --tags --max-count=1`" .. " > " .. config_version_tmp
+  )
+  local f = io.open(config_version_tmp)
   if not f then
     return files
   end
@@ -129,12 +130,14 @@ local get_tag = function()
     k = k + 1
   end
   f:close()
-  -- maybe io.read
+  os.remove(config_version_tmp)
   return files
 end
 
 vim.keymap.set("n", "<space>ht", function()
-  vim.notify(" " .. get_tag()[1], "info", { title = "Config Version" })
+  return vim.notify(" " .. get_tag()[1], "info", { title = "Config Version" })
 end, { desc = " show git latest tag" })
 
 vim.keymap.set("n", "<space>so", "<cmd>so %<cr>", { desc = " refresh current file" })
+
+vim.keymap.set("n", "<space>pl", ":e `mktemp`.lua<cr>", { desc = "🎮lua playground", silent = true })

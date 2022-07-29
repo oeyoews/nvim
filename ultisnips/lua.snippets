@@ -31,5 +31,5 @@ snippet module_comment "module comment"
 endsnippet
 
 snippet kmap "set keymap" bA
-vim.keymap.set("n", "<space>$1", "<cmd>$2<cr>", { desc = "$0" })
+vim.keymap.set("n", "<space>$1", "<cmd>$2<cr>", { silent=true, desc = "$0" })
 endsnippet

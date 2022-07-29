@@ -1,5 +1,5 @@
 local fn = vim.fn
-local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
+local install_path = string.format("%s/site/pack/packer/start/packer.nvim", fn.stdpath("data"))
 
 -- some neovim needs settings
 -- vim.fn.has("nvim-0.8.0")
