@@ -33,33 +33,196 @@
 </div>
 <hr>
 
-# Toc
+# 🧭 Toc
 
 <!-- vim-markdown-toc Marked -->
 
-- [Screenshots](#screenshots)
-- [What's that](#what's-that)
-- [Install](#install)
-- [Features](#features)
-- [TODO](#todo)
-- [More details](#more-details)
-- [Wiki](#wiki)
-- [Links](#links)
+- [🍾 Screenshots](#🍾-screenshots)
+- [💡 What's that](#💡-what's-that)
+- [📂 File Struct](#📂-file-struct)
+- [⬇️ Install](#⬇️-install)
+- [🚀 Features](#🚀-features)
+- [✅ TODO](#✅-todo)
+- [📖 Wiki](#📖-wiki)
+- [🔗 Links](#🔗-links)
 
 <!-- vim-markdown-toc -->
 
-## Screenshots
+## 🍾 Screenshots
 
 | <img src="img/vim.png" align="bottom" width=128/> | <img src="img/01.png" align="bottom" width=256/> | <img src="img/02.png" align="bottom" width=256/> |
 | :-----------------------------------------------: | :----------------------------------------------: | ------------------------------------------------ |
 | <img src="img/03.png" align="bottom" width=256/>  | <img src="img/04.png" align="bottom" width=256/> | <img src="img/05.png" align="bottom" width=256/> |
 | <img src="img/06.png" align="bottom" width=256/>  | <img src="img/07.png" align="bottom" width=256/> | <img src="img/08.png" align="bottom" width=256/> |
 
-## What's that
+## 💡 What's that
 
-💡 A personal neovim configuration
+A personal neovim configuration
 
-## Install
+## 📂 File Struct
+
+<details>
+<summary>File Tree</summary>
+
+```bash
+├── builtin
+│   ├── notify
+│   │   └── lua
+│   │       └── notify
+│   │           ├── animate
+│   │           │   ├── init.lua
+│   │           │   └── spring.lua
+│   │           ├── config
+│   │           │   ├── highlights.lua
+│   │           │   └── init.lua
+│   │           ├── init.lua
+│   │           ├── render
+│   │           │   ├── base.lua
+│   │           │   ├── default.lua
+│   │           │   ├── init.lua
+│   │           │   └── minimal.lua
+│   │           ├── service
+│   │           │   ├── buffer
+│   │           │   │   ├── highlights.lua
+│   │           │   │   └── init.lua
+│   │           │   ├── init.lua
+│   │           │   └── notification.lua
+│   │           ├── stages
+│   │           │   ├── fade_in_slide_out.lua
+│   │           │   ├── fade.lua
+│   │           │   ├── init.lua
+│   │           │   ├── slide.lua
+│   │           │   ├── static.lua
+│   │           │   └── util.lua
+│   │           ├── util
+│   │           │   ├── init.lua
+│   │           │   └── queue.lua
+│   │           └── windows
+│   │               └── init.lua
+│   ├── telescope
+│   │   └── lua
+│   │       └── telescope
+│   │           └── _extensions
+│   │               ├── notify.lua
+│   │               └── ultisnips.lua
+│   └── tokyonight
+│       └── lua
+│           └── tokyonight
+│               ├── colors.lua
+│               ├── config.lua
+│               ├── hsluv.lua
+│               ├── init.lua
+│               ├── theme.lua
+│               └── util.lua
+├── CHANGELOG.md
+├── _config.yml
+├── free
+│   ├── calendar.lua
+│   ├── colorizer.lua
+│   ├── color_picker.lua
+│   ├── formatter.lua
+│   ├── highstr.lua
+│   ├── hlargs.lua
+│   ├── lspinstall.lua
+│   ├── navic.lua
+│   ├── neorg.lua
+│   ├── parsers.lua
+│   ├── project.lua
+│   ├── toggleterm.lua
+│   ├── trouble.lua
+│   ├── venn.lua
+│   └── winshift.lua
+├── img
+│   ├── 01.png
+│   ├── 02.png
+│   ├── 03.png
+│   ├── 04.png
+│   ├── 05.png
+│   ├── 06.png
+│   ├── 07.png
+│   ├── 08.png
+│   └── vim.png
+├── init.lua
+├── LICENSE
+├── lua
+│   ├── modules
+│   │   ├── langs
+│   │   │   ├── cmp.lua
+│   │   │   ├── lspconfig.lua
+│   │   │   ├── mason.lua
+│   │   │   ├── null-ls.lua
+│   │   │   └── treesitter.lua
+│   │   ├── tools
+│   │   │   ├── autopairs.lua
+│   │   │   ├── comment.lua
+│   │   │   ├── gitsigns.lua
+│   │   │   ├── hop.lua
+│   │   │   ├── icon_picker.lua
+│   │   │   ├── indent.lua
+│   │   │   ├── mkdp.lua
+│   │   │   ├── neogen.lua
+│   │   │   ├── nvim_tree.lua
+│   │   │   ├── persisted.lua
+│   │   │   ├── persistence.lua
+│   │   │   ├── quickrun.lua
+│   │   │   ├── ranger.lua
+│   │   │   ├── tabout.lua
+│   │   │   ├── telescope.lua
+│   │   │   ├── todo_comments.lua
+│   │   │   ├── trim.lua
+│   │   │   ├── vim_startuptime.lua
+│   │   │   └── whichkey.lua
+│   │   ├── ui
+│   │   │   ├── bufferline.lua
+│   │   │   ├── custom.lua
+│   │   │   ├── fidget.lua
+│   │   │   ├── lspsaga.lua
+│   │   │   ├── notify.lua
+│   │   │   ├── tokyonight.lua
+│   │   │   ├── web_icons.lua
+│   │   │   └── windline.lua
+│   │   └── utils
+│   │       ├── bootstrap.lua
+│   │       ├── disable.lua
+│   │       ├── functions.lua
+│   │       ├── impatient.lua
+│   │       ├── mappings.lua
+│   │       ├── oeyoews.lua
+│   │       ├── options.lua
+│   │       └── pluginlist.lua
+│   └── user
+│       ├── capabilities.lua
+│       ├── lsp_format.lua
+│       ├── modules.lua
+│       └── pcall.lua
+├── package.json
+├── README.md
+├── renovate.json
+├── snapshots
+│   └── rolling.json
+├── ultisnips
+│   ├── all.snippets
+│   ├── c.snippets
+│   ├── gitcommit.snippets
+│   ├── go.snippets
+│   ├── html.snippets
+│   ├── json.snippets
+│   ├── lua.snippets
+│   ├── markdown.snippets
+│   ├── sh.snippets
+│   ├── snippets.snippets
+│   ├── sshconfig.snippets
+│   ├── toml.snippets
+│   ├── vim.snippets
+│   └── yaml.snippets
+└── yarn.lock
+
+30 directories, 121 files
+```
+
+</details>
+
+## ⬇️ Install
 
 - NOTE: just support nightly
 - install pynvim and nightly neovim and clone this repository
@@ -69,10 +232,10 @@
 cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 ```
 
-## Features
+## 🚀 Features
 
 <details>
-<summary>🚀</summary>
+<summary>expand</summary>
 
 - switch day-night nvim theme base time automatically
 - module manage nvim config, use pure lua
@@ -91,10 +254,10 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 
 </details>
 
-## TODO
+## ✅ TODO
 
 <details>
-<summary>🚀</summary>
+<summary>expand</summary>
 
 - [ ] update startuptime plugin to suit night
 - [ ] integrate bump plugins, format
@@ -147,13 +310,11 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 
 </details>
 
-## More details
+## 📖 Wiki
 
 - For more details, please read the code or check this [📖 nvim wiki](https://gitlab.com/oeyoews/nvim/-/wikis/home)
 
-## Wiki
-
-## Links
+## 🔗 Links
 
 - [neovim form](https://neovim.discourse.group)
 - [emmylua comment](https://emmylua.github.io/zh_CN/annotation.html)
