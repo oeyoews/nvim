@@ -259,6 +259,7 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 <details>
 <summary>expand</summary>
 
+- [?] archieve a pomodoro by function or mapping enable by hand(maybe can't come true, cpu continue)
 - [ ] update startuptime plugin to suit night
 - [ ] integrate bump plugins, format
 - [ ] use function to replace find file
