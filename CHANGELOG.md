@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.6.0](https://gitlab.com/oeyoews/nvim/compare/v7.5.2...v7.6.0) (2022-07-29)
+
+
+### Features
+
+* **find:** add find_file_lua function ([078deaf](https://gitlab.com/oeyoews/nvim/commit/078deaf94e0b3b9eaa8b09d8b7dcbf79c375a894))
+
 ## [7.5.2](https://gitlab.com/oeyoews/nvim/compare/v7.5.1...v7.5.2) (2022-07-29)
 
 
