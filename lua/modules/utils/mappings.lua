@@ -149,3 +149,5 @@ vim.keymap.set("n", "<space>pl", ":e /tmp/`date -I`.lua<cr>", { desc = "🎮lua 
 vim.keymap.set("n", "<space>fk", function()
   return oeyoews.find_lua_file("lua/modules/utils/mappings")
 end, { silent = true, desc = " edit mappings file" })
+
+vim.keymap.set("n", "<space>fer", ":find ~/.config/nvim/README.md<cr>", { desc = "  Open README", silent = true })

@@ -319,3 +319,4 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 - [neovim form](https://neovim.discourse.group)
 - [emmylua comment](https://emmylua.github.io/zh_CN/annotation.html)
 - [neovimcraft](https://neovimcraft.com/)
+- [news](https://this-week-in-neovim.org/latest)
