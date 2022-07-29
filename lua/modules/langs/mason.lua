@@ -21,8 +21,9 @@ local check_mason = function(bin)
 end
 
 local tbl = {
-  "codespell",
-  "stylua",
+  "codespell", -- spell
+  "stylua", -- lua
+  "black", -- ptyhon format
   "shellcheck",
 }
 

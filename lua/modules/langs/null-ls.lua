@@ -5,6 +5,7 @@ local formatting = null_ls.builtins.formatting
 local sources = {
   formatting.stylua, -- this is conflict for lsp, choice
   formatting.prettier,
+  -- formatting.black, -- not work
   diagnostics.codespell.with({
     filetypes = {
       "markdown",

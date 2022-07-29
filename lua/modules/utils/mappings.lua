@@ -1,5 +1,6 @@
 vim.g.mapleader = " "
 
+-- TODO have autocmd and use mapping set it
 local keymappings_set = {}
 
 --  @not use this silent = true
@@ -43,6 +44,7 @@ keymappings_set = {
 oeyoews.kmap(keymappings_set)
 
 -- autocmd todo
+-- nvim_create_user_command
 vim.cmd([[
 command! -nargs=1 Out ene|pu=execute('<args>')
 command! Scripts split | ene|pu=execute('scriptnames')
@@ -50,6 +52,7 @@ command! -nargs=1 -complete=highlight HI ene|pu=execute('hi <args>')
 command! -nargs=1  Put ene|pu=execute('<args>')
 command! -nargs=?  -complete=color Themes colorscheme <args>
 
+" -- nvim__create_autogroup
 augroup quickquit
 autocmd!
 autocmd FileType notify,null-ls-info,lspinfo,startuptime,help,qf,quickrun,snippets,tsplayground nnoremap <buffer> <silent> q :q<cr>
@@ -84,6 +87,7 @@ endfunction
 ]])
 
 vim.keymap.set("n", "<space>tS", function()
+  -- like callback
   return vim.fn["Sline"]()
 end, { desc = " toggle statusline" })
 

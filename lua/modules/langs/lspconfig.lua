@@ -13,7 +13,13 @@ end
 
 local sumneko_lua_locale = sumneko_lua_locale_adjust()
 
-local on_attach = function(client, bufnr)
+local lsp_format = require("user.lsp_format").setup({
+  exclude = {
+    "yamlls",
+  },
+})
+
+local on_attach = function(client)
   require("user.lsp_format").on_attach(client)
 end
 
