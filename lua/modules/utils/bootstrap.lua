@@ -81,9 +81,6 @@ vim.keymap.set("n", "<space>pc", "<cmd>PackerClean<cr>", { desc = " clean plu
 vim.keymap.set("n", "<space>pi", "<cmd>PackerInstall<cr>", { desc = " install plugin" })
 vim.keymap.set("n", "<space>ps", "<cmd>PackerSync<cr>", { desc = " update plugin" })
 vim.keymap.set("n", "<space>pr", "<cmd>PackerSnapshot rolling.json<cr>", { desc = " backup neovim plugin" })
-vim.keymap.set(
-  "n",
-  "<space>fb",
-  "<cmd>find ~/.config/nvim/lua/modules/utils/bootstrap.lua<cr>",
-  { desc = " jump bootstrap" }
-)
+vim.keymap.set("n", "<space>fb", function()
+  return oeyoews.find_lua_file("lua/modules/utils/bootstrap")
+end, { desc = " jump bootstrap" })

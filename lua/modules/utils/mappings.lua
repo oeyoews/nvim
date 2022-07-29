@@ -92,9 +92,7 @@ vim.keymap.set("n", "<space>tk", function()
 end, { desc = "  terminal" })
 
 vim.keymap.set("n", "<space>fi", function()
-  -- vim.cmd([[find xxx.lua]])
-  local fi = string.format("%s/init.lua", vim.fn.stdpath("config"))
-  return vim.cmd(([[find %s]]):format(fi))
+  return oeyoews.find_lua_file("init")
 end, { silent = true, desc = "ﳐ edit init.lua(main) neovim config" })
 
 vim.keymap.set("n", "<space>hd", function()
@@ -142,4 +140,8 @@ end, { desc = " show git latest tag" })
 
 vim.keymap.set("n", "<space>so", "<cmd>so %<cr>", { desc = " refresh current file" })
 
-vim.keymap.set("n", "<space>pl", ":e `mktemp`.lua<cr>", { desc = "🎮lua playground", silent = true })
+vim.keymap.set("n", "<space>pl", ":e /tmp/`date -I`.lua<cr>", { desc = "🎮lua playground", silent = true })
+
+vim.keymap.set("n", "<space>fk", function()
+  return oeyoews.find_lua_file("lua/modules/utils/mappings")
+end, { silent = true, desc = " edit mappings file" })
