@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.5.2](https://gitlab.com/oeyoews/nvim/compare/v7.5.1...v7.5.2) (2022-07-29)
+
+
+### Bug Fixes
+
+* **null-ls:** add filetypes for null-ls to prevent slow for large ([89bd387](https://gitlab.com/oeyoews/nvim/commit/89bd38716b70da8b3088b3a10b625cf846d480b7))
+
 ## [7.5.1](https://gitlab.com/oeyoews/nvim/compare/v7.5.0...v7.5.1) (2022-07-29)
 
 
