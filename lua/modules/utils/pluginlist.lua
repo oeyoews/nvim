@@ -1,9 +1,13 @@
 local builtin = "~/.config/nvim/builtin/"
 
-oeyoews.pluginlist = {
+builtin_plugin = {
   builtin .. "notify",
   builtin .. "telescope",
   builtin .. "tokyonight",
+}
+
+oeyoews.pluginlist = {
+  builtin_plugin,
   "kyazdani42/nvim-tree.lua",
   "folke/lua-dev.nvim",
   "mzlogin/vim-markdown-toc",
