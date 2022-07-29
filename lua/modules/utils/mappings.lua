@@ -92,6 +92,7 @@ vim.keymap.set("n", "<space>tk", function()
 end, { desc = "  terminal" })
 
 vim.keymap.set("n", "<space>fi", function()
+  -- vim.cmd([[find xxx.lua]])
   local fi = string.format("%s/init.lua", vim.fn.stdpath("config"))
   return vim.cmd(([[find %s]]):format(fi))
 end, { silent = true, desc = "ﳐ edit init.lua(main) neovim config" })
@@ -135,6 +136,7 @@ local get_tag = function()
 end
 
 vim.keymap.set("n", "<space>ht", function()
+  -- vim.cmd("!cd ~/.config/nvim/ && git describe --tags `git rev-list --tags --max-count=1`")
   return vim.notify(" " .. get_tag()[1], "info", { title = "Config Version" })
 end, { desc = " show git latest tag" })
 
