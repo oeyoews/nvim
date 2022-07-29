@@ -16,7 +16,6 @@ end
 g.python3_host_prog = "/usr/bin/python3"
 
 local default_options = {
-  relativenumber = false,
   -- textwidth = 80,
   cmdwinheight = 5,
   display = "lastline",
@@ -52,6 +51,7 @@ local default_options = {
   autochdir = true,
   wrap = false,
   number = true,
+  relativenumber = true,
   numberwidth = 4,
   ruler = false,
   signcolumn = "yes", -- silent side number shake
