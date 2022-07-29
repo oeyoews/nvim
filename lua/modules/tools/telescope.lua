@@ -44,6 +44,7 @@ vim.keymap.set("n", "<space>tF", "<cmd>Telescope filetypes<cr>", { desc = "𝑭 
 vim.keymap.set("n", "<space>ts", "<cmd>Telescope live_grep<cr>", { desc = "grep" })
 vim.keymap.set("n", "<space>tm", "<cmd>Telescope keymaps<cr>", { desc = "  list keymaps" })
 vim.keymap.set("n", "<space>hh", "<cmd>Telescope help_tags<cr>", { desc = " list help" })
+vim.keymap.set("n", "<space>t/", "<cmd>Telescope current_buffer_fuzzy_find<cr>", { desc = "﯒ find current file" })
 
 vim.keymap.set("n", "<space>tu", function()
   return require("telescope").load_extension("ultisnips"), require("telescope").extensions.ultisnips.ultisnips()
