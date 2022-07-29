@@ -3,9 +3,14 @@ local diagnostics = null_ls.builtins.diagnostics
 local formatting = null_ls.builtins.formatting
 
 local sources = {
-  formatting.stylua, -- this is comflict for lsp, choice
+  formatting.stylua, -- this is conflict for lsp, choice
   formatting.prettier,
-  diagnostics.codespell.with({}),
+  diagnostics.codespell.with({
+    filetypes = {
+      "markdown",
+      "lua",
+    },
+  }),
 }
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
