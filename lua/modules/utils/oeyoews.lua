@@ -12,7 +12,7 @@ oeyoews.options = {
   -- @see lspconfig.lua
   sumneko_lua_locale_cn = false,
   -- @see sta.lua
-  toggle_theme_auto = true,
+  toggle_theme_auto = false,
   -- @ref: user.pcall.lua
   -- @TODO: use keybinds to toggle this options in config
   debug_mode = false,

@@ -19,12 +19,13 @@ oeyoews.sta = function(conf)
   -- TODO use variables to show theme in statusline
   -- @bug: https://stackoverflow.com/questions/20154991/generating-uniform-random-numbers-in-lua 
   math.randomseed(os.time())
-  local theme = "night"
+  local theme = "storm"
   local nvim_time = tonumber(os.date("%H"))
-  local status = math.random(0, 1)
   conf = "tokyonight" or conf
-  if oeyoews.options.toggle_theme_auto and nvim_time > 8 and nvim_time < 20 and status == 1 then
-    theme = "storm"
+  if oeyoews.options.toggle_theme_auto then
+    if nvim_time < 8 or nvim_time > 20 then
+      theme = "night"
+    end
   end
   vim.g.tokyonight_style = theme
   require(conf).setup()
