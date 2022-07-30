@@ -36,14 +36,14 @@ local symbol_map = {
   Field = "𝙁",
   Variable = "",
   Class = "𝓒",
-  Interface = "", -- 
+  Interface = "",
   Module = "",
   Property = "ﰠ",
   Unit = "𝑼",
   Value = "勺",
   Enum = "",
   Keyword = "",
-  Snippet = "𝒮", -- ﬆ  
+  Snippet = "𝒮",
   Color = "",
   Reference = "",
   File = "",
@@ -59,8 +59,6 @@ local symbol_map = {
 local mapping = {
   ["<C-b>"] = cmp.mapping.scroll_docs(-4),
   ["<C-f>"] = cmp.mapping.scroll_docs(4),
-  -- ["<C-n>"] = cmp.mapping(cmp.mapping.select_next_item(), { "i", "s" }),
-  -- ["<C-p>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "s" }),
   ["<S-Tab>"] = cmp.mapping(function(fallback)
     if cmp.visible() then
       cmp.select_prev_item()
@@ -104,18 +102,6 @@ local mapping = {
       end
     end,
   }),
-  -- ["<tab>"] = cmp.mapping(function(fallback)
-  --   if require('neogen').jumpable() then
-  --     require('neogen').jump_next()
-  --   elseif cmp.visible() then
-  --     cmp.select_next_item()
-  --   else
-  --     fallback()
-  --   end
-  -- end, {
-  --   "i",
-  --   "s",
-  -- }),
 }
 
 local sources = {
@@ -140,7 +126,6 @@ local menu = {
 }
 
 cmp.setup({
-  -- config default window
   window = {
     -- completion = cmp.config.window.bordered(),
     -- documentation = cmp.config.window.bordered(),
@@ -186,6 +171,7 @@ cmp.setup({
 
   -- @bug true is nothing, must to comment
   completion = {
+    -- how to use keymap to toggle this
     autocomplete = false,
   },
   experimental = {
@@ -217,4 +203,6 @@ vim.keymap.set("n", "<space>ee", "<cmd>UltiSnipsEdit<cr>", {
   desc = "ﱴ edit snippet",
 })
 
-vim.keymap.set("n", "<space>ea", "<cmd>UltiSnipsEdit all<cr>", { desc = " edia all snippet geterally" })
+vim.keymap.set("n", "<space>ea", "<cmd>UltiSnipsEdit all<cr>", {
+  desc = " edia all snippet geterally",
+})
