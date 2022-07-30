@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.7.1](https://gitlab.com/oeyoews/nvim/compare/v7.7.0...v7.7.1) (2022-07-30)
+
+
+### Bug Fixes
+
+* **pcall:** remove debug_mode option ([2787d6a](https://gitlab.com/oeyoews/nvim/commit/2787d6aa6a699305357f15dbfc3283d1413bb41e))
+
 # [7.7.0](https://gitlab.com/oeyoews/nvim/compare/v7.6.0...v7.7.0) (2022-07-30)
 
 
