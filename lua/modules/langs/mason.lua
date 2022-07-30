@@ -21,6 +21,7 @@ local check_mason = function(bin)
 end
 
 local tbl = {
+  "fixjson",
   "codespell", -- spell
   "stylua", -- lua
   "black", -- ptyhon format
