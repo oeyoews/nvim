@@ -3,8 +3,13 @@ local opt = vim.opt
 
 -- have "press enter or other command continue" error, and save shake for null-ls or normal conditions
 -- https://github.com/folke/which-key.nvim/issues/301
-if oeyoews.options.enable_cmdheight and oeyoews.nvim_version > 7 then
+if oeyoews.nvim_version > 7 then
   vim.opt.cmdheight = 0
+  -- fix gg temporarily
+  vim.keymap.set("n", "gg", "1gg", {
+    silent = true,
+    desc = " cmdheight enable",
+  })
 end
 
 -- use filetype.lua instead of filetype.vim. it's enabled by default in neovim 0.8 (nightly)
@@ -16,10 +21,11 @@ end
 g.python3_host_prog = "/usr/bin/python3"
 
 local default_options = {
-  -- textwidth = 80,
+  textwidth = 120,
   cmdwinheight = 5,
   display = "lastline",
-  laststatus = 3, -- 3, 0
+  -- option: 0 => hide statusline, 3 global statusline
+  laststatus = 0,
   updatetime = 200,
   timeoutlen = 1000,
   splitright = true,
