@@ -160,6 +160,7 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 <details>
 <summary>expand</summary>
 
+- [difficult] add firstinstall code, avoid less error code
 - [?] archieve a pomodoro by function or mapping enable by hand(maybe can't come true, cpu continue)
 - [ ] update startuptime plugin to suit night
 - [ ] integrate bump plugins, format
