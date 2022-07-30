@@ -3,9 +3,10 @@ local opt = vim.opt
 
 -- have "press enter or other command continue" error, and save shake for null-ls or normal conditions
 -- https://github.com/folke/which-key.nvim/issues/301
-if oeyoews.nvim_version > 7 then
+if oeyoews.nvim_version > 8 then
   vim.opt.cmdheight = 0
   -- fix gg temporarily
+  -- bug: search counts can't show
   vim.keymap.set("n", "gg", "1gg", {
     silent = true,
     desc = " cmdheight enable",
@@ -25,7 +26,7 @@ local default_options = {
   cmdwinheight = 5,
   display = "lastline",
   -- option: 0 => hide statusline, 3 global statusline
-  laststatus = 0,
+  laststatus = 3,
   updatetime = 200,
   timeoutlen = 1000,
   splitright = true,

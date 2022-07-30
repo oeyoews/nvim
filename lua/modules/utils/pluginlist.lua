@@ -41,7 +41,6 @@ oeyoews.pluginlist = {
   "lewis6991/gitsigns.nvim",
   "numToStr/Comment.nvim",
   "windwp/nvim-autopairs",
-  "olimorris/persisted.nvim",
   "oeyoews/tabout.nvim",
   "folke/which-key.nvim",
   "ziontee113/icon-picker.nvim",
