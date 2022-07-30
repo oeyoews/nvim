@@ -11,7 +11,6 @@ oeyoews.pluginlist = {
   "stevearc/dressing.nvim",
   "lukas-reineke/indent-blankline.nvim",
   "akinsho/bufferline.nvim",
-  "oeyoews/windline.nvim",
   {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
@@ -59,6 +58,7 @@ oeyoews.pluginlist = {
   oeyoews.builtin_plugin,
 }
 
+-- mapping
 vim.keymap.set("n", "<space>fp", function()
   return oeyoews.find_lua_file("lua/modules/utils/pluginlist")
 end, { desc = " pluginlist" })

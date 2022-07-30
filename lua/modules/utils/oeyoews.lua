@@ -41,6 +41,7 @@ oeyoews.builtin_plugin = {
   builtin .. "notify",
   builtin .. "telescope",
   builtin .. "tokyonight",
+  builtin .. "windline",
 }
 
 -- mapping
