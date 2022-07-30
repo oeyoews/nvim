@@ -23,11 +23,11 @@ end
 
 --- get_neovim_info
 M.get_neovim_info = function()
-  local neovim_installed_plugins_count = #vim.tbl_keys(packer_plugins)
+  local total_plugins = #vim.tbl_keys(packer_plugins)
   local version = vim.version()
   local nvim_version_info = string.format("%s.%s.%s", version.major, version.minor, version.patch)
   return vim.notify(
-    string.format("  %s plugins,  %s,  %s ", neovim_installed_plugins_count, nvim_version_info, get_tag()[1]),
+    string.format("  %s plugins,  %s,  %s ", total_plugins, nvim_version_info, get_tag()[1]),
     "info",
     {
       title = "neovim info",

@@ -5,7 +5,7 @@ local notify_ok, notify = pcall(require, "notify")
 local error_modules = {}
 local error_logs = {}
 local load_dot_path = nil
-local log_level = "info"
+local log_level = "error"
 
 local M = {}
 ---@param dir string entry firstly
@@ -25,21 +25,22 @@ M.setup = function(dir, load_module, load_files)
 
   -- use io.write to store error messages
   if #error_modules ~= 0 then
-    if oeyoews.options.debug_mode then
-      error_modules[#error_modules + 1] = error_logs
-      log_level = "error"
-    end
-    if not notify_ok then
-      vim.notify("Failed to loaded modules \n" .. vim.inspect(error_modules), log_level)
-    end
-    notify("Failed to loaded modules \n" .. vim.inspect(error_modules), log_level, {
-      title = "Modules",
+    error_modules[#error_modules + 1] = vim.inspect(error_logs)
+    local fmt_msg = string.format(
+      [[
+ # Failed Loaded Modules
 
-      -- on_open = function(win)
-      --   local buf = vim.api.nvim_win_get_buf(win)
-      --   vim.api.nvim_buf_set_option(buf, "filetype", "lua")
-      -- end,
-    })
+ %s]],
+      vim.inspect(error_modules)
+    )
+
+    if not notify_ok then
+      vim.notify(fmt_msg, log_level)
+    else
+      notify(fmt_msg, log_level, {
+        title = "Modules Msg",
+      })
+    end
   end
 end
 

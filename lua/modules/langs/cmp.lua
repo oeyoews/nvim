@@ -186,7 +186,7 @@ cmp.setup({
 
   -- @bug true is nothing, must to comment
   completion = {
-    -- autocomplete = false,
+    autocomplete = false,
   },
   experimental = {
     --ghost_text = {hl_group = 'GH'}
