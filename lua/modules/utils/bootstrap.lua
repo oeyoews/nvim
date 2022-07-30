@@ -33,7 +33,7 @@ local compile_path = util.join_paths(fn.stdpath("data"), "compile", "packer_comp
 -- init packer, and it's some settings
 packer.init({
   max_jobs = 8,
-  auto_clean = false,
+  auto_clean = true,
   display = {
     prompt_border = "single",
     working_sym = " ", -- The symbol for a plugin being installed/updated

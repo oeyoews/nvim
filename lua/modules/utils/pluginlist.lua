@@ -44,7 +44,6 @@ oeyoews.pluginlist = {
   "oeyoews/tabout.nvim",
   "folke/which-key.nvim",
   "ziontee113/icon-picker.nvim",
-  "j-hui/fidget.nvim",
   "kevinhwang91/rnvimr",
   "cappyzawa/trim.nvim",
   "ekickx/clipboard-image.nvim",
