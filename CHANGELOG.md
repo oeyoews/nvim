@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.7.0](https://gitlab.com/oeyoews/nvim/compare/v7.6.0...v7.7.0) (2022-07-30)
+
+
+### Features
+
+* **fixjson:** add fixjson formatter ([c3d4ad9](https://gitlab.com/oeyoews/nvim/commit/c3d4ad91dfa675818e974d79ef7ee14324e64d70))
+
 # [7.6.0](https://gitlab.com/oeyoews/nvim/compare/v7.5.2...v7.6.0) (2022-07-29)
 
 
