@@ -65,159 +65,60 @@ A personal neovim configuration
 <summary>File Tree</summary>
 
 ```bash
-├── builtin
-│   ├── notify
-│   │   └── lua
-│   │       └── notify
-│   │           ├── animate
-│   │           │   ├── init.lua
-│   │           │   └── spring.lua
-│   │           ├── config
-│   │           │   ├── highlights.lua
-│   │           │   └── init.lua
-│   │           ├── init.lua
-│   │           ├── render
-│   │           │   ├── base.lua
-│   │           │   ├── default.lua
-│   │           │   ├── init.lua
-│   │           │   └── minimal.lua
-│   │           ├── service
-│   │           │   ├── buffer
-│   │           │   │   ├── highlights.lua
-│   │           │   │   └── init.lua
-│   │           │   ├── init.lua
-│   │           │   └── notification.lua
-│   │           ├── stages
-│   │           │   ├── fade_in_slide_out.lua
-│   │           │   ├── fade.lua
-│   │           │   ├── init.lua
-│   │           │   ├── slide.lua
-│   │           │   ├── static.lua
-│   │           │   └── util.lua
-│   │           ├── util
-│   │           │   ├── init.lua
-│   │           │   └── queue.lua
-│   │           └── windows
-│   │               └── init.lua
-│   ├── telescope
-│   │   └── lua
-│   │       └── telescope
-│   │           └── _extensions
-│   │               ├── notify.lua
-│   │               └── ultisnips.lua
-│   └── tokyonight
-│       └── lua
-│           └── tokyonight
-│               ├── colors.lua
-│               ├── config.lua
-│               ├── hsluv.lua
-│               ├── init.lua
-│               ├── theme.lua
-│               └── util.lua
-├── CHANGELOG.md
-├── _config.yml
-├── free
-│   ├── calendar.lua
-│   ├── colorizer.lua
-│   ├── color_picker.lua
-│   ├── formatter.lua
-│   ├── highstr.lua
-│   ├── hlargs.lua
-│   ├── lspinstall.lua
-│   ├── navic.lua
-│   ├── neorg.lua
-│   ├── parsers.lua
-│   ├── project.lua
-│   ├── toggleterm.lua
-│   ├── trouble.lua
-│   ├── venn.lua
-│   └── winshift.lua
-├── img
-│   ├── 01.png
-│   ├── 02.png
-│   ├── 03.png
-│   ├── 04.png
-│   ├── 05.png
-│   ├── 06.png
-│   ├── 07.png
-│   ├── 08.png
-│   └── vim.png
-├── init.lua
-├── LICENSE
-├── lua
-│   ├── modules
-│   │   ├── langs
-│   │   │   ├── cmp.lua
-│   │   │   ├── lspconfig.lua
-│   │   │   ├── mason.lua
-│   │   │   ├── null-ls.lua
-│   │   │   └── treesitter.lua
-│   │   ├── tools
-│   │   │   ├── autopairs.lua
-│   │   │   ├── comment.lua
-│   │   │   ├── gitsigns.lua
-│   │   │   ├── hop.lua
-│   │   │   ├── icon_picker.lua
-│   │   │   ├── indent.lua
-│   │   │   ├── mkdp.lua
-│   │   │   ├── neogen.lua
-│   │   │   ├── nvim_tree.lua
-│   │   │   ├── persisted.lua
-│   │   │   ├── persistence.lua
-│   │   │   ├── quickrun.lua
-│   │   │   ├── ranger.lua
-│   │   │   ├── tabout.lua
-│   │   │   ├── telescope.lua
-│   │   │   ├── todo_comments.lua
-│   │   │   ├── trim.lua
-│   │   │   ├── vim_startuptime.lua
-│   │   │   └── whichkey.lua
-│   │   ├── ui
-│   │   │   ├── bufferline.lua
-│   │   │   ├── custom.lua
-│   │   │   ├── fidget.lua
-│   │   │   ├── lspsaga.lua
-│   │   │   ├── notify.lua
-│   │   │   ├── tokyonight.lua
-│   │   │   ├── web_icons.lua
-│   │   │   └── windline.lua
-│   │   └── utils
-│   │       ├── bootstrap.lua
-│   │       ├── disable.lua
-│   │       ├── functions.lua
-│   │       ├── impatient.lua
-│   │       ├── mappings.lua
-│   │       ├── oeyoews.lua
-│   │       ├── options.lua
-│   │       └── pluginlist.lua
-│   └── user
-│       ├── capabilities.lua
-│       ├── lsp_format.lua
-│       ├── modules.lua
-│       └── pcall.lua
-├── package.json
-├── README.md
-├── renovate.json
-├── snapshots
-│   └── rolling.json
-├── ultisnips
-│   ├── all.snippets
-│   ├── c.snippets
-│   ├── gitcommit.snippets
-│   ├── go.snippets
-│   ├── html.snippets
-│   ├── json.snippets
-│   ├── lua.snippets
-│   ├── markdown.snippets
-│   ├── sh.snippets
-│   ├── snippets.snippets
-│   ├── sshconfig.snippets
-│   ├── toml.snippets
-│   ├── vim.snippets
-│   └── yaml.snippets
-└── yarn.lock
 
-30 directories, 121 files
+lua/
+├── modules
+│   ├── langs
+│   │   ├── cmp.lua
+│   │   ├── lspconfig.lua
+│   │   ├── mason.lua
+│   │   ├── null-ls.lua
+│   │   └── treesitter.lua
+│   ├── tools
+│   │   ├── autopairs.lua
+│   │   ├── comment.lua
+│   │   ├── gitsigns.lua
+│   │   ├── hop.lua
+│   │   ├── icon_picker.lua
+│   │   ├── indent.lua
+│   │   ├── mkdp.lua
+│   │   ├── neogen.lua
+│   │   ├── nvim_tree.lua
+│   │   ├── persisted.lua
+│   │   ├── persistence.lua
+│   │   ├── quickrun.lua
+│   │   ├── ranger.lua
+│   │   ├── tabout.lua
+│   │   ├── telescope.lua
+│   │   ├── todo_comments.lua
+│   │   ├── trim.lua
+│   │   ├── vim_startuptime.lua
+│   │   └── whichkey.lua
+│   ├── ui
+│   │   ├── bufferline.lua
+│   │   ├── custom.lua
+│   │   ├── fidget.lua
+│   │   ├── lspsaga.lua
+│   │   ├── notify.lua
+│   │   ├── tokyonight.lua
+│   │   ├── web_icons.lua
+│   │   └── windline.lua
+│   └── utils
+│       ├── bootstrap.lua
+│       ├── disable.lua
+│       ├── functions.lua
+│       ├── impatient.lua
+│       ├── mappings.lua
+│       ├── oeyoews.lua
+│       ├── options.lua
+│       └── pluginlist.lua
+└── user
+    ├── capabilities.lua
+    ├── lsp_format.lua
+    ├── modules.lua
+    └── pcall.lua
+
+6 directories, 44 files
 ```
 
 </details>
