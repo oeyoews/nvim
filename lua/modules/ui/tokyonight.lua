@@ -9,8 +9,10 @@ local sta = function(conf)
   local theme = "storm"
   local nvim_time = tonumber(os.date("%H"))
   conf = "tokyonight" or conf
-  if nvim_time < 8 or nvim_time > 20 then
-    theme = "night"
+  if oeyoews.options.toggle_theme_auto then
+    if nvim_time < 8 or nvim_time > 20 then
+      theme = "night"
+    end
   end
   vim.g.tokyonight_style = theme
   require(conf).setup()

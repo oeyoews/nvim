@@ -11,6 +11,8 @@ oeyoews.options = {
   enable_lsp = true,
   -- @see lspconfig.lua
   sumneko_lua_locale_cn = false,
+  -- @see sta.lua
+  toggle_theme_auto = false,
   -- @ref: user.pcall.lua
   -- @TODO: use keybinds to toggle this options in config
   -- @see modules.utils.bootstrap.lua
