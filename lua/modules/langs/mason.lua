@@ -1,3 +1,7 @@
+if vim.fn.executable("npm") ~= 1 then
+  vim.notify(" Please install npm to lsp-tools")
+end
+
 local mason_exclude = {}
 
 -- clangd is too large, install literally slow, use system
@@ -9,11 +13,6 @@ if oeyoews.options.enable_clangd then
   oeyoews.servers[#oeyoews.servers + 1] = "clangd"
 end
 
--- to less error tip
-if vim.fn.executable("prettier") and vim.fn.executable("npm") == 1 then
-  oeyoews.mason[#oeyoews.mason + 1] = "prettier"
-end
-
 local check_mason = function(bin)
   if vim.fn.executable(bin) == 0 then
     oeyoews.mason[#oeyoews.mason + 1] = bin
@@ -21,6 +20,7 @@ local check_mason = function(bin)
 end
 
 local tbl = {
+  "prettier",
   "clang-format",
   "fixjson",
   "codespell", -- spell

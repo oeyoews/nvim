@@ -10,9 +10,9 @@ lspsaga.setup({
   infor_sign = " ", -- NOTE: can't have space    
   diagnostic_header_icon = " ", -- 
   rename_prompt_prefix = " ",
-  code_action_icon = " ", -- ﴞ
+  code_action_icon = "ﴞ ",
   code_action_prompt = {
-    enable = false,
+    enable = false, -- this refresh is very slow
     sign = true,
     sign_priority = 20,
     virtual_text = false,
