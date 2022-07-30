@@ -34,7 +34,6 @@ M.files = {
     "lspsaga", -- setup lspconfig ui
     "bufferline",
     "windline", -- statusline
-    -- "fidget", -- visualize lsp status
   },
 
   -- @LANG
