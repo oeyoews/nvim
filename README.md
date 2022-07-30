@@ -57,7 +57,11 @@
 
 ## 💡 What's that
 
-A personal neovim configuration
+<!-- A personal neovim configuration -->
+
+<!-- https://readme-typing-svg.herokuapp.com/demo/ -->
+
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=FiraCode&color=63F3E1&vCenter=true&lines=A+personal+neovim+configuration" alt="Typing SVG" /></a>
 
 ## 📂 File Struct
 
