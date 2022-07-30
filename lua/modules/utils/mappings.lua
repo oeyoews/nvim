@@ -1,3 +1,5 @@
+local fun = require("user.fun")
+
 vim.g.mapleader = " "
 
 -- TODO have autocmd and use mapping set it
@@ -9,8 +11,10 @@ vim.keymap.set({ "n", "v" }, "<space><space>", ":", {
 })
 keymappings_set = {
   {
-    "<space>fd",
-    ":e /tmp/`date -I`.md<cr>",
+    "<space>ed",
+    function()
+      return fun.creat_journey()
+    end,
     " edit markdown",
   },
   {
@@ -234,26 +238,6 @@ end, {
   desc = " hello, neovim",
 })
 
-local get_tag = function()
-  local files = {}
-  local config_version_tmp = os.tmpname()
-  os.execute(
-    "cd ~/.config/nvim/ && git describe --tags `git rev-list --tags --max-count=1`" .. " > " .. config_version_tmp
-  )
-  local f = io.open(config_version_tmp)
-  if not f then
-    return files
-  end
-  local k = 1
-  for line in f:lines() do
-    files[k] = line
-    k = k + 1
-  end
-  f:close()
-  os.remove(config_version_tmp)
-  return files
-end
-
 vim.keymap.set("n", "<space>so", "<cmd>so %<cr>", {
   desc = " refresh current file",
 })
@@ -277,16 +261,7 @@ vim.keymap.set("n", "<space>fer", ":find ~/.config/nvim/README.md<cr>", {
 
 -- show neovim info
 vim.keymap.set("n", "<space>hni", function()
-  local neovim_installed_plugins_count = #vim.tbl_keys(packer_plugins)
-  local version = vim.version()
-  local nvim_version_info = string.format("%s.%s.%s", version.major, version.minor, version.patch)
-  return vim.notify(
-    string.format("  %s plugins,  %s,  %s ", neovim_installed_plugins_count, nvim_version_info, get_tag()[1]),
-    "info",
-    {
-      title = "neovim info",
-    }
-  )
+  return fun.get_neovim_info()
 end, {
   silent = true,
   desc = " show neovim plugins",
