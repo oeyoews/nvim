@@ -1,5 +1,5 @@
 if vim.fn.executable("npm") ~= 1 then
-  vim.notify(" Please install npm to lsp-tools")
+  vim.notify(" Please install npm to lsp-tools", "warn", { title = "Mason" })
 end
 
 local mason_exclude = {}
