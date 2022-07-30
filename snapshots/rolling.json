@@ -6,7 +6,7 @@
     "commit": "de10915"
   },
   "nvim-lspconfig": {
-    "commit": "ba25b74"
+    "commit": "60f2993"
   },
   "telescope-packer.nvim": {
     "commit": "56f3255"
@@ -15,10 +15,10 @@
     "commit": "f47287d"
   },
   "mason-tool-installer.nvim": {
-    "commit": "6d92766"
+    "commit": "3e9534a"
   },
   "null-ls.nvim": {
-    "commit": "9c396ab"
+    "commit": "47c0499"
   },
   "which-key.nvim": {
     "commit": "bd4411a"
@@ -38,11 +38,11 @@
   "gitsigns.nvim": {
     "commit": "8b817e7"
   },
-  "dressing.nvim": {
-    "commit": "e9d0de4"
-  },
   "indent-blankline.nvim": {
     "commit": "c15bbe9"
+  },
+  "dressing.nvim": {
+    "commit": "d98769d"
   },
   "lspkind-nvim": {
     "commit": "57e5b5d"
@@ -52,9 +52,6 @@
   },
   "telescope.nvim": {
     "commit": "b5833a6"
-  },
-  "vim-startuptime": {
-    "commit": "8b608d2"
   },
   "Comment.nvim": {
     "commit": "78ab4e9"
@@ -66,10 +63,10 @@
     "commit": "21f02b6"
   },
   "mason.nvim": {
-    "commit": "269ee22"
+    "commit": "51f7db4"
   },
   "icon-picker.nvim": {
-    "commit": "fddd49e"
+    "commit": "045914d"
   },
   "todo-comments.nvim": {
     "commit": "98b1ebf"
@@ -80,23 +77,23 @@
   "nvim-treesitter-refactor": {
     "commit": "75f5895"
   },
-  "trim.nvim": {
-    "commit": "ab366eb"
+  "neogen": {
+    "commit": "c5a0c39"
   },
   "nvim-web-devicons": {
     "commit": "2d02a56"
   },
   "windline.nvim": {
-    "commit": "97db351"
+    "commit": "1f3be53"
   },
   "lua-dev.nvim": {
     "commit": "f5c3193"
   },
   "nvim-treesitter": {
-    "commit": "36ee489"
+    "commit": "0d7fab0"
   },
   "mason-lspconfig.nvim": {
-    "commit": "ad3b109"
+    "commit": "0f9b52b"
   },
   "impatient.nvim": {
     "commit": "2aa872d"
@@ -113,11 +110,11 @@
   "hop.nvim": {
     "commit": "ced6c94"
   },
-  "neogen": {
-    "commit": "c5a0c39"
+  "trim.nvim": {
+    "commit": "ab366eb"
   },
   "nvim-tree.lua": {
-    "commit": "2928f8f"
+    "commit": "665813b"
   },
   "persisted.nvim": {
     "commit": "0f5f24f"
@@ -128,11 +125,14 @@
   "vim-markdown-toc": {
     "commit": "31aa38e"
   },
+  "nvim-cmp": {
+    "commit": "706371f"
+  },
   "plenary.nvim": {
     "commit": "986ad71"
   },
-  "nvim-cmp": {
-    "commit": "706371f"
+  "vim-startuptime": {
+    "commit": "6f8f30f"
   },
   "vim-snippets": {
     "commit": "c5d977c"

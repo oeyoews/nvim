@@ -86,7 +86,7 @@ endif
 endfunction
 ]])
 
-vim.keymap.set("n", "<space>tS", function()
+vim.keymap.set("n", "<space>tz", function()
   -- like callback
   return vim.fn["Sline"]()
 end, { desc = " toggle statusline" })
