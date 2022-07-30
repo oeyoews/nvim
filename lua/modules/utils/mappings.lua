@@ -106,12 +106,6 @@ vim.keymap.set("n", "<space>helo", function()
   return vim.notify("  Hello, Neovim", "info", { title = "welcome" })
 end, { desc = " hello, neovim" })
 
-vim.keymap.set("n", "<space>hv", function()
-  local version = vim.version()
-  local nvim_version_info = string.format(" %s.%s.%s", version.major, version.minor, version.patch)
-  return nvim_version_info
-end, { desc = "𝑽 show nvim version" })
-
 local get_tag = function()
   local files = {}
   local config_version_tmp = os.tmpname()
@@ -132,10 +126,6 @@ local get_tag = function()
   return files
 end
 
-vim.keymap.set("n", "<space>ht", function()
-  return vim.notify(" " .. get_tag()[1], "info", { title = "Config Version" })
-end, { desc = " show git latest tag" })
-
 vim.keymap.set("n", "<space>so", "<cmd>so %<cr>", { desc = " refresh current file" })
 
 vim.keymap.set("n", "<space>pl", ":e /tmp/`date -I`.lua<cr>", { desc = "🎮lua playground", silent = true })
@@ -145,3 +135,16 @@ vim.keymap.set("n", "<space>fk", function()
 end, { silent = true, desc = " edit mappings file" })
 
 vim.keymap.set("n", "<space>fer", ":find ~/.config/nvim/README.md<cr>", { desc = "  Open README", silent = true })
+
+vim.keymap.set("n", "<space>hni", function()
+  local neovim_installed_plugins_count = #vim.tbl_keys(packer_plugins)
+  local version = vim.version()
+  local nvim_version_info = string.format("%s.%s.%s", version.major, version.minor, version.patch)
+  return vim.notify(
+    string.format("  %s plugins,  %s,  %s ", neovim_installed_plugins_count, nvim_version_info, get_tag()[1]),
+    "info",
+    {
+      title = "neovim info",
+    }
+  )
+end, { silent = true, desc = " show neovim plugins" })

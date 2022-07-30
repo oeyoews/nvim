@@ -32,7 +32,14 @@ M.setup = function(dir, load_module, load_files)
     if not notify_ok then
       vim.notify("Failed to loaded modules \n" .. vim.inspect(error_modules), log_level)
     end
-    notify("Failed to loaded modules \n" .. vim.inspect(error_modules), log_level, { title = "Modules" })
+    notify("Failed to loaded modules \n" .. vim.inspect(error_modules), log_level, {
+      title = "Modules",
+
+      -- on_open = function(win)
+      --   local buf = vim.api.nvim_win_get_buf(win)
+      --   vim.api.nvim_buf_set_option(buf, "filetype", "lua")
+      -- end,
+    })
   end
 end
 
