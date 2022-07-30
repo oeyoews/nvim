@@ -1,13 +1,4 @@
-local builtin = "~/.config/nvim/builtin/"
-
-builtin_plugin = {
-  builtin .. "notify",
-  builtin .. "telescope",
-  builtin .. "tokyonight",
-}
-
 oeyoews.pluginlist = {
-  builtin_plugin,
   "kyazdani42/nvim-tree.lua",
   "folke/lua-dev.nvim",
   "mzlogin/vim-markdown-toc",
@@ -65,6 +56,7 @@ oeyoews.pluginlist = {
     "iamcco/markdown-preview.nvim",
     run = "cd app && npm install",
   },
+  oeyoews.builtin_plugin,
 }
 
 vim.keymap.set("n", "<space>fp", function()

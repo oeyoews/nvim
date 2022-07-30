@@ -36,6 +36,15 @@ oeyoews.servers = {
 -- extra binary
 oeyoews.mason = {}
 
+local builtin = string.format("%s/builtin/", vim.fn.stdpath("config"))
+
+oeyoews.builtin_plugin = {
+  builtin .. "notify",
+  builtin .. "telescope",
+  builtin .. "tokyonight",
+}
+
+-- mapping
 vim.keymap.set(
   "n",
   "<space>fo",
