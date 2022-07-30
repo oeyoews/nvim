@@ -4,7 +4,9 @@ vim.g.mapleader = " "
 local keymappings_set = {}
 
 --  @not use this silent = true
-vim.keymap.set({ "n", "v" }, "<space><space>", ":", { desc = " cmd mode" })
+vim.keymap.set({ "n", "v" }, "<space><space>", ":", {
+  desc = " cmd mode",
+})
 keymappings_set = {
   {
     "<space>fd",
@@ -204,22 +206,33 @@ endfunction
 vim.keymap.set("n", "<space>tz", function()
   -- like callback
   return vim.fn["Sline"]()
-end, { desc = " toggle statusline" })
+end, {
+  desc = " toggle statusline",
+})
 
 vim.keymap.set("n", "<space>tk", function()
   return vim.fn["Terminal"]()
-end, { desc = "  terminal" })
+end, {
+  desc = "  terminal",
+})
 
 vim.keymap.set("n", "<space>fi", function()
   return oeyoews.find_lua_file("init")
-end, { silent = true, desc = "ﳐ edit init.lua(main) neovim config" })
+end, {
+  silent = true,
+  desc = "ﳐ edit init.lua(main) neovim config",
+})
 
 vim.keymap.set("n", "<space>hd", function()
   return vim.notify(os.date("%Y-%m-%d %H:%M:%S %A Day %j"), "info", { title = "Current Date" })
-end, { desc = "愈show time" })
+end, {
+  desc = "愈show time",
+})
 vim.keymap.set("n", "<space>helo", function()
   return vim.notify("  Hello, Neovim", "info", { title = "welcome" })
-end, { desc = " hello, neovim" })
+end, {
+  desc = " hello, neovim",
+})
 
 local get_tag = function()
   local files = {}
