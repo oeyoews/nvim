@@ -1,5 +1,3 @@
--- TODO: set prefix option
---- vim.keymap.set()
 ---@param kmap table
 oeyoews.kmap = function(kmap)
   local keymap_set = function(tbl)
