@@ -11,33 +11,148 @@ keymappings_set = {
     ":e /tmp/`date -I`.md<cr>",
     " edit markdown",
   },
-  { "<space>yp", ":<C-U>let @+=expand('%:p')<cr>", " copy file path" },
-  { "<space>pp", '"*p', " past to neovim" },
-  { "<space>yy", '"*Y', " past to system" },
-  { "<space>yy", '"+y', " past to system", "v" },
-  { "<esc>", ":noh<cr><C-L><esc>", " clear highlight and screen" },
-  { "<space>fu", ":FZF<cr>", "fzf" },
-  { "<space>bb", ":e `mktemp -t nvim.scr.XXX`<cr>", " edit temp file" },
-  { "<space>ba", ":%bw<cr>", " remove all buffers" },
-  { "<space>bs", ":e /tmp/scratch.txt<cr>", " edit scratch.txt" },
-  { "H", "0", " jump head of line", { "n", "v" } },
-  { "L", "$", "  jump end of line", { "n", "v" } },
-  { "q", "", "disable macro in normal mode", { "n", "v" } },
-  { "jk", "<esc>", "escape insert mode", "i" },
-  { ">>", ">gv", "right indent", "v" },
-  { "<<", "<gv", "left indent", "v" },
-  { "U", "<C-r>", "undo change" },
-  { "<space>bd", "<cmd>bdelete<cr>", " delete current buffer" },
-  { "<space>qq", "<cmd>q<cr>", "quit neovim" },
-  { "<space><tab>", "<cmd>bp<cr>", " goto previout buffer" },
-  { "<space>bn", "<cmd>bn<cr>", " goto next buffer" },
-  { "<space>bx", "<cmd>ene<cr>", "🪐 new buffer" },
-  { "<leader>w", "<C-W>", "map window prefix" },
-  { "<leader>fs", ":w<cr>", " save file" },
-  { "<leader>bM", ":messages<cr>", " messages" },
-  { "<leader>tn", ":setlocal invnumber<cr>", "  toggle show number" },
-  { "<leader>ss", ":setlocal invspell<cr>", "𝒮 toggle spell" },
-  { "<leader>tl", ":setlocal invlist<cr>", "  toggle list" },
+  {
+    "<space>yp",
+    ":<C-U>let @+=expand('%:p')<cr>",
+    " copy file path",
+  },
+  {
+    "<space>pp",
+    '"*p',
+    " past to neovim",
+  },
+  {
+    "<space>yy",
+    '"*Y',
+    " past to system",
+  },
+  {
+    "<space>yy",
+    '"+y',
+    " past to system",
+    "v",
+  },
+  {
+    "<esc>",
+    ":noh<cr><C-L><esc>",
+    " clear highlight and screen",
+  },
+  {
+    "<space>fu",
+    ":FZF<cr>",
+    "fzf",
+  },
+  {
+    "<space>bb",
+    ":e `mktemp -t nvim.scr.XXX`<cr>",
+    " edit temp file",
+  },
+  {
+    "<space>ba",
+    ":%bw<cr>",
+    " remove all buffers",
+  },
+  {
+    "<space>bs",
+    ":e /tmp/scratch.txt<cr>",
+    " edit scratch.txt",
+  },
+  {
+    "H",
+    "0",
+    " jump head of line",
+    { "n", "v" },
+  },
+  {
+    "L",
+    "$",
+    "  jump end of line",
+    { "n", "v" },
+  },
+  {
+    "q",
+    "",
+    "disable macro in normal mode",
+    { "n", "v" },
+  },
+  {
+    "jk",
+    "<esc>",
+    "escape insert mode",
+    "i",
+  },
+  {
+    ">>",
+    ">gv",
+    "right indent",
+    "v",
+  },
+  {
+    "<<",
+    "<gv",
+    "left indent",
+    "v",
+  },
+  {
+    "U",
+    "<C-r>",
+    "undo change",
+  },
+  {
+    "<space>bd",
+    "<cmd>bdelete<cr>",
+    " delete current buffer",
+  },
+  {
+    "<space>qq",
+    "<cmd>q<cr>",
+    "quit neovim",
+  },
+  {
+    "<space><tab>",
+    "<cmd>bp<cr>",
+    " goto previout buffer",
+  },
+  {
+    "<space>bn",
+    "<cmd>bn<cr>",
+    " goto next buffer",
+  },
+  {
+    "<space>bx",
+    "<cmd>ene<cr>",
+    "🪐 new buffer",
+  },
+  {
+    "<leader>w",
+    "<C-W>",
+    "map window prefix",
+  },
+  {
+    "<leader>fs",
+    ":w<cr>",
+    " save file",
+  },
+  {
+    "<leader>bM",
+    ":messages<cr>",
+    " messages",
+  },
+  {
+    "<leader>tn",
+    ":setlocal invnumber<cr>",
+    "  toggle show number",
+  },
+  {
+    "<leader>ss",
+    ":setlocal invspell<cr>",
+    "𝒮 toggle spell",
+  },
+  {
+    "<leader>tl",
+    ":setlocal invlist<cr>",
+    "  toggle list",
+  },
 }
 
 -- core mapping
@@ -126,16 +241,28 @@ local get_tag = function()
   return files
 end
 
-vim.keymap.set("n", "<space>so", "<cmd>so %<cr>", { desc = " refresh current file" })
+vim.keymap.set("n", "<space>so", "<cmd>so %<cr>", {
+  desc = " refresh current file",
+})
 
-vim.keymap.set("n", "<space>pl", ":e /tmp/`date -I`.lua<cr>", { desc = "🎮lua playground", silent = true })
+vim.keymap.set("n", "<space>pl", ":e /tmp/`date -I`.lua<cr>", {
+  desc = "🎮lua playground",
+  silent = true,
+})
 
 vim.keymap.set("n", "<space>fk", function()
   return oeyoews.find_lua_file("lua/modules/utils/mappings")
-end, { silent = true, desc = " edit mappings file" })
+end, {
+  silent = true,
+  desc = " edit mappings file",
+})
 
-vim.keymap.set("n", "<space>fer", ":find ~/.config/nvim/README.md<cr>", { desc = "  Open README", silent = true })
+vim.keymap.set("n", "<space>fer", ":find ~/.config/nvim/README.md<cr>", {
+  desc = "  Open README",
+  silent = true,
+})
 
+-- show neovim info
 vim.keymap.set("n", "<space>hni", function()
   local neovim_installed_plugins_count = #vim.tbl_keys(packer_plugins)
   local version = vim.version()
@@ -147,4 +274,7 @@ vim.keymap.set("n", "<space>hni", function()
       title = "neovim info",
     }
   )
-end, { silent = true, desc = " show neovim plugins" })
+end, {
+  silent = true,
+  desc = " show neovim plugins",
+})

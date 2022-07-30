@@ -60,4 +60,6 @@ require("mason-lspconfig").setup({
   },
 })
 
-vim.keymap.set("n", "<space>lm", "<cmd>Mason<cr>", { desc = "𝓜  Show mason" })
+vim.keymap.set("n", "<space>lm", "<cmd>Mason<cr>", {
+  desc = "𝓜  Show mason",
+})

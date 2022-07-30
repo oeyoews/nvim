@@ -33,22 +33,36 @@ telescope.setup({
   },
 })
 
-vim.keymap.set("n", "<space>ff", "<cmd>Telescope fd<cr>", { desc = "﯒ find files" })
-vim.keymap.set("n", "<space>to", "<cmd>Telescope oldfiles<cr>", { desc = " recent files" })
-vim.keymap.set("n", "<space>tf", "<cmd>Telescope filetypes<cr>", { desc = "𝑭 set filetypes" })
-vim.keymap.set("n", "<space>tm", "<cmd>Telescope keymaps<cr>", { desc = "  list keymaps" })
+vim.keymap.set("n", "<space>ff", "<cmd>Telescope fd<cr>", {
+  desc = "﯒ find files",
+})
+vim.keymap.set("n", "<space>to", "<cmd>Telescope oldfiles<cr>", {
+  desc = " recent files",
+})
+vim.keymap.set("n", "<space>tf", "<cmd>Telescope filetypes<cr>", {
+  desc = "𝑭 set filetypes",
+})
+vim.keymap.set("n", "<space>tm", "<cmd>Telescope keymaps<cr>", {
+  desc = "  list keymaps",
+})
 
 vim.keymap.set("n", "<space>tu", function()
   return require("telescope").load_extension("ultisnips"), require("telescope").extensions.ultisnips.ultisnips()
-end, { desc = " load and start telescope ultisnips" })
+end, {
+  desc = " load and start telescope ultisnips",
+})
 
 vim.keymap.set("n", "<space>bm", function()
   return require("telescope").extensions.notify.notify()
-end, { desc = " () notify" })
+end, {
+  desc = " () notify",
+})
 
 vim.keymap.set("n", "<space>tp", function()
   return require("telescope").extensions.packer.packer()
-end, { desc = "  packer" })
+end, {
+  desc = "  packer",
+})
 
 vim.cmd([[
 " highlight TelescopeResultsBorder  guifg=#bd93f9

@@ -43,9 +43,21 @@ lspsaga.setup({
   diagnostic_prefix_format = "%d. ",
 })
 
-vim.keymap.set("n", "<space>le", "<cmd>Lspsaga code_action<cr>", { desc = "ﯦ intelligent code tip" })
-vim.keymap.set("n", "<space>gk", "<cmd>Lspsaga hover_doc<cr>", { desc = "  hover lsp doc" })
-vim.keymap.set("n", "<space>gh", "<cmd>Lspsaga lsp_finder<cr>", { desc = "lsp finder" })
-vim.keymap.set("n", "gr", "<cmd>Lspsaga rename<cr>", { desc = "פֿ lsp rename" })
-vim.keymap.set("n", "<space>gd", "<cmd>Lspsaga preview_definition<cr>", { desc = " preview_definition" })
-vim.keymap.set("n", "<space>gs", "<cmd>Lspsaga signature_help<cr>", { desc = " signature_help" })
+vim.keymap.set("n", "<space>le", "<cmd>Lspsaga code_action<cr>", {
+  desc = " intelligent code tip",
+})
+vim.keymap.set("n", "<space>gk", "<cmd>Lspsaga hover_doc<cr>", {
+  desc = " hover lsp doc",
+})
+vim.keymap.set("n", "<space>gh", "<cmd>Lspsaga lsp_finder<cr>", {
+  desc = "lsp finder",
+})
+vim.keymap.set("n", "gr", "<cmd>Lspsaga rename<cr>", {
+  desc = "✏ lsp rename",
+})
+vim.keymap.set("n", "<space>gd", "<cmd>Lspsaga preview_definition<cr>", {
+  desc = " preview_definition",
+})
+vim.keymap.set("n", "<space>gs", "<cmd>Lspsaga signature_help<cr>", {
+  desc = " signature_help",
+})
