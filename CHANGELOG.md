@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.9.0](https://gitlab.com/oeyoews/nvim/compare/v7.8.0...v7.9.0) (2022-07-30)
+
+
+### Features
+
+* **persistence:** use builtin persistence plugin(rls) ([417f9a7](https://gitlab.com/oeyoews/nvim/commit/417f9a767f8f59eb49dae2a97fd9aeeddcd4b431))
+
 # [7.8.0](https://gitlab.com/oeyoews/nvim/compare/v7.7.1...v7.8.0) (2022-07-30)
 
 
