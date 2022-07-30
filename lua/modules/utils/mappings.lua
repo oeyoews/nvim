@@ -106,15 +106,10 @@ vim.keymap.set("n", "<space>helo", function()
   return vim.notify("  Hello, Neovim", "info", { title = "welcome" })
 end, { desc = " hello, neovim" })
 
-local get_nvim_version = function()
-  local major = vim.version().major
-  local minor = vim.version().minor
-  local patch = vim.version().patch
-  return string.format(" %s.%s.%s", major, minor, patch)
-end
-
 vim.keymap.set("n", "<space>hv", function()
-  return vim.notify(get_nvim_version(), "info", { title = "Neovim Version" })
+  local version = vim.version()
+  local nvim_version_info = string.format(" %s.%s.%s", version.major, version.minor, version.patch)
+  return nvim_version_info
 end, { desc = "𝑽 show nvim version" })
 
 local get_tag = function()
@@ -138,7 +133,6 @@ local get_tag = function()
 end
 
 vim.keymap.set("n", "<space>ht", function()
-  -- vim.cmd("!cd ~/.config/nvim/ && git describe --tags `git rev-list --tags --max-count=1`")
   return vim.notify(" " .. get_tag()[1], "info", { title = "Config Version" })
 end, { desc = " show git latest tag" })
 

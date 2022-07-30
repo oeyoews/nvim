@@ -6,6 +6,7 @@ local sources = {
   formatting.stylua, -- this is conflict for lsp, choice
   formatting.prettier,
   formatting.fixjson,
+  formatting.clang_format,
   -- formatting.black.with({}), -- not work
   diagnostics.codespell.with({
     filetypes = {

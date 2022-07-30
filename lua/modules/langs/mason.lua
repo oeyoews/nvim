@@ -21,6 +21,7 @@ local check_mason = function(bin)
 end
 
 local tbl = {
+  "clang-format",
   "fixjson",
   "codespell", -- spell
   "stylua", -- lua
