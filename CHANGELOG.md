@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.12.0](https://gitlab.com/oeyoews/nvim/compare/v7.11.1...v7.12.0) (2022-07-31)
+
+
+### Features
+
+* **zen-mode:** add showtabline ([d83a308](https://gitlab.com/oeyoews/nvim/commit/d83a3085e2552cf337cfd935c3a84c3be24192ff))
+
 ## [7.11.1](https://gitlab.com/oeyoews/nvim/compare/v7.11.0...v7.11.1) (2022-07-31)
 
 
