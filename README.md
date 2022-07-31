@@ -164,6 +164,7 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 <details>
 <summary>expand</summary>
 
+- [ ] lspsaga icon can't work
 - [ ] press enter avoid this message
 - [ ] conflict: vim-startuptime is conflict to persistence
 - [difficult] add firstinstall code, avoid less error code
