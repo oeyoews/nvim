@@ -1,3 +1,15 @@
+-- -------------------------------------------------------------------------- --
+--                                                                            --
+--                                                        :::      ::::::::   --
+--   modules.lua                                        :+:      :+:    :+:   --
+--                                                    +:+ +:+         +:+     --
+--   By: oeyoews <jyao4783@gmail.com>               +#+  +:+       +#+        --
+--                                                +#+#+#+#+#+   +#+           --
+--   Created: 2022/07/31 18:36:07 by oeyoews           #+#    #+#             --
+--   Updated: 2022/07/31 18:36:09 by oeyoews          ###   ########          --
+--                                                                            --
+-- -------------------------------------------------------------------------- --
+
 -- @require: core.init.lua
 -- @see init.lua
 
@@ -31,7 +43,6 @@ M.files = {
     "tokyonight",
     "custom", -- need after tokyonight
     "notify",
-    "lspsaga", -- setup lspconfig ui
     "bufferline",
     "windline", -- statusline
   },
@@ -42,6 +53,7 @@ M.files = {
     "mason",
     "cmp", -- config completion
     "lspconfig", -- configurate lsp settings
+    "lspsaga", -- setup lspconfig ui
     "null-ls", -- complete lsp configuration
   },
 

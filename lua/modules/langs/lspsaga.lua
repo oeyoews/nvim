@@ -7,8 +7,9 @@ lspsaga.setup({
   move_in_saga = { prev = "<C-p>", next = "<C-n>" },
   show_diagnostic_source = true,
   diagnostic_source_bracket = {},
+  -- winbar have many bugs
   symbol_in_winbar = {
-    enable = true,
+    enable = false,
     separator = " ⇒ ",
     show_file = true,
     click_support = false, -- bug
@@ -26,7 +27,7 @@ lspsaga.setup({
   },
   code_action_num_shortcut = true,
   code_action_icon = "💡",
-  diagnostic_header = { " ", " ", " ", "ﴞ " },
+  diagnostic_header = { " ", " ", " ", "ﴞ " }, -- this not work, maybe order, but another is normal
   code_action_lightbulb = {
     enable = false,
     sign = true,
@@ -80,7 +81,7 @@ vim.keymap.set("n", "]e", "<cmd>Lspsaga diagnostic_jump_prev<CR>", {
   silent = true,
   noremap = true,
 })
-vim.keymap.set("n", "<space>ls", "<cmd>LSoutlineToggle<cr>", {
-  silent = true,
-  desc = "",
-})
+-- vim.keymap.set("n", "<space>ls", "<cmd>LSoutlineToggle<cr>", {
+--   silent = true,
+--   desc = "",
+-- })
