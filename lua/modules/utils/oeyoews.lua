@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/01 00:49:50 by oeyoews                                  --
+--   Updated: 2022/08/01 01:32:48 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -23,7 +23,7 @@ oeyoews.options = {
   -- @see lspconfig.lua
   sumneko_lua_locale_cn = false,
   -- @see sta.lua
-  toggle_theme_auto = false,
+  toggle_theme_auto = true,
   -- @ref: user.pcall.lua
   -- @TODO: use keybinds to toggle this options in config
   -- @see modules.utils.bootstrap.lua
