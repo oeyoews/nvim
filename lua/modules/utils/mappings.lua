@@ -243,7 +243,7 @@ vim.keymap.set("n", "<space>so", "<cmd>so %<cr>", {
 })
 
 vim.keymap.set("n", "<space>pl", ":nve /tmp/`date -I`.lua<cr>", {
-  desc = "🎮lua playground",
+  desc = " lua playground",
   silent = true,
 })
 
@@ -254,8 +254,9 @@ end, {
   desc = " edit mappings file",
 })
 
-vim.keymap.set("n", "<space>fer", ":find ~/.config/nvim/README.md<cr>", {
-  desc = "  Open README",
+-- not lua file, can't use function
+vim.keymap.set("n", "<space>fer", ":sfind ~/.config/nvim/README.md<cr>", {
+  desc = " Open README",
   silent = true,
 })
 
