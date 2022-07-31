@@ -66,9 +66,6 @@ vim.keymap.set("n", "<space>gk", "<cmd>Lspsaga hover_doc<cr>", {
 vim.keymap.set("n", "gr", "<cmd>Lspsaga rename<cr>", {
   desc = "✏ lsp rename",
 })
-vim.keymap.set("n", "<space>gd", "<cmd>Lspsaga preview_definition<cr>", {
-  desc = " preview_definition",
-})
 vim.keymap.set("n", "<space>gs", "<cmd>Lspsaga signature_help<cr>", {
   desc = " signature_help",
 })

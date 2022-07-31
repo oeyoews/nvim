@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:36 by oeyoews                                  --
---   Updated: 2022/08/01 01:03:06 by oeyoews                                  --
+--   Updated: 2022/08/01 01:28:42 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -48,7 +48,7 @@ local compile_path = util.join_paths(fn.stdpath("data"), "compile", "packer_comp
 
 -- init packer, and it's some settings
 packer.init({
-  max_jobs = 8,
+  max_jobs = 60,
   auto_clean = true,
   display = {
     prompt_border = "single",
