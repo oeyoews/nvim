@@ -6,7 +6,7 @@
 --   By: oeyoews <oeyoews>                          +#+  +:+       +#+        --
 --                                                +#+#+#+#+#+   +#+           --
 --   Created: 2022/07/31 12:47:45 by oeyoews           #+#    #+#             --
---   Updated: 2022/07/31 13:50:29 by oeyoews          ###   ########          --
+--   Updated: 2022/07/31 13:52:44 by oeyoews          ###   ########          --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -242,12 +242,17 @@ end, {
 })
 
 vim.keymap.set("n", "<space>hd", function()
-  return vim.notify(os.date("%Y-%m-%d %H:%M:%S %A Day %j"), "info", { title = "Current Date" })
+  return vim.notify(os.date("%Y-%m-%d %H:%M:%S %A, Day %j"), "info", {
+    title = "Current Date",
+    timeout = 3000,
+  })
 end, {
   desc = "愈show time",
 })
 vim.keymap.set("n", "<space>helo", function()
-  return vim.notify("  Hello, Neovim", "info", { title = "welcome" })
+  return vim.notify("  Hello, Neovim", "info", {
+    title = "welcome",
+  })
 end, {
   desc = " hello, neovim",
 })
