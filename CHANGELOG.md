@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.11.1](https://gitlab.com/oeyoews/nvim/compare/v7.11.0...v7.11.1) (2022-07-31)
+
+
+### Bug Fixes
+
+* **header42:** fix mail ([df0481d](https://gitlab.com/oeyoews/nvim/commit/df0481d2465b7f7c66fd7cc1dbafaa58f93071b2))
+
 # [7.11.0](https://gitlab.com/oeyoews/nvim/compare/v7.10.0...v7.11.0) (2022-07-31)
 
 
