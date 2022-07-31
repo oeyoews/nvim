@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/01 00:49:43 by oeyoews                                  --
+--   Updated: 2022/08/01 01:07:08 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -62,7 +62,8 @@ keymappings_set = {
   },
   {
     "<space>bb",
-    ":vne `mktemp -t nvim.scr.XXX`<cr>",
+    -- vne
+    ":e `mktemp -t nvim.scr.XXX`<cr>",
     " edit temp file",
   },
   {
@@ -261,7 +262,7 @@ vim.keymap.set("n", "<space>so", "<cmd>so %<cr>", {
   desc = " refresh current file",
 })
 
-vim.keymap.set("n", "<space>pl", ":vne /tmp/`date -I`.lua<cr>", {
+vim.keymap.set("n", "<space>pl", ":e /tmp/`date -I`.lua<cr>", {
   desc = " lua playground",
   silent = true,
 })

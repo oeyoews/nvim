@@ -63,9 +63,6 @@ vim.keymap.set("n", "<space>le", "<cmd>Lspsaga code_action<cr>", {
 vim.keymap.set("n", "<space>gk", "<cmd>Lspsaga hover_doc<cr>", {
   desc = " hover lsp doc",
 })
-vim.keymap.set("n", "<space>gh", "<cmd>Lspsaga lsp_finder<cr>", {
-  desc = " lsp finder",
-})
 vim.keymap.set("n", "gr", "<cmd>Lspsaga rename<cr>", {
   desc = "✏ lsp rename",
 })
@@ -84,4 +81,8 @@ vim.keymap.set("n", "]e", "<cmd>Lspsaga diagnostic_jump_prev<CR>", {
 -- vim.keymap.set("n", "<space>ls", "<cmd>LSoutlineToggle<cr>", {
 --   silent = true,
 --   desc = "",
+-- })
+-- it's slow make your computer
+-- vim.keymap.set("n", "<space>gh", "<cmd>Lspsaga lsp_finder<cr>", {
+--   desc = " lsp finder",
 -- })

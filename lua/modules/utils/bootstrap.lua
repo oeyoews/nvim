@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:36 by oeyoews                                  --
---   Updated: 2022/08/01 00:49:37 by oeyoews                                  --
+--   Updated: 2022/08/01 01:03:06 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -23,7 +23,7 @@ local install_path = string.format("%s/site/pack/packer/start/packer.nvim", fn.s
 --- install packer.nvim firstly
 if fn.empty(fn.glob(install_path)) == 1 then
   -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#1e222a" })
-  -- note: this message can't more one line to enter automatically
+  -- @note: this message can't more one line to enter automatically
   local boootstrap_msg = [[
   You have not inistall packer.nvim  Cloning packer.nvim ...]]
   vim.notify(boootstrap_msg)
