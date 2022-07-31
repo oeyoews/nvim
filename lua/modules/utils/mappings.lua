@@ -6,7 +6,7 @@
 --   By: oeyoews <oeyoews>                          +#+  +:+       +#+        --
 --                                                +#+#+#+#+#+   +#+           --
 --   Created: 2022/07/31 12:47:45 by oeyoews           #+#    #+#             --
---   Updated: 2022/07/31 12:47:48 by oeyoews          ###   ########          --
+--   Updated: 2022/07/31 13:50:29 by oeyoews          ###   ########          --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -213,8 +213,10 @@ endfunction
 function! Sline() abort
 if &laststatus
 set laststatus=0
+set showtabline=0
 else
 set laststatus=3
+set showtabline=2
 endif
 endfunction
 ]])
