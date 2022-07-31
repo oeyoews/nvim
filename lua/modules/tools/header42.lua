@@ -1,19 +1,30 @@
 -- -------------------------------------------------------------------------- --
 --                                                                            --
 --                                                        :::      ::::::::   --
---   init.lua                                           :+:      :+:    :+:   --
+--   header.lua                                         :+:      :+:    :+:   --
 --                                                    +:+ +:+         +:+     --
 --   By: oeyoews <oeyoews>                          +#+  +:+       +#+        --
 --                                                +#+#+#+#+#+   +#+           --
---   Created: 2022/07/31 12:33:07 by oeyoews           #+#    #+#             --
---   Updated: 2022/07/31 12:49:18 by oeyoews          ###   ########          --
+--   Created: 2022/07/31 12:49:11 by oeyoews           #+#    #+#             --
+--   Updated: 2022/07/31 12:49:12 by oeyoews          ###   ########          --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
---   Main
-local files = require("user.modules").files
-local modules = require("user.modules").modules
-local pcall = require("user.pcall")
+local header = require("header42")
 
--- ﱤ load modules
-pcall.setup("modules", modules, files)
+header.setup({
+  user = "oeyoews",
+  mail = "jyao4783@gmail.com",
+  ft = {
+    lua = {
+      start_comment = "--",
+      end_comment = "--",
+      fill_comment = "-",
+    },
+  },
+})
+
+vim.keymap.set("n", "<space>ah", "<cmd>Stdheader<cr>", {
+  silent = true,
+  desc = "🩹 add header",
+})

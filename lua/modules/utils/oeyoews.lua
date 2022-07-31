@@ -42,6 +42,7 @@ oeyoews.builtin_plugin = {
   builtin .. "tokyonight",
   builtin .. "windline",
   builtin .. "persistence",
+  builtin .. "header42",
 }
 
 -- mapping

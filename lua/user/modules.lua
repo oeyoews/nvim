@@ -47,6 +47,7 @@ M.files = {
 
   -- @TOOLS
   tools = {
+    "header42",
     "persistence",
     "vim_startuptime",
     "nvim_tree",

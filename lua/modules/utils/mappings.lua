@@ -1,3 +1,15 @@
+-- -------------------------------------------------------------------------- --
+--                                                                            --
+--                                                        :::      ::::::::   --
+--   mappings.lua                                       :+:      :+:    :+:   --
+--                                                    +:+ +:+         +:+     --
+--   By: oeyoews <oeyoews>                          +#+  +:+       +#+        --
+--                                                +#+#+#+#+#+   +#+           --
+--   Created: 2022/07/31 12:47:45 by oeyoews           #+#    #+#             --
+--   Updated: 2022/07/31 12:47:48 by oeyoews          ###   ########          --
+--                                                                            --
+-- -------------------------------------------------------------------------- --
+
 local fun = require("user.fun")
 
 vim.g.mapleader = " "
@@ -242,7 +254,7 @@ vim.keymap.set("n", "<space>so", "<cmd>so %<cr>", {
   desc = " refresh current file",
 })
 
-vim.keymap.set("n", "<space>pl", ":nve /tmp/`date -I`.lua<cr>", {
+vim.keymap.set("n", "<space>pl", ":vne /tmp/`date -I`.lua<cr>", {
   desc = " lua playground",
   silent = true,
 })
