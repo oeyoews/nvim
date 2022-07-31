@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.13.0](https://gitlab.com/oeyoews/nvim/compare/v7.12.0...v7.13.0) (2022-07-31)
+
+
+### Features
+
+* **packer:** add update snapshots ([f581889](https://gitlab.com/oeyoews/nvim/commit/f581889dd5f66bf98813168692db8505bb5d7107))
+
 # [7.12.0](https://gitlab.com/oeyoews/nvim/compare/v7.11.1...v7.12.0) (2022-07-31)
 
 
