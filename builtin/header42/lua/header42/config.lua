@@ -6,7 +6,7 @@
 --   By: oeyoews <oeyoews>                          +#+  +:+       +#+        --
 --                                                +#+#+#+#+#+   +#+           --
 --   Created: 2022/07/31 12:38:10 by oeyoews           #+#    #+#             --
---   Updated: 2022/07/31 12:43:47 by oeyoews          ###   ########          --
+--   Updated: 2022/07/31 13:03:36 by oeyoews          ###   ########          --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -61,7 +61,7 @@ setmetatable(Config, {
 function Config:set(opts)
   self.__index = self
   self.user = opts.user or "oeyoews"
-  self.mail = opts.user or "jyao4783@gmail.com"
+  self.mail = opts.mail or "jyao4783@gmail.com"
   if opts.ft ~= nil then
     self.ft = vim.tbl_deep_extend("force", self.ft, opts.ft)
   end
