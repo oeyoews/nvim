@@ -172,7 +172,7 @@ cmp.setup({
   -- @bug true is nothing, must to comment
   completion = {
     -- how to use keymap to toggle this
-    autocomplete = false,
+    -- autocomplete = false,
   },
   experimental = {
     --ghost_text = {hl_group = 'GH'}

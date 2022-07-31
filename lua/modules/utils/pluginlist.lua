@@ -6,11 +6,12 @@
 --   By: oeyoews <oeyoews>                          +#+  +:+       +#+        --
 --                                                +#+#+#+#+#+   +#+           --
 --   Created: 2022/07/31 12:47:31 by oeyoews           #+#    #+#             --
---   Updated: 2022/07/31 13:02:28 by oeyoews          ###   ########          --
+--   Updated: 2022/07/31 15:35:52 by oeyoews          ###   ########          --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
 oeyoews.pluginlist = {
+  "rafcamlet/nvim-luapad",
   "kyazdani42/nvim-tree.lua",
   "folke/lua-dev.nvim",
   "mzlogin/vim-markdown-toc",

@@ -77,10 +77,22 @@ packer.startup(function(use)
   end
 end)
 
-vim.keymap.set("n", "<space>pc", "<cmd>PackerClean<cr>", { desc = " clean plugin" })
-vim.keymap.set("n", "<space>pi", "<cmd>PackerInstall<cr>", { desc = " install plugin" })
-vim.keymap.set("n", "<space>ps", "<cmd>PackerSync<cr>", { desc = " update plugin" })
-vim.keymap.set("n", "<space>pr", "<cmd>PackerSnapshot rolling.json<cr>", { desc = " backup neovim plugin" })
+vim.keymap.set("n", "<space>pc", "<cmd>PackerClean<cr>", {
+  desc = " clean plugin",
+})
+vim.keymap.set("n", "<space>pi", "<cmd>PackerInstall<cr>", {
+  desc = " install plugin",
+})
+vim.keymap.set("n", "<space>ps", "<cmd>PackerSync<cr>", {
+  desc = " update plugin",
+})
+vim.keymap.set("n", "<space>pr", function()
+  return oeyoews.updateSnapshots()
+end, {
+  desc = " backup neovim plugin",
+})
 vim.keymap.set("n", "<space>fb", function()
   return oeyoews.find_lua_file("lua/modules/utils/bootstrap")
-end, { desc = " jump bootstrap" })
+end, {
+  desc = " jump bootstrap",
+})
