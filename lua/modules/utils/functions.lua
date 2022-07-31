@@ -23,7 +23,7 @@ oeyoews.updateSnapshots = function()
 
   local res = vim.fn.findfile(rolling, path)
 
-  if string.len(res) ~= 0 then
+  if res:len() ~= 0 then
     vim.cmd(([[PackerSnapshotDelete %s]]):format(res))
   end
   vim.cmd(([[PackerSnapshot %s]]):format(rolling))
