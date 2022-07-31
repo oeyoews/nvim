@@ -64,6 +64,13 @@ end, {
   desc = "  packer",
 })
 
+vim.keymap.set("n", "<space>tv", function()
+  return require("telescope").load_extension("dotfiles"), require("telescope").extensions.dotfiles.dotfiles()
+end, {
+  silent = true,
+  desc = "⇘ search config files",
+})
+
 vim.cmd([[
 " highlight TelescopeResultsBorder  guifg=#bd93f9
 highlight TelescopeBorder         guifg=#bd93f9

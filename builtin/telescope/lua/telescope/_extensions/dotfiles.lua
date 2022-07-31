@@ -1,3 +1,8 @@
+if vim.fn.executable("rg") ~= 1 then
+  vim.notify("Please install ripgrep")
+  return
+end
+
 local telescope = require("telescope")
 local finders = require("telescope.finders")
 local pickers = require("telescope.pickers")
@@ -5,7 +10,7 @@ local make_entry = require("telescope.make_entry")
 local conf = require("telescope.config").values
 
 local dotfiles_list = function(opts)
-  local dir = opts.path or ""
+  local dir = opts.path or vim.fn.stdpath("config") .. "/lua/"
   local list = {}
   local p = io.popen("rg --files --hidden " .. dir)
   for file in p:lines() do
@@ -34,4 +39,4 @@ local dotfiles = function(opts)
   }):find()
 end
 
-return telescope.register_extension({ exports = { nvim = dotfiles } })
+return telescope.register_extension({ exports = { dotfiles = dotfiles } })
