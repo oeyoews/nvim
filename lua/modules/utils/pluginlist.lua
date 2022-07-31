@@ -43,7 +43,9 @@ oeyoews.pluginlist = {
   "windwp/nvim-autopairs",
   "oeyoews/tabout.nvim",
   "folke/which-key.nvim",
-  "ziontee113/icon-picker.nvim",
+  {
+    "ziontee113/icon-picker.nvim",
+  },
   "kevinhwang91/rnvimr",
   "cappyzawa/trim.nvim",
   "ekickx/clipboard-image.nvim",

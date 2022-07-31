@@ -14,5 +14,5 @@ end
 oeyoews.find_lua_file = function(file_path)
   local prefix = vim.fn.stdpath("config")
   local load_path = string.format("%s/%s.lua", prefix, file_path)
-  vim.cmd(([[find %s]]):format(load_path))
+  vim.cmd(([[sfind %s]]):format(load_path))
 end

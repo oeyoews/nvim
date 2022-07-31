@@ -50,7 +50,7 @@ keymappings_set = {
   },
   {
     "<space>bb",
-    ":e `mktemp -t nvim.scr.XXX`<cr>",
+    ":vne `mktemp -t nvim.scr.XXX`<cr>",
     " edit temp file",
   },
   {
@@ -242,7 +242,7 @@ vim.keymap.set("n", "<space>so", "<cmd>so %<cr>", {
   desc = " refresh current file",
 })
 
-vim.keymap.set("n", "<space>pl", ":e /tmp/`date -I`.lua<cr>", {
+vim.keymap.set("n", "<space>pl", ":nve /tmp/`date -I`.lua<cr>", {
   desc = "🎮lua playground",
   silent = true,
 })
