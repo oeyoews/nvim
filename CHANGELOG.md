@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.14.0](https://gitlab.com/oeyoews/nvim/compare/v7.13.0...v7.14.0) (2022-07-31)
+
+
+### Features
+
+* **dotfiles:** add telescope extensions ([c0d3df1](https://gitlab.com/oeyoews/nvim/commit/c0d3df13cfe2dfc52bf1646b8bc03a73030cd647))
+
 # [7.13.0](https://gitlab.com/oeyoews/nvim/compare/v7.12.0...v7.13.0) (2022-07-31)
 
 
