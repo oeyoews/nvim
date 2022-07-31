@@ -14,18 +14,21 @@ end
 oeyoews.find_lua_file = function(file_path)
   local prefix = vim.fn.stdpath("config")
   local load_path = string.format("%s/%s.lua", prefix, file_path)
-  vim.cmd(([[sfind %s]]):format(load_path))
+  -- sfind find
+  vim.cmd(([[find %s]]):format(load_path))
 end
 
 oeyoews.updateSnapshots = function()
   local path = string.format("%s/snapshots/", vim.fn.stdpath("config"))
   local rolling = "rolling.json"
+  local snap_path = path .. rolling
 
+  -- if vim.fn.empty(vim.fn.glob(snap_path)) == 1 then
+  --   os.remove(snap_path)
+  -- end
   local res = vim.fn.findfile(rolling, path)
-
   if res:len() ~= 0 then
     os.remove(res)
-    vim.cmd(([[PackerSnapshotDelete %s]]):format(res))
   end
   -- use vim.defer or schedule
   vim.cmd(([[PackerSnapshot %s]]):format(rolling))

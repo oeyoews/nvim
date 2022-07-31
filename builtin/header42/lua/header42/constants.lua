@@ -6,22 +6,23 @@
 --   By: oeyoews <oeyoews>                          +#+  +:+       +#+        --
 --                                                +#+#+#+#+#+   +#+           --
 --   Created: 2022/07/31 12:43:19 by oeyoews           #+#    #+#             --
---   Updated: 2022/07/31 19:52:17 by oeyoews          ###   ########          --
+--   Updated: 2022/08/01 00:42:24 by oeyoews          ###   ########          --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
 local values = {}
 
 --- École 42 ASCII art.
+-- this s order is fixed, can't modify easily
 values.header = [[%2s %74s %2s
 %2s                                                                            %2s
-%2s                                                        :::      ::::::::   %2s
-%2s   %s%s:+:      :+:    :+:   %2s
-%2s                                                    +:+ +:+         +:+     %2s
-%2s   By: %s <%s>%s+#+  +:+       +#+        %2s
-%2s                                                +#+#+#+#+#+   +#+           %2s
-%2s   Created: %19s by %s%s#+#    #+#             %2s
-%2s   Updated: %19s by %s%s###   ########          %2s
+%2s                                                                            %2s
+%2s   %s%s                      %2s
+%2s                                                                            %2s
+%2s   By: %s <%s>%s                          %2s
+%2s                                                                            %2s
+%2s   Created: %19s by %s%s                       %2s
+%2s   Updated: %19s by %s%s                        %2s
 %2s                                                                            %2s
 %2s %74s %2s
 

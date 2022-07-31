@@ -1,18 +1,33 @@
-local fn = vim.fn
-local install_path = string.format("%s/site/pack/packer/start/packer.nvim", fn.stdpath("data"))
+-- -------------------------------------------------------------------------- --
+--                                                                            --
+--                                                                            --
+--   bootstrap.lua                                                            --
+--                                                                            --
+--   By: oeyoews <jyao4783@gmail.com>                                         --
+--                                                                            --
+--   Created: 2022/08/01 00:49:36 by oeyoews                                  --
+--   Updated: 2022/08/01 00:49:37 by oeyoews                                  --
+--                                                                            --
+-- -------------------------------------------------------------------------- --
 
--- some neovim needs settings
 -- vim.fn.has("nvim-0.8.0")
-if oeyoews.nvim_version < 7 then
-  vim.notify("   Please update your neovim to latest")
+if oeyoews.nvim_version < 8 then
+  vim.notify([[
+   Please update your neovim to latest]])
   return
 end
 
+local fn = vim.fn
+local install_path = string.format("%s/site/pack/packer/start/packer.nvim", fn.stdpath("data"))
+
 --- install packer.nvim firstly
-if fn.empty(fn.glob(install_path)) > 0 then
+if fn.empty(fn.glob(install_path)) == 1 then
   -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#1e222a" })
-  vim.notify(os.date(" ﲊ %Y-%m-%d %H:%M:%S %A"))
-  vim.notify([[   You have not inistall packer.nvim  Cloning packer.nvim ...]], "info")
+  -- note: this message can't more one line to enter automatically
+  local boootstrap_msg = [[
+  You have not inistall packer.nvim  Cloning packer.nvim ...]]
+  vim.notify(boootstrap_msg)
+
   packer_bootstrap = fn.system({
     "git",
     "clone",
@@ -25,6 +40,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
   vim.cmd([[packadd packer.nvim]])
 end
 
+-- packer config
 local packer = require("packer")
 local util = require("packer.util")
 local snapshot_path = util.join_paths(fn.stdpath("config"), "snapshots")
@@ -36,8 +52,8 @@ packer.init({
   auto_clean = true,
   display = {
     prompt_border = "single",
-    working_sym = " ", -- The symbol for a plugin being installed/updated
-    error_sym = " ", -- The symbol for a plugin with an error in installation/updating
+    working_sym = " ",
+    error_sym = " ",
     done_sym = " ",
     -- open_fn = function()
     --   return util.float({ border = "single" })
@@ -65,10 +81,9 @@ packer.startup(function(use)
 
   -- Automatically set up your configuration after cloning packer.nvim
   if packer_bootstrap then
-    -- if packer.config.compile_path then
-    --   -- WARN: danger command
-    --   os.remove(packer.config.compile_path)
-    -- end
+    if packer.config.compile_path then
+      os.remove(packer.config.compile_path)
+    end
     packer.sync()
   else
     -- automatically packer_compiled on startup
@@ -82,6 +97,7 @@ vim.keymap.set("n", "<space>pr", function()
 end, {
   desc = " backup neovim plugin",
 })
+
 vim.keymap.set("n", "<space>fb", function()
   return oeyoews.find_lua_file("lua/modules/utils/bootstrap")
 end, {

@@ -6,7 +6,7 @@
 --   By: oeyoews <oeyoews>                          +#+  +:+       +#+        --
 --                                                +#+#+#+#+#+   +#+           --
 --   Created: 2022/07/31 12:40:19 by oeyoews           #+#    #+#             --
---   Updated: 2022/07/31 12:43:42 by oeyoews          ###   ########          --
+--   Updated: 2022/08/01 00:29:56 by oeyoews          ###   ########          --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -74,7 +74,7 @@ header.update = function(ft_config)
     fn.setline(
       4,
       string.format(
-        "%2s   %s%s:+:      :+:    :+:   %2s",
+        "%2s   %s%s                      %2s",
         ft_config.start_comment,
         filename,
         string.rep(" ", SPACES_AFTER_FILENAME),
@@ -85,7 +85,7 @@ header.update = function(ft_config)
     fn.setline(
       9,
       string.format(
-        "%2s   Updated: %19s by %s%s###   ########          %2s",
+        "%2s   Updated: %19s by %s%s                        %2s",
         ft_config.start_comment,
         fn.strftime("%Y/%m/%d %H:%M:%S"),
         user,

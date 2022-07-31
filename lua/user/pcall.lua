@@ -25,6 +25,8 @@ M.setup = function(dir, load_module, load_files)
 
   -- use io.write to store error messages
   if #error_modules ~= 0 then
+    -- @todo write to files and just use one tip to note
+    -- vim.notify("You got an warn") return
     error_modules[#error_modules + 1] = vim.inspect(error_logs)
     local fmt_msg = string.format(
       [[
