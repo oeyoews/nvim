@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/01 01:32:48 by oeyoews                                  --
+--   Updated: 2022/08/01 01:33:37 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -17,7 +17,7 @@ oeyoews.nvim_version = vim.version().minor
 
 -- @options
 oeyoews.options = {
-  enable_clangd = false,
+  enable_clangd = true,
   -- @see lspconfig.lua
   enable_lsp = true,
   -- @see lspconfig.lua
