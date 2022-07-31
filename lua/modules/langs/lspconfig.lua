@@ -75,11 +75,12 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
   underline = true,
   update_in_insert = false,
   severity_sort = false,
-  virtual_text = {
-    spacing = 2,
-    source = "always",
-    prefix = "",
-  },
+  virtual_text = false,
+  -- virtual_text = {
+  --   spacing = 2,
+  --   source = "always",
+  --   prefix = "",
+  -- },
   float = {
     focusable = false,
     style = "minimal",

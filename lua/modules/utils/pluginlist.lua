@@ -6,7 +6,7 @@
 --   By: oeyoews <oeyoews>                          +#+  +:+       +#+        --
 --                                                +#+#+#+#+#+   +#+           --
 --   Created: 2022/07/31 12:47:31 by oeyoews           #+#    #+#             --
---   Updated: 2022/07/31 15:35:52 by oeyoews          ###   ########          --
+--   Updated: 2022/07/31 17:41:28 by oeyoews          ###   ########          --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -38,11 +38,10 @@ oeyoews.pluginlist = {
   "hrsh7th/cmp-buffer",
   "neovim/nvim-lspconfig",
   "jose-elias-alvarez/null-ls.nvim",
-  "kkharji/lspsaga.nvim",
+  "glepnir/lspsaga.nvim",
   "honza/vim-snippets",
   "SirVer/ultisnips",
   "hrsh7th/cmp-nvim-lsp",
-  "onsails/lspkind-nvim",
   "hrsh7th/cmp-path",
   -- @TOOLS
   "dhruvasagar/vim-table-mode",

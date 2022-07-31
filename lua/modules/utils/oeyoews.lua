@@ -43,6 +43,7 @@ oeyoews.builtin_plugin = {
   builtin .. "windline",
   builtin .. "persistence",
   builtin .. "header42",
+  builtin .. "lspkind",
 }
 
 -- mapping

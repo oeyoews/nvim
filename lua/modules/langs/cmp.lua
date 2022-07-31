@@ -1,3 +1,5 @@
+local lspkind = require("lspkind")
+
 --vim.cmd [[highlight default GH guifg=#3bb6c4 guibg=NONE]]
 local g = vim.g
 
@@ -12,8 +14,6 @@ end
 
 -- @nvim_cmp
 local _, cmp = pcall(require, "cmp")
--- -- @lspkind
-local _, lspkind = pcall(require, "lspkind")
 
 local function border(hl_name)
   return {
