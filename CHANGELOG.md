@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.11.0](https://gitlab.com/oeyoews/nvim/compare/v7.10.0...v7.11.0) (2022-07-31)
+
+
+### Features
+
+* **header42:** add header.nvim ([1d1f3f8](https://gitlab.com/oeyoews/nvim/commit/1d1f3f8c1d13cdef4dd64125f302d76649595dcc))
+
 # [7.10.0](https://gitlab.com/oeyoews/nvim/compare/v7.9.0...v7.10.0) (2022-07-31)
 
 
