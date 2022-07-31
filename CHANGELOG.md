@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.10.0](https://gitlab.com/oeyoews/nvim/compare/v7.9.0...v7.10.0) (2022-07-31)
+
+
+### Features
+
+* **sfind:** use sfind ([8072421](https://gitlab.com/oeyoews/nvim/commit/8072421b484e291a5e6cbf80467c48e7604b76a5))
+
 # [7.9.0](https://gitlab.com/oeyoews/nvim/compare/v7.8.0...v7.9.0) (2022-07-30)
 
 
