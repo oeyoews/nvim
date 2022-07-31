@@ -164,6 +164,7 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 <details>
 <summary>expand</summary>
 
+- [ ] press enter avoid this message
 - [ ] conflict: vim-startuptime is conflict to persistence
 - [difficult] add firstinstall code, avoid less error code
 - [?] archieve a pomodoro by function or mapping enable by hand(maybe can't come true, cpu continue)
