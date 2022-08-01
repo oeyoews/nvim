@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/08/01 13:55:15 by oeyoews                                  --
+--   Updated: 2022/08/01 14:57:44 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -40,7 +40,6 @@ M.files = {
   ui = {
     "web_icons",
     "tokyonight",
-    "custom", -- need after tokyonight
     "notify",
     "bufferline",
     "windline", -- statusline

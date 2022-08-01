@@ -19,3 +19,5 @@ local sta = function(conf)
 end
 
 sta()
+
+require("modules.ui.custom")
