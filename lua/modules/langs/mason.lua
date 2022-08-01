@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 10:42:39 by oeyoews                                  --
---   Updated: 2022/08/01 11:31:44 by oeyoews                                  --
+--   Updated: 2022/08/01 12:04:34 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -17,7 +17,12 @@ local check_npm = function()
   end
 end
 
--- check_npm()
+oeyoews.autocmd("FileType", {
+  pattern = "mason.nvim",
+  callback = function()
+    check_npm()
+  end,
+})
 
 local mason_exclude = {}
 

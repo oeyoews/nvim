@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:36 by oeyoews                                  --
---   Updated: 2022/08/01 12:01:56 by oeyoews                                  --
+--   Updated: 2022/08/01 12:04:58 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -106,7 +106,7 @@ local check_version = function()
   if oeyoews.nvim_version < 8 then
     local version_msg = string.format(
       [[
- ⚠ Your neovim version is %s， please install neovim 0.8.0 or later]],
+ ⚠ Your neovim version is %s, please install neovim 0.8.0 or later]],
       oeyoews.nvim_full_version_info
     )
     vim.notify(version_msg, "warn")
