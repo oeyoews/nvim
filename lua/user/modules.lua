@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/08/01 00:49:33 by oeyoews                                  --
+--   Updated: 2022/08/01 09:53:58 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -53,7 +53,6 @@ M.files = {
     "mason",
     "cmp", -- config completion
     "lspconfig", -- configurate lsp settings
-    "lspsaga", -- setup lspconfig ui
     "null-ls", -- complete lsp configuration
   },
 

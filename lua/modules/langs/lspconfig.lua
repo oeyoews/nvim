@@ -101,3 +101,5 @@ local custom_icon = function()
 end
 
 custom_icon()
+
+require("modules.langs.lspsaga")

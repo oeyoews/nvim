@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:36 by oeyoews                                  --
---   Updated: 2022/08/01 01:28:42 by oeyoews                                  --
+--   Updated: 2022/08/01 10:27:44 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -28,6 +28,7 @@ if fn.empty(fn.glob(install_path)) == 1 then
   You have not inistall packer.nvim  Cloning packer.nvim ...]]
   vim.notify(boootstrap_msg)
 
+  -- TODO if this exit code , how to resolve?
   packer_bootstrap = fn.system({
     "git",
     "clone",
@@ -41,7 +42,11 @@ if fn.empty(fn.glob(install_path)) == 1 then
 end
 
 -- packer config
-local packer = require("packer")
+local packer_ok, packer = pcall(require, "packer")
+if not packer_ok then
+  return
+end
+
 local util = require("packer.util")
 local snapshot_path = util.join_paths(fn.stdpath("config"), "snapshots")
 local compile_path = util.join_paths(fn.stdpath("data"), "compile", "packer_compiled.lua")
