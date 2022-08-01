@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/01 01:07:08 by oeyoews                                  --
+--   Updated: 2022/08/01 20:05:20 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -215,9 +215,12 @@ function! Sline() abort
 if &laststatus
 set laststatus=0
 set showtabline=0
+set invnumber
+let &number=0
 else
 set laststatus=3
 set showtabline=2
+let &number=1
 endif
 endfunction
 ]])

@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/08/01 15:17:24 by oeyoews                                  --
+--   Updated: 2022/08/01 19:56:10 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -59,7 +59,7 @@ M.files = {
   tools = {
     "header42",
     "persistence",
-    "nvim_tree",
+    -- "nvim_tree",
     "neogen",
     "todo_comments",
     "indent", -- show indent line
