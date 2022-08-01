@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/01 14:31:39 by oeyoews                                  --
+--   Updated: 2022/08/01 14:51:13 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -71,9 +71,6 @@ oeyoews.pluginlist = {
   {
     "iamcco/markdown-preview.nvim",
     opt = true,
-    config = function()
-      require("modules.tools.mkdp")
-    end,
     run = "cd app && npm install",
   },
   {
@@ -82,11 +79,7 @@ oeyoews.pluginlist = {
   },
   {
     "ziontee113/icon-picker.nvim",
-    cmd = "",
     opt = true,
-    config = function()
-      require("modules.tools.icon_picker")
-    end,
   },
   oeyoews.builtin_plugin,
 }

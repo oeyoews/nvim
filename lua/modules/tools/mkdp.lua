@@ -12,7 +12,12 @@ g.mkdp_filetypes = {
   "html",
 }
 
-oeyoews.autocmd("FileType", {
+vim.keymap.set("n", "<space>fM", "<cmd>MarkdownPreviewToggle<cr>", {
+  silent = true,
+  desc = " preview markdown in browser",
+})
+
+--[[ oeyoews.autocmd("FileType", {
   pattern = g.mkdp_filetypes,
   callback = function()
     vim.keymap.set("n", "<space>fM", "<cmd>MarkdownPreviewToggle<cr>", {
@@ -20,4 +25,4 @@ oeyoews.autocmd("FileType", {
       desc = " preview markdown in browser",
     })
   end,
-})
+}) ]]
