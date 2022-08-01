@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.16.0](https://gitlab.com/oeyoews/nvim/compare/v7.15.0...v7.16.0) (2022-08-01)
+
+
+### Features
+
+* **ftplugin:** use ftplugin to perfect lazy load ([b238f46](https://gitlab.com/oeyoews/nvim/commit/b238f46988a83144ebbe6b9b5bc077c4ad093ee8))
+
 # [7.15.0](https://gitlab.com/oeyoews/nvim/compare/v7.14.1...v7.15.0) (2022-08-01)
 
 
