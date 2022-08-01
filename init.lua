@@ -6,20 +6,16 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:04 by oeyoews                                  --
---   Updated: 2022/08/01 10:59:23 by oeyoews                                  --
+--   Updated: 2022/08/01 11:01:22 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
-local verify_version = function()
-  if vim.version().minor < 8 then
-    local version_msg = [[
+if vim.version().minor < 8 then
+  local version_msg = [[
  ⚠ Please update your neovim to 0.8.0]]
-    vim.notify(version_msg, "warn")
-    return
-  end
+  vim.notify(version_msg, "warn")
+  return
 end
-
-verify_version()
 
 --   Main
 local Config = require("user.modules")

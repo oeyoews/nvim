@@ -1,10 +1,6 @@
 -- @module: pcall.lua
 -- @ref: init.lua
 
-if packer_bootstrap then
-  return
-end
-
 local notify_ok, notify = pcall(require, "notify")
 local error_modules = {}
 local error_logs = {}
@@ -29,6 +25,10 @@ M.setup = function(dir, load_module, load_files)
   end
 
   -- use io.write to store error messages
+  if packer_bootstrap then
+    return
+  end
+
   if #error_modules ~= 0 then
     -- @todo write to files and just use one tip to note
     -- vim.notify("You got an warn") return
