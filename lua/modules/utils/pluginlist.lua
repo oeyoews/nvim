@@ -6,12 +6,16 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/02 00:58:09 by oeyoews                                  --
+--   Updated: 2022/08/02 01:43:17 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
 --   plugins list
 oeyoews.pluginlist = {
+  {
+    "nvim-neorg/neorg",
+    opt = true,
+  },
   "rafcamlet/nvim-luapad",
   "kyazdani42/nvim-tree.lua",
   "folke/lua-dev.nvim",

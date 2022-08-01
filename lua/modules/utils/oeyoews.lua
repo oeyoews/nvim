@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/02 01:00:50 by oeyoews                                  --
+--   Updated: 2022/08/02 01:41:56 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -57,16 +57,13 @@ oeyoews.servers = {
 }
 
 oeyoews.builtin_plugin = {
+  builtin .. "windline",
   builtin .. "notify",
   builtin .. "telescope",
   builtin .. "tokyonight",
   builtin .. "persistence",
   builtin .. "header42",
   builtin .. "lspkind",
-  {
-    builtin .. "windline",
-    config = [[require("wlsample.evil_line")]],
-  },
 }
 
 --   mappings

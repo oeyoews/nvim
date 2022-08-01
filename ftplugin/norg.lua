@@ -1,3 +1,7 @@
+vim.cmd("packadd neorg")
+
+-- Neorg sync-parsers
+-- bug: repeat run it
 local neorg = require("neorg")
 
 local function load_completion()
