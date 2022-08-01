@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:36 by oeyoews                                  --
---   Updated: 2022/08/01 12:04:58 by oeyoews                                  --
+--   Updated: 2022/08/01 12:08:47 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -82,7 +82,8 @@ packer.startup(function(use)
     if packer.config.compile_path then
       os.remove(packer.config.compile_path)
     end
-    packer.sync()
+    -- packer.sync()
+    vim.cmd([[silent! PackerSync]])
   else
     -- automatically packer_compiled on startup
     packer.compile()
