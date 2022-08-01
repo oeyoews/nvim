@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/08/01 09:53:58 by oeyoews                                  --
+--   Updated: 2022/08/01 11:37:02 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -29,7 +29,6 @@ M.files = {
   ["utils"] = {
     "impatient",
     "oeyoews",
-    "functions",
     "pluginlist",
     "bootstrap",
     "disable",

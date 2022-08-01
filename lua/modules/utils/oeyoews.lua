@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/01 01:33:37 by oeyoews                                  --
+--   Updated: 2022/08/01 11:37:29 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -14,6 +14,12 @@ oeyoews = {}
 
 -- nvim_version
 oeyoews.nvim_version = vim.version().minor
+oeyoews.nvim_full_version_info = string.format(
+  "%s.%s.%s",
+  vim.version().major,
+  vim.version().minor,
+  vim.version().patch
+)
 
 -- @options
 oeyoews.options = {
@@ -65,3 +71,5 @@ vim.keymap.set(
   "<cmd>find ~/.config/nvim/lua/modules/utils/oeyoews.lua<cr>",
   { desc = " edit global config" }
 )
+
+require("modules.utils.functions")

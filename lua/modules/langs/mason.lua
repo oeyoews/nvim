@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 10:42:39 by oeyoews                                  --
---   Updated: 2022/08/01 11:26:14 by oeyoews                                  --
+--   Updated: 2022/08/01 11:31:44 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -17,12 +17,7 @@ local check_npm = function()
   end
 end
 
-local autocmd = vim.api.nvim_create_autocmd
-autocmd("VimEnter", {
-  callback = function()
-    check_npm()
-  end,
-})
+-- check_npm()
 
 local mason_exclude = {}
 

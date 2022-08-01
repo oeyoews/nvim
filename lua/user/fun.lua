@@ -26,7 +26,6 @@ M.get_neovim_info = function()
   local builtin = #oeyoews.builtin_plugin
   local total_plugins = #vim.tbl_keys(packer_plugins) - builtin
   local version = vim.version()
-  local nvim_version_info = string.format("%s.%s.%s", version.major, version.minor, version.patch)
   local fmt_msg = string.format(
     [[
  #  You installed `%s+%s` plugins by packer
@@ -34,7 +33,7 @@ M.get_neovim_info = function()
  #  Your personal configuration version: `%s` ]],
     total_plugins,
     builtin,
-    nvim_version_info,
+    oeyoews.nvim_full_version_info,
     get_tag()[1]
   )
   return vim.notify(fmt_msg, "info", {
