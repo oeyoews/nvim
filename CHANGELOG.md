@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.17.0](https://gitlab.com/oeyoews/nvim/compare/v7.16.2...v7.17.0) (2022-08-01)
+
+
+### Features
+
+* **neorg:** add neorg with lazy load ([48c0728](https://gitlab.com/oeyoews/nvim/commit/48c0728b83e5d96320126ae468eb9e29f2b638a2))
+
 ## [7.16.2](https://gitlab.com/oeyoews/nvim/compare/v7.16.1...v7.16.2) (2022-08-01)
 
 
