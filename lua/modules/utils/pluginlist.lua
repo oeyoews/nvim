@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/01 15:56:03 by oeyoews                                  --
+--   Updated: 2022/08/01 16:27:10 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -66,6 +66,7 @@ oeyoews.pluginlist = {
   "cappyzawa/trim.nvim",
   -- this lazy load can't work, when directly open markdown file
   -- need this @ref: https://github.com/wbthomason/packer.nvim/issues/892
+  -- note: this cmd can't use mapping
   "thinca/vim-quickrun",
   {
     "dstein64/vim-startuptime",

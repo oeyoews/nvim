@@ -6,15 +6,16 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:36 by oeyoews                                  --
---   Updated: 2022/08/01 12:29:23 by oeyoews                                  --
+--   Updated: 2022/08/01 16:12:46 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
-local fn = vim.fn
-local install_path = string.format("%s/site/pack/packer/start/packer.nvim", fn.stdpath("data"))
+local install_path = string.format("%s/site/pack/packer/start/packer.nvim", vim.fn.stdpath("data"))
+local snapshot_path = string.format("%s/snapshots", vim.fn.stdpath("config"))
+local compile_path = string.format("%s/compile/packer_compiled.lua", vim.fn.stdpath("data"))
 
 --- install packer.nvim firstly
-if fn.empty(fn.glob(install_path)) == 1 then
+if vim.fn.empty(vim.fn.glob(install_path)) == 1 then
   -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#1e222a" })
   -- @note: this message can't more one line to enter automatically
   local boootstrap_msg = [[
@@ -22,7 +23,7 @@ if fn.empty(fn.glob(install_path)) == 1 then
   vim.notify(boootstrap_msg)
 
   -- TODO if this exit code , how to resolve?
-  packer_bootstrap = fn.system({
+  packer_bootstrap = vim.fn.system({
     "git",
     "clone",
     "--depth",
@@ -41,8 +42,6 @@ if not packer_ok then
 end
 
 local util = require("packer.util")
-local snapshot_path = util.join_paths(fn.stdpath("config"), "snapshots")
-local compile_path = util.join_paths(fn.stdpath("data"), "compile", "packer_compiled.lua")
 
 -- init packer, and it's some settings
 packer.init({
