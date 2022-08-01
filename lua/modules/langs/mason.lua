@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 10:42:39 by oeyoews                                  --
---   Updated: 2022/08/01 12:29:33 by oeyoews                                  --
+--   Updated: 2022/08/01 12:58:12 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -18,7 +18,10 @@ local check_npm = function()
 end
 
 oeyoews.autocmd("FileType", {
-  pattern = "mason.nvim",
+  pattern = {
+    "mason.nvim",
+    "lspinfo",
+  },
   callback = function()
     check_npm()
   end,

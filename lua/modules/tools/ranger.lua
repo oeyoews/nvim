@@ -12,6 +12,7 @@ for i, v in pairs(tbl) do
   vim.g[i] = v
 end
 
+-- convert to lua use table TODO
 vim.cmd([[
 
 " Change the border's color

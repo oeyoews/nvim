@@ -115,5 +115,5 @@ vim.schedule(function()
   vim.cmd([[ silent! rsh ]])
 end)
 
--- use match TODO
+-- use match TODO or regex
 -- vim.opt.rtp:append(vim.fn.stdpath("config") .. "/builtin/**/")

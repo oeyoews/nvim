@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/01 10:06:02 by oeyoews                                  --
+--   Updated: 2022/08/01 14:31:39 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -14,7 +14,7 @@ oeyoews.pluginlist = {
   "rafcamlet/nvim-luapad",
   "kyazdani42/nvim-tree.lua",
   "folke/lua-dev.nvim",
-  "mzlogin/vim-markdown-toc",
+  "folke/trouble.nvim",
   "danymat/neogen",
   "lewis6991/impatient.nvim",
   "nathom/filetype.nvim",
@@ -44,7 +44,6 @@ oeyoews.pluginlist = {
   "hrsh7th/cmp-nvim-lsp",
   "hrsh7th/cmp-path",
   -- @TOOLS
-  "dhruvasagar/vim-table-mode",
   "folke/todo-comments.nvim",
   "nvim-telescope/telescope.nvim",
   "nvim-telescope/telescope-packer.nvim",
@@ -55,17 +54,39 @@ oeyoews.pluginlist = {
   "windwp/nvim-autopairs",
   "oeyoews/tabout.nvim",
   "folke/which-key.nvim",
-  {
-    "ziontee113/icon-picker.nvim",
-  },
   "kevinhwang91/rnvimr",
   "cappyzawa/trim.nvim",
-  "ekickx/clipboard-image.nvim",
+  -- this lazy load can't work, when directly open markdown file
+  -- need this @ref: https://github.com/wbthomason/packer.nvim/issues/892
   "thinca/vim-quickrun",
   "dstein64/vim-startuptime",
   {
+    "dhruvasagar/vim-table-mode",
+    opt = true,
+  },
+  {
+    "ekickx/clipboard-image.nvim",
+    opt = true,
+  },
+  {
     "iamcco/markdown-preview.nvim",
+    opt = true,
+    config = function()
+      require("modules.tools.mkdp")
+    end,
     run = "cd app && npm install",
+  },
+  {
+    "mzlogin/vim-markdown-toc",
+    opt = true,
+  },
+  {
+    "ziontee113/icon-picker.nvim",
+    cmd = "",
+    opt = true,
+    config = function()
+      require("modules.tools.icon_picker")
+    end,
   },
   oeyoews.builtin_plugin,
 }

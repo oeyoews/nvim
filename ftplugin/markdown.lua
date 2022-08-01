@@ -1,0 +1,5 @@
+vim.cmd("packadd markdown-preview.nvim")
+vim.cmd("packadd icon-picker.nvim")
+vim.cmd("packadd vim-table-mode")
+vim.cmd("packadd vim-markdown-toc")
+vim.cmd("packadd clipboard-image.nvim")
