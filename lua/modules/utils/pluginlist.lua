@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/01 14:51:13 by oeyoews                                  --
+--   Updated: 2022/08/01 15:56:03 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -45,8 +45,16 @@ oeyoews.pluginlist = {
   "hrsh7th/cmp-path",
   -- @TOOLS
   "folke/todo-comments.nvim",
-  "nvim-telescope/telescope.nvim",
-  "nvim-telescope/telescope-packer.nvim",
+  -- not lazy load this plugin, such as icon-picker
+  {
+    "nvim-telescope/telescope.nvim",
+    config = function()
+      require("modules.tools.telescope")
+    end,
+    requires = {
+      "nvim-telescope/telescope-packer.nvim",
+    },
+  },
   "phaazon/hop.nvim",
   "norcalli/nvim-colorizer.lua",
   "lewis6991/gitsigns.nvim",
@@ -59,7 +67,10 @@ oeyoews.pluginlist = {
   -- this lazy load can't work, when directly open markdown file
   -- need this @ref: https://github.com/wbthomason/packer.nvim/issues/892
   "thinca/vim-quickrun",
-  "dstein64/vim-startuptime",
+  {
+    "dstein64/vim-startuptime",
+    config = [[require("modules.tools.startup")]],
+  },
   {
     "dhruvasagar/vim-table-mode",
     opt = true,
@@ -72,10 +83,6 @@ oeyoews.pluginlist = {
     "iamcco/markdown-preview.nvim",
     opt = true,
     run = "cd app && npm install",
-  },
-  {
-    "mzlogin/vim-markdown-toc",
-    opt = true,
   },
   {
     "ziontee113/icon-picker.nvim",

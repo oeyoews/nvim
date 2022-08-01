@@ -35,19 +35,6 @@
 
 # 🧭 Toc
 
-<!-- vim-markdown-toc Marked -->
-
-- [🍾 Screenshots](#🍾-screenshots)
-- [💡 What's that](#💡-what's-that)
-- [📂 File Struct](#📂-file-struct)
-- [⬇️ Install](#⬇️-install)
-- [🚀 Features](#🚀-features)
-- [✅ TODO](#✅-todo)
-- [📖 Wiki](#📖-wiki)
-- [🔗 Links](#🔗-links)
-
-<!-- vim-markdown-toc -->
-
 ## 🍾 Screenshots
 
 | <img src="img/00.png" align="bottom" width=256/> | <img src="img/01.png" align="bottom" width=256/> | <img src="img/02.png" align="bottom" width=256/> |

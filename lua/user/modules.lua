@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/08/01 14:57:44 by oeyoews                                  --
+--   Updated: 2022/08/01 15:17:24 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -59,7 +59,6 @@ M.files = {
   tools = {
     "header42",
     "persistence",
-    "vim_startuptime",
     "nvim_tree",
     "neogen",
     "todo_comments",
@@ -69,7 +68,6 @@ M.files = {
     "comment", -- fast comment your code
     "autopairs", -- automatically match your half
     "tabout", -- jump brackets base nvim-treesitter
-    "telescope", -- can do anything
     "whichkey", -- show your key bindings
     "quickrun", -- quickly run your code
     "trim", -- delete any blank line and trailing whitespace
