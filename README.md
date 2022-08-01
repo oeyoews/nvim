@@ -149,6 +149,7 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 <details>
 <summary>expand</summary>
 
+- [ ] header42: if the file not modified , don't update time use lua code fix it
 - [ ] lspsaga icon can't work
 - [ ] press enter avoid this message
 - [ ] conflict: vim-startuptime is conflict to persistence
