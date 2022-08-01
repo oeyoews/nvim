@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:36 by oeyoews                                  --
---   Updated: 2022/08/01 16:12:46 by oeyoews                                  --
+--   Updated: 2022/08/01 16:29:18 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -40,8 +40,6 @@ local packer_ok, packer = pcall(require, "packer")
 if not packer_ok then
   return
 end
-
-local util = require("packer.util")
 
 -- init packer, and it's some settings
 packer.init({
