@@ -6,12 +6,13 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/01 11:37:29 by oeyoews                                  --
+--   Updated: 2022/08/01 12:00:50 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
 oeyoews = {}
 
+oeyoews.autocmd = vim.api.nvim_create_autocmd
 -- nvim_version
 oeyoews.nvim_version = vim.version().minor
 oeyoews.nvim_full_version_info = string.format(

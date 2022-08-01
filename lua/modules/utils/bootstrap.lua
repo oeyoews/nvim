@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:36 by oeyoews                                  --
---   Updated: 2022/08/01 10:49:43 by oeyoews                                  --
+--   Updated: 2022/08/01 12:01:56 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -100,4 +100,22 @@ vim.keymap.set("n", "<space>fb", function()
   return oeyoews.find_lua_file("lua/modules/utils/bootstrap")
 end, {
   desc = " jump bootstrap",
+})
+
+local check_version = function()
+  if oeyoews.nvim_version < 8 then
+    local version_msg = string.format(
+      [[
+ ⚠ Your neovim version is %s， please install neovim 0.8.0 or later]],
+      oeyoews.nvim_full_version_info
+    )
+    vim.notify(version_msg, "warn")
+  end
+end
+
+oeyoews.autocmd("FileType", {
+  pattern = "packer",
+  callback = function()
+    check_version()
+  end,
 })
