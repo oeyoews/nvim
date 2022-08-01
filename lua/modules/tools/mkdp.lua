@@ -13,7 +13,6 @@ g.mkdp_filetypes = {
 }
 
 vim.keymap.set("n", "<space>fM", "<cmd>MarkdownPreviewToggle<cr>", {
-  silent = true,
   desc = " preview markdown in browser",
 })
 
