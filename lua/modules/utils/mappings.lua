@@ -6,11 +6,9 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/02 00:55:25 by oeyoews                                  --
+--   Updated: 2022/08/02 02:09:05 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
-
-local fun = require("user.fun")
 
 vim.g.mapleader = " "
 
@@ -22,12 +20,29 @@ vim.keymap.set({ "n", "v" }, "<space><space>", ":", {
   desc = " cmd mode",
 })
 keymappings_set = {
+  -- lua
+  {
+    "<space>el",
+    function()
+      return oeyoews.creat_journey("lua")
+    end,
+    " edit lua",
+  },
+  -- md
   {
     "<space>ed",
     function()
-      return fun.creat_journey()
+      return oeyoews.creat_journey("md")
     end,
     " edit markdown",
+  },
+  -- norg
+  {
+    "<space>en",
+    function()
+      return oeyoews.creat_journey("norg")
+    end,
+    " edit norg",
   },
   {
     "<space>yp",
@@ -266,11 +281,6 @@ vim.keymap.set("n", "<space>so", "<cmd>so %<cr>", {
   desc = " refresh current file",
 })
 
-vim.keymap.set("n", "<space>pl", ":e /tmp/`date -I`.lua<cr>", {
-  desc = " lua playground",
-  silent = true,
-})
-
 vim.keymap.set("n", "<space>fk", function()
   return oeyoews.find_lua_file("lua/modules/utils/mappings")
 end, {
@@ -278,16 +288,11 @@ end, {
   desc = " edit mappings file",
 })
 
--- not lua file, can't use function
-vim.keymap.set("n", "<space>fer", ":sfind ~/.config/nvim/README.md<cr>", {
-  desc = " Open README",
-  silent = true,
-})
-
 -- show neovim info
-vim.keymap.set("n", "<space>hni", function()
+local fun = require("user.fun")
+vim.keymap.set("n", "<space>hi", function()
   return fun.get_neovim_info()
 end, {
   silent = true,
-  desc = " show neovim plugins",
+  desc = " show neovim info",
 })

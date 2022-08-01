@@ -25,7 +25,6 @@ end
 M.get_neovim_info = function()
   local builtin = #oeyoews.builtin_plugin
   local total_plugins = #vim.tbl_keys(packer_plugins) - builtin
-  local version = vim.version()
   local fmt_msg = string.format(
     [[
  #  You installed `%s+%s` plugins by packer
@@ -44,15 +43,6 @@ M.get_neovim_info = function()
       vim.api.nvim_buf_set_option(buf, "filetype", "markdown")
     end,
   })
-end
-
---- creat_journey
-M.creat_journey = function()
-  local journey_path = "journey"
-  local journey_dir = string.format("%s/%s/%s", vim.fn.stdpath("data"), journey_path, os.date("%Y/%m/%d"))
-  vim.fn.mkdir(journey_dir, "p")
-  local journey = journey_dir .. "/index.md"
-  vim.cmd(([[edit %s]]):format(journey))
 end
 
 return M

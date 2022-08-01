@@ -36,3 +36,12 @@ oeyoews.updateSnapshots = function()
   vim.cmd(([[PackerSnapshot %s]]):format(rolling))
   vim.cmd([[PackerSync]])
 end
+
+--- creat_journey
+oeyoews.creat_journey = function(ft)
+  local journey_path = "journey"
+  local journey_dir = string.format("%s/%s/%s", vim.fn.stdpath("data"), journey_path, os.date("%Y/%m/%d"))
+  vim.fn.mkdir(journey_dir, "p")
+  local journey = journey_dir .. "/index." .. ft
+  vim.cmd(([[edit %s]]):format(journey))
+end
