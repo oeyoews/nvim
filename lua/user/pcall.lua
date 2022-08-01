@@ -8,14 +8,13 @@ local load_dot_path = nil
 local log_level = "error"
 
 local M = {}
----@param dir string entry firstly
 ---@param load_module table module second index
 ---@param load_files table table module
-M.setup = function(dir, load_module, load_files)
+M.setup = function(load_module, load_files)
   for _, module in pairs(load_module) do
     for _, file in pairs(load_files[module]) do
-      load_dot_path = string.format("%s.%s.%s", dir, module, file)
-
+      -- this dir "modules" is fixed
+      load_dot_path = string.format("%s.%s.%s", "modules", module, file)
       local load_status_ok, error_log = pcall(require, load_dot_path)
       if not load_status_ok then
         error_modules[#error_modules + 1] = load_dot_path

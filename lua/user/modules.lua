@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/08/01 20:18:00 by oeyoews                                  --
+--   Updated: 2022/08/02 01:01:04 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -27,10 +27,9 @@ M.modules = {
 M.files = {
   -- @utils
   ["utils"] = {
-    "impatient",
     "oeyoews",
-    "pluginlist",
     "bootstrap",
+    "filetype",
     "disable",
     "options",
     "mappings",
@@ -42,7 +41,6 @@ M.files = {
     "tokyonight",
     "notify",
     "bufferline",
-    "windline", -- statusline
   },
 
   -- @LANG
@@ -71,6 +69,7 @@ M.files = {
   },
 }
 
+--   mappings
 vim.keymap.set("n", "<space>fm", function()
   return oeyoews.find_lua_file("lua/user/modules")
 end, { desc = "𝐦 edit modules config" })

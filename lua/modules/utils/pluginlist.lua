@@ -6,10 +6,11 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/01 20:21:07 by oeyoews                                  --
+--   Updated: 2022/08/02 00:58:09 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
+--   plugins list
 oeyoews.pluginlist = {
   "rafcamlet/nvim-luapad",
   "kyazdani42/nvim-tree.lua",
@@ -104,7 +105,7 @@ oeyoews.pluginlist = {
   oeyoews.builtin_plugin,
 }
 
--- mapping
+--   mappings
 vim.keymap.set("n", "<space>fp", function()
   return oeyoews.find_lua_file("lua/modules/utils/pluginlist")
 end, { desc = " pluginlist" })

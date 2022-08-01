@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/01 20:05:20 by oeyoews                                  --
+--   Updated: 2022/08/02 00:55:25 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -225,6 +225,7 @@ endif
 endfunction
 ]])
 
+--   mappings
 vim.keymap.set("n", "<space>tz", function()
   -- like callback
   return vim.fn["Sline"]()

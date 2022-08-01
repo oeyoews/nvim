@@ -1,6 +1,3 @@
--- use impatient to optimize startuptime
-pcall(require, "impatient")
-
 local filetype_ok, filetype = pcall(require, "filetype")
 
 if filetype_ok then

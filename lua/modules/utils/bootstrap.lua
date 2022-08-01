@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:36 by oeyoews                                  --
---   Updated: 2022/08/01 16:29:18 by oeyoews                                  --
+--   Updated: 2022/08/02 00:51:14 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -88,6 +88,7 @@ packer.startup(function(use)
   end
 end)
 
+--   mappings
 vim.keymap.set("n", "<space>pr", function()
   return oeyoews.updateSnapshots()
 end, {
