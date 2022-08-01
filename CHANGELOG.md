@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.16.2](https://gitlab.com/oeyoews/nvim/compare/v7.16.1...v7.16.2) (2022-08-01)
+
+
+### Bug Fixes
+
+* **toc:** remove toc ([d6e834d](https://gitlab.com/oeyoews/nvim/commit/d6e834d69f4700d16f18a7a356e701b3f7144a57))
+
 ## [7.16.1](https://gitlab.com/oeyoews/nvim/compare/v7.16.0...v7.16.1) (2022-08-01)
 
 
