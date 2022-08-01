@@ -6,14 +6,14 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 10:42:39 by oeyoews                                  --
---   Updated: 2022/08/01 12:04:34 by oeyoews                                  --
+--   Updated: 2022/08/01 12:29:33 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
 -- use vimenter
 local check_npm = function()
   if vim.fn.executable("npm") ~= 1 then
-    vim.notify(" Please install npm to lsp-tools", "warn", { title = "Mason" })
+    vim.notify_once(" Please install npm to lsp-tools", "warn", { title = "Mason" })
   end
 end
 

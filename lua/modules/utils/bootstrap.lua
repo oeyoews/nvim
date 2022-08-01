@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:36 by oeyoews                                  --
---   Updated: 2022/08/01 12:08:47 by oeyoews                                  --
+--   Updated: 2022/08/01 12:29:23 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -110,7 +110,7 @@ local check_version = function()
  ⚠ Your neovim version is %s, please install neovim 0.8.0 or later]],
       oeyoews.nvim_full_version_info
     )
-    vim.notify(version_msg, "warn")
+    vim.notify_once(version_msg, "warn")
   end
 end
 

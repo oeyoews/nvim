@@ -114,3 +114,6 @@ vim.schedule(function()
   vim.opt.shadafile = vim.fn.stdpath(oeyoews.nvim_version > 7 and "state" or "data") .. "/shada/main.shada"
   vim.cmd([[ silent! rsh ]])
 end)
+
+-- use match TODO
+-- vim.opt.rtp:append(vim.fn.stdpath("config") .. "/builtin/**/")
