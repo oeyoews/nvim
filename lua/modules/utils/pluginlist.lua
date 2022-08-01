@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/01 16:27:10 by oeyoews                                  --
+--   Updated: 2022/08/01 20:21:07 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -15,7 +15,10 @@ oeyoews.pluginlist = {
   "kyazdani42/nvim-tree.lua",
   "folke/lua-dev.nvim",
   "folke/trouble.nvim",
-  "danymat/neogen",
+  {
+    "danymat/neogen",
+    config = [[require("neogen").setup()]],
+  },
   "lewis6991/impatient.nvim",
   "nathom/filetype.nvim",
   "wbthomason/packer.nvim",
@@ -44,7 +47,10 @@ oeyoews.pluginlist = {
   "hrsh7th/cmp-nvim-lsp",
   "hrsh7th/cmp-path",
   -- @TOOLS
-  "folke/todo-comments.nvim",
+  {
+    "folke/todo-comments.nvim",
+    config = [[require("todo-comments").setup()]],
+  },
   -- not lazy load this plugin, such as icon-picker
   {
     "nvim-telescope/telescope.nvim",
@@ -59,8 +65,14 @@ oeyoews.pluginlist = {
   "norcalli/nvim-colorizer.lua",
   "lewis6991/gitsigns.nvim",
   "numToStr/Comment.nvim",
-  "windwp/nvim-autopairs",
-  "oeyoews/tabout.nvim",
+  {
+    "windwp/nvim-autopairs",
+    config = [[require("nvim-autopairs").setup()]],
+  },
+  {
+    "oeyoews/tabout.nvim",
+    config = [[require("tabout").setup()]],
+  },
   "folke/which-key.nvim",
   "kevinhwang91/rnvimr",
   "cappyzawa/trim.nvim",

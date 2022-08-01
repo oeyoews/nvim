@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/01 12:25:18 by oeyoews                                  --
+--   Updated: 2022/08/01 20:20:18 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -59,7 +59,10 @@ oeyoews.builtin_plugin = {
   builtin .. "notify",
   builtin .. "telescope",
   builtin .. "tokyonight",
-  builtin .. "windline",
+  {
+    builtin .. "windline",
+    config = [[require("wlsample.evil_line")]],
+  },
   builtin .. "persistence",
   builtin .. "header42",
   builtin .. "lspkind",
