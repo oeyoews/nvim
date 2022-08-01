@@ -6,13 +6,23 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 10:42:39 by oeyoews                                  --
---   Updated: 2022/08/01 10:42:40 by oeyoews                                  --
+--   Updated: 2022/08/01 11:26:14 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
-if vim.fn.executable("npm") ~= 1 then
-  vim.notify(" Please install npm to lsp-tools", "warn", { title = "Mason" })
+-- use vimenter
+local check_npm = function()
+  if vim.fn.executable("npm") ~= 1 then
+    vim.notify(" Please install npm to lsp-tools", "warn", { title = "Mason" })
+  end
 end
+
+local autocmd = vim.api.nvim_create_autocmd
+autocmd("VimEnter", {
+  callback = function()
+    check_npm()
+  end,
+})
 
 local mason_exclude = {}
 
