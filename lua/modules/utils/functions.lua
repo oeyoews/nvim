@@ -32,6 +32,7 @@ oeyoews.updateSnapshots = function()
     os.remove(res)
   end
   -- use vim.defer or schedule
+  -- TODO how to verify installed use install bootstrap?
   vim.cmd(([[PackerSnapshot %s]]):format(rolling))
   vim.cmd([[PackerSync]])
 end

@@ -6,16 +6,9 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:36 by oeyoews                                  --
---   Updated: 2022/08/01 10:27:44 by oeyoews                                  --
+--   Updated: 2022/08/01 10:49:43 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
-
--- vim.fn.has("nvim-0.8.0")
-if oeyoews.nvim_version < 8 then
-  vim.notify([[
-   Please update your neovim to latest]])
-  return
-end
 
 local fn = vim.fn
 local install_path = string.format("%s/site/pack/packer/start/packer.nvim", fn.stdpath("data"))

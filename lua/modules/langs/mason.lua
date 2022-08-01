@@ -1,3 +1,15 @@
+-- -------------------------------------------------------------------------- --
+--                                                                            --
+--                                                                            --
+--   mason.lua                                                                --
+--                                                                            --
+--   By: oeyoews <jyao4783@gmail.com>                                         --
+--                                                                            --
+--   Created: 2022/08/01 10:42:39 by oeyoews                                  --
+--   Updated: 2022/08/01 10:42:40 by oeyoews                                  --
+--                                                                            --
+-- -------------------------------------------------------------------------- --
+
 if vim.fn.executable("npm") ~= 1 then
   vim.notify(" Please install npm to lsp-tools", "warn", { title = "Mason" })
 end

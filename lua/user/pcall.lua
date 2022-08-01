@@ -1,6 +1,10 @@
 -- @module: pcall.lua
 -- @ref: init.lua
 
+if packer_bootstrap then
+  return
+end
+
 local notify_ok, notify = pcall(require, "notify")
 local error_modules = {}
 local error_logs = {}
@@ -12,9 +16,6 @@ local M = {}
 ---@param load_module table module second index
 ---@param load_files table table module
 M.setup = function(dir, load_module, load_files)
-  if packer_bootstrap then
-    return
-  end
   for _, module in pairs(load_module) do
     for _, file in pairs(load_files[module]) do
       load_dot_path = string.format("%s.%s.%s", dir, module, file)
