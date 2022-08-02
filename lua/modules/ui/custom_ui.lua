@@ -7,7 +7,7 @@ vim.cmd([[
 " hi VertSplit guibg=none guifg=#353b45 gui=bold cterm=reverse
 
  hi  Normal guifg=#A2ACCD
-hi Visual         ctermbg=242 gui=reverse
+" hi Visual         ctermbg=242 gui=reverse
 " hi Pmenu        ctermfg=0 ctermbg=13 guifg=#a9b1d6 guibg=#3b4261
 " hi PmenuSbar    ctermbg=248 guibg=#2A2E3F
 " hi PmenuSel     ctermfg=242 ctermbg=0 guifg=#282c34 guibg=#73b8f1
