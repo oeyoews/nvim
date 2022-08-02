@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/08/03 00:19:31 by oeyoews                                  --
+--   Updated: 2022/08/03 01:00:51 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -39,6 +39,7 @@ M.files = {
     "tokyonight",
     "notify",
     "bufferline",
+    "fidget",
   },
 
   -- @LANG
