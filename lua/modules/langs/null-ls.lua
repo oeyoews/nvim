@@ -1,8 +1,12 @@
 local null_ls = require("null-ls")
 local diagnostics = null_ls.builtins.diagnostics
 local formatting = null_ls.builtins.formatting
+local code_actions = null_ls.builtins.code_actions
 
 local sources = {
+  code_actions.gitsigns,
+  code_actions.proselint, -- not useful
+  diagnostics.proselint, -- some time have error tips
   formatting.stylua, -- this is conflict for lsp, choice
   formatting.prettier,
   formatting.fixjson,
