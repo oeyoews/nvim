@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/02 01:58:28 by oeyoews                                  --
+--   Updated: 2022/08/02 15:33:22 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -64,6 +64,7 @@ oeyoews.builtin_plugin = {
   builtin .. "persistence",
   builtin .. "header42",
   builtin .. "lspkind",
+  builtin .. "lspformat",
 }
 
 --   mappings
