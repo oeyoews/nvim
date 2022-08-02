@@ -108,7 +108,7 @@ local sources = {
   { name = "ultisnips" },
   {
     name = "buffer",
-    keyword_length = 4,
+    keyword_length = 3,
   },
   { name = "nvim-lua" },
   { name = "path" },
@@ -119,9 +119,8 @@ local menu = {
   nvim_lsp = " ",
   buffer = " ﬘",
   ultisnips = "Snippet",
-  nvim_lua = "Lua",
+  nvim_lua = " ",
   path = "Path",
-  emoji = "Emoji",
 }
 
 cmp.setup({

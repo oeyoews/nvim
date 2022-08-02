@@ -1,5 +1,6 @@
 local lspsaga = require("lspsaga")
 
+-- make it generalize in settings
 lspsaga.setup = lspsaga.init_lsp_saga
 
 lspsaga.setup({
@@ -26,8 +27,8 @@ lspsaga.setup({
     auto_refresh = true,
   },
   code_action_num_shortcut = true,
-  code_action_icon = "💡",
-  diagnostic_header = { " ", " ", " ", "ﴞ " }, -- this not work, maybe order, but another is normal
+  -- code_action_icon = "💡",
+  -- diagnostic_header = { " ", " ", " ", "ﴞ " }, -- this not work, maybe order, but another is normal
   code_action_lightbulb = {
     enable = false,
     sign = true,
@@ -69,17 +70,15 @@ vim.keymap.set("n", "gr", "<cmd>Lspsaga rename<cr>", {
 vim.keymap.set("n", "<space>gs", "<cmd>Lspsaga signature_help<cr>", {
   desc = " signature_help",
 })
-vim.keymap.set("n", "<leader>cd", "<cmd>Lspsaga show_line_diagnostics<CR>", { silent = true, noremap = true })
-vim.keymap.set("n", "[e", "<cmd>Lspsaga diagnostic_jump_next<CR>", { silent = true, noremap = true })
+vim.keymap.set("n", "<leader>cd", "<cmd>Lspsaga show_line_diagnostics<CR>", {
+  silent = true,
+  noremap = true,
+})
+vim.keymap.set("n", "[e", "<cmd>Lspsaga diagnostic_jump_next<CR>", {
+  silent = true,
+  noremap = true,
+})
 vim.keymap.set("n", "]e", "<cmd>Lspsaga diagnostic_jump_prev<CR>", {
   silent = true,
   noremap = true,
 })
--- vim.keymap.set("n", "<space>ls", "<cmd>LSoutlineToggle<cr>", {
---   silent = true,
---   desc = "",
--- })
--- it's slow make your computer
--- vim.keymap.set("n", "<space>gh", "<cmd>Lspsaga lsp_finder<cr>", {
---   desc = " lsp finder",
--- })

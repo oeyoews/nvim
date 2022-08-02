@@ -1,6 +1,5 @@
 local lspconfig = require("lspconfig")
 
--- if this servers not installed, cmp will callback nvim-lsp-install to install them
 -- fix: how to config according filetype automation install servers
 
 local capabilities = require("user.capabilities")
@@ -13,14 +12,8 @@ end
 
 local sumneko_lua_locale = sumneko_lua_locale_adjust()
 
-local lsp_format = require("user.lsp_format").setup({
-  exclude = {
-    "yamlls",
-  },
-})
-
 local on_attach = function(client)
-  -- require("user.lsp_format").on_attach(client)
+  require("user.lsp_format").on_attach(client)
 end
 
 -- @ref: https://github.com/lxyoucan/nvim/blob/c84b07f078d20d175a4a3b48a73705b61997bd9f/lua/lspconf/lua.lua#L85
