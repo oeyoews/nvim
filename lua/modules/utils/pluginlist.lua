@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/03 01:02:17 by oeyoews                                  --
+--   Updated: 2022/08/03 01:22:36 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -80,7 +80,7 @@ oeyoews.pluginlist = {
     config = [[require("tabout").setup()]],
   },
   "folke/which-key.nvim",
-  "kevinhwang91/rnvimr",
+  "oeyoews/rnvimr",
   "cappyzawa/trim.nvim",
   -- this lazy load can't work, when directly open markdown file
   -- need this @ref: https://github.com/wbthomason/packer.nvim/issues/892
