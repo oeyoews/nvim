@@ -1,4 +1,4 @@
----@param kmap table
+---@param kmap table encapsulation vim.keymap.set api function
 oeyoews.kmap = function(kmap)
   local keymap_set = function(tbl)
     tbl[4] = tbl[4] or "n"
@@ -9,20 +9,22 @@ oeyoews.kmap = function(kmap)
   end
 end
 
---- find
+--- find lua or other filetype file
 ---@param file_path string
-oeyoews.find_lua_file = function(file_path)
+---@param ft string
+oeyoews.find_lua_file = function(file_path, ft)
+  ft = ft or "lua"
   local prefix = vim.fn.stdpath("config")
-  local load_path = string.format("%s/%s.lua", prefix, file_path)
+  local load_path = string.format("%s/%s.%s", prefix, file_path, ft)
   -- sfind find
   vim.cmd(([[find %s]]):format(load_path))
 end
 
 ---
-oeyoews.updateSnapshots = function()
+---@param rolling string
+oeyoews.updateSnapshots = function(rolling)
   local path = string.format("%s/snapshots/", vim.fn.stdpath("config"))
-  local rolling = "rolling.json"
-
+  rolling = rolling or "rolling.json"
   -- local snap_path = path .. rolling
   -- if vim.fn.empty(vim.fn.glob(snap_path)) == 1 then
   --   os.remove(snap_path)
@@ -38,6 +40,7 @@ oeyoews.updateSnapshots = function()
 end
 
 --- creat_journey
+---@param ft string
 oeyoews.creat_journey = function(ft)
   local journey_path = "journey"
   local journey_dir = string.format("%s/%s/%s", vim.fn.stdpath("data"), journey_path, os.date("%Y/%m/%d"))
