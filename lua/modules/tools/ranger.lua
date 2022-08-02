@@ -81,4 +81,6 @@ for i, v in pairs(tbl) do
   vim.g[i] = v
 end
 
-vim.keymap.set("n", "<space>ft", "<cmd>RnvimrToggle<cr>", { desc = "𝓡 ranger" })
+vim.keymap.set("n", "<space>ft", "<cmd>RnvimrToggle<cr>", {
+  desc = "ℜ ranger",
+})

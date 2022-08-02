@@ -16,6 +16,7 @@ for index, value in pairs(mkdp_options) do
 end
 
 vim.keymap.set("n", "<space>fM", "<cmd>MarkdownPreviewToggle<cr>", {
+  buffer = true,
   desc = " preview markdown in browser",
 })
 

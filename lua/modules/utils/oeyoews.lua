@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/02 15:33:22 by oeyoews                                  --
+--   Updated: 2022/08/03 00:34:55 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -19,6 +19,7 @@ oeyoews.mason = {}
 local builtin = string.format("%s/builtin/", vim.fn.stdpath("config"))
 
 oeyoews.autocmd = vim.api.nvim_create_autocmd
+oeyoews.mygroup = vim.api.nvim_create_augroup("OeyoewGroup", {})
 -- nvim_version
 oeyoews.nvim_version = vim.version().minor
 oeyoews.nvim_full_version_info = string.format(

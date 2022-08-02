@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/02 15:01:38 by oeyoews                                  --
+--   Updated: 2022/08/02 23:38:43 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -200,15 +200,6 @@ command! -nargs=1  Put ene|pu=execute('<args>')
 
 -- functions
 vim.cmd([[
-function! Terminal() abort
-" TODO: have conflict for ranger(TermOpen)
-au! TermOpen * call feedkeys("i")
-autocmd! TermClose * call feedkeys("\<esc>")
-split | terminal
-setlocal nornu nonu
-setlocal nocursorline
-endfunction
-
 function! Sline() abort
 if &laststatus
 set laststatus=0
@@ -234,7 +225,7 @@ end, {
 })
 
 vim.keymap.set("n", "<space>tk", function()
-  return vim.fn["Terminal"]()
+  vim.cmd([[split | terminal]])
 end, {
   desc = "  terminal",
 })
