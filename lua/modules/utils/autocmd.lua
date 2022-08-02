@@ -30,10 +30,17 @@ oeyoews.autocmd("FileType", {
   end,
 })
 
-oeyoews.autocmd("InsertEnter", {
+oeyoews.autocmd({
+  "InsertEnter",
+  "WinLeave",
+}, {
+  -- vim.opt_local.xxx
   command = "setlocal nocursorline",
 })
 
-oeyoews.autocmd("InsertLeave", {
+oeyoews.autocmd({
+  "WinEnter",
+  "InsertLeave",
+}, {
   command = "setlocal cursorline",
 })
