@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:36 by oeyoews                                  --
---   Updated: 2022/08/02 00:51:14 by oeyoews                                  --
+--   Updated: 2022/08/02 16:10:22 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -50,9 +50,9 @@ packer.init({
     working_sym = " ",
     error_sym = " ",
     done_sym = " ",
-    -- open_fn = function()
-    --   return util.float({ border = "single" })
-    -- end,
+    open_fn = function()
+      return require("packer.util").float({ border = "single" })
+    end,
   },
   git = {
     clone_timeout = 6000,
