@@ -81,6 +81,10 @@ for i, v in pairs(tbl) do
   vim.g[i] = v
 end
 
-vim.keymap.set("n", "<space>ft", "<cmd>RnvimrToggle<cr>", {
-  desc = "ℜ ranger",
-})
+if vim.fn.executable("ranger") == 1 then
+  vim.keymap.set("n", "<space>ft", "<cmd>RnvimrToggle<cr>", {
+    desc = "ℜ ranger",
+  })
+else
+  vim.notify(" Please install ranger", "warn")
+end
