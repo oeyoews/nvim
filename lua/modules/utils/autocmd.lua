@@ -3,11 +3,7 @@ oeyoews.autocmd("FileType", {
     "help",
     "startuptime",
   },
-  callback = function()
-    vim.cmd([[
-setlocal nocursorline nonumber norelativenumber
-  ]])
-  end,
+  command = "setlocal nocursorline nonumber norelativenumber",
 })
 
 oeyoews.autocmd("FileType", {
@@ -43,4 +39,12 @@ oeyoews.autocmd({
   "InsertLeave",
 }, {
   command = "setlocal cursorline",
+})
+
+oeyoews.autocmd("BufEnter", {
+  pattern = {
+    "*.json",
+    "*.jsonc",
+  },
+  command = "setlocal wrap",
 })
