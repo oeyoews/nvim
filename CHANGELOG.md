@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.18.1](https://gitlab.com/oeyoews/nvim/compare/v7.18.0...v7.18.1) (2022-08-02)
+
+
+### Bug Fixes
+
+* **filetype:** add buffer option for it replace <buffer> ([c1ba0d2](https://gitlab.com/oeyoews/nvim/commit/c1ba0d2a95fe1e12e22a6df45f3d7f797d757194))
+
 # [7.18.0](https://gitlab.com/oeyoews/nvim/compare/v7.17.1...v7.18.0) (2022-08-02)
 
 
