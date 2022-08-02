@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/02 12:33:22 by oeyoews                                  --
+--   Updated: 2022/08/02 15:01:38 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -280,4 +280,9 @@ vim.keymap.set("n", "<space>hi", function()
 end, {
   silent = true,
   desc = " show neovim info",
+})
+
+vim.keymap.set("n", "<space>vf", "<cmd>set invfoldenable<cr>", {
+  silent = true,
+  desc = " toggle fold",
 })
