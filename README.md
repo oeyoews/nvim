@@ -149,6 +149,7 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 <details>
 <summary>expand</summary>
 
+- [ ] based nvim-treesitte autoinstalled to make server [link](https://github.com/nvim-treesitter/nvim-treesitter/commit/365f0eb75f4b8de4655476388c99aaa97f149ded#diff-7473c60f6187b1b6e25a5e7c49c6859d551352490d19da6a527aa0b816ab89f5)
 - [ ] header42: if the file not modified , don't update time use lua code fix it
 - [ ] lspsaga icon can't work
 - [ ] press enter avoid this message
