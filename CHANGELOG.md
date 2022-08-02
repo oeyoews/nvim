@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.19.0](https://gitlab.com/oeyoews/nvim/compare/v7.18.1...v7.19.0) (2022-08-02)
+
+
+### Features
+
+* **fidget:** enable fidget ui ([411349a](https://gitlab.com/oeyoews/nvim/commit/411349a0ba17baa631d3d4b3faa21764356c8348))
+
 ## [7.18.1](https://gitlab.com/oeyoews/nvim/compare/v7.18.0...v7.18.1) (2022-08-02)
 
 
