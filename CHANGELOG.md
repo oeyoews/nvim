@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.19.1](https://gitlab.com/oeyoews/nvim/compare/v7.19.0...v7.19.1) (2022-08-02)
+
+
+### Bug Fixes
+
+* **ranger:** add ranger detect ([4f08336](https://gitlab.com/oeyoews/nvim/commit/4f08336ad80d37e6ea99f14e44dc78fbf2489869))
+
 # [7.19.0](https://gitlab.com/oeyoews/nvim/compare/v7.18.1...v7.19.0) (2022-08-02)
 
 
