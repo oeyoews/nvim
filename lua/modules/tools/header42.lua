@@ -1,12 +1,12 @@
 -- -------------------------------------------------------------------------- --
 --                                                                            --
---                                                        :::      ::::::::   --
---   header.lua                                         :+:      :+:    :+:   --
---                                                    +:+ +:+         +:+     --
---   By: oeyoews <oeyoews>                          +#+  +:+       +#+        --
---                                                +#+#+#+#+#+   +#+           --
---   Created: 2022/07/31 12:49:11 by oeyoews           #+#    #+#             --
---   Updated: 2022/07/31 12:49:12 by oeyoews          ###   ########          --
+--                                                                            --
+--   header42.lua                                                             --
+--                                                                            --
+--   By: oeyoews <jyao4783@gmail.com>                                         --
+--                                                                            --
+--   Created: 2022/08/02 15:03:13 by oeyoews                                  --
+--   Updated: 2022/08/02 15:07:14 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -26,5 +26,5 @@ header.setup({
 
 vim.keymap.set("n", "<space>ah", "<cmd>Stdheader<cr>", {
   silent = true,
-  desc = "🩹 add header",
+  desc = " add header",
 })
