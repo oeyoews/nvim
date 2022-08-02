@@ -10,12 +10,8 @@ local make_entry = require("telescope.make_entry")
 local conf = require("telescope.config").values
 
 local dotfiles_list = function(opts)
-  local dir = vim.fn.stdpath("config") .. "/lua/"
+  local dir = vim.fn.stdpath("config") .. "/lua"
   local list = {}
-  local p = io.popen("rg --files --hidden " .. dir)
-  for file in p:lines() do
-    table.insert(list, file)
-  end
   local nvim_conf = io.popen("rg --files " .. dir)
   for file in nvim_conf:lines() do
     table.insert(list, file)
