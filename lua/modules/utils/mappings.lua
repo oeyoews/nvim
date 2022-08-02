@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/02 11:23:43 by oeyoews                                  --
+--   Updated: 2022/08/02 12:33:22 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -192,26 +192,10 @@ keymappings_set = {
 -- core mapping
 oeyoews.kmap(keymappings_set)
 
--- nvim_create_user_command TODO
 vim.cmd([[
-command! -nargs=1 Out ene|pu=execute('<args>')
 command! Scripts split | ene|pu=execute('scriptnames')
 command! -nargs=1 -complete=highlight HI ene|pu=execute('hi <args>')
 command! -nargs=1  Put ene|pu=execute('<args>')
-command! -nargs=?  -complete=color Themes colorscheme <args>
-
-" -- nvim__create_autogroup
-augroup quickquit
-autocmd!
-autocmd FileType notify,null-ls-info,lspinfo,startuptime,help,qf,quickrun,snippets,tsplayground nnoremap <buffer> <silent> q :q<cr>
-" autocmd FileType startuptime,help setlocal nocursorline nonumber norelativenumber
-augroup END
-
-augroup cursorline_goggle
-au!
-autocmd InsertEnter * setlocal nocursorline " | setlocal rnu
-autocmd InsertLeave * setlocal cursorline " | setlocal nornu have bug for telescope prompt
-augroup END
 ]])
 
 -- functions

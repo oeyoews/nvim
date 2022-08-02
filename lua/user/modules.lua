@@ -6,12 +6,9 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/08/02 11:06:30 by oeyoews                                  --
+--   Updated: 2022/08/02 12:35:06 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
-
--- @require: core.init.lua
--- @see init.lua
 
 local M = {}
 
