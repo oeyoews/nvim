@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.17.1](https://gitlab.com/oeyoews/nvim/compare/v7.17.0...v7.17.1) (2022-08-02)
+
+
+### Bug Fixes
+
+* **dotfiles:** fix dir repeat ([39b72db](https://gitlab.com/oeyoews/nvim/commit/39b72dbb69baecf1b852a896bfd60d43ef3a669c))
+
 # [7.17.0](https://gitlab.com/oeyoews/nvim/compare/v7.16.2...v7.17.0) (2022-08-01)
 
 
