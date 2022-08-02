@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.18.0](https://gitlab.com/oeyoews/nvim/compare/v7.17.1...v7.18.0) (2022-08-02)
+
+
+### Bug Fixes
+
+* **dotfiles:** remvoe repeat load dir ([9d72ed4](https://gitlab.com/oeyoews/nvim/commit/9d72ed4f3a55533ac1897a0040cc2accb52e1cb0))
+
+
+### Features
+
+* **json:** add swap ([e3d6c20](https://gitlab.com/oeyoews/nvim/commit/e3d6c20e83b5b95a029ecbbdbb74a9f8fe65a3b6))
+* **null-ls:** add proselint ([270cfc4](https://gitlab.com/oeyoews/nvim/commit/270cfc44c4b9c48a03235ce35422c97d58bf110d))
+
 ## [7.17.1](https://gitlab.com/oeyoews/nvim/compare/v7.17.0...v7.17.1) (2022-08-02)
 
 
