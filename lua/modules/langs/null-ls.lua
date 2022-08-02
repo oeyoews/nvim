@@ -48,3 +48,8 @@ null_ls.setup({
     end
   end,
 })
+
+vim.keymap.set("n", "<space>ln", "<cmd>NullLsInfo<cr>", {
+  silent = true,
+  desc = " show null-ls info",
+})

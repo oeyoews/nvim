@@ -42,20 +42,11 @@ vim.keymap.set("n", "<space>to", "<cmd>Telescope oldfiles<cr>", {
 vim.keymap.set("n", "<space>tf", "<cmd>Telescope filetypes<cr>", {
   desc = "𝑭 set filetypes",
 })
-vim.keymap.set("n", "<space>tm", "<cmd>Telescope keymaps<cr>", {
-  desc = "  list keymaps",
-})
 
 vim.keymap.set("n", "<space>tu", function()
   return require("telescope").load_extension("ultisnips"), require("telescope").extensions.ultisnips.ultisnips()
 end, {
   desc = " load and start telescope ultisnips",
-})
-
-vim.keymap.set("n", "<space>bm", function()
-  return require("telescope").extensions.notify.notify()
-end, {
-  desc = " () notify",
 })
 
 vim.keymap.set("n", "<space>tp", function()

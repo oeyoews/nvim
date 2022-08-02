@@ -1,10 +1,9 @@
 local lspkind = require("lspkind")
 
 --vim.cmd [[highlight default GH guifg=#3bb6c4 guibg=NONE]]
-local g = vim.g
 
-g.UltiSnipsEditSplit = "vertical"
-g.UltiSnipsJumpForwardTrigger = "<Plug>(ultisnips_jump_forward)"
+vim.g.UltiSnipsEditSplit = "vertical"
+vim.g.UltiSnipsJumpForwardTrigger = "<Plug>(ultisnips_jump_forward)"
 -- can't use two mappings
 -- g.UltiSnipsJumpBackwardTrigger = '<Plug>(ultisnips_jump_backward)'
 
@@ -183,21 +182,21 @@ cmp.setup({
   sources = sources,
 })
 
-vim.cmd([[
-" NOTE: this ctrl e shortkeys is conflict nvim-cmp's mapping, so can't in the
-" note: can't put this after, tab will replace c-e " same files
-" use 0 to setup this mappings
+vim.g.UltiSnipsSnippetDirectories = {
+  vim.fn.stdpath("config") .. "/ultisnips/",
+}
 
-let g:UltiSnipsExpandTrigger="<C-e>"
-" let g:UltiSnipsJumpForwardTrigger="<C-J>"
-let g:UltiSnipsJumpBackwardTrigger="<C-K>"
-" don't use snippets this special directory
-let g:UltiSnipsSnippetDirectories = [
-      \ stdpath('config') . '/ultisnips/',
-      \ ]
+oeyoews.autocmd("FileType", {
+  pattern = "TelescopePrompt",
+  callback = function()
+    require("cmp").setup.buffer({
+      enabled = false,
+    })
+  end,
+})
 
-autocmd FileType TelescopePrompt | lua require("cmp").setup.buffer({ enabled = false })
-]])
+vim.g.UltiSnipsExpandTrigger = "<C-e>"
+vim.g.UltiSnipsJumpBackwardTrigger = "<C-K>"
 
 vim.keymap.set("n", "<space>ee", "<cmd>UltiSnipsEdit<cr>", {
   desc = "ﱴ edit snippet",

@@ -16,3 +16,9 @@ notify.setup({
     TRACE = "✎",
   },
 })
+
+vim.keymap.set("n", "<space>mn", function()
+  return require("telescope").extensions.notify.notify()
+end, {
+  desc = " () notify",
+})

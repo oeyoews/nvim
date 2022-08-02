@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/02 02:09:05 by oeyoews                                  --
+--   Updated: 2022/08/02 11:23:43 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -153,7 +153,7 @@ keymappings_set = {
     " goto next buffer",
   },
   {
-    "<space>bx",
+    "<space>fn",
     "<cmd>ene<cr>",
     "🪐 new buffer",
   },
@@ -168,7 +168,7 @@ keymappings_set = {
     " save file",
   },
   {
-    "<leader>bM",
+    "<leader>mm",
     ":messages<cr>",
     " messages",
   },
@@ -192,8 +192,7 @@ keymappings_set = {
 -- core mapping
 oeyoews.kmap(keymappings_set)
 
--- autocmd todo
--- nvim_create_user_command
+-- nvim_create_user_command TODO
 vim.cmd([[
 command! -nargs=1 Out ene|pu=execute('<args>')
 command! Scripts split | ene|pu=execute('scriptnames')
@@ -205,7 +204,7 @@ command! -nargs=?  -complete=color Themes colorscheme <args>
 augroup quickquit
 autocmd!
 autocmd FileType notify,null-ls-info,lspinfo,startuptime,help,qf,quickrun,snippets,tsplayground nnoremap <buffer> <silent> q :q<cr>
-autocmd FileType startuptime,help setlocal nocursorline nonumber norelativenumber
+" autocmd FileType startuptime,help setlocal nocursorline nonumber norelativenumber
 augroup END
 
 augroup cursorline_goggle
@@ -232,10 +231,12 @@ set laststatus=0
 set showtabline=0
 set invnumber
 let &number=0
+silent! Gitsigns toggle_signs
 else
 set laststatus=3
 set showtabline=2
 let &number=1
+silent! Gitsigns toggle_signs
 endif
 endfunction
 ]])

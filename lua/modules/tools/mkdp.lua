@@ -16,12 +16,12 @@ vim.keymap.set("n", "<space>fM", "<cmd>MarkdownPreviewToggle<cr>", {
   desc = " preview markdown in browser",
 })
 
---[[ oeyoews.autocmd("FileType", {
-  pattern = g.mkdp_filetypes,
-  callback = function()
-    vim.keymap.set("n", "<space>fM", "<cmd>MarkdownPreviewToggle<cr>", {
-      silent = true,
-      desc = " preview markdown in browser",
-    })
-  end,
-}) ]]
+-- oeyoews.autocmd("FileType", {
+--   pattern = g.mkdp_filetypes,
+--   callback = function()
+--     vim.keymap.set("n", "<space>fM", "<cmd>MarkdownPreviewToggle<cr>", {
+--       silent = true,
+--       desc = " preview markdown in browser",
+--     })
+--   end,
+-- })
