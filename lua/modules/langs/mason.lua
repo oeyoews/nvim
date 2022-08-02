@@ -6,10 +6,11 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 10:42:39 by oeyoews                                  --
---   Updated: 2022/08/02 20:07:18 by oeyoews                                  --
+--   Updated: 2022/08/03 00:59:40 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
+-- TODO: see masonlog to see more error info, sometime occur error
 -- use vimenter to notify_once
 local check_npm = function()
   if vim.fn.executable("npm") ~= 1 then
