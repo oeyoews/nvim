@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.22.0](https://gitlab.com/oeyoews/nvim/compare/v7.21.2...v7.22.0) (2022-08-03)
+
+
+### Bug Fixes
+
+* **usercmd:** fix update plugins ([fa61d68](https://gitlab.com/oeyoews/nvim/commit/fa61d68b1d66947a83b0bc80cff9806d42f81600))
+
+
+### Features
+
+* **frecency:** add telescope extension ([9824738](https://gitlab.com/oeyoews/nvim/commit/9824738b94c39f2c4dfacbe670887c733811718a))
+* **lazyload:** add lazyload plugin ([7f4fba1](https://gitlab.com/oeyoews/nvim/commit/7f4fba1adc599bdf614eb920c7019ad5a21e1d37))
+
 ## [7.21.2](https://gitlab.com/oeyoews/nvim/compare/v7.21.1...v7.21.2) (2022-08-03)
 
 
