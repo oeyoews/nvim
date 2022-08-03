@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.24.1](https://gitlab.com/oeyoews/nvim/compare/v7.24.0...v7.24.1) (2022-08-03)
+
+
+### Bug Fixes
+
+* **loadplugin:** use not pure lua ([f27df7d](https://gitlab.com/oeyoews/nvim/commit/f27df7dfe55e7b35176bc51ab66532f4268ca7b7))
+
 # [7.24.0](https://gitlab.com/oeyoews/nvim/compare/v7.23.0...v7.24.0) (2022-08-03)
 
 
