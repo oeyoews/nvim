@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.22.1](https://gitlab.com/oeyoews/nvim/compare/v7.22.0...v7.22.1) (2022-08-03)
+
+
+### Bug Fixes
+
+* **proselint:** remove proselint ([2a76a90](https://gitlab.com/oeyoews/nvim/commit/2a76a907b103d884b449ac2247f63da49c0db008))
+* **telescope:** rename fd to find_files ([e4fe377](https://gitlab.com/oeyoews/nvim/commit/e4fe377990a4facc11c182f5e3a1add31481fd5f))
+
 # [7.22.0](https://gitlab.com/oeyoews/nvim/compare/v7.21.2...v7.22.0) (2022-08-03)
 
 
