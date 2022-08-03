@@ -6,11 +6,12 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/03 15:41:36 by oeyoews                                  --
---   Updated: 2022/08/03 15:42:29 by oeyoews                                  --
+--   Updated: 2022/08/03 15:59:35 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
 -- TODO: add opts to search specific directory and achieve tab path completion
+-- add extension setting in telescope config option
 
 if vim.fn.executable("rg") ~= 1 then
   vim.notify("Please install ripgrep")
