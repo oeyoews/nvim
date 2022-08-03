@@ -1,9 +1,11 @@
 vim.cmd("packadd markdown-preview.nvim")
 
-require("modules.tools.mkdp")
+-- mkdp
+require("user.lazyload.mkdp")
 
 vim.cmd("packadd icon-picker.nvim")
 
+-- icon
 require("user.lazyload.icon_picker")
 
 vim.cmd("packadd clipboard-image.nvim")

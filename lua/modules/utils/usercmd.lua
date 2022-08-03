@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/03 10:48:36 by oeyoews                                  --
---   Updated: 2022/08/03 15:23:10 by oeyoews                                  --
+--   Updated: 2022/08/03 15:24:07 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -25,6 +25,7 @@ end, {
   nargs = 0,
 })
 
+-- TODO: use telescope to override
 vim.api.nvim_create_user_command("LoadPlugins", function(opts)
   vim.cmd(([[packadd %s]]):format(opts.args))
   require("user.lazyload.icon_picker")

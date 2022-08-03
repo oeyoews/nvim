@@ -1,3 +1,3 @@
 vim.cmd("packadd neorg")
 
-require("modules.tools.neorg")
+require("user.lazy.neorg")
