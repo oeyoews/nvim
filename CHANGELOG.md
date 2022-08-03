@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.20.0](https://gitlab.com/oeyoews/nvim/compare/v7.19.1...v7.20.0) (2022-08-03)
+
+
+### Features
+
+* **usercmd:** add usercmd ([28327c9](https://gitlab.com/oeyoews/nvim/commit/28327c9b96d24c8edea8309811bc44ac45fdec2b))
+
 ## [7.19.1](https://gitlab.com/oeyoews/nvim/compare/v7.19.0...v7.19.1) (2022-08-02)
 
 
