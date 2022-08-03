@@ -63,6 +63,12 @@ telescope.setup({
       preview_cutoff = 120,
     },
   },
+  -- not work remove ./ default is rg or fd
+  pickers = {
+    find_files = {
+      find_command = { "fd", "--type", "f", "--strip-cwd-prefix" },
+    },
+  },
 })
 
 vim.keymap.set("n", "<space>ff", "<cmd>Telescope fd<cr>", {
