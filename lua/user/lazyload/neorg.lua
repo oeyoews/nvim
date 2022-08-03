@@ -43,3 +43,9 @@ neorg.setup({
     },
   },
 })
+
+vim.keymap.set("n", "<space>an", "<cmd>Neorg inject-metadata<cr>", {
+  buffer = true,
+  silent = true,
+  desc = " inject metadata",
+})
