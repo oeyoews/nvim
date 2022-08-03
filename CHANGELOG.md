@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.21.2](https://gitlab.com/oeyoews/nvim/compare/v7.21.1...v7.21.2) (2022-08-03)
+
+
+### Bug Fixes
+
+* **header42:** remvoe user setup for header42 ([5e3373a](https://gitlab.com/oeyoews/nvim/commit/5e3373a01d8380e6a3731bc37a12be9f8be257a2))
+
 ## [7.21.1](https://gitlab.com/oeyoews/nvim/compare/v7.21.0...v7.21.1) (2022-08-03)
 
 
