@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/03 19:45:01 by oeyoews                                  --
+--   Updated: 2022/08/03 22:42:27 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -67,7 +67,7 @@ keymappings_set = {
     " clear highlight and screen",
   },
   {
-    "<space>bb",
+    "<space>eb",
     -- vne
     -- ":e `mktemp -t nvim.scr.XXX`<cr>",
     function()
@@ -75,11 +75,6 @@ keymappings_set = {
       vim.cmd(([[find %s]]):format(tmp))
     end,
     " edit temp file",
-  },
-  {
-    "<space>ba",
-    ":%bw<cr>",
-    " remove all buffers",
   },
   {
     "H",
@@ -154,7 +149,7 @@ keymappings_set = {
   },
   {
     "<leader>fs",
-    ":w<cr>",
+    ":update<cr>",
     " save file",
   },
   {
