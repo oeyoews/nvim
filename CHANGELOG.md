@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.22.3](https://gitlab.com/oeyoews/nvim/compare/v7.22.2...v7.22.3) (2022-08-03)
+
+
+### Bug Fixes
+
+* **mason_tools_install:** maybe fix mason_tools_install error info ([97f0dc2](https://gitlab.com/oeyoews/nvim/commit/97f0dc2e2dbc38d13b87e20260a042080a492935))
+* **neorg:** update this load path ([40adf8b](https://gitlab.com/oeyoews/nvim/commit/40adf8b5a1a8c5778df3d7a61540089a1b452265))
+
 ## [7.22.2](https://gitlab.com/oeyoews/nvim/compare/v7.22.1...v7.22.2) (2022-08-03)
 
 
