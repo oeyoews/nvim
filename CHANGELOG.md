@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.21.0](https://gitlab.com/oeyoews/nvim/compare/v7.20.0...v7.21.0) (2022-08-03)
+
+
+### Features
+
+* **terminal:** fix terminal conflict to ranger, and add tip ([7af8094](https://gitlab.com/oeyoews/nvim/commit/7af80949d3c59a61800d1ca3f1d9e85d93f2d998))
+
 # [7.20.0](https://gitlab.com/oeyoews/nvim/compare/v7.19.1...v7.20.0) (2022-08-03)
 
 
