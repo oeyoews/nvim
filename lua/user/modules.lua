@@ -1,5 +1,14 @@
--- @require: core.init.lua
--- @see init.lua
+-- -------------------------------------------------------------------------- --
+--                                                                            --
+--                                                                            --
+--   modules.lua                                                              --
+--                                                                            --
+--   By: oeyoews <jyao4783@gmail.com>                                         --
+--                                                                            --
+--   Created: 2022/08/01 00:49:32 by oeyoews                                  --
+--   Updated: 2022/08/03 01:00:51 by oeyoews                                  --
+--                                                                            --
+-- -------------------------------------------------------------------------- --
 
 local M = {}
 
@@ -15,26 +24,22 @@ M.modules = {
 M.files = {
   -- @utils
   ["utils"] = {
-    "impatient",
     "oeyoews",
-    "functions",
-    "pluginlist",
     "bootstrap",
+    "filetype",
     "disable",
     "options",
     "mappings",
+    "autocmd",
   },
 
   -- @ui
   ui = {
     "web_icons",
     "tokyonight",
-    "custom", -- need after tokyonight
     "notify",
-    "lspsaga", -- setup lspconfig ui
     "bufferline",
-    "windline", -- statusline
-    "fidget", -- visualize lsp status
+    "fidget",
   },
 
   -- @LANG
@@ -44,36 +49,28 @@ M.files = {
     "cmp", -- config completion
     "lspconfig", -- configurate lsp settings
     "null-ls", -- complete lsp configuration
-    "formatter",
+    "trouble",
   },
 
   -- @TOOLS
   tools = {
-    "nvim_tree",
-    "neogen",
-    "todo_comments",
+    "header42",
+    "persistence",
+    -- "nvim_tree",
     "indent", -- show indent line
     "hop", -- jump anywhere
     "gitsigns", -- show git changes in signcolumn
     "comment", -- fast comment your code
-    "autopairs", -- automatically match your half
-    "mkdp", -- open markdown preview in your browser
-    "persistence", -- session manager
-    "tabout", -- jump brackets base nvim-treesitter
-    "telescope", -- can do anything
     "whichkey", -- show your key bindings
     "quickrun", -- quickly run your code
     "trim", -- delete any blank line and trailing whitespace
-    "icon_picker", -- select so much icons
     "ranger", -- use ranger in neovim
   },
 }
 
-vim.keymap.set(
-  "n",
-  "<space>fm",
-  "<cmd>find ~/.config/nvim/lua/user/modules.lua<cr>",
-  { desc = "𝐦 edit modules config" }
-)
+--   mappings
+vim.keymap.set("n", "<space>fm", function()
+  return oeyoews.find_lua_file("lua/user/modules")
+end, { desc = "𝐦 edit modules config" })
 
 return M

@@ -2,8 +2,9 @@ local fidget = require("fidget")
 
 fidget.setup({
   text = {
-    spinner = "dots",
-    done = "", -- 﫟
+    -- dots
+    spinner = "moon",
+    done = "🌕", -- 﫟
   },
   align = {
     bottom = true,

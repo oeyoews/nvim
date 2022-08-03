@@ -1,26 +1,20 @@
-local g = vim.g
-local opt = vim.opt
-
 -- have "press enter or other command continue" error, and save shake for null-ls or normal conditions
 -- https://github.com/folke/which-key.nvim/issues/301
-if oeyoews.options.enable_cmdheight and oeyoews.nvim_version > 7 then
-  vim.opt.cmdheight = 0
-end
 
 -- use filetype.lua instead of filetype.vim. it's enabled by default in neovim 0.8 (nightly)
 if oeyoews.nvim_version < 8 then
-  g.did_load_filetypes = 0
-  g.do_filetype_lua = 1
+  vim.g.did_load_filetypes = 0
+  vim.g.do_filetype_lua = 1
 end
 
-g.python3_host_prog = "/usr/bin/python3"
+vim.g.python3_host_prog = "/usr/bin/python3"
 
 local default_options = {
-  relativenumber = false,
-  -- textwidth = 80,
+  textwidth = 120,
   cmdwinheight = 5,
   display = "lastline",
-  laststatus = 3, -- 3, 0
+  -- option: 0 => hide statusline, 3 global statusline
+  laststatus = 3,
   updatetime = 200,
   timeoutlen = 1000,
   splitright = true,
@@ -52,6 +46,7 @@ local default_options = {
   autochdir = true,
   wrap = false,
   number = true,
+  relativenumber = false,
   numberwidth = 4,
   ruler = false,
   signcolumn = "yes", -- silent side number shake
@@ -93,9 +88,8 @@ local default_options = {
 }
 
 -- can't put pairs options
-opt.shortmess:append("acsI")
-opt.whichwrap:append("<,>,[,]") -- wrap in line end
--- opt.package.path:append("test")
+vim.opt.shortmess:append("acsI")
+vim.opt.whichwrap:append("<,>,[,]") -- wrap in line end
 
 for k, v in pairs(default_options) do
   vim.opt[k] = v
@@ -104,7 +98,9 @@ end
 -- opt.clipboard = "unnamedplus"
 -- set shadafile(neovim) path
 vim.schedule(function()
-  -- vim.opt.shadafile = vim.fn.expand("$HOME") .. "/.local/share/nvim/shada/main.shada"
   vim.opt.shadafile = vim.fn.stdpath(oeyoews.nvim_version > 7 and "state" or "data") .. "/shada/main.shada"
   vim.cmd([[ silent! rsh ]])
 end)
+
+-- use match TODO or regex
+-- vim.opt.rtp:append(vim.fn.stdpath("config") .. "/builtin/**/")

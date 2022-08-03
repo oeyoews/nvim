@@ -3,6 +3,249 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.20.0](https://gitlab.com/oeyoews/nvim/compare/v7.19.1...v7.20.0) (2022-08-03)
+
+
+### Features
+
+* **usercmd:** add usercmd ([28327c9](https://gitlab.com/oeyoews/nvim/commit/28327c9b96d24c8edea8309811bc44ac45fdec2b))
+
+## [7.19.1](https://gitlab.com/oeyoews/nvim/compare/v7.19.0...v7.19.1) (2022-08-02)
+
+
+### Bug Fixes
+
+* **ranger:** add ranger detect ([4f08336](https://gitlab.com/oeyoews/nvim/commit/4f08336ad80d37e6ea99f14e44dc78fbf2489869))
+
+# [7.19.0](https://gitlab.com/oeyoews/nvim/compare/v7.18.1...v7.19.0) (2022-08-02)
+
+
+### Features
+
+* **fidget:** enable fidget ui ([411349a](https://gitlab.com/oeyoews/nvim/commit/411349a0ba17baa631d3d4b3faa21764356c8348))
+
+## [7.18.1](https://gitlab.com/oeyoews/nvim/compare/v7.18.0...v7.18.1) (2022-08-02)
+
+
+### Bug Fixes
+
+* **filetype:** add buffer option for it replace <buffer> ([c1ba0d2](https://gitlab.com/oeyoews/nvim/commit/c1ba0d2a95fe1e12e22a6df45f3d7f797d757194))
+
+# [7.18.0](https://gitlab.com/oeyoews/nvim/compare/v7.17.1...v7.18.0) (2022-08-02)
+
+
+### Bug Fixes
+
+* **dotfiles:** remvoe repeat load dir ([9d72ed4](https://gitlab.com/oeyoews/nvim/commit/9d72ed4f3a55533ac1897a0040cc2accb52e1cb0))
+
+
+### Features
+
+* **json:** add swap ([e3d6c20](https://gitlab.com/oeyoews/nvim/commit/e3d6c20e83b5b95a029ecbbdbb74a9f8fe65a3b6))
+* **null-ls:** add proselint ([270cfc4](https://gitlab.com/oeyoews/nvim/commit/270cfc44c4b9c48a03235ce35422c97d58bf110d))
+
+## [7.17.1](https://gitlab.com/oeyoews/nvim/compare/v7.17.0...v7.17.1) (2022-08-02)
+
+
+### Bug Fixes
+
+* **dotfiles:** fix dir repeat ([39b72db](https://gitlab.com/oeyoews/nvim/commit/39b72dbb69baecf1b852a896bfd60d43ef3a669c))
+
+# [7.17.0](https://gitlab.com/oeyoews/nvim/compare/v7.16.2...v7.17.0) (2022-08-01)
+
+
+### Features
+
+* **neorg:** add neorg with lazy load ([48c0728](https://gitlab.com/oeyoews/nvim/commit/48c0728b83e5d96320126ae468eb9e29f2b638a2))
+
+## [7.16.2](https://gitlab.com/oeyoews/nvim/compare/v7.16.1...v7.16.2) (2022-08-01)
+
+
+### Bug Fixes
+
+* **toc:** remove toc ([d6e834d](https://gitlab.com/oeyoews/nvim/commit/d6e834d69f4700d16f18a7a356e701b3f7144a57))
+
+## [7.16.1](https://gitlab.com/oeyoews/nvim/compare/v7.16.0...v7.16.1) (2022-08-01)
+
+
+### Bug Fixes
+
+* **lazyload:** add require config in ftplugin ([4b8d18d](https://gitlab.com/oeyoews/nvim/commit/4b8d18d65ade77470fb09858e0d9c95d7617eaf3))
+
+# [7.16.0](https://gitlab.com/oeyoews/nvim/compare/v7.15.0...v7.16.0) (2022-08-01)
+
+
+### Features
+
+* **ftplugin:** use ftplugin to perfect lazy load ([b238f46](https://gitlab.com/oeyoews/nvim/commit/b238f46988a83144ebbe6b9b5bc077c4ad093ee8))
+
+# [7.15.0](https://gitlab.com/oeyoews/nvim/compare/v7.14.1...v7.15.0) (2022-08-01)
+
+
+### Features
+
+* **notify:** use notify_once ([302edbc](https://gitlab.com/oeyoews/nvim/commit/302edbc36483d9d575ae4b558406bb18c8259aad))
+
+## [7.14.1](https://gitlab.com/oeyoews/nvim/compare/v7.14.0...v7.14.1) (2022-07-31)
+
+
+### Bug Fixes
+
+* **nu:** disable number ([8c22c9b](https://gitlab.com/oeyoews/nvim/commit/8c22c9bc0a0f9c230c07e924f8a23cc099d4a95f))
+
+# [7.14.0](https://gitlab.com/oeyoews/nvim/compare/v7.13.0...v7.14.0) (2022-07-31)
+
+
+### Features
+
+* **dotfiles:** add telescope extensions ([c0d3df1](https://gitlab.com/oeyoews/nvim/commit/c0d3df13cfe2dfc52bf1646b8bc03a73030cd647))
+
+# [7.13.0](https://gitlab.com/oeyoews/nvim/compare/v7.12.0...v7.13.0) (2022-07-31)
+
+
+### Features
+
+* **packer:** add update snapshots ([f581889](https://gitlab.com/oeyoews/nvim/commit/f581889dd5f66bf98813168692db8505bb5d7107))
+
+# [7.12.0](https://gitlab.com/oeyoews/nvim/compare/v7.11.1...v7.12.0) (2022-07-31)
+
+
+### Features
+
+* **zen-mode:** add showtabline ([d83a308](https://gitlab.com/oeyoews/nvim/commit/d83a3085e2552cf337cfd935c3a84c3be24192ff))
+
+## [7.11.1](https://gitlab.com/oeyoews/nvim/compare/v7.11.0...v7.11.1) (2022-07-31)
+
+
+### Bug Fixes
+
+* **header42:** fix mail ([df0481d](https://gitlab.com/oeyoews/nvim/commit/df0481d2465b7f7c66fd7cc1dbafaa58f93071b2))
+
+# [7.11.0](https://gitlab.com/oeyoews/nvim/compare/v7.10.0...v7.11.0) (2022-07-31)
+
+
+### Features
+
+* **header42:** add header.nvim ([1d1f3f8](https://gitlab.com/oeyoews/nvim/commit/1d1f3f8c1d13cdef4dd64125f302d76649595dcc))
+
+# [7.10.0](https://gitlab.com/oeyoews/nvim/compare/v7.9.0...v7.10.0) (2022-07-31)
+
+
+### Features
+
+* **sfind:** use sfind ([8072421](https://gitlab.com/oeyoews/nvim/commit/8072421b484e291a5e6cbf80467c48e7604b76a5))
+
+# [7.9.0](https://gitlab.com/oeyoews/nvim/compare/v7.8.0...v7.9.0) (2022-07-30)
+
+
+### Features
+
+* **persistence:** use builtin persistence plugin(rls) ([417f9a7](https://gitlab.com/oeyoews/nvim/commit/417f9a767f8f59eb49dae2a97fd9aeeddcd4b431))
+
+# [7.8.0](https://gitlab.com/oeyoews/nvim/compare/v7.7.1...v7.8.0) (2022-07-30)
+
+
+### Features
+
+* **builtin:** add windline for builtin ([8f62e30](https://gitlab.com/oeyoews/nvim/commit/8f62e30b983274a65bcc347ac79563a44c038234))
+
+## [7.7.1](https://gitlab.com/oeyoews/nvim/compare/v7.7.0...v7.7.1) (2022-07-30)
+
+
+### Bug Fixes
+
+* **pcall:** remove debug_mode option ([2787d6a](https://gitlab.com/oeyoews/nvim/commit/2787d6aa6a699305357f15dbfc3283d1413bb41e))
+
+# [7.7.0](https://gitlab.com/oeyoews/nvim/compare/v7.6.0...v7.7.0) (2022-07-30)
+
+
+### Features
+
+* **fixjson:** add fixjson formatter ([c3d4ad9](https://gitlab.com/oeyoews/nvim/commit/c3d4ad91dfa675818e974d79ef7ee14324e64d70))
+
+# [7.6.0](https://gitlab.com/oeyoews/nvim/compare/v7.5.2...v7.6.0) (2022-07-29)
+
+
+### Features
+
+* **find:** add find_file_lua function ([078deaf](https://gitlab.com/oeyoews/nvim/commit/078deaf94e0b3b9eaa8b09d8b7dcbf79c375a894))
+
+## [7.5.2](https://gitlab.com/oeyoews/nvim/compare/v7.5.1...v7.5.2) (2022-07-29)
+
+
+### Bug Fixes
+
+* **null-ls:** add filetypes for null-ls to prevent slow for large ([89bd387](https://gitlab.com/oeyoews/nvim/commit/89bd38716b70da8b3088b3a10b625cf846d480b7))
+
+## [7.5.1](https://gitlab.com/oeyoews/nvim/compare/v7.5.0...v7.5.1) (2022-07-29)
+
+
+### Bug Fixes
+
+* **os.remove:** use os.remove to version tag ([df86547](https://gitlab.com/oeyoews/nvim/commit/df865478ab1a9216ed17b715060b73017eabef31))
+
+# [7.5.0](https://gitlab.com/oeyoews/nvim/compare/v7.4.0...v7.5.0) (2022-07-28)
+
+
+### Features
+
+* **tag:** show tag ([9c18a90](https://gitlab.com/oeyoews/nvim/commit/9c18a90463d95cc778bcd063216a72bcddfa654a))
+
+# [7.4.0](https://gitlab.com/oeyoews/nvim/compare/v7.3.0...v7.4.0) (2022-07-28)
+
+
+### Features
+
+* **persisted:** use persisted replace auto_session ([efb283d](https://gitlab.com/oeyoews/nvim/commit/efb283dcd6d91c5ad76ab3855cafb9ce777e21dc))
+
+# [7.3.0](https://gitlab.com/oeyoews/nvim/compare/v7.2.0...v7.3.0) (2022-07-28)
+
+
+### Features
+
+* **session:** use auto_session replace persistence ([b7f2c79](https://gitlab.com/oeyoews/nvim/commit/b7f2c795f507f31c40e36547e1c75af4cea05187))
+
+# [7.2.0](https://gitlab.com/oeyoews/nvim/compare/v7.1.2...v7.2.0) (2022-07-27)
+
+
+### Features
+
+* **mason:** add check bin ([882de52](https://gitlab.com/oeyoews/nvim/commit/882de5295d0ec0ccec0dbcb86833266bb489e923))
+
+## [7.1.2](https://gitlab.com/oeyoews/nvim/compare/v7.1.1...v7.1.2) (2022-07-27)
+
+
+### Bug Fixes
+
+* **option:** remove first_install ([8a61c01](https://gitlab.com/oeyoews/nvim/commit/8a61c01fdcb6fac13807565e2512457fbef75e4f))
+
+## [7.1.1](https://gitlab.com/oeyoews/nvim/compare/v7.1.0...v7.1.1) (2022-07-27)
+
+
+### Bug Fixes
+
+* **lsp:** remove clangd setting ([f7a53d8](https://gitlab.com/oeyoews/nvim/commit/f7a53d86d29ef1dd32e6508f4faf70d0522018fb))
+
+# [7.1.0](https://gitlab.com/oeyoews/nvim/compare/v7.0.0...v7.1.0) (2022-07-27)
+
+
+### Features
+
+* **mason:** add some settings for server ([1a1b364](https://gitlab.com/oeyoews/nvim/commit/1a1b3643bf7ac430f73fd92e025e5197dbdd30e2))
+
+# [7.0.0](https://gitlab.com/oeyoews/nvim/compare/v6.0.0...v7.0.0) (2022-07-27)
+
+
+### Features
+
+* **formatter:** remove formatter ([f5061cf](https://gitlab.com/oeyoews/nvim/commit/f5061cf244823a3bb41dcab405b884596bc736a9))
+* show version use vim.inspect ([706a31a](https://gitlab.com/oeyoews/nvim/commit/706a31ae07879315dd110515674f2b3ff791cf10))
+
+
+### BREAKING CHANGES
+
+* **formatter:** use night feature for null-ls
+
 # [6.0.0](https://gitlab.com/oeyoews/nvim/compare/v5.43.0...v6.0.0) (2022-07-26)
 
 

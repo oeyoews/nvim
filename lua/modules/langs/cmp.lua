@@ -1,8 +1,9 @@
---vim.cmd [[highlight default GH guifg=#3bb6c4 guibg=NONE]]
-local g = vim.g
+local lspkind = require("lspkind")
 
-g.UltiSnipsEditSplit = "vertical"
-g.UltiSnipsJumpForwardTrigger = "<Plug>(ultisnips_jump_forward)"
+--vim.cmd [[highlight default GH guifg=#3bb6c4 guibg=NONE]]
+
+vim.g.UltiSnipsEditSplit = "vertical"
+vim.g.UltiSnipsJumpForwardTrigger = "<Plug>(ultisnips_jump_forward)"
 -- can't use two mappings
 -- g.UltiSnipsJumpBackwardTrigger = '<Plug>(ultisnips_jump_backward)'
 
@@ -12,8 +13,6 @@ end
 
 -- @nvim_cmp
 local _, cmp = pcall(require, "cmp")
--- -- @lspkind
-local _, lspkind = pcall(require, "lspkind")
 
 local function border(hl_name)
   return {
@@ -36,14 +35,14 @@ local symbol_map = {
   Field = "𝙁",
   Variable = "",
   Class = "𝓒",
-  Interface = "", -- 
+  Interface = "",
   Module = "",
   Property = "ﰠ",
   Unit = "𝑼",
   Value = "勺",
   Enum = "",
   Keyword = "",
-  Snippet = "𝒮", -- ﬆ  
+  Snippet = "𝒮",
   Color = "",
   Reference = "",
   File = "",
@@ -59,8 +58,6 @@ local symbol_map = {
 local mapping = {
   ["<C-b>"] = cmp.mapping.scroll_docs(-4),
   ["<C-f>"] = cmp.mapping.scroll_docs(4),
-  -- ["<C-n>"] = cmp.mapping(cmp.mapping.select_next_item(), { "i", "s" }),
-  -- ["<C-p>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "s" }),
   ["<S-Tab>"] = cmp.mapping(function(fallback)
     if cmp.visible() then
       cmp.select_prev_item()
@@ -104,18 +101,6 @@ local mapping = {
       end
     end,
   }),
-  -- ["<tab>"] = cmp.mapping(function(fallback)
-  --   if require('neogen').jumpable() then
-  --     require('neogen').jump_next()
-  --   elseif cmp.visible() then
-  --     cmp.select_next_item()
-  --   else
-  --     fallback()
-  --   end
-  -- end, {
-  --   "i",
-  --   "s",
-  -- }),
 }
 
 local sources = {
@@ -123,7 +108,7 @@ local sources = {
   { name = "ultisnips" },
   {
     name = "buffer",
-    keyword_length = 4,
+    keyword_length = 3,
   },
   { name = "nvim-lua" },
   { name = "path" },
@@ -134,13 +119,11 @@ local menu = {
   nvim_lsp = " ",
   buffer = " ﬘",
   ultisnips = "Snippet",
-  nvim_lua = "Lua",
+  nvim_lua = " ",
   path = "Path",
-  emoji = "Emoji",
 }
 
 cmp.setup({
-  -- config default window
   window = {
     -- completion = cmp.config.window.bordered(),
     -- documentation = cmp.config.window.bordered(),
@@ -186,6 +169,7 @@ cmp.setup({
 
   -- @bug true is nothing, must to comment
   completion = {
+    -- how to use keymap to toggle this
     -- autocomplete = false,
   },
   experimental = {
@@ -197,21 +181,26 @@ cmp.setup({
   sources = sources,
 })
 
-vim.cmd([[
-" NOTE: this ctrl e shortkeys is conflict nvim-cmp's mapping, so can't in the
-" note: can't put this after, tab will replace c-e " same files
-" use 0 to setup this mappings
+vim.g.UltiSnipsSnippetDirectories = {
+  vim.fn.stdpath("config") .. "/ultisnips/",
+}
 
-let g:UltiSnipsExpandTrigger="<C-e>"
-" let g:UltiSnipsJumpForwardTrigger="<C-J>"
-let g:UltiSnipsJumpBackwardTrigger="<C-K>"
-" don't use snippets this special directory
-let g:UltiSnipsSnippetDirectories = [
-      \ stdpath('config') . '/ultisnips/',
-      \ ]
+oeyoews.autocmd("FileType", {
+  pattern = "TelescopePrompt",
+  callback = function()
+    require("cmp").setup.buffer({
+      enabled = false,
+    })
+  end,
+})
 
-autocmd FileType TelescopePrompt | lua require("cmp").setup.buffer({ enabled = false })
-]])
+vim.g.UltiSnipsExpandTrigger = "<C-e>"
+vim.g.UltiSnipsJumpBackwardTrigger = "<C-K>"
 
-vim.keymap.set("n", "<space>ee", "<cmd>UltiSnipsEdit<cr>", { desc = "ﱴ edit snippet" })
-vim.keymap.set("n", "<space>ea", "<cmd>UltiSnipsEdit all<cr>", { desc = " edia all snippet geterally" })
+vim.keymap.set("n", "<space>ee", "<cmd>UltiSnipsEdit<cr>", {
+  desc = "ﱴ edit snippet",
+})
+
+vim.keymap.set("n", "<space>ea", "<cmd>UltiSnipsEdit all<cr>", {
+  desc = " edia all snippet geterally",
+})

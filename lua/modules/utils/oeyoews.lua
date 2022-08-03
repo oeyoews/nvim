@@ -1,11 +1,37 @@
+-- -------------------------------------------------------------------------- --
+--                                                                            --
+--                                                                            --
+--   oeyoews.lua                                                              --
+--                                                                            --
+--   By: oeyoews <jyao4783@gmail.com>                                         --
+--                                                                            --
+--   Created: 2022/08/01 00:49:49 by oeyoews                                  --
+--   Updated: 2022/08/03 11:10:19 by oeyoews                                  --
+--                                                                            --
+-- -------------------------------------------------------------------------- --
+
+-- global lua variables
 oeyoews = {}
 
+-- extra binary
+oeyoews.mason = {}
+
+oeyoews.completion = {}
+
+oeyoews.autocmd = vim.api.nvim_create_autocmd
+oeyoews.mygroup = vim.api.nvim_create_augroup("OeyoewGroup", {})
 -- nvim_version
 oeyoews.nvim_version = vim.version().minor
+oeyoews.nvim_full_version_info = string.format(
+  "%s.%s.%s",
+  vim.version().major,
+  vim.version().minor,
+  vim.version().patch
+)
 
 -- @options
 oeyoews.options = {
-  enable_cmdheight = false,
+  enable_clangd = true,
   -- @see lspconfig.lua
   enable_lsp = true,
   -- @see lspconfig.lua
@@ -13,8 +39,7 @@ oeyoews.options = {
   -- @see sta.lua
   toggle_theme_auto = true,
   -- @ref: user.pcall.lua
-  -- @TODO: use keybinds to toggle this options in config
-  debug_mode = false,
+  -- TODO: use keybinds to toggle this options in config
   -- @see modules.utils.bootstrap.lua
   -- @options: rolling.json, default.json, v1.0.0.json
   snapshot = nil,
@@ -22,33 +47,46 @@ oeyoews.options = {
 
 -- @servers @deprecated
 oeyoews.servers = {
+  "cmake",
   "gopls",
   "jsonls",
   "vimls",
   "sumneko_lua",
   "bashls",
-  -- this install is very slow TODO
-  "clangd",
-  -- support formatting
   "pylsp",
-  -- navic not support this @TODO
-  "cmake",
+  "yamlls",
 }
 
--- extra binary
-oeyoews.mason = {
-  -- for null-ls
-  "stylua",
-  "codespell",
-  -- for formatter
-  "prettier",
-  -- bashls
-  "shellcheck",
+oeyoews.builtin = string.format("%s/builtin/", vim.fn.stdpath("config"))
+
+oeyoews.builtin_plugin = {
+  oeyoews.builtin .. "windline",
+  oeyoews.builtin .. "notify",
+  oeyoews.builtin .. "telescope",
+  oeyoews.builtin .. "tokyonight",
+  oeyoews.builtin .. "persistence",
+  oeyoews.builtin .. "header42",
+  oeyoews.builtin .. "lspkind",
+  oeyoews.builtin .. "lspformat",
 }
 
-vim.keymap.set(
-  "n",
-  "<space>fo",
-  "<cmd>find ~/.config/nvim/lua/modules/utils/oeyoews.lua<cr>",
-  { desc = " edit global config" }
-)
+-- must global function
+oeyoews.completion.edit = function()
+  local ft = {
+    "norg",
+    "lua",
+    "md",
+    "txt",
+  }
+  table.sort(ft)
+  return table.concat(ft, "\n")
+end
+
+--   mappings
+vim.keymap.set("n", "<space>fo", "<cmd>find ~/.config/nvim/lua/modules/utils/oeyoews.lua<cr>", {
+  desc = " edit global config",
+})
+
+-- load global variables
+require("modules.utils.functions")
+require("modules.utils.pluginlist")

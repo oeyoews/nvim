@@ -1,6 +1,5 @@
 local lspconfig = require("lspconfig")
 
--- if this servers not installed, cmp will callback nvim-lsp-install to install them
 -- fix: how to config according filetype automation install servers
 
 local capabilities = require("user.capabilities")
@@ -13,10 +12,9 @@ end
 
 local sumneko_lua_locale = sumneko_lua_locale_adjust()
 
--- local navic = require("nvim-navic")
-
-local on_attach = function(client, bufnr)
-  require("user.lsp_format").on_attach(client)
+local on_attach = function(client)
+  -- require("user.lsp_format").on_attach(client)
+  require("lspformat").on_attach(client)
 end
 
 -- @ref: https://github.com/lxyoucan/nvim/blob/c84b07f078d20d175a4a3b48a73705b61997bd9f/lua/lspconf/lua.lua#L85
@@ -47,7 +45,7 @@ local lsp_setup = function()
         lspconfig[lsp_server].setup(luadev)
       else
         lspconfig[lsp_server].setup(
-        -- settings.lsp_server
+          -- settings.lsp_server
           {
             -- settings = settings[lsp_server],
             on_attach = on_attach,
@@ -62,18 +60,21 @@ end
 
 lsp_setup()
 
-vim.keymap.set("n", "<space>li", "<cmd>LspInfo<cr>", { desc = "  show lspinfo" })
+vim.keymap.set("n", "<space>li", "<cmd>LspInfo<cr>", {
+  desc = "  show lspinfo",
+})
 
 -- icon note this order in last
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
   underline = true,
   update_in_insert = false,
   severity_sort = false,
-  virtual_text = {
-    spacing = 2,
-    source = "always",
-    prefix = "",
-  },
+  virtual_text = false,
+  -- virtual_text = {
+  --   spacing = 2,
+  --   source = "always",
+  --   prefix = "",
+  -- },
   float = {
     focusable = false,
     style = "minimal",
@@ -84,7 +85,15 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
   },
 })
 
--- vim.cmd([[
--- " hover error lint
--- " autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
--- ]])
+-- change icons
+local custom_icon = function()
+  local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+  for type, icon in pairs(signs) do
+    local hl = "DiagnosticSign" .. type
+    vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
+  end
+end
+
+custom_icon()
+
+require("modules.langs.lspsaga")

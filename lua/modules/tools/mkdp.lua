@@ -1,19 +1,31 @@
-local g = vim.g
+local mkdp_options = {
+  mkdp_auto_close = 0,
+  mkdp_echo_preview_url = false,
+  mkdp_port = 9999,
+  mkdp_open_to_the_world = false, -- need network
+  mkdp_theme = "dark",
+  mkdp_filetypes = {
+    "markdown",
+    "txt",
+    "html",
+  },
+}
 
-g.mkdp_auto_close = 0
-g.mkdp_echo_preview_url = false
-g.mkdp_port = 9999
-g.mkdp_open_to_the_world = false -- need network
-g.mkdp_theme = "dark"
+for index, value in pairs(mkdp_options) do
+  vim.g[index] = value
+end
 
----[=[
-vim.cmd([[
-" todo: how to convert to lua
-let g:mkdp_filetypes = [ 'markdown', 'txt', 'html']
+vim.keymap.set("n", "<space>fM", "<cmd>MarkdownPreviewToggle<cr>", {
+  buffer = true,
+  desc = " preview markdown in browser",
+})
 
-augroup markdownpreview
-  autocmd!
-  autocmd FileType markdown,html nnoremap <silent> <leader>fM :MarkdownPreviewToggle<CR>
-augroup END
-]])
---]=]
+-- oeyoews.autocmd("FileType", {
+--   pattern = g.mkdp_filetypes,
+--   callback = function()
+--     vim.keymap.set("n", "<space>fM", "<cmd>MarkdownPreviewToggle<cr>", {
+--       silent = true,
+--       desc = " preview markdown in browser",
+--     })
+--   end,
+-- })

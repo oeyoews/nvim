@@ -28,6 +28,7 @@ luac.out
 # Shared objects (inc. Windows DLLs)
 *.dll
 *.so
+/sessions/
 *.so.*
 *.dylib
 
@@ -46,3 +47,6 @@ packer_compiled.lua
 
 /spell/
 /test/
+
+wget*
+/sessions/

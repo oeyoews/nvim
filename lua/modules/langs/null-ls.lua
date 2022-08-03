@@ -1,56 +1,59 @@
-if vim.fn.executable("codespell") == 0 then
-  if oeyoews.options.debug_mode then
-    local msg_null = "Please install codespell to use null-ls's codespell"
-    vim.notify(msg_null)
-  end
-  return
-end
-
 local null_ls = require("null-ls")
 local diagnostics = null_ls.builtins.diagnostics
-local completion = null_ls.builtins.completion
 local formatting = null_ls.builtins.formatting
-
-local disabled_filetypes = {
-  -- "jsonc", "json", "html", "c", "java", "javascript",
-}
+local code_actions = null_ls.builtins.code_actions
 
 local sources = {
-  -- completion.spell, -- ugly
-  formatting.stylua, -- this is comflict for lsp, choice
-  diagnostics.codespell.with({}),
-  -- @markdown
-  -- diagnostics.markdownlint.with({
-  --   filetypes = {
-  --     "markdown",
-  --   },
-  -- }), -- need install markdownlint
-  -- diagnostics.yamllint, -- need install yamllint
+  code_actions.gitsigns,
+  code_actions.proselint, -- not useful
+  diagnostics.proselint, -- some time have error tips
+  formatting.stylua, -- this is conflict for lsp, choice
+  formatting.prettier,
+  formatting.fixjson,
+  formatting.clang_format,
+  -- formatting.black.with({}), -- not work
+  diagnostics.codespell.with({
+    filetypes = {
+      "markdown",
+      "lua",
+    },
+  }),
 }
 
--- autoformatlly format
--- local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
+local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
+
+local lsp_formatting = function(bufnr)
+  vim.lsp.buf.format({
+    filter = function(client)
+      return client.name == "null-ls"
+    end,
+    bufnr = bufnr,
+  })
+end
 
 null_ls.setup({
   update_in_insert = false,
   debounce = 500,
   sources = sources,
-  -- on_attach = function(client, bufnr)
-  --   if client.supports_method("textDocument/formatting") then
-  --     vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
-  --     vim.api.nvim_create_autocmd("BufWritePre", {
-  --       group = augroup,
-  --       buffer = bufnr,
-  --       callback = function()
-  --         -- vim.lsp.buf.format({
-  --         --   bufnr = bufnr,
-  --         --   filter = function(client)
-  --         --     return client.name == "null-ls"
-  --         --   end
-  --         -- })
-  --         vim.lsp.buf.formatting_sync()
-  --       end,
-  --     })
-  --   end
-  -- end,
+  on_attach = function(client, bufnr)
+    if oeyoews.nvim_version > 7 and client.supports_method("textDocument/formatting") then
+      vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
+      vim.api.nvim_create_autocmd("BufWritePre", {
+        group = augroup,
+        buffer = bufnr,
+        callback = function()
+          if oeyoews.nvim_version > 7 then
+            lsp_formatting(bufnr)
+          else
+            vim.lsp.buf.formatting_sync()
+          end
+        end,
+      })
+    end
+  end,
+})
+
+vim.keymap.set("n", "<space>ln", "<cmd>NullLsInfo<cr>", {
+  silent = true,
+  desc = " show null-ls info",
 })

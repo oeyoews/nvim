@@ -21,10 +21,13 @@ which_key.setup({
 })
 
 which_key.register({
-  f = { name = " FILE" },
+  f = { name = " FILE" },
   b = { name = "𝑩 BUFFER" },
-  w = { name = "𝓦 WINNOW" },
-  l = { name = "𝑳 LANG" },
+  w = { name = " WINNOW" },
+  l = { name = " LANG" },
   t = { name = " Tools" },
   p = { name = " Plugin" },
+  h = { name = " Help" },
+  y = { name = " Copy" },
+  e = { name = "✏ Edit" },
 }, { prefix = "<space>" })

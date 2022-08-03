@@ -1,25 +1,4 @@
-local tbl = {
-  rnvimr_enable_ex = true,
-  rnvimr_enable_picker = true,
-  rnvimr_edit_cmd = "drop",
-  rnvimr_draw_border = false,
-  rnvimr_hide_gitignore = true,
-  rnvimr_enable_bw = true,
-  rnvimr_shadow_winblend = 70,
-}
-
-for i, v in pairs(tbl) do
-  vim.g[i] = v
-end
-
 vim.cmd([[
-
-" Change the border's color
-let g:rnvimr_border_attr = {'fg': 14, 'bg': -1}
-
-" Draw border with both
-let g:rnvimr_ranger_cmd = ['ranger', '--cmd=set draw_borders both']
-
 " Link CursorLine into RnvimrNormal highlight in the Floating window
 highlight link RnvimrNormal CursorLine
 
@@ -80,4 +59,32 @@ let g:rnvimr_layout = {
 \ }
 ]])
 
-vim.keymap.set("n", "<space>ft", "<cmd>RnvimrToggle<cr>", { desc = "𝓡 ranger" })
+local tbl = {
+  rnvimr_border_attr = {
+    fg = 14,
+    bg = -1,
+  },
+  rnvimr_ranger_cmd = {
+    "ranger",
+    "--cmd=set draw_borders both",
+  },
+  rnvimr_enable_ex = true,
+  rnvimr_enable_picker = true,
+  rnvimr_edit_cmd = "drop",
+  rnvimr_draw_border = false,
+  rnvimr_hide_gitignore = true,
+  rnvimr_enable_bw = true,
+  rnvimr_shadow_winblend = 70,
+}
+
+for i, v in pairs(tbl) do
+  vim.g[i] = v
+end
+
+if vim.fn.executable("ranger") == 1 then
+  vim.keymap.set("n", "<space>ft", "<cmd>RnvimrToggle<cr>", {
+    desc = "ℜ ranger",
+  })
+else
+  vim.notify(" Please install ranger", "warn")
+end
