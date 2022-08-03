@@ -1,7 +1,6 @@
 local telescope = require("telescope")
-
 local actions = require("telescope.actions")
-local action_layout = require("telescope.actions.layout")
+local extensions = require("telescope").extensions
 
 -- TODO: like nvchad use for to load extensions? this time
 telescope.setup({
@@ -74,41 +73,14 @@ vim.keymap.set("n", "<space>ff", "<cmd>Telescope find_files<cr>", {
   desc = "﯒ find files",
 })
 
-vim.keymap.set("n", "<space>to", function()
-  return require("telescope").load_extension("frecency"), require("telescope").extensions.frecency.frecency()
-end, {
-  desc = " recent files",
-})
-
 vim.keymap.set("n", "<space>tf", "<cmd>Telescope filetypes<cr>", {
   desc = "𝑭 set filetypes",
-})
-
-vim.keymap.set("n", "<space>tu", function()
-  return require("telescope").load_extension("ultisnips"), require("telescope").extensions.ultisnips.ultisnips()
-end, {
-  desc = " load and start telescope ultisnips",
 })
 
 vim.keymap.set("n", "<space>tp", function()
   return require("telescope").extensions.packer.packer()
 end, {
   desc = "  packer",
-})
-
-vim.keymap.set("n", "<space>tv", function()
-  return require("telescope").load_extension("dotfiles"), require("telescope").extensions.dotfiles.dotfiles()
-end, {
-  silent = true,
-  desc = "⇘ search config files",
-})
-
-vim.keymap.set("n", "<space>tg", function()
-  return require("telescope").load_extension("file_browser"),
-    require("telescope").extensions.file_browser.file_browser()
-end, {
-  silent = true,
-  desc = "⇘ search config files",
 })
 
 vim.cmd([[
@@ -118,3 +90,30 @@ highlight TelescopePreviewBorder  guifg=#7CB740
 highlight TelescopePromptBorder   guifg=#F7768E
 highlight TelescopePromptPrefix   guifg=#F7768E gui=bold
 ]])
+
+-- just load extension, not load these to telescope
+vim.keymap.set("n", "<space>to", function()
+  return extensions.frecency.frecency()
+end, {
+  desc = " recent files",
+})
+
+vim.keymap.set("n", "<space>tu", function()
+  return extensions.ultisnips.ultisnips()
+end, {
+  desc = " load and start telescope ultisnips",
+})
+
+vim.keymap.set("n", "<space>tv", function()
+  return extensions.dotfiles.dotfiles()
+end, {
+  silent = true,
+  desc = "⇘ search config files",
+})
+
+vim.keymap.set("n", "<space>tg", function()
+  return extensions.file_browser.file_browser()
+end, {
+  silent = true,
+  desc = "⇘ search config files",
+})
