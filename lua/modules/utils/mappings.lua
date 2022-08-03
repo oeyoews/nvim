@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/02 23:38:43 by oeyoews                                  --
+--   Updated: 2022/08/03 11:08:54 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -23,17 +23,13 @@ keymappings_set = {
   -- lua
   {
     "<space>el",
-    function()
-      return oeyoews.creat_journey("lua")
-    end,
+    "<cmd>Edit lua<cr>",
     " edit lua",
   },
   -- md
   {
     "<space>ed",
-    function()
-      return oeyoews.creat_journey("md")
-    end,
+    "<cmd>Edit md<cr>",
     " edit markdown",
   },
   -- norg
@@ -71,25 +67,19 @@ keymappings_set = {
     " clear highlight and screen",
   },
   {
-    "<space>fu",
-    ":FZF<cr>",
-    "fzf",
-  },
-  {
     "<space>bb",
     -- vne
-    ":e `mktemp -t nvim.scr.XXX`<cr>",
+    -- ":e `mktemp -t nvim.scr.XXX`<cr>",
+    function()
+      local tmp = os.tmpname()
+      vim.cmd(([[find %s]]):format(tmp))
+    end,
     " edit temp file",
   },
   {
     "<space>ba",
     ":%bw<cr>",
     " remove all buffers",
-  },
-  {
-    "<space>bs",
-    ":e /tmp/scratch.txt<cr>",
-    " edit scratch.txt",
   },
   {
     "H",

@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/03 00:34:55 by oeyoews                                  --
+--   Updated: 2022/08/03 11:10:19 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -16,7 +16,7 @@ oeyoews = {}
 -- extra binary
 oeyoews.mason = {}
 
-local builtin = string.format("%s/builtin/", vim.fn.stdpath("config"))
+oeyoews.completion = {}
 
 oeyoews.autocmd = vim.api.nvim_create_autocmd
 oeyoews.mygroup = vim.api.nvim_create_augroup("OeyoewGroup", {})
@@ -57,16 +57,30 @@ oeyoews.servers = {
   "yamlls",
 }
 
+oeyoews.builtin = string.format("%s/builtin/", vim.fn.stdpath("config"))
+
 oeyoews.builtin_plugin = {
-  builtin .. "windline",
-  builtin .. "notify",
-  builtin .. "telescope",
-  builtin .. "tokyonight",
-  builtin .. "persistence",
-  builtin .. "header42",
-  builtin .. "lspkind",
-  builtin .. "lspformat",
+  oeyoews.builtin .. "windline",
+  oeyoews.builtin .. "notify",
+  oeyoews.builtin .. "telescope",
+  oeyoews.builtin .. "tokyonight",
+  oeyoews.builtin .. "persistence",
+  oeyoews.builtin .. "header42",
+  oeyoews.builtin .. "lspkind",
+  oeyoews.builtin .. "lspformat",
 }
+
+-- must global function
+oeyoews.completion.edit = function()
+  local ft = {
+    "norg",
+    "lua",
+    "md",
+    "txt",
+  }
+  table.sort(ft)
+  return table.concat(ft, "\n")
+end
 
 --   mappings
 vim.keymap.set("n", "<space>fo", "<cmd>find ~/.config/nvim/lua/modules/utils/oeyoews.lua<cr>", {

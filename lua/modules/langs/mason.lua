@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 10:42:39 by oeyoews                                  --
---   Updated: 2022/08/03 00:59:40 by oeyoews                                  --
+--   Updated: 2022/08/03 09:24:18 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -14,7 +14,9 @@
 -- use vimenter to notify_once
 local check_npm = function()
   if vim.fn.executable("npm") ~= 1 then
-    vim.notify_once(" Please install npm to lsp-tools", "warn", { title = "Mason" })
+    vim.notify_once(" Please install npm to lsp-tools", "warn", {
+      title = "Mason",
+    })
   end
 end
 
@@ -22,6 +24,7 @@ oeyoews.autocmd("FileType", {
   pattern = {
     "mason.nvim",
     "lspinfo",
+    "null-ls-info",
   },
   callback = function()
     check_npm()
