@@ -50,4 +50,13 @@ oeyoews.creat_journey = function(ft)
   vim.cmd(([[edit %s]]):format(journey))
 end
 
+oeyoews.loadpluginslist = function()
+  load_plugin_list = {
+    "icon-picker.nvim",
+    -- "test",
+  }
+  table.sort(load_plugin_list)
+  return table.concat(load_plugin_list, "\n")
+end
+
 require("modules.utils.usercmd")
