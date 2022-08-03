@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/03 11:43:13 by oeyoews                                  --
---   Updated: 2022/08/03 11:47:58 by oeyoews                                  --
+--   Updated: 2022/08/03 14:02:15 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -19,6 +19,7 @@ local Config = {
   -- just for linux this user var
   user = os.getenv("USER"),
   mail = "oeyoews@gmail.com",
+  -- NOTE: this comment must is two
   ft = {
     c = {
       start_comment = "/*",
