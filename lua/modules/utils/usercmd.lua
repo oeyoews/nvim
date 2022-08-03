@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/03 10:48:36 by oeyoews                                  --
---   Updated: 2022/08/03 22:31:29 by oeyoews                                  --
+--   Updated: 2022/08/04 00:32:30 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -28,14 +28,4 @@ vim.api.nvim_create_user_command("CleanPlugins", function()
   vim.cmd([[PackerClean]])
 end, {
   desc = "CleanPlugins ",
-})
-
--- TODO: use telescope to override
-vim.api.nvim_create_user_command("LoadPlugins", function(opts)
-  vim.cmd(([[packadd %s]]):format(opts.args))
-  require("user.lazyload.icon_picker")
-end, {
-  desc = "load lazyload plugins",
-  nargs = "+",
-  complete = "custom,v:lua.oeyoews.loadpluginslist",
 })

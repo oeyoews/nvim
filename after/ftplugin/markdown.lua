@@ -5,7 +5,7 @@ require("user.lazyload.mkdp")
 
 vim.cmd("packadd icon-picker.nvim")
 
--- icon
+-- icon by packadd load config
 require("user.lazyload.icon_picker")
 
 vim.cmd("packadd clipboard-image.nvim")

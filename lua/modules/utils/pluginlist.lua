@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/03 22:27:41 by oeyoews                                  --
+--   Updated: 2022/08/04 00:30:10 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -26,6 +26,8 @@ local markdown_list = {
   },
   {
     "ziontee113/icon-picker.nvim",
+    -- even load, but for packerload fun, use config
+    config = [[require("user.lazyload.icon_picker")]],
     opt = true,
   },
   -- a alien
