@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/03 10:48:36 by oeyoews                                  --
---   Updated: 2022/08/03 11:19:27 by oeyoews                                  --
+--   Updated: 2022/08/03 14:48:12 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -18,10 +18,9 @@ end, {
   complete = "custom,v:lua.oeyoews.completion.edit",
 })
 
-vim.api.nvim_create_user_command("UpdatePlugin", function(opts)
-  return oeyoews.updateSnapshots(opts.args)
+vim.api.nvim_create_user_command("UpdatePlugins", function()
+  return oeyoews.updateSnapshots()
 end, {
   desc = "Install one or more packages.",
-  nargs = 1,
-  complete = "custom,v:lua.oeyoews.completion.edit",
+  nargs = 0,
 })

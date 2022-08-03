@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:36 by oeyoews                                  --
---   Updated: 2022/08/02 16:10:22 by oeyoews                                  --
+--   Updated: 2022/08/03 14:51:17 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -89,10 +89,9 @@ packer.startup(function(use)
 end)
 
 --   mappings
-vim.keymap.set("n", "<space>pr", function()
-  return oeyoews.updateSnapshots()
-end, {
-  desc = " backup neovim plugin",
+vim.keymap.set("n", "<space>pu", ":UpdatePlugins<cr>", {
+  silent = true,
+  desc = " backup and upgrade neovim plugin",
 })
 
 vim.keymap.set("n", "<space>fb", function()
