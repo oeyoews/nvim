@@ -6,21 +6,11 @@ local extensions = require("telescope").extensions
 telescope.setup({
   extensions = {
     -- TODO: fix tab
-    mappings = {
-      -- i = {},
-    },
     frecency = {
-      -- db_root = "home/my_username/path/to/db_root",
       show_scores = false,
       show_unindexed = true,
       ignore_patterns = { "*.git/*", "*/tmp/*" },
       disable_devicons = false,
-      workspaces = {
-        -- ["conf"] = "/home/my_username/.config",
-        -- ["data"] = "/home/my_username/.local/share",
-        -- ["project"] = "/home/my_username/projects",
-        -- ["wiki"] = "/home/my_username/wiki",
-      },
     },
   },
   defaults = {
@@ -77,10 +67,8 @@ vim.keymap.set("n", "<space>tf", "<cmd>Telescope filetypes<cr>", {
   desc = "𝑭 set filetypes",
 })
 
-vim.keymap.set("n", "<space>tp", function()
-  return require("telescope").extensions.packer.packer()
-end, {
-  desc = "  packer",
+vim.keymap.set("n", "<space>gd", "<cmd>Telescope lsp_references<cr>", {
+  desc = "𝑭 goto reference",
 })
 
 vim.cmd([[
@@ -116,4 +104,10 @@ vim.keymap.set("n", "<space>tg", function()
 end, {
   silent = true,
   desc = "⇘ search config files",
+})
+
+vim.keymap.set("n", "<space>tp", function()
+  return require("telescope").extensions.packer.packer()
+end, {
+  desc = "  packer",
 })

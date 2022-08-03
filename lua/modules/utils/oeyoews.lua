@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/03 19:47:31 by oeyoews                                  --
+--   Updated: 2022/08/03 22:48:45 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -18,6 +18,7 @@ oeyoews.mason = {}
 
 oeyoews.completion = {}
 
+-- api
 oeyoews.autocmd = vim.api.nvim_create_autocmd
 oeyoews.mygroup = vim.api.nvim_create_augroup("OeyoewGroup", {})
 -- nvim_version
@@ -29,7 +30,7 @@ oeyoews.nvim_full_version_info = string.format(
   vim.version().patch
 )
 
--- @options
+-- options
 oeyoews.options = {
   enable_clangd = true,
   -- @see lspconfig.lua
@@ -59,6 +60,7 @@ oeyoews.servers = {
 
 oeyoews.builtin = string.format("%s/builtin/", vim.fn.stdpath("config"))
 
+-- use nvim info, dont modify it to pluginlist
 oeyoews.builtin_plugin = {
   oeyoews.builtin .. "windline",
   oeyoews.builtin .. "notify",

@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:36 by oeyoews                                  --
---   Updated: 2022/08/03 19:38:21 by oeyoews                                  --
+--   Updated: 2022/08/03 22:47:16 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -19,7 +19,7 @@ if vim.fn.empty(vim.fn.glob(install_path)) == 1 then
   -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#1e222a" })
   -- @note: this message can't more one line to enter automatically
   local boootstrap_msg = [[
-  You have not inistall packer.nvim  Cloning packer.nvim ...]]
+  You have not inistall packer.nvim,   Cloning packer.nvim ...]]
   vim.notify(boootstrap_msg)
 
   -- TODO if this exit code , how to resolve?
