@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:36 by oeyoews                                  --
---   Updated: 2022/08/03 14:51:17 by oeyoews                                  --
+--   Updated: 2022/08/03 19:38:21 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -43,13 +43,15 @@ end
 
 -- init packer, and it's some settings
 packer.init({
-  max_jobs = 60,
+  max_jobs = 70,
   auto_clean = true,
   display = {
     prompt_border = "single",
-    working_sym = " ",
-    error_sym = " ",
-    done_sym = " ",
+    working_sym = "ﰭ",
+    error_sym = "",
+    done_sym = "",
+    removed_sym = "",
+    moved_sym = "ﰳ",
     open_fn = function()
       return require("packer.util").float({ border = "single" })
     end,

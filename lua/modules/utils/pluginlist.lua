@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/03 16:32:45 by oeyoews                                  --
+--   Updated: 2022/08/03 19:37:29 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -18,7 +18,10 @@ oeyoews.pluginlist = {
     opt = true,
   },
   "rafcamlet/nvim-luapad",
-  "kyazdani42/nvim-tree.lua",
+  {
+    "kyazdani42/nvim-tree.lua",
+    disable = true,
+  },
   "folke/lua-dev.nvim",
   "folke/trouble.nvim",
   {

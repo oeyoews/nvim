@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/03 11:08:54 by oeyoews                                  --
+--   Updated: 2022/08/03 19:45:01 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -197,11 +197,13 @@ set showtabline=0
 set invnumber
 let &number=0
 silent! Gitsigns toggle_signs
+LspStop
 else
 set laststatus=3
 set showtabline=2
 let &number=1
 silent! Gitsigns toggle_signs
+LspStart
 endif
 endfunction
 ]])
