@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.23.0](https://gitlab.com/oeyoews/nvim/compare/v7.22.3...v7.23.0) (2022-08-03)
+
+
+### Features
+
+* **telescope:** add lsp_references map ([38e4566](https://gitlab.com/oeyoews/nvim/commit/38e45660db44082b85c84ecaa030d7b8fc6052e7))
+
 ## [7.22.3](https://gitlab.com/oeyoews/nvim/compare/v7.22.2...v7.22.3) (2022-08-03)
 
 
