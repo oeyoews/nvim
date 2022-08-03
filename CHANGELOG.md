@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.21.1](https://gitlab.com/oeyoews/nvim/compare/v7.21.0...v7.21.1) (2022-08-03)
+
+
+### Bug Fixes
+
+* **header:** restore ft lua comment style ([be011d1](https://gitlab.com/oeyoews/nvim/commit/be011d10291c3231aed7ef571ffa3c87bda6604f))
+
 # [7.21.0](https://gitlab.com/oeyoews/nvim/compare/v7.20.0...v7.21.0) (2022-08-03)
 
 
