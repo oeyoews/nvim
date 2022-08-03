@@ -54,10 +54,14 @@ oeyoews.autocmd("BufEnter", {
   command = "setlocal wrap",
 })
 
--- TODO: conflict for ranger to file to preview or enter next layer
 oeyoews.autocmd("TermOpen", {
   group = oeyoews.mygroup,
-  command = "call feedkeys('i') | setlocal nornu nonu nocursorline",
+  callback = function()
+    vim.cmd([[startinsert | setlocal nornu nonu nocursorline ]])
+    if vim.opt.buftype._value == "terminal" then
+      vim.notify_once("  Enter Terminal")
+    end
+  end,
 })
 
 oeyoews.autocmd("TermClose", {
