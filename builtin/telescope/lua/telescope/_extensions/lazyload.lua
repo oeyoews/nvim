@@ -1,56 +1,54 @@
 -- -------------------------------------------------------------------------- --
 --                                                                            --
 --                                                                            --
---   dotfiles.lua                                                             --
+--   lazyload.lua                                                             --
 --                                                                            --
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
---   Created: 2022/08/03 15:41:36 by oeyoews                                  --
---   Updated: 2022/08/03 15:42:29 by oeyoews                                  --
+--   Created: 2022/08/03 15:42:35 by oeyoews                                  --
+--   Updated: 2022/08/03 15:52:34 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
--- TODO: add opts to search specific directory and achieve tab path completion
-
-if vim.fn.executable("rg") ~= 1 then
-  vim.notify("Please install ripgrep")
-  return
-end
+-- TODO: how to use actions, to fit require director conf files
 
 local telescope = require("telescope")
 local finders = require("telescope.finders")
 local pickers = require("telescope.pickers")
 local make_entry = require("telescope.make_entry")
 local conf = require("telescope.config").values
+local action_state = require("telescope.actions.state")
+local action = require("telescope.actions")
 
-local dotfiles_list = function(opts)
-  local dir = vim.fn.stdpath("config") .. "/lua"
-  local list = {}
-  local nvim_conf = io.popen("rg --files " .. dir)
-  for file in nvim_conf:lines() do
-    table.insert(list, file)
-  end
-  return list
-end
-
-local dotfiles = function(opts)
+local lazyload = function(opts)
   opts = opts or {}
-  local results = dotfiles_list(opts)
+  local results = {
+    "one",
+    "two",
+    "third",
+  }
 
   pickers.new(opts, {
-    prompt_title = "find neovim config files",
-    results_title = "neovim files",
+    prompt_title = "display lazyload plugins",
+    results_title = "lazyload plugins list",
     finder = finders.new_table({
       results = results,
       entry_maker = make_entry.gen_from_file(opts),
     }),
-    previewer = conf.file_previewer(opts),
+    -- previewer = conf.file_previewer(opts),
     sorter = conf.file_sorter(opts),
   }):find()
 end
 
 return telescope.register_extension({
   exports = {
-    dotfiles = dotfiles,
+    lazyload = lazyload,
   },
 })
+
+--[[ vim.keymap.set("n", "<space>tL", function()
+	return require("telescope").load_extension("lazyload"), require("telescope").extensions.lazyload.lazyload()
+end, {
+	silent = true,
+	desc = "⇘ search config files",
+}) ]]
