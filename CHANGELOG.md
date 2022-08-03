@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.22.2](https://gitlab.com/oeyoews/nvim/compare/v7.22.1...v7.22.2) (2022-08-03)
+
+
+### Bug Fixes
+
+* **telescope:** remove load to telescope ([d0d3a00](https://gitlab.com/oeyoews/nvim/commit/d0d3a00599c4435390d1bfdc6319d2a9e79cae54))
+
 ## [7.22.1](https://gitlab.com/oeyoews/nvim/compare/v7.22.0...v7.22.1) (2022-08-03)
 
 
