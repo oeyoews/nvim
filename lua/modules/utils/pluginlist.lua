@@ -6,18 +6,39 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/03 19:37:29 by oeyoews                                  --
+--   Updated: 2022/08/03 22:27:41 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
---   plugins list
-oeyoews.pluginlist = {
-  "j-hui/fidget.nvim",
+local markdown_list = {
+  {
+    "dhruvasagar/vim-table-mode",
+    opt = true,
+  },
+  {
+    "ekickx/clipboard-image.nvim",
+    opt = true,
+  },
+  {
+    "iamcco/markdown-preview.nvim",
+    opt = true,
+    run = "cd app && npm install",
+  },
+  {
+    "ziontee113/icon-picker.nvim",
+    opt = true,
+  },
+  -- a alien
   {
     "nvim-neorg/neorg",
     opt = true,
   },
-  "rafcamlet/nvim-luapad",
+}
+
+--   plugins list
+oeyoews.pluginlist = {
+  "j-hui/fidget.nvim",
+  -- "rafcamlet/nvim-luapad",
   {
     "kyazdani42/nvim-tree.lua",
     disable = true,
@@ -26,6 +47,7 @@ oeyoews.pluginlist = {
   "folke/trouble.nvim",
   {
     "danymat/neogen",
+    -- or use ''
     config = [[require("neogen").setup()]],
   },
   "lewis6991/impatient.nvim",
@@ -97,23 +119,9 @@ oeyoews.pluginlist = {
     "dstein64/vim-startuptime",
     config = [[require("modules.tools.startup")]],
   },
-  {
-    "dhruvasagar/vim-table-mode",
-    opt = true,
-  },
-  {
-    "ekickx/clipboard-image.nvim",
-    opt = true,
-  },
-  {
-    "iamcco/markdown-preview.nvim",
-    opt = true,
-    run = "cd app && npm install",
-  },
-  {
-    "ziontee113/icon-picker.nvim",
-    opt = true,
-  },
+  -- markdown
+  markdown_list,
+  -- builtin
   oeyoews.builtin_plugin,
 }
 

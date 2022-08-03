@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 10:42:39 by oeyoews                                  --
---   Updated: 2022/08/03 17:00:02 by oeyoews                                  --
+--   Updated: 2022/08/03 22:13:41 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -20,17 +20,6 @@ local check_npm = function()
   end
 end
 
-oeyoews.autocmd("FileType", {
-  pattern = {
-    "mason.nvim",
-    "lspinfo",
-    "null-ls-info",
-  },
-  callback = function()
-    check_npm()
-  end,
-})
-
 local mason_exclude = {}
 
 -- clangd is too large, install literally slow, use system
@@ -40,27 +29,6 @@ end
 
 if oeyoews.options.enable_clangd then
   oeyoews.servers[#oeyoews.servers + 1] = "clangd"
-end
-
-local check_mason = function(bin)
-  if vim.fn.executable(bin) == 0 then
-    oeyoews.mason[#oeyoews.mason + 1] = bin
-  end
-end
-
-local tbl = {
-  -- "proselint",
-  "prettier",
-  "clang-format",
-  "fixjson",
-  "codespell", -- spell
-  "stylua", -- lua
-  "black", -- ptyhon format
-  "shellcheck",
-}
-
-for _, value in ipairs(tbl) do
-  check_mason(value)
 end
 
 -- @note: if some servers not installed, please run `checkhelth mason`
@@ -77,11 +45,6 @@ require("mason").setup({
   },
 })
 
-require("mason-tool-installer").setup({
-  ensure_installed = oeyoews.mason,
-  auto_update = false,
-})
-
 require("mason-lspconfig").setup({
   -- ensure_installed = oeyoews.servers,
   -- use automatic_installation replace ensure_installed
@@ -90,6 +53,20 @@ require("mason-lspconfig").setup({
   },
 })
 
+--   mappings
 vim.keymap.set("n", "<space>lm", "<cmd>Mason<cr>", {
-  desc = "𝓜  Show mason",
+  desc = "𝓜  ﯓShow mason",
+})
+
+-- cmd
+oeyoews.autocmd("FileType", {
+  group = oeyoews.mygroup,
+  pattern = {
+    "mason.nvim",
+    "lspinfo",
+    "null-ls-info",
+  },
+  callback = function()
+    check_npm()
+  end,
 })

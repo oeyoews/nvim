@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/03 10:48:36 by oeyoews                                  --
---   Updated: 2022/08/03 15:24:07 by oeyoews                                  --
+--   Updated: 2022/08/03 22:31:29 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -22,7 +22,12 @@ vim.api.nvim_create_user_command("UpdatePlugins", function()
   return oeyoews.updateSnapshots()
 end, {
   desc = "UpdatePlugins ",
-  nargs = 0,
+})
+
+vim.api.nvim_create_user_command("CleanPlugins", function()
+  vim.cmd([[PackerClean]])
+end, {
+  desc = "CleanPlugins ",
 })
 
 -- TODO: use telescope to override

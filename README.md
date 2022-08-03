@@ -11,13 +11,15 @@
 
 <div align="center">
 <!-- <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/oeyoews/nvim?color=cyan&logo=github&logoColor=violet&style=flat-square"> -->
+<!-- <img src="https://img.shields.io/badge/Desktop-Gnome-blueviolet.svg?style=flat-square&logo=gnome&color=90E59A&logoColor=cyan" alt="desktop"> -->
+<!-- <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/oeyoews/nvim?label=Size&logo=git&style=flat-square"> -->
+<!-- <img src="https://img.shields.io/badge/GIT-Yes-green.svg?style=flat-square&logo=git&label=GIT" alt="git"> -->
+<!-- <img src="https://img.shields.io/badge/Shell-zsh-white.svg?style=flat-square&logo=Gnu-Bash&logoColor=9ECE6A&color=BB9AF7" alt="shell"> -->
 <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/oeyoews/nvim?color=cyan&logo=github&logoColor=cyan&style=flat-square">
 <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/oeyoews/nvim?color=green&logo=github&logoColor=cyan&style=flat-square">
-<!-- <img src="https://img.shields.io/badge/Desktop-Gnome-blueviolet.svg?style=flat-square&logo=gnome&color=90E59A&logoColor=cyan" alt="desktop"> -->
 <img src="https://img.shields.io/badge/Sync-Yes-blueviolet.svg?style=flat-square&logo=gitlab&color=90E59A&logoColor=green" alt="sync">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/oeyoews/nvim?logo=github&logoColor=cyan&style=flat-square">
-<!-- <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/oeyoews/nvim?label=Size&logo=git&style=flat-square"> -->
-<img src="https://img.shields.io/badge/Terminal-alacritty-blueviolet.svg?style=flat-square&logo=powershell&color=90E59A&logoColor=green" alt="terminal">
+<img src="https://img.shields.io/badge/Terminal-gnometerminal-blueviolet.svg?style=flat-square&logo=powershell&color=90E59A&logoColor=green" alt="terminal">
 <img src="https://img.shields.io/github/directory-file-count/oeyoews/nvim?color=green&label=Files&logo=Gnu&logoColor=violet&style=flat-square" alt="files">
 <img src="https://img.shields.io/badge/Maintain-Yes-blueviolet.svg?style=flat-square&logo=Chakra-Ui&color=90E59A&logoColor=green" alt="status" >
 <img src="https://img.shields.io/badge/System-Linux-white.svg?style=flat-square&logo=linux&logoColor=cyan&color=BB9AF7" alt="system">
@@ -27,8 +29,6 @@
 <img src="https://img.shields.io/badge/Github-Yes-green.svg?style=flat-square&logo=github&label=Github&logoColor=cyan" alt="github">
 <img src="https://img.shields.io/badge/Gitlab-Yes-ffcc00.svg?style=flat-square&logo=gitlab&label=Gitlab" alt="gitlab">
 <img src="https://img.shields.io/gitlab/v/tag/oeyoews/nvim?color=green&logo=FastAPI&style=flat-square" alt="tag">
-<!-- <img src="https://img.shields.io/badge/GIT-Yes-green.svg?style=flat-square&logo=git&label=GIT" alt="git"> -->
-<!-- <img src="https://img.shields.io/badge/Shell-zsh-white.svg?style=flat-square&logo=Gnu-Bash&logoColor=9ECE6A&color=BB9AF7" alt="shell"> -->
 <img src="https://img.shields.io/badge/Lang-lua-blueviolet.svg?style=flat-square&logo=lua&color=90E59A&logoColor=blue" alt="lang">
 </div>
 <hr>
@@ -48,7 +48,7 @@
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=FiraCode&color=63F3E1&vCenter=true&lines=A+personal+neovim+configuration" alt="Typing SVG" /></a>
 
-## 📂 File Struct
+<h2> 📂 File Struct </h2>
 
 <details>
 <summary>File Tree</summary>
@@ -60,59 +60,59 @@ lua/
 │   ├── langs
 │   │   ├── cmp.lua
 │   │   ├── lspconfig.lua
+│   │   ├── lspsaga.lua
 │   │   ├── mason.lua
 │   │   ├── null-ls.lua
-│   │   └── treesitter.lua
+│   │   ├── treesitter.lua
+│   │   └── trouble.lua
 │   ├── tools
-│   │   ├── autopairs.lua
 │   │   ├── comment.lua
 │   │   ├── gitsigns.lua
+│   │   ├── header42.lua
 │   │   ├── hop.lua
-│   │   ├── icon_picker.lua
 │   │   ├── indent.lua
-│   │   ├── mkdp.lua
-│   │   ├── neogen.lua
 │   │   ├── nvim_tree.lua
-│   │   ├── persisted.lua
 │   │   ├── persistence.lua
 │   │   ├── quickrun.lua
 │   │   ├── ranger.lua
-│   │   ├── tabout.lua
+│   │   ├── startup.lua
 │   │   ├── telescope.lua
-│   │   ├── todo_comments.lua
 │   │   ├── trim.lua
-│   │   ├── vim_startuptime.lua
 │   │   └── whichkey.lua
 │   ├── ui
 │   │   ├── bufferline.lua
-│   │   ├── custom.lua
+│   │   ├── custom_ui.lua
 │   │   ├── fidget.lua
-│   │   ├── lspsaga.lua
 │   │   ├── notify.lua
 │   │   ├── tokyonight.lua
-│   │   ├── web_icons.lua
-│   │   └── windline.lua
+│   │   └── web_icons.lua
 │   └── utils
+│       ├── autocmd.lua
 │       ├── bootstrap.lua
 │       ├── disable.lua
+│       ├── filetype.lua
 │       ├── functions.lua
-│       ├── impatient.lua
 │       ├── mappings.lua
 │       ├── oeyoews.lua
 │       ├── options.lua
-│       └── pluginlist.lua
+│       ├── pluginlist.lua
+│       └── usercmd.lua
 └── user
     ├── capabilities.lua
-    ├── lsp_format.lua
+    ├── fun.lua
+    ├── lazyload
+    │   ├── icon_picker.lua
+    │   ├── mkdp.lua
+    │   └── neorg.lua
     ├── modules.lua
     └── pcall.lua
 
-6 directories, 44 files
+7 directories, 43 files
 ```
 
 </details>
 
-## ⬇️ Install
+<h2> ⬇️ Install </h2>
 
 - NOTE: just support nightly
 - install pynvim and nightly neovim and clone this repository
@@ -213,7 +213,7 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 
 ## 📖 Wiki
 
-- For more details, please read the code or check this [📖 nvim wiki](https://gitlab.com/oeyoews/nvim/-/wikis/home)
+- For more details, please read the code or check this [nvim wiki](https://gitlab.com/oeyoews/nvim/-/wikis/home)
 
 ## 🔗 Links
 

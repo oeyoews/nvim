@@ -68,8 +68,9 @@ oeyoews.autocmd("TermOpen", {
 oeyoews.autocmd("TermClose", {
   group = oeyoews.mygroup,
   callback = function()
+    -- must have the slash
     vim.cmd([[
-    call feedkeys("<esc>")
+    call feedkeys("\<esc>")
     ]])
   end,
 })

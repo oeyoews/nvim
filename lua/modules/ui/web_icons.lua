@@ -1,3 +1,4 @@
+-- TODO: add norg ft icons
 require("nvim-web-devicons").setup({
   override = {
     zsh = {
