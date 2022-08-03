@@ -149,6 +149,7 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 <details>
 <summary>expand</summary>
 
+- [ ] resolve this z-index in neovim, may be is z-index
 - use gitsigns api to update time for header42
 - [ ] use ftplugin for null-ls and lsp server
 - [ ] luaimize hi

@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 10:42:39 by oeyoews                                  --
---   Updated: 2022/08/03 09:24:18 by oeyoews                                  --
+--   Updated: 2022/08/03 17:00:02 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -49,7 +49,7 @@ local check_mason = function(bin)
 end
 
 local tbl = {
-  "proselint",
+  -- "proselint",
   "prettier",
   "clang-format",
   "fixjson",
