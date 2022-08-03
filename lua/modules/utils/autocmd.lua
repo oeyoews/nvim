@@ -59,7 +59,8 @@ oeyoews.autocmd("TermOpen", {
   callback = function()
     vim.cmd([[startinsert | setlocal nornu nonu nocursorline ]])
     if vim.opt.buftype._value == "terminal" then
-      vim.notify_once("  Enter Terminal")
+      -- enter ranger will also trigger this msg
+      vim.notify_once("  Enter Terminal-Mode")
     end
   end,
 })

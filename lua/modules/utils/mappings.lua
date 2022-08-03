@@ -268,7 +268,8 @@ vim.keymap.set("n", "<space>vf", "<cmd>set invfoldenable<cr>", {
   desc = " toggle fold",
 })
 
-vim.keymap.set("t", "<M-c>", "<C-\\><C-n>", {
+-- or append <cmd>q!<cr>
+vim.keymap.set("t", "<M-q>", "<C-\\><C-n>", {
   silent = true,
   desc = " quit terminal mode",
 })
