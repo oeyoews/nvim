@@ -69,7 +69,7 @@ oeyoews.autocmd("TermClose", {
   group = oeyoews.mygroup,
   callback = function()
     vim.cmd([[
-    call feedkeys("\<esc>")
+    call feedkeys("<esc>")
     ]])
   end,
 })
