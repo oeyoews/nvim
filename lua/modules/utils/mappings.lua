@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/04 00:34:10 by oeyoews                                  --
+--   Updated: 2022/08/04 00:40:14 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -186,8 +186,6 @@ vim.cmd([[
 command! Scripts split | ene|pu=execute('scriptnames')
 command! -nargs=1 -complete=highlight HI ene|pu=execute('hi <args>')
 command! -nargs=1  Put ene|pu=execute('<args>')
-" now, only add icon-picker config in pluginlist
-command! -bang -nargs=+ -complete=customlist,v:lua.require'packer'.loader_complete LoadPlugins lua require('packer').loader(<f-args>, '<bang>' == '!')
 ]])
 
 -- functions
