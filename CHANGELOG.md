@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.27.2](https://gitlab.com/oeyoews/nvim/compare/v7.27.1...v7.27.2) (2022-08-04)
+
+
+### Bug Fixes
+
+* **neorg:** fix neorg map error hold to on_hold ([8c1d6e3](https://gitlab.com/oeyoews/nvim/commit/8c1d6e3a6f21f3de60b29d3941ba8d39f79d7c8e))
+
 ## [7.27.1](https://gitlab.com/oeyoews/nvim/compare/v7.27.0...v7.27.1) (2022-08-04)
 
 
