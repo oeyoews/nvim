@@ -1,6 +1,7 @@
 local lspkind = require("lspkind")
 
---vim.cmd [[highlight default GH guifg=#3bb6c4 guibg=NONE]]
+-- vim.cmd([[highlight default GH guifg=#3bb6c4 guibg=NONE]])
+vim.cmd([[highlight CmpItemKindSnippet  guifg=#3bb6c4 guibg=NONE]])
 
 vim.g.UltiSnipsEditSplit = "vertical"
 vim.g.UltiSnipsJumpForwardTrigger = "<Plug>(ultisnips_jump_forward)"
