@@ -6,9 +6,15 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:04 by oeyoews                                  --
---   Updated: 2022/08/03 14:02:21 by oeyoews                                  --
+--   Updated: 2022/08/05 00:52:59 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
+
+-- just for linux, and no mac no test, so just support linux
+if vim.fn.has("linux") ~= 1 then
+  vim.notify("Please use neovim linux env")
+  return
+end
 
 pcall(require, "impatient")
 
