@@ -49,3 +49,14 @@ vim.keymap.set("n", "<space>an", "<cmd>Neorg inject-metadata<cr>", {
   silent = true,
   desc = " inject metadata",
 })
+
+-- this default keybinds is nice, below is example to custom keymap, no remap
+-- ref: https://github.com/nvim-neorg/neorg/blob/main/lua/neorg/modules/core/keybinds/keybinds.lua
+-- local prefix_norg_bind = "Neorg keybind norg core.norg.qol.todo_items.todo.task_"
+-- vim.keymap.set("n", "<space>gtu", function()
+--   vim.cmd(([[%s%s]]):format(prefix_norg_bind, "undone"))
+-- end, {
+--   buffer = true,
+--   silent = true,
+--   desc = "toggle undone",
+-- })
