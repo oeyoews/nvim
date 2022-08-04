@@ -1,7 +1,11 @@
 local lspkind = require("lspkind")
 
 -- vim.cmd([[highlight default GH guifg=#3bb6c4 guibg=NONE]])
+-- TODO: learn use highlight group and cutsom_ui file
+-- https://github.com/hrsh7th/nvim-cmp/wiki/Menu-Appearance
+vim.cmd([[highlight CmpItemKindDefault  guifg=#3bb6c4 guibg=NONE]])
 vim.cmd([[highlight CmpItemKindSnippet  guifg=#3bb6c4 guibg=NONE]])
+vim.cmd([[highlight CmpItemMenu guifg=#9E79BE guibg=NONE]])
 
 vim.g.UltiSnipsEditSplit = "vertical"
 vim.g.UltiSnipsJumpForwardTrigger = "<Plug>(ultisnips_jump_forward)"
@@ -37,18 +41,18 @@ local function border(highlight)
 end
 
 local symbol_map = {
-  Text = "",
-  Method = "",
-  Function = "ƒ",
+  Text = "",
+  Method = "𝙢 ",
+  Function = "",
   Constructor = "𝑪",
-  Field = "𝙁",
-  Variable = "",
+  Field = "",
+  Variable = "",
   Class = "𝓒",
   Interface = "",
   Module = "",
   Property = "ﰠ",
-  Unit = "𝑼",
-  Value = "勺",
+  Unit = "",
+  Value = "𝞮",
   Enum = "",
   Keyword = "",
   Snippet = " ",
@@ -125,11 +129,11 @@ local sources = {
 }
 
 local menu = {
-  nvim_lsp = " ",
-  buffer = " ﬘",
-  ultisnips = "Snippet",
-  nvim_lua = " ",
-  path = "Path",
+  nvim_lsp = "",
+  buffer = "﬘",
+  ultisnips = "𝜵 ",
+  nvim_lua = " ",
+  path = "◉ ",
 }
 
 cmp.setup({
