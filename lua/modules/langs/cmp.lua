@@ -50,7 +50,7 @@ local symbol_map = {
   Value = "勺",
   Enum = "",
   Keyword = "",
-  Snippet = "𝒮",
+  Snippet = " ",
   Color = "",
   Reference = "",
   File = "",
@@ -159,6 +159,7 @@ cmp.setup({
   mapping = mapping,
 
   -- menu
+  -- TODO: custom this prompt color
   formatting = {
     fields = {
       "kind",
