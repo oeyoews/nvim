@@ -6,10 +6,12 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/03 22:12:37 by oeyoews                                  --
---   Updated: 2022/08/03 22:12:38 by oeyoews                                  --
+--   Updated: 2022/08/04 21:29:57 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
+--- check bin
+---@param bin string
 local check_mason = function(bin)
   if vim.fn.executable(bin) == 0 then
     oeyoews.mason[#oeyoews.mason + 1] = bin
