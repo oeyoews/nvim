@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.25.0](https://gitlab.com/oeyoews/nvim/compare/v7.24.1...v7.25.0) (2022-08-04)
+
+
+### Features
+
+* **cmp:** overwrite cmp border ([024a4c9](https://gitlab.com/oeyoews/nvim/commit/024a4c910c00be1f5371c06f2850c97124613f68))
+
 ## [7.24.1](https://gitlab.com/oeyoews/nvim/compare/v7.24.0...v7.24.1) (2022-08-03)
 
 
