@@ -1,0 +1,44 @@
+@document.meta
+title: help
+description:
+authors: oeyoews
+categories:
+created: 2022-08-04
+version: 0.0.11
+@end
+
+= TOC
+
+* The `vanilla.norg` file-format
+
+** generate tags file
+
+    - use !ctags to generate tags files for nvim.txt
+
+** helptags
+
+   - use `helptags` to reindex this nvim.txt or
+
+** gererate txt for nvim lua
+
+   - use `lemmy-helo`, use cargo install it
+
+** TODO
+
+   - use norg to generate help doc
+
+** INBOX
+
+   -  this special set noreadonly and modifyable to edit it convenient
+
+** BUG
+
+   - load norg files from telescope, this highlight is unnormal
+
+** TIP
+
+   - enter terminal mode, this no modifyable ? ans: not, is the open help file cause
+   - because this file in doc, so this is a special file
+
+#comment
+   vim:tw=100:ft=norg:norl:nu

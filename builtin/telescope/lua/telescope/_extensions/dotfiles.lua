@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/03 15:41:36 by oeyoews                                  --
---   Updated: 2022/08/03 15:59:35 by oeyoews                                  --
+--   Updated: 2022/08/04 22:44:50 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -25,7 +25,7 @@ local make_entry = require("telescope.make_entry")
 local conf = require("telescope.config").values
 
 local dotfiles_list = function(opts)
-  local dir = vim.fn.stdpath("config") .. "/lua"
+  local dir = vim.fn.stdpath("config")
   local list = {}
   local nvim_conf = io.popen("rg --files " .. dir)
   for file in nvim_conf:lines() do

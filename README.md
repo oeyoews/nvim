@@ -146,7 +146,7 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 
 ## ✅ TODO
 
-[TODO](docs/todo.norg)
+[TODO](doc/todo.norg)
 
 ## 📖 Wiki
 
