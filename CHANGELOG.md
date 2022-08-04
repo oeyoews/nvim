@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.26.0](https://gitlab.com/oeyoews/nvim/compare/v7.25.0...v7.26.0) (2022-08-04)
+
+
+### Features
+
+* **scope:** add scope ([267d1a2](https://gitlab.com/oeyoews/nvim/commit/267d1a205f41218fdd4b21a6018027b3c9b9facc))
+
 # [7.25.0](https://gitlab.com/oeyoews/nvim/compare/v7.24.1...v7.25.0) (2022-08-04)
 
 
