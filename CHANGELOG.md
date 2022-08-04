@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.27.0](https://gitlab.com/oeyoews/nvim/compare/v7.26.0...v7.27.0) (2022-08-04)
+
+
+### Features
+
+* **neorg:** add neorg remap ([94d488a](https://gitlab.com/oeyoews/nvim/commit/94d488a730c9ead30be6e686e2c044412fc85a2e))
+
 # [7.26.0](https://gitlab.com/oeyoews/nvim/compare/v7.25.0...v7.26.0) (2022-08-04)
 
 
