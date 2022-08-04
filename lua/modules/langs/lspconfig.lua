@@ -69,6 +69,7 @@ vim.keymap.set("n", "<space>li", "<cmd>LspInfo<cr>", {
 -- icon note this order in last
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
   underline = true,
+  signs = true,
   update_in_insert = false,
   severity_sort = false,
   virtual_text = false,

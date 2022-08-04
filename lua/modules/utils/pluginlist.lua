@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/04 20:24:53 by oeyoews                                  --
+--   Updated: 2022/08/04 21:16:18 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -95,6 +95,8 @@ oeyoews.pluginlist = {
       "hrsh7th/cmp-path",
     },
   },
+  -- https://github.com/VonHeikemen/lsp-zero.nvim/wiki/Under-the-hood
+  -- this lsp-zero recommended to read
   "neovim/nvim-lspconfig",
   "jose-elias-alvarez/null-ls.nvim",
   "glepnir/lspsaga.nvim",
