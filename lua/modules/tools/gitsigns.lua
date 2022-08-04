@@ -1,4 +1,5 @@
---[[ local gitsigns = require("gitsigns")
+---[[
+local gitsigns = require("gitsigns")
 
 gitsigns.setup({
   current_line_blame = true,
@@ -12,9 +13,11 @@ gitsigns.setup({
   },
   max_file_length = 400,
   numhl = true,
-}) ]]
+})
+--]]
 
----[[
+--[[
+-- this will cause install all plugins failed in first
 oeyoews.autocmd("FileType", {
   group = oeyoews.mygroup,
   pattern = "*",

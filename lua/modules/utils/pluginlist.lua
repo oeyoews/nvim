@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/04 17:39:54 by oeyoews                                  --
+--   Updated: 2022/08/04 18:57:09 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -97,7 +97,7 @@ oeyoews.pluginlist = {
   "neovim/nvim-lspconfig",
   "jose-elias-alvarez/null-ls.nvim",
   "glepnir/lspsaga.nvim",
-  -- @TOOLS
+  -- @TOOLS:
   {
     "folke/todo-comments.nvim",
     config = [[require("todo-comments").setup()]],
