@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/04 14:44:23 by oeyoews                                  --
+--   Updated: 2022/08/04 16:11:32 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -40,7 +40,6 @@ local markdown_list = {
 --   plugins list
 oeyoews.pluginlist = {
   "j-hui/fidget.nvim",
-  -- "rafcamlet/nvim-luapad",
   {
     "kyazdani42/nvim-tree.lua",
     disable = true,
@@ -59,37 +58,52 @@ oeyoews.pluginlist = {
   "kyazdani42/nvim-web-devicons",
   "stevearc/dressing.nvim",
   "lukas-reineke/indent-blankline.nvim",
+  -- bufferline
   {
     "akinsho/bufferline.nvim",
     requires = {
       "tiagovla/scope.nvim",
     },
   },
+  -- treesitter
   {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
+    requires = {
+      "p00f/nvim-ts-rainbow",
+      "nvim-treesitter/nvim-treesitter-refactor",
+    },
   },
-  "nvim-treesitter/nvim-treesitter-refactor",
-  "p00f/nvim-ts-rainbow",
-  "williamboman/mason.nvim",
-  "williamboman/mason-lspconfig.nvim",
-  "WhoIsSethDaniel/mason-tool-installer.nvim",
-  "hrsh7th/nvim-cmp",
-  "quangnguyen30192/cmp-nvim-ultisnips",
-  "hrsh7th/cmp-buffer",
+  -- mason
+  {
+    "williamboman/mason.nvim",
+    requires = {
+      "williamboman/mason-lspconfig.nvim",
+      "WhoIsSethDaniel/mason-tool-installer.nvim",
+    },
+  },
+  -- cmp
+  {
+    "hrsh7th/nvim-cmp",
+    requires = {
+      "quangnguyen30192/cmp-nvim-ultisnips",
+      "hrsh7th/cmp-buffer",
+      "honza/vim-snippets",
+      "SirVer/ultisnips",
+      "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/cmp-path",
+    },
+  },
   "neovim/nvim-lspconfig",
   "jose-elias-alvarez/null-ls.nvim",
   "glepnir/lspsaga.nvim",
-  "honza/vim-snippets",
-  "SirVer/ultisnips",
-  "hrsh7th/cmp-nvim-lsp",
-  "hrsh7th/cmp-path",
   -- @TOOLS
   {
     "folke/todo-comments.nvim",
     config = [[require("todo-comments").setup()]],
   },
   -- not lazy load this plugin, such as icon-picker
+  -- telescope
   {
     "nvim-telescope/telescope.nvim",
     config = function()
@@ -104,7 +118,6 @@ oeyoews.pluginlist = {
     },
   },
   "phaazon/hop.nvim",
-  "norcalli/nvim-colorizer.lua",
   "lewis6991/gitsigns.nvim",
   -- bug: slow in lua comment file
   "numToStr/Comment.nvim",
