@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/04 16:11:32 by oeyoews                                  --
+--   Updated: 2022/08/04 17:39:54 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -120,7 +120,10 @@ oeyoews.pluginlist = {
   "phaazon/hop.nvim",
   "lewis6991/gitsigns.nvim",
   -- bug: slow in lua comment file
-  "numToStr/Comment.nvim",
+  {
+    "numToStr/Comment.nvim",
+    config = [[require("Comment").setup()]],
+  },
   {
     "windwp/nvim-autopairs",
     config = [[require("nvim-autopairs").setup()]],

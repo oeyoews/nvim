@@ -74,3 +74,10 @@ oeyoews.autocmd("TermClose", {
     ]])
   end,
 })
+
+-- Don't auto commenting new lines
+oeyoews.autocmd("BufEnter", {
+  group = oeyoews.mygroup,
+  pattern = "*",
+  command = "set fo-=c fo-=r fo-=o",
+})

@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/08/03 19:37:49 by oeyoews                                  --
+--   Updated: 2022/08/04 17:38:53 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -60,7 +60,6 @@ M.files = {
     "indent", -- show indent line
     "hop", -- jump anywhere
     "gitsigns", -- show git changes in signcolumn
-    "comment", -- fast comment your code
     "whichkey", -- show your key bindings
     "quickrun", -- quickly run your code
     "trim", -- delete any blank line and trailing whitespace
