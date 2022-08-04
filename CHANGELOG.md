@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.28.0](https://gitlab.com/oeyoews/nvim/compare/v7.27.2...v7.28.0) (2022-08-04)
+
+
+### Features
+
+* **doc:** add norg help doc ([eb74fad](https://gitlab.com/oeyoews/nvim/commit/eb74fadd954cbd92784ee661f6cd7733c9b51575))
+
 ## [7.27.2](https://gitlab.com/oeyoews/nvim/compare/v7.27.1...v7.27.2) (2022-08-04)
 
 
