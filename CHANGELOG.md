@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.29.0](https://gitlab.com/oeyoews/nvim/compare/v7.28.0...v7.29.0) (2022-08-04)
+
+
+### Features
+
+* **cmp:** add snip color for cmp ([1d69857](https://gitlab.com/oeyoews/nvim/commit/1d698570cc9d94b7cfefbf35b4353381affcd1d4))
+
 # [7.28.0](https://gitlab.com/oeyoews/nvim/compare/v7.27.2...v7.28.0) (2022-08-04)
 
 
