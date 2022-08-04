@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/04 18:57:09 by oeyoews                                  --
+--   Updated: 2022/08/04 20:24:53 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -31,6 +31,7 @@ local markdown_list = {
     opt = true,
   },
   -- a alien
+  -- todo: add uncertain code and to bind this code mapping
   {
     "nvim-neorg/neorg",
     opt = true,
