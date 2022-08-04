@@ -36,6 +36,7 @@ local luadev = require("lua-dev").setup({
 -- https://github.com/JavaHello/nvim/blob/nvim-lsp/lua/kide/lsp/init.lua
 -- PERF: use opt to input multiple tables cmd
 
+-- use ftplugin or use autocmd, but should have an list in lspconfig support
 local lsp_setup = function()
   if oeyoews.options.enable_lsp then
     for _, lsp_server in pairs(oeyoews.servers) do
@@ -48,6 +49,7 @@ local lsp_setup = function()
           -- settings.lsp_server
           {
             -- settings = settings[lsp_server],
+            -- handlers = handlers,
             on_attach = on_attach,
             capabilities = capabilities,
           }

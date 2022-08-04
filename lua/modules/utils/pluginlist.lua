@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/04 00:30:10 by oeyoews                                  --
+--   Updated: 2022/08/04 11:45:57 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -59,7 +59,12 @@ oeyoews.pluginlist = {
   "kyazdani42/nvim-web-devicons",
   "stevearc/dressing.nvim",
   "lukas-reineke/indent-blankline.nvim",
-  "akinsho/bufferline.nvim",
+  {
+    "akinsho/bufferline.nvim",
+    requires = {
+      "tiagovla/scope.nvim",
+    },
+  },
   {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",

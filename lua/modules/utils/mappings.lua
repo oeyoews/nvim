@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/04 00:44:05 by oeyoews                                  --
+--   Updated: 2022/08/04 11:42:50 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -136,6 +136,11 @@ keymappings_set = {
     "<space>bn",
     "<cmd>bn<cr>",
     " goto next buffer",
+  },
+  {
+    "<space>fN",
+    "<cmd>tabnew<cr>",
+    "🪐 new tab",
   },
   {
     "<space>fn",
