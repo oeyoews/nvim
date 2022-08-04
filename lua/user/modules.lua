@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/08/04 17:38:53 by oeyoews                                  --
+--   Updated: 2022/08/04 17:42:43 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -56,7 +56,6 @@ M.files = {
   tools = {
     "header42",
     "persistence",
-    -- "nvim_tree",
     "indent", -- show indent line
     "hop", -- jump anywhere
     "gitsigns", -- show git changes in signcolumn
