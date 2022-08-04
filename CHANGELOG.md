@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.30.0](https://gitlab.com/oeyoews/nvim/compare/v7.29.0...v7.30.0) (2022-08-04)
+
+
+### Features
+
+* **cmp:** add cmp appreance highlight ([de36903](https://gitlab.com/oeyoews/nvim/commit/de369032e0b53ebd4919306732e7e3f59db88849))
+* **norg:** add norg fire icon ([8291efd](https://gitlab.com/oeyoews/nvim/commit/8291efd66b0bdc7e3c614f95a15bcfce79d8c658))
+
 # [7.29.0](https://gitlab.com/oeyoews/nvim/compare/v7.28.0...v7.29.0) (2022-08-04)
 
 
