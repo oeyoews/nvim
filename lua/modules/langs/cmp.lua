@@ -14,16 +14,24 @@ end
 -- @nvim_cmp
 local _, cmp = pcall(require, "cmp")
 
-local function border(hl_name)
+local function border(highlight)
   return {
-    { "╭", hl_name },
-    { "─", hl_name },
-    { "╮", hl_name },
-    { "│", hl_name },
-    { "╯", hl_name },
-    { "─", hl_name },
-    { "╰", hl_name },
-    { "│", hl_name },
+    { "┏", highlight },
+    { "─", highlight },
+    { "┓", highlight },
+    { "│", highlight },
+    { "┛", highlight },
+    { "─", highlight },
+    { "┗", highlight },
+    { "│", highlight },
+    -- { "╭", hl_name },
+    -- { "─", hl_name },
+    -- { "╮", hl_name },
+    -- { "│", hl_name },
+    -- { "╯", hl_name },
+    -- { "─", hl_name },
+    -- { "╰", hl_name },
+    -- { "│", hl_name },
   }
 end
 
