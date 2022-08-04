@@ -1,6 +1,12 @@
 -- TODO: add norg ft icons
 require("nvim-web-devicons").setup({
   override = {
+    norg = {
+      icon = "",
+      color = "#5AB680",
+      cterm_color = "67",
+      name = "Norg",
+    },
     zsh = {
       icon = " ",
       color = "yellow",
