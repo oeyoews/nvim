@@ -68,11 +68,13 @@ local items = {
   ["gtu"] = "undone",
   ["gtd"] = "done",
   ["gtp"] = "pending",
-  ["gth"] = "hold",
+  ["gth"] = "on_hold",
   ["gtc"] = "cancelled",
   ["gtr"] = "recurring",
   ["gti"] = "important",
-  -- cycle not set
+  ["gt<space>"] = "cycle",
+  -- no uncertain
+  -- note: this cmd is not work for uncertain, because no this cmd
 }
 
 for keymap, item in pairs(items) do
