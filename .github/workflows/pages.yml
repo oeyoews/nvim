@@ -5,11 +5,10 @@ on:
   # schedule:
   # - cron: "20 16 * * *"
   # Runs on pushes targeting the default branch
-  # push:
-  #   branches: ["nightly"]
   push:
     # tags:
     # - v*
+    branches: ["nightly"]
     paths:
       - "README.md"
 
