@@ -2,7 +2,7 @@
 title: bug
 description:
 authors: oeyoews
-categories:
+categories: bug
 created: 2022-08-05
 version: 0.0.11
 @end
@@ -10,6 +10,7 @@ version: 0.0.11
 * BUG
 
    - load norg files from telescope, this highlight is unnormal
+   - this bdelete is bug for second table page
 
 #comment
    vim:tw=100:ft=norg:norl:nu

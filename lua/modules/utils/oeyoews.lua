@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/04 00:04:43 by oeyoews                                  --
+--   Updated: 2022/08/05 22:29:04 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -17,6 +17,8 @@ oeyoews = {}
 oeyoews.mason = {}
 
 oeyoews.completion = {}
+
+oeyoews.lazyload = require("user.lazyload")
 
 -- api
 oeyoews.autocmd = vim.api.nvim_create_autocmd

@@ -67,7 +67,11 @@ vim.keymap.set("n", "<space>tf", "<cmd>Telescope filetypes<cr>", {
   desc = "𝑭 set filetypes",
 })
 
-vim.keymap.set("n", "<space>gd", "<cmd>Telescope lsp_references<cr>", {
+vim.keymap.set("n", "<space>gd", "<cmd>Telescope lsp_definitions<cr>", {
+  desc = "𝑭 goto lsp_definitions",
+})
+
+vim.keymap.set("n", "<space>gr", "<cmd>Telescope lsp_references<cr>", {
   desc = "𝑭 goto reference",
 })
 

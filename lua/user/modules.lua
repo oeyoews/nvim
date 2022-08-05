@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/08/05 17:38:30 by oeyoews                                  --
+--   Updated: 2022/08/05 23:23:06 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -35,6 +35,7 @@ M.files = {
 
   -- @ui
   ui = {
+    "treesitter", -- friendly highlight your code
     "web_icons",
     "tokyonight",
     "notify",
@@ -44,7 +45,6 @@ M.files = {
 
   -- @LANG
   langs = {
-    "treesitter", -- friendly highlight your code
     "mason",
     "cmp", -- config completion
     "lspconfig", -- configurate lsp settings

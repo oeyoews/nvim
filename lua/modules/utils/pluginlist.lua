@@ -6,53 +6,22 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/05 17:38:45 by oeyoews                                  --
+--   Updated: 2022/08/05 23:26:59 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
-
-local markdown_list = {
-  {
-    "dhruvasagar/vim-table-mode",
-    opt = true,
-  },
-  {
-    "ekickx/clipboard-image.nvim",
-    opt = true,
-  },
-  {
-    "iamcco/markdown-preview.nvim",
-    run = "cd app && npm install",
-    opt = true,
-    config = [[require("user.lazyload.mkdp") ]],
-  },
-  -- a alien
-  -- TODO: add uncertain code and to bind this code mapping
-  -- add modified time in inject meta
-  {
-    "nvim-neorg/neorg",
-    ft = "norg",
-    config = [[require("user.lazyload.neorg")]],
-    opt = true,
-  },
-}
 
 --   plugins list
 oeyoews.pluginlist = {
   {
     "ziontee113/icon-picker.nvim",
     -- bind this key, to load this by hand
-    keys = {
-      "<space>ie",
-    },
+    keys = { "<space>ie" }, -- normal
+    event = "InsertEnter", -- inser mode alt-i
     -- even load, but for packerload fun, use config
-    config = [[require("user.lazyload.icon_picker")]],
+    config = [[oeyoews.lazyload.emoji()]],
     opt = true,
   },
   "j-hui/fidget.nvim",
-  {
-    "kyazdani42/nvim-tree.lua",
-    disable = true,
-  },
   "folke/lua-dev.nvim",
   "folke/trouble.nvim",
   {
@@ -136,7 +105,9 @@ oeyoews.pluginlist = {
   {
     "lewis6991/gitsigns.nvim",
     event = "BufReadPre",
-    config = [[require("user.lazyload.gitsigns")]],
+    config = function()
+      oeyoews.lazyload.gitsigns()
+    end,
   },
   -- bug: slow in lua comment file
   {
@@ -168,8 +139,32 @@ oeyoews.pluginlist = {
     cmd = "StartupTime",
     config = [[vim.g.startuptime_event_width = 30]],
   },
+  -- a alien
+  -- TODO: add uncertain code and to bind this code mapping
+  -- have a delay for highlight
+  -- add modified time in inject meta
+  -- actually, all most plugin not need lazyload, even it very slow, this neorg is lazyload itself, lazyload it is unmeanthingfun
+  {
+    "nvim-neorg/neorg",
+    config = [[require("modules.tools.neorg")]],
+  },
   -- markdown
-  markdown_list,
+  {
+    "dhruvasagar/vim-table-mode",
+    cmd = "TableModeToggle",
+    ft = "markdown",
+  },
+  {
+    "ekickx/clipboard-image.nvim",
+    ft = "markdown",
+    cmd = "PasteImg",
+  },
+  {
+    "iamcco/markdown-preview.nvim",
+    run = "cd app && npm install",
+    ft = "markdown",
+    config = [[oeyoews.lazyload.mkdp()]],
+  },
   -- builtin
   oeyoews.builtin_plugin,
 }
