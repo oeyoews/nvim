@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/04 21:16:18 by oeyoews                                  --
+--   Updated: 2022/08/05 13:48:25 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -31,7 +31,8 @@ local markdown_list = {
     opt = true,
   },
   -- a alien
-  -- todo: add uncertain code and to bind this code mapping
+  -- TODO: add uncertain code and to bind this code mapping
+  -- add modified time in inject meta
   {
     "nvim-neorg/neorg",
     opt = true,

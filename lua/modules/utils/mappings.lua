@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/04 22:57:46 by oeyoews                                  --
+--   Updated: 2022/08/05 14:05:38 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -28,7 +28,7 @@ keymappings_set = {
   },
   -- md
   {
-    "<space>ed",
+    "<space>em",
     "<cmd>Edit md<cr>",
     " edit markdown",
   },
@@ -233,11 +233,11 @@ end, {
   desc = "ﳐ edit init.lua(main) neovim config",
 })
 
-vim.keymap.set("n", "<space>eh", function()
+vim.keymap.set("n", "<space>edv", function()
   return oeyoews.find_lua_file("doc/vanilla", "norg")
 end, {
   silent = true,
-  desc = "edit vanilla.norg neovim config",
+  desc = "edit vanilla.norg ",
 })
 
 vim.keymap.set("n", "<space>hd", function()

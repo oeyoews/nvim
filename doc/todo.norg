@@ -2,67 +2,74 @@
 title: todo
 description:
 authors: oeyoews
-categories:
+categories: todo
 created: 2022-08-04
 version: 0.0.11
 @end
 
-- [ ] resolve this z-index in neovim, may be is z-index
-- [ ] use gitsigns api to update time for header42
-- [ ] use ftplugin for null-ls and lsp server
-- [ ] luaimize hi
-- [ ] based nvim-treesitte autoinstalled to make server [link](https://github.com/nvim-treesitter/nvim-treesitter/commit/365f0eb75f4b8de4655476388c99aaa97f149ded#diff-7473c60f6187b1b6e25a5e7c49c6859d551352490d19da6a527aa0b816ab89f5)
-- [ ] header42: if the file not modified , don't update time use lua code fix it
-- [ ] lspsaga icon can't work
-- [ ] press enter avoid this message
-- [ ] conflict: vim-startuptime is conflict to persistence
-- [=] [difficult] add firstinstall code, avoid less error code
-- [?] archieve a pomodoro by function or mapping enable by hand(maybe can't come true, cpu continue)
-- [ ] update startuptime plugin to suit night
-- [ ] integrate bump plugins, format
-- [ ] use function to replace find file
-- [ ] inlay hints
-- [ ] learn vim.api(nvim), such use vim.fn.executable to replace os.executable
-- [ ] link null-ls or mason.nvim make a logger file
-- [ ] theme: https://github.com/nshen/learn-neovim-lua/blob/main/lua/utils/change-colorscheme.lua
-- [ ] tiny all which-key mappings
-- [ ] control module to install or uninstall plugins
-- [ ] use packer make packersnapshot
-- [ ] emulate key pressing
-- [x] cursor shake for null-ls
-- [x] vim-plug or packer.nvim index probleb
-- [x] config setting conflict
-- [x] integrate husky and (prettier)
-- [x] highlight paraness
-- [x] learn lightspeed
-- [x] learn use visual-line multi curline
-- [?] json add double how effect config
-- [x] add format stylua by ci/cd
-- [x] insert mode to hide cursorline
-- [ ] automatically install filetype server when first open https://github.com/LunarVim/LunarVim/blob/rolling/lua/lvim/lsp/templates.lua
-- [?] bug: treesitter multi download
-- [x] config opt(load)
-- [x] learn packer, test packer automatically
-- [x] format lua(include vim), this treesitter
-- [x] learn lua: doom-nvim, nvchad to deeply look
-- [x] add highlight symbols under cursor functions(terminal gnome support)
-- [x] use packer.nvim to replace vim-plug
-- [x] tidy vanilla.txt, maybe can write vanilla.markdown, last to txt
-- [x] config tab space show in different filetype
-- [x] move plugins/\*.lua to lua folder, and to pure lua config
-- [x] add window number switch number(mousenum)
-- [x] solve gitsign utf8
-- [x] how to add templates in nvim
-- [x] config norg table
-- [x] config format
-- [x] some sitution will cause error line repeat(maybe emoji or refresh time error)
-- [x] snowflake: this emoji will cause this bug in kitty(only)
-- [x] config new theme for material, like tilde,
-- [x] add shortkeys in vim to open browser html
-- [?] fix the zh bug(maybe also is terminal)
-- [x] add random banner and random color startup <https://github.com/goolord/alpha-nvim/discussions/16#discussioncomment-2386902>
-- [x] first install automatically install
-- [x] config dashboard
-- [x] this emjoi shadow bug, maybe is kitty terminal(switch to wezterm compare)
-- [x] some error tip from feline(active)
-- [x] learn it option setting and lsp multi separate setting: fix lua global vim setting, <https://github.com/AstroNvim/AstroNvim>,
+* TODO
+
+  - [ ] use norg to generate help doc
+  - [ ] add tid syntax base on nvim-treesitter
+  - [ ] resolve this z-index in neovim, may be is z-index
+  - [ ] use gitsigns api to update time for header42
+  - [ ] use ftplugin for null-ls and lsp server
+  - [ ] luaimize hi
+  - [ ] based nvim-treesitte autoinstalled to make server [link](https://github.com/nvim-treesitter/nvim-treesitter/commit/365f0eb75f4b8de4655476388c99aaa97f149ded#diff-7473c60f6187b1b6e25a5e7c49c6859d551352490d19da6a527aa0b816ab89f5)
+  - [ ] header42: if the file not modified , don't update time use lua code fix it
+  - [ ] lspsaga icon can't work
+  - [ ] press enter avoid this message
+  - [ ] conflict: vim-startuptime is conflict to persistence
+  - [=] [difficult] add firstinstall code, avoid less error code
+  - [?] archieve a pomodoro by function or mapping enable by hand(maybe can't come true, cpu continue)
+  - [ ] update startuptime plugin to suit night
+  - [ ] integrate bump plugins, format
+  - [ ] use function to replace find file
+  - [ ] inlay hints
+  - [ ] learn vim.api(nvim), such use vim.fn.executable to replace os.executable
+  - [ ] link null-ls or mason.nvim make a logger file
+  - [ ] theme: https://github.com/nshen/learn-neovim-lua/blob/main/lua/utils/change-colorscheme.lua
+  - [ ] tiny all which-key mappings
+  - [ ] control module to install or uninstall plugins
+  - [ ] use packer make packersnapshot
+  - [ ] emulate key pressing
+  - [x] cursor shake for null-ls
+  - [x] vim-plug or packer.nvim index probleb
+  - [x] config setting conflict
+  - [x] integrate husky and (prettier)
+  - [x] highlight paraness
+  - [x] learn lightspeed
+  - [x] learn use visual-line multi curline
+  - [?] json add double how effect config
+  - [x] add format stylua by ci/cd
+  - [x] insert mode to hide cursorline
+  - [ ] automatically install filetype server when first open https://github.com/LunarVim/LunarVim/blob/rolling/lua/lvim/lsp/templates.lua
+  - [?] bug: treesitter multi download
+  - [x] config opt(load)
+  - [x] learn packer, test packer automatically
+  - [x] format lua(include vim), this treesitter
+  - [x] learn lua: doom-nvim, nvchad to deeply look
+  - [x] add highlight symbols under cursor functions(terminal gnome support)
+  - [x] use packer.nvim to replace vim-plug
+  - [x] tidy vanilla.txt, maybe can write vanilla.markdown, last to txt
+  - [x] config tab space show in different filetype
+  - [x] move plugins/\*.lua to lua folder, and to pure lua config
+  - [x] add window number switch number(mousenum)
+  - [x] solve gitsign utf8
+  - [x] how to add templates in nvim
+  - [x] config norg table
+  - [x] config format
+  - [x] some sitution will cause error line repeat(maybe emoji or refresh time error)
+  - [x] snowflake: this emoji will cause this bug in kitty(only)
+  - [x] config new theme for material, like tilde,
+  - [x] add shortkeys in vim to open browser html
+  - [?] fix the zh bug(maybe also is terminal)
+  - [x] add random banner and random color startup <https://github.com/goolord/alpha-nvim/discussions/16#discussioncomment-2386902>
+  - [x] first install automatically install
+  - [x] config dashboard
+  - [x] this emjoi shadow bug, maybe is kitty terminal(switch to wezterm compare)
+  - [x] some error tip from feline(active)
+  - [x] learn it option setting and lsp multi separate setting: fix lua global vim setting, <https://github.com/AstroNvim/AstroNvim>,
+
+#comment
+   vim:tw=100:ft=norg:norl:nu
