@@ -6,10 +6,12 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 10:42:39 by oeyoews                                  --
---   Updated: 2022/08/03 22:13:41 by oeyoews                                  --
+--   Updated: 2022/08/05 10:55:46 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
+-- modify this color
+-- TODO: https://github.com/williamboman/mason.nvim/discussions/133
 -- TODO: see masonlog to see more error info, sometime occur error
 -- use vimenter to notify_once
 local check_npm = function()
