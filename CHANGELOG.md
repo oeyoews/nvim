@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.32.0](https://gitlab.com/oeyoews/nvim/compare/v7.31.1...v7.32.0) (2022-08-05)
+
+
+### Bug Fixes
+
+* **fidget:** disable fidget ([55c061f](https://gitlab.com/oeyoews/nvim/commit/55c061f5a0493a67a6ffc28346a5bb8c5c4d2b79))
+
+
+### Features
+
+* **filetype:** add gitignore and its comment string ([baab8a1](https://gitlab.com/oeyoews/nvim/commit/baab8a1861dab304f46ecad28bd49d4b69ff647c))
+
 ## [7.31.1](https://gitlab.com/oeyoews/nvim/compare/v7.31.0...v7.31.1) (2022-08-05)
 
 
