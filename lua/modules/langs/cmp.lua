@@ -1,12 +1,5 @@
 local lspkind = require("lspkind")
 
--- vim.cmd([[highlight default GH guifg=#3bb6c4 guibg=NONE]])
--- TODO: learn use highlight group and cutsom_ui file
--- https://github.com/hrsh7th/nvim-cmp/wiki/Menu-Appearance
-vim.cmd([[highlight CmpItemKindDefault  guifg=#3bb6c4 guibg=NONE]])
-vim.cmd([[highlight CmpItemKindSnippet  guifg=#3bb6c4 guibg=NONE]])
-vim.cmd([[highlight CmpItemMenu guifg=#9E79BE guibg=NONE]])
-
 vim.g.UltiSnipsEditSplit = "vertical"
 vim.g.UltiSnipsJumpForwardTrigger = "<Plug>(ultisnips_jump_forward)"
 -- can't use two mappings
