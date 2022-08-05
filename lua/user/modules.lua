@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/08/05 23:23:06 by oeyoews                                  --
+--   Updated: 2022/08/05 23:40:09 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -49,11 +49,11 @@ M.files = {
     "cmp", -- config completion
     "lspconfig", -- configurate lsp settings
     "null-ls", -- complete lsp configuration
-    "trouble",
   },
 
   -- @TOOLS
   tools = {
+    "trouble",
     "comment",
     "header42",
     "persistence",
