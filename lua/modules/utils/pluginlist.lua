@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/05 13:48:25 by oeyoews                                  --
+--   Updated: 2022/08/05 16:44:56 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -21,26 +21,33 @@ local markdown_list = {
   },
   {
     "iamcco/markdown-preview.nvim",
-    opt = true,
     run = "cd app && npm install",
-  },
-  {
-    "ziontee113/icon-picker.nvim",
-    -- even load, but for packerload fun, use config
-    config = [[require("user.lazyload.icon_picker")]],
     opt = true,
+    config = [[require("user.lazyload.mkdp") ]],
   },
   -- a alien
   -- TODO: add uncertain code and to bind this code mapping
   -- add modified time in inject meta
   {
     "nvim-neorg/neorg",
+    ft = "norg",
+    config = [[require("user.lazyload.neorg")]],
     opt = true,
   },
 }
 
 --   plugins list
 oeyoews.pluginlist = {
+  {
+    "ziontee113/icon-picker.nvim",
+    -- bind this key, to load this by hand
+    keys = {
+      "<space>ie",
+    },
+    -- even load, but for packerload fun, use config
+    config = [[require("user.lazyload.icon_picker")]],
+    opt = true,
+  },
   "j-hui/fidget.nvim",
   {
     "kyazdani42/nvim-tree.lua",
@@ -50,6 +57,7 @@ oeyoews.pluginlist = {
   "folke/trouble.nvim",
   {
     "danymat/neogen",
+    cmd = "Neogen",
     -- or use ''
     config = [[require("neogen").setup()]],
   },
@@ -59,7 +67,11 @@ oeyoews.pluginlist = {
   "nvim-lua/plenary.nvim",
   "kyazdani42/nvim-web-devicons",
   "stevearc/dressing.nvim",
-  "lukas-reineke/indent-blankline.nvim",
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    event = "BufReadPre",
+    config = [[require("modules.ui.indent")]],
+  },
   -- bufferline
   {
     "akinsho/bufferline.nvim",
@@ -117,16 +129,23 @@ oeyoews.pluginlist = {
       "nvim-telescope/telescope-packer.nvim",
       "nvim-telescope/telescope-file-browser.nvim",
       "nvim-telescope/telescope-frecency.nvim",
-      -- "nvim-telescope/telescope-ui-select.nvim"
       "kkharji/sqlite.lua",
     },
   },
   "phaazon/hop.nvim",
-  "lewis6991/gitsigns.nvim",
+  {
+    "lewis6991/gitsigns.nvim",
+    event = "BufReadPre",
+    config = [[require("user.lazyload.gitsigns")]],
+  },
   -- bug: slow in lua comment file
   {
     "numToStr/Comment.nvim",
-    config = [[require("Comment").setup()]],
+    keys = {
+      "gcc",
+      "gb",
+    },
+    config = [[require("Comment").setup() ]],
   },
   {
     "windwp/nvim-autopairs",
@@ -138,6 +157,11 @@ oeyoews.pluginlist = {
   },
   "folke/which-key.nvim",
   "oeyoews/rnvimr",
+  {
+    "oeyoews/nvim-colorizer.lua",
+    cmd = "ColorizerToggle",
+    config = [[require("colorizer").setup()]],
+  },
   "cappyzawa/trim.nvim",
   -- this lazy load can't work, when directly open markdown file
   -- need this @ref: https://github.com/wbthomason/packer.nvim/issues/892
@@ -145,7 +169,8 @@ oeyoews.pluginlist = {
   "thinca/vim-quickrun",
   {
     "dstein64/vim-startuptime",
-    config = [[require("modules.tools.startup")]],
+    cmd = "StartupTime",
+    config = [[vim.g.startuptime_event_width = 30]],
   },
   -- markdown
   markdown_list,

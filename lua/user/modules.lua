@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/08/04 17:42:43 by oeyoews                                  --
+--   Updated: 2022/08/05 15:55:17 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -56,9 +56,7 @@ M.files = {
   tools = {
     "header42",
     "persistence",
-    "indent", -- show indent line
     "hop", -- jump anywhere
-    "gitsigns", -- show git changes in signcolumn
     "whichkey", -- show your key bindings
     "quickrun", -- quickly run your code
     "trim", -- delete any blank line and trailing whitespace
