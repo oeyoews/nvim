@@ -6,12 +6,34 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/05 23:26:59 by oeyoews                                  --
+--   Updated: 2022/08/05 23:39:11 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
 --   plugins list
 oeyoews.pluginlist = {
+  -- https://github.com/VonHeikemen/lsp-zero.nvim/wiki/Under-the-hood
+  -- this lsp-zero recommended to read
+  "neovim/nvim-lspconfig",
+  "folke/which-key.nvim",
+  "oeyoews/rnvimr",
+  "cappyzawa/trim.nvim",
+  -- this lazy load can't work, when directly open markdown file
+  -- need this @ref: https://github.com/wbthomason/packer.nvim/issues/892
+  -- note: this cmd can't use mapping
+  "thinca/vim-quickrun",
+  "phaazon/hop.nvim",
+  "jose-elias-alvarez/null-ls.nvim",
+  "glepnir/lspsaga.nvim",
+  "lewis6991/impatient.nvim",
+  "nathom/filetype.nvim",
+  "wbthomason/packer.nvim",
+  "nvim-lua/plenary.nvim",
+  "kyazdani42/nvim-web-devicons",
+  "stevearc/dressing.nvim",
+  "j-hui/fidget.nvim",
+  "folke/lua-dev.nvim",
+  "folke/trouble.nvim",
   {
     "ziontee113/icon-picker.nvim",
     -- bind this key, to load this by hand
@@ -21,21 +43,12 @@ oeyoews.pluginlist = {
     config = [[oeyoews.lazyload.emoji()]],
     opt = true,
   },
-  "j-hui/fidget.nvim",
-  "folke/lua-dev.nvim",
-  "folke/trouble.nvim",
   {
     "danymat/neogen",
     cmd = "Neogen",
     -- or use ''
     config = [[require("neogen").setup()]],
   },
-  "lewis6991/impatient.nvim",
-  "nathom/filetype.nvim",
-  "wbthomason/packer.nvim",
-  "nvim-lua/plenary.nvim",
-  "kyazdani42/nvim-web-devicons",
-  "stevearc/dressing.nvim",
   {
     "lukas-reineke/indent-blankline.nvim",
     event = "BufReadPre",
@@ -77,11 +90,6 @@ oeyoews.pluginlist = {
       "hrsh7th/cmp-path",
     },
   },
-  -- https://github.com/VonHeikemen/lsp-zero.nvim/wiki/Under-the-hood
-  -- this lsp-zero recommended to read
-  "neovim/nvim-lspconfig",
-  "jose-elias-alvarez/null-ls.nvim",
-  "glepnir/lspsaga.nvim",
   -- @TOOLS:
   {
     "folke/todo-comments.nvim",
@@ -101,7 +109,6 @@ oeyoews.pluginlist = {
       "kkharji/sqlite.lua",
     },
   },
-  "phaazon/hop.nvim",
   {
     "lewis6991/gitsigns.nvim",
     event = "BufReadPre",
@@ -122,18 +129,11 @@ oeyoews.pluginlist = {
     "oeyoews/tabout.nvim",
     config = [[require("tabout").setup()]],
   },
-  "folke/which-key.nvim",
-  "oeyoews/rnvimr",
   {
     "oeyoews/nvim-colorizer.lua",
     cmd = "ColorizerToggle",
     config = [[require("colorizer").setup()]],
   },
-  "cappyzawa/trim.nvim",
-  -- this lazy load can't work, when directly open markdown file
-  -- need this @ref: https://github.com/wbthomason/packer.nvim/issues/892
-  -- note: this cmd can't use mapping
-  "thinca/vim-quickrun",
   {
     "dstein64/vim-startuptime",
     cmd = "StartupTime",
