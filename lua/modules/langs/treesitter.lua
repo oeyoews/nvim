@@ -34,8 +34,11 @@ local terminal_colors = {
   "White",
 }
 
+local parser_install_dir = string.format("%s/parsers/", vim.fn.stdpath("data"))
+
 -- tips: tsmoduleinfo
 nvim_treesitter_configs.setup({
+  parser_install_dir = parser_install_dir,
   indent = {
     enable = true,
     disable = disable_filetypes,
@@ -73,3 +76,4 @@ nvim_treesitter_configs.setup({
 vim.opt.foldmethod = "expr"
 -- vim.opt.foldexpr = vim.fn["nvim_treesitter#foldexpr"]()
 vim.cmd([[ set foldexpr=nvim_treesitter#foldexpr() ]])
+vim.opt.runtimepath:append(parser_install_dir)
