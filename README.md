@@ -124,25 +124,7 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 
 ## 🚀 Features
 
-<details>
-<summary>expand</summary>
-
-- switch day-night nvim theme base time automatically
-- module manage nvim config, use pure lua
-- builtin plugins, like tokynight, notify and some telescope extensions .
-- install lsp-servers base your current development automatically
-- faster nvim startup, about (60~70) ms
-- support markdown-preview and past image in neovim
-- support ranger
-- hide tilde and show time in statusline
-- customize shortkeys
-- support codespell
-- hide cursorline in insert mode
-- customize snippets with ultisnips
-- backup plugin snapshot with packer
-- etc
-
-</details>
+[Features](doc/features.norg)
 
 ## ✅ TODO
 
