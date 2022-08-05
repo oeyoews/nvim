@@ -32,9 +32,9 @@ require("nvim-web-devicons").setup({
       name = "Md",
     },
     tid = {
-      icon = "",
+      icon = "", --
       color = "yellow",
-      cterm_color = "67",
+      cterm_color = "57",
       name = "Tid",
     },
     default_icon = {
