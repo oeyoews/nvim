@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/05 16:50:24 by oeyoews                                  --
+--   Updated: 2022/08/05 17:10:59 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -145,7 +145,7 @@ oeyoews.pluginlist = {
       "gcc",
       "gb",
     },
-    config = [[require("Comment").setup() ]],
+    config = [[require("user.lazyload.comments")]],
   },
   {
     "windwp/nvim-autopairs",
