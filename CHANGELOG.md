@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.31.0](https://gitlab.com/oeyoews/nvim/compare/v7.30.0...v7.31.0) (2022-08-05)
+
+
+### Features
+
+* **nvim-treesitter:** add nvim-treesitter install-path ([c37cb38](https://gitlab.com/oeyoews/nvim/commit/c37cb38757f996931bcfefbf96a519801ada947a))
+
 # [7.30.0](https://gitlab.com/oeyoews/nvim/compare/v7.29.0...v7.30.0) (2022-08-04)
 
 
