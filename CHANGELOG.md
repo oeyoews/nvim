@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.32.1](https://gitlab.com/oeyoews/nvim/compare/v7.32.0...v7.32.1) (2022-08-05)
+
+
+### Bug Fixes
+
+* **null-ls:** add disabled_filetypes ([ae14452](https://gitlab.com/oeyoews/nvim/commit/ae14452fbc12d1b834e2f2bc534808d758219ce9))
+
 # [7.32.0](https://gitlab.com/oeyoews/nvim/compare/v7.31.1...v7.32.0) (2022-08-05)
 
 
