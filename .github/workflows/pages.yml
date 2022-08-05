@@ -8,8 +8,8 @@ on:
   # push:
   #   branches: ["nightly"]
   push:
-    tags:
-      - v*
+    # tags:
+    # - v*
     paths:
       - "**/*.md, **/*.norg"
 
