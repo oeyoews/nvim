@@ -80,7 +80,7 @@ local items = {
 for keymap, item in pairs(items) do
   keymap = string.format("<space>%s", keymap)
   vim.keymap.set("n", keymap, function()
-    vim.cmd(([[%s%s]]):format(prefix_norg_bind, item))
+    vim.cmd(("%s%s"):format(prefix_norg_bind, item))
   end, {
     buffer = true,
     silent = true,

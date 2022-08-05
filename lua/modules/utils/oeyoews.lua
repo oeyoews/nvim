@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/05 22:29:04 by oeyoews                                  --
+--   Updated: 2022/08/06 00:03:53 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -86,11 +86,13 @@ oeyoews.completion.edit = function()
   return table.concat(ft, "\n")
 end
 
---   mappings
-vim.keymap.set("n", "<space>fo", "<cmd>find ~/.config/nvim/lua/modules/utils/oeyoews.lua<cr>", {
-  desc = " edit global config",
-})
-
 -- load global variables
 require("modules.utils.functions")
 require("modules.utils.pluginlist")
+
+--   mappings
+vim.keymap.set("n", "<space>fo", function()
+  return oeyoews.find_lua_file("lua/modules/utils/oeyoews")
+end, {
+  desc = " edit global config",
+})

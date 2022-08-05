@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/05 14:05:38 by oeyoews                                  --
+--   Updated: 2022/08/06 00:05:55 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -72,7 +72,7 @@ keymappings_set = {
     -- ":e `mktemp -t nvim.scr.XXX`<cr>",
     function()
       local tmp = os.tmpname()
-      vim.cmd(([[find %s]]):format(tmp))
+      vim.cmd(("find %s"):format(tmp))
     end,
     " edit temp file",
   },

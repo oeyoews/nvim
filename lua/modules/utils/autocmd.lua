@@ -25,6 +25,7 @@ oeyoews.autocmd("FileType", {
   pattern = {
     "help",
     "startuptime",
+    "quickrun",
   },
   command = "setlocal nocursorline nonumber norelativenumber",
 })

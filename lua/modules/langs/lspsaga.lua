@@ -61,12 +61,15 @@ lspsaga.setup({
 vim.keymap.set("n", "<space>le", "<cmd>Lspsaga code_action<cr>", {
   desc = " intelligent code tip",
 })
+
 vim.keymap.set("n", "<space>gk", "<cmd>Lspsaga hover_doc<cr>", {
   desc = " hover lsp doc",
 })
+
 vim.keymap.set("n", "gr", "<cmd>Lspsaga rename<cr>", {
   desc = "✏ lsp rename",
 })
+
 vim.keymap.set("n", "<space>gs", "<cmd>Lspsaga signature_help<cr>", {
   desc = " signature_help",
 })
