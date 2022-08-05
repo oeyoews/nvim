@@ -9,6 +9,7 @@ version: 0.0.11
 
 * TODO
 
+  - [ ] learn use confirm or input function to get better prompt
   - [ ] virtual-text place a room, like vscode
   - [ ] use norg to generate help doc
   - [ ] add tid syntax base on nvim-treesitter
