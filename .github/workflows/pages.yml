@@ -9,8 +9,8 @@ on:
     # tags:
     # - v*
     branches: ["nightly"]
-    paths:
-      - "README.md"
+    # paths:
+    #   - "README.md"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
