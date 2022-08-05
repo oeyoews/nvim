@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/05 17:29:38 by oeyoews                                  --
+--   Updated: 2022/08/05 17:38:45 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -141,11 +141,7 @@ oeyoews.pluginlist = {
   -- bug: slow in lua comment file
   {
     "numToStr/Comment.nvim",
-    keys = {
-      "gcc",
-      "gb",
-    },
-    config = [[require("user.lazyload.comments")]],
+    config = [[require("modules.tools.comment")]],
   },
   {
     "windwp/nvim-autopairs",
