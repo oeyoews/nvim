@@ -40,7 +40,7 @@ package-lock.json
 node_modules
 
 .sessions
-tags
+# tags
 *.tar.gz
 
 packer_compiled.lua
