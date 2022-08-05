@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/05 23:39:11 by oeyoews                                  --
+--   Updated: 2022/08/06 00:28:20 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -162,7 +162,6 @@ oeyoews.pluginlist = {
   {
     "iamcco/markdown-preview.nvim",
     run = "cd app && npm install",
-    ft = "markdown",
     config = [[oeyoews.lazyload.mkdp()]],
   },
   -- builtin
