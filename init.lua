@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:04 by oeyoews                                  --
---   Updated: 2022/08/06 11:44:45 by oeyoews                                  --
+--   Updated: 2022/08/07 00:47:15 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -26,3 +26,9 @@ local modules = Config.modules
 
 -- ﱤ load modules
 pcall2.setup(modules, files)
+
+-- use system, not lua or luafile
+-- vim.keymap.set("n", "<space>ll", "<cmd>!lua %<cr>", {
+--   silent = true,
+--   desc = " run lua",
+-- })
