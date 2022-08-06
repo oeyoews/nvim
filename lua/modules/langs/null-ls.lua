@@ -14,6 +14,8 @@ local sources = {
   }),
   -- code_actions.proselint, -- not useful
   -- diagnostics.proselint, -- some time have error tips
+  -- diagnostics.trail_space, -- some time have error tips
+  -- diagnostics.write_good, -- some time have error tips
   formatting.stylua, -- this is conflict for lsp, choice
   formatting.prettier,
   formatting.fixjson,
