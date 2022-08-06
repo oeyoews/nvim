@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:04 by oeyoews                                  --
---   Updated: 2022/08/07 00:47:15 by oeyoews                                  --
+--   Updated: 2022/08/07 01:16:56 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -32,3 +32,13 @@ pcall2.setup(modules, files)
 --   silent = true,
 --   desc = " run lua",
 -- })
+vim.cmd([[
+let s:foo = {
+    \  'command'                         : 'fsharpi --readline-'
+    \ ,'runner'                          : 'concurrent_process'
+    \ ,'runner/concurrent_process/load'  : '#load "%S";;'
+    \ ,'runner/concurrent_process/prompt': '> '
+\}
+
+autocmd BufReadPost  *.lua  call quickrun#run( s:foo )
+]])

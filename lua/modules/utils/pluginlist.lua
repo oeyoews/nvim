@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/07 00:45:17 by oeyoews                                  --
+--   Updated: 2022/08/07 01:11:45 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -23,6 +23,7 @@ oeyoews.pluginlist = {
   -- this lazy load can't work, when directly open markdown file
   -- need this @ref: https://github.com/wbthomason/packer.nvim/issues/892
   -- note: this cmd can't use mapping
+  -- bug: for lua or py have bug
   "thinca/vim-quickrun",
   "phaazon/hop.nvim",
   "jose-elias-alvarez/null-ls.nvim",
