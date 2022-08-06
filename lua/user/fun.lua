@@ -8,6 +8,7 @@ local get_tag = function()
     "cd ~/.config/nvim/ && git describe --tags `git rev-list --tags --max-count=1`" .. " > " .. config_version_tmp
   )
   local f = io.open(config_version_tmp)
+  -- check nil
   if not f then
     return files
   end
