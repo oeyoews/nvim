@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/06 10:34:01 by oeyoews                                  --
+--   Updated: 2022/08/06 10:42:26 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -153,6 +153,7 @@ oeyoews.pluginlist = {
     "dhruvasagar/vim-table-mode",
     opt = true,
   },
+  -- bug: should for md load
   {
     "ekickx/clipboard-image.nvim",
     opt = true,
