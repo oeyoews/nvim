@@ -26,19 +26,3 @@ local modules = Config.modules
 
 -- ﱤ load modules
 pcall2.setup(modules, files)
-
--- use system, not lua or luafile
--- vim.keymap.set("n", "<space>ll", "<cmd>!lua %<cr>", {
---   silent = true,
---   desc = " run lua",
--- })
-vim.cmd([[
-let s:foo = {
-    \  'command'                         : 'fsharpi --readline-'
-    \ ,'runner'                          : 'concurrent_process'
-    \ ,'runner/concurrent_process/load'  : '#load "%S";;'
-    \ ,'runner/concurrent_process/prompt': '> '
-\}
-
-autocmd BufReadPost  *.lua  call quickrun#run( s:foo )
-]])
