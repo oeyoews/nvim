@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.32.2](https://gitlab.com/oeyoews/nvim/compare/v7.32.1...v7.32.2) (2022-08-06)
+
+
+### Bug Fixes
+
+* **neorg:** not enable much modules, such as gtd, to speedup this ([8b5f906](https://gitlab.com/oeyoews/nvim/commit/8b5f90673926f13bf35621abc7657151b07de4fc))
+
 ## [7.32.1](https://gitlab.com/oeyoews/nvim/compare/v7.32.0...v7.32.1) (2022-08-05)
 
 
