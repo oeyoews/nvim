@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/06 13:27:59 by oeyoews                                  --
+--   Updated: 2022/08/06 23:34:44 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -54,7 +54,6 @@ oeyoews.pluginlist = {
   },
   {
     "lukas-reineke/indent-blankline.nvim",
-    event = "BufReadPre",
     config = [[require("modules.ui.indent")]],
   },
   -- bufferline
@@ -112,7 +111,6 @@ oeyoews.pluginlist = {
   },
   {
     "lewis6991/gitsigns.nvim",
-    event = "BufReadPre",
     config = function()
       oeyoews.lazyload.gitsigns()
     end,
