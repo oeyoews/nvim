@@ -25,7 +25,7 @@ local lsp_client_names = function(bufnr, opt)
   opt = opt or {}
   local clients = {}
   local icon = opt.icon or "  "
-  local sep = opt.separator or " "
+  local sep = opt.separator or ", "
 
   for _, client in pairs(vim.lsp.buf_get_clients(bufnr or 0)) do
     clients[#clients + 1] = client.name

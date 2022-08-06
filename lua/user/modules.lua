@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/08/05 23:40:09 by oeyoews                                  --
+--   Updated: 2022/08/06 11:39:05 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -37,7 +37,7 @@ M.files = {
   ui = {
     "treesitter", -- friendly highlight your code
     "web_icons",
-    "tokyonight",
+    "ui",
     "notify",
     "bufferline",
     -- "fidget", have some bug
