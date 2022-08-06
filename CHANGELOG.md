@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.32.4](https://gitlab.com/oeyoews/nvim/compare/v7.32.3...v7.32.4) (2022-08-06)
+
+
+### Bug Fixes
+
+* **bufferreadpre:** not recommend to use bufferadpre to lazyload plugins ([897d37f](https://gitlab.com/oeyoews/nvim/commit/897d37f6fc0f08b7bbd4898b07c5f89806cb56e3))
+
 ## [7.32.3](https://gitlab.com/oeyoews/nvim/compare/v7.32.2...v7.32.3) (2022-08-06)
 
 
