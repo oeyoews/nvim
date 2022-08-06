@@ -6,10 +6,12 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/06 10:42:26 by oeyoews                                  --
+--   Updated: 2022/08/06 10:45:23 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
+-- packerload is from this list load, if no add config for lazyload, it still not work, so better method is use ftplugin for some
+-- filetypes plugins
 --   plugins list
 oeyoews.pluginlist = {
   -- https://github.com/VonHeikemen/lsp-zero.nvim/wiki/Under-the-hood
