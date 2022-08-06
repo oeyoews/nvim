@@ -9,6 +9,7 @@ version: 0.0.11
 
 * TODO
 
+  - [ ] learn nvim_open_win
   - [ ] add cutsom logo
   - [ ] learn use confirm or input function to get better prompt
   - [ ] virtual-text place a room, like vscode
