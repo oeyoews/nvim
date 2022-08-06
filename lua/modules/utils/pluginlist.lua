@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/06 13:14:59 by oeyoews                                  --
+--   Updated: 2022/08/06 13:27:59 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -149,6 +149,7 @@ oeyoews.pluginlist = {
     opt = true,
   },
   -- markdown
+  -- TODO: remove the map
   {
     "dhruvasagar/vim-table-mode",
     opt = true,

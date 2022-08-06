@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/06 12:49:48 by oeyoews                                  --
---   Updated: 2022/08/06 13:07:41 by oeyoews                                  --
+--   Updated: 2022/08/06 13:26:32 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -97,6 +97,12 @@ M.setup = function()
       desc = string.format("toggle %s", item),
     })
   end
+
+  vim.keymap.set("n", "<space>tc", "<cmd>Neorg toggle-concealer<cr>", {
+    buffer = true,
+    silent = true,
+    desc = "𝟇 show vanilla content",
+  })
 end
 
 return M
