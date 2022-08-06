@@ -1,6 +1,4 @@
-# @FileName: _config.yml
-
-title: NEOVIM
+title: 💡 NEOVIM
 #description:
 theme: jekyll-theme-cayman
 show_downloads: false

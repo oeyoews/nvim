@@ -22,21 +22,21 @@ oeyoews.find_lua_file = function(file_path, ft)
 end
 
 --- add updateSnapshots
----@param rolling string
-oeyoews.updateSnapshots = function(rolling)
+---@param snapshot_name string
+oeyoews.updateSnapshots = function(snapshot_name)
   local path = string.format("%s/snapshots/", vim.fn.stdpath("config"))
-  rolling = rolling or "rolling.json"
+  snapshot_name = snapshot_name or "nightly.json"
   -- local snap_path = path .. rolling
   -- if vim.fn.empty(vim.fn.glob(snap_path)) == 1 then
   --   os.remove(snap_path)
   -- end
-  local res = vim.fn.findfile(rolling, path)
+  local res = vim.fn.findfile(snapshot_name, path)
   if res:len() ~= 0 then
     os.remove(res)
   end
   -- use vim.defer or schedule
   -- TODO how to verify installed use install bootstrap?
-  vim.cmd(([[PackerSnapshot %s]]):format(rolling))
+  vim.cmd(([[PackerSnapshot %s]]):format(snapshot_name))
   vim.cmd([[PackerSync]])
 end
 

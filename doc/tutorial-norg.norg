@@ -1,0 +1,51 @@
+@document.meta
+title: tutorial-norg
+description: this is a tutorial for norg
+authors: oeyoews
+categories: tutorial
+created: 2022-08-06
+version: 0.0.11
+@end
+
+= TOC
+
+* TUTORIAL
+
+** Basic edit
+
+  - -delete line-
+  - _underline_
+  - /italic/
+  - *blid*
+
+** TIP
+
+   this table will be support in the future
+
+** Code
+
+   @code lua
+   print("")
+   -- #comment this is a comment
+   @end
+   #comment
+   this is a comment
+
+** Block
+
+   > this is a blcokc
+   > second
+   >> embed
+   >> embed
+
+** Heading
+
+   @code lua
+   @end
+*** h3
+**** h4
+***** h5
+****** h6
+
+#comment
+   vim:tw=100:ft=norg:norl:nu
