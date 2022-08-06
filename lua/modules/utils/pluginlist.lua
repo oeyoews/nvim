@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/07 01:11:45 by oeyoews                                  --
+--   Updated: 2022/08/07 01:45:38 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -24,6 +24,7 @@ oeyoews.pluginlist = {
   -- need this @ref: https://github.com/wbthomason/packer.nvim/issues/892
   -- note: this cmd can't use mapping
   -- bug: for lua or py have bug
+  -- is conflict to lsp
   "thinca/vim-quickrun",
   "phaazon/hop.nvim",
   "jose-elias-alvarez/null-ls.nvim",
