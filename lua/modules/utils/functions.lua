@@ -1,3 +1,4 @@
+--- add kmap api
 ---@param kmap table encapsulation vim.keymap.set api function
 oeyoews.kmap = function(kmap)
   local keymap_set = function(tbl)
@@ -20,7 +21,7 @@ oeyoews.find_lua_file = function(file_path, ft)
   vim.cmd(("find %s"):format(load_path))
 end
 
----
+--- add updateSnapshots
 ---@param rolling string
 oeyoews.updateSnapshots = function(rolling)
   local path = string.format("%s/snapshots/", vim.fn.stdpath("config"))

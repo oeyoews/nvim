@@ -19,7 +19,7 @@ M.gitsigns = function()
   })
 end
 
--- mkdp
+-- load markdown previews settings
 M.mkdp = function()
   local mkdp_options = {
     mkdp_auto_close = 0,

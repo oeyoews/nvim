@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 10:42:39 by oeyoews                                  --
---   Updated: 2022/08/05 10:55:46 by oeyoews                                  --
+--   Updated: 2022/08/06 13:11:55 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -29,6 +29,7 @@ if vim.fn.executable("clangd") == 1 then
   mason_exclude[#mason_exclude + 1] = "clangd"
 end
 
+-- setup clangd
 if oeyoews.options.enable_clangd then
   oeyoews.servers[#oeyoews.servers + 1] = "clangd"
 end

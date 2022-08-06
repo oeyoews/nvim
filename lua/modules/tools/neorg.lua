@@ -6,12 +6,13 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/06 12:49:48 by oeyoews                                  --
---   Updated: 2022/08/06 12:49:49 by oeyoews                                  --
+--   Updated: 2022/08/06 13:07:41 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
 local M = {}
 
+--- load neorg settings
 M.setup = function()
   -- require("modules.tools.neorg")
   -- Neorg sync-parsers

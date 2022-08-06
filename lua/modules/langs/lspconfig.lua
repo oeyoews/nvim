@@ -4,6 +4,7 @@ local lspconfig = require("lspconfig")
 
 local capabilities = require("user.capabilities")
 
+-- enable zh-cn for lua
 local sumneko_lua_locale_adjust = function()
   if oeyoews.options.sumneko_lua_locale_cn then
     return "--locale=zh-cn"
@@ -12,6 +13,7 @@ end
 
 local sumneko_lua_locale = sumneko_lua_locale_adjust()
 
+-- on_attach: add lspformat
 local on_attach = function(client)
   -- require("user.lsp_format").on_attach(client)
   require("lspformat").on_attach(client)
@@ -37,6 +39,7 @@ local luadev = require("lua-dev").setup({
 -- PERF: use opt to input multiple tables cmd
 
 -- use ftplugin or use autocmd, but should have an list in lspconfig support
+-- load lspconfig
 local lsp_setup = function()
   if oeyoews.options.enable_lsp then
     for _, lsp_server in pairs(oeyoews.servers) do
@@ -88,7 +91,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
   },
 })
 
--- change icons
+-- change lsp icons
 local custom_icon = function()
   local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
   for type, icon in pairs(signs) do

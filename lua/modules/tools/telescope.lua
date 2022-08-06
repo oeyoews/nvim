@@ -84,9 +84,7 @@ highlight TelescopePromptPrefix   guifg=#F7768E gui=bold
 ]])
 
 -- just load extension, not load these to telescope
-vim.keymap.set("n", "<space>to", function()
-  return extensions.frecency.frecency()
-end, {
+vim.keymap.set("n", "<space>to", "<cmd>Telescope oldfiles<cr>", {
   desc = " recent files",
 })
 

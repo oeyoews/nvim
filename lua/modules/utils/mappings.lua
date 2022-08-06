@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/06 12:49:24 by oeyoews                                  --
+--   Updated: 2022/08/06 13:05:55 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -268,9 +268,9 @@ end, {
 })
 
 -- show neovim info
-local fun = require("user.fun")
+local info = require("user.info")
 vim.keymap.set("n", "<space>hi", function()
-  return fun.get_neovim_info()
+  return info.setup()
 end, {
   silent = true,
   desc = " show neovim info",

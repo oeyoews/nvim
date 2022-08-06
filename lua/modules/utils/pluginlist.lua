@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/06 11:46:09 by oeyoews                                  --
+--   Updated: 2022/08/06 13:14:59 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -108,8 +108,6 @@ oeyoews.pluginlist = {
     requires = {
       "nvim-telescope/telescope-packer.nvim",
       "nvim-telescope/telescope-file-browser.nvim",
-      "nvim-telescope/telescope-frecency.nvim",
-      "kkharji/sqlite.lua",
     },
   },
   {

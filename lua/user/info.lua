@@ -22,8 +22,8 @@ local get_tag = function()
   return files
 end
 
---- get_neovim_info
-M.get_neovim_info = function()
+-- get_neovim_info
+M.setup = function()
   local builtin = #oeyoews.builtin_plugin
   local total_plugins = #vim.tbl_keys(packer_plugins) - builtin
   local fmt_msg = string.format(
