@@ -38,8 +38,8 @@ M.mkdp = function()
   end
 
   vim.keymap.set("n", "<space>fM", "<cmd>MarkdownPreviewToggle<cr>", {
-    buffer = true,
     desc = " preview markdown in browser",
+    buffer = true,
   })
 end
 

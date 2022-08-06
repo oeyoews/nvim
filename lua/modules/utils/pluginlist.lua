@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/06 09:43:25 by oeyoews                                  --
+--   Updated: 2022/08/06 10:34:01 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -37,8 +37,9 @@ oeyoews.pluginlist = {
   {
     "ziontee113/icon-picker.nvim",
     -- bind this key, to load this by hand
-    keys = { "<space>ie" }, -- normal
-    event = "InsertEnter", -- inser mode alt-i
+    keys = {
+      "<space>ie",
+    }, -- normal
     -- even load, but for packerload fun, use config
     config = [[oeyoews.lazyload.emoji()]],
     opt = true,
@@ -136,7 +137,6 @@ oeyoews.pluginlist = {
   },
   {
     "dstein64/vim-startuptime",
-    cmd = "StartupTime",
     config = [[vim.g.startuptime_event_width = 30]],
   },
   -- a alien
@@ -146,23 +146,21 @@ oeyoews.pluginlist = {
   -- actually, all most plugin not need lazyload, even it very slow, this neorg is lazyload itself, lazyload it is unmeanthingfun
   {
     "nvim-neorg/neorg",
-    config = [[require("modules.tools.neorg")]],
+    opt = true,
   },
   -- markdown
   {
     "dhruvasagar/vim-table-mode",
-    cmd = "TableModeToggle",
-    ft = "markdown",
+    opt = true,
   },
   {
     "ekickx/clipboard-image.nvim",
-    ft = "markdown",
-    cmd = "PasteImg",
+    opt = true,
   },
   {
     "iamcco/markdown-preview.nvim",
+    opt = true,
     run = "cd app && npm install",
-    config = [[oeyoews.lazyload.mkdp()]],
   },
   -- builtin
   oeyoews.builtin_plugin,

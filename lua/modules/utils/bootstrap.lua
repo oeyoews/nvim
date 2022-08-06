@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:36 by oeyoews                                  --
---   Updated: 2022/08/04 21:12:05 by oeyoews                                  --
+--   Updated: 2022/08/06 10:08:34 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -33,7 +33,7 @@ if vim.fn.empty(vim.fn.glob(install_path)) == 1 then
     install_path,
   })
   -- fix firstly install packer, can't require packer
-  vim.cmd([[packadd packer.nvim]])
+  vim.cmd("packadd packer.nvim")
 end
 
 -- packer config
