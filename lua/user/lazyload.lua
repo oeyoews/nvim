@@ -1,5 +1,6 @@
 local M = {}
 
+-- gitsings
 M.gitsigns = function()
   local gitsigns = require("gitsigns")
 

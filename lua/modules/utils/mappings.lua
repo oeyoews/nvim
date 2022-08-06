@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/06 00:05:55 by oeyoews                                  --
+--   Updated: 2022/08/06 12:49:24 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -285,4 +285,8 @@ vim.keymap.set("n", "<space>vf", "<cmd>set invfoldenable<cr>", {
 vim.keymap.set("t", "<M-q>", "<C-\\><C-n>", {
   silent = true,
   desc = " quit terminal mode",
+})
+
+vim.keymap.set("n", "<space>ll", "<cmd>w <bar> QuickRun<cr>", {
+  desc = "  run code",
 })

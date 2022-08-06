@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/08/06 11:39:05 by oeyoews                                  --
+--   Updated: 2022/08/06 12:53:31 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -59,7 +59,6 @@ M.files = {
     "persistence",
     "hop", -- jump anywhere
     "whichkey", -- show your key bindings
-    "quickrun", -- quickly run your code
     "trim", -- delete any blank line and trailing whitespace
     "ranger", -- use ranger in neovim
   },
