@@ -19,19 +19,12 @@ end
 
 neorg.setup({
   load = {
-    ["core.export"] = {},
-    ["core.export.markdown"] = {
-      config = {
-        extensions = "all",
-      },
-    },
     ["core.defaults"] = {},
     ["core.keybinds"] = {
       config = {
         default_keybinds = false,
       },
     },
-
     ["core.norg.concealer"] = {
       config = {},
     },
@@ -43,7 +36,7 @@ neorg.setup({
     ["core.norg.dirman"] = {
       config = {
         workspaces = {
-          work = "~/.cache/notes/work",
+          work = "~/temp/",
         },
       },
     },
@@ -51,7 +44,7 @@ neorg.setup({
 })
 
 vim.keymap.set("n", "<space>an", "<cmd>Neorg inject-metadata<cr>", {
-  buffer = true,
+  -- buffer = true,
   silent = true,
   desc = " inject metadata",
 })
@@ -82,7 +75,7 @@ for keymap, item in pairs(items) do
   vim.keymap.set("n", keymap, function()
     vim.cmd(("%s%s"):format(prefix_norg_bind, item))
   end, {
-    buffer = true,
+    -- buffer = true,
     silent = true,
     desc = string.format("toggle %s", item),
   })
