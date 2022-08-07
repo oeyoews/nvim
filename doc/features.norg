@@ -22,6 +22,7 @@ version: 0.0.11
   - hide cursorline in insert mode
   - customize snippets with ultisnips
   - backup plugin snapshot with packer
+  - support select all or patest by right click
 
 #comment
    vim:tw=100:ft=norg:norl:nu
