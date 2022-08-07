@@ -110,10 +110,10 @@ local mapping = {
 }
 
 local sources = {
-  { name = "nvim_lsp" },
-  { name = "ultisnips" },
   -- { name = "copilot" },
   -- { name = "cmp_tabnine" },
+  { name = "nvim_lsp" },
+  { name = "ultisnips" },
   {
     name = "buffer",
     keyword_length = 3,
@@ -125,10 +125,11 @@ local sources = {
 
 local menu = {
   nvim_lsp = "",
-  buffer = "﬘",
-  ultisnips = "𝜵 ",
+  buffer = "",
+  ultisnips = " ",
   nvim_lua = " ",
-  path = "◉ ",
+  path = "",
+  -- cmp_tabnine = "",
 }
 
 cmp.setup({
@@ -189,6 +190,10 @@ cmp.setup({
   -- sources
   sources = sources,
 })
+
+-- tabnine
+-- this setup have some bug
+require("cmp_tabnine.config")
 
 vim.g.UltiSnipsSnippetDirectories = {
   vim.fn.stdpath("config") .. "/ultisnips/",

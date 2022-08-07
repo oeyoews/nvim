@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/07 22:57:11 by oeyoews                                  --
+--   Updated: 2022/08/08 00:44:36 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -96,12 +96,11 @@ oeyoews.pluginlist = {
       "SirVer/ultisnips",
       "hrsh7th/cmp-nvim-lsp",
       "hrsh7th/cmp-path",
-      -- "codota/tabnine-vim",
-      {
-        "tzachar/cmp-tabnine",
-        run = "./install.sh",
-        disable = true,
-      },
+      -- completion
+      -- {
+      --   "tzachar/cmp-tabnine",
+      --   run = "./install.sh",
+      -- },
       -- "hrsh7th/cmp-copilot",
       -- "github/copilot.vim",
     },
