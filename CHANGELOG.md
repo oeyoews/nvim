@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.34.1](https://gitlab.com/oeyoews/nvim/compare/v7.34.0...v7.34.1) (2022-08-07)
+
+
+### Bug Fixes
+
+* **tabnine:** comment require tabnine ([7bfbed8](https://gitlab.com/oeyoews/nvim/commit/7bfbed860fa438ccbd79efc7c9525759d90d668a))
+
 # [7.34.0](https://gitlab.com/oeyoews/nvim/compare/v7.33.0...v7.34.0) (2022-08-07)
 
 
