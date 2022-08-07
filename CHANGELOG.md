@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.34.0](https://gitlab.com/oeyoews/nvim/compare/v7.33.0...v7.34.0) (2022-08-07)
+
+
+### Features
+
+* **snippets:** add norg snippets ([75afee2](https://gitlab.com/oeyoews/nvim/commit/75afee2312a42b3c31f464e8399a06a805974b56))
+
 # [7.33.0](https://gitlab.com/oeyoews/nvim/compare/v7.32.4...v7.33.0) (2022-08-07)
 
 
