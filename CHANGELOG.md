@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.35.0](https://gitlab.com/oeyoews/nvim/compare/v7.34.1...v7.35.0) (2022-08-07)
+
+
+### Features
+
+* **defer:** use defer to notify  for nightly.json ([53d1afa](https://gitlab.com/oeyoews/nvim/commit/53d1afaf1256a8a09d73431ea519a6ce6e1abca1))
+
 ## [7.34.1](https://gitlab.com/oeyoews/nvim/compare/v7.34.0...v7.34.1) (2022-08-07)
 
 
