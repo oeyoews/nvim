@@ -193,7 +193,7 @@ cmp.setup({
 
 -- tabnine
 -- this setup have some bug
-require("cmp_tabnine.config")
+-- require("cmp_tabnine.config")
 
 vim.g.UltiSnipsSnippetDirectories = {
   vim.fn.stdpath("config") .. "/ultisnips/",
