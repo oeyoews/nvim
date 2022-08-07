@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/07 00:46:56 by oeyoews                                  --
+--   Updated: 2022/08/07 09:41:32 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -289,4 +289,14 @@ vim.keymap.set("t", "<M-q>", "<C-\\><C-n>", {
 
 vim.keymap.set("n", "<space>ll", "<cmd>w <bar> QuickRun<cr>", {
   desc = "  run code",
+})
+
+vim.keymap.set("n", "<space>lr", "SnipRun<cr>", {
+  silent = true,
+  desc = "run code",
+})
+
+vim.keymap.set("v", "<space>lr", "<Plug>SnipRun", {
+  silent = true,
+  desc = "run code",
 })

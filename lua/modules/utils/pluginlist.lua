@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/07 02:09:28 by oeyoews                                  --
+--   Updated: 2022/08/07 09:26:46 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -14,7 +14,10 @@
 -- filetypes plugins
 --   plugins list
 oeyoews.pluginlist = {
-  "https://gitee.com/zpyg/CodeRunner.nvim",
+  {
+    "michaelb/sniprun",
+    run = "bash ./install.sh",
+  },
   -- https://github.com/VonHeikemen/lsp-zero.nvim/wiki/Under-the-hood
   -- this lsp-zero recommended to read
   "neovim/nvim-lspconfig",
