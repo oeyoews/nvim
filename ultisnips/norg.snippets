@@ -3,7 +3,39 @@ snippet code "neorg code" b
 $0
 endsnippet
 
+snippet end "@end" b
+@end
+endsnippet
+
 snippet comment "comment" b
 #comment
- $0
+${1:comment}
+endsnippet
+
+snippet = "TOC" b
+= TOC
+endsnippet
+
+snippet - "checkbox" b
+- [ ] $0
+endsnippet
+
+snippet h "h1" b
+* ${1}
+endsnippet
+
+snippet hh "h2" b
+** ${1}
+endsnippet
+
+snippet -- "-deleteline-"
+-${1:content}- $2
+endsnippet
+
+snippet list "~ list" b
+~ $1
+endsnippet
+
+snippet vim "tutorial comment" b
+vim:tw=100:ft=norg:norl:nu
 endsnippet
