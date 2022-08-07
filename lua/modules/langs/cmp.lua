@@ -112,6 +112,7 @@ local mapping = {
 local sources = {
   { name = "nvim_lsp" },
   { name = "ultisnips" },
+  { name = "copilot" },
   {
     name = "buffer",
     keyword_length = 3,
