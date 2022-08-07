@@ -46,7 +46,7 @@ node_modules
 packer_compiled.lua
 
 /spell/
-/test/
+# /test/
 
 wget*
 /sessions/
