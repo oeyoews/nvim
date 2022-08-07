@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/07 21:02:25 by oeyoews                                  --
+--   Updated: 2022/08/07 22:57:11 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -14,7 +14,6 @@
 -- filetypes plugins
 --   plugins list
 oeyoews.pluginlist = {
-  "github/copilot.vim",
   {
     "michaelb/sniprun",
     run = "bash ./install.sh",
@@ -97,7 +96,14 @@ oeyoews.pluginlist = {
       "SirVer/ultisnips",
       "hrsh7th/cmp-nvim-lsp",
       "hrsh7th/cmp-path",
-      "hrsh7th/cmp-copilot",
+      -- "codota/tabnine-vim",
+      {
+        "tzachar/cmp-tabnine",
+        run = "./install.sh",
+        disable = true,
+      },
+      -- "hrsh7th/cmp-copilot",
+      -- "github/copilot.vim",
     },
   },
   -- @TOOLS:

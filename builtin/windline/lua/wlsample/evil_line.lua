@@ -205,6 +205,7 @@ local explorer = {
   show_last_status = true,
 }
 
+-- 﫟 #45DCDB
 basic.lsp_name = {
   width = breakpoint_width,
   name = "lsp_name",
