@@ -189,10 +189,17 @@ M.file_icon = function(opt)
   end
 end
 
-M.file_modified = function(icon)
+M.file_modified = function(icon, is_buffer)
+  if icon and is_buffer then
+    return function(bufnr)
+      if vim.bo[bufnr].modified and vim.bo[bufnr].modifiable then
+        return icon
+      end
+    end
+  end
   if icon then
     return function()
-      if vim.bo.modified or vim.bo.modifiable == false then
+      if vim.bo.modified and vim.bo.modifiable == false then
         return icon
       end
     end
