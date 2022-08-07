@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.33.0](https://gitlab.com/oeyoews/nvim/compare/v7.32.4...v7.33.0) (2022-08-07)
+
+
+### Features
+
+* **sniprun:** add sniprun ([3134086](https://gitlab.com/oeyoews/nvim/commit/313408638958303eb3d7f5bd315627e793704dcb))
+
 ## [7.32.4](https://gitlab.com/oeyoews/nvim/compare/v7.32.3...v7.32.4) (2022-08-06)
 
 
