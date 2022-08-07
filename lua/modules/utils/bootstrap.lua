@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:36 by oeyoews                                  --
---   Updated: 2022/08/07 21:06:19 by oeyoews                                  --
+--   Updated: 2022/08/08 07:13:01 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -94,13 +94,13 @@ end)
 --   mappings
 vim.keymap.set("n", "<space>pu", ":UpdatePlugins<cr>", {
   silent = true,
-  desc = " backup and upgrade neovim plugin",
+  desc = " backup and upgrade neovim plugin",
 })
 
 vim.keymap.set("n", "<space>fb", function()
   return oeyoews.find_lua_file("lua/modules/utils/bootstrap")
 end, {
-  desc = " jump bootstrap",
+  desc = "ﲊ jump bootstrap",
 })
 
 local check_version = function()
