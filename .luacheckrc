@@ -24,7 +24,7 @@ ignore = {
 
 exclude_files = {
   "plugin/packer_compiled.lua",
-  "lua/external/"
+  "lua/external/",
 }
 
 -- vim: ft=lua sw=2 ts=2
