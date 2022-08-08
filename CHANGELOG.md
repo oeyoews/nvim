@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.39.0](https://gitlab.com/oeyoews/nvim/compare/v7.38.0...v7.39.0) (2022-08-08)
+
+
+### Features
+
+* **preview:** add tex preview ([700c312](https://gitlab.com/oeyoews/nvim/commit/700c312c8e8c8145d39940b9ca7cfe4ddf30dffd))
+
 # [7.38.0](https://gitlab.com/oeyoews/nvim/compare/v7.37.1...v7.38.0) (2022-08-08)
 
 
