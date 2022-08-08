@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.36.0](https://gitlab.com/oeyoews/nvim/compare/v7.35.0...v7.36.0) (2022-08-08)
+
+
+### Features
+
+* **tid:** add tid snip and creat_tid function ([8d41b45](https://gitlab.com/oeyoews/nvim/commit/8d41b45586c6ef7434bb8b0ae15dc0608a1c022b))
+
 # [7.35.0](https://gitlab.com/oeyoews/nvim/compare/v7.34.1...v7.35.0) (2022-08-07)
 
 
