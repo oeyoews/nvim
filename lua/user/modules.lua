@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/08/07 01:08:15 by oeyoews                                  --
+--   Updated: 2022/08/08 11:23:45 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -26,7 +26,6 @@ M.files = {
   ["utils"] = {
     "oeyoews",
     "bootstrap",
-    "filetype",
     "disable",
     "options",
     "mappings",
@@ -55,6 +54,7 @@ M.files = {
   tools = {
     "trouble",
     "comment",
+    "filetype",
     "header42",
     "persistence",
     "hop", -- jump anywhere
