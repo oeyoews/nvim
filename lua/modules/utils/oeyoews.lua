@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/09 00:03:34 by oeyoews                                  --
+--   Updated: 2022/08/09 00:04:12 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -48,11 +48,11 @@ oeyoews.options = {
 
 -- @servers @deprecated
 oeyoews.servers = {
+  "sumneko_lua",
   -- "cmake",
   -- "gopls",
-  "jsonls",
+  -- "jsonls",
   -- "vimls",
-  "sumneko_lua",
   -- "bashls",
   -- "pylsp",
   -- "yamlls",
