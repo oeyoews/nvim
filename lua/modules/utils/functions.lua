@@ -50,8 +50,9 @@ oeyoews.creat_journey = function(ft)
   ft = ft or "txt"
   local journey_path = "journey"
   local journey_dir = string.format("%s/%s/%s", vim.fn.stdpath("data"), journey_path, os.date("%Y/%m/%d"))
+  local prefix_index = string.format("/index-%s.", os.date("%H"))
   vim.fn.mkdir(journey_dir, "p")
-  local journey = journey_dir .. "/index." .. ft
+  local journey = journey_dir .. prefix_index .. ft
   vim.cmd(([[edit %s]]):format(journey))
 end
 

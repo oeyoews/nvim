@@ -6,10 +6,11 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/03 10:48:36 by oeyoews                                  --
---   Updated: 2022/08/06 10:44:12 by oeyoews                                  --
+--   Updated: 2022/08/08 08:26:57 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
+--- create some user command
 vim.api.nvim_create_user_command("Edit", function(opts)
   oeyoews.creat_journey(opts.args)
 end, {
