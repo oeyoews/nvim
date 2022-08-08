@@ -1,8 +1,8 @@
 snippet tt "tiddlywiki header template" bA
 created: `date +%Y%m%d%H%M%S`
-creator: oeyoews
+creator: `echo $USER`
 modified: `date +%Y%m%d%H%M%S`
-modifier: oeyoews
+modifier: `echo $USER`
 tags:
 title: `!v expand("%:r")`
 type: text/vnd.tiddlywiki
