@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/08 15:49:02 by oeyoews                                  --
+--   Updated: 2022/08/08 17:10:42 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -76,6 +76,7 @@ oeyoews.builtin_plugin = {
 oeyoews.completion.edit = function()
   local ft = {
     "norg",
+    "tid",
     "lua",
     "md",
     "txt",
