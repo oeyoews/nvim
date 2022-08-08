@@ -12,15 +12,10 @@ local sources = {
       "gitcommit",
     },
   }),
-  -- code_actions.proselint, -- not useful
-  -- diagnostics.proselint, -- some time have error tips
-  -- diagnostics.trail_space, -- some time have error tips
-  -- diagnostics.write_good, -- some time have error tips
   formatting.stylua, -- this is conflict for lsp, choice
   formatting.prettier,
   formatting.fixjson,
   formatting.clang_format,
-  -- formatting.black.with({}), -- not work
   diagnostics.codespell.with({
     filetypes = {
       "markdown",
@@ -46,8 +41,11 @@ null_ls.setup({
   sources = sources,
   on_attach = function(client, bufnr)
     if oeyoews.nvim_version > 7 and client.supports_method("textDocument/formatting") then
-      vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
-      vim.api.nvim_create_autocmd("BufWritePre", {
+      vim.api.nvim_clear_autocmds({
+        group = augroup,
+        buffer = bufnr,
+      })
+      oeyoews.autocmd("BufWritePre", {
         group = augroup,
         buffer = bufnr,
         callback = function()
