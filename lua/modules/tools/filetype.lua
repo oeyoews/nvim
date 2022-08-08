@@ -8,6 +8,7 @@ filetype.setup({
     },
     extensions = {
       service = "systemd",
+      tex = "tex",
     },
   },
 })

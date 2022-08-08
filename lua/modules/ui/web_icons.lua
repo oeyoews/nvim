@@ -8,7 +8,7 @@ require("nvim-web-devicons").setup({
       name = "Norg",
     },
     zsh = {
-      icon = " ",
+      icon = "",
       color = "yellow",
       cterm_color = "67",
       name = "Zsh",
@@ -20,7 +20,7 @@ require("nvim-web-devicons").setup({
       name = "Rb",
     },
     sh = {
-      icon = " ",
+      icon = "",
       color = "yellow",
       cterm_color = "67",
       name = "Sh",
@@ -36,6 +36,12 @@ require("nvim-web-devicons").setup({
       color = "#5AB680",
       cterm_color = "57",
       name = "Tid",
+    },
+    tex = {
+      icon = "ﲀ", -- 
+      color = "#5AB680",
+      cterm_color = "57",
+      name = "Tex",
     },
     default_icon = {
       icon = "",

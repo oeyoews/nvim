@@ -52,6 +52,10 @@ nvim_treesitter_configs.setup({
 
   highlight = {
     enable = true,
+    -- parser name
+    disable = {
+      "latex",
+    },
     additional_vim_regex_highlighting = false,
   },
 
