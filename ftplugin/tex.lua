@@ -10,6 +10,7 @@ packadd vim-latex-live-preview
 -- this option not support local
 vim.opt_local.updatetime = 1000
 
+-- add executable check for evince or okular pdf preview binary
 vim.keymap.set("n", "<space>lt", "<cmd>LLPStartPreview<cr>", {
   buffer = true,
   silent = true,
