@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/08 23:45:37 by oeyoews                                  --
+--   Updated: 2022/08/09 00:17:05 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -163,6 +163,7 @@ oeyoews.pluginlist = {
   -- have a delay for highlight
   -- add modified time in inject meta
   -- actually, all most plugin not need lazyload, even it very slow, this neorg is lazyload itself, lazyload it is unmeanthingfun
+  -- bug: inject header second will cover description or options
   {
     "nvim-neorg/neorg",
     opt = true,
