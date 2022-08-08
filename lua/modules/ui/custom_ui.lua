@@ -48,6 +48,8 @@ oeyoews.autocmd("TextYankPost", {
 -- vim.cmd([[highlight default GH guifg=#3bb6c4 guibg=NONE]])
 -- TODO: learn use highlight group and cutsom_ui file
 -- https://github.com/hrsh7th/nvim-cmp/wiki/Menu-Appearance
-vim.cmd([[highlight CmpItemKindDefault  guifg=#3bb6c4 guibg=NONE]])
-vim.cmd([[highlight CmpItemKindSnippet  guifg=#3bb6c4 guibg=NONE]])
-vim.cmd([[highlight CmpItemMenu guifg=#9E79BE guibg=NONE]])
+vim.cmd([[
+highlight CmpItemKindDefault  guifg=#3bb6c4 guibg=NONE
+highlight CmpItemKindSnippet  guifg=#3bb6c4 guibg=NONE
+highlight CmpItemMenu guifg=#9E79BE guibg=NONE
+]])
