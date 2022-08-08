@@ -6,12 +6,14 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/07 02:08:51 by oeyoews                                  --
+--   Updated: 2022/08/08 15:49:02 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
 -- global lua variables
 oeyoews = {}
+
+oeyoews.home = os.getenv("HOME")
 
 -- extra binary
 oeyoews.mason = {}
@@ -25,12 +27,8 @@ oeyoews.autocmd = vim.api.nvim_create_autocmd
 oeyoews.mygroup = vim.api.nvim_create_augroup("OeyoewGroup", {})
 -- nvim_version
 oeyoews.nvim_version = vim.version().minor
-oeyoews.nvim_full_version_info = string.format(
-  "%s.%s.%s",
-  vim.version().major,
-  vim.version().minor,
-  vim.version().patch
-)
+oeyoews.nvim_full_version_info =
+  string.format("%s.%s.%s", vim.version().major, vim.version().minor, vim.version().patch)
 
 -- options
 oeyoews.options = {

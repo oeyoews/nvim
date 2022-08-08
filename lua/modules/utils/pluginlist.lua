@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/08 00:44:36 by oeyoews                                  --
+--   Updated: 2022/08/08 15:41:59 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -79,6 +79,7 @@ oeyoews.pluginlist = {
     },
   },
   -- mason
+  -- this dir should not modified by user
   {
     "williamboman/mason.nvim",
     requires = {

@@ -37,8 +37,8 @@ vim.keymap.set("n", "<space>$1", "<cmd>$2<cr>", {
 })
 endsnippet
 
-snippet mapc " " bA
---   mappings
+snippet mapc "" bA
+--    mappings
 endsnippet
 
 snippet ocmd "autocmd" bA
@@ -59,4 +59,8 @@ endsnippet
 
 snippet ll "local" bA
 local $1
+endsnippet
+
+snippet sf "string format" b
+string.format($1)
 endsnippet
