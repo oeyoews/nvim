@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:36 by oeyoews                                  --
---   Updated: 2022/08/08 07:13:01 by oeyoews                                  --
+--   Updated: 2022/08/08 19:25:12 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -48,11 +48,11 @@ packer.init({
   auto_clean = true,
   display = {
     prompt_border = "single",
-    working_sym = "ﰭ",
-    error_sym = "",
-    done_sym = "",
-    removed_sym = "",
-    moved_sym = "ﰳ",
+    working_sym = " ",
+    error_sym = " ",
+    done_sym = " ",
+    removed_sym = " ",
+    moved_sym = " ",
     -- open_fn = function()
     -- return require("packer.util").float({ border = "single" })
     -- end,

@@ -127,7 +127,7 @@ local sources = {
 local menu = {
   nvim_lsp = "",
   buffer = "",
-  ultisnips = " ",
+  ultisnips = "",
   nvim_lua = " ",
   path = "",
   -- cmp_tabnine = "",
@@ -214,7 +214,7 @@ vim.g.UltiSnipsExpandTrigger = "<C-e>"
 vim.g.UltiSnipsJumpBackwardTrigger = "<C-K>"
 
 vim.keymap.set("n", "<space>ee", "<cmd>UltiSnipsEdit<cr>", {
-  desc = "ﱴ edit snippet",
+  desc = " edit snippet",
 })
 
 vim.keymap.set("n", "<space>ea", "<cmd>UltiSnipsEdit all<cr>", {
