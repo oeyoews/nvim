@@ -62,17 +62,18 @@ local symbol_map = {
 }
 
 local mapping = {
-  ["<C-b>"] = cmp.mapping.scroll_docs(-4),
-  ["<C-f>"] = cmp.mapping.scroll_docs(4),
-  ["<S-Tab>"] = cmp.mapping(function(fallback)
-    if cmp.visible() then
-      cmp.select_prev_item()
-    else
-      fallback()
-    end
-  end, { "i", "s" }),
-  ["<C-y>"] = cmp.mapping.complete(),
-  ["<C-Space>"] = cmp.mapping.complete(),
+  -- ["<C-b>"] = cmp.mapping.scroll_docs(-4),
+  -- ["<C-f>"] = cmp.mapping.scroll_docs(4),
+  -- less use
+  -- ["<S-Tab>"] = cmp.mapping(function(fallback)
+  --   if cmp.visible() then
+  --     cmp.select_prev_item()
+  --   else
+  --     fallback()
+  --   end
+  -- end, { "i", "s" }),
+  -- ["<C-y>"] = cmp.mapping.complete(),
+  -- ["<C-Space>"] = cmp.mapping.complete(),
   ["<CR>"] = cmp.mapping.confirm({ select = false }),
   ["<C-c>"] = cmp.mapping.close(),
   ["<C-n>"] = function()
@@ -209,6 +210,7 @@ oeyoews.autocmd("FileType", {
 })
 
 vim.g.UltiSnipsExpandTrigger = "<C-e>"
+vim.g.UltiSnipsJumpForwardTrigger = "<C-J>"
 vim.g.UltiSnipsJumpBackwardTrigger = "<C-K>"
 
 vim.keymap.set("n", "<space>ee", "<cmd>UltiSnipsEdit<cr>", {

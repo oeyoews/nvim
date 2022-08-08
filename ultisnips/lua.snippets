@@ -46,3 +46,17 @@ oeyoews.autocmd("FileType", {
   $1
 })
 endsnippet
+
+snippet pf "printf" bA
+print(${1:content})
+endsnippet
+
+snippet forI "iterator" bA
+for index, value in ipairs($1) do
+	print(index, value)$2
+end
+endsnippet
+
+snippet ll "local" bA
+local $1
+endsnippet
