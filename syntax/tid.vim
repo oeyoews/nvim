@@ -28,6 +28,7 @@ syn region twNoFormatting start=/^{{{/ end=/^}}}/
 
 " Heading
 syn match twHeading /^!\+\s*.*$/
+syn match twNumberList /^#\+\s*.*$/
 
 " Todo
 syn keyword twTodo TODO FIXME XXX
@@ -64,6 +65,7 @@ hi def link twNoFormatting Constant
 hi def link twTodo Todo
 hi def link twHeader Title
 hi def link twHeading Title
+hi def link twNumberList Title
 hi def link twComment Comment
 hi def link twList Structure
 hi def link twDefinitionListTerm Identifier
