@@ -132,9 +132,9 @@ local sources = {
   {
     name = "neorg",
   },
-  {
-    name = "latex_symbols",
-  },
+  -- {
+  --   name = "latex_symbols",
+  -- },
 }
 
 local menu = {

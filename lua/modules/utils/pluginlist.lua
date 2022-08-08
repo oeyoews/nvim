@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/08 20:55:30 by oeyoews                                  --
+--   Updated: 2022/08/08 22:31:11 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -99,7 +99,7 @@ oeyoews.pluginlist = {
       "SirVer/ultisnips",
       "hrsh7th/cmp-nvim-lsp",
       "hrsh7th/cmp-path",
-      "kdheepak/cmp-latex-symbols",
+      -- "kdheepak/cmp-latex-symbols",
       -- completion
       -- {
       --   "tzachar/cmp-tabnine",
