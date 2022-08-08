@@ -7,5 +7,5 @@ local ft = require("Comment.ft")
 ft.set("gitignore", "#%s")
 ft.set("lua", {
   "--%s",
-  "--[[%s--]]",
+  "--[=[%s--]=]",
 })

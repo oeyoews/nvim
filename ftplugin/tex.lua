@@ -1,17 +1,17 @@
+-- vimtex
 vim.opt_local.conceallevel = 2
 
-local check_okular = function()
-  if vim.fn.executable("okular") == 1 then
-    vim.cmd([[VimtexCompile]])
-  else
-    vim.notify_once("Please install okular")
-  end
-end
+vim.cmd([[
+packadd vim-latex-live-preview
+" LLPStartPreview
+]])
 
-vim.keymap.set("n", "<space>lt", function()
-  return check_okular()
-end, {
+-- preview option
+-- this option not support local
+vim.opt_local.updatetime = 1000
+
+vim.keymap.set("n", "<space>lt", "<cmd>LLPStartPreview<cr>", {
   buffer = true,
   silent = true,
-  desc = "",
+  desc = "preview tex",
 })
