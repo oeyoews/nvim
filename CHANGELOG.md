@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.38.0](https://gitlab.com/oeyoews/nvim/compare/v7.37.1...v7.38.0) (2022-08-08)
+
+
+### Features
+
+* **tex:** add vimtex ([c4c6aab](https://gitlab.com/oeyoews/nvim/commit/c4c6aabeea6d569411d300afa1b77df8a55f73c3))
+
 ## [7.37.1](https://gitlab.com/oeyoews/nvim/compare/v7.37.0...v7.37.1) (2022-08-08)
 
 
