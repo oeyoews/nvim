@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.37.0](https://gitlab.com/oeyoews/nvim/compare/v7.36.0...v7.37.0) (2022-08-08)
+
+
+### Features
+
+* **syntax:** add tid.vim ([6d7b71a](https://gitlab.com/oeyoews/nvim/commit/6d7b71acd6728bc0eb2856c5093e4d1f0a733d29))
+
 # [7.36.0](https://gitlab.com/oeyoews/nvim/compare/v7.35.0...v7.36.0) (2022-08-08)
 
 
