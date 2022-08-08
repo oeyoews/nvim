@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.37.1](https://gitlab.com/oeyoews/nvim/compare/v7.37.0...v7.37.1) (2022-08-08)
+
+
+### Bug Fixes
+
+* **tid:** remove tag ([ca83a77](https://gitlab.com/oeyoews/nvim/commit/ca83a77894d9794072c5c12101b01479a4ffd290))
+
 # [7.37.0](https://gitlab.com/oeyoews/nvim/compare/v7.36.0...v7.37.0) (2022-08-08)
 
 
