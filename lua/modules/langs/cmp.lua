@@ -113,15 +113,28 @@ local mapping = {
 local sources = {
   -- { name = "copilot" },
   -- { name = "cmp_tabnine" },
-  { name = "nvim_lsp" },
-  { name = "ultisnips" },
+  {
+    name = "nvim_lsp",
+  },
+  {
+    name = "ultisnips",
+  },
   {
     name = "buffer",
     keyword_length = 3,
   },
-  { name = "nvim-lua" },
-  { name = "path" },
-  { name = "neorg" },
+  {
+    name = "nvim-lua",
+  },
+  {
+    name = "path",
+  },
+  {
+    name = "neorg",
+  },
+  {
+    name = "latex_symbols",
+  },
 }
 
 local menu = {
