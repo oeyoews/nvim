@@ -9,6 +9,7 @@ version: 0.0.11
 
 * TODO
 
+  - [ ] learn use latex
   - [ ] crate treesitter highlight for tid
   - [ ] learn nvim_open_win
   - [ ] add cutsom logo
