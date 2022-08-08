@@ -2,11 +2,7 @@ snippet links "link_self"
 [${1:Text}](${2:url})
 endsnippet
 
-snippet cbox "checkbox [x]" b
-* [ ] $1
-endsnippet
-
-snippet md "template" b
+snippet tt "template" b
 <!-- `date` -->
 # ${1:Title head}
 
@@ -15,8 +11,8 @@ snippet md "template" b
 - ${3:content}
 endsnippet
 
-snippet deline "del"
-~~$1~~
+snippet ~~ "del"
+~~$1~~ $2
 endsnippet
 
 #how to delete some whitespace before title

@@ -64,7 +64,7 @@ local symbol_map = {
 local mapping = {
   -- ["<C-b>"] = cmp.mapping.scroll_docs(-4),
   -- ["<C-f>"] = cmp.mapping.scroll_docs(4),
-  -- less use
+  -- -- less use
   -- ["<S-Tab>"] = cmp.mapping(function(fallback)
   --   if cmp.visible() then
   --     cmp.select_prev_item()
@@ -210,7 +210,7 @@ oeyoews.autocmd("FileType", {
 })
 
 vim.g.UltiSnipsExpandTrigger = "<C-e>"
-vim.g.UltiSnipsJumpForwardTrigger = "<C-J>"
+-- vim.g.UltiSnipsJumpForwardTrigger = "<C-J>"
 vim.g.UltiSnipsJumpBackwardTrigger = "<C-K>"
 
 vim.keymap.set("n", "<space>ee", "<cmd>UltiSnipsEdit<cr>", {
