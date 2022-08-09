@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/09 00:04:12 by oeyoews                                  --
+--   Updated: 2022/08/09 12:43:29 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -56,7 +56,7 @@ oeyoews.servers = {
   -- "bashls",
   -- "pylsp",
   -- "yamlls",
-  -- "texlab",
+  "texlab",
 }
 
 oeyoews.builtin = string.format("%s/builtin/", vim.fn.stdpath("config"))
