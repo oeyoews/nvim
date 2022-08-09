@@ -631,4 +631,18 @@ snippet DD "D" iA
 \mathbb{D}
 endsnippet
 
+snippet title "simple template" b
+\documentclass{article}
+\title{`!v expand("%:r")`}
+\author{`echo $USER`}
+\date{`date +"%Y/%m/%d"`}
+\begin{document}
+\maketitle
+% \tableofcontents
+
+${1: add your content}
+
+\end{document}
+endsnippet
+
 # vim:ft=snippets

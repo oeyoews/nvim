@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/08 15:59:08 by oeyoews                                  --
+--   Updated: 2022/08/09 10:28:34 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -196,6 +196,7 @@ command! -nargs=1 -complete=highlight HI ene|pu=execute('hi <args>')
 vim.cmd([[
 function! Sline() abort
 if &laststatus
+set signcolumn=no
 set laststatus=0
 set showtabline=0
 set invnumber
@@ -206,6 +207,7 @@ else
 set laststatus=3
 set showtabline=2
 let &number=1
+set signcolumn=yes
 silent! Gitsigns toggle_signs
 LspStart
 endif
