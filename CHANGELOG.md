@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.40.0](https://gitlab.com/oeyoews/nvim/compare/v7.39.1...v7.40.0) (2022-08-09)
+
+
+### Features
+
+* **tex:** add support cn snip ([4ea2e6c](https://gitlab.com/oeyoews/nvim/commit/4ea2e6c9043c4697ec2bbef01a3edc61b9087b88))
+
 ## [7.39.1](https://gitlab.com/oeyoews/nvim/compare/v7.39.0...v7.39.1) (2022-08-09)
 
 
