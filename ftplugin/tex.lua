@@ -21,4 +21,15 @@ vim.keymap.set("n", "<space>lt", "<cmd>VimtexCompile<cr>", {
   desc = "",
 })
 
+vim.keymap.set("n", "<space>lp", "<cmd>VimtexView<cr>", {
+  buffer = true,
+  silent = true,
+  desc = "preview pdf",
+})
+
+vim.keymap.set("n", "<space>lT", "<cmd>VimtexStop<cr>", {
+  buffer = true,
+  silent = true,
+  desc = "stop compile",
+})
 -- how to clean files automatically
