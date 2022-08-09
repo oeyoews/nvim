@@ -632,6 +632,7 @@ snippet DD "D" iA
 endsnippet
 
 snippet title "simple template" b
+% `!v expand("%")`
 \documentclass{article}
 \title{`!v expand("%:r")`}
 \author{`echo $USER`}
@@ -653,6 +654,14 @@ snippet cnbeg "cn begin" b
 \begin{CJK}{UTF8}{gbsn}
 $1
 \end{CJK}
+endsnippet
+
+# fixed in vimtex option
+snippet anocn "fix cn" b
+%!TEX program = xelatex
+\documentclass{ctexart}
+\begin{document}
+\end{document}
 endsnippet
 
 # vim:ft=snippets
