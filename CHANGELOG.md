@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.39.1](https://gitlab.com/oeyoews/nvim/compare/v7.39.0...v7.39.1) (2022-08-09)
+
+
+### Bug Fixes
+
+* **tex:** remove tex preview ([4b9e404](https://gitlab.com/oeyoews/nvim/commit/4b9e4042dfb810da4be693cd450e0ae39f06404f))
+
 # [7.39.0](https://gitlab.com/oeyoews/nvim/compare/v7.38.0...v7.39.0) (2022-08-08)
 
 
