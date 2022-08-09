@@ -2,6 +2,9 @@
 vim.opt_local.wrap = true
 vim.opt_local.conceallevel = 2
 
+-- optional
+-- vim.cmd([[VimtexCompile]])
+
 -- preview option
 -- this option not support local
 -- vim.opt_local.updatetime = 1000
