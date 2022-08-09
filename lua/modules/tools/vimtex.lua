@@ -10,6 +10,18 @@ vim.g.tex_conceal = "abdmg"
 vim.g.vimtex_compiler_latexmk_engines = {
   ["_"] = "-xelatex",
 }
+vim.g.vimtex_compiler_latexmk = {
+  build_dir = "out_dir",
+}
+vim.g.vimtex_compiler_latexmk = {
+  options = {
+    "-xelatex",
+    "-verbose",
+    "-file-line-error",
+    "-synctex=1",
+    "-interaction=nonstopmode",
+  },
+}
 
 -- preview plugin
 -- vim.g.livepreview_cursorhold_recompile = false
@@ -23,3 +35,4 @@ vim.g.vimtex_compiler_latexmk_engines = {
 -- https://wiki.archlinux.org/title/TeX_Live_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E7%BA%B8%E5%BC%A0%E5%A4%A7%E5%B0%8F
 vim.g.vimtex_syntax_enabled = true
 vim.g.vimtex_syntax_conceal_disable = false
+vim.g.vimtex_quickfix_open_on_warning = false

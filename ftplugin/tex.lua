@@ -20,3 +20,5 @@ vim.keymap.set("n", "<space>lt", "<cmd>VimtexCompile<cr>", {
   silent = true,
   desc = "",
 })
+
+-- how to clean files automatically
