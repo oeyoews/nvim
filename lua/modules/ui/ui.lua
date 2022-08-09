@@ -14,6 +14,7 @@ local sta = function(conf)
       theme = "night"
     end
   end
+  -- day
   vim.g.tokyonight_style = theme
   require(conf).setup()
 end

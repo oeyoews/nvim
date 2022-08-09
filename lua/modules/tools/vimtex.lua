@@ -36,4 +36,5 @@ vim.g.vimtex_compiler_latexmk = {
 vim.g.vimtex_syntax_enabled = true
 vim.g.vimtex_syntax_conceal_disable = false
 vim.g.vimtex_quickfix_open_on_warning = false
--- vim.g.vimtex_compiler_progname = "nvr"
+-- NOTE:pip install neovim-remote
+vim.g.vimtex_compiler_progname = "nvr"
