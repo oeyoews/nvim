@@ -1,10 +1,11 @@
+# bug: some times in the first line, this snippet will not work
+# for the fir time have some delay
 snippet links "link_self"
 [${1:Text}](${2:url})
 endsnippet
 
-snippet tt "template" b
-<!-- `date` -->
-# ${1:Title head}
+snippet tt "template"
+# ${1:Title head} <!-- `date` -->
 
 ## ${2:Title level 2}
 
@@ -15,18 +16,6 @@ snippet ~~ "del"
 ~~$1~~ $2
 endsnippet
 
-#how to delete some whitespace before title
-#snippet # "description" bA
-###$1
-#endsnippet
-
-# w && i
-# default is w
-snippet cc "description" A
-[ ]
-endsnippet
-
-# md `\date`
 snippet hugo "hugo formtter"
 ---
 title: $1
@@ -150,3 +139,5 @@ snippet chunk "chunk"
 <img src="https://img.shields.io/badge/GIT-Yes-green.svg?style=flat-square&logo=git&label=GIT" alt="git">
 </div>
 endsnippet
+
+# vim: ft=snippets
