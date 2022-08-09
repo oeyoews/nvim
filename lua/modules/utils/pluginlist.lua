@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/09 00:17:05 by oeyoews                                  --
+--   Updated: 2022/08/09 10:13:29 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -16,10 +16,7 @@
 oeyoews.pluginlist = {
   -- not support lazyload
   "lervag/vimtex",
-  {
-    "xuhdev/vim-latex-live-preview",
-    ft = "tex",
-  },
+  -- "xuhdev/vim-latex-live-preview",
   {
     "michaelb/sniprun",
     run = "bash ./install.sh",
@@ -43,6 +40,7 @@ oeyoews.pluginlist = {
   "nathom/filetype.nvim",
   "wbthomason/packer.nvim",
   "nvim-lua/plenary.nvim",
+  -- bug 1.tex, this order is wrong
   "kyazdani42/nvim-web-devicons",
   "stevearc/dressing.nvim",
   "j-hui/fidget.nvim",
