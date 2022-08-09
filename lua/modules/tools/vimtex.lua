@@ -1,3 +1,4 @@
+-- fix plaintex to tex
 vim.g.tex_flavor = "latex"
 -- this zathura need zathura plugin to support pdf
 -- but it can' refresh with no toggle compile
@@ -20,3 +21,5 @@ vim.g.vimtex_compiler_latexmk_engines = {
 
 -- cn
 -- https://wiki.archlinux.org/title/TeX_Live_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E7%BA%B8%E5%BC%A0%E5%A4%A7%E5%B0%8F
+vim.g.vimtex_syntax_enabled = true
+vim.g.vimtex_syntax_conceal_disable = false
