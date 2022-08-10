@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/10 19:35:37 by oeyoews                                  --
+--   Updated: 2022/08/10 20:57:13 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -150,6 +150,7 @@ oeyoews.pluginlist = {
     config = [[require("nvim-autopairs").setup()]],
   },
   {
+    -- when update plugins with packer, this cmp's tab will conflict tabout
     "oeyoews/tabout.nvim",
     config = [[require("tabout").setup()]],
   },

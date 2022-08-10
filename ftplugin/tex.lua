@@ -59,3 +59,19 @@ oeyoews.autocmd("VimLeave", {
   -- default is silent? for this api? silent
   command = "!killall zathura",
 })
+
+oeyoews.autocmd("VimEnter", {
+  pattern = "*.tex",
+  group = oeyoews.mygroup,
+  callback = function()
+    vim.defer_fn(function()
+      local len = vim.fn.input("Preview latex? [O/ENTER] ")
+      local vimtex_ans = string.lower(len) == "o"
+      if vimtex_ans then
+        vim.cmd([[VimtexCompile]])
+      else
+        -- how to execute c-l map
+      end
+    end, 1)
+  end,
+})
