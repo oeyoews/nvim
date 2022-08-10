@@ -50,5 +50,5 @@ vim.keymap.set("n", "<space>lE", "<cmd>VimtexErrors<cr>", {
 oeyoews.autocmd("InsertLeave", {
   pattern = "*.tex",
   group = oeyoews.mygroup,
-  command = "fs",
+  command = "update",
 })
