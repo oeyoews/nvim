@@ -6,11 +6,12 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/10 03:47:20 by oeyoews                                  --
+--   Updated: 2022/08/10 19:35:37 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
--- packerload is from this list load, if no add config for lazyload, it still not work, so better method is use ftplugin for some
+-- packerload is from this list load, if no add config for lazyload, it still not work,
+-- so better method is use ftplugin for some
 -- filetypes plugins
 --   plugins list
 oeyoews.pluginlist = {

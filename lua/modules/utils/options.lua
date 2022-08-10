@@ -10,7 +10,9 @@ end
 vim.g.python3_host_prog = "/usr/bin/python3"
 
 local default_options = {
-  textwidth = 120,
+  -- https://stackoverflow.com/questions/5136902/vim-textwidth-has-no-effect
+  -- formatoptions
+  textwidth = 80,
   cmdwinheight = 5,
   display = "lastline",
   -- option: 0 => hide statusline, 3 global statusline
