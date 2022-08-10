@@ -52,3 +52,10 @@ oeyoews.autocmd("InsertLeave", {
   group = oeyoews.mygroup,
   command = "update",
 })
+
+oeyoews.autocmd("VimLeave", {
+  pattern = "*.tex",
+  group = oeyoews.mygroup,
+  -- default is silent? for this api? silent
+  command = "!killall zathura",
+})
