@@ -38,7 +38,7 @@ require("nvim-web-devicons").setup({
       name = "Tid",
     },
     tex = {
-      icon = "ﲀ", -- 
+      icon = "𝚃", -- 𝚃 this ﲀ icon cause number mass
       color = "#5AB680",
       cterm_color = "57",
       name = "Tex",

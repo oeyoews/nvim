@@ -60,18 +60,15 @@ oeyoews.autocmd("VimLeave", {
   command = "!killall zathura",
 })
 
-oeyoews.autocmd("VimEnter", {
-  pattern = "*.tex",
-  group = oeyoews.mygroup,
-  callback = function()
-    vim.defer_fn(function()
-      local len = vim.fn.input("Preview latex? [O/ENTER] ")
-      local vimtex_ans = string.lower(len) == "o"
-      if vimtex_ans then
-        vim.cmd([[VimtexCompile]])
-      else
-        -- how to execute c-l map
-      end
-    end, 1)
-  end,
-})
+-- conflict cmp tab
+function ask()
+  vim.schedule(function()
+    local len = vim.fn.input("Preview latex? [O/ENTER] ")
+    local vimtex_ans = string.lower(len) == "o"
+    if vimtex_ans then
+      vim.cmd([[VimtexCompile]])
+    else
+      -- how to execute c-l map
+    end
+  end)
+end
