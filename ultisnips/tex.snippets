@@ -632,11 +632,11 @@ snippet DD "D" iA
 \mathbb{D}
 endsnippet
 
-snippet title "simple template" b
+snippet tt "simple template" bA
 % `!v expand("%")`
 \documentclass{article}
 
-\title{`!v expand("%:r")`}
+\title{${0:`!v expand("%:r")`}}
 \author{`echo $USER`}
 \date{`date +"%Y/%m/%d"`}
 
@@ -646,8 +646,7 @@ snippet title "simple template" b
 
 % \tableofcontents
 
-${1: add your content}
-
+$1
 \end{document}
 endsnippet
 

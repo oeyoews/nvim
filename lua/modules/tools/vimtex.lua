@@ -22,6 +22,12 @@ vim.g.vimtex_compiler_latexmk = {
     "-interaction=nonstopmode",
   },
 }
+vim.g.vimtex_toc_config = {
+  name = "TOC",
+  show_help = false,
+  show_numbers = false,
+  split_width = 25,
+}
 
 -- preview plugin
 -- vim.g.livepreview_cursorhold_recompile = false

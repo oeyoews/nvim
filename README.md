@@ -34,7 +34,7 @@
 
 ## 🍾 Screenshots
 
-| <img src="img/00.png" align="bottom" width=256/> | <img src="img/01.png" align="bottom" width=256/> | <img src="img/02.png" align="bottom" width=256/> |
+| <img src="img/00.png" align="bottom" width=256/> | <img src="img/03.png" align="bottom" width=256/> | <img src="img/02.png" align="bottom" width=256/> |
 | :----------------------------------------------: | :----------------------------------------------: | ------------------------------------------------ |
 | <img src="img/03.png" align="bottom" width=256/> | <img src="img/04.png" align="bottom" width=256/> | <img src="img/05.png" align="bottom" width=256/> |
 | <img src="img/06.png" align="bottom" width=256/> | <img src="img/07.png" align="bottom" width=256/> | <img src="img/09.png" align="bottom" width=256/> |

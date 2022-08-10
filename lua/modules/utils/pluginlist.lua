@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/10 03:42:36 by oeyoews                                  --
+--   Updated: 2022/08/10 03:47:20 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -17,11 +17,11 @@ oeyoews.pluginlist = {
   -- not support lazyload
   "lervag/vimtex",
 
-  {
-    -- this plugin must lazyload, it's so slow
-    -- "xuhdev/vim-latex-live-preview",
-    -- ft = "tex",
-  },
+  -- {
+  -- this plugin must lazyload, it's so slow
+  -- "xuhdev/vim-latex-live-preview",
+  -- ft = "tex",
+  -- },
   {
     "michaelb/sniprun",
     run = "bash ./install.sh",

@@ -34,3 +34,15 @@ vim.keymap.set("n", "<space>lT", "<cmd>VimtexStop<cr>", {
   desc = "stop compile",
 })
 -- how to clean files automatically
+
+vim.keymap.set("n", "<space>fl", "<cmd>VimtexTocToggle<cr>", {
+  buffer = true,
+  silent = true,
+  desc = "",
+})
+
+vim.keymap.set("n", "<space>lE", "<cmd>VimtexErrors<cr>", {
+  buffer = true,
+  silent = true,
+  desc = "",
+})
