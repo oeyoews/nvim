@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/10 00:09:46 by oeyoews                                  --
+--   Updated: 2022/08/10 21:56:24 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -20,6 +20,12 @@ vim.keymap.set({ "n", "v" }, "<space><space>", ":", {
   desc = " cmd mode",
 })
 keymappings_set = {
+  -- tex
+  {
+    "<space>et",
+    "<cmd>Edit tex<cr>",
+    "Τ edit tex",
+  },
   -- lua
   {
     "<space>el",

@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/10 13:26:56 by oeyoews                                  --
+--   Updated: 2022/08/10 21:57:01 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -81,6 +81,7 @@ oeyoews.completion.edit = function()
     "lua",
     "md",
     "txt",
+    "tex",
   }
   table.sort(ft)
   return table.concat(ft, "\n")

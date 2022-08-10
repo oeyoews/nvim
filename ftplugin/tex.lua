@@ -52,14 +52,15 @@ oeyoews.autocmd("InsertLeave", {
   group = oeyoews.mygroup,
   command = "update",
 })
-
+--[=[
+-- kill will broken this last position restore
 oeyoews.autocmd("VimLeave", {
   pattern = "*.tex",
   group = oeyoews.mygroup,
   -- default is silent? for this api? silent
-  command = "!killall zathura",
+  command = "!killall okular", -- zathura
 })
-
+--]=]
 -- conflict cmp tab
 function ask()
   vim.schedule(function()
