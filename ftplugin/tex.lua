@@ -73,3 +73,17 @@ function ask()
     end
   end)
 end
+
+vim.cmd([[
+function! ZathuraHook() abort
+  if exists('b:vimtex.viewer.xwin_id') && b:vimtex.viewer.xwin_id <= 0
+    silent call system('xdotool windowactivate ' . b:vimtex.viewer.xwin_id . ' --sync')
+    silent call system('xdotool windowraise ' . b:vimtex.viewer.xwin_id)
+  endif
+endfunction
+
+augroup vimrc_vimtex
+  autocmd!
+  autocmd User VimtexEventView call ZathuraHook()
+augroup END
+]])
