@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/10 20:57:13 by oeyoews                                  --
+--   Updated: 2022/08/10 21:31:51 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -44,6 +44,7 @@ oeyoews.pluginlist = {
   "glepnir/lspsaga.nvim",
   "lewis6991/impatient.nvim",
   "nathom/filetype.nvim",
+  -- TODO:use tabnew to update plugin, to solve cannot async
   "wbthomason/packer.nvim",
   "nvim-lua/plenary.nvim",
   -- bug 1.tex, this order is wrong

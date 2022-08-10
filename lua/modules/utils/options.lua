@@ -7,6 +7,7 @@ if oeyoews.nvim_version < 8 then
   vim.g.do_filetype_lua = 1
 end
 
+-- if all plugin not installed, will trigger some plugin errors, like tex
 vim.g.python3_host_prog = "/usr/bin/python3"
 
 local default_options = {
