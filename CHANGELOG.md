@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.41.0](https://gitlab.com/oeyoews/nvim/compare/v7.40.0...v7.41.0) (2022-08-10)
+
+
+### Features
+
+* **tex:** add autocmd autosave to update tex file ([3115985](https://gitlab.com/oeyoews/nvim/commit/3115985f1bc2143ce25106c658e5505933b42e32))
+
 # [7.40.0](https://gitlab.com/oeyoews/nvim/compare/v7.39.1...v7.40.0) (2022-08-09)
 
 
