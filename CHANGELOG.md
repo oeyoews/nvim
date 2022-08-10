@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.42.0](https://gitlab.com/oeyoews/nvim/compare/v7.41.0...v7.42.0) (2022-08-10)
+
+
+### Features
+
+* **tex:** automatically kill zathura like markdownpreview ([c1e2b57](https://gitlab.com/oeyoews/nvim/commit/c1e2b57506576b4d136bc0b0ef828763e139a71e))
+
 # [7.41.0](https://gitlab.com/oeyoews/nvim/compare/v7.40.0...v7.41.0) (2022-08-10)
 
 
