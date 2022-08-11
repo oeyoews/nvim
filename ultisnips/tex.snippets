@@ -44,16 +44,11 @@ snippet fig "Figure environment" b
 \end{figure}
 endsnippet
 
+# order list
 snippet enum "Enumerate" bA
 \begin{enumerate}
 	\item $0
 \end{enumerate}
-endsnippet
-
-snippet item "Itemize" bA
-\begin{itemize}
-	\item $0
-\end{itemize}
 endsnippet
 
 snippet desc "Description" b
@@ -609,8 +604,10 @@ endsnippet
 snippet tt "simple template" bA
 %!TEX program = xelatex
 % `!v expand("%")`
-% \documentclass[UTF8]{ctexart}
 \documentclass[UTF8]{article}
+
+% support cn, default is en
+% \usepackage{ctex}
 
 % Title left align
 % \ctexset { section = { format+={\raggedright } } }
@@ -621,8 +618,6 @@ snippet tt "simple template" bA
 \begin{document}
 
 \maketitle
-
-% \tableofcontents
 
 \section{${2:`!v expand("%:r")`}}
 
@@ -693,10 +688,9 @@ endsnippet
 snippet et "simple emoji template" bA
 %!TEX program = lualatex
 % `!v expand("%")`
-% \documentclass[UTF8]{ctexart}
 \documentclass[UTF8]{article}
 
-\usepackage{luacode}% Lua代码支持
+% \usepackage{luacode}% Lua代码支持
 \usepackage{emoji}
 
 % Title left align
@@ -709,9 +703,7 @@ snippet et "simple emoji template" bA
 
 \maketitle
 
-% \tableofcontents
-
-\section{`!v expand("%:r")` \emoji{rocket} \emoji{rocket}}%
+\section{`!v expand("%:r")` \emoji{rocket}}%
 \label{sec:emoji}
 
 \emoji{rocket}, Hello, Latex
@@ -727,7 +719,35 @@ snippet use "usepackage" b
 endsnippet
 
 snippet -- "item" bA
-\item $1
+\item$1
+endsnippet
+
+snippet toc "tableofcontents" b
+\tableofcontents$0
 endsnippet
 
 # \pagenumbering{roman}
+
+snippet cover "cover" b
+\thispagestyle{empty}
+\clearpage
+\setcounter{page}{1}$0
+endsnippet
+
+snippet list "order list"
+\begin{enumerate}
+  $1
+\end{enumerate}
+endsnippet
+
+snippet equation "equation" b
+\begin{equation}$0
+\end{equation}
+endsnippet
+
+# part of amsmath
+# use \\ to enter new line
+snippet align "align" b
+\begin{align}$0
+\end{align}
+endsnippet
