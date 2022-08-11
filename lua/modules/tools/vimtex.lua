@@ -5,7 +5,7 @@ vim.g.tex_flavor = "latex"
 -- zathura support preview refresh , but slow
 vim.g.vimtex_view_general_viewer = "okular" -- this app can remember last position(killed cannot work)
 -- NOTE:zathura not support wayland perfectly
--- vim.g.vimtex_view_method = "zathura" -- this zoom have some bug
+vim.g.vimtex_view_method = "zathura" -- this zoom have some bug
 vim.g.vimtex_quickfix_mode = false
 vim.g.tex_conceal = "abdmg"
 vim.g.vimtex_compiler_latexmk_engines = {
