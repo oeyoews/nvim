@@ -72,7 +72,7 @@ local tbl = {
   rnvimr_enable_picker = true,
   rnvimr_edit_cmd = "drop",
   rnvimr_draw_border = false,
-  rnvimr_hide_gitignore = false,
+  rnvimr_hide_gitignore = true,
   rnvimr_enable_bw = true,
   rnvimr_shadow_winblend = 70,
 }

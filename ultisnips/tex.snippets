@@ -1,3 +1,5 @@
+# vim:ft=snippets
+
 global !p
 def math():
 	return vim.eval('vimtex#syntax#in_mathzone()') == '1'
@@ -10,33 +12,6 @@ def env(name):
 	return x != '0' and y != '0'
 
 endglobal
-
-# maybe just suit pdftex
-snippet template "Basic template" b
-\documentclass[a4paper]{article}
-
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{textcomp}
-\usepackage{amsmath, amssymb}
-
-% figure support
-\usepackage{import}
-\usepackage{xifthen}
-\pdfminorversion=7
-\usepackage{pdfpages}
-\usepackage{transparent}
-\newcommand{\incfig}[1]{%
-	\def\svgwidth{\columnwidth}
-	\import{./figures/}{#1.pdf_tex}
-}
-
-\pdfsuppresswarningpagegroup=1
-
-\begin{document}
-	$0
-\end{document}
-endsnippet
 
 snippet beg "begin{} / end{}" bA
 \\begin{$1}
@@ -633,10 +608,11 @@ endsnippet
 
 snippet tt "simple template" bA
 % `!v expand("%")`
-\documentclass[UTF8]{ctexart}
+% \documentclass[UTF8]{ctexart}
+\documentclass[UTF8]{article}
 
 % Title left align
-\ctexset { section = { format+={\raggedright } } }
+% \ctexset { section = { format+={\raggedright } } }
 \title{${1:`!v expand("%:r")`}}
 \author{`echo $USER`}
 \date{`date +"%Y/%m/%d"`}
@@ -663,7 +639,7 @@ endsnippet
 
 # fixed in vimtex option
 snippet anocn "fix cn" b
-%!TEX program = xelatex
+%!TEX program = lualatex
 \documentclass{ctexart}
 \begin{document}
 \end{document}
@@ -699,4 +675,45 @@ snippet ctexcn "cn test" b
 　　阁中帝子今何在？槛外长江空自流。
 endsnippet
 
-# vim:ft=snippets
+# deprecate use ctexart
+# https://kangkk.cn/index.php?title=LaTeX/ubuntu/ctex.sty_not_found&mobileaction=toggle_view_desktop#:~:text=%E5%AE%9E%E9%99%85%E4%B8%8A%E6%98%AF%E7%94%B1%E4%BA%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E7%9A%84%20CTEX%20%E4%B8%BA%E5%B0%8F%E5%86%99%EF%BC%8C%E6%94%B9%E7%A7%B0%20ctex%20%E5%8D%B3%E5%8F%AF%E9%80%9A%E8%BF%87%E7%BC%96%E8%AF%91%E3%80%82
+snippet ctex "ctex small" b
+\documentclass{article}
+\usepackage{ctex}
+\begin{document}
+这是一个CTEX的utf-8编码例子，{\kaishu 这里是楷体显示}，{\songti 这里是宋体显示}，{\heiti 这里是黑体显示}，{\fangsong 这里是仿宋显示}。
+\end{document}
+endsnippet
+
+snippet et "simple emoji template" b
+%!TEX program = lualatex
+% `!v expand("%")`
+% \documentclass[UTF8]{ctexart}
+\documentclass[UTF8]{article}
+
+\usepackage{emoji}
+
+% Title left align
+% \ctexset { section = { format+={\raggedright } } }
+\title{${1:`!v expand("%:r")` \emoji{rocket}}}
+\author{`echo $USER`}
+\date{`date +"%Y/%m/%d"`}
+
+\begin{document}
+
+\maketitle
+
+% \tableofcontents
+
+\section{Emoji \emoji{rocket}}%
+\label{sec:emoji}
+
+\emoji{rocket}, Hello, Latex
+\end{document}
+endsnippet
+
+snippet lua "lualatex" b
+%!TEX program = lualatex
+endsnippet
+
+# \pagenumbering{roman}

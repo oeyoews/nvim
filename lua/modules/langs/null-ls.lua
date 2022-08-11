@@ -36,6 +36,7 @@ local lsp_formatting = function(bufnr)
 end
 
 null_ls.setup({
+  -- virtual_text = false, -- no this option?
   update_in_insert = false,
   debounce = 500,
   sources = sources,
