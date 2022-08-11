@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/10 21:56:24 by oeyoews                                  --
+--   Updated: 2022/08/11 15:17:40 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -202,7 +202,7 @@ command! -nargs=1 -complete=highlight HI ene|pu=execute('hi <args>')
 vim.cmd([[
 function! Sline() abort
 if &laststatus
-setlocal signcolumn=no
+" setlocal signcolumn=no
 set laststatus=0
 set showtabline=0
 setlocal invnumber
@@ -213,7 +213,7 @@ else
 set laststatus=3
 set showtabline=2
 setlocal invnumber
-setlocal signcolumn=yes
+" setlocal signcolumn=yes
 silent! Gitsigns toggle_signs
 LspStart
 endif

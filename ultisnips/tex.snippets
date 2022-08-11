@@ -607,6 +607,7 @@ snippet DD "D" iA
 endsnippet
 
 snippet tt "simple template" bA
+%!TEX program = xelatex
 % `!v expand("%")`
 % \documentclass[UTF8]{ctexart}
 \documentclass[UTF8]{article}
@@ -623,7 +624,10 @@ snippet tt "simple template" bA
 
 % \tableofcontents
 
-${2:Hello, Latex} $0
+\section{${2:`!v expand("%:r")`}}
+
+$0
+
 \end{document}
 endsnippet
 
@@ -638,6 +642,7 @@ $1
 endsnippet
 
 # fixed in vimtex option
+# if from xelatex to luatex, need to exec vimtexclean
 snippet anocn "fix cn" b
 %!TEX program = lualatex
 \documentclass{ctexart}
@@ -685,12 +690,13 @@ snippet ctex "ctex small" b
 \end{document}
 endsnippet
 
-snippet et "simple emoji template" b
+snippet et "simple emoji template" bA
 %!TEX program = lualatex
 % `!v expand("%")`
 % \documentclass[UTF8]{ctexart}
 \documentclass[UTF8]{article}
 
+\usepackage{luacode}% Lua代码支持
 \usepackage{emoji}
 
 % Title left align
@@ -705,7 +711,7 @@ snippet et "simple emoji template" b
 
 % \tableofcontents
 
-\section{Emoji \emoji{rocket}}%
+\section{`!v expand("%:r")` \emoji{rocket} \emoji{rocket}}%
 \label{sec:emoji}
 
 \emoji{rocket}, Hello, Latex
@@ -714,6 +720,10 @@ endsnippet
 
 snippet lua "lualatex" b
 %!TEX program = lualatex
+endsnippet
+
+snippet use "usepackage" b
+\usepackage{$1}
 endsnippet
 
 # \pagenumbering{roman}
