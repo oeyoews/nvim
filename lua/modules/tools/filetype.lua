@@ -8,6 +8,7 @@ filetype.setup({
     },
     extensions = {
       service = "systemd",
+      -- norg = "norg",
       -- this plaintex fixed by vimtex
       -- tex = "tex",
     },
