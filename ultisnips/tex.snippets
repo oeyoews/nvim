@@ -425,7 +425,7 @@ endsnippet
 priority 100
 context "math()"
 snippet -> "to" iA
-\to
+\to $0
 endsnippet
 
 priority 200
@@ -693,6 +693,9 @@ snippet et "simple emoji template" bA
 \author{`echo $USER`}
 \date{`date +"%Y/%m/%d"`}
 
+\setemojifont{twemoji} % system font twemoji
+% \setemojifont{TwemojiMozilla.ttf}[Path=./fonts/]
+
 \begin{document}
 \maketitle
 
@@ -748,6 +751,11 @@ snippet gra "graphicx" b
 \usepackage{graphicx}
 endsnippet
 
+snippet emo "emoji" b
+\emoji{$0}
+endsnippet
+
+# [heading=true]{ctex} == ctexart, but not support emoji title
 # % just for cetxset, not support ctex package
 # % \ctexset { section = { format+={\raggedright } } }
 # \pagenumbering{roman}
