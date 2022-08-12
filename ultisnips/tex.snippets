@@ -14,9 +14,9 @@ def env(name):
 endglobal
 
 snippet beg "begin{} / end{}" bA
-\\begin{$1}
+\begin{$1}
 	$0
-\\end{$1}
+\end{$1}
 endsnippet
 
 priority 100
@@ -602,15 +602,13 @@ snippet DD "D" iA
 endsnippet
 
 snippet tt "simple template" bA
-%!TEX program = xelatex
+% !TEX program = xelatex
 % `!v expand("%")`
 \documentclass[UTF8]{article}
 
 % support cn, default is en
 % \usepackage{ctex}
 
-% Title left align
-% \ctexset { section = { format+={\raggedright } } }
 \title{${1:`!v expand("%:r")`}}
 \author{`echo $USER`}
 \date{`date +"%Y/%m/%d"`}
@@ -683,7 +681,7 @@ snippet ctex "ctex small" b
 endsnippet
 
 snippet et "simple emoji template" bA
-%!TEX program = lualatex
+% !TEX program = lualatex
 % `!v expand("%")`
 \documentclass[UTF8]{article}
 
@@ -691,7 +689,6 @@ snippet et "simple emoji template" bA
 % \usepackage{ctex}
 
 % Title left align
-% \ctexset { section = { format+={\raggedright } } }
 \title{${1:`!v expand("%:r")` \emoji{rocket}}}
 \author{`echo $USER`}
 \date{`date +"%Y/%m/%d"`}
@@ -723,8 +720,6 @@ snippet toc "tableofcontents" b
 \tableofcontents$0
 endsnippet
 
-# \pagenumbering{roman}
-
 snippet cover "cover" b
 \thispagestyle{empty}
 \clearpage
@@ -748,3 +743,11 @@ snippet align "align" b
 \begin{align}$0
 \end{align}
 endsnippet
+
+snippet gra "graphicx" b
+\usepackage{graphicx}
+endsnippet
+
+# % just for cetxset, not support ctex package
+# % \ctexset { section = { format+={\raggedright } } }
+# \pagenumbering{roman}
