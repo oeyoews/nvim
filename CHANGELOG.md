@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.42.1](https://gitlab.com/oeyoews/nvim/compare/v7.42.0...v7.42.1) (2022-08-12)
+
+
+### Bug Fixes
+
+* adjust updatsnapshot order ([9a99f58](https://gitlab.com/oeyoews/nvim/commit/9a99f58d7955e168f0ead88a843bbf83d81760af))
+
 # [7.42.0](https://gitlab.com/oeyoews/nvim/compare/v7.41.0...v7.42.0) (2022-08-10)
 
 
