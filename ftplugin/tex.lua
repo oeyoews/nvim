@@ -19,7 +19,7 @@ vim.opt_local.conceallevel = 2
 
 vim.keymap.set("n", "<space>lt", "<cmd>VimtexCompile<cr>", {
   silent = true,
-  desc = "",
+  desc = "Τ start vimtex",
 })
 
 vim.keymap.set("n", "<space>lp", "<cmd>VimtexView<cr>", {
@@ -38,13 +38,13 @@ vim.keymap.set("n", "<space>lT", "<cmd>VimtexStop<cr>", {
 vim.keymap.set("n", "<space>fl", "<cmd>VimtexTocToggle<cr>", {
   buffer = true,
   silent = true,
-  desc = "",
+  desc = "show vimtex toc",
 })
 
 vim.keymap.set("n", "<space>lE", "<cmd>VimtexErrors<cr>", {
   buffer = true,
   silent = true,
-  desc = "",
+  desc = "show latex error",
 })
 
 oeyoews.autocmd("InsertLeave", {
@@ -52,6 +52,7 @@ oeyoews.autocmd("InsertLeave", {
   group = oeyoews.mygroup,
   command = "update",
 })
+
 --[=[
 -- kill will broken this last position restore
 oeyoews.autocmd("VimLeave", {
@@ -73,17 +74,3 @@ function ask()
     end
   end)
 end
-
-vim.cmd([[
-function! ZathuraHook() abort
-  if exists('b:vimtex.viewer.xwin_id') && b:vimtex.viewer.xwin_id <= 0
-    silent call system('xdotool windowactivate ' . b:vimtex.viewer.xwin_id . ' --sync')
-    silent call system('xdotool windowraise ' . b:vimtex.viewer.xwin_id)
-  endif
-endfunction
-
-augroup vimrc_vimtex
-  autocmd!
-  autocmd User VimtexEventView call ZathuraHook()
-augroup END
-]])
