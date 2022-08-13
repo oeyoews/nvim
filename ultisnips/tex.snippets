@@ -653,12 +653,19 @@ snippet et "simple emoji template" bA
 \usepackage{emoji}
 
 %------------------------
+% settings
+%------------------------
+
+%------------------------
 % title
 %------------------------
 \title{${1:`!v expand("%:r")` \emoji{rocket}}}
 \author{`echo $USER`}
 \date{`date +"%Y/%m/%d"`}
 
+%------------------------
+% begin
+%------------------------
 \begin{document}
 
 Hello, \LaTeX{}. $0
