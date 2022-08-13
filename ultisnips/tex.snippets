@@ -606,12 +606,21 @@ snippet tt "simple template" bA
 % `!v expand("%")`
 \documentclass{article}
 
+%------------------------
+% usepackage
+%------------------------
+
+%------------------------
+% title
+%------------------------
 \title{${1:`!v expand("%:r")`}}
 \author{`echo $USER`}
 \date{`date +"%Y/%m/%d"`}
 
+%------------------------
+% begin
+%------------------------
 \begin{document}
-% \maketitle
 
 $0
 
@@ -632,23 +641,31 @@ snippet ctexcn "cn test" b
 endsnippet
 
 snippet et "simple emoji template" bA
+%------------------------
 % !TEX program = lualatex
 % `!v expand("%")`
+%------------------------
 \documentclass{article}
 
+%------------------------
+% usepackage
+%------------------------
 \usepackage{emoji}
-% \usepackage{ctex}
 
-% Title left align
+%------------------------
+% title
+%------------------------
 \title{${1:`!v expand("%:r")` \emoji{rocket}}}
 \author{`echo $USER`}
 \date{`date +"%Y/%m/%d"`}
 
 \begin{document}
-% \maketitle
 
 Hello, \LaTeX{}. $0
 
+%------------------------
+% end
+%------------------------
 \end{document}
 endsnippet
 
@@ -685,19 +702,16 @@ snippet equation "equation" b
 \end{equation}
 endsnippet
 
-# part of amsmath
-# use \\ to enter new line
-snippet align "align" b
-\begin{align}$0
-\end{align}
-endsnippet
-
 snippet gra "graphicx" b
 \usepackage{graphicx}
 endsnippet
 
 snippet emo "emoji" i
 \emoji{$0}
+endsnippet
+
+snippet maketitle "maketitle" b
+\maketitle
 endsnippet
 
 # [heading=true]{ctex} == ctexart, but not support emoji title

@@ -47,7 +47,11 @@ vim.keymap.set("n", "<space>lE", "<cmd>VimtexErrors<cr>", {
   desc = "show latex error",
 })
 
-oeyoews.autocmd("InsertLeave", {
+oeyoews.autocmd({
+  "InsertLeave",
+  "CursorHoldI",
+  "CursorHold",
+}, {
   pattern = "*.tex",
   group = oeyoews.mygroup,
   command = "update",
