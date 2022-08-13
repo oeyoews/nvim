@@ -606,9 +606,6 @@ snippet tt "simple template" bA
 % `!v expand("%")`
 \documentclass{article}
 
-% enable cn
-% \usepackage{ctex}
-
 \title{${1:`!v expand("%:r")`}}
 \author{`echo $USER`}
 \date{`date +"%Y/%m/%d"`}
@@ -646,9 +643,6 @@ snippet et "simple emoji template" bA
 \title{${1:`!v expand("%:r")` \emoji{rocket}}}
 \author{`echo $USER`}
 \date{`date +"%Y/%m/%d"`}
-
-\setemojifont{twemoji} % system font twemoji
-% \setemojifont{TwemojiMozilla.ttf}[Path=./fonts/]
 
 \begin{document}
 \maketitle
@@ -717,3 +711,9 @@ endsnippet
 # \graphicspath{{$HOME/REPOS/latex/src/img/}}
 # \graphicspath{{~/REPOS/latex/src/img/}}
 # \graphicspath{{img/}{logs/}}
+# % just support local twemoji font
+# % \setemojifont{twemoji} % system font twemoji
+# % \setemojifont{TwemojiMozilla.ttf}[Path={${HOME}/REPOS/latex/src/fonts/}]
+# % \setemojifont{TwemojiMozilla.ttf}[Path=./fonts/]
+# % enable cn
+# % \usepackage{ctex}
