@@ -55,15 +55,16 @@ oeyoews.autocmd({
   pattern = "*.tex",
   group = oeyoews.mygroup,
   command = "update",
+  -- command = "VimtexCompile",
 })
 
---[=[
+---[=[
 -- kill will broken this last position restore
 oeyoews.autocmd("VimLeave", {
   pattern = "*.tex",
   group = oeyoews.mygroup,
   -- default is silent? for this api? silent
-  command = "!killall okular", -- zathura
+  command = "!killall zathura", -- zathura
 })
 --]=]
 -- conflict cmp tab

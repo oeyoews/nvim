@@ -30,9 +30,6 @@ vim.g.vimtex_toc_config = {
   split_width = 25,
 }
 
--- preview plugin
--- vim.g.livepreview_cursorhold_recompile = false
-
 -- help docs
 -- zathura link default keys
 -- ref: https://defkey.com/zathura-shortcuts
@@ -45,11 +42,3 @@ vim.g.vimtex_syntax_conceal_disable = false
 vim.g.vimtex_quickfix_open_on_warning = false
 -- NOTE:pip install neovim-remote
 vim.g.vimtex_compiler_progname = "nvr"
-
---[=[ -- preview plugin
--- shortcage: cannot custom pdf dir, easyily black screen
-vim.g.livepreview_previewer = "zathura" -- okular zathura
--- not only with cursorhold
-vim.g.livepreview_cursorhold_recompile = false
-vim.g.livepreview_use_biber = true
-vim.g.livepreview_engine = "xelatex" --]=]
