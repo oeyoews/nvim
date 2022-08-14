@@ -45,7 +45,7 @@ snippet fig "Figure environment" b
 endsnippet
 
 # order list
-snippet enum "Enumerate" bA
+snippet enum "Enumerate" b
 \begin{enumerate}
 	\item $0
 \end{enumerate}
@@ -61,7 +61,7 @@ snippet pac "Package" b
 \usepackage[${1:options}]{${2:package}}$0
 endsnippet
 
-snippet => "implies" Ai
+snippet => "implies" i
 \implies
 endsnippet
 
@@ -89,7 +89,7 @@ ${1:${VISUAL}}
 .\] $0
 endsnippet
 
-snippet ali "Align" bA
+snippet ali "Align" b
 \begin{align*}
 	${1:${VISUAL}}
 .\end{align*}
@@ -166,34 +166,34 @@ snip.rv = subprocess.check_output(['wolframscript', '-code', code])
 `
 endsnippet
 
-snippet == "equals" iA
+snippet == "equals" i
 &= $1 \\\\
 endsnippet
 
-snippet != "equals" iA
+snippet != "equals" i
 \neq
 endsnippet
 
 context "math()"
-snippet ceil "ceil" iA
+snippet ceil "ceil" i
 \left\lceil $1 \right\rceil $0
 endsnippet
 
 context "math()"
-snippet floor "floor" iA
+snippet floor "floor" i
 \left\lfloor $1 \right\rfloor$0
 endsnippet
 
-snippet pmat "pmat" iA
+snippet pmat "pmat" i
 \begin{pmatrix} $1 \end{pmatrix} $0
 endsnippet
 
-snippet bmat "bmat" iA
+snippet bmat "bmat" i
 \begin{bmatrix} $1 \end{bmatrix} $0
 endsnippet
 
 context "math()"
-snippet () "left( right)" iA
+snippet () "left( right)" i
 \left( ${1:${VISUAL}} \right) $0
 endsnippet
 
@@ -221,12 +221,12 @@ snippet lr[ "left[ right]" i
 \left[ ${1:${VISUAL}} \right] $0
 endsnippet
 
-snippet lra "leftangle rightangle" iA
+snippet lra "leftangle rightangle" i
 \left<${1:${VISUAL}} \right>$0
 endsnippet
 
 context "math()"
-snippet conj "conjugate" iA
+snippet conj "conjugate" i
 \overline{$1}$0
 endsnippet
 
@@ -255,7 +255,7 @@ snippet part "d/dx" w
 endsnippet
 
 context "math()"
-snippet sq "\sqrt{}" iA
+snippet sq "\sqrt{}" i
 \sqrt{${1:${VISUAL}}} $0
 endsnippet
 
@@ -265,25 +265,25 @@ snippet sr "^2" i
 endsnippet
 
 context "math()"
-snippet cb "^3" iA
+snippet cb "^3" i
 ^3
 endsnippet
 
 context "math()"
-snippet td "to the ... power" iA
+snippet td "to the ... power" i
 ^{$1}$0
 endsnippet
 
 context "math()"
-snippet rd "to the ... power" iA
+snippet rd "to the ... power" i
 ^{($1)}$0
 endsnippet
 
-snippet __ "subscript" iA
+snippet __ "subscript" i
 _{$1}$0
 endsnippet
 
-snippet ooo "\infty" iA
+snippet ooo "\infty" i
 \infty
 endsnippet
 
@@ -291,41 +291,41 @@ snippet rij "mrij" i
 (${1:x}_${2:n})_{${3:$2}\\in${4:\\N}}$0
 endsnippet
 
-snippet <= "leq" iA
+snippet <= "leq" i
 \le
 endsnippet
 
-snippet >= "geq" iA
+snippet >= "geq" i
 \ge
 endsnippet
 
 context "math()"
-snippet EE "geq" iA
+snippet EE "geq" i
 \exists
 endsnippet
 
 context "math()"
-snippet AA "forall" iA
+snippet AA "forall" i
 \forall
 endsnippet
 
 context "math()"
-snippet xnn "xn" iA
+snippet xnn "xn" i
 x_{n}
 endsnippet
 
 context "math()"
-snippet ynn "yn" iA
+snippet ynn "yn" i
 y_{n}
 endsnippet
 
 context "math()"
-snippet xii "xi" iA
+snippet xii "xi" i
 x_{i}
 endsnippet
 
 context "math()"
-snippet yii "yi" iA
+snippet yii "yi" i
 y_{i}
 endsnippet
 
@@ -604,10 +604,14 @@ endsnippet
 snippet tt "simple template" bA
 % !TEX program = xelatex
 % `!v expand("%")`
-\documentclass{article}
+\documentclass[UTF8, 12pt, a4paper]{article}
 
 %------------------------
 % usepackage
+%------------------------
+
+%------------------------
+% settings
 %------------------------
 
 %------------------------
@@ -645,7 +649,7 @@ snippet et "simple emoji template" bA
 % !TEX program = lualatex
 % `!v expand("%")`
 %------------------------
-\documentclass{article}
+\documentclass[UTF8,12pt,a4paper]{article}
 
 %------------------------
 % usepackage
@@ -722,7 +726,7 @@ snippet maketitle "maketitle" b
 endsnippet
 
 snippet twemoji "twemoji" b
-\setemojifont{twemoji}
+\setemojifont{Twemoji Mozilla}
 endsnippet
 
 # [heading=true]{ctex} == ctexart, but not support emoji title
