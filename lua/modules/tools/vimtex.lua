@@ -1,18 +1,13 @@
--- fix plaintex to tex
-vim.g.tex_flavor = "latex"
--- this zathura need zathura plugin to support pdf
--- but it can' refresh with no toggle compile
--- zathura support preview refresh , but slow
+vim.g.tex_flavor = "latex" -- fix plaintex to tex
 vim.g.vimtex_view_general_viewer = "okular" -- this app can remember last position(killed cannot work)
--- NOTE:zathura not support wayland perfectly
-vim.g.vimtex_view_method = "zathura" -- this zoom have some bug
+vim.g.vimtex_view_method = "zathura" -- this zoom have some bug NOTE:zathura not support wayland perfectly this zathura need zathura plugin to support pdf
 vim.g.vimtex_quickfix_mode = false
 vim.g.tex_conceal = "abdmg"
 vim.g.vimtex_compiler_latexmk_engines = {
   ["_"] = "-xelatex",
 }
 vim.g.vimtex_compiler_latexmk = {
-  build_dir = "out_dir",
+  build_dir = "public",
 }
 vim.g.vimtex_compiler_latexmk = {
   options = {
@@ -40,5 +35,4 @@ vim.g.vimtex_toc_config = {
 vim.g.vimtex_syntax_enabled = true
 vim.g.vimtex_syntax_conceal_disable = false
 vim.g.vimtex_quickfix_open_on_warning = false
--- NOTE:pip install neovim-remote
-vim.g.vimtex_compiler_progname = "nvr"
+vim.g.vimtex_compiler_progname = "nvr" -- NOTE:pip install `neovim-remote`
