@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.42.3](https://gitlab.com/oeyoews/nvim/compare/v7.42.2...v7.42.3) (2022-08-15)
+
+
+### Bug Fixes
+
+* not lazyload vim-snippets for some snip.rv ([838239f](https://gitlab.com/oeyoews/nvim/commit/838239f03f818116e15d6a018a44b9a0971ee3ba))
+
 ## [7.42.2](https://gitlab.com/oeyoews/nvim/compare/v7.42.1...v7.42.2) (2022-08-15)
 
 
