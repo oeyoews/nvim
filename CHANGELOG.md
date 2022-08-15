@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.44.0](https://gitlab.com/oeyoews/nvim/compare/v7.43.0...v7.44.0) (2022-08-15)
+
+
+### Bug Fixes
+
+* use option replace global, and remove this directory settings ([df7f454](https://gitlab.com/oeyoews/nvim/commit/df7f454efcdee0a433ce0f00bff9428cfcdf81de))
+
+
+### Features
+
+* add directory to single string ([c289a46](https://gitlab.com/oeyoews/nvim/commit/c289a467a7e98bf76919dded9d3a7d72931e708f))
+
 # [7.43.0](https://gitlab.com/oeyoews/nvim/compare/v7.42.3...v7.43.0) (2022-08-15)
 
 
