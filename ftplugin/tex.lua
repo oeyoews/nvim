@@ -89,3 +89,12 @@ vim.keymap.set("n", "<space>lc", "<cmd>PasteImg<cr>", {
   silent = true,
   desc = "clipboard image",
 })
+
+-- https://boninall.com/p/86.html
+-- inkscape
+-- `pip install inkscape-figures`
+-- run inkscape-figures watch to save files automatically
+vim.cmd([[
+inoremap <C-f> <Esc>: silent exec '.!inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
+nnoremap <C-f> : silent exec '!inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>
+]])

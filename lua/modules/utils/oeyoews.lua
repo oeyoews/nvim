@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/11 15:38:56 by oeyoews                                  --
+--   Updated: 2022/08/15 17:50:43 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -49,6 +49,7 @@ oeyoews.options = {
 -- @servers @deprecated
 oeyoews.servers = {
   "sumneko_lua",
+  -- "texlab",
   -- "cmake",
   -- "gopls",
   -- "jsonls",
@@ -56,7 +57,6 @@ oeyoews.servers = {
   -- "bashls",
   -- "pylsp",
   -- "yamlls",
-  -- "texlab",
 }
 
 oeyoews.builtin = string.format("%s/builtin/", vim.fn.stdpath("config"))
