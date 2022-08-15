@@ -209,10 +209,14 @@ cmp.setup({
 -- this setup have some bug
 -- require("cmp_tabnine.config")
 
-vim.g.UltiSnipsSnippetDirectories = {
-  vim.fn.stdpath("data") .. "/site/pack/packer/start/vim-snippets/UltiSnips/",
-  vim.fn.stdpath("config") .. "/ultisnips/",
-}
+-- TODO: this default value is ultisnips, how to use apprend link this
+-- vim.fn.stdpath("data") .. "/site/pack/packer/start/vim-snippets/UltiSnips/",
+-- vim.g.UltiSnipsSnippetDirectories = {
+--   vim.fn.stdpath("config") .. "/ultisnips/",
+-- }
+
+-- default is enable
+vim.o.UltiSnipsEnableSnipMate = true
 
 oeyoews.autocmd("FileType", {
   pattern = "TelescopePrompt",
@@ -230,10 +234,6 @@ require("cmp_nvim_ultisnips").setup({
   --   return snippet.description
   -- end,
 })
-
--- vim.cmd([[
--- autocmd BufWritePost *.snippets :CmpUltisnipsReloadSnippets
--- ]])
 
 vim.g.UltiSnipsExpandTrigger = "<C-e>"
 -- vim.g.UltiSnipsJumpForwardTrigger = "<C-J>"
