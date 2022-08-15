@@ -47,69 +47,16 @@
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=FiraCode&color=63F3E1&vCenter=true&lines=A+personal+neovim+configuration" alt="Typing SVG" /></a>
 
-<h2> 📂 File Struct </h2>
-
-<details>
-<summary>File Tree</summary>
+<h2>  File Struct </h2>
 
 ```bash
-
-lua/
-├── modules
-│   ├── langs
-│   │   ├── cmp.lua
-│   │   ├── lspconfig.lua
-│   │   ├── lspsaga.lua
-│   │   ├── mason.lua
-│   │   ├── null-ls.lua
-│   │   ├── treesitter.lua
-│   │   └── trouble.lua
-│   ├── tools
-│   │   ├── comment.lua
-│   │   ├── gitsigns.lua
-│   │   ├── header42.lua
-│   │   ├── hop.lua
-│   │   ├── indent.lua
-│   │   ├── nvim_tree.lua
-│   │   ├── persistence.lua
-│   │   ├── quickrun.lua
-│   │   ├── ranger.lua
-│   │   ├── startup.lua
-│   │   ├── telescope.lua
-│   │   ├── trim.lua
-│   │   └── whichkey.lua
-│   ├── ui
-│   │   ├── bufferline.lua
-│   │   ├── custom_ui.lua
-│   │   ├── fidget.lua
-│   │   ├── notify.lua
-│   │   ├── tokyonight.lua
-│   │   └── web_icons.lua
-│   └── utils
-│       ├── autocmd.lua
-│       ├── bootstrap.lua
-│       ├── disable.lua
-│       ├── filetype.lua
-│       ├── functions.lua
-│       ├── mappings.lua
-│       ├── oeyoews.lua
-│       ├── options.lua
-│       ├── pluginlist.lua
-│       └── usercmd.lua
-└── user
-    ├── capabilities.lua
-    ├── fun.lua
-    ├── lazyload
-    │   ├── icon_picker.lua
-    │   ├── mkdp.lua
-    │   └── neorg.lua
-    ├── modules.lua
-    └── pcall.lua
-
-7 directories, 43 files
+├── 📂 modules
+│   ├── 📂langs
+│   ├── 📂tools
+│   ├── 📂ui
+│   └── 📂utils
+└── 📂user
 ```
-
-</details>
 
 <h2> ⬇️ Install </h2>
 
