@@ -50,6 +50,7 @@
 <h2>  File Struct </h2>
 
 ```bash
+📂 ~/.config/nvim/lua
 ├── 📂 modules
 │   ├── 📂langs
 │   ├── 📂tools
