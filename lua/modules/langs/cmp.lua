@@ -210,7 +210,7 @@ cmp.setup({
 -- require("cmp_tabnine.config")
 
 vim.g.UltiSnipsSnippetDirectories = {
-  vim.fn.stdpath("data") .. "/site/pack/packer/opt/vim-snippets/UltiSnips/",
+  vim.fn.stdpath("data") .. "/site/pack/packer/start/vim-snippets/UltiSnips/",
   vim.fn.stdpath("config") .. "/ultisnips/",
 }
 
@@ -225,15 +225,15 @@ oeyoews.autocmd("FileType", {
 
 require("cmp_nvim_ultisnips").setup({
   filetype_source = "treesitter",
-  show_snippets = "all",
+  -- show_snippets = "all",
   -- documentation = function(snippet)
   --   return snippet.description
   -- end,
 })
 
-vim.cmd([[
-autocmd BufWritePost *.snippets :CmpUltisnipsReloadSnippets
-]])
+-- vim.cmd([[
+-- autocmd BufWritePost *.snippets :CmpUltisnipsReloadSnippets
+-- ]])
 
 vim.g.UltiSnipsExpandTrigger = "<C-e>"
 -- vim.g.UltiSnipsJumpForwardTrigger = "<C-J>"

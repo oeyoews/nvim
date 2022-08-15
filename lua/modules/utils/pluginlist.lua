@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/15 09:29:41 by oeyoews                                  --
+--   Updated: 2022/08/15 09:59:12 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -105,10 +105,7 @@ oeyoews.pluginlist = {
       "quangnguyen30192/cmp-nvim-ultisnips",
       "hrsh7th/cmp-buffer",
       "SirVer/ultisnips",
-      {
-        "honza/vim-snippets",
-        opt = true,
-      },
+      "honza/vim-snippets",
       "hrsh7th/cmp-nvim-lsp",
       "hrsh7th/cmp-path",
       -- "kdheepak/cmp-latex-symbols",
