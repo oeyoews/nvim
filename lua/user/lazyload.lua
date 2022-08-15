@@ -22,8 +22,9 @@ end
 -- load markdown previews settings
 M.mkdp = function()
   local mkdp_options = {
+    mkdp_command_for_global = 0,
     mkdp_auto_close = 0,
-    mkdp_echo_preview_url = false,
+    mkdp_echo_preview_url = true,
     mkdp_port = 9999,
     mkdp_open_to_the_world = false, -- need network
     mkdp_theme = "dark",

@@ -217,7 +217,7 @@ vim.g.UltiSnipsSnippetDirectories = {
 }
 
 -- default is enable
-vim.o.UltiSnipsEnableSnipMate = true
+vim.g.UltiSnipsEnableSnipMate = 1
 
 oeyoews.autocmd("FileType", {
   pattern = "TelescopePrompt",
