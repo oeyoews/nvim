@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.43.0](https://gitlab.com/oeyoews/nvim/compare/v7.42.3...v7.43.0) (2022-08-15)
+
+
+### Features
+
+* load image for tex ([d004f34](https://gitlab.com/oeyoews/nvim/commit/d004f34c9a2850addae7460f091b0419a463791e))
+
 ## [7.42.3](https://gitlab.com/oeyoews/nvim/compare/v7.42.2...v7.42.3) (2022-08-15)
 
 
