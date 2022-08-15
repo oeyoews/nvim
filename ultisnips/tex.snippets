@@ -1,13 +1,17 @@
 # vim:ft=snippets
 
-snippet tmpl "simple template" b
-% !TEX program = xelatex
+snippet tmpl-lualatex "simple emoji template" b
+%------------------------
+% !TEX program = lualatex
 % `!v expand("%")`
-\documentclass[UTF8, 12pt, a4paper]{article}
+%------------------------
+\documentclass[UTF8,12pt,a4paper]{article}
 
 %------------------------
 % usepackage
 %------------------------
+\usepackage{
+}
 
 %------------------------
 % settings
@@ -24,125 +28,66 @@ snippet tmpl "simple template" b
 % begin
 %------------------------
 \begin{document}
-
 $0
-
-\end{document}
-endsnippet
-
-snippet ctexcn "cn test" b
-\section{滕王阁序}%
-\label{sec:滕王阁序}
-
-　　滕王高阁临江渚，佩玉鸣鸾罢歌舞。
-
-　　画栋朝飞南浦云，珠帘暮卷西山雨。
-
-　　闲云潭影日悠悠，物换星移几度秋。
-
-　　阁中帝子今何在？槛外长江空自流。
-endsnippet
-
-snippet et "simple emoji template" bA
-%------------------------
-% !TEX program = lualatex
-% `!v expand("%")`
-%------------------------
-\documentclass[UTF8,12pt,a4paper]{article}
-
-%------------------------
-% usepackage
-%------------------------
-\usepackage{emoji}
-
-%------------------------
-% settings
-%------------------------
-
-%------------------------
-% title
-%------------------------
-\title{${1:`!v expand("%:r")` \emoji{rocket}}}
-\author{`echo $USER`}
-\date{`date +"%Y/%m/%d"`}
-
-%------------------------
-% begin
-%------------------------
-\begin{document}
-
-Hello, \LaTeX{}. $0
-
 %------------------------
 % end
 %------------------------
 \end{document}
 endsnippet
 
-snippet lua "lualatex" b
+snippet lualatex "lualatex" b
 %!TEX program = lualatex
 endsnippet
 
+snippet xelatex "xelatex" b
+%!TEX program = xelatex
+endsnippet
+
 snippet use "usepackage" b
-\usepackage{$1}
+\usepackage{$0
+}
 endsnippet
 
 snippet -- "item" bA
 \item$1
 endsnippet
 
-snippet toc "tableofcontents" b
-\tableofcontents$0
-endsnippet
-
-snippet cover "cover" b
-\thispagestyle{empty}
-\clearpage
-\setcounter{page}{1}$0
-endsnippet
-
-snippet list "order list"
-\begin{enumerate}
-  $1
-\end{enumerate}
-endsnippet
-
-snippet equation "equation" b
-\begin{equation}$0
-\end{equation}
+snippet hyper "hyperref" b
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,}
 endsnippet
 
 snippet gra "graphicx" b
 \usepackage{graphicx}
+\graphicspath{{${1:img/}}}
 endsnippet
 
 snippet emo "emoji" i
 \emoji{$0}
 endsnippet
 
-snippet maketitle "maketitle" b
+snippet mkl-cover "maketitle" b
 \maketitle
+\thispagestyle{empty}
+\clearpage
+\tableofcontents$0
+\clearpage
 endsnippet
 
-snippet twemoji "twemoji" b
+snippet twemoji "set emoji font" b
 \setemojifont{Twemoji Mozilla}
 endsnippet
 
+snippet include "include" b
+\include{$0}
+endsnippet
+
 # [heading=true]{ctex} == ctexart, but not support emoji title
-# % just for cetxset, not support ctex package
 # % \ctexset { section = { format+={\raggedright } } }
 # \pagenumbering{roman}
-# \graphicspath{{${HOME}/REPOS/latex/src/img/}}
-# \graphicspath{{$HOME/REPOS/latex/src/img/}}
-# \graphicspath{{~/REPOS/latex/src/img/}}
-# \graphicspath{{img/}{logs/}}
 # % just support local twemoji font
 # % \setemojifont{twemoji} % system font twemoji
 # % \setemojifont{TwemojiMozilla.ttf}[Path={${HOME}/REPOS/latex/src/fonts/}]
 # % \setemojifont{TwemojiMozilla.ttf}[Path=./fonts/]
-# % enable cn
-# % \usepackage{ctex}
-
-# link color
 # https://tex.stackexchange.com/questions/306613/how-to-change-the-color-of-only-table-of-contents-from-red-to-black
 # \setcounter{tocdepth}{1}

@@ -79,3 +79,13 @@ function ask()
     end
   end)
 end
+
+vim.defer_fn(function()
+  vim.cmd([[PackerLoad clipboard-image.nvim]])
+end, 2000)
+
+vim.keymap.set("n", "<space>lc", "<cmd>PasteImg<cr>", {
+  buffer = true,
+  silent = true,
+  desc = "clipboard image",
+})
