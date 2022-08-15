@@ -1,16 +1,14 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+name: github-pages
 
 on:
   schedule:
     - cron: "30 16 * * *"
   # Runs on pushes targeting the default branch
-  push:
-    # tags:
-    # - v*
-    branches: ["nightly"]
-    # paths:
-    #   - "README.md"
+  # push:
+  # branches: ["nightly"]
+  # paths:
+  #   - "README.md"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
