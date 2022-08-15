@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.45.0](https://gitlab.com/oeyoews/nvim/compare/v7.44.0...v7.45.0) (2022-08-15)
+
+
+### Features
+
+* support inkscape ([cde61e3](https://gitlab.com/oeyoews/nvim/commit/cde61e34e3ebf7c5fa118a1b2dffe20a3d6b4c59))
+
 # [7.44.0](https://gitlab.com/oeyoews/nvim/compare/v7.43.0...v7.44.0) (2022-08-15)
 
 
