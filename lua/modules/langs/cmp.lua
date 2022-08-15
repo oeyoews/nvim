@@ -211,9 +211,10 @@ cmp.setup({
 
 -- TODO: this default value is ultisnips, how to use apprend link this
 -- vim.fn.stdpath("data") .. "/site/pack/packer/start/vim-snippets/UltiSnips/",
--- vim.g.UltiSnipsSnippetDirectories = {
---   vim.fn.stdpath("config") .. "/ultisnips/",
--- }
+vim.g.UltiSnipsSnippetDirectories = {
+  "UltiSnips",
+  vim.fn.stdpath("config") .. "/UltiSnips/",
+}
 
 -- default is enable
 vim.o.UltiSnipsEnableSnipMate = true
