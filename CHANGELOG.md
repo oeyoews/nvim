@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.42.2](https://gitlab.com/oeyoews/nvim/compare/v7.42.1...v7.42.2) (2022-08-15)
+
+
+### Bug Fixes
+
+* add load path, to use ultisnips, not default snippets directory and ([2a6e94a](https://gitlab.com/oeyoews/nvim/commit/2a6e94af65e6598b23d49d5098b528bcaa6f3280))
+
 ## [7.42.1](https://gitlab.com/oeyoews/nvim/compare/v7.42.0...v7.42.1) (2022-08-12)
 
 
