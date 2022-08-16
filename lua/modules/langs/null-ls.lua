@@ -14,9 +14,10 @@ local sources = {
   }),
   formatting.stylua, -- this is conflict for lsp, choice
   formatting.prettier,
-  formatting.latexindent.with({
-    extra_args = { "-c", "/tmp/" }, -- https://latexindentpl.readthedocs.io/en/latest/sec-how-to-use.html#from-the-command-line
-  }), -- need install texlive-latexindent-meta
+  -- formatting.latexindent,
+  --   .with({
+  --   -- extra_args = { "-c", "/tmp/" }, -- https://latexindentpl.readthedocs.io/en/latest/sec-how-to-use.html#from-the-command-line
+  -- }), -- need install texlive-latexindent-meta
   formatting.fixjson,
   formatting.clang_format,
   diagnostics.codespell.with({
