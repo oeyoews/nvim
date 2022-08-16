@@ -35,12 +35,8 @@ $0
 \end{document}
 endsnippet
 
-snippet lualatex "lualatex" b
-%!TEX program = lualatex
-endsnippet
-
-snippet xelatex "xelatex" b
-%!TEX program = xelatex
+snippet latex "latex engine" b
+%!TEX program = ${1:lualatex}
 endsnippet
 
 snippet use "usepackage" b
@@ -80,6 +76,24 @@ endsnippet
 
 snippet include "include" b
 \include{$0}
+endsnippet
+
+snippet tmplt "tmplt self" b
+\documentclass{article}
+
+\usepackage{import}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{xcolor}
+
+\newcommand{\incfig}[2][1]{%
+      \def\svgwidth{#1\columnwidth}
+      \import{./figures/}{#2.pdf_tex}
+}
+
+\begin{document}
+$0
+\end{document}
 endsnippet
 
 # [heading=true]{ctex} == ctexart, but not support emoji title
