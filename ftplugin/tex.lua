@@ -95,6 +95,7 @@ vim.keymap.set("n", "<space>li", "<cmd>PasteImg<cr>", {
 -- TODO: kill and start it and install check by pip
 -- `pip install inkscape-figures`
 -- run inkscape-figures watch to save files automatically
+-- rofi not support wayland
 vim.cmd([[
 inoremap <buffer> <C-f> <Esc>: silent exec '.!inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
 nnoremap <buffer> <space>lce :silent exec '!inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>

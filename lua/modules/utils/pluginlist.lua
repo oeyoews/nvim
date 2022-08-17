@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/15 09:59:12 by oeyoews                                  --
+--   Updated: 2022/08/17 08:12:53 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -23,10 +23,10 @@ oeyoews.pluginlist = {
   -- "xuhdev/vim-latex-live-preview",
   -- ft = "tex",
   -- },
-  {
-    "michaelb/sniprun",
-    run = "bash ./install.sh",
-  },
+  -- {
+  --   "michaelb/sniprun",
+  --   run = "bash ./install.sh",
+  -- },
   -- https://github.com/VonHeikemen/lsp-zero.nvim/wiki/Under-the-hood
   -- this lsp-zero recommended to read
   "neovim/nvim-lspconfig",
