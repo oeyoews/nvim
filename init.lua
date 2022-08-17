@@ -6,13 +6,13 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:04 by oeyoews                                  --
---   Updated: 2022/08/14 23:54:44 by oeyoews                                  --
+--   Updated: 2022/08/17 23:29:07 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
 -- just for linux, and no mac no test, so just support linux
 if vim.fn.has("linux") ~= 1 then
-  vim.notify("Please use neovim linux env")
+  vim.notify_once("Please use neovim in Linux ENV")
   return
 end
 
