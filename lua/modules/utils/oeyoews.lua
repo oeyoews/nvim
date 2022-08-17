@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/15 17:50:43 by oeyoews                                  --
+--   Updated: 2022/08/17 11:41:29 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -55,7 +55,7 @@ oeyoews.servers = {
   -- "jsonls",
   -- "vimls",
   -- "bashls",
-  -- "pylsp",
+  "pylsp",
   -- "yamlls",
 }
 
