@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/17 11:41:29 by oeyoews                                  --
+--   Updated: 2022/08/18 09:42:27 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -32,6 +32,7 @@ oeyoews.nvim_full_version_info =
 
 -- options
 oeyoews.options = {
+  enable_zen_mode = true,
   enable_clangd = true,
   -- @see lspconfig.lua
   enable_lsp = true,
@@ -43,7 +44,7 @@ oeyoews.options = {
   -- TODO: use keybinds to toggle this options in config
   -- @see modules.utils.bootstrap.lua
   -- @options: rolling.json, default.json, v1.0.0.json
-  snapshot = nil,
+  snapshot = "nightly.json",
 }
 
 -- @servers @deprecated

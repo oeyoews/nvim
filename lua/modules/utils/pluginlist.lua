@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/17 08:12:53 by oeyoews                                  --
+--   Updated: 2022/08/18 09:38:20 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -74,12 +74,7 @@ oeyoews.pluginlist = {
     config = [[require("modules.ui.indent")]],
   },
   -- bufferline
-  {
-    "akinsho/bufferline.nvim",
-    requires = {
-      "tiagovla/scope.nvim",
-    },
-  },
+  "akinsho/bufferline.nvim",
   -- treesitter
   {
     "nvim-treesitter/nvim-treesitter",
