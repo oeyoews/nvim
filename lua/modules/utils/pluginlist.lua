@@ -6,14 +6,14 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/18 09:38:20 by oeyoews                                  --
+--   Updated: 2022/08/18 10:40:51 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
 -- packerload is from this list load, if no add config for lazyload, it still not work,
 -- so better method is use ftplugin for some
 -- filetypes plugins
---   plugins list
+-- plugins list
 oeyoews.pluginlist = {
   -- not support lazyload
   "lervag/vimtex",
@@ -189,7 +189,7 @@ oeyoews.pluginlist = {
   oeyoews.builtin_plugin,
 }
 
---   mappings
+--  mappings
 vim.keymap.set("n", "<space>fp", function()
   return oeyoews.find_lua_file("lua/modules/utils/pluginlist")
 end, { desc = " pluginlist" })
