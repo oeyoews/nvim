@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.45.2](https://gitlab.com/oeyoews/nvim/compare/v7.45.1...v7.45.2) (2022-08-19)
+
+
+### Bug Fixes
+
+* use tsinstall! fix ([71390a6](https://gitlab.com/oeyoews/nvim/commit/71390a6e79b1149317dda48d757d2c2f7db8d75d))
+
 ## [7.45.1](https://gitlab.com/oeyoews/nvim/compare/v7.45.0...v7.45.1) (2022-08-19)
 
 
