@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/18 09:42:27 by oeyoews                                  --
+--   Updated: 2022/08/19 14:38:51 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -44,20 +44,21 @@ oeyoews.options = {
   -- TODO: use keybinds to toggle this options in config
   -- @see modules.utils.bootstrap.lua
   -- @options: rolling.json, default.json, v1.0.0.json
+  -- bug: always appear this tip
   snapshot = "nightly.json",
 }
 
 -- @servers @deprecated
 oeyoews.servers = {
   "sumneko_lua",
-  -- "texlab",
   -- "cmake",
+  -- "pylsp",
   -- "gopls",
   -- "jsonls",
   -- "vimls",
   -- "bashls",
-  "pylsp",
   -- "yamlls",
+  -- "texlab",
 }
 
 oeyoews.builtin = string.format("%s/builtin/", vim.fn.stdpath("config"))
