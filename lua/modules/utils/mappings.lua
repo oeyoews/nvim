@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/19 19:16:40 by oeyoews                                  --
+--   Updated: 2022/08/20 00:36:57 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -221,19 +221,18 @@ endif
 endfunction
 ]])
 
---   mappings
-vim.keymap.set("n", "<space>tz", function()
-  -- like callback
-  return vim.fn["Sline"]()
-end, {
-  desc = " toggle statusline",
-})
+-- vim.keymap.set("n", "<space>tz", function()
+--   -- like callback
+--   return vim.fn["Sline"]()
+-- end, {
+--   desc = " toggle statusline",
+-- })
 
---[=[ vim.keymap.set("n", "<space>tk", function()
+vim.keymap.set("n", "<space>tk", function()
   vim.cmd([[split | terminal]])
 end, {
   desc = "  terminal",
-}) --]=]
+})
 
 vim.keymap.set("n", "<space>fi", function()
   return oeyoews.find_lua_file("init")
