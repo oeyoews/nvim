@@ -50,3 +50,4 @@ packer_compiled.lua
 
 wget*
 /sessions/
+/.vscode/
