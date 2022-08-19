@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/19 14:38:51 by oeyoews                                  --
+--   Updated: 2022/08/19 19:16:49 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -45,7 +45,7 @@ oeyoews.options = {
   -- @see modules.utils.bootstrap.lua
   -- @options: rolling.json, default.json, v1.0.0.json
   -- bug: always appear this tip
-  snapshot = "nightly.json",
+  -- snapshot = "nightly.json",
 }
 
 -- @servers @deprecated

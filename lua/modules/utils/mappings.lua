@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/19 14:38:35 by oeyoews                                  --
+--   Updated: 2022/08/19 19:16:40 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -201,6 +201,7 @@ command! -nargs=1 -complete=highlight HI ene|pu=execute('hi <args>')
 -- functions
 vim.cmd([[
 function! Sline() abort
+" use lua to refactor, and store status"
 if &laststatus
 " setlocal signcolumn=no
 set laststatus=0
@@ -228,11 +229,11 @@ end, {
   desc = " toggle statusline",
 })
 
-vim.keymap.set("n", "<space>tk", function()
+--[=[ vim.keymap.set("n", "<space>tk", function()
   vim.cmd([[split | terminal]])
 end, {
   desc = "  terminal",
-})
+}) --]=]
 
 vim.keymap.set("n", "<space>fi", function()
   return oeyoews.find_lua_file("init")
