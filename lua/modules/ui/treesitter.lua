@@ -35,6 +35,7 @@ local terminal_colors = {
   "White",
 }
 
+-- note: if update query, have some error, please remove old different dir for parsers, such as vim
 local parser_install_dir = string.format("%s/parsers/", vim.fn.stdpath("data"))
 
 -- tips: tsmoduleinfo
