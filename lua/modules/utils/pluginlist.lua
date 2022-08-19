@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/18 10:40:51 by oeyoews                                  --
+--   Updated: 2022/08/19 19:55:25 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -17,12 +17,6 @@
 oeyoews.pluginlist = {
   -- not support lazyload
   "lervag/vimtex",
-
-  -- {
-  -- this plugin must lazyload, it's so slow
-  -- "xuhdev/vim-latex-live-preview",
-  -- ft = "tex",
-  -- },
   -- {
   --   "michaelb/sniprun",
   --   run = "bash ./install.sh",
@@ -103,12 +97,6 @@ oeyoews.pluginlist = {
       "honza/vim-snippets",
       "hrsh7th/cmp-nvim-lsp",
       "hrsh7th/cmp-path",
-      -- "kdheepak/cmp-latex-symbols",
-      -- completion
-      -- {
-      --   "tzachar/cmp-tabnine",
-      --   run = "./install.sh",
-      -- },
       -- "hrsh7th/cmp-copilot",
       -- "github/copilot.vim",
     },
