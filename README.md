@@ -32,19 +32,6 @@
 </div>
 <hr>
 
-# TOC
-
-<!-- toc -->
-
-- [🍾 Screenshots](#%F0%9F%8D%BE-screenshots)
-- [💡 What's that](#%F0%9F%92%A1-whats-that)
-- [🚀 Features](#%F0%9F%9A%80-features)
-- [✅ TODO](#%E2%9C%85-todo)
-- [📖 Wiki](#%F0%9F%93%96-wiki)
-- [🔗 Links](#%F0%9F%94%97-links)
-
-<!-- tocstop -->
-
 ## 🍾 Screenshots
 
 | <img src="img/n1.png" align="bottom" width=256/> | <img src="img/n2.png" align="bottom" width=256/> | <img src="img/n3.png" align="bottom" width=256/> |
