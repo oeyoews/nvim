@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.45.1](https://gitlab.com/oeyoews/nvim/compare/v7.45.0...v7.45.1) (2022-08-19)
+
+
+### Bug Fixes
+
+* disable tz(zenmode) ([f0fd011](https://gitlab.com/oeyoews/nvim/commit/f0fd011f5599b7522992465b6c57af45c6c9bf2a))
+
 # [7.45.0](https://gitlab.com/oeyoews/nvim/compare/v7.44.0...v7.45.0) (2022-08-15)
 
 
