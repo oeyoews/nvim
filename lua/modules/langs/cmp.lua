@@ -1,15 +1,23 @@
 local lspkind = require("lspkind")
 
-vim.g.UltiSnipsEditSplit = "vertical"
-vim.g.UltiSnipsJumpForwardTrigger = "<Plug>(ultisnips_jump_forward)"
+-- vim.cmd([[highlight default GH guifg=#3bb6c4 guibg=NONE]])
+-- TODO: learn use highlight group and cutsom_ui file
+-- https://github.com/hrsh7th/nvim-cmp/wiki/Menu-Appearance
+vim.cmd([[
+" highlight CmpItemKindDefault  guifg=#3bb6c4 guibg=NONE
+" highlight CmpItemMenu guifg=#9E79BE guibg=NONE
+highlight CmpItemKindSnippet  guifg=#3bb6c4 guibg=NONE
+]])
+
 -- can't use two mappings
 -- g.UltiSnipsJumpBackwardTrigger = '<Plug>(ultisnips_jump_backward)'
+vim.g.UltiSnipsEditSplit = "vertical"
+vim.g.UltiSnipsJumpForwardTrigger = "<Plug>(ultisnips_jump_forward)"
 
 local t = function(str)
   return vim.api.nvim_replace_termcodes(str, true, true, true)
 end
 
--- @nvim_cmp
 local _, cmp = pcall(require, "cmp")
 
 local function border(highlight)
@@ -33,33 +41,33 @@ local function border(highlight)
   }
 end
 
-local symbol_map = {
-  Text = "",
-  Method = "𝙢 ",
-  Function = "",
-  Constructor = "𝑪",
-  Field = "",
-  Variable = "",
-  Class = "𝓒",
-  Interface = "",
-  Module = "",
-  Property = "ﰠ",
-  Unit = "",
-  Value = "𝞮",
-  Enum = "",
-  Keyword = "",
-  Snippet = " ",
-  Color = "",
-  Reference = "",
-  File = "",
-  Folder = "",
-  EnumMember = "",
-  Constant = "",
-  Struct = "𝓢",
-  Event = "",
-  Operator = "",
-  TypeParameter = "𝙏",
-}
+-- local symbol_map = {
+--   Text = "",
+--   Method = "𝙢 ",
+--   Function = "",
+--   Constructor = "𝑪",
+--   Field = "",
+--   Variable = "",
+--   Class = "𝓒",
+--   Interface = "",
+--   Module = "",
+--   Property = "ﰠ",
+--   Unit = "",
+--   Value = "𝞮",
+--   Enum = "",
+--   Keyword = "",
+--   Snippet = "",
+--   Color = "",
+--   Reference = "",
+--   File = "",
+--   Folder = "",
+--   EnumMember = "",
+--   Constant = "",
+--   Struct = "𝓢",
+--   Event = "",
+--   Operator = "",
+--   TypeParameter = "𝙏",
+-- }
 
 local mapping = {
   -- ["<C-b>"] = cmp.mapping.scroll_docs(-4),
@@ -112,7 +120,6 @@ local mapping = {
 
 local sources = {
   -- { name = "copilot" },
-  -- { name = "cmp_tabnine" },
   {
     name = "nvim_lsp",
   },
@@ -132,18 +139,14 @@ local sources = {
   {
     name = "neorg",
   },
-  -- {
-  --   name = "latex_symbols",
-  -- },
 }
 
 local menu = {
-  nvim_lsp = "",
-  buffer = "",
-  ultisnips = "",
-  nvim_lua = " ",
-  path = "",
-  -- cmp_tabnine = "",
+  nvim_lsp = "(Lsp)",
+  buffer = "(Buffer)",
+  ultisnips = "(Snippet)",
+  nvim_lua = "(Lua)",
+  path = "(Path)",
 }
 
 cmp.setup({
@@ -177,13 +180,13 @@ cmp.setup({
   -- TODO: custom this prompt color
   formatting = {
     fields = {
-      "kind",
-      "abbr",
-      "menu",
+      "abbr", -- menu
+      "kind", -- icon
+      "menu", -- text
     },
     format = lspkind.cmp_format({
       -- https://code.visualstudio.com/api/references/icons-in-labels
-      symbol_map = symbol_map,
+      -- symbol_map = symbol_map,
       mode = "symbol",
       --mode = "symbol_text",
       maxwidth = 50,
@@ -236,8 +239,8 @@ require("cmp_nvim_ultisnips").setup({
   -- end,
 })
 
-vim.g.UltiSnipsExpandTrigger = "<C-e>"
 -- vim.g.UltiSnipsJumpForwardTrigger = "<C-J>"
+vim.g.UltiSnipsExpandTrigger = "<C-e>"
 vim.g.UltiSnipsJumpBackwardTrigger = "<C-K>"
 
 vim.keymap.set("n", "<space>ee", "<cmd>UltiSnipsEdit<cr>", {
