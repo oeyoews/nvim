@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/19 20:21:11 by oeyoews                                  --
+--   Updated: 2022/08/20 18:16:40 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -74,6 +74,7 @@ oeyoews.pluginlist = {
     -- checkhealth nvim-treesitter
     -- tsinstall! vim
     "nvim-treesitter/nvim-treesitter",
+    lock = true,
     run = ":TSUpdate",
     requires = {
       "p00f/nvim-ts-rainbow",
