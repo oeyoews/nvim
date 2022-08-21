@@ -21,7 +21,7 @@
 syn match twItalic /\/\/.\{-}\/\//
 syn match twBold /''.\{-}''/
 syn match twUnderline /__.\{-}__/
-syn match twStrikethrough /--.\{-}--/
+" syn match twStrikethrough /--.\{-}--/
 syn match twHighlight /@@.\{-}@@/
 syn match twNoFormatting /.{{{.\{-}}}}/
 syn region twNoFormatting start=/^{{{/ end=/^}}}/
@@ -59,14 +59,13 @@ hi def twItalic term=italic cterm=italic gui=italic
 hi def twBold term=bold cterm=bold gui=bold
 
 hi def link twUnderline Underlined
-hi def link twStrikethrough Ignore
+" hi def link twStrikethrough Ignore
 hi def link twHighlight Todo
 hi def link twNoFormatting Constant
 hi def link twTodo Todo
 hi def link twHeader Title
 hi def link twHeading Title
 hi def link twNumberList Title
-hi def link twComment Comment
 hi def link twList Structure
 hi def link twDefinitionListTerm Identifier
 hi def link twDefinitionListDescription String
@@ -74,3 +73,4 @@ hi def link twBlockquote Repeat
 hi def link twTable Label
 hi def link twLink Typedef
 hi def link twRawHtml PreProc
+hi def link twComment Comment
