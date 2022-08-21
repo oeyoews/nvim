@@ -2,7 +2,7 @@
 require("nvim-web-devicons").setup({
   override = {
     norg = {
-      icon = "",
+      icon = "", -- 
       color = "#5AB680",
       cterm_color = "67",
       name = "Norg",
@@ -32,7 +32,7 @@ require("nvim-web-devicons").setup({
       name = "Md",
     },
     tid = {
-      icon = "", -- 
+      icon = "", -- 
       color = "#5AB680",
       cterm_color = "57",
       name = "Tid",
