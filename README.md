@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="img/vim.png" alt="vim" align="center" width=144><hr>
+  <img src="img/vim-rainbow.png" alt="vim" align="center" width=144><hr>
   <h2>🇳  Neovim</h2>
   <p> 💡 A personal neovim configuration</p>
 	🏠 <a href="https://oeyoews.github.io/nvim">Home</a>&nbsp;
