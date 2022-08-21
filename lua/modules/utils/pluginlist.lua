@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/20 18:16:40 by oeyoews                                  --
+--   Updated: 2022/08/21 09:39:36 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -93,6 +93,7 @@ oeyoews.pluginlist = {
   -- cmp
   {
     "hrsh7th/nvim-cmp",
+    lock = true,
     requires = {
       "quangnguyen30192/cmp-nvim-ultisnips",
       "hrsh7th/cmp-buffer",

@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 10:42:39 by oeyoews                                  --
---   Updated: 2022/08/06 13:11:55 by oeyoews                                  --
+--   Updated: 2022/08/21 09:37:43 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -65,7 +65,7 @@ vim.keymap.set("n", "<space>lm", "<cmd>Mason<cr>", {
 oeyoews.autocmd("FileType", {
   group = oeyoews.mygroup,
   pattern = {
-    "mason.nvim",
+    "mason",
     "lspinfo",
     "null-ls-info",
   },
