@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/19 20:20:25 by oeyoews                                  --
+--   Updated: 2022/08/21 16:57:49 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -56,7 +56,7 @@ oeyoews.servers = {
   -- "gopls",
   -- "jsonls",
   -- "vimls",
-  -- "bashls",
+  "bashls",
   -- "yamlls",
   -- "texlab",
 }
