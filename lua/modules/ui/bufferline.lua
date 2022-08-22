@@ -5,7 +5,8 @@ require("bufferline").setup({
     end, --]=]
     -- For 2.)8.) - change he order of arguments to change the order in the string
     numbers = function(opts)
-      return string.format("%s", opts.ordinal)
+      -- return string.format("%s", opts.ordinal)
+      return string.format("%s•%s", opts.raise(opts.id), opts.lower(opts.ordinal))
     end,
   },
 })
