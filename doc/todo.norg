@@ -9,6 +9,7 @@ version: 0.0.11
 
 * TODO
 
+  - [ ] -complete=file/dir
   - [ ] add tid highlight like neorg
   - [ ] search current project files with neovim
   - [ ] learn use latex
