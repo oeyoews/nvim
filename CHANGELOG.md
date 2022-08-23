@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.47.1](https://gitlab.com/oeyoews/nvim/compare/v7.47.0...v7.47.1) (2022-08-23)
+
+
+### Bug Fixes
+
+* remove lspsaga ([235003f](https://gitlab.com/oeyoews/nvim/commit/235003f70f968357ec8ee31afc9fb6a40cfa77cd))
+
 # [7.47.0](https://gitlab.com/oeyoews/nvim/compare/v7.46.0...v7.47.0) (2022-08-23)
 
 
