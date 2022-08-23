@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.47.0](https://gitlab.com/oeyoews/nvim/compare/v7.46.0...v7.47.0) (2022-08-23)
+
+
+### Features
+
+* add vim-illutxxx v2 and toggler ([df7ac73](https://gitlab.com/oeyoews/nvim/commit/df7ac73fdd161da37531f0d38c90c66e1f2908da))
+
 # [7.46.0](https://gitlab.com/oeyoews/nvim/compare/v7.45.2...v7.46.0) (2022-08-23)
 
 
