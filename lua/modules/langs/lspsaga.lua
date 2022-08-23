@@ -1,46 +1,25 @@
 local lspsaga = require("lspsaga")
 
--- make it generalize in settings
-lspsaga.setup = lspsaga.init_lsp_saga
-
-lspsaga.setup({
-  saga_winblend = 0,
-  move_in_saga = { prev = "<C-p>", next = "<C-n>" },
-  show_diagnostic_source = true,
-  diagnostic_source_bracket = {},
-  -- winbar have many bugs
-  symbol_in_winbar = {
-    enable = false,
-    separator = " ⇒ ",
-    show_file = true,
-    click_support = false, -- bug
-  },
-  show_outline = {
-    win_position = "right",
-    win_with = "",
-    win_width = 30,
-    auto_enter = true,
-    auto_preview = true,
-    virt_text = "┃",
-    jump_key = "o",
-    -- auto refresh when change buffer
-    auto_refresh = true,
-  },
-  code_action_num_shortcut = true,
-  -- code_action_icon = "💡",
-  -- diagnostic_header = { " ", " ", " ", "ﴞ " }, -- this not work, maybe order, but another is normal
-  code_action_lightbulb = {
-    enable = false,
+lspsaga.setup({ -- defaults ...
+  debug = false,
+  use_saga_diagnostic_sign = true,
+  -- diagnostic sign
+  error_sign = "",
+  warn_sign = "",
+  hint_sign = "",
+  infor_sign = "",
+  diagnostic_header_icon = "   ",
+  -- code action title icon
+  code_action_icon = " ",
+  code_action_prompt = {
+    enable = true,
     sign = true,
-    sign_priority = 20,
+    sign_priority = 40,
     virtual_text = true,
   },
-  max_preview_lines = 20,
-  finder_icons = {
-    def = " ",
-    ref = "諭",
-    link = " ",
-  },
+  finder_definition_icon = "  ",
+  finder_reference_icon = "  ",
+  max_preview_lines = 10,
   finder_action_keys = {
     open = "o",
     vsplit = "s",
@@ -53,35 +32,19 @@ lspsaga.setup({
     quit = "q",
     exec = "<CR>",
   },
-  rename_action_quit = "q",
+  rename_action_keys = {
+    quit = "<C-c>",
+    exec = "<CR>",
+  },
   definition_preview_icon = "  ",
-  border_style = "bold",
-})
-
-vim.keymap.set("n", "<space>le", "<cmd>Lspsaga code_action<cr>", {
-  desc = " intelligent code tip",
-})
-
-vim.keymap.set("n", "<space>gk", "<cmd>Lspsaga hover_doc<cr>", {
-  desc = " hover lsp doc",
-})
-
-vim.keymap.set("n", "gr", "<cmd>Lspsaga rename<cr>", {
-  desc = "✏ lsp rename",
-})
-
-vim.keymap.set("n", "<space>gs", "<cmd>Lspsaga signature_help<cr>", {
-  desc = " signature_help",
-})
-vim.keymap.set("n", "<leader>cd", "<cmd>Lspsaga show_line_diagnostics<CR>", {
-  silent = true,
-  noremap = true,
-})
-vim.keymap.set("n", "[e", "<cmd>Lspsaga diagnostic_jump_next<CR>", {
-  silent = true,
-  noremap = true,
-})
-vim.keymap.set("n", "]e", "<cmd>Lspsaga diagnostic_jump_prev<CR>", {
-  silent = true,
-  noremap = true,
+  border_style = "single",
+  rename_prompt_prefix = "➤",
+  rename_output_qflist = {
+    enable = false,
+    auto_open_qflist = false,
+  },
+  server_filetype_map = {},
+  diagnostic_prefix_format = "%d. ",
+  diagnostic_message_format = "%m %c",
+  highlight_prefix = false,
 })
