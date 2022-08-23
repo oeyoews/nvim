@@ -9,6 +9,10 @@ version: 0.0.11
 
 * TODO
 
+  - [ ] add toggler for checkbox
+  @code lua
+  getcurrentline setline find rep, find modified
+  @end
   - [ ] -complete=file/dir
   - [ ] add tid highlight like neorg
   - [ ] search current project files with neovim
