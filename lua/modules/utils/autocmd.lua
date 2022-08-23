@@ -91,7 +91,7 @@ oeyoews.autocmd({
   callback = function()
     if oeyoews.options.enable_startuptime then
       vim.cmd([[
-    autocmd User StartupTimeSaved echomsg "  Neovim loaded configuration in" g:saved_startuptime.startup.mean "ms"
+    autocmd User StartupTimeSaved echomsg "Neovim loaded configuration in" g:saved_startuptime.startup.mean "ms"
     ]])
     end
   end,

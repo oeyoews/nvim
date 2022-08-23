@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/08/23 10:53:08 by oeyoews                                  --
+--   Updated: 2022/08/23 20:28:43 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -62,6 +62,7 @@ M.files = {
     "trim", -- delete any blank line and trailing whitespace
     "ranger", -- use ranger in neovim
     "vimtex",
+    "toggler",
   },
 }
 
