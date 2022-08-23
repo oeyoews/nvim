@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/23 21:23:05 by oeyoews                                  --
+--   Updated: 2022/08/23 21:44:56 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -37,7 +37,7 @@ oeyoews.pluginlist = {
   "thinca/vim-quickrun",
   "phaazon/hop.nvim",
   "jose-elias-alvarez/null-ls.nvim",
-  "oeyoews/lspsaga.nvim",
+  -- "oeyoews/lspsaga.nvim",
   "lewis6991/impatient.nvim",
   "nathom/filetype.nvim",
   -- TODO:use tabnew to update plugin, to solve cannot async
