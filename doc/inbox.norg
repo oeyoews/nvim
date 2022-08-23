@@ -9,7 +9,7 @@ version: 0.0.11
 
 * INBOX
 
-   -  this special set noreadonly and modifyable to edit it convenient
+  - [ ] this special set noreadonly and modifyable to edit it convenient
 
 #comment
    vim:tw=100:ft=norg:norl:nu

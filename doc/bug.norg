@@ -9,8 +9,8 @@ version: 0.0.11
 
 * BUG
 
-   - load norg files from telescope, this highlight is unnormal
-   - this bdelete is bug for second table page
+  - [ ] load norg files from telescope, this highlight is unnormal
+  - [ ] this bdelete is bug for second table page
 
 #comment
    vim:tw=100:ft=norg:norl:nu

@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 10:42:39 by oeyoews                                  --
---   Updated: 2022/08/21 09:37:43 by oeyoews                                  --
+--   Updated: 2022/08/23 09:56:58 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -58,7 +58,7 @@ require("mason-lspconfig").setup({
 
 --   mappings
 vim.keymap.set("n", "<space>lm", "<cmd>Mason<cr>", {
-  desc = "𝓜  ﯓShow mason",
+  desc = "ﯓ Show mason",
 })
 
 -- cmd

@@ -9,7 +9,6 @@ oeyoews.autocmd("FileType", {
     "qf",
     "quickrun",
     "snippets",
-    "tsplayground",
   },
   callback = function()
     vim.keymap.set("n", "q", "<cmd>q<cr>", {
@@ -82,3 +81,30 @@ oeyoews.autocmd("BufEnter", {
   pattern = "*",
   command = "set fo-=c fo-=r fo-=o",
 })
+
+-- add load plugins
+---[=[
+oeyoews.autocmd({
+  "VimEnter",
+}, {
+  group = oeyoews.mygroup,
+  callback = function()
+    vim.cmd([[
+    autocmd User StartupTimeSaved echomsg " neovim startuptime is" g:saved_startuptime.startup.mean "ms"
+    " #vim.tbl_keys(packer_plugins)
+    " StartupTime --save saved_startuptime --hidden
+    ]])
+  end,
+})
+--]=]
+
+-- 'echomsg " neovim startuptime is" g:saved_startuptime.startup.mean "ms"',
+--[=[ vim.api.nvim_create_user_command(
+  "StartupTimeSaved",
+  'echomsg " neovim startuptime is" g:saved_startuptime.startup.mean "ms" && StartupTime --save saved_startuptime --hidden ',
+  {}
+) --]=]
+
+vim.defer_fn(function()
+  vim.cmd([[StartupTime --save saved_startuptime --hidden]])
+end, 100)

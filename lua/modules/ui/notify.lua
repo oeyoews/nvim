@@ -17,6 +17,7 @@ notify.setup({
   },
 })
 
+-- setlocal wrap
 vim.keymap.set("n", "<space>mn", function()
   return require("telescope").extensions.notify.notify()
 end, {
