@@ -73,9 +73,3 @@ oeyoews.creat_tid = function(tid_name)
 end
 
 require("modules.utils.usercmd")
-require("modules.utils.usercmd")
-require("modules.utils.usercmd")
-require("modules.utils.usercmd")
-require("modules.utils.usercmd")
-require("modules.utils.usercmd")
-require("modules.utils.usercmd")
