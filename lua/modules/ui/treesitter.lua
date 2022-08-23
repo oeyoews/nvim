@@ -78,7 +78,7 @@ nvim_treesitter_configs.setup({
     },
   },
   -- plugin: playground
-  playground = {
+  --[=[ playground = {
     enable = true,
     disable = {},
     updatetime = 25, -- Debounced time for highlighting nodes in the playground from source code
@@ -95,7 +95,7 @@ nvim_treesitter_configs.setup({
       goto_node = "<cr>",
       show_help = "?",
     },
-  },
+  }, --]=]
 })
 
 vim.opt.foldmethod = "expr"
