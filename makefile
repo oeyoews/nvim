@@ -1,2 +1,6 @@
+CMD = nvim
+FILE = test/minimal.vim
+ARG = "-N -u"
+
 run:
-	nvim -N -u test/minimal.vim
+	$CMD $ARG $FILE
