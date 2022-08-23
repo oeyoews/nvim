@@ -83,17 +83,21 @@ oeyoews.autocmd("BufEnter", {
 })
 
 -- add load plugins
+---[=[
 oeyoews.autocmd({
   "VimEnter",
 }, {
   group = oeyoews.mygroup,
   callback = function()
-    vim.cmd([[
-    autocmd User StartupTimeSaved echomsg " neovim startuptime is" g:saved_startuptime.startup.mean "ms"
+    if oeyoews.options.enable_startuptime then
+      vim.cmd([[
+    autocmd User StartupTimeSaved echomsg "  Neovim loaded configuration in" g:saved_startuptime.startup.mean "ms"
     ]])
+    end
   end,
 })
 
 vim.defer_fn(function()
   vim.cmd([[StartupTime --save saved_startuptime --hidden]])
 end, 100)
+--]=]
