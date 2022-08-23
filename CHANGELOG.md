@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.46.0](https://gitlab.com/oeyoews/nvim/compare/v7.45.2...v7.46.0) (2022-08-23)
+
+
+### Features
+
+* support showtime ([2c0798d](https://gitlab.com/oeyoews/nvim/commit/2c0798d307cdc0e857bcf84cd7a16f7c3308851c))
+
 ## [7.45.2](https://gitlab.com/oeyoews/nvim/compare/v7.45.1...v7.45.2) (2022-08-19)
 
 
