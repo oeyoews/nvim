@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/23 20:46:48 by oeyoews                                  --
+--   Updated: 2022/08/23 21:22:23 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -15,7 +15,10 @@
 -- filetypes plugins
 -- plugins list
 oeyoews.pluginlist = {
-  "RRethy/vim-illuminate",
+  {
+    "RRethy/vim-illuminate",
+    lock = true,
+  },
   "nguyenvukhang/nvim-toggler",
   -- not support lazyload
   "lervag/vimtex",
