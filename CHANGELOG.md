@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.48.0](https://gitlab.com/oeyoews/nvim/compare/v7.47.1...v7.48.0) (2022-08-23)
+
+
+### Features
+
+* add checkbox for markdown ([348f2b4](https://gitlab.com/oeyoews/nvim/commit/348f2b4e30fe881641b16d4ed9c3862050332c21))
+
 ## [7.47.1](https://gitlab.com/oeyoews/nvim/compare/v7.47.0...v7.47.1) (2022-08-23)
 
 
