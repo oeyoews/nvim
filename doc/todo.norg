@@ -9,6 +9,7 @@ version: 0.0.11
 
 * TODO
 
+  - [ ] add tid highlight like neorg
   - [ ] search current project files with neovim
   - [ ] learn use latex
   - [ ] crate treesitter highlight for tid
