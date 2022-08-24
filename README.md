@@ -63,7 +63,7 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 
 [TODO](doc/todo.norg)
 
-## 📖 Wiki
+## 📖 Wiki(WIP)
 
 - For more details, please read the code or check this [nvim wiki](https://gitlab.com/oeyoews/nvim/-/wikis/home)
 
@@ -72,21 +72,3 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 - [neovimcraft](https://neovimcraft.com/)
 - [news](https://this-week-in-neovim.org/latest)
 - [awesome](https://github.com/rockerBOO/awesome-neovim)
-
-<!-- ## deprecated -->
-  <!-- - [neovim form](https://neovim.discourse.group) -->
-  <!-- - [emmylua comment](https://emmylua.github.io/zh_CN/annotation.html) -->
-<!-- <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/oeyoews/nvim?color=cyan&logo=github&logoColor=violet&style=flat-square"> -->
-<!-- <img src="https://img.shields.io/badge/Desktop-Gnome-blueviolet.svg?style=flat-square&logo=gnome&color=90E59A&logoColor=cyan" alt="desktop"> -->
-<!-- <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/oeyoews/nvim?label=Size&logo=git&style=flat-square"> -->
-<!-- <img src="https://img.shields.io/badge/GIT-Yes-green.svg?style=flat-square&logo=git&label=GIT" alt="git"> -->
-<!-- <img src="https://img.shields.io/badge/Shell-zsh-white.svg?style=flat-square&logo=Gnu-Bash&logoColor=9ECE6A&color=BB9AF7" alt="shell"> -->
-<!-- | <img src="img/07.png" align="bottom" width=256/> | <img src="img/08.png" align="bottom" width=256/> | <img src="img/09.png" align="bottom" width=256/> | -->
-<!-- <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/oeyoews/nvim?color=cyan&logo=github&logoColor=cyan&style=flat-square"> -->
-<!-- <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/oeyoews/nvim?color=green&logo=github&logoColor=cyan&style=flat-square"> -->
-<!-- <img src="https://img.shields.io/badge/Sync-Yes-blueviolet.svg?style=flat-square&logo=gitlab&color=90E59A&logoColor=green" alt="sync"> -->
-<!-- <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/oeyoews/nvim?logo=github&logoColor=cyan&style=flat-square"> -->
-<!-- <img src="https://img.shields.io/github/directory-file-count/oeyoews/nvim?color=green&label=Files&logo=Gnu&logoColor=violet&style=flat-square" alt="files"> -->
-<!-- <img src="https://img.shields.io/badge/System-Linux-white.svg?style=flat-square&logo=linux&logoColor=cyan&color=BB9AF7" alt="system"> -->
-<!-- <img src="https://img.shields.io/badge/Github-Yes-green.svg?style=flat-square&logo=github&label=Github&logoColor=cyan" alt="github"> -->
-<!-- <img src="https://img.shields.io/badge/Gitlab-Yes-ffcc00.svg?style=flat-square&logo=gitlab&label=Gitlab" alt="gitlab"> -->
