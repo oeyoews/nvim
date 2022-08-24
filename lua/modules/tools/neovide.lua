@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/24 20:42:20 by oeyoews                                  --
---   Updated: 2022/08/24 20:54:46 by oeyoews                                  --
+--   Updated: 2022/08/25 07:42:22 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -19,9 +19,10 @@ if vim.g.neovide then
   vim.g.gui_font_default_size = 24
   vim.g.gui_font_size = vim.g.gui_font_default_size
   vim.g.gui_font_face = "Cascadia Mono"
-  vim.g.neovide_scroll_animation_length = 0.3
+  vim.g.neovide_scroll_animation_length = 0.01
+  vim.g.neovide_cursor_animation_length = 0.03
   vim.g.neovide_fullscreen = true
-  vim.g.neovide_confirm_quit = true
+  vim.g.neovide_confirm_quit = true -- conflict sys
   vim.g.neovide_remember_window_size = true
 
   RefreshGuiFont = function()
