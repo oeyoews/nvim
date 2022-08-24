@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.49.0](https://gitlab.com/oeyoews/nvim/compare/v7.48.1...v7.49.0) (2022-08-24)
+
+
+### Features
+
+* support tid comment ([b863751](https://gitlab.com/oeyoews/nvim/commit/b86375116b03600076d3cab5bb2ca6246c2bfac1))
+
 ## [7.48.1](https://gitlab.com/oeyoews/nvim/compare/v7.48.0...v7.48.1) (2022-08-24)
 
 
