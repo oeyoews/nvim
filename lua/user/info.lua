@@ -24,6 +24,7 @@ end
 
 -- get_neovim_info
 M.setup = function()
+  vim.cmd([[StartupTime --save saved_startuptime --hidden]])
   local builtin = #oeyoews.builtin_plugin
   local total_plugins = #vim.tbl_keys(packer_plugins) - builtin
   local fmt_msg = string.format(

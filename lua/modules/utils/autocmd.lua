@@ -97,7 +97,7 @@ oeyoews.autocmd({
   end,
 })
 
-vim.defer_fn(function()
-  vim.cmd([[StartupTime --save saved_startuptime --hidden]])
-end, 100)
+-- vim.defer_fn(function()
+--   vim.cmd([[StartupTime --save saved_startuptime --hidden]])
+-- end, 100)
 --]=]
