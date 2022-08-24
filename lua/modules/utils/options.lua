@@ -11,6 +11,8 @@ end
 vim.g.python3_host_prog = "/usr/bin/python3"
 
 local default_options = {
+  -- set guifont=Fira\ Code\:h24
+  guifont = "Cascadia Mono:h24",
   -- https://stackoverflow.com/questions/5136902/vim-textwidth-has-no-effect
   -- formatoptions
   textwidth = 80,

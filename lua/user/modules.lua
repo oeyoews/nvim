@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/08/23 20:28:43 by oeyoews                                  --
+--   Updated: 2022/08/24 20:38:38 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -52,6 +52,7 @@ M.files = {
 
   -- @TOOLS
   tools = {
+    "neovide",
     "trouble",
     "comment",
     "filetype",
