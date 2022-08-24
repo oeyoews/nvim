@@ -30,17 +30,14 @@ snippet list "~ list" b
 ~ $1
 endsnippet
 
-snippet tt "norg header" bA
+snippet tmpl "norg header" bA
 @document.meta
 title: `!v expand("%:r")`
 description:
 authors: `echo $USER`
 categories: default
-created:  `date +"%Y-%m-%d %H:%M:%S"`
+created:  `date +"%Y-%m-%d"`
 version: 0.0.1
 @end
-
-= TOC
-
 $1
 endsnippet
