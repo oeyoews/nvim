@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/23 16:29:21 by oeyoews                                  --
+--   Updated: 2022/08/24 16:05:29 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -48,7 +48,7 @@ oeyoews.options = {
   -- @see modules.utils.bootstrap.lua
   -- @options: rolling.json, default.json, v1.0.0.json
   -- bug: always appear this tip
-  -- snapshot = "cursor_treesitter_cmp_bug_20220818.json",
+  snapshot = "20220824.json5",
 }
 
 -- @servers @deprecated
@@ -59,7 +59,7 @@ oeyoews.servers = {
   -- "gopls",
   -- "jsonls",
   -- "vimls",
-  "bashls",
+  -- "bashls",
   -- "yamlls",
   -- "texlab",
 }
