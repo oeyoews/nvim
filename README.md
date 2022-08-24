@@ -10,11 +10,6 @@
 </div>
 
 <div align="center">
-<!-- <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/oeyoews/nvim?color=cyan&logo=github&logoColor=violet&style=flat-square"> -->
-<!-- <img src="https://img.shields.io/badge/Desktop-Gnome-blueviolet.svg?style=flat-square&logo=gnome&color=90E59A&logoColor=cyan" alt="desktop"> -->
-<!-- <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/oeyoews/nvim?label=Size&logo=git&style=flat-square"> -->
-<!-- <img src="https://img.shields.io/badge/GIT-Yes-green.svg?style=flat-square&logo=git&label=GIT" alt="git"> -->
-<!-- <img src="https://img.shields.io/badge/Shell-zsh-white.svg?style=flat-square&logo=Gnu-Bash&logoColor=9ECE6A&color=BB9AF7" alt="shell"> -->
 <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/oeyoews/nvim?color=cyan&logo=github&logoColor=cyan&style=flat-square">
 <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/oeyoews/nvim?color=green&logo=github&logoColor=cyan&style=flat-square">
 <img src="https://img.shields.io/badge/Sync-Yes-blueviolet.svg?style=flat-square&logo=gitlab&color=90E59A&logoColor=green" alt="sync">
@@ -50,7 +45,7 @@
 
 <h2>  File Struct </h2>
 
-```bash
+```zsh
 📂 ~/.config/nvim/lua
 ├── 📂 modules
 │   ├── 📂langs
@@ -84,8 +79,15 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 
 ## 🔗 Links
 
-- [neovim form](https://neovim.discourse.group)
-- [emmylua comment](https://emmylua.github.io/zh_CN/annotation.html)
 - [neovimcraft](https://neovimcraft.com/)
 - [news](https://this-week-in-neovim.org/latest)
 - [awesome](https://github.com/rockerBOO/awesome-neovim)
+
+<!-- ## deprecated -->
+  <!-- - [neovim form](https://neovim.discourse.group) -->
+  <!-- - [emmylua comment](https://emmylua.github.io/zh_CN/annotation.html) -->
+<!-- <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/oeyoews/nvim?color=cyan&logo=github&logoColor=violet&style=flat-square"> -->
+<!-- <img src="https://img.shields.io/badge/Desktop-Gnome-blueviolet.svg?style=flat-square&logo=gnome&color=90E59A&logoColor=cyan" alt="desktop"> -->
+<!-- <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/oeyoews/nvim?label=Size&logo=git&style=flat-square"> -->
+<!-- <img src="https://img.shields.io/badge/GIT-Yes-green.svg?style=flat-square&logo=git&label=GIT" alt="git"> -->
+<!-- <img src="https://img.shields.io/badge/Shell-zsh-white.svg?style=flat-square&logo=Gnu-Bash&logoColor=9ECE6A&color=BB9AF7" alt="shell"> -->
