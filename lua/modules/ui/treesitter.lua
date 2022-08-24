@@ -15,6 +15,7 @@ end ]]
 local disable_filetypes = {
   -- "python", "yml",
   -- "tex",
+  -- "js",
 }
 local rainbow_colors = {
   "#F7768E",
@@ -57,6 +58,7 @@ nvim_treesitter_configs.setup({
     -- parser name
     disable = {
       "latex",
+      "javascript",
     },
     additional_vim_regex_highlighting = false,
   },
