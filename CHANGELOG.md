@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.52.0](https://gitlab.com/oeyoews/nvim/compare/v7.51.0...v7.52.0) (2022-08-24)
+
+
+### Features
+
+* enable persistence ([0227a65](https://gitlab.com/oeyoews/nvim/commit/0227a657d5ee2aece38bc07b545ba19711a31a9d))
+
 # [7.51.0](https://gitlab.com/oeyoews/nvim/compare/v7.50.0...v7.51.0) (2022-08-24)
 
 
