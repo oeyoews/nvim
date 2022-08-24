@@ -10,10 +10,11 @@ oeyoews.lazyload.mkdp()
 -- vim.cmd([[MarkdownPreview]])
 
 --- markdown checkbox
+-- TODO: add word boundary
 local checked_character = "x"
 
-local checked_checkbox = "%[" .. checked_character .. "%]"
-local unchecked_checkbox = "%[ %]"
+local checked_checkbox = "- %[" .. checked_character .. "%] "
+local unchecked_checkbox = "- %[ %] "
 
 local line_contains_an_unchecked_checkbox = function(line)
   return string.find(line, unchecked_checkbox)
