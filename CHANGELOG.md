@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.50.0](https://gitlab.com/oeyoews/nvim/compare/v7.49.0...v7.50.0) (2022-08-24)
+
+
+### Features
+
+* add oeyoews.username ([679853f](https://gitlab.com/oeyoews/nvim/commit/679853f4d95d4d9347f5bae76e59bf56a3adc1e8))
+
 # [7.49.0](https://gitlab.com/oeyoews/nvim/compare/v7.48.1...v7.49.0) (2022-08-24)
 
 
