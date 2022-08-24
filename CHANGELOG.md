@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.51.0](https://gitlab.com/oeyoews/nvim/compare/v7.50.0...v7.51.0) (2022-08-24)
+
+
+### Features
+
+* support neovide ([1d8629d](https://gitlab.com/oeyoews/nvim/commit/1d8629d5b78a53d5a37c4c9bb89cb13807ee7369))
+
 # [7.50.0](https://gitlab.com/oeyoews/nvim/compare/v7.49.0...v7.50.0) (2022-08-24)
 
 
