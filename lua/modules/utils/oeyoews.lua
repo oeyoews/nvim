@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/24 19:50:06 by oeyoews                                  --
+--   Updated: 2022/08/25 07:04:52 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -34,7 +34,7 @@ oeyoews.nvim_full_version_info =
 
 -- options
 oeyoews.options = {
-  enable_session = false,
+  enable_session = true,
   enable_startuptime = true,
   enable_zen_mode = true,
   enable_clangd = true,

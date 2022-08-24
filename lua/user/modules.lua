@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/08/24 20:38:38 by oeyoews                                  --
+--   Updated: 2022/08/25 07:03:23 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -57,7 +57,7 @@ M.files = {
     "comment",
     "filetype",
     "header42",
-    -- "persistence", -- conflict startuptime
+    "persistence", -- conflict startuptime
     "hop", -- jump anywhere
     "whichkey", -- show your key bindings
     "trim", -- delete any blank line and trailing whitespace

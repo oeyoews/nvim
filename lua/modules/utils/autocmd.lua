@@ -82,6 +82,7 @@ oeyoews.autocmd("BufEnter", {
   command = "set fo-=c fo-=r fo-=o",
 })
 
+-- TODO: put in vim-startuptime config file
 -- add load plugins
 ---[=[
 oeyoews.autocmd({
