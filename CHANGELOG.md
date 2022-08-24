@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.48.1](https://gitlab.com/oeyoews/nvim/compare/v7.48.0...v7.48.1) (2022-08-24)
+
+
+### Bug Fixes
+
+* disable js ([211e1c7](https://gitlab.com/oeyoews/nvim/commit/211e1c76ed293fd06ada02b1996f005b53d68602))
+
 # [7.48.0](https://gitlab.com/oeyoews/nvim/compare/v7.47.1...v7.48.0) (2022-08-23)
 
 
