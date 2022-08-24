@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/08/24 18:03:25 by oeyoews                                  --
+--   Updated: 2022/08/24 19:50:06 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -14,6 +14,7 @@
 oeyoews = {}
 
 oeyoews.home = os.getenv("HOME")
+oeyoews.username = os.getenv("USER")
 
 -- extra binary
 oeyoews.mason = {}

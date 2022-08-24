@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:04 by oeyoews                                  --
---   Updated: 2022/08/24 01:44:29 by oeyoews                                  --
+--   Updated: 2022/08/24 19:25:25 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -24,5 +24,5 @@ local pcall2 = require("user.pcall")
 local files = Config.files
 local modules = Config.modules
 
--- ﱤ load modules
+--  load modules
 pcall2.setup(modules, files)

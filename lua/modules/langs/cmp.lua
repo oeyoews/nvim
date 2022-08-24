@@ -13,6 +13,7 @@ highlight CmpItemKindSnippet  guifg=#3bb6c4 guibg=NONE
 -- g.UltiSnipsJumpBackwardTrigger = '<Plug>(ultisnips_jump_backward)'
 vim.g.UltiSnipsEditSplit = "vertical"
 vim.g.UltiSnipsJumpForwardTrigger = "<Plug>(ultisnips_jump_forward)"
+vim.g.snips_author = oeyoews.username
 
 local t = function(str)
   return vim.api.nvim_replace_termcodes(str, true, true, true)
