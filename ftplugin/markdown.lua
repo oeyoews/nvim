@@ -48,7 +48,7 @@ local toggle = function()
   vim.api.nvim_win_set_cursor(0, cursor)
 end
 
-vim.keymap.set("n", "<space>", function()
+vim.keymap.set("n", "<space><space>", function()
   toggle()
 end, {
   buffer = true,

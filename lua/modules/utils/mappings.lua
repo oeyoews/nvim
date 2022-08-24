@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/20 00:36:57 by oeyoews                                  --
+--   Updated: 2022/08/24 11:08:43 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -16,7 +16,7 @@ vim.g.mapleader = " "
 local keymappings_set = {}
 
 --  @not use this silent = true
-vim.keymap.set({ "n", "v" }, "<space><space>", ":", {
+vim.keymap.set({ "n", "v" }, "<space>h<space>", ":", {
   desc = " cmd mode",
 })
 keymappings_set = {

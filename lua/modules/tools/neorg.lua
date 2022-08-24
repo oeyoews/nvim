@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/06 12:49:48 by oeyoews                                  --
---   Updated: 2022/08/06 13:26:32 by oeyoews                                  --
+--   Updated: 2022/08/24 11:12:05 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -82,7 +82,7 @@ M.setup = function()
     ["gtc"] = "cancelled",
     ["gtr"] = "recurring",
     ["gti"] = "important",
-    ["gt<space>"] = "cycle",
+    ["<space>"] = "cycle",
     -- no uncertain
     -- note: this cmd is not work for uncertain, because no this cmd
   }
