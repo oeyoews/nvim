@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.53.0](https://gitlab.com/oeyoews/nvim/compare/v7.52.0...v7.53.0) (2022-08-25)
+
+
+### Features
+
+* add ideavimrc ([0c77ee8](https://gitlab.com/oeyoews/nvim/commit/0c77ee8c4b208de6f35fddfc779d9770eb0e50c0))
+
 # [7.52.0](https://gitlab.com/oeyoews/nvim/compare/v7.51.0...v7.52.0) (2022-08-24)
 
 
