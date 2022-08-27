@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.53.1](https://gitlab.com/oeyoews/nvim/compare/v7.53.0...v7.53.1) (2022-08-27)
+
+
+### Bug Fixes
+
+* remove vim-table-mode ([55d6e0d](https://gitlab.com/oeyoews/nvim/commit/55d6e0d0a5962a76cd204d1ff59c5ff039f8d1fc))
+
 # [7.53.0](https://gitlab.com/oeyoews/nvim/compare/v7.52.0...v7.53.0) (2022-08-25)
 
 
