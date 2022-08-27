@@ -1,6 +1,6 @@
 local lspkind = require("lspkind")
 
--- bug: this markdown_inline.snippets bug
+-- bug: this markdown_inline.snippets bug like ```bash ``` or `xxx` ???
 -- vim.cmd([[highlight default GH guifg=#3bb6c4 guibg=NONE]])
 -- TODO: learn use highlight group and cutsom_ui file
 -- https://github.com/hrsh7th/nvim-cmp/wiki/Menu-Appearance
