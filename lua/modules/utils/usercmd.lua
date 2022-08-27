@@ -6,11 +6,11 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/03 10:48:36 by oeyoews                                  --
---   Updated: 2022/08/23 22:19:32 by oeyoews                                  --
+--   Updated: 2022/08/27 10:11:35 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
----[[ ---
+--[[ ---
 -- get this complist file list
 vim.api.nvim_create_user_command("EditTid", function(opts)
   return oeyoews.creat_tid(opts.args)
