@@ -1,4 +1,3 @@
-vim.cmd("packadd vim-table-mode")
 vim.cmd("packadd clipboard-image.nvim")
 -- this will cause multi times tos open every md files, because it's not a lua plugin
 vim.cmd([[
