@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/24 16:01:57 by oeyoews                                  --
+--   Updated: 2022/08/27 17:47:42 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -19,6 +19,7 @@ local keymappings_set = {}
 -- vim.keymap.set({ "n", "v" }, "<space>h<space>", ":", {
 --   desc = " cmd mode",
 -- })
+
 keymappings_set = {
   -- tex
   {
