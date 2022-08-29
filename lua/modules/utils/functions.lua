@@ -56,20 +56,4 @@ oeyoews.creat_journey = function(ft)
   vim.cmd(([[edit %s]]):format(journey))
 end
 
---- creat_tid
--- TODO: add hightligh
----@param tid_name string
-oeyoews.creat_tid = function(tid_name)
-  -- add just no parameter to return
-  local ft = ".tid"
-  local prefix = "REPOS/TiddlyWiki5/tiddlers/neovim_created"
-  local tid_path = string.format("%s/%s/", oeyoews.home, prefix)
-  if vim.fn.isdirectory(tid_path) == 1 then
-    local tid_full_path = tid_path .. tid_name .. ft
-    vim.cmd(([[edit %s]]):format(tid_full_path))
-  else
-    vim.notify("THis directory is empty")
-  end
-end
-
 require("modules.utils.usercmd")
