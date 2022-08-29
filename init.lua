@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:04 by oeyoews                                  --
---   Updated: 2022/08/29 19:46:13 by oeyoews                                  --
+--   Updated: 2022/08/29 21:01:22 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -27,6 +27,7 @@ local modules = Config.modules
 --  load modules
 pcall2.setup(modules, files)
 
+-- TODO: tidy
 --- tiddlywiki
 vim.g.tiddlywiki_dir = oeyoews.home .. "/REPOS/neotw"
 vim.g.tiddlywiki_author = oeyoews.username -- default is $user

@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/29 20:23:50 by oeyoews                                  --
+--   Updated: 2022/08/29 21:00:56 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -22,7 +22,7 @@ oeyoews.pluginlist = {
   "oeyoews/rnvimr",
   "cappyzawa/trim.nvim",
   "thinca/vim-quickrun",
-  "sukima/vim-tiddlywiki",
+  "sukima/vim-tiddlywiki", -- note: this maybe can't load be web browser
   "phaazon/hop.nvim",
   "jose-elias-alvarez/null-ls.nvim",
   "lewis6991/impatient.nvim",
@@ -32,12 +32,12 @@ oeyoews.pluginlist = {
   "stevearc/dressing.nvim",
   "j-hui/fidget.nvim",
   "folke/lua-dev.nvim",
-  "folke/trouble.nvim", 
+  "folke/trouble.nvim",
   {
     "ziontee113/icon-picker.nvim",
     keys = {
       "<space>ie",
-    }, 
+    },
     config = [[oeyoews.lazyload.emoji()]],
     opt = true,
   },
@@ -135,7 +135,7 @@ oeyoews.pluginlist = {
     run = "cd app && npm install",
   },
   "wbthomason/packer.nvim",
-  oeyoews.builtin_plugin, 
+  oeyoews.builtin_plugin,
 }
 
 --  mappings
