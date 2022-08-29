@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.54.3](https://gitlab.com/oeyoews/nvim/compare/v7.54.2...v7.54.3) (2022-08-29)
+
+
+### Bug Fixes
+
+* use tag to fix neorg version ([a11f053](https://gitlab.com/oeyoews/nvim/commit/a11f0532b0d56bdc149f97b4e281caa8c5c0a91e))
+
 ## [7.54.2](https://gitlab.com/oeyoews/nvim/compare/v7.54.1...v7.54.2) (2022-08-29)
 
 
