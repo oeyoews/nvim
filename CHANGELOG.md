@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.54.0](https://gitlab.com/oeyoews/nvim/compare/v7.53.1...v7.54.0) (2022-08-29)
+
+
+### Features
+
+* add vim-tiddlywiki(have filetype bug) ([b26a2af](https://gitlab.com/oeyoews/nvim/commit/b26a2af10f41e8aff7df6659bb7cfcf5d068b111))
+
 ## [7.53.1](https://gitlab.com/oeyoews/nvim/compare/v7.53.0...v7.53.1) (2022-08-27)
 
 
