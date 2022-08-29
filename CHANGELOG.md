@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.54.1](https://gitlab.com/oeyoews/nvim/compare/v7.54.0...v7.54.1) (2022-08-29)
+
+
+### Bug Fixes
+
+* this hf map is error ([b7c34b5](https://gitlab.com/oeyoews/nvim/commit/b7c34b56aa574c44c1458fa99772ffde25686150))
+
 # [7.54.0](https://gitlab.com/oeyoews/nvim/compare/v7.53.1...v7.54.0) (2022-08-29)
 
 
