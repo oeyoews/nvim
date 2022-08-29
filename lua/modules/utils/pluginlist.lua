@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/27 18:38:55 by oeyoews                                  --
+--   Updated: 2022/08/29 20:02:11 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -15,6 +15,7 @@
 -- filetypes plugins
 -- plugins list
 oeyoews.pluginlist = {
+  "sukima/vim-tiddlywiki",
   "nguyenvukhang/nvim-toggler",
   -- not support lazyload
   "lervag/vimtex",

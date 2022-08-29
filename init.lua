@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:04 by oeyoews                                  --
---   Updated: 2022/08/24 20:38:46 by oeyoews                                  --
+--   Updated: 2022/08/29 19:46:13 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -26,3 +26,12 @@ local modules = Config.modules
 
 --  load modules
 pcall2.setup(modules, files)
+
+--- tiddlywiki
+vim.g.tiddlywiki_dir = oeyoews.home .. "/REPOS/neotw"
+vim.g.tiddlywiki_author = oeyoews.username -- default is $user
+vim.g.tiddlywiki_autoupdate = true
+
+vim.cmd([[
+let g:tiddlywiki_journal_format = '%A, %F (Week %V)'
+]])
