@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/27 17:47:42 by oeyoews                                  --
+--   Updated: 2022/08/29 20:28:16 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -308,16 +308,4 @@ vim.keymap.set("n", "<space>lr", "<cmd>SnipRun<cr>", {
 vim.keymap.set("v", "<space>lr", "<Plug>SnipRun", {
   silent = true,
   desc = "run code",
-})
-
-vim.keymap.set("n", "<space>hf", function()
-  local ft = vim.fn.expand("%:e")
-  if #ft ~= 0 then
-    return vim.notify(" " .. ft, "info", {
-      title = "Filetype",
-    })
-  end
-end, {
-  silent = true,
-  desc = " show filetype",
 })
