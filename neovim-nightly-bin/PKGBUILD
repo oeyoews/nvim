@@ -1,0 +1,15 @@
+# Maintainer: oeyoews <jyao4783@gmail.com>
+pkgname=nvim
+pkgver=0.8
+pkgrel=1
+pkgdesc="neovim nightly"
+arch=(x86_64)
+url="https://neovim.io"
+license=('APL')
+conflicts=("neovim")
+source=("https://github.com/neovim/neovim/releases/download/nightly/nvim-linux64.deb")
+md5sums=('SKIP')
+
+package() {
+	bsdtar -xf data.tar.gz -C "$pkgdir/"
+}

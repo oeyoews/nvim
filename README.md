@@ -50,6 +50,12 @@
 - NOTE: just support nightly
 - install pynvim and nightly neovim and clone this repository
 
+### Install neovim nightly
+
+```bash
+cd Neovim-nightly-bin && make
+```
+
 ```bash
 # please backup your ~/.config/nvim folder or your nvim configuration firstly
 cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
