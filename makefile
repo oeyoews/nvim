@@ -7,3 +7,7 @@ SODTWARN = "ranger neovim"
 
 run:
 	$CMD $ARG $FILE
+
+# install neovim nightly
+install-neovim-nightly-bin:
+	cd neovim-nightly-bin; makepkg; sudo pacman -U nvim*.zst
