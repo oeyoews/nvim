@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/30 08:41:41 by oeyoews                                  --
+--   Updated: 2022/08/30 18:16:52 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -54,7 +54,7 @@ oeyoews.pluginlist = {
   "akinsho/bufferline.nvim",
   {
     "nvim-treesitter/nvim-treesitter", -- nvim-treesitter bug: checkhealth nvim-treesitter, and execute tsinstall! vim
-    lock = true,
+    -- lock = true,
     run = ":TSUpdate",
     requires = {
       "p00f/nvim-ts-rainbow",
