@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/30 18:16:52 by oeyoews                                  --
+--   Updated: 2022/08/30 22:28:16 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -15,6 +15,7 @@
 -- filetypes plugins
 -- plugins list
 oeyoews.pluginlist = {
+  "gaoDean/autolist.nvim",
   "nguyenvukhang/nvim-toggler",
   "lervag/vimtex", -- not support lazyload
   "neovim/nvim-lspconfig",

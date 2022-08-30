@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:04 by oeyoews                                  --
---   Updated: 2022/08/30 22:10:32 by oeyoews                                  --
+--   Updated: 2022/08/30 22:30:43 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -31,3 +31,6 @@ pcall2.setup(modules, files)
 --- tiddlywiki
 vim.g.tiddlywiki_dir = oeyoews.home .. "/REPOS/neotw/"
 vim.g.tiddlywiki_autoupdate = true
+
+--- autolist
+require("autolist").setup({})
