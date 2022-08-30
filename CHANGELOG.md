@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.55.0](https://gitlab.com/oeyoews/nvim/compare/v7.54.3...v7.55.0) (2022-08-30)
+
+
+### Features
+
+* add install nightly neovim ([196aa0e](https://gitlab.com/oeyoews/nvim/commit/196aa0ec2dc5ae37489b912d2ceb1d2305d96c78))
+
 ## [7.54.3](https://gitlab.com/oeyoews/nvim/compare/v7.54.2...v7.54.3) (2022-08-29)
 
 
