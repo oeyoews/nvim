@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/29 22:30:40 by oeyoews                                  --
+--   Updated: 2022/08/30 08:41:41 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -123,7 +123,7 @@ oeyoews.pluginlist = {
   },
   {
     "nvim-neorg/neorg",
-    tag = "0.0.12",
+    -- tag = "0.0.12",
     opt = true,
   },
   {
