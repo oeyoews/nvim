@@ -31,6 +31,7 @@ version: 0.0.11
    - if check this help file vanilla.norg, this will cause not edit open again
    - this nvim-treesitter parser instal path is parser folder in default
    - lazyload is not usefull for me
+   - %!awk '{print; sum+=$1 }END{print sum}' sum
 
 #comment
    vim:tw=100:ft=norg:norl:nu

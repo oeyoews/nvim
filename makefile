@@ -9,5 +9,6 @@ run:
 	$CMD $ARG $FILE
 
 # install neovim nightly
+# note to remove /usr/local/bin
 install-neovim-nightly-bin:
 	cd neovim-nightly-bin; makepkg; sudo pacman -U nvim*.zst
