@@ -1,11 +1,11 @@
 # Maintainer: oeyoews <jyao4783@gmail.com>
 pkgname=nvim
-pkgver=0.8
-pkgrel=1
-pkgdesc="neovim nightly"
+pkgver=0.8+dev
+pkgrel=2
+pkgdesc="neovim nightly personaly"
 arch=(x86_64)
 url="https://neovim.io"
-license=('APL')
+license=('custom:neovim')
 conflicts=("neovim")
 source=("https://github.com/neovim/neovim/releases/download/nightly/nvim-linux64.deb")
 md5sums=('SKIP')
