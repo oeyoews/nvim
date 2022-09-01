@@ -32,7 +32,9 @@ return function(dt, goal, state, frequency, damping)
     local i = cos(angular_freq * c * dt)
     local j = sin(angular_freq * c * dt)
 
-    new_pos = (i * offset + j * (cur_vel + damping * angular_freq * offset) / (angular_freq * c)) * decay + goal
+    new_pos = (i * offset + j * (cur_vel + damping * angular_freq * offset) / (angular_freq * c))
+        * decay
+      + goal
     new_vel = (i * c * cur_vel - j * (cur_vel * damping + angular_freq * offset)) * decay / c
   else -- overdamped
     local c = sqrt(damping * damping - 1)

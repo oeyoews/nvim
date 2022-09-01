@@ -9,6 +9,7 @@ version: 0.0.11
 
 * TODO
 
+  - [-] notify highlight markdown error
   - [ ] add better nvim pkgbuild
   - [ ] add toggler for checkbox
   @code lua

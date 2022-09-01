@@ -33,7 +33,8 @@ function M.blend(fg_hex, bg_hex, alpha)
   local segment = 0xFF0000
   local result = 0
   for i = 2, 0, -1 do
-    local blended = alpha * rshift(band(fg_hex, segment), i * 8) + (1 - alpha) * rshift(band(bg_hex, segment), i * 8)
+    local blended = alpha * rshift(band(fg_hex, segment), i * 8)
+      + (1 - alpha) * rshift(band(bg_hex, segment), i * 8)
 
     result = bor(lshift(result, 8), floor((min(max(blended, 0), 255)) + 0.5))
     segment = rshift(segment, 8)

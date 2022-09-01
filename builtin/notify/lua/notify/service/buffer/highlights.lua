@@ -137,7 +137,10 @@ function NotifyBufHighlights:_redefine_treesitter()
 end
 
 function NotifyBufHighlights:set_opacity(alpha)
-  if not self._treesitter_redefined and vim.api.nvim_buf_get_option(self.buffer, "filetype") ~= "notify" then
+  if
+    not self._treesitter_redefined
+    and vim.api.nvim_buf_get_option(self.buffer, "filetype") ~= "notify"
+  then
     self:_redefine_treesitter()
   end
   self.opacity = alpha
@@ -147,7 +150,8 @@ function NotifyBufHighlights:set_opacity(alpha)
     vim.api.nvim_set_hl(0, group, updated_fields)
     local hl_string = ""
     if fields.foreground then
-      hl_string = "guifg=#" .. string.format("%06x", util.blend(fields.foreground, background, alpha / 100))
+      hl_string = "guifg=#"
+        .. string.format("%06x", util.blend(fields.foreground, background, alpha / 100))
     end
     if fields.background then
       hl_string = hl_string

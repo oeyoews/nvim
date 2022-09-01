@@ -108,7 +108,8 @@ function NotificationBuf:render()
   for _, line in pairs(lines) do
     width = math.max(width, vim.str_utfindex(line))
   end
-  local success, extmarks = pcall(api.nvim_buf_get_extmarks, buf, render_namespace, 0, #lines, { details = true })
+  local success, extmarks =
+    pcall(api.nvim_buf_get_extmarks, buf, render_namespace, 0, #lines, { details = true })
   if not success then
     extmarks = {}
   end
@@ -143,5 +144,7 @@ end
 ---@param notification Notification
 ---@return NotificationBuf
 return function(buf, notification, opts)
-  return NotificationBuf:new(vim.tbl_extend("keep", { buffer = buf, notif = notification }, opts or {}))
+  return NotificationBuf:new(
+    vim.tbl_extend("keep", { buffer = buf, notif = notification }, opts or {})
+  )
 end

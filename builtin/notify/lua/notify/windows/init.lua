@@ -59,6 +59,11 @@ function WindowAnimator:push_pending(queue)
     end
     win_opts.noautocmd = true
     local win = util.open_win(notif_buf, false, win_opts)
+    vim.fn.setwinvar(
+      win,
+      "&winhl",
+      "Normal:" .. notif_buf.highlights.body .. ",FloatBorder:" .. notif_buf.highlights.border
+    )
     self.win_stages[win] = 2
     self.win_states[win] = {}
     self.notif_bufs[win] = notif_buf
@@ -242,7 +247,14 @@ function WindowAnimator:apply_updates()
   for win, states in pairs(self.win_states) do
     updated = true
     if states.opacity then
-      self.notif_bufs[win].highlights:set_opacity(states.opacity.position)
+      local notif_buf = self.notif_bufs[win]
+      notif_buf.highlights:set_opacity(states.opacity.position)
+
+      vim.fn.setwinvar(
+        win,
+        "&winhl",
+        "Normal:" .. notif_buf.highlights.body .. ",FloatBorder:" .. notif_buf.highlights.border
+      )
     end
     local exists, conf = util.get_win_config(win)
     if not exists then
@@ -253,7 +265,8 @@ function WindowAnimator:apply_updates()
         if not states[field] then
           return
         end
-        local new_value = round_field and max(round(states[field].position), 1) or states[field].position
+        local new_value = round_field and max(round(states[field].position), 1)
+          or states[field].position
         if new_value == conf[field] then
           return
         end

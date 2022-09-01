@@ -3,11 +3,12 @@ pkgname=nvim
 pkgver=0.8+dev
 pkgrel=2
 pkgdesc="neovim nightly personaly"
-arch=(x86_64)
+arch=('x86_64')
 url="https://neovim.io"
 license=('custom:neovim')
 conflicts=("neovim")
-source=("https://github.com/neovim/neovim/releases/download/nightly/nvim-linux64.deb")
+filename="nvim-linux64.deb"
+source=("https://github.com/neovim/neovim/releases/download/nightly/$filename")
 md5sums=('SKIP')
 
 package() {

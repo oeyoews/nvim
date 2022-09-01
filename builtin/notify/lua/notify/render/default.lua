@@ -8,7 +8,9 @@ return function(bufnr, notif, highlights, config)
   end, notif.message))))
   local right_title = notif.title[2]
   local left_title = notif.title[1]
-  local title_accum = vim.str_utfindex(left_icon) + vim.str_utfindex(right_title) + vim.str_utfindex(left_title)
+  local title_accum = vim.str_utfindex(left_icon)
+    + vim.str_utfindex(right_title)
+    + vim.str_utfindex(left_title)
 
   local left_buffer = string.rep(" ", math.max(0, max_message_width - title_accum))
 
@@ -31,7 +33,10 @@ return function(bufnr, notif, highlights, config)
   api.nvim_buf_set_extmark(bufnr, namespace, 1, 0, {
     virt_text = {
       {
-        string.rep("━", math.max(vim.str_utfindex(left_buffer) + title_accum + 2, config.minimum_width())),
+        string.rep(
+          "━",
+          math.max(vim.str_utfindex(left_buffer) + title_accum + 2, config.minimum_width())
+        ),
         highlights.border,
       },
     },

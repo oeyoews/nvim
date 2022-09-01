@@ -41,10 +41,10 @@ M.setup = function()
   return vim.notify(fmt_msg, "info", {
     title = "neovim info",
     timeout = 3000,
-    on_open = function(win)
-      local buf = vim.api.nvim_win_get_buf(win)
-      vim.api.nvim_buf_set_option(buf, "filetype", "markdown")
-    end,
+    -- on_open = function(win)
+    --   local buf = vim.api.nvim_win_get_buf(win)
+    --   vim.api.nvim_buf_set_option(buf, "filetype", "markdown")
+    -- end,
   })
 end
 
