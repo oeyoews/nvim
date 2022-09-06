@@ -60,7 +60,7 @@ nvim_treesitter_configs.setup({
       "latex",
       "javascript",
     },
-    additional_vim_regex_highlighting = false,
+    -- additional_vim_regex_highlighting = false,
   },
 
   -- plugin: nvim-ts-rainbow
