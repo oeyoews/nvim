@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/08/31 08:40:05 by oeyoews                                  --
+--   Updated: 2022/09/06 11:52:59 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -15,6 +15,7 @@
 -- filetypes plugins
 -- plugins list
 oeyoews.pluginlist = {
+  "ibhagwan/fzf-lua",
   "gaoDean/autolist.nvim",
   "nguyenvukhang/nvim-toggler",
   "lervag/vimtex", -- not support lazyload
