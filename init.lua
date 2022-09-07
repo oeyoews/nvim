@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:04 by oeyoews                                  --
---   Updated: 2022/09/06 11:19:38 by oeyoews                                  --
+--   Updated: 2022/09/07 23:32:11 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -26,11 +26,6 @@ local modules = Config.modules
 
 --  load modules
 pcall2.setup(modules, files)
-
--- TODO: tidy
---- tiddlywiki
-vim.g.tiddlywiki_dir = oeyoews.home .. "/REPOS/neotw/vim-tiddlywiki/"
-vim.g.tiddlywiki_autoupdate = true
 
 --- autolist
 require("autolist").setup({})
