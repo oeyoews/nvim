@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/09/07 23:31:14 by oeyoews                                  --
+--   Updated: 2022/09/09 09:08:48 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -15,6 +15,13 @@
 -- filetypes plugins
 -- plugins list
 oeyoews.pluginlist = {
+  {
+    "max397574/colortils.nvim",
+    cmd = "Colortils",
+    config = function()
+      require("colortils").setup()
+    end,
+  },
   "ibhagwan/fzf-lua",
   "gaoDean/autolist.nvim",
   "nguyenvukhang/nvim-toggler",
