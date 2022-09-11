@@ -51,3 +51,4 @@ packer_compiled.lua
 wget*
 /sessions/
 /.vscode/
+neovim-nightly-bin/

@@ -3,6 +3,7 @@ require("nvim-toggler").setup({
   -- your own inverses
   inverses = {
     ["vim"] = "emacs",
+    ["main"] = "master",
     ["enable"] = "disable",
   },
   -- removes the default <leader>i keymap
