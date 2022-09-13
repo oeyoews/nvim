@@ -80,5 +80,3 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 - [neovimcraft](https://neovimcraft.com/)
 - [news](https://this-week-in-neovim.org/latest)
 - [awesome](https://github.com/rockerBOO/awesome-neovim)
-
-diso
