@@ -11,3 +11,395 @@ caption:
 
 ${1:add your content}
 endsnippet
+
+snippet def
+\define ${1:name}($2)
+$3
+\\end
+
+endsnippet
+
+snippet rules
+\rules ${1:only} ${2:rules}$0
+
+endsnippet
+
+snippet rulesoff
+\rules only rules
+\\rules except rules
+
+endsnippet
+
+snippet code
+```${1:js}
+$2
+```
+endsnippet
+
+snippet tb
+$$$${1:text/vnd.tiddlywiki}
+$2
+$$$
+endsnippet
+
+snippet tbt
+$$$${1:text/vnd.tiddlywiki} > ${2:text/html}
+$3
+$$$
+endsnippet
+
+snippet style
+@@${1:.class1.class2}
+@@${2:text-transform:uppercase;}
+$3
+@@
+endsnippet
+
+snippet qb
+<<<
+$1
+<<<
+endsnippet
+
+snippet qbbc
+<<<
+$1
+<<< ${2:cite}
+endsnippet
+
+snippet ftr
+{{{${1:[is[current]]}}}}$0
+endsnippet
+
+snippet ftrt
+{{{${1:[is[current]]}||${2:template}}}}$0
+endsnippet
+
+snippet tr
+{{${1:tiddler}}}$0
+endsnippet
+
+snippet tf
+{{${1:}!!${2:title}}}$0
+endsnippet
+
+snippet ti
+{{${1:}##${2:index}}}$0
+endsnippet
+
+snippet trt
+{{${1:tiddler}||${2:template}}$0
+endsnippet
+
+snippet tft
+{{${1:}!!${2:title}||${3:template}}$0
+endsnippet
+
+snippet tit
+{{${1:}##${2:index}||${3:template}}$0
+endsnippet
+
+snippet table
+|${1:Data One}   |${2:Data Two}  |
+|${3:Data Three} |${4:Data Four} |
+endsnippet
+
+snippet tabler
+|${1:Header One} |${2:Header Two} |h
+|${3:Data One}   |${4:Data Two}   |
+endsnippet
+
+snippet tablec
+|!${1:Header One} |${2:Data One} |
+|!${3:Header Two} |${4:Data Two} |
+endsnippet
+
+snippet tablerc
+|                 |${1:Header One} |h
+|!${2:Header One} |${3:Data One}   |
+|!${4:Header Two} |${5:Data Two}   |
+endsnippet
+
+snippet q
+>
+endsnippet
+
+snippet ol
+# ${1:item 1}
+endsnippet
+
+snippet ul
+* ${1:item}
+endsnippet
+
+snippet dl
+; ${1:term}
+  : ${2:description}
+endsnippet
+
+snippet h1
+!$0 ${1:Heading 1}
+endsnippet
+
+snippet h2
+<h2>$1</h2>$0
+endsnippet
+
+snippet h3
+<h3>$1</h3>$0
+endsnippet
+
+snippet h4
+<h4>$1</h4>$0
+endsnippet
+
+snippet h5
+<h5>$1</h5>$0
+endsnippet
+
+snippet h6
+<h6>$1</h6>$0
+endsnippet
+
+snippet hr
+---
+
+endsnippet
+
+snippet b
+''$1''$0
+endsnippet
+
+snippet i
+//$1//$0
+endsnippet
+
+snippet u
+__$1__$0
+endsnippet
+
+snippet sup
+^^$1^^$0
+endsnippet
+
+snippet sub
+,,$1,,$0
+endsnippet
+
+snippet s
+~~$1~~$0
+endsnippet
+
+snippet pre
+"""
+$0
+"""
+endsnippet
+
+snippet img
+[img[${1:URL}]]$0
+endsnippet
+
+snippet imgt
+[img[${1:Tooltip}|${2:URL}]]$0
+endsnippet
+
+snippet l
+[[${2:URL}]]$0
+endsnippet
+
+snippet lt
+[[${1:Title}|${2:URL}]]$0
+endsnippet
+
+snippet --
+<!-- $1 -->$0
+endsnippet
+
+snippet call
+<<${1:variable}>>$0
+endsnippet
+
+snippet csvtiddlers "Returns the fields of a selection of tiddlers in CSV form, with one row per tiddler."
+<<csvtiddlers "${1:[is[current]]}">>$0
+endsnippet
+
+snippet jsontiddlers "Returns the fields of a selection of tiddlers in JSON form."
+<<jsontiddlers "${1:[is[current]]}">>$0
+endsnippet
+
+snippet datauri "Returns a data URI for the content of the specified tiddler."
+<<datauri "${1:tiddler}">>$0
+endsnippet
+
+snippet makedatauri "Takes a piece of text and an associated ContentType, and returns a corresponding data URI."
+<<makedatauri "${1:text to encode}" "${2:text/plain}">>$0
+endsnippet
+
+snippet now "Returns the current date and time in a specified format."
+<<now "${1:0hh:0mm, DDth MMM YYYY}">>$0
+endsnippet
+
+snippet qualify "Returns a unique string that encodes macro call position within the widget tree."
+<<qualify${1: "${2:prefix}"}>>$0
+endsnippet
+
+snippet dumpvariables "Returns a table showing the values of all variables and macros that exist macro call position in the widget tree."
+<<dumpvariables>>$0
+endsnippet
+
+snippet tag "Generates a tag pill for a specified tag."
+<<tag${1: "${2:$:/tags/Macro}"}>>$0
+endsnippet
+
+snippet lingo "Returns a text of the specified tiddler in currently selected language plugin."
+<<lingo "${1:DefaultNewTiddlerTitle}">>$0
+endsnippet
+
+snippet list-links "Returns a formatted list of links to a selection of tiddlers."
+<<list "${1:[is[current]]}">>$0
+endsnippet
+
+snippet tabs "Returns a set of tabs to a selection of tiddlers."
+<<tabs tabList:"${1:[is[current]]}" state:${2:"$:/state/${3:state}"}${4: class:"${5:tc-vertical}"}>>$0
+endsnippet
+
+snippet thumbnail
+<<thumbnail $1>>$0
+endsnippet
+
+snippet timeline "Returns a list of tiddlers reverse sorted and grouped by day, based on the specified date field."
+<<timeline${1: subfilter:"${2:is[current]}"}${3: dateField:"${4:modified}"}>>$0
+endsnippet
+
+snippet toc "Generates a simple tree of tiddler links by analysing tags."
+<<toc "${1:$:/tags/PageTemplate}"${2: "${3:sort[title]}"}>>$0
+endsnippet
+
+snippet toc-expandable "Generates a tree of tiddler links in which all the branches can be expanded and collapsed."
+<<toc-expandable "${1:$:/tags/PageTemplate}"${2: "${3:sort[title]}"}>>$0
+endsnippet
+
+snippet toc-selective-expandable "Generates a tree of tiddler links in which the non-empty branches can be expanded and collapsed."
+<<toc-selective-expandable "${1:$:/tags/PageTemplate}"${2: "${3:sort[title]}"}>>$0
+endsnippet
+
+snippet toc-tabbed-internal-nav "Generates a two-panel browser with expandable tree on the left and tiddler content on the right."
+<<toc-tabbed-internal-nav tag:"${1:$:/tags/PageTemplate}" stateTiddler:${2:"${3:$:/temp/toc/selectedTiddler}"}${4: template:"$5"}>>$0
+endsnippet
+
+snippet toc-tabbed-external-nav "Generates a two-panel browser with expandable tree on the left and tiddler story on the right."
+<<toc-tabbed-external-nav tag:"${1:$:/tags/PageTemplate}" stateTiddler:${2:"${3:$:/temp/toc/selectedTiddler}"}${4: template:"$5"}>>$0
+endsnippet
+
+snippet macrocall "Provides more flexible way for invoking macros."
+<$macrocall $name="${1:variable}" ${2:param1}=${3:<<currentTiddler>>} />$0
+endsnippet
+
+snippet set "Assigns a value to a specified variable."
+<$set $name="${1:variable}" >
+  $2
+</$set>$0
+endsnippet
+
+snippet vars "Allows multiple variables to be set in one operation."
+<$vars ${1:name}=${2:<<currentTiddler>>}>
+  $3
+</$vars>$0
+endsnippet
+
+snippet list "Displays a sequence of tiddlers that match a filter expression."
+<$list filter="${1:[is[current]]}">
+  ${2:<<currentTiddler>>}
+</$list>$0
+endsnippet
+
+snippet listv
+<$list filter="${1:[is[current]]}" variable="${2:item}">
+  ${3:<<item>>}
+</$list>$0
+endsnippet
+
+snippet count "Displays the number of matches to a filter expression."
+<$count filter="${1:[is[current]]}" />$0
+endsnippet
+
+snippet view "Displays the contents of a tiddler field or index in a specified format."
+<$view ${1:tiddler=${2:<<currentTiddler>>} }field="${3:modified}" format="${4:date}" template="${5:YYYY.0MM.0DD}" />$0
+endsnippet
+
+snippet reveal "Hides or shows its content depending upon the value of a state tiddler."
+<$reveal type="${1:match}" state=${2:"$:/state/${3:state}"}text="$4">
+  $5
+</$reveal>$0
+endsnippet
+
+snippet revealp
+<$reveal type="popup" popup=${1:"$:/state/${2:state}"}>
+  $3
+</$reveal>$0
+endsnippet
+
+snippet scrollable "Wraps content in a scrollable frame."
+<$scrollable class="${1:tc-scrollable-demo}">
+  $2
+</$scrollable>$0
+endsnippet
+
+snippet edit-text "Provides a user interface in the browser for editing text tiddler fields and indices."
+<$edit-text ${1:tiddler=${2:<<currentTiddler>>} }field="${3:text}" />$0
+endsnippet
+
+snippet select "Displays a popup menu based on a HTML `select` element."
+<$select ${1:tiddler=${2:<<currentTiddler>>} }field="${3:text}">
+  <option${4: value="${5:option}"}>${6:option}</option>
+</$select>$0
+endsnippet
+
+snippet checkbox "Displays an HTML checkbox input bound to a specified tiddler tag, field or index."
+<$checkbox ${1:tiddler=${2:<<currentTiddler>>} }field="${3:text}" checked="${4:true}" unchecked="${5:false}">
+  ${6:Label}
+</$checkbox>$0
+endsnippet
+
+snippet checkboxt
+<$checkbox ${1:tiddler=${2:<<currentTiddler>>} }tag="$3">
+  ${4:Label}
+</$checkbox>$0
+endsnippet
+
+snippet radio "Displays an HTML radio input bound to a specified tiddler field."
+<$radio ${1:tiddler=${2:<<currentTiddler>>} }field="${3:text}" value="${4:option}">
+  ${5:Label}
+</$radio>$0'
+endsnippet
+
+snippet button "Displays an HTML element that can perform a combination of optional actions when clicked."
+<$button>
+  ${1:Label}
+</$button>$0
+endsnippet
+
+snippet buttont
+<$button set="$1!!${2:title}" setTo=${2:{{$3!!${4:title}}}}>
+  ${5:Label}
+</$button>$0
+endsnippet
+
+snippet buttonm
+<$button message="${1:tm-notify}" param=${2:<<currentTiddler>>}>
+  ${3:Label}
+</$button>$0
+endsnippet
+
+snippet buttonn
+<$button to="{1:<<currentTiddler>>}>
+  ${2:Label}
+</$button>$0
+endsnippet
+
+snippet buttonp
+<$button popup=${1:"$:/state/${2:state}"}>
+  ${3:Label}
+</$button>$0
+endsnippet
