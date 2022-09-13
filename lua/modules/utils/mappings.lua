@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/08/29 20:28:16 by oeyoews                                  --
+--   Updated: 2022/09/14 00:29:17 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -16,9 +16,9 @@ vim.g.mapleader = " "
 local keymappings_set = {}
 
 -- --  @not use this silent = true
--- vim.keymap.set({ "n", "v" }, "<space>h<space>", ":", {
---   desc = " cmd mode",
--- })
+vim.keymap.set({ "n", "v" }, "<space>ci", ":", {
+  desc = " cmd mode",
+})
 
 keymappings_set = {
   -- tex
@@ -130,7 +130,7 @@ keymappings_set = {
     " delete current buffer",
   },
   {
-    "<space>qq",
+    "<space>pq",
     "<cmd>q<cr>",
     "quit neovim",
   },
