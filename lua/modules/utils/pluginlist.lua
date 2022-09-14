@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/09/13 00:20:21 by oeyoews                                  --
+--   Updated: 2022/09/14 21:21:30 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -15,6 +15,7 @@
 -- filetypes plugins
 -- plugins list
 oeyoews.pluginlist = {
+  -- "folke/tokyonight.nvim",
   {
     "max397574/colortils.nvim",
     cmd = "Colortils",
