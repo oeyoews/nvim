@@ -1,5 +1,23 @@
 # vim:ts=4 sw=4 noexpandtab ft=snippets
 
+snippet page-control "add page-control button" b
+\whitespace trim
+<$button message="$1" tooltip="" aria-label="" class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{$2}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">
+<$text text=""/>
+</span>
+</$list>
+</$button>
+endsnippet
+
+snippet emoji-circle "circle ◍" b
+<<emoji circle>>$0
+endsnippet
+
 snippet list-https "list filter https" b
 <$list filter="[{$:/info/url/protocol}prefix[https]]">
 $1
