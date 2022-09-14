@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](https://gitlab.com/oeyoews/nvim/compare/v7.56.0...v8.0.0) (2022-09-14)
+
+
+### plugin
+
+* **tokyonight:** not update new tokyonight ([2c0c44a](https://gitlab.com/oeyoews/nvim/commit/2c0c44a5571a4adfdbda9c467a9e9405f61c69b5))
+
+
+### BREAKING CHANGES
+
+* **tokyonight:** note this tokyonight not support new commit
+
 # [7.56.0](https://gitlab.com/oeyoews/nvim/compare/v7.55.1...v7.56.0) (2022-09-13)
 
 
