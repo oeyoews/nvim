@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/09/14 00:29:17 by oeyoews                                  --
+--   Updated: 2022/09/15 08:40:26 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -130,7 +130,7 @@ keymappings_set = {
     " delete current buffer",
   },
   {
-    "<space>pq",
+    "<space>qq",
     "<cmd>q<cr>",
     "quit neovim",
   },
