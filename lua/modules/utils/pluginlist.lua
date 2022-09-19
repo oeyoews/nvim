@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/09/14 21:21:30 by oeyoews                                  --
+--   Updated: 2022/09/19 23:02:40 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -15,14 +15,8 @@
 -- filetypes plugins
 -- plugins list
 oeyoews.pluginlist = {
-  -- "folke/tokyonight.nvim",
-  {
-    "max397574/colortils.nvim",
-    cmd = "Colortils",
-    config = function()
-      require("colortils").setup()
-    end,
-  },
+  "gen740/SmoothCursor.nvim",
+  "uga-rosa/ccc.nvim",
   "gaoDean/autolist.nvim",
   "nguyenvukhang/nvim-toggler",
   "lervag/vimtex", -- not support lazyload

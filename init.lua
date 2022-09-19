@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:04 by oeyoews                                  --
---   Updated: 2022/09/07 23:32:11 by oeyoews                                  --
+--   Updated: 2022/09/19 23:03:41 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -29,3 +29,7 @@ pcall2.setup(modules, files)
 
 --- autolist
 require("autolist").setup({})
+
+require("ccc")
+
+require("smoothcursor").setup()
