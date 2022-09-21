@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/09/19 23:02:40 by oeyoews                                  --
+--   Updated: 2022/09/20 09:06:09 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -15,8 +15,9 @@
 -- filetypes plugins
 -- plugins list
 oeyoews.pluginlist = {
-  "gen740/SmoothCursor.nvim",
-  "uga-rosa/ccc.nvim",
+  -- "gen740/SmoothCursor.nvim",
+  -- "uga-rosa/ccc.nvim",
+  "glepnir/lspsaga.nvim",
   "gaoDean/autolist.nvim",
   "nguyenvukhang/nvim-toggler",
   "lervag/vimtex", -- not support lazyload
