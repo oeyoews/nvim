@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/09/20 09:06:09 by oeyoews                                  --
+--   Updated: 2022/09/26 12:11:08 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -15,7 +15,6 @@
 -- filetypes plugins
 -- plugins list
 oeyoews.pluginlist = {
-  -- "gen740/SmoothCursor.nvim",
   -- "uga-rosa/ccc.nvim",
   "glepnir/lspsaga.nvim",
   "gaoDean/autolist.nvim",

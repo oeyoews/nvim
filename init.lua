@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:04 by oeyoews                                  --
---   Updated: 2022/09/20 09:06:59 by oeyoews                                  --
+--   Updated: 2022/09/26 12:12:10 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -26,9 +26,6 @@ local modules = Config.modules
 
 --  load modules
 pcall2.setup(modules, files)
-
--- require("ccc")
--- require("smoothcursor").setup()
 
 --- autolist
 require("autolist").setup()

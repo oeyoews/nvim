@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/09/15 08:40:26 by oeyoews                                  --
+--   Updated: 2022/09/26 20:21:59 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -87,13 +87,11 @@ keymappings_set = {
     "H",
     "0",
     " jump head of line",
-    { "n", "v" },
   },
   {
     "L",
     "$",
     "  jump end of line",
-    { "n", "v" },
   },
   {
     "q",
