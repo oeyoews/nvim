@@ -19,6 +19,7 @@ local default_options = {
   cmdwinheight = 5,
   display = "lastline",
   -- option: 0 => hide statusline, 3 global statusline
+  cmdheight = 0,
   laststatus = 3,
   updatetime = 200,
   timeoutlen = 1000,
