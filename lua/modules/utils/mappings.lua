@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/09/26 20:21:59 by oeyoews                                  --
+--   Updated: 2022/10/06 20:43:30 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -99,6 +99,12 @@ keymappings_set = {
     "disable macro in normal mode",
     { "n", "v" },
   },
+  --[=[ {
+    "kj",
+    "<esc>",
+    "escape insert mode",
+    "i",
+  }, --]=]
   {
     "jk",
     "<esc>",

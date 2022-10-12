@@ -37,9 +37,9 @@ M.setup = function()
     get_tag()[1]
   )
   -- todo this border
-  vim.cmd([[StartupTime --save saved_startuptime --hidden]])
+  -- vim.cmd([[StartupTime --save saved_startuptime --hidden]])
   return vim.notify(fmt_msg, "info", {
-    title = "neovim info",
+    title = "Neovim Info",
     timeout = 3000,
     -- on_open = function(win)
     --   local buf = vim.api.nvim_win_get_buf(win)
