@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/09/14 21:21:34 by oeyoews                                  --
+--   Updated: 2022/10/18 19:33:02 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -70,7 +70,7 @@ oeyoews.builtin = string.format("%s/builtin/", vim.fn.stdpath("config"))
 -- use nvim info, dont modify it to pluginlist
 oeyoews.builtin_plugin = {
   oeyoews.builtin .. "windline",
-  oeyoews.builtin .. "notify",
+  -- oeyoews.builtin .. "notify",
   oeyoews.builtin .. "telescope",
   oeyoews.builtin .. "tokyonight",
   oeyoews.builtin .. "persistence",

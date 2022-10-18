@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/10/18 10:16:33 by oeyoews                                  --
+--   Updated: 2022/10/18 19:42:49 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -15,10 +15,14 @@
 -- filetypes plugins
 -- plugins list
 oeyoews.pluginlist = {
-  --[=[ {
-    "folke/noice.nvim",
-  },
-  "MunifTanjim/nui.nvim", --]=]
+  "rcarriga/nvim-notify",
+  -- {
+  --   "folke/noice.nvim",
+  --   config = function()
+  --     require("noice").setup()
+  --   end,
+  -- },
+  -- "MunifTanjim/nui.nvim",
   "uga-rosa/ccc.nvim",
   "glepnir/lspsaga.nvim",
   "gaoDean/autolist.nvim",
