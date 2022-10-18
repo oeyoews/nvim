@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/10/18 09:11:56 by oeyoews                                  --
+--   Updated: 2022/10/18 10:16:33 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -129,7 +129,7 @@ oeyoews.pluginlist = {
     config = [[vim.g.startuptime_event_width = 30]],
   },
   {
-    "nvim-neorg/neorg",
+    "nvim-neorg/neorg", -- not stable
     -- tag = "0.0.12",
     opt = true,
   },
