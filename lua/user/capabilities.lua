@@ -59,6 +59,6 @@ capabilities.offsetEncoding = { "utf-16" }
   capabilities.document_formatting = false -- 0.7 and earlier
 end ]]
 
-capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
+capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 
 return capabilities

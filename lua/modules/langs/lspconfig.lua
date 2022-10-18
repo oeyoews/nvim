@@ -1,3 +1,5 @@
+local neodev = require("neodev").setup({})
+
 local lspconfig = require("lspconfig")
 
 -- fix: how to config according filetype automation install servers
@@ -5,13 +7,13 @@ local lspconfig = require("lspconfig")
 local capabilities = require("user.capabilities")
 
 -- enable zh-cn for lua
-local sumneko_lua_locale_adjust = function()
+--[=[ local sumneko_lua_locale_adjust = function()
   if oeyoews.options.sumneko_lua_locale_cn then
     return "--locale=zh-cn"
   end
-end
+end --]=]
 
-local sumneko_lua_locale = sumneko_lua_locale_adjust()
+-- local sumneko_lua_locale = sumneko_lua_locale_adjust()
 
 -- on_attach: add lspformat
 local on_attach = function(client)
@@ -21,15 +23,16 @@ end
 
 -- @ref: https://github.com/lxyoucan/nvim/blob/c84b07f078d20d175a4a3b48a73705b61997bd9f/lua/lspconf/lua.lua#L85
 -- cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua", "--locale=zh-cn"},
-local luadev = require("lua-dev").setup({
+--[=[
+local neodev = require("neodev").setup({
   -- add any options here, or leave empty to use the default settings
   lspconfig = {
-    -- --locale=en-us
+    --locale=en-us
     cmd = { "lua-language-server", sumneko_lua_locale },
     on_attach = on_attach,
     -- capabilities = capabilities, -- ???
   },
-})
+}) --]=]
 
 -- https://github.com/neovim/nvim-lspconfig/wiki/Multiple-language-servers-FAQ#i-see-multiple-formatting-options-and-i-want-a-single-server-to-format-how-do-i-do-this
 
@@ -45,19 +48,19 @@ local lsp_setup = function()
     for _, lsp_server in pairs(oeyoews.servers) do
       -- TODO: split it like astronvim.lsp.handlers
       -- local opts = require("modules.langs.server_settings")
-      if lsp_server == "sumneko_lua" then
-        lspconfig[lsp_server].setup(luadev)
-      else
-        lspconfig[lsp_server].setup(
-          -- settings.lsp_server
-          {
-            -- settings = settings[lsp_server],
-            -- handlers = handlers,
-            on_attach = on_attach,
-            capabilities = capabilities,
-          }
-        )
-      end
+      --[=[ if lsp_server == "sumneko_lua" then
+        lspconfig[lsp_server].setup(neodev)
+      else --]=]
+      lspconfig[lsp_server].setup(
+        -- settings.lsp_server
+        {
+          -- settings = settings[lsp_server],
+          -- handlers = handlers,
+          on_attach = on_attach,
+          capabilities = capabilities,
+        }
+      )
+      -- end
       -- pcall(require, "modules.langs.server_settings.sumneko_lua")
     end
   end

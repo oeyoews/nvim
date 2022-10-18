@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/10/10 00:09:26 by oeyoews                                  --
+--   Updated: 2022/10/18 09:11:56 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -15,6 +15,10 @@
 -- filetypes plugins
 -- plugins list
 oeyoews.pluginlist = {
+  --[=[ {
+    "folke/noice.nvim",
+  },
+  "MunifTanjim/nui.nvim", --]=]
   "uga-rosa/ccc.nvim",
   "glepnir/lspsaga.nvim",
   "gaoDean/autolist.nvim",
@@ -34,7 +38,7 @@ oeyoews.pluginlist = {
   "kyazdani42/nvim-web-devicons",
   "stevearc/dressing.nvim",
   "j-hui/fidget.nvim",
-  "folke/lua-dev.nvim",
+  "folke/neodev.nvim",
   "folke/trouble.nvim",
   {
     "ziontee113/icon-picker.nvim",
