@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.1](https://gitlab.com/oeyoews/nvim/compare/v8.0.0...v8.0.1) (2022-10-18)
+
+
+### Bug Fixes
+
+* update lua-dev to neodev ([4d84066](https://gitlab.com/oeyoews/nvim/commit/4d84066c71c93c141ab5ed6ed047c83a2f44b32f))
+
 # [8.0.0](https://gitlab.com/oeyoews/nvim/compare/v7.56.0...v8.0.0) (2022-09-14)
 
 
