@@ -9,6 +9,9 @@ SODTWARN = "ranger neovim"
 # run:
 	# $CMD $ARG $FILE
 
+update:
+	nvim -c PackerUpdate
+
 # install neovim nightly
 # note to remove /usr/local/bin
 install-neovim-nightly-bin:
