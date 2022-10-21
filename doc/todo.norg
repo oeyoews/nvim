@@ -15,6 +15,7 @@ version: 0.0.11
   @code lua
   getcurrentline setline find rep, find modified
   @end
+  - [-] tokyonight color not right
   - [ ] -complete=file/dir
   - [ ] add tid highlight like neorg
   - [ ] search current project files with neovim
