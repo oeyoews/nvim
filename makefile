@@ -16,5 +16,5 @@ update:
 # note to remove /usr/local/bin
 install-neovim-nightly-bin:
 	@rm -rf $(build_dir); mkdir $(build_dir)
-	@cp src/PKGBUILD $(build_dir)
+	@cp -r dev/* $(build_dir)
 	@cd $(build_dir); rm -rf nvim*.zst; makepkg; sudo pacman -U neovim-dev*.zst --noconfirm
