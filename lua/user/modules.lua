@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/09/14 21:21:09 by oeyoews                                  --
+--   Updated: 2022/10/21 20:58:27 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -55,7 +55,7 @@ M.files = {
     "neovide",
     "trouble",
     "comment",
-    "filetype",
+    -- "filetype",
     "header42",
     "persistence", -- conflict startuptime
     "hop", -- jump anywhere

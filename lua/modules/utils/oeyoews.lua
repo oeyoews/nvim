@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/10/18 19:33:02 by oeyoews                                  --
+--   Updated: 2022/10/21 21:17:00 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -67,16 +67,17 @@ oeyoews.servers = {
 
 oeyoews.builtin = string.format("%s/builtin/", vim.fn.stdpath("config"))
 
+-- TODO:
 -- use nvim info, dont modify it to pluginlist
 oeyoews.builtin_plugin = {
   oeyoews.builtin .. "windline",
-  -- oeyoews.builtin .. "notify",
   oeyoews.builtin .. "telescope",
-  oeyoews.builtin .. "tokyonight",
+  -- oeyoews.builtin .. "tokyonight",
   oeyoews.builtin .. "persistence",
   oeyoews.builtin .. "header42",
   oeyoews.builtin .. "lspkind",
   oeyoews.builtin .. "lspformat",
+  -- oeyoews.builtin .. "notify",
 }
 
 -- must global function

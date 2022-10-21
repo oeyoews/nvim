@@ -6,16 +6,17 @@ local sta = function(conf)
   -- TODO use variables to show theme in statusline
   -- @bug: https://stackoverflow.com/questions/20154991/generating-uniform-random-numbers-in-lua 
   math.randomseed(os.time())
-  local theme = "storm"
+  local theme = "tokyonight-storm"
   local nvim_time = tonumber(os.date("%H"))
   conf = "tokyonight" or conf
   if oeyoews.options.toggle_theme_auto then
     if nvim_time < 8 or nvim_time > 20 then
-      theme = "night"
+      theme = "tokyonight-night"
     end
   end
   -- day
-  vim.g.tokyonight_style = theme
+  -- vim.g.tokyonight_style = theme
+  vim.cmd.colorscheme(theme)
   require(conf).setup()
 end
 

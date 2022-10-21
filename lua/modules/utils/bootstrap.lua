@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:36 by oeyoews                                  --
---   Updated: 2022/08/24 16:11:32 by oeyoews                                  --
+--   Updated: 2022/10/21 20:53:32 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -42,8 +42,7 @@ if not packer_ok then
   return
 end
 
--- init packer, and it's some settings
-packer.init({
+local packer_config = {
   max_jobs = 70,
   auto_clean = true,
   display = {
@@ -69,7 +68,10 @@ packer.init({
   snapshot = oeyoews.options.snapshot,
   snapshot_path = snapshot_path,
   compile_path = compile_path,
-})
+}
+
+-- init packer, and it's some settings
+packer.init(packer_config)
 
 packer.startup(function(use)
   -- load pluginlist
