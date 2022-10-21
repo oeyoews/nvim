@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/10/21 22:01:00 by oeyoews                                  --
+--   Updated: 2022/10/21 22:33:41 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -15,6 +15,10 @@
 -- filetypes plugins
 -- plugins list
 oeyoews.pluginlist = {
+  {
+    "toppair/peek.nvim",
+    run = "deno task --quiet build:fast",
+  },
   "hrsh7th/cmp-nvim-lsp-signature-help",
   "folke/tokyonight.nvim",
   "rcarriga/nvim-notify",
