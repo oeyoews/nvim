@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.3](https://gitlab.com/oeyoews/nvim/compare/v8.0.2...v8.0.3) (2022-10-21)
+
+
+### Performance Improvements
+
+* neorg fix ([207e4a4](https://gitlab.com/oeyoews/nvim/commit/207e4a4b7adc45ac4f5f4238cc5975b7dc05e8e6))
+
 ## [8.0.2](https://gitlab.com/oeyoews/nvim/compare/v8.0.1...v8.0.2) (2022-10-21)
 
 
