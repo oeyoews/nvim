@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.1.0](https://gitlab.com/oeyoews/nvim/compare/v8.0.3...v8.1.0) (2022-10-21)
+
+
+### Features
+
+* support peek for markdown preview ([b0858da](https://gitlab.com/oeyoews/nvim/commit/b0858da2a3a75f9091f3dd5d6482b0970036a66a))
+
 ## [8.0.3](https://gitlab.com/oeyoews/nvim/compare/v8.0.2...v8.0.3) (2022-10-21)
 
 
