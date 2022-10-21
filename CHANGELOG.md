@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.2](https://gitlab.com/oeyoews/nvim/compare/v8.0.1...v8.0.2) (2022-10-21)
+
+
+### Performance Improvements
+
+* remove builtin plugins(deprecated) ([3ce86b0](https://gitlab.com/oeyoews/nvim/commit/3ce86b0980fa2390b070f9526aa79267a7e3aa37))
+
 ## [8.0.1](https://gitlab.com/oeyoews/nvim/compare/v8.0.0...v8.0.1) (2022-10-18)
 
 
