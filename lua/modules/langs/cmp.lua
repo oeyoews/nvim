@@ -123,6 +123,9 @@ local mapping = {
 local sources = {
   -- { name = "copilot" },
   {
+    name = "nvim_lsp_signature_help",
+  },
+  {
     name = "nvim_lsp",
   },
   {

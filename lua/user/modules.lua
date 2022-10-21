@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/10/21 20:58:27 by oeyoews                                  --
+--   Updated: 2022/10/21 22:03:22 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -64,6 +64,7 @@ M.files = {
     "ranger", -- use ranger in neovim
     "vimtex",
     "toggler",
+    "neorg",
   },
 }
 

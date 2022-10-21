@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/10/21 21:12:02 by oeyoews                                  --
+--   Updated: 2022/10/21 22:01:00 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -15,6 +15,7 @@
 -- filetypes plugins
 -- plugins list
 oeyoews.pluginlist = {
+  "hrsh7th/cmp-nvim-lsp-signature-help",
   "folke/tokyonight.nvim",
   "rcarriga/nvim-notify",
   "uga-rosa/ccc.nvim",
@@ -127,9 +128,7 @@ oeyoews.pluginlist = {
     config = [[vim.g.startuptime_event_width = 30]],
   },
   {
-    "nvim-neorg/neorg", -- not stable
-    -- tag = "0.0.12",
-    opt = true,
+    "nvim-neorg/neorg",
   },
   {
     "ekickx/clipboard-image.nvim",
