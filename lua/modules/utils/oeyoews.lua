@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/10/21 21:17:00 by oeyoews                                  --
+--   Updated: 2022/10/21 21:34:20 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -72,13 +72,19 @@ oeyoews.builtin = string.format("%s/builtin/", vim.fn.stdpath("config"))
 oeyoews.builtin_plugin = {
   oeyoews.builtin .. "windline",
   oeyoews.builtin .. "telescope",
-  -- oeyoews.builtin .. "tokyonight",
   oeyoews.builtin .. "persistence",
   oeyoews.builtin .. "header42",
   oeyoews.builtin .. "lspkind",
   oeyoews.builtin .. "lspformat",
-  -- oeyoews.builtin .. "notify",
 }
+
+--[=[
+for index, value in ipairs(list) do
+  {
+  oeyoews.builtin .. value
+  }
+end
+--]=]
 
 -- must global function
 oeyoews.completion.edit = function()
