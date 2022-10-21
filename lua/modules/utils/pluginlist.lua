@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/10/21 22:33:41 by oeyoews                                  --
+--   Updated: 2022/10/21 22:45:24 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -15,6 +15,13 @@
 -- filetypes plugins
 -- plugins list
 oeyoews.pluginlist = {
+  "MunifTanjim/nui.nvim",
+  {
+    "folke/noice.nvim",
+    config = function()
+      require("noice").setup()
+    end,
+  },
   {
     "toppair/peek.nvim",
     run = "deno task --quiet build:fast",
