@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.2.0](https://gitlab.com/oeyoews/nvim/compare/v8.1.0...v8.2.0) (2022-10-21)
+
+
+### Features
+
+* add noice again ([d395964](https://gitlab.com/oeyoews/nvim/commit/d395964265ffab9dbaf51d8286aec509b43e9307))
+
 # [8.1.0](https://gitlab.com/oeyoews/nvim/compare/v8.0.3...v8.1.0) (2022-10-21)
 
 
