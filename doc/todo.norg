@@ -9,43 +9,43 @@ version: 0.0.11
 
 * TODO
 
-  - [-] notify highlight markdown error
-  - [ ] add better nvim pkgbuild
-  - [ ] add toggler for checkbox
+  - [x] notify highlight markdown error
+  - [x] add better nvim pkgbuild
+  - [x] add toggler for checkbox
   @code lua
   getcurrentline setline find rep, find modified
   @end
   - [-] tokyonight color not right
-  - [ ] -complete=file/dir
-  - [ ] add tid highlight like neorg
-  - [ ] search current project files with neovim
-  - [ ] learn use latex
-  - [ ] crate treesitter highlight for tid
-  - [ ] learn nvim_open_win
-  - [ ] add cutsom logo
-  - [ ] learn use confirm or input function to get better prompt
-  - [ ] virtual-text place a room, like vscode
-  - [ ] use norg to generate help doc
+  - [x] -complete=file/dir
+  - [x] add tid highlight like neorg
+  - [x] search current project files with neovim
+  - [x] learn use latex
+  - [x] crate treesitter highlight for tid
+  - [x] learn nvim_open_win
+  - [x] add cutsom logo
+  - [x] learn use confirm or input function to get better prompt
+  - [x] virtual-text place a room, like vscode
+  - [x] use norg to generate help doc
   - [ ] add tid syntax base on nvim-treesitter
   - [ ] resolve this z-index in neovim, may be is z-index
-  - [ ] use gitsigns api to update time for header42
-  - [ ] use ftplugin for null-ls and lsp server
-  - [ ] luaimize hi
-  - [ ] based nvim-treesitte autoinstalled to make server [link](https://github.com/nvim-treesitter/nvim-treesitter/commit/365f0eb75f4b8de4655476388c99aaa97f149ded#diff-7473c60f6187b1b6e25a5e7c49c6859d551352490d19da6a527aa0b816ab89f5)
+  - [x] use gitsigns api to update time for header42
+  - [x] use ftplugin for null-ls and lsp server
+  - [x] luaimize hi
+  - [x] based nvim-treesitte autoinstalled to make server [link](https://github.com/nvim-treesitter/nvim-treesitter/commit/365f0eb75f4b8de4655476388c99aaa97f149ded#diff-7473c60f6187b1b6e25a5e7c49c6859d551352490d19da6a527aa0b816ab89f5)
   - [ ] header42: if the file not modified , don't update time use lua code fix it
   - [ ] lspsaga icon can't work
-  - [ ] press enter avoid this message
-  - [ ] conflict: vim-startuptime is conflict to persistence
-  - [=] [difficult] add firstinstall code, avoid less error code
+  - [x] press enter avoid this message
+  - [x] conflict: vim-startuptime is conflict to persistence
+  - [x] [difficult] add firstinstall code, avoid less error code
   - [x] archieve a pomodoro by function or mapping enable by hand(maybe can't come true, cpu continue)
-  - [ ] update startuptime plugin to suit night
+  - [x] update startuptime plugin to suit night
   - [ ] integrate bump plugins, format
   - [ ] use function to replace find file
-  - [ ] inlay hints
+  - [x] inlay hints
   - [ ] learn vim.api(nvim), such use vim.fn.executable to replace os.executable
   - [ ] link null-ls or mason.nvim make a logger file
-  - [ ] theme: https://github.com/nshen/learn-neovim-lua/blob/main/lua/utils/change-colorscheme.lua
-  - [ ] tiny all which-key mappings
+  - [x] theme: https://github.com/nshen/learn-neovim-lua/blob/main/lua/utils/change-colorscheme.lua
+  - [x] tiny all which-key mappings
   - [ ] control module to install or uninstall plugins
   - [ ] use packer make packersnapshot
   - [ ] emulate key pressing
@@ -59,7 +59,7 @@ version: 0.0.11
   - [x] json add double how effect config
   - [x] add format stylua by ci/cd
   - [x] insert mode to hide cursorline
-  - [ ] automatically install filetype server when first open https://github.com/LunarVim/LunarVim/blob/rolling/lua/lvim/lsp/templates.lua
+  - [x] automatically install filetype server when first open https://github.com/LunarVim/LunarVim/blob/rolling/lua/lvim/lsp/templates.lua
   - [x] bug: treesitter multi download
   - [x] config opt(load)
   - [x] learn packer, test packer automatically

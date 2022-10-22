@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/10/21 22:45:24 by oeyoews                                  --
+--   Updated: 2022/10/22 09:09:01 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -19,7 +19,7 @@ oeyoews.pluginlist = {
   {
     "folke/noice.nvim",
     config = function()
-      require("noice").setup()
+      -- require("noice").setup()
     end,
   },
   {
