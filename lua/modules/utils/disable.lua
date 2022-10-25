@@ -1,6 +1,6 @@
 -- disable some builtin vim plugins
 local default_plugins = {
-  "2html_plugin",
+  -- "2html_plugin",
   "getscript",
   "getscriptPlugin",
   "gzip",

@@ -44,7 +44,8 @@ local function border(highlight)
 end
 
 local symbol_map = {
-  Snippet = "❒",
+  Snippet = "",
+  -- Snippet = "❒",
   -- Text = "",
   -- Method = "𝙢 ",
   -- Function = "",
