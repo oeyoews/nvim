@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/10/25 22:41:56 by oeyoews                                  --
+--   Updated: 2022/10/28 21:38:31 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -16,17 +16,11 @@
 -- plugins list
 oeyoews.pluginlist = {
   "MunifTanjim/nui.nvim",
-  {
-    "folke/noice.nvim",
-    config = function()
-      -- require("noice").setup()
-    end,
-  },
+  "folke/noice.nvim",
   {
     "toppair/peek.nvim",
     run = "deno task --quiet build:fast",
   },
-  "hrsh7th/cmp-nvim-lsp-signature-help",
   "folke/tokyonight.nvim",
   "rcarriga/nvim-notify",
   "uga-rosa/ccc.nvim",
@@ -89,6 +83,7 @@ oeyoews.pluginlist = {
     "hrsh7th/nvim-cmp",
     lock = true,
     requires = {
+      "hrsh7th/cmp-nvim-lsp-signature-help",
       "quangnguyen30192/cmp-nvim-ultisnips",
       "hrsh7th/cmp-buffer",
       "SirVer/ultisnips",

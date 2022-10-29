@@ -3,7 +3,7 @@ msg_blue() {
 }
 
 note() {
-    printf "${blue}==>${yellow} TIPS:${bold} $1${all_off}\n"
+    printf "${blue}==>${blue} TIPS:${bold} $1${all_off}\n"
 }
 
 all_off="$(tput sgr0)"
