@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:49 by oeyoews                                  --
---   Updated: 2022/10/21 21:34:20 by oeyoews                                  --
+--   Updated: 2022/11/02 20:52:00 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -30,7 +30,7 @@ oeyoews.mygroup = vim.api.nvim_create_augroup("OeyoewGroup", {})
 -- nvim_version
 oeyoews.nvim_version = vim.version().minor
 oeyoews.nvim_full_version_info =
-  string.format("%s.%s.%s", vim.version().major, vim.version().minor, vim.version().patch)
+string.format("%s.%s.%s", vim.version().major, vim.version().minor, vim.version().patch)
 
 -- options
 oeyoews.options = {
@@ -55,6 +55,7 @@ oeyoews.options = {
 -- @servers @deprecated
 oeyoews.servers = {
   "sumneko_lua",
+  "tsserver",
   -- "cmake",
   -- "pylsp",
   -- "gopls",
