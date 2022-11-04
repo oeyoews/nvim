@@ -69,6 +69,10 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 
 [TODO](doc/todo.norg)
 
+## app
+
+- https://gitlab.com/oeyoews/neotw-app
+
 ## 📖 Wiki(WIP)
 
 - For more details, please read the code or check this [nvim wiki](https://gitlab.com/oeyoews/nvim/-/wikis/home)

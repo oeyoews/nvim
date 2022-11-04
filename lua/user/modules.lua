@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/10/29 23:57:26 by oeyoews                                  --
+--   Updated: 2022/11/02 21:43:10 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -39,7 +39,7 @@ M.files = {
     "ui",
     "notify",
     "bufferline",
-    "noice",
+    -- "noice",
     "fidget", -- have some bug
   },
 
