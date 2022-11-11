@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/10/29 23:59:34 by oeyoews                                  --
+--   Updated: 2022/11/12 01:19:07 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -38,7 +38,7 @@ oeyoews.pluginlist = {
   "phaazon/hop.nvim",
   "jose-elias-alvarez/null-ls.nvim",
   "lewis6991/impatient.nvim",
-  -- "nathom/filetype.nvim",
+  -- "nathom/filetype.nvim", -- conflict with c filetypes
   "nvim-lua/plenary.nvim",
   "kyazdani42/nvim-web-devicons",
   "stevearc/dressing.nvim",
