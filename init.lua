@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:04 by oeyoews                                  --
---   Updated: 2022/10/21 22:45:19 by oeyoews                                  --
+--   Updated: 2022/11/12 11:16:57 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -32,6 +32,7 @@ require("autolist").setup()
 
 require("lspsaga")
 
+--[=[
 local peek = require("peek")
 
 vim.api.nvim_create_user_command("PeekOpen", function()
@@ -46,4 +47,4 @@ vim.api.nvim_create_user_command("PeekClose", function()
     peek.close()
     -- vim.fn.system("i3-msg move left")
   end
-end, {})
+end, {}) --]=]
