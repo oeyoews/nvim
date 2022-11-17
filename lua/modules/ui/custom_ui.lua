@@ -15,7 +15,7 @@ hi IncSearch  cterm=bold ctermfg=16 ctermbg=167 guifg=#292b2e guibg=#ce537a
 " hi Search     ctermfg=16 ctermbg=76 guifg=#292b2e guibg=#7CB740
 hi CursorLineNr      gui=none guibg=none
 hi Keyword   guifg=#9D7CD8 gui=bold
-hi VertSplit guifg=#BB9AF7
+hi VertSplit guifg=#BB9AF7 " not working
 hi MatchParen  gui=underline
 hi MatchWord cterm=underline gui=underline
 

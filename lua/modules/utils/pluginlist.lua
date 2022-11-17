@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/11/12 11:16:26 by oeyoews                                  --
+--   Updated: 2022/11/17 14:02:33 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -17,7 +17,7 @@
 oeyoews.pluginlist = {
   "MunifTanjim/nui.nvim",
   -- conflict vimtex's save
-  "folke/noice.nvim",
+  -- "folke/noice.nvim",
   -- {
   --   "toppair/peek.nvim",
   --   run = "deno task --quiet build:fast",
