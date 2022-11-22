@@ -2,8 +2,15 @@
 
 snippet zx "zx" b
 #!/usr/bin/env zx
+
+// enable quiet mode
+$.verbose = false;
 endsnippet
 
-snippet log "console log"
+snippet logl "console log"
 console.log($1)
+endsnippet
+
+snippet cmd "zx cmd" b
+await $\`$1\`;
 endsnippet
