@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.2.1](https://gitlab.com/oeyoews/nvim/compare/v8.2.0...v8.2.1) (2022-11-25)
+
+
+### Bug Fixes
+
+* remove parsers install dir to prevent install repeat ([77797f0](https://gitlab.com/oeyoews/nvim/commit/77797f0f3cd2e1c89cd98d7858b684e922797912))
+
 # [8.2.0](https://gitlab.com/oeyoews/nvim/compare/v8.1.0...v8.2.0) (2022-10-21)
 
 
