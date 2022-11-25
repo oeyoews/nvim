@@ -41,7 +41,7 @@ local parser_install_dir = string.format("%s/parsers/", vim.fn.stdpath("data"))
 
 -- tips: tsmoduleinfo
 nvim_treesitter_configs.setup({
-  parser_install_dir = parser_install_dir,
+  -- parser_install_dir = parser_install_dir,
   indent = {
     enable = true,
     disable = disable_filetypes,

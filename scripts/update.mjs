@@ -1,8 +1,5 @@
 #!/usr/bin/env zx
 
-// enable quiet mode
-$.verbose = false;
-
 const timestamp = new Date().getTime();
 const buildDir = "/tmp/neovim-nightly-bin-";
 const buildDirTimeStamp = buildDir + timestamp;
