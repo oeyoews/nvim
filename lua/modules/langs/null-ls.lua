@@ -13,7 +13,9 @@ local sources = {
     },
   }),
   --]=]
-  formatting.stylua, -- this is conflict for lsp, choice
+  formatting.stylua.with({
+    extra_args = { "--config-path", vim.fn.expand("~/.config/nvim/linter-config/stylua.toml") },
+  }),
   formatting.prettier,
   -- formatting.latexindent,
   --   .with({

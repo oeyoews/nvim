@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/11/17 14:02:33 by oeyoews                                  --
+--   Updated: 2022/11/30 10:23:44 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -36,7 +36,6 @@ oeyoews.pluginlist = {
   "thinca/vim-quickrun",
   "sukima/vim-tiddlywiki", -- note: this maybe can't load be web browser
   "phaazon/hop.nvim",
-  "jose-elias-alvarez/null-ls.nvim",
   "lewis6991/impatient.nvim",
   -- "nathom/filetype.nvim", -- conflict with c filetypes
   "nvim-lua/plenary.nvim",
@@ -78,6 +77,8 @@ oeyoews.pluginlist = {
     requires = {
       "williamboman/mason-lspconfig.nvim",
       "WhoIsSethDaniel/mason-tool-installer.nvim",
+      "jose-elias-alvarez/null-ls.nvim",
+      "jayp0521/mason-null-ls.nvim",
     },
   },
   {
