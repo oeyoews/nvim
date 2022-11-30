@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/11/30 10:29:08 by oeyoews                                  --
+--   Updated: 2022/11/30 10:43:39 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -49,7 +49,7 @@ M.files = {
     "cmp", -- config completion
     "lspconfig", -- configurate lsp settings
     "null-ls", -- complete lsp configuration
-    -- "mason-null-ls",
+    "mason-null-ls",
   },
 
   -- @TOOLS

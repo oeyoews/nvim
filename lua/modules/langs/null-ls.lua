@@ -16,7 +16,17 @@ local sources = {
   formatting.stylua.with({
     extra_args = { "--config-path", vim.fn.expand("~/.config/nvim/linter-config/stylua.toml") },
   }),
-  formatting.prettier,
+  formatting.prettierd.with({
+    env = {
+      PRETTIERD_DEFAULT_CONFIG = vim.fn.expand("~/.config/nvim/linter-config/prettier.config.js"),
+    },
+  }),
+  --[=[ diagnostics.eslint_d.with({
+    -- ignore prettier warnings from eslint-plugin-prettier
+    filter = function(diagnostic)
+      return diagnostic.code ~= "prettier/prettier"
+    end,
+  }), --]=]
   -- formatting.latexindent,
   --   .with({
   --   -- extra_args = { "-c", "/tmp/" }, -- https://latexindentpl.readthedocs.io/en/latest/sec-how-to-use.html#from-the-command-line
