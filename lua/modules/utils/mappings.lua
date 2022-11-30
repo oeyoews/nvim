@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:42 by oeyoews                                  --
---   Updated: 2022/10/21 22:18:41 by oeyoews                                  --
+--   Updated: 2022/11/30 12:01:07 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -319,3 +319,6 @@ vim.keymap.set("n", "<space>tc", "<cmd>Neorg toggle-concealer<cr>", {
   silent = true,
   desc = "𝟇 show vanilla content",
 })
+
+vim.keymap.set("n", "<space>gh", "<cmd>Lspsaga hover_doc<CR>", { silent = true })
+vim.keymap.set("n", "gr", "<cmd>Lspsaga rename<CR>", { silent = true })

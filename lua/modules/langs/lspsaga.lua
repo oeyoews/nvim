@@ -48,6 +48,3 @@ lspsaga.setup({ -- defaults ...
   diagnostic_message_format = "%m %c",
   highlight_prefix = false,
 })
-
--- local keymap = vim.keymap.set
--- keymap("n", "<space>gR", "<cmd>Lspsaga rename<CR>", { silent = true })
