@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.3.0](https://gitlab.com/oeyoews/nvim/compare/v8.2.1...v8.3.0) (2022-11-30)
+
+
+### Features
+
+* add folder for javascript snippets ([5527201](https://gitlab.com/oeyoews/nvim/commit/552720103caae83dee8dc5b82c2f8083fd5440cc))
+
 ## [8.2.1](https://gitlab.com/oeyoews/nvim/compare/v8.2.0...v8.2.1) (2022-11-25)
 
 
