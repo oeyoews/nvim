@@ -34,7 +34,7 @@ local sources = {
   --   .with({
   --   -- extra_args = { "-c", "/tmp/" }, -- https://latexindentpl.readthedocs.io/en/latest/sec-how-to-use.html#from-the-command-line
   -- }), -- need install texlive-latexindent-meta
-  formatting.fixjson,
+  formatting.fixjson, -- not worked
   formatting.clang_format,
   formatting.markdown_toc,
   diagnostics.codespell.with({
