@@ -13,14 +13,17 @@ local sources = {
     },
   }),
   --]=]
+  formatting.prettier,
   formatting.stylua.with({
     extra_args = { "--config-path", vim.fn.expand("~/.config/nvim/linter-config/stylua.toml") },
   }),
+  --[=[
   formatting.prettierd.with({
     env = {
       PRETTIERD_DEFAULT_CONFIG = vim.fn.expand("~/.config/nvim/linter-config/prettier.config.js"),
     },
   }),
+  --]=]
   --[=[ diagnostics.eslint_d.with({
     -- ignore prettier warnings from eslint-plugin-prettier
     filter = function(diagnostic)
