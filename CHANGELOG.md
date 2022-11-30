@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.4.1](https://gitlab.com/oeyoews/nvim/compare/v8.4.0...v8.4.1) (2022-11-30)
+
+
+### Bug Fixes
+
+* disable prettierd ([78aa1c1](https://gitlab.com/oeyoews/nvim/commit/78aa1c1414d6f85aba6d72d3f05de93662116adb))
+
 # [8.4.0](https://gitlab.com/oeyoews/nvim/compare/v8.3.0...v8.4.0) (2022-11-30)
 
 
