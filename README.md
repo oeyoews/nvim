@@ -79,7 +79,7 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 
 ## 🔗 Links
 
-- [convertsnippet](https://pypi.org/project/ultisnips-vscode/)
+- [convertsnippet snippet to json](https://pypi.org/project/ultisnips-vscode/)
 - [convert](https://github.com/VincentCordobes/convert-snippets/)
 - [neovimcraft](https://neovimcraft.com/)
 - [news](https://this-week-in-neovim.org/latest)
