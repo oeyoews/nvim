@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.4.0](https://gitlab.com/oeyoews/nvim/compare/v8.3.0...v8.4.0) (2022-11-30)
+
+
+### Features
+
+* add linter-config ([efd31b1](https://gitlab.com/oeyoews/nvim/commit/efd31b1fb947d392f93a21b3111dc0950f7db7e9))
+
 # [8.3.0](https://gitlab.com/oeyoews/nvim/compare/v8.2.1...v8.3.0) (2022-11-30)
 
 
