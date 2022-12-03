@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/11/30 10:23:44 by oeyoews                                  --
+--   Updated: 2022/12/03 23:17:02 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -15,7 +15,7 @@
 -- filetypes plugins
 -- plugins list
 oeyoews.pluginlist = {
-  "MunifTanjim/nui.nvim",
+  -- "MunifTanjim/nui.nvim",
   -- conflict vimtex's save
   -- "folke/noice.nvim",
   -- {
@@ -40,8 +40,8 @@ oeyoews.pluginlist = {
   -- "nathom/filetype.nvim", -- conflict with c filetypes
   "nvim-lua/plenary.nvim",
   "kyazdani42/nvim-web-devicons",
-  "stevearc/dressing.nvim",
-  "j-hui/fidget.nvim",
+  -- "stevearc/dressing.nvim",
+  -- "j-hui/fidget.nvim",
   "folke/neodev.nvim",
   "folke/trouble.nvim",
   {
