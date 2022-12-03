@@ -308,5 +308,9 @@ vim.keymap.set("n", "<space>tc", "<cmd>Neorg toggle-concealer<cr>", {
   desc = "𝟇 show vanilla content",
 })
 
+-- laspsaga
 vim.keymap.set("n", "<space>gh", "<cmd>Lspsaga hover_doc<CR>", { silent = true })
 vim.keymap.set("n", "gr", "<cmd>Lspsaga rename<CR>", { silent = true })
+
+-- nvim-tree
+vim.keymap.set("n", "<space>fF", "<cmd>NvimTreeToggle<cr>")
