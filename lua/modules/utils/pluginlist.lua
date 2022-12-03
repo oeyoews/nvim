@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 09:49:53 by oeyoews                                  --
---   Updated: 2022/12/03 23:17:02 by oeyoews                                  --
+--   Updated: 2022/12/03 23:32:03 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -22,6 +22,7 @@ oeyoews.pluginlist = {
   --   "toppair/peek.nvim",
   --   run = "deno task --quiet build:fast",
   -- },
+  "nvim-tree/nvim-tree.lua",
   "folke/tokyonight.nvim",
   "rcarriga/nvim-notify",
   "uga-rosa/ccc.nvim",

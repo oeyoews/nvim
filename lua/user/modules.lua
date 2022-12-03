@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:32 by oeyoews                                  --
---   Updated: 2022/12/03 23:16:32 by oeyoews                                  --
+--   Updated: 2022/12/03 23:34:08 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -39,6 +39,7 @@ M.files = {
     "ui",
     "notify",
     "bufferline",
+    "nvim_tree",
     -- "noice",
     -- "fidget", -- have some bug
   },
