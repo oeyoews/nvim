@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.5.0](https://gitlab.com/oeyoews/nvim/compare/v8.4.1...v8.5.0) (2022-12-03)
+
+
+### Features
+
+* add nvim_tree ([9ac92ed](https://gitlab.com/oeyoews/nvim/commit/9ac92ede2589dd5b0c1275587ac4c559a316c222))
+
 ## [8.4.1](https://gitlab.com/oeyoews/nvim/compare/v8.4.0...v8.4.1) (2022-11-30)
 
 
