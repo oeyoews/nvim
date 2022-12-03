@@ -1,15 +1,3 @@
--- -------------------------------------------------------------------------- --
---                                                                            --
---                                                                            --
---   neovide.lua                                                              --
---                                                                            --
---   By: oeyoews <jyao4783@gmail.com>                                         --
---                                                                            --
---   Created: 2022/08/24 20:42:20 by oeyoews                                  --
---   Updated: 2022/08/25 07:42:22 by oeyoews                                  --
---                                                                            --
--- -------------------------------------------------------------------------- --
-
 if vim.g.neovide then
   -- vim.g.neovide_transparency = 1.0
   -- vim.g.neovide_cursor_vfx_mode = ""

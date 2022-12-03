@@ -1,15 +1,3 @@
--- -------------------------------------------------------------------------- --
---                                                                            --
---                                                                            --
---   bootstrap.lua                                                            --
---                                                                            --
---   By: oeyoews <jyao4783@gmail.com>                                         --
---                                                                            --
---   Created: 2022/08/01 00:49:36 by oeyoews                                  --
---   Updated: 2022/10/21 20:53:32 by oeyoews                                  --
---                                                                            --
--- -------------------------------------------------------------------------- --
-
 local install_path = string.format("%s/site/pack/packer/start/packer.nvim", vim.fn.stdpath("data"))
 local snapshot_path = string.format("%s/snapshots", vim.fn.stdpath("config"))
 local compile_path = string.format("%s/compile/packer_compiled.lua", vim.fn.stdpath("data"))
