@@ -26,7 +26,7 @@ oeyoews.pluginlist = {
   "sukima/vim-tiddlywiki", -- note: this maybe can't load be web browser
   "phaazon/hop.nvim",
   "lewis6991/impatient.nvim",
-  -- "nathom/filetype.nvim", -- conflict with c filetypes
+  "nathom/filetype.nvim", -- conflict with c filetypes
   "nvim-lua/plenary.nvim",
   "kyazdani42/nvim-web-devicons",
   -- "stevearc/dressing.nvim",

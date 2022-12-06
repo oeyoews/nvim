@@ -46,7 +46,7 @@ M.files = {
     "neovide",
     "trouble",
     "comment",
-    -- "filetype",
+    "filetype",
     "header42",
     "persistence", -- conflict startuptime
     "hop", -- jump anywhere
