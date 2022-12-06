@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.5.1](https://gitlab.com/oeyoews/nvim/compare/v8.5.0...v8.5.1) (2022-12-06)
+
+
+### Bug Fixes
+
+* enable filetype ([24ab2be](https://gitlab.com/oeyoews/nvim/commit/24ab2be01b98f260b6f72834be62080c837c3fdc))
+
 # [8.5.0](https://gitlab.com/oeyoews/nvim/compare/v8.4.1...v8.5.0) (2022-12-03)
 
 
