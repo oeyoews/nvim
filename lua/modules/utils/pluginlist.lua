@@ -29,12 +29,14 @@ oeyoews.pluginlist = {
   "nathom/filetype.nvim", -- conflict with c filetypes
   "nvim-lua/plenary.nvim",
   "kyazdani42/nvim-web-devicons",
-  -- "stevearc/dressing.nvim",
   -- "j-hui/fidget.nvim",
   "folke/neodev.nvim",
   "folke/trouble.nvim",
   {
     "ziontee113/icon-picker.nvim",
+    requires = {
+      "stevearc/dressing.nvim",
+    },
     keys = {
       "<space>ie",
     },
