@@ -17,7 +17,7 @@ local items = {
   ["<space>"] = "cycle",
   -- no uncertain NOTE: this cmd is not work for uncertain, because no this cmd
 }
-
+---[=[
 for keymap, item in pairs(items) do
   keymap = string.format("<space>%s", keymap)
   vim.keymap.set("n", keymap, function()
@@ -40,3 +40,4 @@ vim.keymap.set("n", "<space>tc", "<cmd>Neorg toggle-concealer<cr>", {
   silent = true,
   desc = "𝟇 show vanilla content",
 })
+--]=]

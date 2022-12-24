@@ -5,6 +5,7 @@ require("nvim-toggler").setup({
     ["vim"] = "emacs",
     ["main"] = "master",
     ["enable"] = "disable",
+    ["optional"] = "required",
   },
   -- removes the default <leader>i keymap
   remove_default_keybinds = true,
