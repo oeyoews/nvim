@@ -11,13 +11,13 @@ snippet comment "comment" b
 	${1:comment}
 endsnippet
 
-snippet == "TOC" bA
-= TOC
-endsnippet
-
-# snippet -- "checkbox" bA
-# - [-]$1
+# snippet == "TOC" bA
+# = TOC
 # endsnippet
+
+snippet -- "checkbox" bA
+- ( ) $1
+endsnippet
 
 snippet h "h1" b
 * ${1}
@@ -48,4 +48,16 @@ version: 0.0.15
 
 = TOC
 $1
+endsnippet
+
+snippet * "bold"
+*$1* $2
+endsnippet
+
+snippet / "italic"
+/$1/ $2
+endsnippet
+
+snippet - "strike"
+-$1- $2
 endsnippet
