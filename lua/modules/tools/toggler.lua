@@ -2,6 +2,7 @@
 require("nvim-toggler").setup({
   -- your own inverses
   inverses = {
+    ["xelatex"] = "lualatex",
     ["vim"] = "emacs",
     ["main"] = "master",
     ["enable"] = "disable",

@@ -1,5 +1,40 @@
 # vim:ts=4 sw=4 noexpandtab ft=snippets
 
+snippet tmpl-ctex "simple ctex template" b
+%------------------------
+% !TEX program = xelatex
+% `!v expand("%")`
+%------------------------
+\documentclass[UTF8,12pt,a4paper]{article}
+
+%------------------------
+% usepackage
+%------------------------
+\usepackage{ctex}  % enable chinese
+
+%------------------------
+% settings
+%------------------------
+
+%------------------------
+% title
+%------------------------
+\title{${1:`!v expand("%:r")`}}
+\author{`echo $USER`}
+\date{`date +"%Y/%m/%d"`}
+
+%------------------------
+% begin
+%------------------------
+\begin{document}
+\maketitle  % show title
+${1:contents}
+%------------------------
+% end
+%------------------------
+\end{document}
+endsnippet
+
 # TODO: customize env like math
 snippet tmpl-lualatex "simple emoji template" b
 %------------------------
@@ -28,6 +63,7 @@ snippet tmpl-lualatex "simple emoji template" b
 % begin
 %------------------------
 \begin{document}
+\maketitle
 ${1:contents}
 %------------------------
 % end
