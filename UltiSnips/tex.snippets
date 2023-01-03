@@ -1,6 +1,14 @@
 # vim:ts=4 sw=4 noexpandtab ft=snippets
 
-snippet tmpl-ctex "simple ctex template" b
+snippet cmd "cmd" b
+\newcommand{\Version}[1]
+{\textbf{Version: {#1}}}
+
+\newcommand{\UpdatedTime}[1]
+{\textbf{UpdatedTime: {#1}}}
+endsnippet
+
+snippet ttc "simple ctex template" b
 %------------------------
 % !TEX program = xelatex
 % `!v expand("%")`
@@ -27,6 +35,7 @@ snippet tmpl-ctex "simple ctex template" b
 % begin
 %------------------------
 \begin{document}
+
 \maketitle  % show title
 ${1:contents}
 %------------------------
@@ -36,7 +45,7 @@ ${1:contents}
 endsnippet
 
 # TODO: customize env like math
-snippet tmpl-lualatex "simple emoji template" b
+snippet ttl "simple emoji template" b
 %------------------------
 % !TEX program = lualatex
 % `!v expand("%")`
@@ -63,7 +72,8 @@ snippet tmpl-lualatex "simple emoji template" b
 % begin
 %------------------------
 \begin{document}
-\maketitle
+
+\maketitle  % show title
 ${1:contents}
 %------------------------
 % end

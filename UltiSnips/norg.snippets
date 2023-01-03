@@ -35,19 +35,18 @@ snippet list "~ list" b
 ~ $1
 endsnippet
 
-snippet tmpl "norg header" bA
+snippet tn "norg header" bA
 @document.meta
-title: `!v expand("%:r")`
+title: `!p snip.rv = snip.basename.replace('-', ' ').capitalize()`
 description:
 authors: `echo $USER`
 categories: default
 created:  `date +"%Y-%m-%d"`
 updated: `date +"%Y-%m-%d"`
-version: 0.0.15
+version: 1.0.0
 @end
 
-= TOC
-$1
+${1: content}
 endsnippet
 
 snippet * "bold"

@@ -7,7 +7,7 @@ filetype.setup({
     },
     extensions = {
       service = "systemd",
-      -- tid = "tiddlywiki",
+      tid = "tiddlywiki", -- bug
       info = "json",
       -- norg = "norg",
       -- this plaintex fixed by vimtex
