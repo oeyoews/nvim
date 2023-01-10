@@ -86,10 +86,13 @@ local default_options = {
   },
   -- 
   spelllang = { "en", "cjk" },
-  list = false,
+  list = true,
+  showbreak = "↪ ",
+  -- set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
   listchars = {
-    tab = " ",
-    space = "•",
+    tab = "→ ", -- 
+    eol = "↲",
+    -- space = "␣", -- •
   }, -- set noexpandtab && :%ret! 4
 }
 

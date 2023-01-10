@@ -1,21 +1,21 @@
-snippet tag "tag" b
-<${1:div}>
-	$2
-</${1/(w+).*/$1/}>
-endsnippet
-
 snippet th "HTML basic structure with the lang attribute" bA
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <link rel="stylesheet" href="style.css" /> -->
-    <!-- <script src="script.js"></script> -->
+		${3:<!-- <link rel="stylesheet" href="${1:style}.css" /> -->
+    <!-- <script src="${2:script}.js"></script> -->}
 		<title>`!p snip.rv = snip.basename.replace('-', ' ').capitalize()`</title>
 	</head>
 	<body>
 		${0:body}
 	</body>
 </html>
+endsnippet
+
+snippet tag "tag" b
+<${1:div}>
+	$2
+</${1/(w+).*/$1/}>
 endsnippet

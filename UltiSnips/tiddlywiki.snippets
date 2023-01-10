@@ -1,7 +1,72 @@
 # vim:ts=4 sw=4 noexpandtab ft=snippets
 
-snippet plugin-prefix "oeyoews plugins"
-$:/plugins/oeyoews/neotw-${0:name}
+snippet typeStyle "text/css" b
+type: text/css
+endsnippet
+
+snippet typeJavascript "tid type" b
+type: application/${1:javascript}
+endsnippet
+
+snippet moduleType "module type" b
+module-type: ${1:macro}
+endsnippet
+
+snippet actionSendmessage "action sendmessage" b
+<$action-sendmessage $message="tm-" $param=""/>
+endsnippet
+
+snippet navigate "navigate tiddler" b
+<$action-navigate $to="${1:tiddlerName}"/>
+endsnippet
+
+snippet trim "trim" b
+\whitespace trim
+endsnippet
+
+snippet script "script wikify" b
+\`<script>
+${1:script}
+\`
+\`</script>\`
+endsnippet
+
+snippet tagtemplate "view template" b
+tags: $:/tags/ViewTemplate
+endsnippet
+
+snippet tagPagecontrol "page-control" b
+tags: $:/tags/PageControls
+endsnippet
+
+snippet tagMacro	"macro"
+tags: $:/tags/Macro
+endsnippet
+
+snippet tagWikify	"wikify"
+tags: $:/tags/RawMarkupWikified/BottomBody
+endsnippet
+
+snippet tagSidebar	"sidebar"
+tags: $:/tags/SideBar
+endsnippet
+
+snippet tagScript "rawmarkup"
+tags: $:/tags/RawMarkup
+endsnippet
+
+snippet tagStyle "stylesheet"
+tags: $:/tags/Stylesheet
+endsnippet
+
+snippet center "center" b
+<center>
+$1
+</center>
+endsnippet
+
+snippet title "oeyoews plugins"
+title: $:/plugins/oeyoews/tiddlywiki-${1:pluginname}/`!p snip.rv = snip.basename`
 endsnippet
 
 snippet page-control "add page-control button" b
@@ -54,7 +119,7 @@ endsnippet
 
 snippet def
 \define ${1:name}($2)
-$3
+	$3
 \\end
 
 endsnippet
