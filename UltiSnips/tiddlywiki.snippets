@@ -87,13 +87,13 @@ snippet emoji-circle "circle ◍" b
 <<emoji circle>>$0
 endsnippet
 
-snippet list-https "list filter https" b
+snippet filter-https "list filter https" b
 <$list filter="[{$:/info/url/protocol}prefix[https]]">
 $1
 </$list>
 endsnippet
 
-snippet list-mobile "list filter mobile" b
+snippet filter-mobile "list filter mobile" b
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
 $1
 </$list>
