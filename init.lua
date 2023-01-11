@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:04 by oeyoews                                  --
---   Updated: 2023/01/11 18:24:27 by oeyoews                                  --
+--   Updated: 2023/01/11 23:41:56 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -22,6 +22,7 @@ require("modules.utils.functions")
 require("modules.utils.usercmd")
 require("modules.utils.mappings")
 require("modules.utils.options")
+require("modules.ui.custom_ui")
 
 local configdir = vim.fn.stdpath("config")
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -45,7 +46,5 @@ local lazyconfig = {
   },
 }
 
+-- lazy entry
 require("lazy").setup(oeyoews.pluginlist, lazyconfig)
-
-require("impatient")
-require("modules.ui.custom_ui")

@@ -1,5 +1,4 @@
 local neodev = require("neodev").setup({})
-
 local lspconfig = require("lspconfig")
 
 -- fix: how to config according filetype automation install servers
