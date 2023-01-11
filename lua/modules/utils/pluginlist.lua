@@ -1,13 +1,9 @@
--- packerload is from this list load, if no add config for lazyload, it still not work,
--- so better method is use ftplugin for some
--- filetypes plugins
--- plugins list
 oeyoews.pluginlist = {
   {
     "lewis6991/impatient.nvim",
-    config = function() 
+    config = function()
       require("impatient")
-    end
+    end,
   },
   {
     "folke/tokyonight.nvim",
@@ -17,16 +13,16 @@ oeyoews.pluginlist = {
     end,
   },
   {
-  "nvim-tree/nvim-tree.lua",
-  config = function() 
-    require("modules.ui.nvim_tree")
-  end
+    "nvim-tree/nvim-tree.lua",
+    config = function()
+      require("modules.ui.nvim_tree")
+    end,
   },
   {
-  "rcarriga/nvim-notify",
-  config = function()
-    require("modules.ui.notify")
-  end,
+    "rcarriga/nvim-notify",
+    config = function()
+      require("modules.ui.notify")
+    end,
   },
   "uga-rosa/ccc.nvim",
   "glepnir/lspsaga.nvim",
@@ -42,13 +38,13 @@ oeyoews.pluginlist = {
     ft = "tex",
     lazy = true,
     -- TODO:
-    -- config = function() 
+    -- config = function()
     --   require("modules.tools.vimtex")
     -- end,
   },
   {
     "folke/which-key.nvim",
-    config = function() 
+    config = function()
       require("modules.tools.whichkey")
     end,
   },
@@ -66,37 +62,36 @@ oeyoews.pluginlist = {
     ft = "tiddlywiki",
   },
   {
-  "phaazon/hop.nvim",
-  config = function()
-    require("modules.tools.hop")
-  end
+    "phaazon/hop.nvim",
+    config = function()
+      require("modules.tools.hop")
+    end,
   },
   {
-   "nathom/filetype.nvim", -- conflict with c filetypes
+    "nathom/filetype.nvim", -- conflict with c filetypes
 
-   config = function()
-     require("modules.tools.filetype")
-   end
-  
+    config = function()
+      require("modules.tools.filetype")
+    end,
   },
   "nvim-lua/plenary.nvim",
   {
-  "kyazdani42/nvim-web-devicons",
-  config = function()
-    require("modules.ui.web_icons")
-  end,
+    "kyazdani42/nvim-web-devicons",
+    config = function()
+      require("modules.ui.web_icons")
+    end,
   },
   -- "j-hui/fidget.nvim",
   "folke/neodev.nvim",
   {
-  "folke/trouble.nvim",
-  config = function() 
-    require("modules.tools.trouble")
-  end,
+    "folke/trouble.nvim",
+    config = function()
+      require("modules.tools.trouble")
+    end,
   },
   {
     "stevearc/dressing.nvim",
-    event = "VeryLazy"
+    event = "VeryLazy",
   },
   {
     "ziontee113/icon-picker.nvim",
@@ -112,21 +107,21 @@ oeyoews.pluginlist = {
   {
     "danymat/neogen",
     cmd = "Neogen",
-    config = function() 
+    config = function()
       require("neogen").setup()
-    end
+    end,
   },
   {
     "lukas-reineke/indent-blankline.nvim",
     config = function()
       require("modules.ui.indent")
-    end
+    end,
   },
   {
     "akinsho/bufferline.nvim",
     config = function()
       require("modules.ui.bufferline")
-     end
+    end,
   },
   {
     "nvim-treesitter/nvim-treesitter", -- nvim-treesitter bug: checkhealth nvim-treesitter, and execute tsinstall! vim
@@ -144,9 +139,11 @@ oeyoews.pluginlist = {
       "jose-elias-alvarez/null-ls.nvim",
       "jayp0521/mason-null-ls.nvim",
     },
-    config = function() 
+    config = function()
       require("modules.langs.mason")
-    end
+      require("modules.langs.null-ls")
+      require("modules.langs.mason-null-ls")
+    end,
   },
   {
     "hrsh7th/nvim-cmp",
@@ -164,15 +161,15 @@ oeyoews.pluginlist = {
       require("modules.langs.cmp")
     end,
   },
-      {
-        "neovim/nvim-lspconfig",
-        -- config = [[require("modules.langs.lspconfig")]],
-      },
+  {
+    "neovim/nvim-lspconfig",
+    -- config = [[require("modules.langs.lspconfig")]],
+  },
   {
     "folke/todo-comments.nvim",
-    config = function() 
+    config = function()
       require("todo-comments").setup()
-    end
+    end,
   },
   {
     "nvim-telescope/telescope.nvim",
@@ -192,9 +189,9 @@ oeyoews.pluginlist = {
   },
   {
     "numToStr/Comment.nvim",
-    config = function() 
-     require("modules.tools.comment")
-    end
+    config = function()
+      require("modules.tools.comment")
+    end,
   },
   {
     "windwp/nvim-autopairs",
@@ -205,7 +202,7 @@ oeyoews.pluginlist = {
   --   "oeyoews/tabout.nvim",
   --   config = [[require("tabout").setup()]],
   -- },
-  { 
+  {
     "oeyoews/nvim-colorizer.lua",
     cmd = "ColorizerToggle",
     config = [[require("colorizer").setup()]],
@@ -218,13 +215,13 @@ oeyoews.pluginlist = {
   {
     "nvim-neorg/neorg",
     ft = "norg",
-    config = function() 
+    config = function()
       require("modules.tools.neorg")
     end,
   },
   {
     "ekickx/clipboard-image.nvim",
-    lazy = true
+    lazy = true,
   },
   {
     "iamcco/markdown-preview.nvim",
@@ -239,13 +236,17 @@ oeyoews.pluginlist = {
     config = [[require("modules.tools.header42")]],
   },
   {
-    "oeyoews/lspformat",
-    dev = true,
+    "lukas-reineke/lsp-format.nvim",
+    config = function()
+      require("lsp-format").setup()
+    end,
   },
   {
     "oeyoews/persistence",
     dev = true,
-    config = [[require("modules.tools.persistence")]],
+    config = function()
+      require("modules.tools.persistence")
+    end,
   },
   {
     "oeyoews/telescope",
@@ -253,13 +254,13 @@ oeyoews.pluginlist = {
   },
   {
     "barrett-ruth/live-server.nvim",
-    build = 'yarn global add live-server',
+    build = "yarn global add live-server",
     config = true,
   },
   {
     "nvim-lualine/lualine.nvim",
-    config = [[require("lualine").setup()]]
-  }
+    config = [[require("lualine").setup()]],
+  },
 }
 
 --  mappings
