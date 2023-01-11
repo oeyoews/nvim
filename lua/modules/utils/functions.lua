@@ -21,29 +21,6 @@ oeyoews.find_lua_file = function(file_path, ft)
   vim.cmd(("find %s"):format(load_path))
 end
 
---- add updateSnapshots
----@param snapshot_name string
-oeyoews.updateSnapshots = function(snapshot_name)
-  local path = string.format("%s/snapshots/", vim.fn.stdpath("config"))
-  snapshot_name = snapshot_name or "nightly.json5"
-  -- local snap_path = path .. rolling
-  -- if vim.fn.empty(vim.fn.glob(snap_path)) == 1 then
-  --   os.remove(snap_path)
-  -- end
-
-  -- TODO how to verify installed use install bootstrap?
-  -- local len = vim.fn.input("Update nightly.json? [y/N] ")
-  -- local packer_ans = string.lower(len) == "y"
-  -- if packer_ans then
-  --   local res = vim.fn.findfile(snapshot_name, path)
-  --   if res:len() ~= 0 then
-  --     os.remove(res)
-  --   end
-  --   vim.cmd(([[PackerSnapshot %s]]):format(snapshot_name))
-  -- end
-  vim.cmd([[PackerSync]])
-end
-
 --- creat_journey
 ---@param ft string
 oeyoews.creat_journey = function(ft)

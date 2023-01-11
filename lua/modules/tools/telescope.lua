@@ -107,9 +107,3 @@ end, {
   silent = true,
   desc = "⇘ search config files",
 })
-
-vim.keymap.set("n", "<space>tp", function()
-  return require("telescope").extensions.packer.packer()
-end, {
-  desc = "  packer",
-})

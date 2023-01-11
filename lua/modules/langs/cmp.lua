@@ -218,8 +218,8 @@ cmp.setup({
 -- this setup have some bug
 -- require("cmp_tabnine.config")
 
--- TODO: this default value is ultisnips, how to use apprend link this
--- vim.fn.stdpath("data") .. "/site/pack/packer/start/vim-snippets/UltiSnips/",
+-- TODO this default value is ultisnips, how to use apprend link this
+-- vim.fn.stdpath("data") .. "/site/xxx/start/vim-snippets/UltiSnips/",
 vim.g.UltiSnipsSnippetDirectories = {
   "UltiSnips",
   vim.fn.stdpath("config") .. "/UltiSnips/",
@@ -246,7 +246,7 @@ require("cmp_nvim_ultisnips").setup({
 })
 
 -- vim.g.UltiSnipsJumpForwardTrigger = "<C-J>"
-vim.g.UltiSnipsExpandTrigger = "<C-e>"
+-- vim.g.UltiSnipsExpandTrigger = "<C-e>" -- TODO
 vim.g.UltiSnipsJumpBackwardTrigger = "<C-K>"
 
 vim.keymap.set("n", "<space>ee", "<cmd>UltiSnipsEdit<cr>", {

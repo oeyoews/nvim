@@ -228,7 +228,7 @@ end, {
 })
 
 vim.keymap.set("n", "<space>fi", function()
-  return oeyoews.find_lua_file("init")
+  return oeyoews.find_lua_file("lua/core/init")
 end, {
   silent = true,
   desc = "ﳐ edit init.lua(main) neovim config",

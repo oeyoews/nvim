@@ -24,15 +24,10 @@ end
 
 -- get_neovim_info
 M.setup = function()
-  local builtin = #oeyoews.builtin_plugin
-  local total_plugins = #vim.tbl_keys(packer_plugins) - builtin
   local fmt_msg = string.format(
     [[
-   You installed `%s+%s` plugins by packer
    Your neovim version: `%s`
    Your personal configuration version: `%s` ]],
-    total_plugins,
-    builtin,
     oeyoews.nvim_full_version_info,
     get_tag()[1]
   )

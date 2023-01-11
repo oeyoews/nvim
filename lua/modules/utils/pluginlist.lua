@@ -184,7 +184,6 @@ oeyoews.pluginlist = {
       require("modules.tools.telescope")
     end,
     requires = {
-      "nvim-telescope/telescope-packer.nvim",
       "nvim-telescope/telescope-file-browser.nvim",
     },
   },
@@ -204,11 +203,11 @@ oeyoews.pluginlist = {
     "windwp/nvim-autopairs",
     config = [[require("nvim-autopairs").setup()]],
   },
-  -- TODO:
-  -- {
-  --   "oeyoews/tabout.nvim",
-  --   config = [[require("tabout").setup()]],
-  -- },
+  -- TODO
+  {
+    "oeyoews/tabout.nvim",
+    config = [[require("tabout").setup()]],
+  },
   {
     "oeyoews/nvim-colorizer.lua",
     cmd = "ColorizerToggle",
