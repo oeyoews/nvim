@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:04 by oeyoews                                  --
---   Updated: 2023/01/11 16:57:20 by oeyoews                                  --
+--   Updated: 2023/01/11 17:36:34 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -26,8 +26,8 @@ require("modules.utils.options")
 
 
 local configdir = vim.fn.stdpath("config")
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
     "git",
@@ -41,7 +41,7 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-lazyconfig = {
+local lazyconfig = {
   dev = {
     path = configdir .. "/builtin"
   }
