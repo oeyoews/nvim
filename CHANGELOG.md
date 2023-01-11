@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://gitlab.com/oeyoews/nvim/compare/v8.5.2...v9.0.0) (2023-01-11)
+
+
+### Bug Fixes
+
+* update branch for releaserc ([15cb24d](https://gitlab.com/oeyoews/nvim/commit/15cb24d779010b45ccac4aa7e0b5f8a819df2971))
+
+
+### Features
+
+* use lazy.nvim plugin instead packer.nvim ([74079fe](https://gitlab.com/oeyoews/nvim/commit/74079fe3a7733510803ddc27c60795bb9b89e005))
+
+
+### Performance Improvements
+
+* enable cmdheight ([a3d8f1d](https://gitlab.com/oeyoews/nvim/commit/a3d8f1d069f9ffdc59695d9602137b931d88dedd))
+* enable custon ui ([cc5ac50](https://gitlab.com/oeyoews/nvim/commit/cc5ac5081a3c4bd4d5f299d2de2b7e46f80c8491))
+* **lazy:** config lazy more ([d73671c](https://gitlab.com/oeyoews/nvim/commit/d73671c924ae6a601479704642b1aaa0923df82c))
+* more compatiable ([4c43400](https://gitlab.com/oeyoews/nvim/commit/4c434005cdd8f46ac973fae10019afc75a03f473))
+* more lazy config ([2f37973](https://gitlab.com/oeyoews/nvim/commit/2f37973da154cb8f8c8cb7846e355bad5d9851eb))
+* use core dir ([56883e3](https://gitlab.com/oeyoews/nvim/commit/56883e3c6c2ce3141f5d362fd8fe371743d69e46))
+
+
+### BREAKING CHANGES
+
+* create lazy.nvim branch
+
 ## [8.5.2](https://gitlab.com/oeyoews/nvim/compare/v8.5.1...v8.5.2) (2023-01-03)
 
 
