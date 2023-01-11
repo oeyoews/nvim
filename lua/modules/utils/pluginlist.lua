@@ -45,9 +45,24 @@ oeyoews.pluginlist = {
   },
   "cappyzawa/trim.nvim",
   "thinca/vim-quickrun",
-  "sukima/vim-tiddlywiki", -- note: this maybe can't load be web browser
+  {
+    "sukima/vim-tiddlywiki", -- note: this maybe can't load be web browser
+    ft = "tiddlywiki",
+  },
+  {
   "phaazon/hop.nvim",
-  "nathom/filetype.nvim", -- conflict with c filetypes
+  config = function()
+    require("modules.tools.hop")
+  end
+  },
+  {
+   "nathom/filetype.nvim", -- conflict with c filetypes
+
+   config = function()
+     require("modules.tools.filetype")
+   end
+  
+  },
   "nvim-lua/plenary.nvim",
   "kyazdani42/nvim-web-devicons",
   -- "j-hui/fidget.nvim",
@@ -59,9 +74,11 @@ oeyoews.pluginlist = {
   },
   {
     "ziontee113/icon-picker.nvim",
+    lazy = true,
     keys = {
       "<Space>ie",
     },
+    cmd = "PickEmoji",
     config = function()
       oeyoews.lazyload.emoji()
     end,
