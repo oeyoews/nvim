@@ -5,6 +5,9 @@
 oeyoews.pluginlist = {
   {
     "lewis6991/impatient.nvim",
+    config = function() 
+      require("impatient")
+    end
   },
   {
     "folke/tokyonight.nvim",
@@ -13,7 +16,12 @@ oeyoews.pluginlist = {
       vim.cmd([[colorscheme tokyonight]])
     end,
   },
+  {
   "nvim-tree/nvim-tree.lua",
+  config = function() 
+    require("modules.ui.nvim_tree")
+  end
+  },
   {
   "rcarriga/nvim-notify",
   config = function()
@@ -29,7 +37,15 @@ oeyoews.pluginlist = {
       require("modules.tools.toggler")
     end,
   },
-  "lervag/vimtex", -- not support lazyload
+  {
+    "lervag/vimtex", -- not support lazyload
+    ft = "tex",
+    lazy = true,
+    -- TODO:
+    -- config = function() 
+    --   require("modules.tools.vimtex")
+    -- end,
+  },
   {
     "folke/which-key.nvim",
     config = function() 
@@ -64,10 +80,20 @@ oeyoews.pluginlist = {
   
   },
   "nvim-lua/plenary.nvim",
+  {
   "kyazdani42/nvim-web-devicons",
+  config = function()
+    require("modules.ui.web_icons")
+  end,
+  },
   -- "j-hui/fidget.nvim",
   "folke/neodev.nvim",
+  {
   "folke/trouble.nvim",
+  config = function() 
+    require("modules.tools.trouble")
+  end,
+  },
   {
     "stevearc/dressing.nvim",
     event = "VeryLazy"
@@ -166,16 +192,19 @@ oeyoews.pluginlist = {
   },
   {
     "numToStr/Comment.nvim",
-    config = [[require("modules.tools.comment")]],
+    config = function() 
+     require("modules.tools.comment")
+    end
   },
   {
     "windwp/nvim-autopairs",
     config = [[require("nvim-autopairs").setup()]],
   },
-  {
-    "oeyoews/tabout.nvim",
-    config = [[require("tabout").setup()]],
-  },
+  -- TODO:
+  -- {
+  --   "oeyoews/tabout.nvim",
+  --   config = [[require("tabout").setup()]],
+  -- },
   { 
     "oeyoews/nvim-colorizer.lua",
     cmd = "ColorizerToggle",
@@ -189,7 +218,9 @@ oeyoews.pluginlist = {
   {
     "nvim-neorg/neorg",
     ft = "norg",
-    config = true
+    config = function() 
+      require("modules.tools.neorg")
+    end,
   },
   {
     "ekickx/clipboard-image.nvim",
@@ -197,7 +228,10 @@ oeyoews.pluginlist = {
   },
   {
     "iamcco/markdown-preview.nvim",
-    build = "cd app && npm install",
+    lazy = true,
+    ft = "markdown",
+    cmd = "MarkdownPreivew",
+    build = "cd app && npm install", -- sometime you need execute this cmd manually
   },
   {
     "oeyoews/header42",
@@ -207,7 +241,6 @@ oeyoews.pluginlist = {
   {
     "oeyoews/lspformat",
     dev = true,
-    config = [[require("modules.tools.header42")]],
   },
   {
     "oeyoews/persistence",
@@ -230,6 +263,7 @@ oeyoews.pluginlist = {
 }
 
 --  mappings
+-- autoload on loading this pluginlist variable
 vim.keymap.set("n", "<space>fp", function()
   return oeyoews.find_lua_file("lua/modules/utils/pluginlist")
 end, { desc = " pluginlist" })
