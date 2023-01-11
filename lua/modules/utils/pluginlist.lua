@@ -55,7 +55,12 @@ oeyoews.pluginlist = {
       require("modules.tools.ranger")
     end,
   },
-  "cappyzawa/trim.nvim",
+  {
+    "cappyzawa/trim.nvim",
+    config = function()
+      require("modules.tools.trim")
+    end,
+  },
   "thinca/vim-quickrun",
   {
     "sukima/vim-tiddlywiki", -- note: this maybe can't load be web browser
@@ -163,7 +168,9 @@ oeyoews.pluginlist = {
   },
   {
     "neovim/nvim-lspconfig",
-    -- config = [[require("modules.langs.lspconfig")]],
+    config = function()
+      require("modules.langs.lspconfig")
+    end,
   },
   {
     "folke/todo-comments.nvim",

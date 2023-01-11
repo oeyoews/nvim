@@ -55,19 +55,6 @@ oeyoews.servers = {
   -- "texlab",
 }
 
-oeyoews.builtin = string.format("%s/builtin/", vim.fn.stdpath("config"))
-
--- TODO:
--- use nvim info, dont modify it to pluginlist
-oeyoews.builtin_plugin = {
-  oeyoews.builtin .. "windline",
-  oeyoews.builtin .. "telescope",
-  oeyoews.builtin .. "persistence",
-  oeyoews.builtin .. "header42",
-  oeyoews.builtin .. "lspkind",
-  oeyoews.builtin .. "lspformat",
-}
-
 --[=[
 for index, value in ipairs(list) do
   {
