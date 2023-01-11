@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:04 by oeyoews                                  --
---   Updated: 2023/01/11 17:40:03 by oeyoews                                  --
+--   Updated: 2023/01/11 18:24:27 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -16,14 +16,12 @@ if vim.fn.has("linux") ~= 1 then
   return
 end
 
-
 require("modules.utils.disable")
 require("modules.utils.oeyoews")
 require("modules.utils.functions")
 require("modules.utils.usercmd")
 require("modules.utils.mappings")
 require("modules.utils.options")
-
 
 local configdir = vim.fn.stdpath("config")
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -43,8 +41,8 @@ vim.opt.rtp:prepend(lazypath)
 
 local lazyconfig = {
   dev = {
-    path = configdir .. "/builtin"
-  }
+    path = configdir .. "/builtin",
+  },
 }
 
 require("lazy").setup(oeyoews.pluginlist, lazyconfig)
