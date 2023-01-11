@@ -262,7 +262,7 @@ vim.keymap.set("n", "<space>so", "<cmd>so %<cr>", {
 })
 
 vim.keymap.set("n", "<space>fk", function()
-  return oeyoews.find_lua_file("lua/modules/utils/mappings")
+  return oeyoews.find_lua_file("lua/core/mappings")
 end, {
   silent = true,
   desc = " edit mappings file",

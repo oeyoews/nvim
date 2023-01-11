@@ -33,4 +33,4 @@ oeyoews.creat_journey = function(ft)
   vim.cmd(([[edit %s]]):format(journey))
 end
 
-require("modules.utils.usercmd")
+require("core.usercmd")

@@ -78,12 +78,12 @@ oeyoews.completion.edit = function()
 end
 
 -- load global variables
-require("modules.utils.functions")
-require("modules.utils.pluginlist")
+require("core.functions")
+require("core.pluginlist")
 
 --   mappings
 vim.keymap.set("n", "<space>fo", function()
-  return oeyoews.find_lua_file("lua/modules/utils/oeyoews")
+  return oeyoews.find_lua_file("lua/core/oeyoews")
 end, {
   desc = " edit global config",
 })

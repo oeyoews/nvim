@@ -272,5 +272,5 @@ oeyoews.pluginlist = {
 --  mappings
 -- autoload on loading this pluginlist variable
 vim.keymap.set("n", "<space>fp", function()
-  return oeyoews.find_lua_file("lua/modules/utils/pluginlist")
+  return oeyoews.find_lua_file("lua/core/pluginlist")
 end, { desc = " pluginlist" })
