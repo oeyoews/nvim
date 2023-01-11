@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/01 00:49:04 by oeyoews                                  --
---   Updated: 2023/01/11 17:36:34 by oeyoews                                  --
+--   Updated: 2023/01/11 17:40:03 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -50,3 +50,4 @@ local lazyconfig = {
 require("lazy").setup(oeyoews.pluginlist, lazyconfig)
 
 require("impatient")
+require("modules.ui.custom_ui")
