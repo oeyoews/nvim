@@ -8,6 +8,8 @@
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/gitlab": "^9.2.1",
+    "global": "^4.4.0",
+    "live-server": "^1.2.2",
     "semantic-release": "^19.0.2"
   }
 }
