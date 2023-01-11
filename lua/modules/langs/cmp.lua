@@ -1,4 +1,4 @@
-local lspkind = require("lspkind")
+local lspkind = require("modules.langs.lspkind")
 
 -- bug: this markdown_inline.snippets bug like ```bash ``` or `xxx` ???
 -- vim.cmd([[highlight default GH guifg=#3bb6c4 guibg=NONE]])

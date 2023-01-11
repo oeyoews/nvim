@@ -150,7 +150,7 @@ oeyoews.pluginlist = {
     opt = true,
     run = "cd app && npm install",
   },
-  "wbthomason/packer.nvim",
+  -- "wbthomason/packer.nvim",
   oeyoews.builtin_plugin,
 }
 
