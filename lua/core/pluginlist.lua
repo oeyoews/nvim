@@ -221,6 +221,7 @@ oeyoews.pluginlist = {
   {
     "nvim-neorg/neorg",
     ft = "norg",
+    enabled = false,
     config = function()
       require("modules.tools.neorg")
     end,
@@ -260,7 +261,7 @@ oeyoews.pluginlist = {
   },
   {
     "barrett-ruth/live-server.nvim",
-    build = "yarn global add live-server",
+    -- build = "yarn global add live-server", --TODO
     config = true,
   },
   {

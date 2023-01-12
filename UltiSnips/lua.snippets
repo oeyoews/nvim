@@ -1,5 +1,13 @@
 # vim:ts=4 sw=4 noexpandtab ft=snippets
 
+snippet newPlugin "new plugin" b
+{
+	"${1:pluginname}",
+	config = function() $2
+	end
+},
+endsnippet
+
 snippet config "config" b
 config = function() $1
 end,
@@ -9,7 +17,7 @@ snippet req "require" b
 require("$1")
 endsnippet
 
-snippet func "function" 
+snippet func "function"
 function() $1
 end
 endsnippet
