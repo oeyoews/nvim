@@ -1,12 +1,12 @@
 -- -------------------------------------------------------------------------- --
 --                                                                            --
 --                                                        :::      ::::::::   --
---   header42.lua                                       :+:      :+:    :+:   --
+--   header42.lua                                                             --
 --                                                    +:+ +:+         +:+     --
 --   By: oeyoews <oeyoews>                          +#+  +:+       +#+        --
 --                                                +#+#+#+#+#+   +#+           --
 --   Created: 2022/07/31 12:45:49 by oeyoews           #+#    #+#             --
---   Updated: 2022/07/31 12:46:39 by oeyoews          ###   ########          --
+--   Updated: 2023/01/12 16:42:06 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -64,6 +64,6 @@ _G.Stdheader_update = function()
   local ft_config = config.ft[filetype]
   require("header42.header").update(ft_config)
 end
-api.nvim_command([[command! Stdheader lua Stdheader()]])
+api.nvim_command([[command! Header lua Stdheader()]])
 api.nvim_command([[autocmd BufWritePre * lua Stdheader_update()]])
 return M

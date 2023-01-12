@@ -1,3 +1,5 @@
+local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
+
 oeyoews.pluginlist = {
   {
     "lewis6991/impatient.nvim",
@@ -262,26 +264,23 @@ oeyoews.pluginlist = {
     build = "cd app && npm install", -- sometime you need execute this cmd manually
   },
   {
-    "oeyoews/header42",
-    dev = true,
-    config = [[require("modules.tools.header42")]],
-  },
-  {
     "lukas-reineke/lsp-format.nvim",
     config = function()
       require("lsp-format").setup()
     end,
   },
   {
-    "oeyoews/persistence",
-    dev = true,
+    dir = builtinDir .. "header42",
+    config = [[require("modules.tools.header42")]],
+  },
+  {
+    dir = builtinDir .. "persistence",
     config = function()
       require("modules.tools.persistence")
     end,
   },
   {
-    "oeyoews/telescope",
-    dev = true,
+    dir = builtinDir .. "telescope",
   },
   {
     "barrett-ruth/live-server.nvim",

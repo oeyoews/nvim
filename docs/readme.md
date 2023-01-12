@@ -2,9 +2,9 @@
 
 ## microsoft
 
-- vscode
+- vscode ./.vimrc
 
 ## jetbrains
 
-- idea
+- idea: ./.ideavimrc
 - all
