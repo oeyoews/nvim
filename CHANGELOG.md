@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.3](https://gitlab.com/oeyoews/nvim/compare/v9.1.2...v9.1.3) (2023-01-12)
+
+
+### Bug Fixes
+
+* add missing treesitter config ([35ee952](https://gitlab.com/oeyoews/nvim/commit/35ee95242e9f109c4243b5d4119735b7650699ee))
+
 ## [9.1.2](https://gitlab.com/oeyoews/nvim/compare/v9.1.1...v9.1.2) (2023-01-12)
 
 
