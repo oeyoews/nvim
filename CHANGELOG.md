@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0](https://gitlab.com/oeyoews/nvim/compare/v9.0.0...v9.1.0) (2023-01-12)
+
+
+### Features
+
+* enable plugin update notify ([90929d8](https://gitlab.com/oeyoews/nvim/commit/90929d86b9584bb97095e2a6985ab31452732c22))
+
+
+### Performance Improvements
+
+* remove neorg and its doc ([deea11c](https://gitlab.com/oeyoews/nvim/commit/deea11c4f428f83ea9010974204783a5fc709e49))
+
 # [9.0.0](https://gitlab.com/oeyoews/nvim/compare/v8.5.2...v9.0.0) (2023-01-11)
 
 
