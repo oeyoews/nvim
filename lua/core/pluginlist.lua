@@ -163,7 +163,10 @@ oeyoews.pluginlist = {
   },
   {
     "nvim-treesitter/nvim-treesitter", -- nvim-treesitter bug: checkhealth nvim-treesitter, and execute tsinstall! vim
-    run = ":TSUpdate",
+    -- run = ":TSUpdate",
+    config = function()
+      require("modules.ui.treesitter")
+    end,
     dependencies = {
       "p00f/nvim-ts-rainbow",
       "nvim-treesitter/nvim-treesitter-refactor",
