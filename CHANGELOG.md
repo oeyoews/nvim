@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.1](https://gitlab.com/oeyoews/nvim/compare/v9.1.0...v9.1.1) (2023-01-12)
+
+
+### Performance Improvements
+
+* use dir instead of dev ([d8576e2](https://gitlab.com/oeyoews/nvim/commit/d8576e251ffd4d943e20f46d64c90167dea587a5))
+
 # [9.1.0](https://gitlab.com/oeyoews/nvim/compare/v9.0.0...v9.1.0) (2023-01-12)
 
 
