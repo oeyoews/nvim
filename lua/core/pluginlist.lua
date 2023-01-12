@@ -1,3 +1,15 @@
+-- -------------------------------------------------------------------------- --
+--                                                                            --
+--                                                                            --
+--   pluginlist.lua                                                           --
+--                                                                            --
+--   By: oeyoews <mail>                                                       --
+--                                                                            --
+--   Created: 2023/01/12 21:24:23 by oeyoews                                  --
+--   Updated: 2023/01/12 21:24:29 by oeyoews                                  --
+--                                                                            --
+-- -------------------------------------------------------------------------- --
+
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
 
 oeyoews.pluginlist = {
@@ -171,7 +183,6 @@ oeyoews.pluginlist = {
       require("modules.langs.mason-null-ls")
     end,
   },
-
   {
     "hrsh7th/cmp-nvim-lsp-signature-help",
     lazy = true,
@@ -181,6 +192,10 @@ oeyoews.pluginlist = {
     "hrsh7th/nvim-cmp",
     event = "InsertEnter",
     dependencies = {
+      {
+        "oeyoews/tabout.nvim",
+        config = [[require("tabout").setup()]],
+      },
       "quangnguyen30192/cmp-nvim-ultisnips",
       "hrsh7th/cmp-buffer",
       "SirVer/ultisnips",
@@ -231,10 +246,6 @@ oeyoews.pluginlist = {
   },
   -- TODO
   {
-    "oeyoews/tabout.nvim",
-    config = [[require("tabout").setup()]],
-  },
-  {
     "oeyoews/nvim-colorizer.lua",
     cmd = "ColorizerToggle",
     config = [[require("colorizer").setup()]],
@@ -271,6 +282,8 @@ oeyoews.pluginlist = {
   },
   {
     dir = builtinDir .. "header42",
+    lazy = true,
+    cmd = "Header",
     config = [[require("modules.tools.header42")]],
   },
   {

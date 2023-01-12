@@ -31,7 +31,7 @@ end
 require("core.disable")
 require("core.oeyoews")
 require("core.functions")
-require("core.usercmd")
+require("core.autocmd")
 require("core.mappings")
 require("core.options")
 require("modules.ui.custom_ui")
