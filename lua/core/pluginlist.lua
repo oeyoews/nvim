@@ -6,6 +6,12 @@ oeyoews.pluginlist = {
     end,
   },
   {
+    "nathom/filetype.nvim", -- conflict with c filetypes
+    config = function()
+      require("modules.tools.filetype")
+    end,
+  },
+  {
     "folke/tokyonight.nvim",
     priority = 1000,
     config = function()
@@ -14,6 +20,8 @@ oeyoews.pluginlist = {
   },
   {
     "nvim-tree/nvim-tree.lua",
+    lazy = true,
+    cmd = "NvimTreeOpen",
     config = function()
       require("modules.ui.nvim_tree")
     end,
@@ -24,8 +32,14 @@ oeyoews.pluginlist = {
       require("modules.ui.notify")
     end,
   },
-  "uga-rosa/ccc.nvim",
-  "glepnir/lspsaga.nvim",
+  {
+    "uga-rosa/ccc.nvim",
+    enabled = false,
+  },
+  {
+    "glepnir/lspsaga.nvim",
+    event = "InsertEnter",
+  },
   "gaoDean/autolist.nvim",
   {
     "nguyenvukhang/nvim-toggler",
@@ -50,7 +64,11 @@ oeyoews.pluginlist = {
   },
   {
     "oeyoews/rnvimr", -- false
-    lazy = false,
+    lazy = true,
+    cmd = "RnvimrToggle",
+    keys = {
+      "<Space>ft",
+    },
     config = function()
       require("modules.tools.ranger")
     end,
@@ -61,22 +79,23 @@ oeyoews.pluginlist = {
       require("modules.tools.trim")
     end,
   },
-  "thinca/vim-quickrun",
+  {
+    "thinca/vim-quickrun",
+    -- lazy = true,
+    -- cmd = "QuickRun", -- TODO
+  },
   {
     "sukima/vim-tiddlywiki", -- note: this maybe can't load be web browser
     ft = "tiddlywiki",
   },
   {
     "phaazon/hop.nvim",
+    lazy = true,
+    keys = {
+      "<space>hw",
+    },
     config = function()
       require("modules.tools.hop")
-    end,
-  },
-  {
-    "nathom/filetype.nvim", -- conflict with c filetypes
-
-    config = function()
-      require("modules.tools.filetype")
     end,
   },
   "nvim-lua/plenary.nvim",
@@ -150,11 +169,16 @@ oeyoews.pluginlist = {
       require("modules.langs.mason-null-ls")
     end,
   },
+
+  {
+    "hrsh7th/cmp-nvim-lsp-signature-help",
+    lazy = true,
+    event = "InsertEnter",
+  },
   {
     "hrsh7th/nvim-cmp",
     event = "InsertEnter",
     dependencies = {
-      "hrsh7th/cmp-nvim-lsp-signature-help",
       "quangnguyen30192/cmp-nvim-ultisnips",
       "hrsh7th/cmp-buffer",
       "SirVer/ultisnips",
@@ -262,6 +286,9 @@ oeyoews.pluginlist = {
   {
     "barrett-ruth/live-server.nvim",
     -- build = "yarn global add live-server", --TODO
+    lazy = true,
+    cmd = "LiveServerStart",
+    ft = "html", -- not work ???
     config = true,
   },
   {
