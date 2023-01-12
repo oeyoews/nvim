@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.2](https://gitlab.com/oeyoews/nvim/compare/v9.1.1...v9.1.2) (2023-01-12)
+
+
+### Bug Fixes
+
+* update init.lua ([0b717bb](https://gitlab.com/oeyoews/nvim/commit/0b717bbe38bff147f22b423af6bfb5b0e0f88e06))
+
 ## [9.1.1](https://gitlab.com/oeyoews/nvim/compare/v9.1.0...v9.1.1) (2023-01-12)
 
 
