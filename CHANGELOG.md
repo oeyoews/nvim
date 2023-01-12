@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.4](https://gitlab.com/oeyoews/nvim/compare/v9.1.3...v9.1.4) (2023-01-12)
+
+
+### Bug Fixes
+
+* migrate run to build ([7d52cf3](https://gitlab.com/oeyoews/nvim/commit/7d52cf3e663006933bf47c3ea4f9bf02517518bc))
+
 ## [9.1.3](https://gitlab.com/oeyoews/nvim/compare/v9.1.2...v9.1.3) (2023-01-12)
 
 
