@@ -163,7 +163,7 @@ oeyoews.pluginlist = {
   },
   {
     "nvim-treesitter/nvim-treesitter", -- nvim-treesitter bug: checkhealth nvim-treesitter, and execute tsinstall! vim
-    -- run = ":TSUpdate",
+    build = ":TSUpdate",
     config = function()
       require("modules.ui.treesitter")
     end,
@@ -224,12 +224,12 @@ oeyoews.pluginlist = {
   },
   {
     "nvim-telescope/telescope.nvim",
+    dependencies = {
+      "nvim-telescope/telescope-file-browser.nvim",
+    },
     config = function()
       require("modules.tools.telescope")
     end,
-    requires = {
-      "nvim-telescope/telescope-file-browser.nvim",
-    },
   },
   {
     "lewis6991/gitsigns.nvim",
