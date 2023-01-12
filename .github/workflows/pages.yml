@@ -2,8 +2,8 @@
 name: github-pages
 
 on:
-  schedule:
-    - cron: "0 16 * * 0"
+  # schedule:
+  # - cron: "0 16 * * 0"
   # Runs on pushes targeting the default branch
   # push:
   # branches: ["nightly"]
