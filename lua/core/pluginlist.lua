@@ -268,6 +268,7 @@ oeyoews.pluginlist = {
   },
   {
     "ekickx/clipboard-image.nvim",
+    ft = "markdown",
     lazy = true,
   },
   {

@@ -86,7 +86,7 @@ local default_options = {
   },
   -- 
   spelllang = { "en", "cjk" },
-  list = true,
+  list = false,
   showbreak = "↪ ",
   -- set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
   listchars = {
