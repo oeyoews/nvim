@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.2.0](https://gitlab.com/oeyoews/nvim/compare/v9.1.4...v9.2.0) (2023-01-13)
+
+
+### Features
+
+* enable checkbox ([cb528cf](https://gitlab.com/oeyoews/nvim/commit/cb528cff3fea73730f82b910e58ad4e1abea4875))
+
 ## [9.1.4](https://gitlab.com/oeyoews/nvim/compare/v9.1.3...v9.1.4) (2023-01-12)
 
 
