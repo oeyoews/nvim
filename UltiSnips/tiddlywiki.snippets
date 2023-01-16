@@ -1,5 +1,13 @@
 # vim:ts=4 sw=4 noexpandtab ft=snippets
 
+snippet tmOpenExternalWindow "a link"
+tm-open-external-window
+endsnippet
+
+snippet tagsStartup "startup" b
+tags: $:/tags/StartupAction/PostRender
+endsnippet
+
 snippet tagsSnip "tiddlywiki snippets" b
 caption: $1
 tags: $:/tags/TextEditor/Snippet
@@ -35,6 +43,13 @@ snippet script "script wikify" b
 ${1:script}
 \`
 \`</script>\`
+endsnippet
+
+snippet tagsViewToolbar "toolbar" b
+tags: $:/tags/ViewToolbar
+description: `!p snip.rv = snip.basename`
+caption: `!p snip.rv = snip.basename`
+list-before: $:/core/ui/Buttons/close
 endsnippet
 
 snippet tagstemplate "view template" b
@@ -91,6 +106,12 @@ endsnippet
 
 snippet emoji-circle "circle ◍" b
 <<emoji circle>>$0
+endsnippet
+
+snippet filter "list filter" b
+<$list filter="[[$0]]">
+$2
+</$list>
 endsnippet
 
 snippet filter-https "list filter https" b

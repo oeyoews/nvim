@@ -15,7 +15,7 @@ local default_options = {
   guifont = "Cascadia Mono:h24",
   -- https://stackoverflow.com/questions/5136902/vim-textwidth-has-no-effect
   -- formatoptions
-  textwidth = 80,
+  -- textwidth = 80,
   cmdwinheight = 5,
   display = "lastline",
   -- option: 0 => hide statusline, 3 global statusline

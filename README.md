@@ -3,9 +3,9 @@
   <h2>🇳  Neovim</h2>
   <p> 💡 A personal neovim configuration</p>
 	🏠 <a href="https://oeyoews.github.io/nvim">Home</a>&nbsp;
-  🔗 <a href="">Links </a>&nbsp;
-  ⬇️  <a  href="">Download</a>&nbsp;
-  🔰 <a  href="">More</a>&nbsp;
+  <!-- 🔗 <a href="">Links </a>&nbsp; -->
+  <!-- ⬇️  <a  href="">Download</a>&nbsp; -->
+  <!-- 🔰 <a  href="">More</a>&nbsp; -->
   <hr>
 </div>
 
@@ -13,7 +13,7 @@
 <img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-Semantic-e10079.svg?style=flat-square" alt="Semantic Release"/>
 <img src="https://img.shields.io/badge/Maintain-Yes-blueviolet.svg?style=flat-square&logo=Chakra-Ui&color=90E59A&logoColor=green" alt="status" >
 <img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square&logo=GNU&color=df967f&label=License" alt="license">
-<img src="https://img.shields.io/badge/Neovim-nightly-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=green" alt="neovim">
+<img src="https://img.shields.io/badge/Neovim-0.8.2-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=green" alt="neovim">
 <img src="https://img.shields.io/gitlab/v/tag/oeyoews/nvim?color=green&logo=FastAPI&style=flat-square" alt="tag">
 <img src="https://img.shields.io/badge/Lang-lua-blueviolet.svg?style=flat-square&logo=lua&color=90E59A&logoColor=blue" alt="lang">
 </div>
@@ -47,10 +47,11 @@
 
 <h2> ⬇️ Install </h2>
 
-- NOTE: just support nightly
+<!-- - NOTE: just support nightly -->
+
 - install pynvim and nightly neovim and clone this repository
 
-### Install neovim nightly
+### Install neovim
 
 ```bash
 cd Neovim-nightly-bin && make
@@ -63,19 +64,11 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 
 ## 🚀 Features
 
-[Features](doc/features.norg)
+> Coming
 
 ## ✅ TODO
 
 [TODO](doc/todo.norg)
-
-## app
-
-- https://gitlab.com/oeyoews/neotw-app
-
-## 📖 Wiki(WIP)
-
-- For more details, please read the code or check this [nvim wiki](https://gitlab.com/oeyoews/nvim/-/wikis/home)
 
 ## 🔗 Links
 
