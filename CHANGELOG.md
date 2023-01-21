@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.3.0](https://gitlab.com/oeyoews/nvim/compare/v9.2.0...v9.3.0) (2023-01-21)
+
+
+### Features
+
+* support autolist ([1e4d19c](https://gitlab.com/oeyoews/nvim/commit/1e4d19c1f2e7a31cee669446fd2f71e9a0f861da))
+
 # [9.2.0](https://gitlab.com/oeyoews/nvim/compare/v9.1.4...v9.2.0) (2023-01-13)
 
 
