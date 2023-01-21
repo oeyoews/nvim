@@ -34,7 +34,7 @@ require("core.functions")
 require("core.autocmd")
 require("core.mappings")
 require("core.options")
-require("modules.ui.custom_ui")
 
 -- load lazy
 require("core.lazy")
+require("modules.ui.custom_ui")

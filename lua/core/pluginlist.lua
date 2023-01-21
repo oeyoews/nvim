@@ -76,10 +76,9 @@ oeyoews.pluginlist = {
     "lervag/vimtex", -- not support lazyload
     ft = "tex",
     lazy = true,
-    -- TODO:
-    -- config = function()
-    --   require("modules.tools.vimtex")
-    -- end,
+    config = function()
+      require("modules.tools.vimtex")
+    end,
   },
   {
     "folke/which-key.nvim",

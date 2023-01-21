@@ -80,16 +80,6 @@ function ask()
   end)
 end
 
-vim.defer_fn(function()
-  vim.cmd([[PackerLoad clipboard-image.nvim]])
-end, 2000)
-
-vim.keymap.set("n", "<space>li", "<cmd>PasteImg<cr>", {
-  buffer = true,
-  silent = true,
-  desc = "clipboard image",
-})
-
 -- https://boninall.com/p/86.html
 -- inkscape
 -- TODO: kill and start it and install check by pip
@@ -97,6 +87,6 @@ vim.keymap.set("n", "<space>li", "<cmd>PasteImg<cr>", {
 -- run inkscape-figures watch to save files automatically
 -- rofi not support wayland
 vim.cmd([[
-inoremap <buffer> <C-f> <Esc>: silent exec '.!inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
-nnoremap <buffer> <space>lce :silent exec '!inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>
+" inoremap <buffer> <C-f> <Esc>: silent exec '.!inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
+" nnoremap <buffer> <space>lce :silent exec '!inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>
 ]])
