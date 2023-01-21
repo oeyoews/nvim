@@ -54,7 +54,18 @@ oeyoews.pluginlist = {
     "glepnir/lspsaga.nvim",
     event = "InsertEnter",
   },
-  "gaoDean/autolist.nvim",
+  {
+    "gaoDean/autolist.nvim",
+    ft = {
+      "markdown",
+      "text",
+      "tex",
+      "plaintex",
+    },
+    config = function()
+      require("modules.tools.autolist")
+    end,
+  },
   {
     "nguyenvukhang/nvim-toggler",
     config = function()
@@ -273,6 +284,9 @@ oeyoews.pluginlist = {
   },
   {
     "iamcco/markdown-preview.nvim",
+    config = function()
+      oeyoews.lazyload.mkdp()
+    end,
     lazy = true,
     ft = "markdown",
     cmd = "MarkdownPreivew",

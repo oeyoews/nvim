@@ -68,7 +68,8 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 
 ## ✅ TODO
 
-[TODO](doc/todo.norg)
+- auto dark
+- [ ] auto list
 
 ## 🔗 Links
 

@@ -4,13 +4,14 @@
 -- packadd markdown-preview.nvim
 --   ]])
 -- because this is a function, even no require again, but this buffer keymap is still work
-oeyoews.lazyload.mkdp()
+-- oeyoews.lazyload.mkdp()
 
 -- vim.cmd([[MarkdownPreview]])
 
+-- deprecated by autolist
 --- markdown checkbox
 -- TODO: add word boundary
-local checked_character = "x"
+--[=[ local checked_character = "x"
 
 local checked_checkbox = "- %[" .. checked_character .. "%] "
 local unchecked_checkbox = "- %[ %] "
@@ -54,4 +55,4 @@ end, {
   buffer = true,
   silent = true,
   desc = " toggle markdown checkbox",
-})
+}) --]=]
