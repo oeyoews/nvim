@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.4.0](https://gitlab.com/oeyoews/nvim/compare/v9.3.0...v9.4.0) (2023-01-21)
+
+
+### Features
+
+* enable vimtex ([68e6b9d](https://gitlab.com/oeyoews/nvim/commit/68e6b9d6f06e99bef06b3012b96fce06f7d0f607))
+
 # [9.3.0](https://gitlab.com/oeyoews/nvim/compare/v9.2.0...v9.3.0) (2023-01-21)
 
 
