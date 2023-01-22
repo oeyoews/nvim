@@ -6,8 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/01/22 19:11:50 by oeyoews                                  --
---                                                                            --
+--   Updated: 2023/01/23 01:27:37 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -30,6 +29,7 @@ oeyoews.pluginlist = {
     "nvim-tree/nvim-tree.lua",
     lazy = true,
     cmd = "NvimTreeOpen",
+    event = "VeryLazy",
     config = function()
       require("modules.ui.nvim_tree")
     end,
@@ -52,12 +52,14 @@ oeyoews.pluginlist = {
       "tex",
       "plaintex",
     },
+    event = "VeryLazy",
     config = function()
       require("modules.tools.autolist")
     end,
   },
   {
     "nguyenvukhang/nvim-toggler",
+    event = "VeryLazy",
     config = function()
       require("modules.tools.toggler")
     end,
@@ -99,10 +101,12 @@ oeyoews.pluginlist = {
   },
   {
     "sukima/vim-tiddlywiki", -- note: this maybe can't load be web browser
+    lazy = true,
     ft = "tiddlywiki",
   },
   {
     "ggandor/leap.nvim",
+    event = "VeryLazy",
     config = function()
       require("leap").add_default_mappings()
     end,
@@ -114,10 +118,11 @@ oeyoews.pluginlist = {
       require("modules.ui.web_icons")
     end,
   },
-  -- "j-hui/fidget.nvim",
-  "folke/neodev.nvim",
   {
     "folke/trouble.nvim",
+    keys = {
+      "<space>tt",
+    },
     config = function()
       require("modules.tools.trouble")
     end,
@@ -200,6 +205,7 @@ oeyoews.pluginlist = {
       "honza/vim-snippets",
       "hrsh7th/cmp-nvim-lsp",
       "hrsh7th/cmp-path",
+      "folke/neodev.nvim",
     },
     config = function()
       require("modules.langs.cmp")
@@ -228,23 +234,31 @@ oeyoews.pluginlist = {
   },
   {
     "lewis6991/gitsigns.nvim",
+    event = "VeryLazy",
     config = function()
       oeyoews.lazyload.gitsigns()
     end,
   },
   {
     "numToStr/Comment.nvim",
+    keys = {
+      "gcc",
+    },
     config = function()
       require("modules.tools.comment")
     end,
   },
   {
     "windwp/nvim-autopairs",
+    event = "InsertEnter",
     config = [[require("nvim-autopairs").setup()]],
   },
-  -- TODO
   {
     "oeyoews/nvim-colorizer.lua",
+    ft = {
+      "css",
+      "html",
+    },
     cmd = "ColorizerToggle",
     config = [[require("colorizer").setup()]],
   },
@@ -254,16 +268,9 @@ oeyoews.pluginlist = {
     -- config = [[vim.g.startuptime_event_width = 30]],
   },
   {
-    "nvim-neorg/neorg",
-    ft = "norg",
-    enabled = false,
-    config = function()
-      require("modules.tools.neorg")
-    end,
-  },
-  {
     "ekickx/clipboard-image.nvim",
     ft = "markdown",
+    cmd = "PastImg",
     lazy = true,
   },
   {
@@ -280,6 +287,7 @@ oeyoews.pluginlist = {
   {
     dir = builtinDir .. "header42",
     lazy = true,
+    event = "InsertEnter",
     keys = {
       "<Space>ih",
     },
@@ -308,22 +316,11 @@ oeyoews.pluginlist = {
   {
     "nvim-lualine/lualine.nvim",
     config = function()
-      require("lualine").setup({
-        sections = {
-          lualine_x = {
-            {
-              require("lazy.status").updates,
-              cond = require("lazy.status").has_updates,
-              color = { fg = "#ff9e64" },
-            },
-          },
-        },
-      })
+      require("modules.tools.lualine")
     end,
   },
 }
 
---  mappings
 -- autoload on loading this pluginlist variable
 vim.keymap.set("n", "<space>fp", function()
   return oeyoews.find_lua_file("lua/core/pluginlist")
