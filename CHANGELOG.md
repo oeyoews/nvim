@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.5.0](https://gitlab.com/oeyoews/nvim/compare/v9.4.0...v9.5.0) (2023-01-22)
+
+
+### Features
+
+* use leap.nvim replace hop plugin ([2ba02b1](https://gitlab.com/oeyoews/nvim/commit/2ba02b1d7352654f7c95f1efc091267634f4714e))
+
 # [9.4.0](https://gitlab.com/oeyoews/nvim/compare/v9.3.0...v9.4.0) (2023-01-21)
 
 
