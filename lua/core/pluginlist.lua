@@ -113,13 +113,9 @@ oeyoews.pluginlist = {
     ft = "tiddlywiki",
   },
   {
-    "phaazon/hop.nvim",
-    lazy = true,
-    keys = {
-      "<space>hw",
-    },
+    "ggandor/leap.nvim",
     config = function()
-      require("modules.tools.hop")
+      require("leap").add_default_mappings()
     end,
   },
   "nvim-lua/plenary.nvim",
