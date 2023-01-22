@@ -6,19 +6,13 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/01/12 21:24:29 by oeyoews                                  --
+--   Updated: 2023/01/22 19:11:50 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
 
 oeyoews.pluginlist = {
-  {
-    "lewis6991/impatient.nvim",
-    config = function()
-      require("impatient")
-    end,
-  },
   {
     "nathom/filetype.nvim", -- conflict with c filetypes
     config = function()
@@ -112,6 +106,7 @@ oeyoews.pluginlist = {
     "sukima/vim-tiddlywiki", -- note: this maybe can't load be web browser
     ft = "tiddlywiki",
   },
+  -- visual mode
   {
     "ggandor/leap.nvim",
     config = function()
@@ -287,17 +282,17 @@ oeyoews.pluginlist = {
     cmd = "MarkdownPreivew",
     build = "cd app && npm install", -- sometime you need execute this cmd manually
   },
-  {
-    "lukas-reineke/lsp-format.nvim",
-    config = function()
-      require("lsp-format").setup()
-    end,
-  },
+  "lukas-reineke/lsp-format.nvim",
   {
     dir = builtinDir .. "header42",
     lazy = true,
+    keys = {
+      "<Space>ih",
+    },
     cmd = "Header",
-    config = [[require("modules.tools.header42")]],
+    config = function()
+      require("modules.tools.header42")
+    end,
   },
   {
     dir = builtinDir .. "persistence",

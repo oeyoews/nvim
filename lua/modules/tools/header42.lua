@@ -5,7 +5,7 @@ header.setup({
 })
 
 -- add support to buffer
-vim.keymap.set("n", "<space>ah", "<cmd>Stdheader<cr>", {
+vim.keymap.set("n", "<space>ih", "<cmd>Header<cr>", {
   silent = true,
   desc = " add header",
 })
