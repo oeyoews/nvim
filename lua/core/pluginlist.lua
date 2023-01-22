@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/01/23 01:27:37 by oeyoews                                  --
+--   Updated: 2023/01/23 01:38:12 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -188,6 +188,7 @@ oeyoews.pluginlist = {
   },
   {
     "hrsh7th/cmp-nvim-lsp-signature-help",
+    enabled = "false",
     lazy = true,
     event = "InsertEnter",
   },
@@ -317,6 +318,16 @@ oeyoews.pluginlist = {
     "nvim-lualine/lualine.nvim",
     config = function()
       require("modules.tools.lualine")
+    end,
+  },
+  {
+    "folke/noice.nvim",
+    enabled = false,
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+    },
+    config = function()
+      require("modules.tools.noice")
     end,
   },
 }
