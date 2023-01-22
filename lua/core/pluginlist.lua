@@ -23,7 +23,7 @@ oeyoews.pluginlist = {
     "folke/tokyonight.nvim",
     priority = 1000,
     config = function()
-      vim.cmd([[colorscheme tokyonight]])
+      require("modules.ui.ui")
     end,
   },
   {
@@ -39,10 +39,6 @@ oeyoews.pluginlist = {
     config = function()
       require("modules.ui.notify")
     end,
-  },
-  {
-    "uga-rosa/ccc.nvim",
-    enabled = false,
   },
   {
     "glepnir/lspsaga.nvim",
@@ -99,14 +95,12 @@ oeyoews.pluginlist = {
   },
   {
     "thinca/vim-quickrun",
-    -- lazy = true,
-    -- cmd = "QuickRun", -- TODO
+    event = "VeryLazy",
   },
   {
     "sukima/vim-tiddlywiki", -- note: this maybe can't load be web browser
     ft = "tiddlywiki",
   },
-  -- visual mode
   {
     "ggandor/leap.nvim",
     config = function()

@@ -23,6 +23,3 @@ require("core.options")
 
 -- load lazy plugin
 require("core.lazy")
-
--- custom_ui
-require("modules.ui.custom_ui")

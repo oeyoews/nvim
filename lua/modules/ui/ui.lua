@@ -23,5 +23,3 @@ end
 sta()
 
 require("modules.ui.custom_ui")
-
-require("wlsample.evil_line")
