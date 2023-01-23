@@ -38,6 +38,7 @@
   "nvim-treesitter-refactor": { "branch": "master", "commit": "75f5895cc662d61eb919da8050b7a0124400d589" },
   "nvim-ts-rainbow": { "branch": "master", "commit": "ef95c15a935f97c65a80e48e12fe72d49aacf9b9" },
   "nvim-web-devicons": { "branch": "master", "commit": "13d06d74afad093d8312fe051633b55f24049c16" },
+  "palenightfall.nvim": { "branch": "main", "commit": "78cbf05af268c274b523844fde46a307b7db8167" },
   "plenary.nvim": { "branch": "master", "commit": "1c7e3e6b0f4dd5a174fcea9fda8a4d7de593b826" },
   "rnvimr": { "branch": "main", "commit": "ad9ae61b84c7db29b18a322a9da8880eb442d794" },
   "tabout.nvim": { "branch": "master", "commit": "f4e6e651dcec347cb335b088595b16005f188a21" },

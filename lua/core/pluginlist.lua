@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/01/23 01:38:12 by oeyoews                                  --
+--   Updated: 2023/01/24 00:48:52 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -329,6 +329,10 @@ oeyoews.pluginlist = {
     config = function()
       require("modules.tools.noice")
     end,
+  },
+  {
+    "JoosepAlviste/palenightfall.nvim",
+    enabled = false,
   },
 }
 
