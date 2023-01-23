@@ -16,15 +16,15 @@ end, {
   complete = "custom,v:lua.oeyoews.completion.edit",
 })
 
-vim.api.nvim_create_user_command("UpdatePlugins", function()
-  return oeyoews.updateSnapshots()
-end, {
-  desc = "UpdatePlugins",
-})
+-- vim.api.nvim_create_user_command("UpdatePlugins", function()
+--   return oeyoews.updateSnapshots()
+-- end, {
+--   desc = "UpdatePlugins",
+-- })
 
-vim.api.nvim_create_user_command("Scriptsnames", "split | ene|pu=execute('scriptnames')", {
-  desc = "scriptnames ",
-})
+-- vim.api.nvim_create_user_command("Scriptsnames", "split | ene|pu=execute('scriptnames')", {
+--   desc = "scriptnames ",
+-- })
 
 -- autocmd User StartupTimeSaved echomsg " neovim startuptime is" g:saved_startuptime.startup.mean "ms"
 --[=[ vim.api.nvim_create_user_command(

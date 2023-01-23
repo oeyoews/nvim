@@ -1,6 +1,18 @@
+-- -------------------------------------------------------------------------- --
+--                                                                            --
+--                                                                            --
+--   disable.lua                                                              --
+--                                                                            --
+--   By: oeyoews <jyao4783@gmail.com>                                         --
+--                                                                            --
+--   Created: 2023/01/23 16:35:57 by oeyoews                                  --
+--   Updated: 2023/01/23 16:35:58 by oeyoews                                  --
+--                                                                            --
+-- -------------------------------------------------------------------------- --
+
 -- disable some builtin vim plugins
 local default_plugins = {
-  -- "2html_plugin",
+  "2html_plugin",
   "getscript",
   "getscriptPlugin",
   "gzip",
