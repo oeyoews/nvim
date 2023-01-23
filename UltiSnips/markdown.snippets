@@ -26,7 +26,7 @@ snippet emoji-rocket "emoji" b
 🚀
 endsnippet
 
-snippet tmpl "template" bA
+snippet tmpl "template" b
 # ${1:Title head} <!-- `date` -->
 
 ## ${2:Title level 2}
@@ -34,35 +34,8 @@ snippet tmpl "template" bA
 - ${3:content}
 endsnippet
 
-snippet ~~ "del"
+snippet del "del"
 ~~$1~~ $2
-endsnippet
-
-snippet hugo "hugo formtter"
----
-title: $1
-date: `!v strftime("%Y-%m-%dT%H:%M:%S+08:00")`
-tags: []
----
-
-$2
-
-<!--more-->
-
-$4
-endsnippet
-
-snippet imgg "img github"
-![$1](https://cdn.jsdelivr.net/gh/oeyoews/img@latest/$2)
-endsnippet
-
-# note: in gitlab, not support this zoom parameter, you can add width parameter
-snippet imgh "img github"
-<img src="https://cdn.jsdelivr.net/gh/oeyoews/img@latest/$1.png"/>
-endsnippet
-
-snippet https "cdn"
-https://cdn.jsdelivr.net/gh/oeyoews/img@latest/
 endsnippet
 
 snippet dis8 "ISO format datetime" w
@@ -151,7 +124,7 @@ snippet status "status"
 <img src="https://img.shields.io/badge/Maintain-Yes-blueviolet.svg?style=flat-square&logo=Chakra-Ui&color=90E59A&logoColor=green" alt="project-status" >
 endsnippet
 
-snippet -- "checkbox" b
+snippet bb "checkbox" bA
 - [ ] $0
 endsnippet
 
