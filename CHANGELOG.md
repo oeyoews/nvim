@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.5.1](https://gitlab.com/oeyoews/nvim/compare/v9.5.0...v9.5.1) (2023-01-26)
+
+
+### Bug Fixes
+
+* remove telescope file browser ([38d66d5](https://gitlab.com/oeyoews/nvim/commit/38d66d54f8fa77fd0a583b147f38573972c39e82))
+
 # [9.5.0](https://gitlab.com/oeyoews/nvim/compare/v9.4.0...v9.5.0) (2023-01-22)
 
 
