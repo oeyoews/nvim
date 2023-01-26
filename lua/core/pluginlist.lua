@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/01/24 00:48:52 by oeyoews                                  --
+--   Updated: 2023/01/26 21:40:20 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -226,9 +226,6 @@ oeyoews.pluginlist = {
   },
   {
     "nvim-telescope/telescope.nvim",
-    dependencies = {
-      "nvim-telescope/telescope-file-browser.nvim",
-    },
     config = function()
       require("modules.tools.telescope")
     end,

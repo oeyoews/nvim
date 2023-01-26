@@ -2,15 +2,20 @@ local telescope = require("telescope")
 local actions = require("telescope.actions")
 local extensions = require("telescope").extensions
 
--- TODO: like nvchad use for to load extensions? this time
 telescope.setup({
   extensions = {
-    -- TODO: fix tab
-    frecency = {
-      show_scores = false,
-      show_unindexed = true,
-      ignore_patterns = { "*.git/*", "*/tmp/*" },
-      disable_devicons = false,
+    file_browser = {
+      theme = "ivy",
+      -- disables netrw and use telescope-file-browser in its place
+      hijack_netrw = true,
+      mappings = {
+        ["i"] = {
+          -- your custom insert mode mappings
+        },
+        ["n"] = {
+          -- your custom normal mode mappings
+        },
+      },
     },
   },
   defaults = {
@@ -96,13 +101,6 @@ end, {
 
 vim.keymap.set("n", "<space>tv", function()
   return extensions.dotfiles.dotfiles()
-end, {
-  silent = true,
-  desc = "⇘ search config files",
-})
-
-vim.keymap.set("n", "<space>tg", function()
-  return extensions.file_browser.file_browser()
 end, {
   silent = true,
   desc = "⇘ search config files",
