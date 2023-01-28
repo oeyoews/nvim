@@ -68,8 +68,9 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 
 ## ✅ TODO
 
-- auto dark
+- [x] auto dark
 - [ ] auto list
+- [ ] refactor mason install
 
 ## 🔗 Links
 

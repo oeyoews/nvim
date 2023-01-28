@@ -40,7 +40,6 @@ oeyoews.options = {
   -- snapshot = "20220824.json5",
 }
 
--- @servers @deprecated
 oeyoews.servers = {
   "sumneko_lua",
   "tsserver",

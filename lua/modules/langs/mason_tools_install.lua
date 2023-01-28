@@ -13,6 +13,7 @@ local tbl = {
   "fixjson",
   "codespell", -- spell
   "shellcheck",
+  "latexindent",
   -- "proselint",
   -- "black", -- ptyhon format
 }
@@ -21,6 +22,8 @@ for _, value in ipairs(tbl) do
   check_mason(value)
 end
 
+-- :lua print(vim.inspect(oeyoews.mason))
+-- not work??
 require("mason-tool-installer").setup({
   ensure_installed = oeyoews.mason,
 })
