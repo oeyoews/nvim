@@ -61,6 +61,9 @@ nvim_treesitter_configs.setup({
       "javascript",
     },
     -- additional_vim_regex_highlighting = false,
+    additional_vim_regex_highlighting = {
+      "org",
+    },
   },
 
   -- plugin: nvim-ts-rainbow

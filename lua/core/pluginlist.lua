@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/01/26 21:40:20 by oeyoews                                  --
+--   Updated: 2023/01/30 01:21:47 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -330,6 +330,22 @@ oeyoews.pluginlist = {
   {
     "JoosepAlviste/palenightfall.nvim",
     enabled = false,
+  },
+  {
+    "nvim-orgmode/orgmode",
+    enabled = false,
+    ft = "org",
+    config = function()
+      require("orgmode").setup_ts_grammar({})
+    end,
+  },
+  {
+    "nvim-neorg/neorg",
+    enabled = false,
+    build = ":Neorg sync-parsers",
+    config = function()
+      require("modules.tools.neorg")
+    end,
   },
 }
 
