@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/01/30 01:21:47 by oeyoews                                  --
+--   Updated: 2023/02/03 15:41:07 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -239,9 +239,7 @@ oeyoews.pluginlist = {
   },
   {
     "numToStr/Comment.nvim",
-    keys = {
-      "gcc",
-    },
+    event = "VeryLazy",
     config = function()
       require("modules.tools.comment")
     end,

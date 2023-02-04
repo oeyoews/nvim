@@ -1,5 +1,9 @@
 # vim:ts=4 sw=4 noexpandtab ft=snippets
 
+snippet tree "plugin tree" b
+<$macrocall $name="tree" prefix={{{ [<currentTiddler>addsuffix[/]] }}}>
+endsnippet
+
 snippet tmOpenExternalWindow "a link"
 tm-open-external-window
 endsnippet
@@ -115,13 +119,19 @@ $2
 endsnippet
 
 snippet filter-https "list filter https" b
-<$list filter="[{$:/info/url/protocol}prefix[https]]">
+<$list filter="[{$:/info/url/protocol}match[https:]]">
+$1
+</$list>
+endsnippet
+
+snippet filter-http: "list filter http:" b
+<$list filter="[{$:/info/url/protocol}match[http:]]">
 $1
 </$list>
 endsnippet
 
 snippet filter-mobile "list filter mobile" b
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
 $1
 </$list>
 endsnippet
