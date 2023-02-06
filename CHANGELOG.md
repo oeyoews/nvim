@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.6.0](https://gitlab.com/oeyoews/nvim/compare/v9.5.1...v9.6.0) (2023-02-06)
+
+
+### Features
+
+* add dashboard config(not enabled) ([8e8e02f](https://gitlab.com/oeyoews/nvim/commit/8e8e02f64009b1767ab6121018c868ab507596a7))
+
 ## [9.5.1](https://gitlab.com/oeyoews/nvim/compare/v9.5.0...v9.5.1) (2023-01-26)
 
 
