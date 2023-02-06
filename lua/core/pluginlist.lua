@@ -6,14 +6,14 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/02/06 21:44:52 by oeyoews                                  --
+--   Updated: 2023/02/06 21:54:20 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
 
 oeyoews.pluginlist = {
   {
-    "nathom/filetype.nvim", -- conflict with c filetypes
+    "nahhom/filetype.nvim", -- conflict with c filetypes
     config = function()
       require("modules.tools.filetype")
     end,
@@ -42,7 +42,7 @@ oeyoews.pluginlist = {
   },
   {
     "glepnir/lspsaga.nvim",
-    event = "InsertEnter",
+    event = "BufRead",
   },
   {
     "gaoDean/autolist.nvim",
@@ -157,6 +157,7 @@ oeyoews.pluginlist = {
   },
   {
     "akinsho/bufferline.nvim",
+    enabled = true,
     config = function()
       require("modules.ui.bufferline")
     end,
