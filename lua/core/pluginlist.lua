@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/02/03 15:41:07 by oeyoews                                  --
+--   Updated: 2023/02/06 21:44:52 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -343,6 +343,14 @@ oeyoews.pluginlist = {
     build = ":Neorg sync-parsers",
     config = function()
       require("modules.tools.neorg")
+    end,
+  },
+  {
+    "glepnir/dashboard-nvim",
+    enabled = false,
+    event = "VimEnter",
+    config = function()
+      require("modules.tools.dashboard")
     end,
   },
 }
