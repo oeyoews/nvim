@@ -13,7 +13,7 @@ local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
 
 oeyoews.pluginlist = {
   {
-    "nahhom/filetype.nvim", -- conflict with c filetypes
+    "nathom/filetype.nvim", -- conflict with c filetypes
     config = function()
       require("modules.tools.filetype")
     end,
