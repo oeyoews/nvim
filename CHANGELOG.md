@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.7.1](https://gitlab.com/oeyoews/nvim/compare/v9.7.0...v9.7.1) (2023-02-07)
+
+
+### Bug Fixes
+
+* updace error pluginname ([005f2fc](https://gitlab.com/oeyoews/nvim/commit/005f2fcd5df6f412e88d3ba44be527b32bda6fcc))
+
 # [9.7.0](https://gitlab.com/oeyoews/nvim/compare/v9.6.0...v9.7.0) (2023-02-06)
 
 
