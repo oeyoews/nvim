@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2022/08/03 11:43:13 by oeyoews                                  --
---   Updated: 2022/08/24 01:13:41 by oeyoews                                  --
+--   Updated: 2023/02/10 01:53:22 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -22,6 +22,11 @@ local Config = {
   -- NOTE: this comment must is two
   ft = {
     c = {
+      start_comment = "/*",
+      end_comment = "*/",
+      fill_comment = "*",
+    },
+    javascript = {
       start_comment = "/*",
       end_comment = "*/",
       fill_comment = "*",
