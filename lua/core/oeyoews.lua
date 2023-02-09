@@ -43,7 +43,7 @@ oeyoews.options = {
 oeyoews.servers = {
   "sumneko_lua",
   "tsserver",
-  "clangd",
+  -- "clangd",
   -- "eslint", -- not suit mjs zx
   -- "cmake",
   "pylsp",

@@ -91,11 +91,11 @@ vim.keymap.set("n", "<space>ln", "<cmd>NullLsInfo<cr>", {
 })
 
 -- @ref: https://github.com/jose-elias-alvarez/null-ls.nvim/issues/428
-local notify = vim.notify
-vim.notify = function(msg, ...)
-  if msg:match("warning: multiple different client offset_encodings") then
-    return
-  end
-
-  notify(msg, ...)
-end
+-- local notify = vim.notify
+-- vim.notify = function(msg, ...)
+--   if msg:match("warning: multiple different client offset_encodings") then
+--     return
+--   end
+--
+--   notify(msg, ...)
+-- end
