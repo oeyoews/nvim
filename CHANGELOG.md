@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.7.2](https://gitlab.com/oeyoews/nvim/compare/v9.7.1...v9.7.2) (2023-02-09)
+
+
+### Bug Fixes
+
+* remove ulsnippet from dependencies to fix tab load ([544715c](https://gitlab.com/oeyoews/nvim/commit/544715c554ce33df37879566e49de161f648ee06))
+
 ## [9.7.1](https://gitlab.com/oeyoews/nvim/compare/v9.7.0...v9.7.1) (2023-02-07)
 
 
