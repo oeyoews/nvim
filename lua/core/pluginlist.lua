@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/02/06 22:03:15 by oeyoews                                  --
+--   Updated: 2023/02/10 01:32:39 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -42,6 +42,7 @@ oeyoews.pluginlist = {
   },
   {
     "glepnir/lspsaga.nvim",
+    enabled = false,
     event = "BufRead",
   },
   {
@@ -195,7 +196,7 @@ oeyoews.pluginlist = {
   },
   {
     "hrsh7th/nvim-cmp",
-    event = "InsertEnter",
+    event = "VeryLazy",
     dependencies = {
       {
         "oeyoews/tabout.nvim",
@@ -203,7 +204,6 @@ oeyoews.pluginlist = {
       },
       "quangnguyen30192/cmp-nvim-ultisnips",
       "hrsh7th/cmp-buffer",
-      "SirVer/ultisnips",
       "honza/vim-snippets",
       "hrsh7th/cmp-nvim-lsp",
       "hrsh7th/cmp-path",
@@ -213,6 +213,7 @@ oeyoews.pluginlist = {
       require("modules.langs.cmp")
     end,
   },
+  "SirVer/ultisnips",
   {
     "neovim/nvim-lspconfig",
     config = function()
