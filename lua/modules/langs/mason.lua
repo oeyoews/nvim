@@ -40,13 +40,13 @@ require("mason-lspconfig").setup({
   -- ensure_installed = oeyoews.servers,
   -- use automatic_installation replace ensure_installed
   automatic_installation = {
-    exclude = mason_exclude, -- if this system no clangd, you need comment this line to install clangd by mason
+    -- exclude = mason_exclude, -- if this system no clangd, you need comment this line to install clangd by mason
   },
 })
 
 --   mappings
 vim.keymap.set("n", "<space>lm", "<cmd>Mason<cr>", {
-  desc = "ﯓ Show mason",
+  desc = "Ⓜ Show mason",
 })
 
 -- cmd

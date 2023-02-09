@@ -43,14 +43,15 @@ oeyoews.options = {
 oeyoews.servers = {
   "sumneko_lua",
   "tsserver",
+  "clangd",
   -- "eslint", -- not suit mjs zx
   -- "cmake",
-  -- "pylsp",
+  "pylsp",
   -- "gopls",
-  -- "jsonls",
+  "jsonls",
   -- "vimls",
   -- "bashls",
-  -- "yamlls",
+  "yamlls",
   -- "texlab",
 }
 
