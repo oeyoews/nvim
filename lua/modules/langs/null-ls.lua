@@ -61,6 +61,9 @@ null_ls.setup({
   update_in_insert = false,
   debounce = 500,
   sources = sources,
+  -- on_init = function(new_client, _)
+  --   new_client.offset_encoding = "utf-8"
+  -- end,
   on_attach = function(client, bufnr)
     if oeyoews.nvim_version > 7 and client.supports_method("textDocument/formatting") then
       vim.api.nvim_clear_autocmds({
@@ -86,3 +89,13 @@ vim.keymap.set("n", "<space>ln", "<cmd>NullLsInfo<cr>", {
   silent = true,
   desc = " show null-ls info",
 })
+
+-- @ref: https://github.com/jose-elias-alvarez/null-ls.nvim/issues/428
+local notify = vim.notify
+vim.notify = function(msg, ...)
+  if msg:match("warning: multiple different client offset_encodings") then
+    return
+  end
+
+  notify(msg, ...)
+end
