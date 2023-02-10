@@ -51,7 +51,7 @@ oeyoews.servers = {
   "jsonls",
   -- "vimls",
   -- "bashls",
-  "yamlls",
+  -- "yamlls",
   -- "texlab",
 }
 

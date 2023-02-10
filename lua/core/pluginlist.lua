@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/02/10 01:32:39 by oeyoews                                  --
+--   Updated: 2023/02/10 12:39:38 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -114,7 +114,7 @@ oeyoews.pluginlist = {
   },
   "nvim-lua/plenary.nvim",
   {
-    "kyazdani42/nvim-web-devicons",
+    "nvim-tree/nvim-web-devicons",
     config = function()
       require("modules.ui.web_icons")
     end,
@@ -315,44 +315,6 @@ oeyoews.pluginlist = {
     "nvim-lualine/lualine.nvim",
     config = function()
       require("modules.tools.lualine")
-    end,
-  },
-  {
-    "folke/noice.nvim",
-    enabled = false,
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-    },
-    config = function()
-      require("modules.tools.noice")
-    end,
-  },
-  {
-    "JoosepAlviste/palenightfall.nvim",
-    enabled = false,
-  },
-  {
-    "nvim-orgmode/orgmode",
-    enabled = false,
-    ft = "org",
-    config = function()
-      require("orgmode").setup_ts_grammar({})
-    end,
-  },
-  {
-    "nvim-neorg/neorg",
-    enabled = false,
-    build = ":Neorg sync-parsers",
-    config = function()
-      require("modules.tools.neorg")
-    end,
-  },
-  {
-    "glepnir/dashboard-nvim",
-    enabled = false,
-    event = "VimEnter",
-    config = function()
-      require("modules.tools.dashboard")
     end,
   },
 }

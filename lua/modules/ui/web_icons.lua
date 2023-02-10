@@ -1,6 +1,12 @@
 -- TODO: add norg ft icons
 require("nvim-web-devicons").setup({
   override = {
+    ["Dockerfile"] = {
+      icon = "",
+      color = "#2496ED",
+      cterm_color = "59",
+      name = "Dockerfile",
+    },
     norg = {
       icon = "", -- 
       color = "#5AB680",
