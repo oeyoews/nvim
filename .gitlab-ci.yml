@@ -1,11 +1,14 @@
 image: node:latest
 
+except:
+  changes:
+    - .version
+
 stages:
   - release
   - deploy
 
 create-release:
-
   stage: release
 
   variables:
