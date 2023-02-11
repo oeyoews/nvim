@@ -14,4 +14,4 @@ create-release:
     - yarn install
     - npx semantic-release
   rules:
-    - if: $CI_COMMIT_TAG
+    - if: !$CI_COMMIT_TAG
