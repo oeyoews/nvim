@@ -13,6 +13,5 @@ create-release:
   script:
     - yarn install
     - npx semantic-release
-  rules:
-    only:
-      - branches
+  only:
+    - branches
