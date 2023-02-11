@@ -1,16 +1,15 @@
 image: node:latest
 
-except:
-  changes:
-    - package.json
-    - CHANGELOG.md
-
 stages:
   - release
   - deploy
 
 create-release:
   stage: release
+  except:
+    changes:
+      - package.json
+      - CHANGELOG.md
 
   variables:
     GITLAB_TOKEN: $GITLAB_TOKEN
