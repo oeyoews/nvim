@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.7.4](https://gitlab.com/oeyoews/nvim/compare/v9.7.3...v9.7.4) (2023-02-11)
+
+
+### Bug Fixes
+
+* remove main branch ([fba355a](https://gitlab.com/oeyoews/nvim/commit/fba355a324f97305ce9a0c39c8717e95cbf6ca9a))
+
 ## [9.7.3](https://gitlab.com/oeyoews/nvim/compare/v9.7.2...v9.7.3) (2023-02-11)
 
 
