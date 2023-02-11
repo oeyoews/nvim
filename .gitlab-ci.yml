@@ -3,6 +3,9 @@ image: node:latest
 stages:
   - release
   - deploy
+only:
+  refs:
+    - chezmoi
 
 create-release:
   stage: release
@@ -13,5 +16,3 @@ create-release:
   script:
     - yarn install
     - npx semantic-release
-  except:
-    - changes: ["package.json", CHANGELOG.md]
