@@ -14,4 +14,4 @@ create-release:
     - yarn install
     - npx semantic-release
   only:
-    - branches
+    - tags
