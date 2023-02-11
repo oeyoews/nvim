@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.7.7](https://gitlab.com/oeyoews/nvim/compare/v9.7.6...v9.7.7) (2023-02-11)
+
+
+### Bug Fixes
+
+* remove rules ([827efe2](https://gitlab.com/oeyoews/nvim/commit/827efe2b51dd1cbad153f4bdc33d975e1dd4acb2))
+* update rules ([c8ef072](https://gitlab.com/oeyoews/nvim/commit/c8ef072517ae0f4da9da07050ac5c2e1e65a044e))
+* use branches ([eb2eae2](https://gitlab.com/oeyoews/nvim/commit/eb2eae246cddb965fd7e0ba4251b3f2d46b61a27))
+
 ## [9.7.6](https://gitlab.com/oeyoews/nvim/compare/v9.7.5...v9.7.6) (2023-02-11)
 
 
