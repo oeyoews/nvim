@@ -13,5 +13,5 @@ create-release:
   script:
     - yarn install
     - npx semantic-release
-  only:
+  except:
     - tags
