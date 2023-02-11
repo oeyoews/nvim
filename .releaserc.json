@@ -2,7 +2,6 @@
   "dryRun": false,
   "debug": false,
   "branches": [
-    "nightly",
     "lazy.nvim"
   ],
   "plugins": [
