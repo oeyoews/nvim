@@ -1,0 +1,5 @@
+snippet json "json" b
+fetch("$1")
+  .then((response) => response.json())
+  .then((json) => console.log(json.author));
+endsnippet
