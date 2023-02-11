@@ -1,7 +1,9 @@
 image: node:latest
 
 except:
-  - v*.*.*
+  changes:
+    - package.json
+    - CHANGELOG.md
 
 stages:
   - release
