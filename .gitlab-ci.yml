@@ -1,8 +1,7 @@
 image: node:latest
 
 except:
-  changes:
-    - .version
+  - v*.*.*
 
 stages:
   - release
