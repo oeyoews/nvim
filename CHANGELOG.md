@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.7.3](https://gitlab.com/oeyoews/nvim/compare/v9.7.2...v9.7.3) (2023-02-11)
+
+
+### Bug Fixes
+
+* add skip ci ([dc9374d](https://gitlab.com/oeyoews/nvim/commit/dc9374d1d475dbe19139b8938cd410f37284703e))
+
 ## [9.7.2](https://gitlab.com/oeyoews/nvim/compare/v9.7.1...v9.7.2) (2023-02-09)
 
 
