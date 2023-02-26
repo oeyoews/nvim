@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.7.10](https://gitlab.com/oeyoews/nvim/compare/v9.7.9...v9.7.10) (2023-02-12)
+
+
+### Bug Fixes
+
+* use lua_la instead of sumnkeo ([42c9d4b](https://gitlab.com/oeyoews/nvim/commit/42c9d4b4617ea59e3c0cd64ef6400f808023152d))
+
 ## [9.7.9](https://gitlab.com/oeyoews/nvim/compare/v9.7.8...v9.7.9) (2023-02-11)
 
 
