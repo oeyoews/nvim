@@ -1,5 +1,29 @@
 # vim:ts=4 sw=4 noexpandtab ft=snippets
 
+snippet filter-emptyStoryRiver "empty story river" b
+<$list filter="[list[$:/StoryList]count[]match[0]]">
+$1
+</$list>
+endsnippet
+
+snippet filter-storyRiver "story river" b
+<$list filter="[[$:/StoryList]get[list]!is[blank]]">
+$1
+</$list>
+endsnippet
+
+snippet tip "random tip" b
+title: $:/plugins/oeyoews/tiddlywiki-random-tip/docs/$1
+mask-closable: yes
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
+tags: Tiddlywiki5Tip
+author: oeyoews
+class: o-random-tip tc-modal-centered
+
+> $2
+> <<random-author>>
+endsnippet
+
 snippet tree "plugin tree" b
 <$macrocall $name="tree" prefix={{{ [<currentTiddler>addsuffix[/]] }}}>
 endsnippet
@@ -62,6 +86,9 @@ endsnippet
 
 snippet tagsPagecontrol "page-control" b
 tags: $:/tags/PageControls
+list-before: $:/core/ui/Buttons/more-page-actions
+description:
+caption:
 endsnippet
 
 snippet tagsMacro	"macro"
@@ -131,7 +158,7 @@ $1
 endsnippet
 
 snippet filter-mobile "list filter mobile" b
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
 $1
 </$list>
 endsnippet

@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/02/10 12:39:38 by oeyoews                                  --
+--   Updated: 2023/02/26 12:06:37 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -198,10 +198,6 @@ oeyoews.pluginlist = {
     "hrsh7th/nvim-cmp",
     event = "VeryLazy",
     dependencies = {
-      {
-        "oeyoews/tabout.nvim",
-        config = [[require("tabout").setup()]],
-      },
       "quangnguyen30192/cmp-nvim-ultisnips",
       "hrsh7th/cmp-buffer",
       "honza/vim-snippets",
