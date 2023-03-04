@@ -1,5 +1,19 @@
 # vim:ts=4 sw=4 noexpandtab ft=snippets
 
+snippet mask "mask-closeable" b
+mask-closable: yes
+endsnippet
+
+snippet tm-open "a link" b
+<$action-sendmessage $message="tm-open-external-window" $param="$1"/>
+endsnippet
+
+snippet filter-system "non system" b
+<$list filter="[!is[system]]">
+$1
+</$list>
+endsnippet
+
 snippet filter-emptyStoryRiver "empty story river" b
 <$list filter="[list[$:/StoryList]count[]match[0]]">
 $1
@@ -10,18 +24,6 @@ snippet filter-storyRiver "story river" b
 <$list filter="[[$:/StoryList]get[list]!is[blank]]">
 $1
 </$list>
-endsnippet
-
-snippet tip "random tip" b
-title: $:/plugins/oeyoews/tiddlywiki-random-tip/docs/$1
-mask-closable: yes
-subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
-tags: Tiddlywiki5Tip
-author: oeyoews
-class: o-random-tip tc-modal-centered
-
-> $2
-> <<random-author>>
 endsnippet
 
 snippet tree "plugin tree" b
@@ -42,8 +44,8 @@ tags: $:/tags/TextEditor/Snippet
 title: $:/language/Snippets/$1
 endsnippet
 
-snippet typeStyle "text/css" b
-type: text/css
+snippet rules-css "text/css" b
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
 endsnippet
 
 snippet typeJavascript "tid type" b
@@ -55,7 +57,7 @@ module-type: ${1:macro}
 endsnippet
 
 snippet actionSendmessage "action sendmessage" b
-<$action-sendmessage $message="tm-" $param=""/>
+<$action-sendmessage $message="tm-$1" $param="$0"/>
 endsnippet
 
 snippet navigate "navigate tiddler" b

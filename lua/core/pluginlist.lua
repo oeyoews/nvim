@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/02/26 17:24:44 by oeyoews                                  --
+--   Updated: 2023/03/04 15:44:19 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -259,6 +259,7 @@ oeyoews.pluginlist = {
   {
     "dstein64/vim-startuptime",
     cmd = "StartupTime",
+    enabled = false,
     -- config = [[vim.g.startuptime_event_width = 30]],
   },
   {

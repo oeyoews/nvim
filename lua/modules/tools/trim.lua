@@ -1,7 +1,7 @@
 local trim = require("trim")
 
 trim.setup({
-  disable = { "python" },
+  ft_blocklist = { "python" },
   -- if you want to ignore space of top
   patterns = {
     [[%s/\s\+$//e]],
