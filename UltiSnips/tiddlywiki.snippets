@@ -1,5 +1,15 @@
 # vim:ts=4 sw=4 noexpandtab ft=snippets
 
+snippet close-button "close-btn"
+{{$:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal}}
+endsnippet
+
+snippet tab-jump "tabstate"
+<$button setTitle=<<tabsState>> setField="text" setTo=$1$>
+GettingStarted
+</$button>
+endsnippet
+
 snippet mask "mask-closeable" b
 mask-closable: yes
 endsnippet
@@ -120,7 +130,7 @@ $1
 endsnippet
 
 snippet title "oeyoews plugins"
-title: $:/plugins/oeyoews/tiddlywiki-${1:pluginname}/`!p snip.rv = snip.basename`
+title: $:/plugins/oeyoews/${1:pluginname}/`!p snip.rv = snip.basename`
 endsnippet
 
 snippet page-control "add page-control button" b
