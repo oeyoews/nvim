@@ -1,3 +1,36 @@
+# vim:ts=4 sw=4 noexpandtab ft=snippets
+
+snippet files "tiddlywiki files" b
+{
+  "tiddlers": [
+    {
+      "file": "$1",
+      "fields": {
+        "title": "$2",
+        "type": ""
+      }
+    }
+  ]
+}
+endsnippet
+
+snippet vercel-api "api" b
+{
+  "builds": [
+    {
+      "src": "./index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index.js"
+    }
+  ]
+}
+endsnippet
+
 snippet dependent "dependent" b
 "dependents": ["$:/plugins/kookma/shiraz-callout", "$:/plugins/oeyoews/tiddlywiki-modal-ui"],
 endsnippet

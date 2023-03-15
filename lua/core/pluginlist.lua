@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/03/04 15:44:19 by oeyoews                                  --
+--   Updated: 2023/03/16 01:28:27 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -314,6 +314,15 @@ oeyoews.pluginlist = {
       require("modules.tools.lualine")
     end,
   },
+  --[=[ {
+    "roobert/tailwindcss-colorizer-cmp.nvim",
+    -- optionally, override the default options:
+    config = function()
+      require("tailwindcss-colorizer-cmp").setup({
+        color_square_width = 2,
+      })
+    end,
+  }, --]=]
 }
 
 -- autoload on loading this pluginlist variable

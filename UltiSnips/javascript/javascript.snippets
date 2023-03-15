@@ -1,5 +1,17 @@
+# vim:ts=4 sw=4 noexpandtab ft=snippets
+
 snippet json "json" b
 fetch("$1")
   .then((response) => response.json())
   .then((json) => console.log(json.author));
+endsnippet
+
+snippet fetch "fetch" b
+  fetch("https://htk.vercel.app/api")
+    .then((response) => response.json())
+    .then((data) => {
+      const htk = document.querySelector("#htk");
+      htk.innerText = `${data.text}  ${data.author}`;
+    })
+    .catch(console.error);
 endsnippet

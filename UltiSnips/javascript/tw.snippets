@@ -1,6 +1,24 @@
+snippet mob "mob adjust" b
+if (navigator.userAgent.match(/Mobile/i))
+endsnippet
+
+snippet browser "browser" b
+if (!$tw.browser) return;
+endsnippet
+
+snippet comment "comment" b
+/*\
+title: $1.js
+type: application/javascript
+module-type: widget
+
+description
+\*/
+endsnippet
+
 snippet template-widget "general widget" b
 /*\
-title: general widget
+title: general-widget
 type: application/javascript
 module-type: widget
 
@@ -36,6 +54,17 @@ general widget
       divNode.className = 'divClass';
       parent.insertBefore(divNode, nextSibling);
       this.domNodes.push(divNode);
+    }
+
+    refresh() {
+      var changedAttributes = this.computeAttributes();
+      // changedAttributes.title;
+      if (Object.keys(changedAttributes).length > 0) {
+        this.refreshSelf();
+        return true;
+      } else {
+        return false;
+      }
     }
   }
 
