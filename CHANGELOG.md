@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.8.0](https://gitlab.com/oeyoews/nvim/compare/v9.7.10...v9.8.0) (2023-03-19)
+
+
+### Features
+
+* add chatgpt plugin ([8e17d3d](https://gitlab.com/oeyoews/nvim/commit/8e17d3d748bb06e7a2aad500c18dded2755c23b4))
+
 ## [9.7.10](https://gitlab.com/oeyoews/nvim/compare/v9.7.9...v9.7.10) (2023-02-12)
 
 
