@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/03/16 01:28:27 by oeyoews                                  --
+--   Updated: 2023/03/19 08:23:49 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -113,6 +113,7 @@ oeyoews.pluginlist = {
     end,
   },
   "nvim-lua/plenary.nvim",
+  "MunifTanjim/nui.nvim",
   {
     "nvim-tree/nvim-web-devicons",
     config = function()
@@ -314,15 +315,16 @@ oeyoews.pluginlist = {
       require("modules.tools.lualine")
     end,
   },
-  --[=[ {
-    "roobert/tailwindcss-colorizer-cmp.nvim",
-    -- optionally, override the default options:
+  {
+    "jackMort/ChatGPT.nvim",
     config = function()
-      require("tailwindcss-colorizer-cmp").setup({
-        color_square_width = 2,
+      require("chatgpt").setup({
+        keymaps = {
+          submit = "<C-s>",
+        },
       })
     end,
-  }, --]=]
+  },
 }
 
 -- autoload on loading this pluginlist variable
