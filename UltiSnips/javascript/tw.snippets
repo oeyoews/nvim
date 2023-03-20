@@ -1,3 +1,33 @@
+snippet global-tw "global variable" b
+/*\
+title: $:/plugins/oeyoews/tiddlywiki-xxx/startup.js
+type: application/javascript
+module-type: startup
+
+\*/
+
+'use strict';
+module.exports = {
+  ...module.exports,
+  name: 'xxx',
+  platforms: ['browser'],
+  after: ['load-modules'],
+  synchronous: !0,
+  startup: () => {
+    try {
+      globalThis.xxx = require('');
+    } catch (r) {
+      console.error(r);
+    }
+  },
+};
+
+endsnippet
+
+snippet currentTiddler "currentTiddler" b
+const currentTiddler = this.getVariable('currentTiddler');
+endsnippet
+
 snippet mob "mob adjust" b
 if (navigator.userAgent.match(/Mobile/i))
 endsnippet
