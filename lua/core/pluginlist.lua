@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/03/19 11:21:25 by oeyoews                                  --
+--   Updated: 2023/03/21 21:31:31 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -322,6 +322,16 @@ oeyoews.pluginlist = {
         keymaps = {
           submit = "<C-s>",
         },
+      })
+    end,
+  },
+  {
+    "roobert/tailwindcss-colorizer-cmp.nvim",
+    -- optionally, override the default options:
+    enabled = false,
+    config = function()
+      require("tailwindcss-colorizer-cmp").setup({
+        color_square_width = 2,
       })
     end,
   },

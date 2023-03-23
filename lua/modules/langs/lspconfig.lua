@@ -18,6 +18,7 @@ end --]=]
 local on_attach = function(client)
   -- require("user.lsp_format").on_attach(client)
   require("lsp-format").on_attach(client)
+  -- require("tailwindcss-colorizer-cmp").formatter(client)
 end
 
 -- @ref: https://github.com/lxyoucan/nvim/blob/c84b07f078d20d175a4a3b48a73705b61997bd9f/lua/lspconf/lua.lua#L85

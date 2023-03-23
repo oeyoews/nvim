@@ -1,6 +1,23 @@
 # vim:ts=4 sw=4 noexpandtab ft=snippets
 
-snippet files "tiddlywiki files" b
+snippet files-directory "files directory" b
+  "directories": [
+    {
+      "path": "startup",
+      "filesRegExp": "^.*\\\\.min.js$",
+      "fields": {
+        "title": {
+          "source": "filename",
+          "prefix": "$:/plugins/oeyoews/xxx/library/"
+        },
+        "type": "application/javascript",
+        "module-type": "library"
+      }
+    }
+  ]
+endsnippet
+
+snippet file-tiddlers "tiddlywiki files" b
 {
   "tiddlers": [
     {
