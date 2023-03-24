@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.9.0](https://gitlab.com/oeyoews/nvim/compare/v9.8.0...v9.9.0) (2023-03-24)
+
+
+### Features
+
+* config tailwindcss ([64eda79](https://gitlab.com/oeyoews/nvim/commit/64eda793488c4b71dddf0c2d3f48383a74e68536))
+
 # [9.8.0](https://gitlab.com/oeyoews/nvim/compare/v9.7.10...v9.8.0) (2023-03-19)
 
 
