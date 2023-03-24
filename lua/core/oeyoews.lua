@@ -49,6 +49,7 @@ oeyoews.servers = {
   "pylsp",
   -- "gopls",
   "jsonls",
+  "tailwindcss",
   -- "vimls",
   -- "bashls",
   -- "yamlls",

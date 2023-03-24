@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/03/21 21:31:31 by oeyoews                                  --
+--   Updated: 2023/03/24 21:01:36 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -333,6 +333,12 @@ oeyoews.pluginlist = {
       require("tailwindcss-colorizer-cmp").setup({
         color_square_width = 2,
       })
+    end,
+  },
+  {
+    "themaxmarchuk/tailwindcss-colors.nvim",
+    config = function()
+      require("tailwindcss-colors").setup()
     end,
   },
 }
