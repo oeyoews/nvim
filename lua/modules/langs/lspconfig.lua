@@ -106,4 +106,4 @@ end
 custom_icon()
 
 -- still have some bug use space space eb enable
-require("modules.langs.lspsaga")
+-- require("modules.langs.lspsaga")
