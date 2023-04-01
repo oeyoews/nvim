@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/03/24 21:11:58 by oeyoews                                  --
+--   Updated: 2023/04/01 10:09:45 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -341,6 +341,10 @@ oeyoews.pluginlist = {
       require("tailwindcss-colors").setup()
     end,
   },
+  --[=[ {
+    "findango/vim-mdx",
+    config = function() end,
+  }, --]=]
 }
 
 -- autoload on loading this pluginlist variable
