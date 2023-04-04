@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.10.0](https://gitlab.com/oeyoews/nvim/compare/v9.9.1...v9.10.0) (2023-04-01)
+
+
+### Features
+
+* add xmlformatter ([43f0d74](https://gitlab.com/oeyoews/nvim/commit/43f0d74f032c0cd41f17833e8ae3edd850a29e03))
+
 ## [9.9.1](https://gitlab.com/oeyoews/nvim/compare/v9.9.0...v9.9.1) (2023-03-24)
 
 
