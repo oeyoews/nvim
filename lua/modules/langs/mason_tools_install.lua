@@ -15,6 +15,7 @@ local tbl = {
   "codespell", -- spell
   "shellcheck",
   "latexindent",
+  "vue-language-server", -- mapping lsp is volar
   -- "proselint",
   -- "black", -- ptyhon format
 }
