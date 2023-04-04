@@ -1,5 +1,14 @@
 # vim:ts=4 sw=4 noexpandtab ft=snippets
 
+snippet ---gastby "Description" b
+---
+date: `date +%Y-%m-%d`
+title: `!v expand("%:p:h:t")`
+---
+
+$1
+endsnippet
+
 snippet repo-github "repo" b
 https://github.com/oeyoews/$1
 endsnippet
