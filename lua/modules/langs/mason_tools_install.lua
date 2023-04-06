@@ -7,6 +7,7 @@ local check_mason = function(bin)
 end
 
 local tbl = {
+  "marksman",
   "xmlformatter",
   "stylua", -- lua
   "prettier",
