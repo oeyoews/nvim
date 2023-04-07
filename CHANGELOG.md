@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.11.0](https://gitlab.com/oeyoews/nvim/compare/v9.10.0...v9.11.0) (2023-04-06)
+
+
+### Features
+
+* add marksman ([6ad2a24](https://gitlab.com/oeyoews/nvim/commit/6ad2a24e81321bce9c24ba3d8ba656e59036c21c))
+
 # [9.10.0](https://gitlab.com/oeyoews/nvim/compare/v9.9.1...v9.10.0) (2023-04-01)
 
 
