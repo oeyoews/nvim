@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/04/04 19:08:46 by oeyoews                                  --
+--   Updated: 2023/04/07 11:17:16 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -92,6 +92,7 @@ oeyoews.pluginlist = {
   },
   {
     "cappyzawa/trim.nvim",
+    enabled = true,
     config = function()
       require("modules.tools.trim")
     end,
@@ -191,7 +192,7 @@ oeyoews.pluginlist = {
   },
   {
     "hrsh7th/cmp-nvim-lsp-signature-help",
-    enabled = "false",
+    enabled = false,
     lazy = true,
     event = "InsertEnter",
   },

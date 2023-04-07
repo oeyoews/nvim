@@ -14,7 +14,7 @@ local sources = {
   }),
   --]=]
   formatting.prettier,
-  formatting.xmlformat,
+  -- formatting.xmlformat,
   formatting.stylua.with({
     extra_args = { "--config-path", vim.fn.expand("~/.config/nvim/linter-config/stylua.toml") },
   }),
@@ -36,8 +36,8 @@ local sources = {
   --   -- extra_args = { "-c", "/tmp/" }, -- https://latexindentpl.readthedocs.io/en/latest/sec-how-to-use.html#from-the-command-line
   -- }), -- need install texlive-latexindent-meta
   formatting.fixjson, -- not worked
-  formatting.clang_format,
-  formatting.markdown_toc,
+  -- formatting.clang_format,
+  -- formatting.markdown_toc, -- format frontmatter also
   diagnostics.codespell.with({
     filetypes = {
       "markdown",

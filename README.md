@@ -71,6 +71,7 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 - [x] auto dark
 - [x] auto list
 - [ ] refactor mason install
+- [ ] nul-ls format by hand, or how to deverbose output exit to terminal
 
 ## 🔗 Links
 
