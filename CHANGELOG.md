@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.11.2](https://gitlab.com/oeyoews/nvim/compare/v9.11.1...v9.11.2) (2023-04-08)
+
+
+### Bug Fixes
+
+* remove filetype.nvim ([175538f](https://gitlab.com/oeyoews/nvim/commit/175538f233d7b7a560535c5bcedf90ac637fd148))
+
 ## [9.11.1](https://gitlab.com/oeyoews/nvim/compare/v9.11.0...v9.11.1) (2023-04-08)
 
 
