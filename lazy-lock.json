@@ -46,6 +46,5 @@
   "vim-quickrun": { "branch": "master", "commit": "50f9ced186cf2651f4356aa3548c2306e181ec3b" },
   "vim-snippets": { "branch": "master", "commit": "c7e61b73a546c9dd0525cd158cc1613bb48e414a" },
   "vim-tiddlywiki": { "branch": "master", "commit": "c6d16464e525ce97ce80c5c9ec2335b57b264528" },
-  "vimtex": { "branch": "master", "commit": "e8542f26b45e489fe7cfa7894737ccb0fe937fcd" },
   "which-key.nvim": { "branch": "main", "commit": "4b73390eec680b4c061ea175eb32c0ff3412271d" }
 }

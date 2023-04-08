@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/04/08 21:51:30 by oeyoews                                  --
+--   Updated: 2023/04/08 21:53:01 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -62,6 +62,7 @@ oeyoews.pluginlist = {
   {
     "lervag/vimtex", -- not support lazyload
     ft = "tex",
+    enabled = false,
     lazy = true,
     config = function()
       require("modules.tools.vimtex")
