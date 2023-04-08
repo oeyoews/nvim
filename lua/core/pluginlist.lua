@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/04/08 21:53:01 by oeyoews                                  --
+--   Updated: 2023/04/08 21:54:20 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -120,6 +120,7 @@ oeyoews.pluginlist = {
     keys = {
       "<space>tt",
     },
+    enabled = false,
     config = function()
       require("modules.tools.trouble")
     end,
@@ -142,6 +143,7 @@ oeyoews.pluginlist = {
   {
     "danymat/neogen",
     cmd = "Neogen",
+    enabled = false,
     config = function()
       require("neogen").setup()
     end,
@@ -209,6 +211,7 @@ oeyoews.pluginlist = {
   },
   {
     "folke/todo-comments.nvim",
+    enabled = false,
     config = function()
       require("todo-comments").setup()
     end,
