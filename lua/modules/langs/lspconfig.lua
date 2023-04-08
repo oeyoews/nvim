@@ -46,7 +46,7 @@ local neodev = require("neodev").setup({
 local lsp_setup = function()
   if oeyoews.options.enable_lsp then
     for _, lsp_server in pairs(oeyoews.servers) do
-      -- TODO: split it like astronvim.lsp.handlers
+      -- TODO split it like astronvim.lsp.handlers
       -- local opts = require("modules.langs.server_settings")
       --[=[ if lsp_server == "sumneko_lua" then
         lspconfig[lsp_server].setup(neodev)
