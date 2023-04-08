@@ -13,7 +13,11 @@ local sources = {
     },
   }),
   --]=]
-  formatting.prettier,
+  formatting.prettier.with({
+    disabled_filetypes = {
+      "markdown",
+    },
+  }),
   -- formatting.xmlformat,
   formatting.stylua.with({
     extra_args = { "--config-path", vim.fn.expand("~/.config/nvim/linter-config/stylua.toml") },
@@ -38,12 +42,11 @@ local sources = {
   formatting.fixjson, -- not worked
   -- formatting.clang_format,
   -- formatting.markdown_toc, -- format frontmatter also
-  diagnostics.codespell.with({
+  --[=[ diagnostics.codespell.with({
     filetypes = {
       "markdown",
-      -- "lua",
     },
-  }),
+  }), --]=]
 }
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
