@@ -8,15 +8,15 @@ local formatting = null_ls.builtins.formatting
 
 local sources = {
   -- formatting.xmlformat,
-  --[=[ formatting.prettier.with({
+  formatting.prettier.with({
     disabled_filetypes = {
       "markdown",
     },
-  }), --]=]
+  }),
   formatting.stylua.with({
     extra_args = { "--config-path", vim.fn.expand("~/.config/nvim/linter-config/stylua.toml") },
   }),
-  formatting.fixjson, -- not worked
+  -- formatting.fixjson, -- not worked
   --[=[
   formatting.prettierd.with({
     env = {

@@ -7,13 +7,13 @@ local check_mason = function(bin)
 end
 
 local tbl = {
-  -- "marksman",
-  -- "xmlformatter",
   "stylua", -- lua
   "prettier",
+  -- "marksman",
+  -- "xmlformatter",
   -- "clang-format",
-  "fixjson",
-  "codespell", -- spell
+  -- "fixjson",
+  -- "codespell", -- spell
   -- "shellcheck",
   -- "latexindent",
   -- "vue-language-server", -- mapping lsp is volar
