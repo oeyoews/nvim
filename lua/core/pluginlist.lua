@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/04/08 21:54:20 by oeyoews                                  --
+--   Updated: 2023/04/08 21:55:19 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -322,25 +322,12 @@ oeyoews.pluginlist = {
     end,
   },
   {
-    "roobert/tailwindcss-colorizer-cmp.nvim",
-    -- optionally, override the default options:
-    enabled = false,
-    config = function()
-      require("tailwindcss-colorizer-cmp").setup({
-        color_square_width = 2,
-      })
-    end,
-  },
-  {
     "themaxmarchuk/tailwindcss-colors.nvim",
+    enabled = true,
     config = function()
       require("tailwindcss-colors").setup()
     end,
   },
-  --[=[ {
-    "findango/vim-mdx",
-    config = function() end,
-  }, --]=]
 }
 
 -- autoload on loading this pluginlist variable
