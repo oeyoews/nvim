@@ -6,18 +6,12 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/04/08 21:09:58 by oeyoews                                  --
+--   Updated: 2023/04/08 21:26:33 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
 
 oeyoews.pluginlist = {
-  {
-    "nathom/filetype.nvim", -- conflict with c filetypes
-    config = function()
-      require("modules.tools.filetype")
-    end,
-  },
   {
     "folke/tokyonight.nvim",
     priority = 1000,
@@ -153,6 +147,7 @@ oeyoews.pluginlist = {
   },
   {
     "lukas-reineke/indent-blankline.nvim",
+    enabled = true,
     config = function()
       require("modules.ui.indent")
     end,
