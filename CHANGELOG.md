@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.11.1](https://gitlab.com/oeyoews/nvim/compare/v9.11.0...v9.11.1) (2023-04-08)
+
+
+### Bug Fixes
+
+* remove format markdown for prettier ([2925afa](https://gitlab.com/oeyoews/nvim/commit/2925afa50e957c594042ac842b7fb26a9f90688a))
+
 # [9.11.0](https://gitlab.com/oeyoews/nvim/compare/v9.10.0...v9.11.0) (2023-04-06)
 
 
