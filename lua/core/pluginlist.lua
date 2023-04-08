@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/04/08 21:26:33 by oeyoews                                  --
+--   Updated: 2023/04/08 21:51:30 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -254,6 +254,7 @@ oeyoews.pluginlist = {
   },
   {
     "ekickx/clipboard-image.nvim",
+    enabled = false,
     ft = "markdown",
     cmd = "PastImg",
     lazy = true,
@@ -293,6 +294,7 @@ oeyoews.pluginlist = {
   {
     "barrett-ruth/live-server.nvim",
     -- build = "yarn global add live-server", --TODO
+    enabled = false,
     lazy = true,
     cmd = "LiveServerStart",
     ft = "html", -- not work ???
