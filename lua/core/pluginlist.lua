@@ -36,7 +36,7 @@ oeyoews.pluginlist = {
   },
   {
     "glepnir/lspsaga.nvim",
-    enabled = true,
+    enabled = false,
     event = "BufRead",
   },
   {
