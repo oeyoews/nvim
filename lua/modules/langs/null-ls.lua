@@ -2,26 +2,21 @@
 require("modules.langs.mason_tools_install")
 
 local null_ls = require("null-ls")
-local diagnostics = null_ls.builtins.diagnostics
 local formatting = null_ls.builtins.formatting
+-- local diagnostics = null_ls.builtins.diagnostics
 -- local code_actions = null_ls.builtins.code_actions
 
 local sources = {
-  --[=[ code_actions.gitsigns.with({
-    disabled_filetypes = {
-      "gitcommit",
-    },
-  }),
-  --]=]
+  -- formatting.xmlformat,
   formatting.prettier.with({
     disabled_filetypes = {
       "markdown",
     },
   }),
-  -- formatting.xmlformat,
   formatting.stylua.with({
     extra_args = { "--config-path", vim.fn.expand("~/.config/nvim/linter-config/stylua.toml") },
   }),
+  formatting.fixjson, -- not worked
   --[=[
   formatting.prettierd.with({
     env = {
@@ -39,7 +34,6 @@ local sources = {
   --   .with({
   --   -- extra_args = { "-c", "/tmp/" }, -- https://latexindentpl.readthedocs.io/en/latest/sec-how-to-use.html#from-the-command-line
   -- }), -- need install texlive-latexindent-meta
-  formatting.fixjson, -- not worked
   -- formatting.clang_format,
   -- formatting.markdown_toc, -- format frontmatter also
   --[=[ diagnostics.codespell.with({
@@ -65,9 +59,6 @@ null_ls.setup({
   update_in_insert = false,
   debounce = 500,
   sources = sources,
-  -- on_init = function(new_client, _)
-  --   new_client.offset_encoding = "utf-8"
-  -- end,
   on_attach = function(client, bufnr)
     if oeyoews.nvim_version > 7 and client.supports_method("textDocument/formatting") then
       vim.api.nvim_clear_autocmds({
