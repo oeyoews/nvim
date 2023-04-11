@@ -123,14 +123,15 @@ local mapping = {
 
 local sources = {
   -- { name = "copilot" },
-  { name = "orgmode" },
-  { name = "nvim_lsp_signature_help" },
+  -- { name = "orgmode" },
+  -- { name = "nvim_lsp_signature_help" },
+  -- { name = "neorg" },
   { name = "nvim_lsp" },
   { name = "ultisnips" },
   { name = "buffer", keyword_length = 3 },
   { name = "nvim-lua" },
   { name = "path" },
-  { name = "neorg" },
+  { name = "cmp-tw2css" },
 }
 
 local menu = {

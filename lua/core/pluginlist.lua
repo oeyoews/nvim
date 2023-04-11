@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/04/08 21:55:19 by oeyoews                                  --
+--   Updated: 2023/04/11 09:53:12 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -197,6 +197,7 @@ oeyoews.pluginlist = {
       "hrsh7th/cmp-nvim-lsp",
       "hrsh7th/cmp-path",
       "folke/neodev.nvim",
+      "jcha0713/cmp-tw2css",
     },
     config = function()
       require("modules.langs.cmp")
