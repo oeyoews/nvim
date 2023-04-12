@@ -43,7 +43,7 @@ oeyoews.options = {
 oeyoews.servers = {
   "lua_ls",
   -- "volar",
-  -- "tsserver",
+  "tsserver",
   -- "marksman",
   -- "clangd",
   -- "eslint", -- not suit mjs zx

@@ -46,6 +46,9 @@ nvim_treesitter_configs.setup({
     enable = true,
     disable = disable_filetypes,
   },
+  autotag = {
+    enable = true,
+  },
 
   -- install some different parsers automatically
   sync_install = false,

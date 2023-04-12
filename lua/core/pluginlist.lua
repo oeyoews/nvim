@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/04/11 09:53:12 by oeyoews                                  --
+--   Updated: 2023/04/12 19:22:37 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -171,6 +171,7 @@ oeyoews.pluginlist = {
     dependencies = {
       "p00f/nvim-ts-rainbow",
       "nvim-treesitter/nvim-treesitter-refactor",
+      "windwp/nvim-ts-autotag",
     },
   },
   {
