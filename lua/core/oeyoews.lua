@@ -46,7 +46,7 @@ oeyoews.servers = {
   "tsserver",
   -- "marksman",
   -- "clangd",
-  -- "eslint", -- not suit mjs zx
+  "eslint", -- not suit mjs zx
   -- "cmake",
   -- "pylsp",
   -- "gopls",
