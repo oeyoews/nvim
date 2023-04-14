@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.13.0](https://gitlab.com/oeyoews/nvim/compare/v9.12.0...v9.13.0) (2023-04-12)
+
+
+### Features
+
+* enable tsserver ([26dae2d](https://gitlab.com/oeyoews/nvim/commit/26dae2d01a6a8a6c5f4587170ae41d0d3d0c81bd))
+
 # [9.12.0](https://gitlab.com/oeyoews/nvim/compare/v9.11.2...v9.12.0) (2023-04-11)
 
 
