@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/04/12 19:22:37 by oeyoews                                  --
+--   Updated: 2023/04/14 20:12:49 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -36,7 +36,7 @@ oeyoews.pluginlist = {
   },
   {
     "glepnir/lspsaga.nvim",
-    enabled = false,
+    enabled = true,
     event = "BufRead",
   },
   {
