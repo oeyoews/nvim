@@ -1,27 +1,4 @@
-snippet global-tw "global variable" b
-/*\
-title: $:/plugins/oeyoews/tiddlywiki-xxx/startup.js
-type: application/javascript
-module-type: startup
-
-\*/
-'use strict';
-module.exports = {
-  ...module.exports,
-  name: 'xxx',
-  platforms: ['browser'],
-  after: ['load-modules'],
-  synchronous: !0,
-  startup: () => {
-    try {
-      globalThis.xxx = require('');
-    } catch (r) {
-      console.error(r);
-    }
-  },
-};
-
-endsnippet
+# vim:ts=4 sw=4 noexpandtab ft=snippets
 
 snippet currentTiddler "currentTiddler" b
 const currentTiddler = this.getVariable('currentTiddler');
@@ -59,9 +36,7 @@ general widget
   /*global $tw: false */
   'use strict';
 
-  if (!$tw.browser) {
-    return;
-  }
+  if (!$tw.browser) return;
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
@@ -98,5 +73,27 @@ general widget
   }
 
   exports['div-widget'] = DivWidget;
+})();
+endsnippet
+
+snippet startup "startup" b
+/*\
+title: xxx/startup.js
+type: application/javascript
+module-type: startup
+
+\*/
+
+(function () {
+  /*jslint node: true, browser: true */
+  /*global $tw: false */
+  'use strict';
+
+  exports.name = 'xxx-startup-hook';
+  exports.platforms = ['browser'];
+  exports.after = ['load-modules'];
+  exports.synchronous = true;
+
+  exports.startup = function () {};
 })();
 endsnippet
