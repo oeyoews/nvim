@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/04/14 20:14:39 by oeyoews                                  --
+--   Updated: 2023/04/24 09:21:36 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -330,6 +330,7 @@ oeyoews.pluginlist = {
       require("tailwindcss-colors").setup()
     end,
   },
+  "Exafunction/codeium.vim",
 }
 
 -- autoload on loading this pluginlist variable
