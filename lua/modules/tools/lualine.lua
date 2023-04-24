@@ -4,6 +4,7 @@ end
 
 require("lualine").setup({
   sections = {
+    -- load codeium.vim status
     lualine_c = {
       {
         get_status_string,

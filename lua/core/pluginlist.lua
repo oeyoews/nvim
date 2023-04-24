@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/04/24 09:41:28 by oeyoews                                  --
+--   Updated: 2023/04/24 10:23:06 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -300,7 +300,7 @@ oeyoews.pluginlist = {
   {
     "barrett-ruth/live-server.nvim",
     -- build = "yarn global add live-server", --TODO
-    enabled = false,
+    enabled = true,
     lazy = true,
     cmd = "LiveServerStart",
     ft = "html", -- not work ???
@@ -332,6 +332,7 @@ oeyoews.pluginlist = {
   },
   {
     "Exafunction/codeium.vim",
+    enabled = false,
     config = function()
       -- Change '<C-g>' here to any keycode you like.
       vim.keymap.set("i", "<C-g>", function()

@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2023/01/24 00:52:24 by oeyoews                                  --
---   Updated: 2023/04/24 09:34:17 by oeyoews                                  --
+--   Updated: 2023/04/24 10:33:45 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -192,11 +192,6 @@ keymappings_set = {
     "<leader>tl",
     ":setlocal invlist<cr>",
     "  toggle list",
-  },
-  {
-    "<leader>tg",
-    ":ChatGPT<cr>",
-    "🤖 ChatGPT",
   },
 }
 
