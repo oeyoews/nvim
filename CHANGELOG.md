@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.14.0](https://gitlab.com/oeyoews/nvim/compare/v9.13.0...v9.14.0) (2023-04-24)
+
+
+### Features
+
+* add codeium.vim ([5495c9e](https://gitlab.com/oeyoews/nvim/commit/5495c9e5217a8ba2d854eda4a6e048b27cba8897))
+
 # [9.13.0](https://gitlab.com/oeyoews/nvim/compare/v9.12.0...v9.13.0) (2023-04-12)
 
 
