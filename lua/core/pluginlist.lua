@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/04/24 09:21:36 by oeyoews                                  --
+--   Updated: 2023/04/24 09:37:00 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -330,7 +330,15 @@ oeyoews.pluginlist = {
       require("tailwindcss-colors").setup()
     end,
   },
-  "Exafunction/codeium.vim",
+  {
+    "Exafunction/codeium.vim",
+    config = function()
+      -- Change '<C-g>' here to any keycode you like.
+      vim.keymap.set("i", "<C-g>", function()
+        return vim.fn["codeium#Accept"]()
+      end, { expr = true })
+    end,
+  },
 }
 
 -- autoload on loading this pluginlist variable

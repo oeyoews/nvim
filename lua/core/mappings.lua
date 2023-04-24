@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2023/01/24 00:52:24 by oeyoews                                  --
---   Updated: 2023/04/24 09:31:47 by oeyoews                                  --
+--   Updated: 2023/04/24 09:34:17 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -331,7 +331,3 @@ vim.keymap.set("n", "gr", "<cmd>Lspsaga rename<CR>", { silent = true })
 
 -- nvim-tree
 vim.keymap.set("n", "<space>fF", "<cmd>NvimTreeToggle<cr>")
-
-vim.cmd([[
-imap <script><silent><nowait><expr> <C-g> codeium#Accept()
-]])
