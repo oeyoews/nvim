@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/04/24 10:23:06 by oeyoews                                  --
+--   Updated: 2023/04/26 11:30:41 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -328,6 +328,12 @@ oeyoews.pluginlist = {
     enabled = true,
     config = function()
       require("tailwindcss-colors").setup()
+    end,
+  },
+  {
+    "jcdickinson/codeium.nvim",
+    config = function()
+      require("codeium").setup({})
     end,
   },
   {

@@ -7,6 +7,7 @@
   "cmp-nvim-ultisnips": { "branch": "main", "commit": "43b69a235b2dc54db692049fe0d5cc60c6b58b4b" },
   "cmp-path": { "branch": "main", "commit": "91ff86cd9c29299a64f968ebb45846c485725f23" },
   "cmp-tw2css": { "branch": "main", "commit": "1abe0eebcb57fcbd5538d054f0db61f4e4a1302b" },
+  "codeium.nvim": { "branch": "main", "commit": "091e3479db1573f03c3f32b680a3bd63d45f40eb" },
   "dressing.nvim": { "branch": "master", "commit": "f5d7fa1fa5ce6bcebc8f07922f39b1eda4d01e37" },
   "gitsigns.nvim": { "branch": "main", "commit": "7dfe4be94b4f84a9931098f0f0f618d055e50bd5" },
   "icon-picker.nvim": { "branch": "master", "commit": "e1add1aef33e296fe8c5143df612ab7ce528a094" },

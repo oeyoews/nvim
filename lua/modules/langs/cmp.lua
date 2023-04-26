@@ -45,6 +45,7 @@ end
 
 local symbol_map = {
   Snippet = "",
+  Codeium = "🤖",
   -- Snippet = "❒",
   -- Text = "",
   -- Method = "𝙢 ",
@@ -126,6 +127,7 @@ local sources = {
   -- { name = "orgmode" },
   -- { name = "nvim_lsp_signature_help" },
   -- { name = "neorg" },
+  { name = "codeium" },
   { name = "nvim_lsp" },
   { name = "ultisnips" },
   { name = "buffer", keyword_length = 3 },
