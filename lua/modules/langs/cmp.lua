@@ -45,7 +45,7 @@ end
 
 local symbol_map = {
   Snippet = "",
-  Codeium = "🤖",
+  Codeium = "",
   -- Snippet = "❒",
   -- Text = "",
   -- Method = "𝙢 ",
