@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.15.1](https://gitlab.com/oeyoews/nvim/compare/v9.15.0...v9.15.1) (2023-05-03)
+
+
+### Performance Improvements
+
+* disable noice ([224f013](https://gitlab.com/oeyoews/nvim/commit/224f013659d6903ea10a8578e4a1ae76a5b8548e))
+
 # [9.15.0](https://gitlab.com/oeyoews/nvim/compare/v9.14.0...v9.15.0) (2023-04-26)
 
 
