@@ -12,23 +12,23 @@ snippet browser "browser" b
 if (!$tw.browser) return;
 endsnippet
 
-snippet comment "comment" b
+snippet title "title" b
 /*\
 title: $1.js
 type: application/javascript
-module-type: widget
+module-type: $2
 
-description
+$1
 \*/
 endsnippet
 
 snippet template-widget "general widget" b
 /*\
-title: general-widget
+title: $1widget
 type: application/javascript
 module-type: widget
 
-general widget
+$1 widget
 
 \*/
 (function () {
@@ -72,15 +72,17 @@ general widget
     }
   }
 
-  exports['div-widget'] = DivWidget;
+  exports.$1 = DivWidget;
 })();
 endsnippet
 
 snippet startup "startup" b
 /*\
-title: xxx/startup.js
+title: $1/startup.js
 type: application/javascript
 module-type: startup
+
+$1 module
 
 \*/
 
@@ -89,10 +91,12 @@ module-type: startup
   /*global $tw: false */
   'use strict';
 
-  exports.name = 'xxx-startup-hook';
+  exports.name = '$1-startup-hook';
   exports.platforms = ['browser'];
   exports.after = ['load-modules'];
   exports.synchronous = true;
-  exports.startup = () => {$1};
+  exports.startup = () => {
+	require('$1.js')
+  };
 })();
 endsnippet
