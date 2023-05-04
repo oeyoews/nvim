@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/05/03 22:52:54 by oeyoews                                  --
+--   Updated: 2023/05/04 15:33:53 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -319,6 +319,14 @@ oeyoews.pluginlist = {
     "nvim-lualine/lualine.nvim",
     config = function()
       require("modules.tools.lualine")
+    end,
+  },
+  {
+    "Bryley/neoai.nvim",
+    config = function()
+      require("neoai").setup({
+        -- Options go here
+      })
     end,
   },
   {
