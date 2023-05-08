@@ -130,7 +130,7 @@ local sources = {
   { name = "codeium" },
   { name = "nvim_lsp" },
   { name = "ultisnips" },
-  { name = "buffer", keyword_length = 3 },
+  { name = "buffer", keyword_length = 0 },
   { name = "nvim-lua" },
   { name = "path" },
   { name = "cmp-tw2css" },

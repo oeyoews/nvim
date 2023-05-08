@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/05/04 15:33:53 by oeyoews                                  --
+--   Updated: 2023/05/08 09:53:51 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -152,7 +152,7 @@ oeyoews.pluginlist = {
   {
     "danymat/neogen",
     cmd = "Neogen",
-    enabled = false,
+    enabled = true,
     config = function()
       require("neogen").setup()
     end,
@@ -349,6 +349,8 @@ oeyoews.pluginlist = {
   },
   {
     "jcdickinson/codeium.nvim",
+    pin = true,
+    enabled = true,
     config = function()
       require("codeium").setup({})
     end,
