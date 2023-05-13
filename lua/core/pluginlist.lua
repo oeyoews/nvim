@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/05/10 19:59:06 by oeyoews                                  --
+--   Updated: 2023/05/13 20:55:12 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -86,12 +86,25 @@ oeyoews.pluginlist = {
   {
     "oeyoews/rnvimr", -- false
     lazy = true,
+    enabled = false,
     cmd = "RnvimrToggle",
     keys = {
       "<Space>ft",
     },
     config = function()
       require("modules.tools.ranger")
+    end,
+  },
+  {
+    "kelly-lin/ranger.nvim",
+    config = function()
+      require("ranger-nvim").setup({ replace_netrw = true })
+      vim.api.nvim_set_keymap("n", "<leader>ft", "", {
+        noremap = true,
+        callback = function()
+          require("ranger-nvim").open(true)
+        end,
+      })
     end,
   },
   {
