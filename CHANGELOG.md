@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.15.2](https://gitlab.com/oeyoews/nvim/compare/v9.15.1...v9.15.2) (2023-05-13)
+
+
+### Performance Improvements
+
+*  use ranger.nvim ([36d7109](https://gitlab.com/oeyoews/nvim/commit/36d7109ccbcde4f5011b57c17069b0060d134d61))
+
 ## [9.15.1](https://gitlab.com/oeyoews/nvim/compare/v9.15.0...v9.15.1) (2023-05-03)
 
 
