@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/05/08 09:53:51 by oeyoews                                  --
+--   Updated: 2023/05/10 19:59:06 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -349,7 +349,7 @@ oeyoews.pluginlist = {
   },
   {
     "jcdickinson/codeium.nvim",
-    pin = true,
+    pin = false,
     enabled = true,
     config = function()
       require("codeium").setup({})

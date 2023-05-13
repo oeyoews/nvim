@@ -58,5 +58,6 @@
         "/home/oeyoews/.local/share/nvim/lazy/neogen",
         "/home/oeyoews/.local/share/nvim/lazy/impatient.nvim",
         "${3rd}/luassert/library"
-    ]
+    ],
+    "workspace.checkThirdParty": false
 }

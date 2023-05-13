@@ -95,7 +95,7 @@ $1 module
   exports.after = ['load-modules'];
   exports.synchronous = true;
   exports.startup = () => {
-	require('$1.js')
+	window.$1 = require('$1.min.js')
   };
 })();
 endsnippet
