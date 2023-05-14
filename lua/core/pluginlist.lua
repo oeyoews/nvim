@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/05/13 20:55:12 by oeyoews                                  --
+--   Updated: 2023/05/14 09:36:38 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -383,6 +383,26 @@ oeyoews.pluginlist = {
     enabled = false,
     config = function()
       require("smoothcursor").setup()
+    end,
+  },
+  {
+    "kylechui/nvim-surround",
+    -- version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    config = function()
+      require("nvim-surround").setup({
+        -- Configuration here, or leave empty to use defaults
+      })
+    end,
+  },
+  {
+    "Wansmer/treesj",
+    enabled = false,
+    keys = { "<space>m", "<space>j", "<space>s" },
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
+    config = function()
+      require("treesj").setup({ --[[ your config ]]
+      })
     end,
   },
 }
