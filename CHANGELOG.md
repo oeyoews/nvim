@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.16.0](https://gitlab.com/oeyoews/nvim/compare/v9.15.2...v9.16.0) (2023-05-14)
+
+
+### Features
+
+* add nvim-surround ([5493a7d](https://gitlab.com/oeyoews/nvim/commit/5493a7dd0c796ca63ebe912cf5036b65433cf6a7))
+
 ## [9.15.2](https://gitlab.com/oeyoews/nvim/compare/v9.15.1...v9.15.2) (2023-05-13)
 
 
