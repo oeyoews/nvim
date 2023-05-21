@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/05/14 09:36:38 by oeyoews                                  --
+--   Updated: 2023/05/21 12:40:59 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -363,17 +363,17 @@ oeyoews.pluginlist = {
   {
     "jcdickinson/codeium.nvim",
     pin = false,
-    enabled = true,
+    enabled = false,
     config = function()
       require("codeium").setup({})
     end,
   },
   {
     "Exafunction/codeium.vim",
-    enabled = false,
+    enabled = true,
     config = function()
       -- Change '<C-g>' here to any keycode you like.
-      vim.keymap.set("i", "<C-g>", function()
+      vim.keymap.set("i", "<C-y>", function()
         return vim.fn["codeium#Accept"]()
       end, { expr = true, silent = true })
     end,
