@@ -24,7 +24,7 @@ endsnippet
 
 snippet template-widget "general widget" b
 /*\
-title: $1widget
+title: $1/widget
 type: application/javascript
 module-type: widget
 
@@ -53,9 +53,7 @@ $1 widget
       const param = this.getAttribute('param', 'Test Param');
 
       const divNode = this.document.createElement('div');
-      divNode.id = 'divId';
       divNode.textContent = param;
-      divNode.className = 'divClass';
       parent.insertBefore(divNode, nextSibling);
       this.domNodes.push(divNode);
     }
@@ -72,7 +70,7 @@ $1 widget
     }
   }
 
-  exports.$1 = DivWidget;
+  exports['$1'] = DivWidget;
 })();
 endsnippet
 
