@@ -4,18 +4,19 @@ snippet use-strict "stict mode" b
 "use strict";
 endsnippet
 
-snippet json "json" b
-fetch("$1")
-  .then((response) => response.json())
-  .then((json) => console.log(json.author));
-endsnippet
-
-snippet fetch "fetch" b
-  fetch("https://htk.vercel.app/api")
+snippet fetch-promise "fetch" b
+  fetch(${1:"https://jsonplaceholder.typicode.com/todos/1"})
     .then((response) => response.json())
     .then((data) => {
-      const htk = document.querySelector("#htk");
-      htk.innerText = `${data.text}  ${data.author}`;
+      console.log(data)
     })
     .catch(console.error);
+endsnippet
+
+snippet fetch-async "fetch" b
+async function fetchData() {
+  const response = await fetch(${1:'https://jsonplaceholder.typicode.com/todos/1'});
+  const data = await response.json();
+  console.log(data)
+}
 endsnippet
