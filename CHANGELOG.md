@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.16.1](https://gitlab.com/oeyoews/nvim/compare/v9.16.0...v9.16.1) (2023-05-21)
+
+
+### Performance Improvements
+
+* use Exafunction/codeium.vim not nvim plugin ([7d2d2fe](https://gitlab.com/oeyoews/nvim/commit/7d2d2fe2aa081d41f517bf0c369f8dfe8776b784))
+
 # [9.16.0](https://gitlab.com/oeyoews/nvim/compare/v9.15.2...v9.16.0) (2023-05-14)
 
 
