@@ -30,7 +30,7 @@ lspsaga.setup({
   -- code_action_icon = "💡",
   -- diagnostic_header = { " ", " ", " ", "ﴞ " }, -- this not work, maybe order, but another is normal
   code_action_lightbulb = {
-    enable = false,
+    enable = true,
     sign = true,
     sign_priority = 20,
     virtual_text = true,
