@@ -1,5 +1,9 @@
 # vim:ts=4 sw=4 noexpandtab ft=snippets
 
+snippet currentTiddler "currentTiddler" b
+const currentTiddler = this.getVariable('currentTiddler');
+endsnippet
+
 snippet new-tiddler "new tiddler" b
 $tw.wiki.addTiddler(
   new $tw.Tiddler({ title: '$1', text: '$0' }),
@@ -13,7 +17,7 @@ endsnippet
 
 snippet domMaker "domMaker" b
 const ${0}Node = $tw.utils.domMaker('${1:div}', {
-	text: '$1'
+	text: '$1',
 	class: '',
 	attributes: {},
 	children: [],
@@ -78,6 +82,7 @@ $1 widget
       this.execute();
 
       const param = this.getAttribute('param', 'Test Param');
+      const classNames = this.getAttribute('class', '').split('');
 
 	  const buttonNode = $tw.utils.domMaker('button', {
 		text: param,
@@ -92,6 +97,11 @@ $1 widget
           },
         ],
 	  })
+	  classNames.forEach(className => {
+        if (className) {
+			buttonNode.classList.add(className)
+        }
+      });
       parent.insertBefore(buttonNode, nextSibling);
       this.domNodes.push(buttonNode);
     }
