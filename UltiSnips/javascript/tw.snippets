@@ -78,7 +78,7 @@ $1 widget
       this.execute();
 
       const param = this.getAttribute('param', 'Test Param');
-      const classNames = this.getAttribute('class', '').split('');
+      const classNames = this.getAttribute('class', '').split(' ');
 
 	  const buttonNode = $tw.utils.domMaker('button', {
 		text: param,

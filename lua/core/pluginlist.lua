@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/05/26 09:15:36 by oeyoews                                  --
+--   Updated: 2023/05/29 12:05:31 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -406,6 +406,7 @@ oeyoews.pluginlist = {
       })
     end,
   },
+  "haringsrob/nvim_context_vt",
 }
 
 -- autoload on loading this pluginlist variable
