@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.17.0](https://gitlab.com/oeyoews/nvim/compare/v9.16.1...v9.17.0) (2023-05-29)
+
+
+### Features
+
+* add nvim_context_vt ([40851d7](https://gitlab.com/oeyoews/nvim/commit/40851d7fbfbada1de6cd4f0f741c57e0701e11ed))
+
 ## [9.16.1](https://gitlab.com/oeyoews/nvim/compare/v9.16.0...v9.16.1) (2023-05-21)
 
 
