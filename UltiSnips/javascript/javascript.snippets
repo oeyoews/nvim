@@ -1,5 +1,29 @@
 # vim:ts=4 sw=4 noexpandtab ft=snippets
 
+snippet throttle "throttle" b
+function throttle(func, delay) {
+  let timer = null;
+  return function () {
+    if (!timer) {
+      timer = setTimeout(() => {
+        func.apply(this, arguments);
+        timer = null;
+      }, delay);
+    }
+  };
+}
+endsnippet
+
+snippet debounce "debounce" b
+function debounce(func, delay) {
+  let timer;
+  return function () {
+    clearTimeout(timer);
+    timer = setTimeout(() => func.apply(this, arguments), delay);
+  };
+}
+endsnippet
+
 snippet header-leetcode "leetcode header" b
 /**
  * description: $1
