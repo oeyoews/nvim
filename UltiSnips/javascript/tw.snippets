@@ -1,5 +1,18 @@
 # vim:ts=4 sw=4 noexpandtab ft=snippets
 
+snippet refresh-method "refresh" b
+refresh() {
+  var changedAttributes = this.computeAttributes();
+  // changedAttributes.title;
+  if (Object.keys(changedAttributes).length > 0) {
+	this.refreshSelf();
+	return true;
+  } else {
+	return false;
+  }
+}
+endsnippet
+
 snippet currentTiddler "currentTiddler" b
 const currentTiddler = this.getVariable('currentTiddler');
 endsnippet
