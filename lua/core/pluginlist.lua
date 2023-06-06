@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/05/29 12:05:31 by oeyoews                                  --
+--   Updated: 2023/06/06 10:09:43 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -186,6 +186,7 @@ oeyoews.pluginlist = {
   },
   {
     "nvim-treesitter/nvim-treesitter", -- nvim-treesitter bug: checkhealth nvim-treesitter, and execute tsinstall! vim
+    -- commit= "e54c8873ef964c730af451fedd4490166d335e3a",
     build = ":TSUpdate",
     config = function()
       require("modules.ui.treesitter")
@@ -337,10 +338,9 @@ oeyoews.pluginlist = {
   },
   {
     "Bryley/neoai.nvim",
+    enabled = false,
     config = function()
-      require("neoai").setup({
-        -- Options go here
-      })
+      require("neoai").setup({})
     end,
   },
   {
