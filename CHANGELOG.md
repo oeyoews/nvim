@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.17.1](https://gitlab.com/oeyoews/nvim/compare/v9.17.0...v9.17.1) (2023-06-08)
+
+
+### Performance Improvements
+
+* update kmap ([bd14782](https://gitlab.com/oeyoews/nvim/commit/bd147825aaa973c67a7b5f7690ae86f098c5af29))
+
 # [9.17.0](https://gitlab.com/oeyoews/nvim/compare/v9.16.1...v9.17.0) (2023-05-29)
 
 
