@@ -2,9 +2,9 @@
 ---@param kmap table encapsulation vim.keymap.set api function
 oeyoews.kmap = function(kmap)
   for _, mapping in ipairs(kmap) do
-    local mode = mapping[4] or "n"
-    local options = { desc = mapping[3] or "description is coming", silent = true }
-    vim.keymap.set(mode, mapping[1], mapping[2], options)
+    local key, command, desc, mode = unpack(mapping)
+    local options = { desc = desc, silent = true }
+    vim.keymap.set(mode or "n", key, command, options)
   end
 end
 
