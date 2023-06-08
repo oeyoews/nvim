@@ -1,5 +1,9 @@
---- add kmap api
----@param kmap table encapsulation vim.keymap.set api function
+--- vim.keymap.set by @oeyoews
+---@param: kmap: obj list
+---@param key: key
+---@param command: cmd
+---@param desc: desc
+---@param mode: optional
 oeyoews.kmap = function(kmap)
   for _, mapping in ipairs(kmap) do
     local key, command, desc, mode = unpack(mapping)
