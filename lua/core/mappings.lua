@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2023/01/24 00:52:24 by oeyoews                                  --
---   Updated: 2023/06/08 09:20:11 by oeyoews                                  --
+--   Updated: 2023/06/08 11:18:50 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -21,11 +21,11 @@ vim.keymap.set({ "n", "v" }, "<space>ci", ":", {
 })
 
 keymappings_set = {
-  -- tex
+  -- tiddlywiki
   {
     "<space>et",
-    "<cmd>Edit tex<cr>",
-    "Τ edit tex",
+    "<cmd>Edit tid<cr>",
+    "Τ edit tid",
   },
   -- lua
   {
@@ -39,13 +39,13 @@ keymappings_set = {
     "<cmd>Edit md<cr>",
     " edit markdown",
   },
-  -- norg
+  -- js
   {
-    "<space>en",
+    "<space>ej",
     function()
-      return oeyoews.creat_journey("norg")
+      return oeyoews.creat_journey("js")
     end,
-    " edit norg",
+    " edit js",
   },
   {
     "<space>yp",
