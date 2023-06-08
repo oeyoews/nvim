@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2023/01/24 00:52:24 by oeyoews                                  --
---   Updated: 2023/04/24 10:33:45 by oeyoews                                  --
+--   Updated: 2023/06/08 09:20:11 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -269,6 +269,7 @@ end, {
   desc = " hello, neovim",
 })
 
+-- add notify
 vim.keymap.set("n", "<space>so", "<cmd>so %<cr>", {
   desc = " refresh current file",
 })
@@ -326,3 +327,5 @@ vim.keymap.set("n", "gr", "<cmd>Lspsaga rename<CR>", { silent = true })
 
 -- nvim-tree
 vim.keymap.set("n", "<space>fF", "<cmd>NvimTreeToggle<cr>")
+
+vim.keymap.set("n", "<space>nc", ":lua require('neogen').generate()<cr>", { silent = true })

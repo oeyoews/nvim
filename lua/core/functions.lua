@@ -1,12 +1,10 @@
 --- add kmap api
 ---@param kmap table encapsulation vim.keymap.set api function
 oeyoews.kmap = function(kmap)
-  local keymap_set = function(tbl)
-    tbl[4] = tbl[4] or "n"
-    vim.keymap.set(tbl[4], tbl[1], tbl[2], { desc = tbl[3] or "description is coming", silent = true })
-  end
-  for _, v in ipairs(kmap) do
-    keymap_set(v)
+  for _, mapping in ipairs(kmap) do
+    local mode = mapping[4] or "n"
+    local options = { desc = mapping[3] or "description is coming", silent = true }
+    vim.keymap.set(mode, mapping[1], mapping[2], options)
   end
 end
 
