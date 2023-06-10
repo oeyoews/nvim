@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.17.2](https://gitlab.com/oeyoews/nvim/compare/v9.17.1...v9.17.2) (2023-06-10)
+
+
+### Bug Fixes
+
+* remove lastline ([9608e99](https://gitlab.com/oeyoews/nvim/commit/9608e9953407414fc971a5105d753c99120184b0))
+
 ## [9.17.1](https://gitlab.com/oeyoews/nvim/compare/v9.17.0...v9.17.1) (2023-06-08)
 
 
