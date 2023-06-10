@@ -59,6 +59,7 @@ local default_options = {
   history = 500,
   pumheight = 10, -- show complete menu numbers
   showtabline = 2,
+  -- still not work, unless vscode is edited, if before set eol, new file is working
   endofline = false,
   endoffile = false,
   fixendofline = false,
