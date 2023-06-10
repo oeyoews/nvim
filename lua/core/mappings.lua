@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2023/01/24 00:52:24 by oeyoews                                  --
---   Updated: 2023/06/08 11:18:50 by oeyoews                                  --
+--   Updated: 2023/06/09 20:07:22 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -21,6 +21,11 @@ vim.keymap.set({ "n", "v" }, "<space>ci", ":", {
 })
 
 keymappings_set = {
+  {
+    "<space>lu",
+    "<cmd>Lazy update<cr>",
+    "Update Plugins",
+  },
   -- tiddlywiki
   {
     "<space>et",
@@ -32,6 +37,12 @@ keymappings_set = {
     "<space>el",
     "<cmd>Edit lua<cr>",
     " edit lua",
+  },
+  -- html
+  {
+    "<space>eh",
+    "<cmd>Edit html<cr>",
+    " edit Html",
   },
   -- md
   {

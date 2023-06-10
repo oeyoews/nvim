@@ -1,5 +1,12 @@
 # vim:ts=4 sw=4 noexpandtab ft=snippets
 
+snippet script:tailwindcss-full "tailwindcss" b
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+<script>
+    tailwind.config = { corePlugins: { preflight: false, }, }
+</script>
+endsnippet
+
 snippet script:tailwindcss "tailwindcss" b
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -26,6 +33,24 @@ snippet th "HTML basic structure with the lang attribute" b
 	<body>
 		<div id="#root">$1</div>
 	</body>
+</html>
+endsnippet
+
+snippet thtw "HTML basic structure with the lang attribute" b
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>$0</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { corePlugins: { preflight: false, }, }
+    </script>
+  </head>
+  <body>
+    <div id="#root"></div>$1
+  </body>
 </html>
 endsnippet
 

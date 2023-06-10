@@ -1,5 +1,11 @@
 # vim:ts=4 sw=4 noexpandtab ft=snippets
 
+snippet rootWidget "rootWidget" b
+$tw.rootWidget.addEventListener('$0', () => {
+  $1
+});
+endsnippet
+
 snippet refresh-method "refresh" b
 refresh() {
   var changedAttributes = this.computeAttributes();

@@ -59,6 +59,9 @@ local default_options = {
   history = 500,
   pumheight = 10, -- show complete menu numbers
   showtabline = 2,
+  endofline = false,
+  endoffile = false,
+  fixendofline = false,
   title = false,
   titlestring = "%<%F%=%l/%L - nvim",
   shell = "/bin/zsh",
