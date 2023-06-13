@@ -69,6 +69,7 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 ## ✅ TODO
 
 - [ ] https://github.com/simrat39/inlay-hints.nvim
+- [ ] https://github.com/lvimuser/lsp-inlayhints.nvim
 - [x] auto dark
 - [x] auto list
 - [ ] refactor mason install

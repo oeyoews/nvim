@@ -131,7 +131,7 @@ $1 widget
 })();
 endsnippet
 
-snippet startup "startup" b
+snippet tw-startup "startup" b
 /*\
 title: $1/startup.js
 type: application/javascript
@@ -147,7 +147,7 @@ $1 module
 
   exports.name = '$1-startup-hook';
   exports.platforms = ['browser'];
-  exports.after = ['load-modules'];
+  exports.after = ['startup'];
   exports.synchronous = true;
   exports.startup = () => {
 	window.$1 = require('$1.min.js')

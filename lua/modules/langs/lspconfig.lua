@@ -11,13 +11,13 @@ local capabilities = require("user.capabilities")
     return "--locale=zh-cn"
   end
 end --]=]
-
 -- local sumneko_lua_locale = sumneko_lua_locale_adjust()
 
 -- on_attach: add lspformat
-local on_attach = function(client)
+local on_attach = function(client, bufnr)
   -- require("user.lsp_format").on_attach(client)
   require("lsp-format").on_attach(client)
+  require("lsp-inlayhints").on_attach(client, bufnr)
   -- require("tailwindcss-colorizer-cmp").formatter(client)
 end
 
@@ -33,7 +33,6 @@ local neodev = require("neodev").setup({
     -- capabilities = capabilities, -- ???
   },
 }) --]=]
-
 -- https://github.com/neovim/nvim-lspconfig/wiki/Multiple-language-servers-FAQ#i-see-multiple-formatting-options-and-i-want-a-single-server-to-format-how-do-i-do-this
 
 -- For general Lsp server
