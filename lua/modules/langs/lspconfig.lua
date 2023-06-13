@@ -17,7 +17,7 @@ end --]=]
 local on_attach = function(client, bufnr)
   -- require("user.lsp_format").on_attach(client)
   require("lsp-format").on_attach(client)
-  require("lsp-inlayhints").on_attach(client, bufnr)
+  -- require("lsp-inlayhints").on_attach(client, bufnr)
   -- require("tailwindcss-colorizer-cmp").formatter(client)
 end
 

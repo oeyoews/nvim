@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/06/13 19:17:50 by oeyoews                                  --
+--   Updated: 2023/06/13 19:29:35 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -23,6 +23,7 @@ oeyoews.pluginlist = {
   },
   {
     "lvimuser/lsp-inlayhints.nvim",
+    enabled = false,
     config = function()
       require("lsp-inlayhints").setup()
     end,
