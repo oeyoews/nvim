@@ -6,12 +6,36 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/06/13 19:29:35 by oeyoews                                  --
+--   Updated: 2023/06/15 18:58:31 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
 
 oeyoews.pluginlist = {
+  {
+    "nvim-neorg/neorg",
+    build = ":Neorg sync-parsers",
+    config = function()
+      require("neorg").setup({
+        load = {
+          ["core.defaults"] = {}, -- Loads default behaviour
+          ["core.completion"] = {
+            config = {
+              engine = "nvim-cmp",
+            },
+          }, -- Loads default behaviour
+          ["core.concealer"] = {}, -- Adds pretty icons to your documents
+          ["core.dirman"] = { -- Manages Neorg workspaces
+            config = {
+              workspaces = {
+                notes = "~/neorg/notes",
+              },
+            },
+          },
+        },
+      })
+    end,
+  },
   {
     "folke/noice.nvim",
     enabled = false,
