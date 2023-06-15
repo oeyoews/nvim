@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.18.0](https://gitlab.com/oeyoews/nvim/compare/v9.17.2...v9.18.0) (2023-06-15)
+
+
+### Features
+
+* add neorg again ([de6f68b](https://gitlab.com/oeyoews/nvim/commit/de6f68bedfc0a728c9cda062ae596820c385b2d2))
+
 ## [9.17.2](https://gitlab.com/oeyoews/nvim/compare/v9.17.1...v9.17.2) (2023-06-10)
 
 
