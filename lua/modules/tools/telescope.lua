@@ -93,6 +93,11 @@ vim.keymap.set("n", "<space>to", "<cmd>Telescope oldfiles<cr>", {
   desc = " recent files",
 })
 
+vim.keymap.set("n", "<space>tb", "<cmd>Telescope buffers<cr>", {
+  desc = "﬘ buffers",
+})
+
+-- snippets
 vim.keymap.set("n", "<space>tu", function()
   return extensions.ultisnips.ultisnips()
 end, {
