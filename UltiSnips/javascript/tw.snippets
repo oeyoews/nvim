@@ -101,7 +101,7 @@ $1 widget
 
 	  const buttonNode = $tw.utils.domMaker('button', {
 		text: param,
-		class: '',
+		class: ` ${classNames.join(' ')}`,
 		attributes: {},
         children: [],
         eventListeners: [
@@ -112,11 +112,7 @@ $1 widget
           },
         ],
 	  })
-	  classNames.forEach(className => {
-        if (className) {
-			buttonNode.classList.add(className)
-        }
-      });
+
       parent.insertBefore(buttonNode, nextSibling);
       this.domNodes.push(buttonNode);
     }
