@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2023/01/24 00:52:24 by oeyoews                                  --
---   Updated: 2023/06/09 20:07:22 by oeyoews                                  --
+--   Updated: 2023/06/21 23:00:46 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -335,8 +335,5 @@ vim.keymap.set("n", "<space>tc", "<cmd>Neorg toggle-concealer<cr>", {
 -- laspsaga
 vim.keymap.set("n", "<space>gh", "<cmd>Lspsaga hover_doc<CR>", { silent = true })
 vim.keymap.set("n", "gr", "<cmd>Lspsaga rename<CR>", { silent = true })
-
--- nvim-tree
-vim.keymap.set("n", "<space>fF", "<cmd>NvimTreeToggle<cr>")
 
 vim.keymap.set("n", "<space>nc", ":lua require('neogen').generate()<cr>", { silent = true })

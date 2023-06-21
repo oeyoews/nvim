@@ -65,7 +65,6 @@ for index, value in ipairs(list) do
   }
 end
 --]=]
-
 -- must global function
 oeyoews.completion.edit = function()
   local ft = {
@@ -85,8 +84,8 @@ require("core.functions")
 require("core.pluginlist")
 
 --   mappings
-vim.keymap.set("n", "<space>fo", function()
+--[=[ vim.keymap.set("n", "<space>fo", function()
   return oeyoews.find_lua_file("lua/core/oeyoews")
 end, {
   desc = " edit global config",
-})
+}) --]=]
