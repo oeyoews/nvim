@@ -1,5 +1,26 @@
 # vim:ts=4 sw=4 noexpandtab ft=snippets
 
+snippet layout-template "template" b
+\import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]
+
+<$vars
+	tv-config-toolbar-icons={{$:/config/Toolbar/Icons}}
+	tv-config-toolbar-text={{$:/config/Toolbar/Text}}
+	tv-config-toolbar-class={{$:/config/Toolbar/ButtonClass}}
+	tv-enable-drag-and-drop={{$:/config/DragAndDrop/Enable}}
+	tv-show-missing-links={{$:/config/MissingLinks}}
+	storyviewTitle={{$:/view}}
+	languageTitle={{{ [{$:/language}get[name]] }}}>
+
+<div class="prose max-w-none prose-indigo m-auto sm:w-auto md:w-3/4">
+{{{ [[index]] ||$:/core/ui/ViewTemplate }}}
+</div>
+endsnippet
+
+snippet tagsLayout "Layout Tag" b
+tags: $:/tags/Layout
+endsnippet
+
 snippet todo-tid "todo" b
 !! TODO
 endsnippet
