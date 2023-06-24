@@ -6,12 +6,43 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/06/21 10:18:33 by oeyoews                                  --
+--   Updated: 2023/06/24 17:29:51 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
 
 oeyoews.pluginlist = {
+  {
+    "folke/flash.nvim",
+    event = "VeryLazy",
+    keys = {
+      {
+        "s",
+        mode = { "n", "x", "o" },
+        function()
+          -- default options: exact mode, multi window, all directions, with a backdrop
+          require("flash").jump()
+        end,
+        desc = "Flash",
+      },
+      {
+        "S",
+        mode = { "n", "o", "x" },
+        function()
+          require("flash").treesitter()
+        end,
+        desc = "Flash Treesitter",
+      },
+      {
+        "r",
+        mode = "o",
+        function()
+          require("flash").remote()
+        end,
+        desc = "Remote Flash",
+      },
+    },
+  },
   {
     "nvim-neorg/neorg",
     build = ":Neorg sync-parsers",
@@ -38,7 +69,7 @@ oeyoews.pluginlist = {
   },
   {
     "folke/noice.nvim",
-    enabled = false,
+    enabled = true,
     config = function()
       require("noice").setup({
         -- add any options here
@@ -156,6 +187,7 @@ oeyoews.pluginlist = {
   },
   {
     "ggandor/leap.nvim",
+    enabled = false,
     event = "VeryLazy",
     config = function()
       require("leap").add_default_mappings()
