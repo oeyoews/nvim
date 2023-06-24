@@ -281,11 +281,9 @@ oeyoews.pluginlist = {
     dependencies = {
       "quangnguyen30192/cmp-nvim-ultisnips",
       "hrsh7th/cmp-buffer",
-      "honza/vim-snippets",
       "hrsh7th/cmp-nvim-lsp",
       "hrsh7th/cmp-path",
       "folke/neodev.nvim",
-      -- css but tailwindcss
       "jcha0713/cmp-tw2css",
     },
     config = function()
@@ -293,6 +291,7 @@ oeyoews.pluginlist = {
     end,
   },
   "SirVer/ultisnips",
+  "honza/vim-snippets",
   {
     "neovim/nvim-lspconfig",
     config = function()
