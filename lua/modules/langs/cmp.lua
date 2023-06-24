@@ -126,6 +126,7 @@ local sources = {
   -- { name = "copilot" },
   -- { name = "orgmode" },
   -- { name = "nvim_lsp_signature_help" },
+  { name = "IM" },
   { name = "neorg" },
   { name = "codeium" },
   { name = "nvim_lsp" },
