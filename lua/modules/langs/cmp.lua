@@ -126,7 +126,6 @@ local sources = {
   -- { name = "copilot" },
   -- { name = "orgmode" },
   -- { name = "nvim_lsp_signature_help" },
-  { name = "IM" },
   { name = "neorg" },
   { name = "codeium" },
   { name = "nvim_lsp" },
@@ -158,7 +157,6 @@ cmp.setup({
       winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None",
     },
   },
-
   view = {
     entries = "custom", -- can be "custom", "wildmenu" or "native"
     --entries = { name = 'custom', selection_order = 'near_cursor' }
@@ -168,10 +166,8 @@ cmp.setup({
       vim.fn["UltiSnips#Anon"](args.body)
     end,
   },
-
   -- mappings
   mapping = mapping,
-
   -- menu
   -- TODO: custom this prompt color
   formatting = {
@@ -189,7 +185,6 @@ cmp.setup({
       menu = menu,
     }),
   },
-
   -- @bug true is nothing, must to comment
   completion = {
     -- how to use keymap to toggle this
@@ -200,7 +195,6 @@ cmp.setup({
     -- ghost_text = { hlgroup = "Comment" },
     ghost_text = true,
   },
-
   -- sources
   sources = sources,
 })
