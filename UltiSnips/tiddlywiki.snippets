@@ -1,5 +1,15 @@
 # vim:ts=4 sw=4 noexpandtab ft=snippets
 
+snippet filter-sidebar "sidebar" b
+<$list filter="[[$:/state/notebook-sidebar]get[text]else[no]match[no]]">
+$1
+</$lsit>
+endsnippet
+
+snippet tagspagetemplate "PageTemplate" b
+tags: $:/tags/PageTemplate
+endsnippet
+
 snippet layout-template "template" b
 \import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]
 
