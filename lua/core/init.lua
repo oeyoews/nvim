@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/22 18:33:39 by oeyoews                                  --
---   Updated: 2023/06/24 17:55:55 by oeyoews                                  --
+--   Updated: 2023/06/28 09:13:24 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -23,3 +23,8 @@ require("core.options")
 
 -- load lazy plugin
 require("core.lazy")
+
+if vim.g.vscode then
+else
+  -- ordinary Neovim
+end

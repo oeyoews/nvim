@@ -6,29 +6,16 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/06/26 10:05:17 by oeyoews                                  --
+--   Updated: 2023/06/29 22:58:31 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
 
 oeyoews.pluginlist = {
   {
-    "tzachar/highlight-undo.nvim",
-    enabled = false,
-    config = function()
-      require("highlight-undo").setup({
-        hlgroup = "healthError",
-        duration = 300,
-        keymaps = {
-          { "n", "u", "undo", {} },
-          { "n", "<C-r>", "redo", {} },
-        },
-      })
-    end,
-  },
-  {
     "folke/flash.nvim",
     event = "VeryLazy",
+    opts = {},
     keys = {
       {
         "s",
@@ -43,6 +30,7 @@ oeyoews.pluginlist = {
         "S",
         mode = { "n", "o", "x" },
         function()
+          -- show labeled treesitter nodes around the cursor
           require("flash").treesitter()
         end,
         desc = "Flash Treesitter",
@@ -51,9 +39,19 @@ oeyoews.pluginlist = {
         "r",
         mode = "o",
         function()
+          -- jump to a remote location to execute the operator
           require("flash").remote()
         end,
         desc = "Remote Flash",
+      },
+      {
+        "R",
+        mode = { "n", "o", "x" },
+        function()
+          -- show labeled treesitter nodes around the search matches
+          require("flash").treesitter_search()
+        end,
+        desc = "Treesitter Search",
       },
     },
   },
@@ -470,6 +468,7 @@ oeyoews.pluginlist = {
   },
   {
     "Exafunction/codeium.vim",
+    pin = true,
     enabled = true,
     config = function()
       -- Change '<C-g>' here to any keycode you like.
