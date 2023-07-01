@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/06/29 22:58:31 by oeyoews                                  --
+--   Updated: 2023/06/30 15:00:30 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -442,7 +442,7 @@ oeyoews.pluginlist = {
   },
   {
     "jackMort/ChatGPT.nvim",
-    enabled = false,
+    enabled = true,
     config = function()
       require("chatgpt").setup({
         keymaps = {

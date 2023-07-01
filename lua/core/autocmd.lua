@@ -1,3 +1,12 @@
+--[=[ oeyoews.autocmd("VimEnter", {
+  group = oeyoews.mygroup,
+  callback = function()
+    if vim.fn.argv(0) == "" then
+      require("telescope.builtin").oldfiles()
+    end
+  end,
+}) --]=]
+
 oeyoews.autocmd("FileType", {
   group = oeyoews.mygroup,
   pattern = {
