@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/07/04 22:47:58 by oeyoews                                  --
+--   Updated: 2023/07/14 21:13:33 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -55,6 +55,7 @@ oeyoews.pluginlist = {
       },
     },
   },
+  -- "eandrju/cellular-automaton.nvim",
   {
     "nvim-neorg/neorg",
     build = ":Neorg sync-parsers",
@@ -290,10 +291,26 @@ oeyoews.pluginlist = {
       require("modules.ui.treesitter")
     end,
     dependencies = {
-      "p00f/nvim-ts-rainbow",
+      -- "p00f/nvim-ts-rainbow",
       "nvim-treesitter/nvim-treesitter-refactor",
       "windwp/nvim-ts-autotag",
     },
+  },
+  {
+    "HiPhish/nvim-ts-rainbow2",
+    config = function()
+      require("nvim-treesitter.configs").setup({
+        rainbow = {
+          enable = true,
+          -- list of languages you want to disable the plugin for
+          disable = { "jsx", "cpp" },
+          -- Which query to use for finding delimiters
+          query = "rainbow-parens",
+          -- Highlight the entire buffer all at once
+          strategy = require("ts-rainbow").strategy.global,
+        },
+      })
+    end,
   },
   {
     "williamboman/mason.nvim",

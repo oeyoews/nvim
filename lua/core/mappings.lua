@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2023/01/24 00:52:24 by oeyoews                                  --
---   Updated: 2023/06/21 23:00:46 by oeyoews                                  --
+--   Updated: 2023/07/14 21:09:51 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -21,35 +21,14 @@ vim.keymap.set({ "n", "v" }, "<space>ci", ":", {
 })
 
 keymappings_set = {
-  {
-    "<space>lu",
-    "<cmd>Lazy update<cr>",
-    "Update Plugins",
-  },
+  { "<space>lu", "<cmd>Lazy update<cr>", "Update Plugins" },
   -- tiddlywiki
-  {
-    "<space>et",
-    "<cmd>Edit tid<cr>",
-    "Τ edit tid",
-  },
+  { "<space>et", "<cmd>Edit tid<cr>", "Τ edit tid" },
   -- lua
-  {
-    "<space>el",
-    "<cmd>Edit lua<cr>",
-    " edit lua",
-  },
+  { "<space>el", "<cmd>Edit lua<cr>", " edit lua" },
   -- html
-  {
-    "<space>eh",
-    "<cmd>Edit html<cr>",
-    " edit Html",
-  },
-  -- md
-  {
-    "<space>em",
-    "<cmd>Edit md<cr>",
-    " edit markdown",
-  },
+  { "<space>eh", "<cmd>Edit html<cr>", " edit Html" }, -- md
+  { "<space>em", "<cmd>Edit md<cr>", " edit markdown" },
   -- js
   {
     "<space>ej",
@@ -63,27 +42,10 @@ keymappings_set = {
     ":<C-U>let @+=expand('%:p')<cr>",
     " copy file path",
   },
-  {
-    "<space>pp",
-    '"*p',
-    " past to neovim",
-  },
-  {
-    "<space>yy",
-    '"*Y',
-    " past to system",
-  },
-  {
-    "<space>yy",
-    '"+y',
-    " past to system",
-    "v",
-  },
-  {
-    "<esc>",
-    ":noh<cr><C-L><esc>",
-    " clear highlight and screen",
-  },
+  { "<space>pp", '"*p', " past to neovim" },
+  { "<space>yy", '"*Y', " past to system" },
+  { "<space>yy", '"+y', " past to system", "v" },
+  { "<esc>", ":noh<cr><C-L><esc>", " clear highlight and screen" },
   {
     "<space>eb",
     -- vne
@@ -94,56 +56,14 @@ keymappings_set = {
     end,
     " edit temp file",
   },
-  {
-    "H",
-    "0",
-    " jump head of line",
-  },
-  {
-    "L",
-    "$",
-    "  jump end of line",
-  },
-  {
-    "q",
-    "",
-    "disable macro in normal mode",
-    { "n", "v" },
-  },
-  --[=[ {
-    "kj",
-    "<esc>",
-    "escape insert mode",
-    "i",
-  }, --]=]
-  {
-    "jk",
-    "<esc>",
-    "escape insert mode",
-    "i",
-  },
-  {
-    ">>",
-    ">gv",
-    "right indent",
-    "v",
-  },
-  {
-    "<<",
-    "<gv",
-    "left indent",
-    "v",
-  },
-  {
-    "U",
-    "<C-r>",
-    "undo change",
-  },
-  {
-    "<space>bd",
-    "<cmd>bdelete<cr>",
-    " delete current buffer",
-  },
+  { "H", "0", " jump head of line" },
+  { "L", "$", "  jump end of line" },
+  { "q", "", "disable macro in normal mode", { "n", "v" } },
+  { "jk", "<esc>", "escape insert mode", "i" },
+  { ">>", ">gv", "right indent", "v" },
+  { "<<", "<gv", "left indent", "v" },
+  { "U", "<C-r>", "undo change" },
+  { "<space>bd", "<cmd>bdelete<cr>", " delete current buffer" },
   {
     "<space>qq",
     "<cmd>q<cr>",
