@@ -6,12 +6,28 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/07/14 21:13:33 by oeyoews                                  --
+--   Updated: 2023/07/17 22:11:56 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
 
 oeyoews.pluginlist = {
+  {
+    "codota/tabnine-nvim",
+    enabled = false,
+    build = "./dl_binaries.sh",
+    config = function()
+      require("tabnine").setup({
+        disable_auto_comment = true,
+        accept_keymap = "<C-j>",
+        dismiss_keymap = "<C-]>",
+        debounce_ms = 800,
+        suggestion_color = { gui = "#808080", cterm = 244 },
+        exclude_filetypes = { "TelescopePrompt" },
+        log_file_path = nil, -- absolute path to Tabnine log file
+      })
+    end,
+  },
   {
     "folke/flash.nvim",
     event = "VeryLazy",
@@ -82,7 +98,7 @@ oeyoews.pluginlist = {
   },
   {
     "folke/noice.nvim",
-    enabled = false,
+    enabled = true,
     config = function()
       require("noice").setup({
         -- add any options here

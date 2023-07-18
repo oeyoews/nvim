@@ -68,6 +68,7 @@ cd ~/.config && git clone --depth 1 https://gitlab.com/oeyoews/nvim.git
 
 ## ✅ TODO
 
+https://github.com/Bekaboo/dropbar.nvim
 - [ ] https://github.com/simrat39/inlay-hints.nvim
 - [ ] https://github.com/lvimuser/lsp-inlayhints.nvim
 - [x] auto dark
