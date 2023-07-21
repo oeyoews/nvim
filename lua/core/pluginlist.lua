@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/07/17 22:11:56 by oeyoews                                  --
+--   Updated: 2023/07/21 23:52:46 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -98,7 +98,7 @@ oeyoews.pluginlist = {
   },
   {
     "folke/noice.nvim",
-    enabled = true,
+    enabled = false,
     config = function()
       require("noice").setup({
         -- add any options here
