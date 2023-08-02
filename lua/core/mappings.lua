@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2023/01/24 00:52:24 by oeyoews                                  --
---   Updated: 2023/07/14 21:09:51 by oeyoews                                  --
+--   Updated: 2023/08/02 09:28:23 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -65,7 +65,7 @@ keymappings_set = {
   { "U", "<C-r>", "undo change" },
   { "<space>bd", "<cmd>bdelete<cr>", " delete current buffer" },
   {
-    "<space>qq",
+    "<space>qi",
     "<cmd>q<cr>",
     "quit neovim",
   },
@@ -95,7 +95,7 @@ keymappings_set = {
     "map window prefix",
   },
   {
-    "<leader>fs",
+    "<leader>wi",
     ":update<cr>",
     " save file",
   },
