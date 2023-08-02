@@ -6,12 +6,21 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/07/21 23:52:46 by oeyoews                                  --
+--   Updated: 2023/07/30 20:39:01 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
 
 oeyoews.pluginlist = {
+  {
+    "TobinPalmer/rayso.nvim",
+    enabled = false,
+    cmd = { "Rayso" },
+    config = function()
+      require("rayso").setup({})
+    end,
+  },
+
   {
     "codota/tabnine-nvim",
     enabled = false,
