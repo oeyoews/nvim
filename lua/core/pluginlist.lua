@@ -6,12 +6,22 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/07/30 20:39:01 by oeyoews                                  --
+--   Updated: 2023/08/05 20:38:16 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
 
 oeyoews.pluginlist = {
+  {
+    "uloco/bluloco.nvim",
+    enabled = false,
+    lazy = false,
+    priority = 1000,
+    dependencies = { "rktjmp/lush.nvim" },
+    config = function()
+      -- your optional config goes here, see below.
+    end,
+  },
   {
     "TobinPalmer/rayso.nvim",
     enabled = false,
