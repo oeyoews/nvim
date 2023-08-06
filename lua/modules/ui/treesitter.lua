@@ -59,7 +59,7 @@ nvim_treesitter_configs.setup({
     -- parser name
     disable = {
       "latex",
-      "javascript",
+      -- "javascript",
     },
     -- additional_vim_regex_highlighting = false,
     additional_vim_regex_highlighting = {

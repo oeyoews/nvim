@@ -13,41 +13,6 @@ local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
 
 oeyoews.pluginlist = {
   {
-    "uloco/bluloco.nvim",
-    enabled = false,
-    lazy = false,
-    priority = 1000,
-    dependencies = { "rktjmp/lush.nvim" },
-    config = function()
-      -- your optional config goes here, see below.
-    end,
-  },
-  {
-    "TobinPalmer/rayso.nvim",
-    enabled = false,
-    cmd = { "Rayso" },
-    config = function()
-      require("rayso").setup({})
-    end,
-  },
-
-  {
-    "codota/tabnine-nvim",
-    enabled = false,
-    build = "./dl_binaries.sh",
-    config = function()
-      require("tabnine").setup({
-        disable_auto_comment = true,
-        accept_keymap = "<C-j>",
-        dismiss_keymap = "<C-]>",
-        debounce_ms = 800,
-        suggestion_color = { gui = "#808080", cterm = 244 },
-        exclude_filetypes = { "TelescopePrompt" },
-        log_file_path = nil, -- absolute path to Tabnine log file
-      })
-    end,
-  },
-  {
     "folke/flash.nvim",
     event = "VeryLazy",
     opts = {},
@@ -327,27 +292,8 @@ oeyoews.pluginlist = {
       require("modules.ui.treesitter")
     end,
     dependencies = {
-      "p00f/nvim-ts-rainbow",
-      "nvim-treesitter/nvim-treesitter-refactor",
       "windwp/nvim-ts-autotag",
     },
-  },
-  {
-    "HiPhish/nvim-ts-rainbow2",
-    enabled = false,
-    config = function()
-      require("nvim-treesitter.configs").setup({
-        rainbow = {
-          enable = true,
-          -- list of languages you want to disable the plugin for
-          disable = { "jsx", "cpp" },
-          -- Which query to use for finding delimiters
-          query = "rainbow-parens",
-          -- Highlight the entire buffer all at once
-          strategy = require("ts-rainbow").strategy.global,
-        },
-      })
-    end,
   },
   {
     "williamboman/mason.nvim",
@@ -387,13 +333,6 @@ oeyoews.pluginlist = {
     end,
   },
   {
-    "folke/todo-comments.nvim",
-    enabled = false,
-    config = function()
-      require("todo-comments").setup()
-    end,
-  },
-  {
     "nvim-telescope/telescope.nvim",
     config = function()
       require("modules.tools.telescope")
@@ -426,19 +365,6 @@ oeyoews.pluginlist = {
     },
     cmd = "ColorizerToggle",
     config = [[require("colorizer").setup()]],
-  },
-  {
-    "dstein64/vim-startuptime",
-    cmd = "StartupTime",
-    enabled = false,
-    -- config = [[vim.g.startuptime_event_width = 30]],
-  },
-  {
-    "ekickx/clipboard-image.nvim",
-    enabled = false,
-    ft = "markdown",
-    cmd = "PastImg",
-    lazy = true,
   },
   {
     "iamcco/markdown-preview.nvim",
@@ -488,37 +414,10 @@ oeyoews.pluginlist = {
     end,
   },
   {
-    "Bryley/neoai.nvim",
-    enabled = false,
-    config = function()
-      require("neoai").setup({})
-    end,
-  },
-  {
-    "jackMort/ChatGPT.nvim",
-    event = "VeryLazy",
-    enabled = false,
-    config = function()
-      require("chatgpt").setup({
-        keymaps = {
-          submit = "<C-s>",
-        },
-      })
-    end,
-  },
-  {
     "themaxmarchuk/tailwindcss-colors.nvim",
     enabled = true,
     config = function()
       require("tailwindcss-colors").setup()
-    end,
-  },
-  {
-    "jcdickinson/codeium.nvim",
-    pin = false,
-    enabled = false,
-    config = function()
-      require("codeium").setup({})
     end,
   },
   {
@@ -533,13 +432,6 @@ oeyoews.pluginlist = {
     end,
   },
   {
-    "gen740/SmoothCursor.nvim",
-    enabled = false,
-    config = function()
-      require("smoothcursor").setup()
-    end,
-  },
-  {
     "kylechui/nvim-surround",
     -- version = "*", -- Use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
@@ -549,17 +441,6 @@ oeyoews.pluginlist = {
       })
     end,
   },
-  {
-    "Wansmer/treesj",
-    enabled = false,
-    keys = { "<space>m", "<space>j", "<space>s" },
-    dependencies = { "nvim-treesitter/nvim-treesitter" },
-    config = function()
-      require("treesj").setup({ --[[ your config ]]
-      })
-    end,
-  },
-  "haringsrob/nvim_context_vt",
 }
 
 -- autoload on loading this pluginlist variable
