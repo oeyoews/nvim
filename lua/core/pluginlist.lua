@@ -15,7 +15,6 @@ oeyoews.pluginlist = {
   {
     "folke/flash.nvim",
     event = "VeryLazy",
-    opts = {},
     keys = {
       {
         "s",
@@ -81,23 +80,6 @@ oeyoews.pluginlist = {
     end,
   },
   {
-    "folke/noice.nvim",
-    enabled = false,
-    config = function()
-      require("noice").setup({
-        -- add any options here
-      })
-    end,
-  },
-  {
-    "lvimuser/lsp-inlayhints.nvim",
-    enabled = false,
-    branch = "anticonceal",
-    config = function()
-      require("lsp-inlayhints").setup()
-    end,
-  },
-  {
     "folke/tokyonight.nvim",
     priority = 1000,
     config = function()
@@ -121,17 +103,13 @@ oeyoews.pluginlist = {
   },
   {
     "nvimdev/lspsaga.nvim",
-    enabled = true,
+    enabled = false,
     event = "BufRead",
   },
   {
     "gaoDean/autolist.nvim",
     ft = {
       "markdown",
-      "text",
-      "tex",
-      "plaintex",
-      "norg",
     },
     config = function()
       require("autolist").setup()
@@ -220,30 +198,12 @@ oeyoews.pluginlist = {
     lazy = true,
     ft = "tiddlywiki",
   },
-  {
-    "ggandor/leap.nvim",
-    enabled = false,
-    event = "VeryLazy",
-    config = function()
-      require("leap").add_default_mappings()
-    end,
-  },
   "nvim-lua/plenary.nvim",
   "MunifTanjim/nui.nvim",
   {
     "nvim-tree/nvim-web-devicons",
     config = function()
       require("modules.ui.web_icons")
-    end,
-  },
-  {
-    "folke/trouble.nvim",
-    keys = {
-      "<space>tt",
-    },
-    enabled = false,
-    config = function()
-      require("modules.tools.trouble")
     end,
   },
   {
@@ -271,14 +231,12 @@ oeyoews.pluginlist = {
   },
   {
     "lukas-reineke/indent-blankline.nvim",
-    enabled = true,
     config = function()
       require("modules.ui.indent")
     end,
   },
   {
     "akinsho/bufferline.nvim",
-    enabled = true,
     config = function()
       require("modules.ui.bufferline")
     end,
@@ -286,7 +244,6 @@ oeyoews.pluginlist = {
   {
     "nvim-treesitter/nvim-treesitter", -- nvim-treesitter bug: checkhealth nvim-treesitter, and execute tsinstall! vim
     -- commit= "e54c8873ef964c730af451fedd4490166d335e3a",
-    enabled = true,
     build = ":TSUpdate",
     config = function()
       require("modules.ui.treesitter")
@@ -436,9 +393,7 @@ oeyoews.pluginlist = {
     -- version = "*", -- Use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
     config = function()
-      require("nvim-surround").setup({
-        -- Configuration here, or leave empty to use defaults
-      })
+      require("nvim-surround").setup({})
     end,
   },
 }
