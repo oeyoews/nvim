@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.18.1](https://gitlab.com/oeyoews/nvim/compare/v9.18.0...v9.18.1) (2023-08-06)
+
+
+### Bug Fixes
+
+* use vanilla ts-rainbow ([f49b469](https://gitlab.com/oeyoews/nvim/commit/f49b46923ce6dcf0862349bbc80122c0a4f66d16))
+
 # [9.18.0](https://gitlab.com/oeyoews/nvim/compare/v9.17.2...v9.18.0) (2023-06-15)
 
 
