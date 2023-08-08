@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.19.0](https://gitlab.com/oeyoews/nvim/compare/v9.18.1...v9.19.0) (2023-08-08)
+
+
+### Features
+
+* support mdx info filetype highlight ([341aee1](https://gitlab.com/oeyoews/nvim/commit/341aee12e2cc6faec3ab0c5667f8751cbbe30f16))
+
 ## [9.18.1](https://gitlab.com/oeyoews/nvim/compare/v9.18.0...v9.18.1) (2023-08-06)
 
 
