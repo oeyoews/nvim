@@ -6,7 +6,6 @@
     end
   end,
 }) --]=]
-
 oeyoews.autocmd("FileType", {
   group = oeyoews.mygroup,
   pattern = {
@@ -65,13 +64,14 @@ oeyoews.autocmd("BufEnter", {
 
 oeyoews.autocmd("TermOpen", {
   group = oeyoews.mygroup,
-  callback = function()
-    vim.cmd([[startinsert | setlocal nornu nonu nocursorline ]])
+  command = "startinsert | setlocal nornu nonu nocursorline",
+  --[=[ callback = function()
+    -- vim.cmd([[startinsert | setlocal nornu nonu nocursorline ]])
     if vim.opt.buftype._value == "terminal" then
       -- enter ranger will also trigger this msg
       -- vim.notify_once("  Enter Terminal-Mode")
     end
-  end,
+  end, --]=]
 })
 
 oeyoews.autocmd("TermClose", {
@@ -111,3 +111,23 @@ oeyoews.autocmd({
 --   vim.cmd([[StartupTime --save saved_startuptime --hidden]])
 -- end, 100)
 --]=]
+
+oeyoews.autocmd({
+  "BufEnter",
+}, {
+  group = oeyoews.mygroup,
+  pattern = {
+    "*.mdx",
+  },
+  command = "set filetype=markdown",
+})
+
+oeyoews.autocmd({
+  "BufEnter",
+}, {
+  group = oeyoews.mygroup,
+  pattern = {
+    "*.info",
+  },
+  command = "set filetype=json",
+})
