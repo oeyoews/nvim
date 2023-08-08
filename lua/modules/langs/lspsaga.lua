@@ -1,6 +1,7 @@
 local lspsaga = require("lspsaga")
 
-lspsaga.setup({ -- defaults ...
+lspsaga.setup({
+  -- defaults ...
   debug = false,
   use_saga_diagnostic_sign = true,
   -- diagnostic sign
@@ -33,7 +34,7 @@ lspsaga.setup({ -- defaults ...
     exec = "<CR>",
   },
   rename_action_keys = {
-    quit = "<C-c>",
+    quit = "q",
     exec = "<CR>",
   },
   definition_preview_icon = "  ",
@@ -48,3 +49,9 @@ lspsaga.setup({ -- defaults ...
   diagnostic_message_format = "%m %c",
   highlight_prefix = false,
 })
+
+-- laspsaga
+vim.keymap.set("n", "gh", "<cmd>Lspsaga hover_doc<CR>", { silent = true })
+vim.keymap.set("n", "gr", "<cmd>Lspsaga rename<CR>", { silent = true })
+vim.keymap.set("n", "go", "<cmd>Lspsaga outline<CR>", { silent = true })
+vim.keymap.set("n", "gp", "<cmd>Lspsaga peek_definition<CR>", { silent = true })

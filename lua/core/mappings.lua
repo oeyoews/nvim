@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2023/01/24 00:52:24 by oeyoews                                  --
---   Updated: 2023/08/02 09:28:23 by oeyoews                                  --
+--   Updated: 2023/08/08 19:49:03 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -252,8 +252,4 @@ vim.keymap.set("n", "<space>tc", "<cmd>Neorg toggle-concealer<cr>", {
   desc = "𝟇 show vanilla content",
 })
 
--- laspsaga
-vim.keymap.set("n", "<space>gh", "<cmd>Lspsaga hover_doc<CR>", { silent = true })
-vim.keymap.set("n", "gr", "<cmd>Lspsaga rename<CR>", { silent = true })
-
-vim.keymap.set("n", "<space>nc", ":lua require('neogen').generate()<cr>", { silent = true })
+-- vim.keymap.set("n", "<space>nc", ":lua require('neogen').generate()<cr>", { silent = true })

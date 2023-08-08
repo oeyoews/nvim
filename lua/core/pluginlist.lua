@@ -6,12 +6,19 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/08/06 19:32:43 by oeyoews                                  --
+--   Updated: 2023/08/08 20:00:30 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
 
 oeyoews.pluginlist = {
+  {
+    "VidocqH/lsp-lens.nvim",
+    enabled = false,
+    config = function()
+      require("lsp-lens").setup({})
+    end,
+  },
   {
     "folke/flash.nvim",
     event = "VeryLazy",
@@ -103,7 +110,7 @@ oeyoews.pluginlist = {
   },
   {
     "nvimdev/lspsaga.nvim",
-    enabled = false,
+    enabled = true,
     event = "BufRead",
   },
   {
