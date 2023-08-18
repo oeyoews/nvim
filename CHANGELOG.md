@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.20.0](https://gitlab.com/oeyoews/nvim/compare/v9.19.0...v9.20.0) (2023-08-08)
+
+
+### Features
+
+* enable lspsaga ([090ff06](https://gitlab.com/oeyoews/nvim/commit/090ff0690ab31c91d84b6678e46586d35920956c))
+
 # [9.19.0](https://gitlab.com/oeyoews/nvim/compare/v9.18.1...v9.19.0) (2023-08-08)
 
 
