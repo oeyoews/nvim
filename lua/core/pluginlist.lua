@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/08/08 20:00:30 by oeyoews                                  --
+--   Updated: 2023/08/18 17:52:42 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -64,6 +64,7 @@ oeyoews.pluginlist = {
   -- "eandrju/cellular-automaton.nvim",
   {
     "nvim-neorg/neorg",
+    enabled = false,
     build = ":Neorg sync-parsers",
     config = function()
       require("neorg").setup({
@@ -169,7 +170,7 @@ oeyoews.pluginlist = {
   {
     "oeyoews/rnvimr", -- false
     lazy = true,
-    enabled = false,
+    enabled = true,
     cmd = "RnvimrToggle",
     keys = {
       "<Space>ft",
@@ -180,6 +181,7 @@ oeyoews.pluginlist = {
   },
   {
     "kelly-lin/ranger.nvim",
+    enabled = false, -- 不支持ranger 的一些操作
     config = function()
       require("ranger-nvim").setup({ replace_netrw = true })
       vim.api.nvim_set_keymap("n", "<leader>ft", "", {
@@ -398,6 +400,7 @@ oeyoews.pluginlist = {
   {
     "kylechui/nvim-surround",
     -- version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    enabled = false,
     event = "VeryLazy",
     config = function()
       require("nvim-surround").setup({})
