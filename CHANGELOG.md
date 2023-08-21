@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.20.1](https://gitlab.com/oeyoews/nvim/compare/v9.20.0...v9.20.1) (2023-08-21)
+
+
+### Performance Improvements
+
+* remove archive folder ([60e2e6b](https://gitlab.com/oeyoews/nvim/commit/60e2e6b00404bcbd96cd6855e2f5a96e77e1e54b))
+
 # [9.20.0](https://gitlab.com/oeyoews/nvim/compare/v9.19.0...v9.20.0) (2023-08-08)
 
 
