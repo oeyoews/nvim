@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/08/21 13:11:24 by oeyoews                                  --
+--   Updated: 2023/08/21 14:02:57 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -260,11 +260,16 @@ oeyoews.pluginlist = {
     dependencies = {
       "williamboman/mason-lspconfig.nvim",
       "WhoIsSethDaniel/mason-tool-installer.nvim",
-      "jose-elias-alvarez/null-ls.nvim",
     },
     config = function()
       require("modules.langs.mason")
     end,
+  },
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    config = function()
+      require('modules.langs.null-ls')
+    end
   },
   {
     "jayp0521/mason-null-ls.nvim",
