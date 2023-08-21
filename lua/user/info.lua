@@ -31,8 +31,6 @@ M.setup = function()
     oeyoews.nvim_full_version_info,
     get_tag()[1]
   )
-  -- todo this border
-  -- vim.cmd([[StartupTime --save saved_startuptime --hidden]])
   return vim.notify(fmt_msg, "info", {
     title = "Neovim Info",
     timeout = 3000,

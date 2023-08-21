@@ -1,6 +1,6 @@
 local lspconfig = require("lspconfig")
 
-local capabilities = require("user.capabilities")
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 local on_attach = function(client, bufnr)
   require("lsp-format").on_attach(client)
@@ -36,12 +36,22 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
 })
 
 -- change lsp icons
-local custom_icon = function()
-  local signs = { Error = "", Warn = " ", Hint = "", Info = " " }
-  for type, icon in pairs(signs) do
-    local hl = "DiagnosticSign" .. type
-    vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
-  end
-end
+local border = {
+  { "┏", "FloatBorder" },
+  { "─", "FloatBorder" },
+  { "┓", "FloatBorder" },
+  { "│", "FloatBorder" },
+  { "┛", "FloatBorder" },
+  { "─", "FloatBorder" },
+  { "┗", "FloatBorder" },
+  { "│", "FloatBorder" },
+}
 
-custom_icon()
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+  border = border,
+})
+vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
+  border = border,
+})
+
+vim.lsp.set_log_level("error")
