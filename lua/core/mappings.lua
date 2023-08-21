@@ -6,7 +6,7 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2023/01/24 00:52:24 by oeyoews                                  --
---   Updated: 2023/08/08 19:49:03 by oeyoews                                  --
+--   Updated: 2023/08/21 11:40:13 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -253,3 +253,7 @@ vim.keymap.set("n", "<space>tc", "<cmd>Neorg toggle-concealer<cr>", {
 })
 
 -- vim.keymap.set("n", "<space>nc", ":lua require('neogen').generate()<cr>", { silent = true })
+
+vim.keymap.set("n", "<space>li", "<cmd>LspInfo<cr>", {
+  desc = "  show lspinfo",
+})
