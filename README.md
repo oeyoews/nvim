@@ -6,8 +6,6 @@
 </div>
 
 <div align="center">
-<img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-Semantic-e10079.svg?style=flat-square" alt="Semantic Release"/>
-<img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square&logo=GNU&color=df967f&label=License" alt="license">
 <img src="https://img.shields.io/badge/Neovim-0.9.0-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=green" alt="neovim">
 <img src="https://img.shields.io/gitlab/v/tag/oeyoews/nvim?color=green&logo=FastAPI&style=flat-square" alt="tag">
 <img src="https://img.shields.io/badge/Lang-lua-blueviolet.svg?style=flat-square&logo=lua&color=90E59A&logoColor=blue" alt="lang">
@@ -20,9 +18,9 @@
 | :----------------------------------------------: | :----------------------------------------------: | ------------------------------------------------ |
 | <img src="img/04.png" align="bottom" width=256/> | <img src="img/05.png" align="bottom" width=256/> | <img src="img/06.png" align="bottom" width=256/> |
 
-## 💡 What's that
-
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=FiraCode&color=63F3E1&vCenter=true&lines=A+personal+neovim+configuration+with+UltiSnips" alt="Typing SVG" /></a>
+<!-- ## 💡 What's that -->
+<!---->
+<!-- <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=FiraCode&color=63F3E1&vCenter=true&lines=A+personal+neovim+configuration+with+UltiSnips" alt="Typing SVG" /></a> -->
 
 ## 🔗 Neovim Related Links
 
