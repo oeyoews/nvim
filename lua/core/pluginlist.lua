@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/08/21 13:08:46 by oeyoews                                  --
+--   Updated: 2023/08/21 13:11:24 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -67,9 +67,9 @@ oeyoews.pluginlist = {
             config = {
               engine = "nvim-cmp",
             },
-          }, -- Loads default behaviour
+          },                       -- Loads default behaviour
           ["core.concealer"] = {}, -- Adds pretty icons to your documents
-          ["core.dirman"] = { -- Manages Neorg workspaces
+          ["core.dirman"] = {      -- Manages Neorg workspaces
             config = {
               workspaces = {
                 notes = "~/neorg/notes",
