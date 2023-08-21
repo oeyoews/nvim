@@ -49,7 +49,7 @@ oeyoews.servers = {
   "eslint", -- not suit mjs zx
   -- "cmake",
   "pylsp",
-  -- "gopls",
+  "gopls",
   "jsonls",
   "tailwindcss",
   -- "vimls",
