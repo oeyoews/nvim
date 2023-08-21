@@ -128,6 +128,7 @@ oeyoews.autocmd({
   group = oeyoews.mygroup,
   pattern = {
     "*.info",
+    "*.files",
   },
   command = "set filetype=json",
 })
