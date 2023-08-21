@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/08/21 11:37:34 by oeyoews                                  --
+--   Updated: 2023/08/21 12:20:02 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -105,9 +105,6 @@ oeyoews.pluginlist = {
   {
     "nvimdev/lspsaga.nvim",
     enabled = true,
-    config = function()
-      require("modules.langs.lspsaga")
-    end,
     event = "BufRead",
   },
   {
@@ -287,12 +284,7 @@ oeyoews.pluginlist = {
       require("modules.langs.cmp")
     end,
   },
-  {
-    "folke/neodev.nvim",
-    config = function()
-      require("neodev").setup({})
-    end,
-  },
+  "folke/neodev.nvim",
   "SirVer/ultisnips",
   "honza/vim-snippets",
   {

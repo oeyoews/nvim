@@ -6,11 +6,12 @@
 --   By: oeyoews <jyao4783@gmail.com>                                         --
 --                                                                            --
 --   Created: 2023/01/24 00:52:24 by oeyoews                                  --
---   Updated: 2023/08/21 11:40:13 by oeyoews                                  --
+--   Updated: 2023/08/21 12:48:23 by oeyoews                                  --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
 vim.g.mapleader = " "
+local kmap = vim.keymap
 
 -- TODO have autocmd and use mapping set it
 local keymappings_set = {}
@@ -170,21 +171,21 @@ end, {
   desc = "  terminal",
 })
 
-vim.keymap.set("n", "<space>fi", function()
+kmap.set("n", "<space>fi", function()
   return oeyoews.find_lua_file("lua/core/init")
 end, {
   silent = true,
   desc = "ﳐ edit init.lua(main) neovim config",
 })
 
-vim.keymap.set("n", "<space>edv", function()
+kmap.set("n", "<space>edv", function()
   return oeyoews.find_lua_file("doc/vanilla", "norg")
 end, {
   silent = true,
   desc = "edit vanilla.norg ",
 })
 
-vim.keymap.set("n", "<space>hd", function()
+kmap.set("n", "<space>hd", function()
   return vim.notify(os.date("%Y-%m-%d %H:%M:%S %A, Day %j"), "info", {
     title = "Current Date",
     timeout = 3000,
@@ -192,7 +193,7 @@ vim.keymap.set("n", "<space>hd", function()
 end, {
   desc = "愈show time",
 })
-vim.keymap.set("n", "<space>helo", function()
+kmap.set("n", "<space>helo", function()
   return vim.notify("  Hello, Neovim", "info", {
     title = "welcome",
   })
@@ -201,7 +202,7 @@ end, {
 })
 
 -- add notify
-vim.keymap.set("n", "<space>so", "<cmd>so %<cr>", {
+kmap.set("n", "<space>so", "<cmd>so %<cr>", {
   desc = " refresh current file",
 })
 
@@ -214,39 +215,23 @@ end, {
 
 -- show neovim info
 local info = require("user.info")
-vim.keymap.set("n", "<space>hi", function()
+kmap.set("n", "<space>hi", function()
   return info.setup()
 end, {
   silent = true,
   desc = " show neovim info",
 })
 
-vim.keymap.set("n", "<space>vf", "<cmd>set invfoldenable<cr>", {
-  silent = true,
-  desc = " toggle fold",
-})
-
--- or append <cmd>q!<cr>
-vim.keymap.set("t", "<M-q>", "<C-\\><C-n>", {
-  silent = true,
-  desc = " quit terminal mode",
-})
-
-vim.keymap.set("n", "<space>ll", "<cmd>w <bar> QuickRun<cr>", {
+kmap.set("n", "<space>ll", "<cmd>w <bar> QuickRun<cr>", {
   desc = "  run code",
 })
 
-vim.keymap.set("n", "<space>lr", "<cmd>SnipRun<cr>", {
+kmap.set("n", "<space>lr", "<cmd>SnipRun<cr>", {
   silent = true,
   desc = "run code",
 })
 
-vim.keymap.set("v", "<space>lr", "<Plug>SnipRun", {
-  silent = true,
-  desc = "run code",
-})
-
-vim.keymap.set("n", "<space>tc", "<cmd>Neorg toggle-concealer<cr>", {
+kmap.set("n", "<space>tc", "<cmd>Neorg toggle-concealer<cr>", {
   buffer = true,
   silent = true,
   desc = "𝟇 show vanilla content",
@@ -254,6 +239,6 @@ vim.keymap.set("n", "<space>tc", "<cmd>Neorg toggle-concealer<cr>", {
 
 -- vim.keymap.set("n", "<space>nc", ":lua require('neogen').generate()<cr>", { silent = true })
 
-vim.keymap.set("n", "<space>li", "<cmd>LspInfo<cr>", {
+kmap.set("n", "<space>li", "<cmd>LspInfo<cr>", {
   desc = "  show lspinfo",
 })

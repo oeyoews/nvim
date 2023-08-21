@@ -50,18 +50,13 @@ lspsaga.setup({
   highlight_prefix = false,
 })
 
--- laspsaga
 vim.keymap.set("n", "gh", "<cmd>Lspsaga hover_doc<CR>", { silent = true })
 vim.keymap.set("n", "gr", "<cmd>Lspsaga rename<CR>", { silent = true })
 vim.keymap.set("n", "go", "<cmd>Lspsaga outline<CR>", { silent = true })
 vim.keymap.set("n", "gp", "<cmd>Lspsaga peek_definition<CR>", { silent = true })
 
-local custom_icon = function()
-  local signs = { Error = "", Warn = " ", Hint = "", Info = " " }
-  for type, icon in pairs(signs) do
-    local hl = "DiagnosticSign" .. type
-    vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
-  end
+local signs = { Error = "", Warn = " ", Hint = "", Info = " " }
+for type, icon in pairs(signs) do
+  local hl = "DiagnosticSign" .. type
+  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end
-
-custom_icon()
