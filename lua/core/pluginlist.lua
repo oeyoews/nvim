@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/08/21 13:03:03 by oeyoews                                  --
+--   Updated: 2023/08/21 13:08:46 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -234,7 +234,7 @@ oeyoews.pluginlist = {
   {
     "lukas-reineke/indent-blankline.nvim",
     config = function()
-      require("modules.ui.indent")
+      require("indent_blankline")
     end,
   },
   {
@@ -261,12 +261,17 @@ oeyoews.pluginlist = {
       "williamboman/mason-lspconfig.nvim",
       "WhoIsSethDaniel/mason-tool-installer.nvim",
       "jose-elias-alvarez/null-ls.nvim",
-      "jayp0521/mason-null-ls.nvim",
     },
     config = function()
       require("modules.langs.mason")
-      require("modules.langs.null-ls")
-      require("modules.langs.mason-null-ls")
+    end,
+  },
+  {
+    "jayp0521/mason-null-ls.nvim",
+    config = function()
+      require("mason-null-ls").setup({
+        automatic_installation = true,
+      })
     end,
   },
   {
