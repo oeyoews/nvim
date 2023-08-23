@@ -6,7 +6,7 @@
 --   By: oeyoews <mail>                                                       --
 --                                                                            --
 --   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/08/21 14:02:57 by oeyoews                                  --
+--   Updated: 2023/08/23 21:52:06 by oeyoews                                  --
 -- -------------------------------------------------------------------------- --
 
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
@@ -67,9 +67,9 @@ oeyoews.pluginlist = {
             config = {
               engine = "nvim-cmp",
             },
-          },                       -- Loads default behaviour
+          }, -- Loads default behaviour
           ["core.concealer"] = {}, -- Adds pretty icons to your documents
-          ["core.dirman"] = {      -- Manages Neorg workspaces
+          ["core.dirman"] = { -- Manages Neorg workspaces
             config = {
               workspaces = {
                 notes = "~/neorg/notes",
@@ -268,8 +268,8 @@ oeyoews.pluginlist = {
   {
     "jose-elias-alvarez/null-ls.nvim",
     config = function()
-      require('modules.langs.null-ls')
-    end
+      require("modules.langs.null-ls")
+    end,
   },
   {
     "jayp0521/mason-null-ls.nvim",
@@ -293,7 +293,10 @@ oeyoews.pluginlist = {
       require("modules.langs.cmp")
     end,
   },
-  "folke/neodev.nvim",
+  {
+    "folke/neodev/nvim",
+    pin = true,
+  },
   "SirVer/ultisnips",
   "honza/vim-snippets",
   {
