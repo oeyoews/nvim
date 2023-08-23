@@ -1,10 +1,4 @@
 <div align="center">
-  <img src="img/vim-rainbow.png" alt="vim" align="center" width=144><hr>
-  <p> 💡 A personal neovim configuration with UntiSnips</p>
-  <hr>
-</div>
-
-<div align="center">
 <img src="https://img.shields.io/badge/Neovim-0.9.0-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=green" alt="neovim">
 <img src="https://img.shields.io/gitlab/v/tag/oeyoews/nvim?color=green&logo=FastAPI&style=flat-square" alt="tag">
 <img src="https://img.shields.io/badge/Lang-lua-blueviolet.svg?style=flat-square&logo=lua&color=90E59A&logoColor=blue" alt="lang">
