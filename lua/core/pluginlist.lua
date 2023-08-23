@@ -294,7 +294,7 @@ oeyoews.pluginlist = {
     end,
   },
   {
-    "folke/neodev/nvim",
+    "folke/neodev.nvim",
     pin = true,
   },
   "SirVer/ultisnips",
