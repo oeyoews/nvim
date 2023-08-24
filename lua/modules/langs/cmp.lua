@@ -1,16 +1,9 @@
 local lspkind = require("modules.langs.lspkind")
 
--- bug: this markdown_inline.snippets bug like ```bash ``` or `xxx` ???
--- vim.cmd([[highlight default GH guifg=#3bb6c4 guibg=NONE]])
--- TODO: learn use highlight group and cutsom_ui file
--- https://github.com/hrsh7th/nvim-cmp/wiki/Menu-Appearance
 vim.cmd([[
-" highlight CmpItemKindDefault  guifg=#3bb6c4 guibg=NONE
-" highlight CmpItemMenu guifg=#9E79BE guibg=NONE
 highlight CmpItemKindSnippet  guifg=#3bb6c4 guibg=NONE
 ]])
 
--- can't use two mappings
 -- g.UltiSnipsJumpBackwardTrigger = '<Plug>(ultisnips_jump_backward)'
 vim.g.UltiSnipsEditSplit = "vertical"
 vim.g.UltiSnipsJumpForwardTrigger = "<Plug>(ultisnips_jump_forward)"
@@ -224,10 +217,6 @@ oeyoews.autocmd("FileType", {
 
 require("cmp_nvim_ultisnips").setup({
   filetype_source = "treesitter",
-  -- show_snippets = "all",
-  -- documentation = function(snippet)
-  --   return snippet.description
-  -- end,
 })
 
 -- vim.g.UltiSnipsJumpForwardTrigger = "<C-J>"
