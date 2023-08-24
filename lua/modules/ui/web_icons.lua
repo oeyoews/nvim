@@ -1,59 +1,59 @@
 -- TODO: add norg ft icons
-require("nvim-web-devicons").setup({
+require('nvim-web-devicons').setup({
   override = {
-    ["Dockerfile"] = {
-      icon = "",
-      color = "#2496ED",
-      cterm_color = "59",
-      name = "Dockerfile",
+    ['Dockerfile'] = {
+      icon = '',
+      color = '#2496ED',
+      cterm_color = '59',
+      name = 'Dockerfile',
     },
     norg = {
-      icon = "", -- 
-      color = "#5AB680",
-      cterm_color = "67",
-      name = "Norg",
+      icon = '', -- 
+      color = '#5AB680',
+      cterm_color = '67',
+      name = 'Norg',
     },
     zsh = {
-      icon = "",
-      color = "yellow",
-      cterm_color = "67",
-      name = "Zsh",
+      icon = '',
+      color = 'yellow',
+      cterm_color = '67',
+      name = 'Zsh',
     },
-    ["rb"] = {
-      icon = "",
-      color = "#701516",
-      cterm_color = "52",
-      name = "Rb",
+    ['rb'] = {
+      icon = '',
+      color = '#701516',
+      cterm_color = '52',
+      name = 'Rb',
     },
     sh = {
-      icon = "",
-      color = "yellow",
-      cterm_color = "67",
-      name = "Sh",
+      icon = '',
+      color = 'yellow',
+      cterm_color = '67',
+      name = 'Sh',
     },
     md = {
-      icon = "",
-      color = "#519aba",
-      cterm_color = "67",
-      name = "Md",
+      icon = '',
+      color = '#519aba',
+      cterm_color = '67',
+      name = 'Md',
     },
     tid = {
-      icon = "", -- 
-      color = "#5AB680",
-      cterm_color = "57",
-      name = "Tid",
+      icon = '', -- 
+      color = '#5AB680',
+      cterm_color = '57',
+      name = 'Tid',
     },
     tex = {
-      icon = "𝚃", -- 𝚃 this ﲀ icon cause number mass
-      color = "#5AB680",
-      cterm_color = "57",
-      name = "Tex",
+      icon = '𝚃', -- 𝚃 this ﲀ icon cause number mass
+      color = '#5AB680',
+      cterm_color = '57',
+      name = 'Tex',
     },
     default_icon = {
-      icon = "",
-      color = "#519aba",
-      cterm_color = "66",
-      name = "Default",
+      icon = '',
+      color = '#519aba',
+      cterm_color = '66',
+      name = 'Default',
     },
   },
   default = true,

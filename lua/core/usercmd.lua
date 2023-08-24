@@ -8,12 +8,12 @@ end, {
 }) --]]
 
 --- create some user command
-vim.api.nvim_create_user_command("Edit", function(opts)
+vim.api.nvim_create_user_command('Edit', function(opts)
   oeyoews.creat_journey(opts.args)
 end, {
-  desc = "Install one or more packages.",
-  nargs = "+", -- todo
-  complete = "custom,v:lua.oeyoews.completion.edit",
+  desc = 'Install one or more packages.',
+  nargs = '+', -- todo
+  complete = 'custom,v:lua.oeyoews.completion.edit',
 })
 
 -- vim.api.nvim_create_user_command("UpdatePlugins", function()

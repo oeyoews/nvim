@@ -1,30 +1,30 @@
-local lspkind = require("modules.langs.lspkind")
+local lspkind = require('modules.langs.lspkind')
 
 vim.cmd([[
 highlight CmpItemKindSnippet  guifg=#3bb6c4 guibg=NONE
 ]])
 
 -- g.UltiSnipsJumpBackwardTrigger = '<Plug>(ultisnips_jump_backward)'
-vim.g.UltiSnipsEditSplit = "vertical"
-vim.g.UltiSnipsJumpForwardTrigger = "<Plug>(ultisnips_jump_forward)"
+vim.g.UltiSnipsEditSplit = 'vertical'
+vim.g.UltiSnipsJumpForwardTrigger = '<Plug>(ultisnips_jump_forward)'
 vim.g.snips_author = oeyoews.username
 
 local t = function(str)
   return vim.api.nvim_replace_termcodes(str, true, true, true)
 end
 
-local _, cmp = pcall(require, "cmp")
+local _, cmp = pcall(require, 'cmp')
 
 local function border(highlight)
   return {
-    { "┏", highlight },
-    { "─", highlight },
-    { "┓", highlight },
-    { "│", highlight },
-    { "┛", highlight },
-    { "─", highlight },
-    { "┗", highlight },
-    { "│", highlight },
+    { '┏', highlight },
+    { '─', highlight },
+    { '┓', highlight },
+    { '│', highlight },
+    { '┛', highlight },
+    { '─', highlight },
+    { '┗', highlight },
+    { '│', highlight },
     -- { "╭", hl_name },
     -- { "─", hl_name },
     -- { "╮", hl_name },
@@ -37,8 +37,8 @@ local function border(highlight)
 end
 
 local symbol_map = {
-  Snippet = "",
-  Codeium = "",
+  Snippet = '',
+  Codeium = '',
   -- Snippet = "❒",
   -- Text = "",
   -- Method = "𝙢 ",
@@ -79,35 +79,35 @@ local mapping = {
   -- end, { "i", "s" }),
   -- ["<C-y>"] = cmp.mapping.complete(),
   -- ["<C-Space>"] = cmp.mapping.complete(),
-  ["<CR>"] = cmp.mapping.confirm({ select = false }),
-  ["<C-c>"] = cmp.mapping.close(),
-  ["<C-n>"] = function()
+  ['<CR>'] = cmp.mapping.confirm({ select = false }),
+  ['<C-c>'] = cmp.mapping.close(),
+  ['<C-n>'] = function()
     if not cmp.visible() then
       cmp.complete()
     else
       cmp.select_next_item()
     end
   end,
-  ["<C-p>"] = function()
+  ['<C-p>'] = function()
     if not cmp.visible() then
       cmp.complete()
     else
       cmp.select_prev_item()
     end
   end,
-  ["<tab>"] = cmp.mapping({
+  ['<tab>'] = cmp.mapping({
     i = function(fallback)
       if cmp.visible() then
         cmp.select_next_item({ behavior = cmp.SelectBehavior.Insert })
-      elseif vim.fn["UltiSnips#CanJumpForwards"]() == 1 then
-        vim.api.nvim_feedkeys(t("<Plug>(ultisnips_jump_forward)"), "m", true)
+      elseif vim.fn['UltiSnips#CanJumpForwards']() == 1 then
+        vim.api.nvim_feedkeys(t('<Plug>(ultisnips_jump_forward)'), 'm', true)
       else
         fallback()
       end
     end,
     s = function(fallback)
-      if vim.fn["UltiSnips#CanJumpForwards"]() == 1 then
-        vim.api.nvim_feedkeys(t("<Plug>(ultisnips_jump_forward)"), "m", true)
+      if vim.fn['UltiSnips#CanJumpForwards']() == 1 then
+        vim.api.nvim_feedkeys(t('<Plug>(ultisnips_jump_forward)'), 'm', true)
       else
         fallback()
       end
@@ -119,22 +119,22 @@ local sources = {
   -- { name = "copilot" },
   -- { name = "orgmode" },
   -- { name = "nvim_lsp_signature_help" },
-  { name = "neorg" },
-  { name = "codeium" },
-  { name = "nvim_lsp" },
-  { name = "ultisnips" },
-  { name = "buffer", keyword_length = 0 },
-  { name = "nvim-lua" },
-  { name = "path" },
-  { name = "cmp-tw2css" },
+  { name = 'neorg' },
+  { name = 'codeium' },
+  { name = 'nvim_lsp' },
+  { name = 'ultisnips' },
+  { name = 'buffer', keyword_length = 0 },
+  { name = 'nvim-lua' },
+  { name = 'path' },
+  { name = 'cmp-tw2css' },
 }
 
 local menu = {
-  nvim_lsp = "(Lsp)",
-  buffer = "(Buffer)",
-  ultisnips = "(Snippet)",
-  nvim_lua = "(Lua)",
-  path = "(Path)",
+  nvim_lsp = '(Lsp)',
+  buffer = '(Buffer)',
+  ultisnips = '(Snippet)',
+  nvim_lua = '(Lua)',
+  path = '(Path)',
 }
 
 cmp.setup({
@@ -142,21 +142,21 @@ cmp.setup({
     -- completion = cmp.config.window.bordered(),
     -- documentation = cmp.config.window.bordered(),
     completion = {
-      border = border("CmpBorder"),
-      winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None",
+      border = border('CmpBorder'),
+      winhighlight = 'Normal:CmpPmenu,CursorLine:PmenuSel,Search:None',
     },
     documentation = {
-      border = border("CmpBorder"),
-      winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None",
+      border = border('CmpBorder'),
+      winhighlight = 'Normal:CmpPmenu,CursorLine:PmenuSel,Search:None',
     },
   },
   view = {
-    entries = "custom", -- can be "custom", "wildmenu" or "native"
+    entries = 'custom', -- can be "custom", "wildmenu" or "native"
     --entries = { name = 'custom', selection_order = 'near_cursor' }
   },
   snippet = {
     expand = function(args)
-      vim.fn["UltiSnips#Anon"](args.body)
+      vim.fn['UltiSnips#Anon'](args.body)
     end,
   },
   -- mappings
@@ -165,14 +165,14 @@ cmp.setup({
   -- TODO: custom this prompt color
   formatting = {
     fields = {
-      "abbr", -- menu
-      "kind", -- icon
-      "menu", -- text
+      'abbr', -- menu
+      'kind', -- icon
+      'menu', -- text
     },
     format = lspkind.cmp_format({
       -- https://code.visualstudio.com/api/references/icons-in-labels
       symbol_map = symbol_map,
-      mode = "symbol",
+      mode = 'symbol',
       --mode = "symbol_text",
       maxwidth = 50,
       menu = menu,
@@ -199,34 +199,34 @@ cmp.setup({
 -- TODO this default value is ultisnips, how to use apprend link this
 -- vim.fn.stdpath("data") .. "/site/xxx/start/vim-snippets/UltiSnips/",
 vim.g.UltiSnipsSnippetDirectories = {
-  "UltiSnips",
-  vim.fn.stdpath("config") .. "/UltiSnips/",
+  'UltiSnips',
+  vim.fn.stdpath('config') .. '/UltiSnips/',
 }
 
 -- default is enable
 vim.g.UltiSnipsEnableSnipMate = 1
 
-oeyoews.autocmd("FileType", {
-  pattern = "TelescopePrompt",
+oeyoews.autocmd('FileType', {
+  pattern = 'TelescopePrompt',
   callback = function()
-    require("cmp").setup.buffer({
+    require('cmp').setup.buffer({
       enabled = false,
     })
   end,
 })
 
-require("cmp_nvim_ultisnips").setup({
-  filetype_source = "treesitter",
+require('cmp_nvim_ultisnips').setup({
+  filetype_source = 'treesitter',
 })
 
 -- vim.g.UltiSnipsJumpForwardTrigger = "<C-J>"
 -- vim.g.UltiSnipsExpandTrigger = "<C-e>" -- TODO
-vim.g.UltiSnipsJumpBackwardTrigger = "<C-K>"
+vim.g.UltiSnipsJumpBackwardTrigger = '<C-K>'
 
-vim.keymap.set("n", "<space>ee", "<cmd>UltiSnipsEdit<cr>", {
-  desc = " edit snippet",
+vim.keymap.set('n', '<space>ee', '<cmd>UltiSnipsEdit<cr>', {
+  desc = ' edit snippet',
 })
 
-vim.keymap.set("n", "<space>ea", "<cmd>UltiSnipsEdit all<cr>", {
-  desc = " edia all snippet geterally",
+vim.keymap.set('n', '<space>ea', '<cmd>UltiSnipsEdit all<cr>', {
+  desc = ' edia all snippet geterally',
 })

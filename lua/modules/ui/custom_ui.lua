@@ -33,11 +33,11 @@ autocmd! BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "nor
 vim.cmd([[
 hi Yank  cterm=bold ctermfg=16 ctermbg=167 guifg=#292b2e guibg=#ce537a gui=underline
 ]])
-oeyoews.autocmd("TextYankPost", {
-  pattern = "*",
+oeyoews.autocmd('TextYankPost', {
+  pattern = '*',
   callback = function()
     vim.highlight.on_yank({
-      higroup = "Yank",
+      higroup = 'Yank',
       timeout = 400,
       on_visual = true,
     })

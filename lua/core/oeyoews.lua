@@ -1,24 +1,24 @@
 -- global lua variables
 oeyoews = {}
 
-oeyoews.home = os.getenv("HOME")
-oeyoews.username = os.getenv("USER")
+oeyoews.home = os.getenv('HOME')
+oeyoews.username = os.getenv('USER')
 
 -- extra binary
 oeyoews.mason = {}
 
 oeyoews.completion = {}
 
-oeyoews.lazyload = require("user.lazyload")
+oeyoews.lazyload = require('user.lazyload')
 
 -- api
 oeyoews.autocmd = vim.api.nvim_create_autocmd
 oeyoews.userautocmd = vim.api.nvim_create_user_autocmd
-oeyoews.mygroup = vim.api.nvim_create_augroup("OeyoewGroup", {})
+oeyoews.mygroup = vim.api.nvim_create_augroup('OeyoewGroup', {})
 -- nvim_version
 oeyoews.nvim_version = vim.version().minor
 oeyoews.nvim_full_version_info =
-  string.format("%s.%s.%s", vim.version().major, vim.version().minor, vim.version().patch)
+  string.format('%s.%s.%s', vim.version().major, vim.version().minor, vim.version().patch)
 
 -- options
 oeyoews.options = {
@@ -41,17 +41,17 @@ oeyoews.options = {
 }
 
 oeyoews.servers = {
-  "lua_ls",
+  'lua_ls',
   -- "volar",
-  "tsserver",
+  'tsserver',
   -- "marksman",
-  "clangd",
-  "eslint", -- not suit mjs zx
+  'clangd',
+  'eslint', -- not suit mjs zx
   -- "cmake",
-  "pylsp",
-  "gopls",
-  "jsonls",
-  "tailwindcss",
+  'pylsp',
+  'gopls',
+  'jsonls',
+  'tailwindcss',
   -- "vimls",
   -- "bashls",
   -- "yamlls",
@@ -68,20 +68,20 @@ end
 -- must global function
 oeyoews.completion.edit = function()
   local ft = {
-    "norg",
-    "tid",
-    "lua",
-    "md",
-    "txt",
-    "tex",
+    'norg',
+    'tid',
+    'lua',
+    'md',
+    'txt',
+    'tex',
   }
   table.sort(ft)
-  return table.concat(ft, "\n")
+  return table.concat(ft, '\n')
 end
 
 -- load global variables
-require("core.functions")
-require("core.pluginlist")
+require('core.functions')
+require('core.pluginlist')
 
 --   mappings
 --[=[ vim.keymap.set("n", "<space>fo", function()

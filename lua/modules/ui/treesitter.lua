@@ -1,4 +1,4 @@
-local _, nvim_treesitter_configs = pcall(require, "nvim-treesitter.configs")
+local _, nvim_treesitter_configs = pcall(require, 'nvim-treesitter.configs')
 
 -- @Mirror_nvim_treesitter
 --[[ require("nvim-treesitter.install").prefer_git = true
@@ -17,26 +17,26 @@ local disable_filetypes = {
   -- "js",
 }
 local rainbow_colors = {
-  "#F7768E",
-  "#8169B4",
-  "#689d6a",
-  "#d79921",
-  "#a89984",
-  "#d65d0e",
-  "#458588",
+  '#F7768E',
+  '#8169B4',
+  '#689d6a',
+  '#d79921',
+  '#a89984',
+  '#d65d0e',
+  '#458588',
 }
 local terminal_colors = {
-  "Red",
-  "Green",
-  "Yellow",
-  "Blue",
-  "Magenta",
-  "Cyan",
-  "White",
+  'Red',
+  'Green',
+  'Yellow',
+  'Blue',
+  'Magenta',
+  'Cyan',
+  'White',
 }
 
 -- note: if update query, have some error, please remove old different dir for parsers, such as vim
-local parser_install_dir = string.format("%s/parsers/", vim.fn.stdpath("data"))
+local parser_install_dir = string.format('%s/parsers/', vim.fn.stdpath('data'))
 
 -- tips: tsmoduleinfo
 nvim_treesitter_configs.setup({
@@ -58,17 +58,17 @@ nvim_treesitter_configs.setup({
     enable = true,
     -- parser name
     disable = {
-      "latex",
+      'latex',
       -- "javascript",
     },
     -- additional_vim_regex_highlighting = false,
     additional_vim_regex_highlighting = {
-      "org",
+      'org',
     },
   },
 })
 
-vim.opt.foldmethod = "expr"
+vim.opt.foldmethod = 'expr'
 -- vim.opt.foldexpr = vim.fn["nvim_treesitter#foldexpr"]()
 vim.cmd([[ set foldexpr=nvim_treesitter#foldexpr() ]])
 vim.opt.runtimepath:append(parser_install_dir)

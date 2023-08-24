@@ -1,25 +1,25 @@
-require("modules.langs.mason_tools_install")
+require('modules.langs.mason_tools_install')
 
-local null_ls = require("null-ls")
+local null_ls = require('null-ls')
 local formatting = null_ls.builtins.formatting
 
 local sources = {
   formatting.prettier.with({
     disabled_filetypes = {
-      "markdown",
+      'markdown',
     },
   }),
   formatting.stylua.with({
-    extra_args = { "--config-path", vim.fn.expand("~/.config/nvim/linter-config/stylua.toml") },
+    extra_args = { '--config-path', vim.fn.expand('~/.config/nvim/linter-config/stylua.toml') },
   }),
 }
 
-local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
+local augroup = vim.api.nvim_create_augroup('LspFormatting', {})
 
 local lsp_formatting = function(bufnr)
   vim.lsp.buf.format({
     filter = function(client)
-      return client.name == "null-ls"
+      return client.name == 'null-ls'
     end,
     bufnr = bufnr,
   })
@@ -30,7 +30,7 @@ function on_attach(client, bufnr)
     group = augroup,
     buffer = bufnr,
   })
-  oeyoews.autocmd("BufWritePre", {
+  oeyoews.autocmd('BufWritePre', {
     group = augroup,
     buffer = bufnr,
     callback = function()
@@ -46,7 +46,7 @@ null_ls.setup({
   on_attach = on_attach,
 })
 
-vim.keymap.set("n", "<space>ln", "<cmd>NullLsInfo<cr>", {
+vim.keymap.set('n', '<space>ln', '<cmd>NullLsInfo<cr>', {
   silent = true,
-  desc = " show null-ls info",
+  desc = ' show null-ls info',
 })

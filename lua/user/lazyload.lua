@@ -2,7 +2,7 @@ local M = {}
 
 -- gitsings
 M.gitsigns = function()
-  local gitsigns = require("gitsigns")
+  local gitsigns = require('gitsigns')
 
   gitsigns.setup({
     current_line_blame = true,
@@ -27,11 +27,11 @@ M.mkdp = function()
     mkdp_echo_preview_url = true,
     mkdp_port = 9999,
     mkdp_open_to_the_world = false, -- need network
-    mkdp_theme = "dark",
+    mkdp_theme = 'dark',
     mkdp_filetypes = {
-      "markdown",
-      "txt",
-      "html",
+      'markdown',
+      'txt',
+      'html',
     },
   }
 
@@ -39,23 +39,23 @@ M.mkdp = function()
     vim.g[index] = value
   end
 
-  vim.keymap.set("n", "<space>fM", "<cmd>MarkdownPreviewToggle<cr>", {
-    desc = " preview markdown in browser",
+  vim.keymap.set('n', '<space>fM', '<cmd>MarkdownPreviewToggle<cr>', {
+    desc = ' preview markdown in browser',
     buffer = true,
   })
 end
 
 -- emoji
 M.emoji = function()
-  require("icon-picker").setup({
+  require('icon-picker').setup({
     disable_legacy_commands = false,
   })
 
-  vim.keymap.set("i", "<A-i>", "<cmd>IconPickerNormal alt_font symbols nerd_font emoji<cr>", {
-    desc = "𝑷 insert icon",
+  vim.keymap.set('i', '<A-i>', '<cmd>IconPickerNormal alt_font symbols nerd_font emoji<cr>', {
+    desc = '𝑷 insert icon',
   })
-  vim.keymap.set("n", "<space>ie", "<cmd>IconPickerNormal alt_font symbols nerd_font emoji<cr>", {
-    desc = "𝑷 insert icon",
+  vim.keymap.set('n', '<space>ie', '<cmd>IconPickerNormal alt_font symbols nerd_font emoji<cr>', {
+    desc = '𝑷 insert icon',
   })
 end
 

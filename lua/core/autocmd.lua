@@ -6,65 +6,65 @@
     end
   end,
 }) --]=]
-oeyoews.autocmd("FileType", {
+oeyoews.autocmd('FileType', {
   group = oeyoews.mygroup,
   pattern = {
-    "notify",
-    "null-ls-info",
-    "lspinfo",
-    "startuptime",
-    "help",
-    "qf",
-    "quickrun",
-    "snippets",
+    'notify',
+    'null-ls-info',
+    'lspinfo',
+    'startuptime',
+    'help',
+    'qf',
+    'quickrun',
+    'snippets',
   },
   callback = function()
-    vim.keymap.set("n", "q", "<cmd>q<cr>", {
+    vim.keymap.set('n', 'q', '<cmd>q<cr>', {
       silent = true,
       buffer = true, -- important
-      desc = "fastly quick",
+      desc = 'fastly quick',
     })
   end,
 })
 
-oeyoews.autocmd("FileType", {
+oeyoews.autocmd('FileType', {
   group = oeyoews.mygroup,
   pattern = {
-    "help",
-    "startuptime",
-    "quickrun",
+    'help',
+    'startuptime',
+    'quickrun',
   },
-  command = "setlocal nocursorline nonumber norelativenumber",
+  command = 'setlocal nocursorline nonumber norelativenumber',
 })
 
 oeyoews.autocmd({
-  "InsertEnter",
-  "WinLeave",
+  'InsertEnter',
+  'WinLeave',
 }, {
   group = oeyoews.mygroup,
   -- vim.opt_local.xxx
-  command = "setlocal nocursorline",
+  command = 'setlocal nocursorline',
 })
 
 oeyoews.autocmd({
-  "WinEnter",
-  "InsertLeave",
+  'WinEnter',
+  'InsertLeave',
 }, {
-  command = "setlocal cursorline",
+  command = 'setlocal cursorline',
 })
 
-oeyoews.autocmd("BufEnter", {
+oeyoews.autocmd('BufEnter', {
   group = oeyoews.mygroup,
   pattern = {
-    "*.json",
-    "*.jsonc",
+    '*.json',
+    '*.jsonc',
   },
-  command = "setlocal wrap",
+  command = 'setlocal wrap',
 })
 
-oeyoews.autocmd("TermOpen", {
+oeyoews.autocmd('TermOpen', {
   group = oeyoews.mygroup,
-  command = "startinsert | setlocal nornu nonu nocursorline",
+  command = 'startinsert | setlocal nornu nonu nocursorline',
   --[=[ callback = function()
     -- vim.cmd([[startinsert | setlocal nornu nonu nocursorline ]])
     if vim.opt.buftype._value == "terminal" then
@@ -74,7 +74,7 @@ oeyoews.autocmd("TermOpen", {
   end, --]=]
 })
 
-oeyoews.autocmd("TermClose", {
+oeyoews.autocmd('TermClose', {
   group = oeyoews.mygroup,
   callback = function()
     -- must have the slash
@@ -85,17 +85,17 @@ oeyoews.autocmd("TermClose", {
 })
 
 -- Don't auto commenting new lines
-oeyoews.autocmd("BufEnter", {
+oeyoews.autocmd('BufEnter', {
   group = oeyoews.mygroup,
-  pattern = "*",
-  command = "set fo-=c fo-=r fo-=o",
+  pattern = '*',
+  command = 'set fo-=c fo-=r fo-=o',
 })
 
 -- TODO: put in vim-startuptime config file
 -- add load plugins
 ---[=[
 oeyoews.autocmd({
-  "VimEnter",
+  'VimEnter',
 }, {
   group = oeyoews.mygroup,
   callback = function()
@@ -113,22 +113,22 @@ oeyoews.autocmd({
 --]=]
 
 oeyoews.autocmd({
-  "BufEnter",
+  'BufEnter',
 }, {
   group = oeyoews.mygroup,
   pattern = {
-    "*.mdx",
+    '*.mdx',
   },
-  command = "set filetype=markdown",
+  command = 'set filetype=markdown',
 })
 
 oeyoews.autocmd({
-  "BufEnter",
+  'BufEnter',
 }, {
   group = oeyoews.mygroup,
   pattern = {
-    "*.info",
-    "*.files",
+    '*.info',
+    '*.files',
   },
-  command = "set filetype=json",
+  command = 'set filetype=json',
 })

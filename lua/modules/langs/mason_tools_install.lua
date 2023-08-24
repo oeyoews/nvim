@@ -5,8 +5,8 @@ local check_mason = function(bin)
 end
 
 local tbl = {
-  "stylua", -- lua
-  "prettier",
+  'stylua', -- lua
+  'prettier',
 }
 
 for _, value in ipairs(tbl) do
@@ -14,6 +14,6 @@ for _, value in ipairs(tbl) do
 end
 
 -- :lua print(vim.inspect(oeyoews.mason))
-require("mason-tool-installer").setup({
+require('mason-tool-installer').setup({
   ensure_installed = oeyoews.mason,
 })

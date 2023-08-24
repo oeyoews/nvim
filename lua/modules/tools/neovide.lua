@@ -7,7 +7,7 @@ if vim.g.neovide then
   vim.g.gui_font_default_size = 24
   vim.g.gui_font_size = vim.g.gui_font_default_size
   -- vim.g.gui_font_face = "Cascadia Mono"
-  vim.g.gui_font_face = "Maple hand"
+  vim.g.gui_font_face = 'Maple hand'
   vim.g.neovide_scroll_animation_length = 0.01
   vim.g.neovide_cursor_animation_length = 0.03
   vim.g.neovide_fullscreen = true
@@ -15,7 +15,7 @@ if vim.g.neovide then
   vim.g.neovide_remember_window_size = true
 
   RefreshGuiFont = function()
-    vim.opt.guifont = string.format("%s:h%s", vim.g.gui_font_face, vim.g.gui_font_size)
+    vim.opt.guifont = string.format('%s:h%s', vim.g.gui_font_face, vim.g.gui_font_size)
   end
 
   ResizeGuiFont = function(delta)
@@ -35,10 +35,10 @@ if vim.g.neovide then
 
   local opts = { noremap = true, silent = true }
 
-  vim.keymap.set({ "n", "i" }, "<C-=>", function()
+  vim.keymap.set({ 'n', 'i' }, '<C-=>', function()
     ResizeGuiFont(1)
   end, opts)
-  vim.keymap.set({ "n", "i" }, "<C-->", function()
+  vim.keymap.set({ 'n', 'i' }, '<C-->', function()
     ResizeGuiFont(-1)
   end, opts)
 

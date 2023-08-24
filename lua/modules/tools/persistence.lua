@@ -1,13 +1,13 @@
 if oeyoews.options.enable_session then
-  require("persistence").setup()
+  require('persistence').setup()
 else
   return
 end
 
-vim.keymap.set("n", "<space>ql", function()
-  require("persistence").load({
+vim.keymap.set('n', '<space>ql', function()
+  require('persistence').load({
     last = true,
   })
 end, {
-  desc = " restore last session",
+  desc = ' restore last session',
 })

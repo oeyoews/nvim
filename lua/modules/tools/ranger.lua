@@ -65,12 +65,12 @@ local tbl = {
     bg = -1,
   },
   rnvimr_ranger_cmd = {
-    "ranger",
-    "--cmd=set draw_borders both",
+    'ranger',
+    '--cmd=set draw_borders both',
   },
   rnvimr_enable_ex = true,
   rnvimr_enable_picker = true,
-  rnvimr_edit_cmd = "drop",
+  rnvimr_edit_cmd = 'drop',
   rnvimr_draw_border = false,
   rnvimr_hide_gitignore = true,
   rnvimr_enable_bw = true,
@@ -81,10 +81,10 @@ for i, v in pairs(tbl) do
   vim.g[i] = v
 end
 
-if vim.fn.executable("ranger") == 1 then
-  vim.keymap.set("n", "<space>ft", "<cmd>RnvimrToggle<cr>", {
-    desc = "ℜ ranger",
+if vim.fn.executable('ranger') == 1 then
+  vim.keymap.set('n', '<space>ft', '<cmd>RnvimrToggle<cr>', {
+    desc = 'ℜ ranger',
   })
 else
-  vim.notify(" Please install ranger", "warn")
+  vim.notify(' Please install ranger', 'warn')
 end

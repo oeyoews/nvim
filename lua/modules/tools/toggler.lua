@@ -1,15 +1,15 @@
 -- init.lua
-require("nvim-toggler").setup({
+require('nvim-toggler').setup({
   -- your own inverses
   inverses = {
-    ["xelatex"] = "lualatex",
-    ["const"] = "var",
-    ["vim"] = "emacs",
-    ["main"] = "master",
-    ["enable"] = "disable",
-    ["yes"] = "no",
-    ["true"] = "false",
-    ["optional"] = "required",
+    ['xelatex'] = 'lualatex',
+    ['const'] = 'var',
+    ['vim'] = 'emacs',
+    ['main'] = 'master',
+    ['enable'] = 'disable',
+    ['yes'] = 'no',
+    ['true'] = 'false',
+    ['optional'] = 'required',
   },
   -- removes the default <leader>i keymap
   remove_default_keybinds = true,
@@ -18,13 +18,13 @@ require("nvim-toggler").setup({
 -- init.lua
 vim.keymap.set(
   {
-    "n",
-    "v",
+    'n',
+    'v',
   },
-  "<space>cl",
-  require("nvim-toggler").toggle,
+  '<space>cl',
+  require('nvim-toggler').toggle,
   {
     silent = true,
-    desc = "toggle word",
+    desc = 'toggle word',
   }
 )
