@@ -1,14 +1,3 @@
--- -------------------------------------------------------------------------- --
---                                                                            --
---                                                                            --
---   pluginlist.lua                                                           --
---                                                                            --
---   By: oeyoews <mail>                                                       --
---                                                                            --
---   Created: 2023/01/12 21:24:23 by oeyoews                                  --
---   Updated: 2023/08/24 18:53:32 by oeyoews                                  --
--- -------------------------------------------------------------------------- --
-
 local builtinDir = vim.fn.stdpath("config") .. "/builtin/"
 
 oeyoews.pluginlist = {
@@ -156,9 +145,7 @@ oeyoews.pluginlist = {
   },
   {
     "folke/which-key.nvim",
-    config = function()
-      require("modules.tools.whichkey")
-    end,
+    config = true,
   },
   {
     "oeyoews/rnvimr", -- false
