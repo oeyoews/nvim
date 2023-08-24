@@ -342,6 +342,7 @@ oeyoews.pluginlist = {
   {
     dir = builtinDir .. "header42",
     lazy = true,
+    enabled = false,
     event = "InsertEnter",
     keys = {
       "<Space>ih",
