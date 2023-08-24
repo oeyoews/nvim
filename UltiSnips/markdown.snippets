@@ -1,14 +1,11 @@
 # vim:ts=4 sw=4 noexpandtab ft=snippets
 
 # title: `!v expand("%:p:h:t")`
-snippet header-gastby "Description" b
+snippet frontmatter "frontmatter" b
 ---
 date: `date +%Y-%m-%d`
-title: `!p snip.rv = snip.basename.replace('-', ' ').capitalize()`
-description: `!p snip.rv = snip.basename.replace('-', ' ')`
+title: `!p snip.rv = snip.basename.replace('-', ' ')`
 ---
-
-$1
 endsnippet
 
 snippet repo-github "repo" b
