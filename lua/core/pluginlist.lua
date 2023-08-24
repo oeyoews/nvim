@@ -182,7 +182,7 @@ oeyoews.pluginlist = {
   {
     'danymat/neogen',
     cmd = 'Neogen',
-    enabled = true,
+    enabled = false,
     config = function()
       require('neogen').setup()
     end,
@@ -248,9 +248,7 @@ oeyoews.pluginlist = {
       require('modules.langs.cmp')
     end,
   },
-  {
-    'quangnguyen30192/cmp-nvim-ultisnips',
-  },
+  'quangnguyen30192/cmp-nvim-ultisnips',
   {
     'folke/neodev.nvim',
     pin = true,
