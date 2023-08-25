@@ -26,46 +26,19 @@ oeyoews.options = {
   enable_startuptime = true,
   enable_zen_mode = true,
   enable_clangd = true,
-  -- @see lspconfig.lua
   enable_lsp = true,
-  -- @see lspconfig.lua
-  sumneko_lua_locale_cn = false,
-  -- @see sta.lua
   toggle_theme_auto = true,
-  -- @ref: user.pcall.lua
-  -- TODO: use keybinds to toggle this options in config
-  -- @see modules.utils.bootstrap.lua
-  -- @options: rolling.json, default.json, v1.0.0.json
-  -- bug: always appear this tip
-  -- snapshot = "20220824.json5",
 }
 
 oeyoews.servers = {
   'lua_ls',
   'tsserver',
-  'eslint', -- not suit mjs zx
+  'eslint',
   'jsonls',
   'tailwindcss',
-  -- "marksman",
-  -- 'clangd',
-  -- "volar",
-  -- "cmake",
-  -- 'pylsp',
-  -- 'gopls',
-  -- "vimls",
-  -- "bashls",
-  -- "yamlls",
-  -- "texlab",
+  -- "marksman", 'clangd', "volar", "cmake", 'pylsp', 'gopls', "vimls", "bashls", "yamlls", "texlab",
 }
 
---[=[
-for index, value in ipairs(list) do
-  {
-  oeyoews.builtin .. value
-  }
-end
---]=]
--- must global function
 oeyoews.completion.edit = function()
   local ft = {
     'norg',

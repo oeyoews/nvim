@@ -1,3 +1,5 @@
+![neovim](./snapshot.png)
+
 > ts, js, tailwindcss, lua, json, eslint 开箱即用
 
 ## 🔗 Neovim Related Snippets Links
