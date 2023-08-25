@@ -54,6 +54,7 @@ vim.keymap.set('n', 'gh', '<cmd>Lspsaga hover_doc<CR>', { silent = true })
 vim.keymap.set('n', 'gr', '<cmd>Lspsaga rename<CR>', { silent = true })
 vim.keymap.set('n', 'go', '<cmd>Lspsaga outline<CR>', { silent = true })
 vim.keymap.set('n', 'gp', '<cmd>Lspsaga peek_definition<CR>', { silent = true })
+vim.keymap.set('n', '<space>ga', '<cmd>Lspsaga code_action<CR>', { silent = true })
 
 local signs = { Error = '', Warn = ' ', Hint = '', Info = ' ' }
 for type, icon in pairs(signs) do
