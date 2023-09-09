@@ -1,5 +1,12 @@
 # vim:ts=4 sw=4 noexpandtab ft=snippets
 
+snippet tw-reset "reset" b
+<$button>
+Reset
+<$action-deletetiddler $filter="[[$1]]"/>
+</$button>
+endsnippet
+
 snippet filter-sidebar "sidebar" b
 <$list filter="[[$:/state/notebook-sidebar]get[text]else[no]match[no]]">
 $1
@@ -137,7 +144,7 @@ snippet tagstemplate "view template" b
 tags: $:/tags/ViewTemplate
 endsnippet
 
-snippet tagsPagecontrol "page-control" b
+snippet tags-pagecontrol "page-control" b
 title:
 tags: $:/tags/PageControls
 list-before: $:/core/ui/Buttons/more-page-actions
@@ -177,13 +184,13 @@ endsnippet
 
 snippet page-control "add page-control button" b
 \whitespace trim
-<$button tooltip="" aria-label="" class=<<tv-config-toolbar-class>>>
+<$button message="" tooltip="" aria-label="" class=<<tv-config-toolbar-class>>>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 {{$2}}
 </$list>
 <$list filter="[<tv-config-toolbar-text>match[yes]]">
 <span class="tc-btn-text">
-<$text text=""/>
+<$text text="text here"/>
 </span>
 </$list>
 </$button>
