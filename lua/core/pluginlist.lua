@@ -305,7 +305,12 @@ oeyoews.pluginlist = {
     cmd = 'MarkdownPreivew',
     build = 'cd app && npm install', -- sometime you need execute this cmd manually
   },
-  'lukas-reineke/lsp-format.nvim',
+  {
+    'lukas-reineke/lsp-format.nvim',
+    -- 之后的版本自动刷新在某些lsp
+    commit = 'ca0df5c8544e51517209ea7b86ecc522c98d4f0a',
+    pin = true,
+  },
   {
     dir = builtinDir .. 'header42',
     lazy = true,
