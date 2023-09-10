@@ -45,31 +45,6 @@ oeyoews.pluginlist = {
   },
   -- "eandrju/cellular-automaton.nvim",
   {
-    'nvim-neorg/neorg',
-    enabled = false,
-    build = ':Neorg sync-parsers',
-    config = function()
-      require('neorg').setup({
-        load = {
-          ['core.defaults'] = {}, -- Loads default behaviour
-          ['core.completion'] = {
-            config = {
-              engine = 'nvim-cmp',
-            },
-          }, -- Loads default behaviour
-          ['core.concealer'] = {}, -- Adds pretty icons to your documents
-          ['core.dirman'] = { -- Manages Neorg workspaces
-            config = {
-              workspaces = {
-                notes = '~/neorg/notes',
-              },
-            },
-          },
-        },
-      })
-    end,
-  },
-  {
     'folke/tokyonight.nvim',
     priority = 1000,
     config = function()
@@ -104,20 +79,11 @@ oeyoews.pluginlist = {
     end,
   },
   {
-    'lervag/vimtex', -- not support lazyload
-    ft = 'tex',
-    enabled = false,
-    lazy = true,
-    config = function()
-      require('modules.tools.vimtex')
-    end,
-  },
-  {
     'folke/which-key.nvim',
     config = true,
   },
   {
-    'oeyoews/rnvimr', -- false
+    'oeyoews/rnvimr',
     lazy = true,
     enabled = true,
     cmd = 'RnvimrToggle',
@@ -126,19 +92,6 @@ oeyoews.pluginlist = {
     },
     config = function()
       require('modules.tools.ranger')
-    end,
-  },
-  {
-    'kelly-lin/ranger.nvim',
-    enabled = false, -- 不支持ranger 的一些操作
-    config = function()
-      require('ranger-nvim').setup({ replace_netrw = true })
-      vim.api.nvim_set_keymap('n', '<leader>ft', '', {
-        noremap = true,
-        callback = function()
-          require('ranger-nvim').open(true)
-        end,
-      })
     end,
   },
   {
@@ -177,14 +130,6 @@ oeyoews.pluginlist = {
     cmd = 'PickEmoji',
     config = function()
       oeyoews.lazyload.emoji()
-    end,
-  },
-  {
-    'danymat/neogen',
-    cmd = 'Neogen',
-    enabled = false,
-    config = function()
-      require('neogen').setup()
     end,
   },
   {
@@ -312,19 +257,6 @@ oeyoews.pluginlist = {
     pin = true,
   },
   {
-    dir = builtinDir .. 'header42',
-    lazy = true,
-    enabled = false,
-    event = 'InsertEnter',
-    keys = {
-      '<Space>ih',
-    },
-    cmd = 'Header',
-    config = function()
-      require('modules.tools.header42')
-    end,
-  },
-  {
     dir = builtinDir .. 'persistence',
     config = function()
       require('modules.tools.persistence')
@@ -364,15 +296,6 @@ oeyoews.pluginlist = {
       vim.keymap.set('i', '<C-y>', function()
         return vim.fn['codeium#Accept']()
       end, { expr = true, silent = true })
-    end,
-  },
-  {
-    'kylechui/nvim-surround',
-    -- version = "*", -- Use for stability; omit to use `main` branch for the latest features
-    enabled = false,
-    event = 'VeryLazy',
-    config = function()
-      require('nvim-surround').setup({})
     end,
   },
 }
