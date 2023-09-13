@@ -194,10 +194,7 @@ oeyoews.pluginlist = {
     end,
   },
   'quangnguyen30192/cmp-nvim-ultisnips',
-  {
-    'folke/neodev.nvim',
-    pin = true,
-  },
+  'folke/neodev.nvim',
   'SirVer/ultisnips',
   'honza/vim-snippets',
   {

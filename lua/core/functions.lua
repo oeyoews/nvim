@@ -23,11 +23,12 @@ end
 oeyoews.creat_journey = function(ft)
   ft = ft or 'txt'
   local journey_path = 'journey'
-  local journey_dir = string.format('%s/%s/%s', vim.fn.stdpath('data'), journey_path, os.date('%Y/%m/%d'))
-  local prefix_index = string.format('/index-%s.', os.date('%H'))
+  local date = os.date('%Y/%m/%d')
+  local journey_dir = string.format('%s/%s/%s/', vim.fn.stdpath('data'), journey_path, date)
   vim.fn.mkdir(journey_dir, 'p')
-  local journey = journey_dir .. prefix_index .. ft
-  vim.cmd(([[edit %s]]):format(journey))
+  local index = journey_dir .. string.format('%s.%s', 'index', ft)
+  vim.notify(index)
+  vim.cmd(('edit %s'):format(index))
 end
 
 require('core.usercmd')
