@@ -27,7 +27,10 @@ oeyoews.creat_journey = function(ft)
   local journey_dir = string.format('%s/%s/%s/', vim.fn.stdpath('data'), journey_path, date)
   vim.fn.mkdir(journey_dir, 'p')
   local index = journey_dir .. string.format('%s.%s', 'index', ft)
-  vim.notify(index)
+  local file_exist = vim.fn.filereadable(index)
+  if file_exist == 0 then
+    vim.notify(index)
+  end
   vim.cmd(('edit %s'):format(index))
 end
 
