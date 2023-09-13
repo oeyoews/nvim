@@ -1,3 +1,8 @@
+-- IMPORTANT: make sure to setup neodev BEFORE lspconfig
+require('neodev').setup({
+  -- add any options here, or leave empty to use the default settings
+})
+
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 local on_attach = function(client, _)
@@ -11,9 +16,6 @@ local lsp_config = {
 
 local setup = function(server_name)
   require('lspconfig')[server_name].setup(lsp_config)
-  if server_name == 'lua_ls' then
-    require('neodev').setup({})
-  end
   require('modules.langs.lspsaga')
 end
 
