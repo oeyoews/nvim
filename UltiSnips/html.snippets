@@ -1,13 +1,17 @@
 # vim:ts=4 sw=4 noexpandtab ft=snippets
 
-snippet script:tailwindcss-full "tailwindcss" b
+snippet unocss "unocss" b
+<script src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
+endsnippet
+
+snippet tailwindcss-full "tailwindcss" b
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
 <script>
     tailwind.config = { corePlugins: { preflight: false, }, }
 </script>
 endsnippet
 
-snippet script:tailwindcss "tailwindcss" b
+snippet tailwindcss "tailwindcss" b
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
     tailwind.config = { corePlugins: { preflight: false, }, }
