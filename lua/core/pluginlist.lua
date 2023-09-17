@@ -286,7 +286,7 @@ oeyoews.pluginlist = {
   },
   {
     'Exafunction/codeium.vim',
-    pin = true,
+    pin = false,
     enabled = true,
     config = function()
       -- Change '<C-g>' here to any keycode you like.
