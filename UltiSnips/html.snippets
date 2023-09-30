@@ -2,12 +2,13 @@
 
 snippet unocss "unocss" b
 <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.min.css">
 endsnippet
 
 snippet tailwindcss-full "tailwindcss" b
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
 <script>
-    tailwind.config = { corePlugins: { preflight: false, }, }
+    tailwind.config = { corePlugins: { preflight: true, }, }
 </script>
 endsnippet
 

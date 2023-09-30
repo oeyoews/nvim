@@ -34,19 +34,19 @@ $tw.wiki.addTiddler(new $tw.Tiddler({title: "$:/temp/oeyoews/notify", text: "dem
 $tw.notifier.display("$:/temp/oeyoews/notify")
 endsnippet
 
+	# children: [],
+ #    eventListeners: [
+ #      {
+ #        name: 'click',
+ #        handlerObject: this,
+ #        handlerMethod: '',
+ #      },
+ #    ],
 snippet domMaker "domMaker" b
 const ${0}Node = $tw.utils.domMaker('${1:div}', {
 	text: '$1',
 	class: '',
 	attributes: {},
-	children: [],
-    eventListeners: [
-      {
-        name: 'click',
-        handlerObject: this,
-        handlerMethod: '',
-      },
-    ],
 })
 endsnippet
 
@@ -68,7 +68,7 @@ $1
 \*/
 endsnippet
 
-snippet template-widget "general widget" b
+snippet tw-widget "general widget" b
 /*\
 title: $1/widget
 type: application/javascript
@@ -82,8 +82,6 @@ $1 widget
   /*global $tw: false */
   'use strict';
 
-  if (!$tw.browser) return;
-
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
   class DivWidget extends Widget {
@@ -92,6 +90,7 @@ $1 widget
     }
 
     render(parent, nextSibling) {
+	 if (!$tw.browser) return;
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
@@ -141,7 +140,7 @@ $1 module
   /*global $tw: false */
   'use strict';
 
-  exports.name = '$1-startup-hook';
+  exports.name = '$1-startup';
   exports.platforms = ['browser'];
   exports.after = ['startup'];
   exports.synchronous = true;

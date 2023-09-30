@@ -132,3 +132,13 @@ oeyoews.autocmd({
   },
   command = 'set filetype=json',
 })
+
+oeyoews.autocmd({
+  'BufEnter',
+}, {
+  group = oeyoews.mygroup,
+  pattern = {
+    '*.meta',
+  },
+  command = 'set filetype=tiddlywiki',
+})
