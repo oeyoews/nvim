@@ -30,11 +30,12 @@ require('mason').setup({
 })
 
 require('mason-lspconfig').setup({
-  -- ensure_installed = oeyoews.servers,
+  ensure_installed = oeyoews.servers,
   -- use automatic_installation replace ensure_installed
-  automatic_installation = {
+  -- not work
+  --[=[ automatic_installation = {
     -- exclude = mason_exclude, -- if this system no clangd, you need comment this line to install clangd by mason
-  },
+  }, --]=]
 })
 
 --   mappings

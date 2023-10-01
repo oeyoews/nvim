@@ -4,10 +4,6 @@
 
 * node, npm, git, python-pynvim
 
-## TODO
-
-* language server cannot install automatically
-
 > ts, js, tailwindcss, lua, json, eslint 开箱即用
 
 ## 🔗 Neovim Related Snippets Links
