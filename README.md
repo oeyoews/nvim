@@ -1,12 +1,13 @@
 ![neovim](./snapshot.png)
 
-## NOTE
-
-* node, npm, git, python-pynvim
-
 > ts, js, tailwindcss, lua, json, eslint 开箱即用
 
-## 🔗 Neovim Related Snippets Links
+## NOTE
+
+* dependencies: node, npm, git, python-pynvim
+* clipboard: to support system clipboard, please check :h clipboard on (neo)vim
+
+## Neovim Related Snippets Links
 
 > ultisnips2vscode
 - [convertsnippet snippet to json](https://pypi.org/project/ultisnips-vscode/)
