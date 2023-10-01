@@ -8,7 +8,7 @@ if oeyoews.nvim_version < 8 then
 end
 
 -- if all plugin not installed, will trigger some plugin errors, like tex
-vim.g.python3_host_prog = '/usr/bin/python3'
+-- vim.g.python3_host_prog = '/usr/bin/python3'
 
 local default_options = {
   -- set guifont=Fira\ Code\:h24
