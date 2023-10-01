@@ -2,7 +2,7 @@
 
 ## NOTE
 
-* npm
+* node, npm, git, python-pynvim
 
 ## TODO
 
