@@ -4,7 +4,7 @@
 
 ## NOTE
 
-* dependencies: node, npm, git, python-pynvim
+* dependencies: node, npm, git, python-pynvim,fd,live-server
 * clipboard: to support system clipboard, please check :h clipboard on (neo)vim
 
 ## Neovim Related Snippets Links
