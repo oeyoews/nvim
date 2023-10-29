@@ -4,8 +4,11 @@
 
 ## NOTE
 
-* dependencies: node, npm, git,(g)cc python-pynvim,fd,live-server(optional), python(Ultisnip), tree-sitter, live-grep
+* dependencies: node, npm, git,(g)cc python-pynvim(by npm or use pip3 install pynvim),fd,live-server(optional), python(Ultisnip), tree-sitter(by npm), live-grep
 * clipboard: to support system clipboard, please check :h clipboard on (neo)vim
+
+* 建议windows使用mysy2 安装gcc(by pacman)
+
 
 ## Installation
 
