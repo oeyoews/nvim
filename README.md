@@ -4,7 +4,7 @@
 
 ## NOTE
 
-* dependencies: node, npm, git, python-pynvim,fd,live-server(optional), python(Ultisnip)
+* dependencies: node, npm, git,(g)cc python-pynvim,fd,live-server(optional), python(Ultisnip), tree-sitter, live-grep
 * clipboard: to support system clipboard, please check :h clipboard on (neo)vim
 
 ## Neovim Related Snippets Links
