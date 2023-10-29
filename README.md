@@ -1,10 +1,10 @@
 ![neovim](./snapshot.png)
 
-> support ts, js, tailwindcss, lua, json, eslint 
+> support ts, js, tailwindcss, lua, json, eslint
 
 ## NOTE
 
-* dependencies: node, npm, git, python-pynvim,fd,live-server
+* dependencies: node, npm, git, python-pynvim,fd,live-server(optional), python(Ultisnip)
 * clipboard: to support system clipboard, please check :h clipboard on (neo)vim
 
 ## Neovim Related Snippets Links
