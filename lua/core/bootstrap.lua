@@ -15,13 +15,13 @@
 -- end
 
 
--- if vim.loop.os_uname().sysname == "Windows_NT" then
---   vim.notify_once("检测到你正在使用Windows")
---   vim.api.nvim_echo({
---     {
---       '建议在 Linux 环境下使用 Neovim \n',
---       'WarningMsg',
---     },
---     { 'Press any key to exit', 'MoreMsg' },
---   }, true, {})
--- end
+if vim.loop.os_uname().sysname == "Windows_NT" then
+  vim.notify_once("检测到你正在使用Windows")
+  vim.api.nvim_echo({
+    {
+      '建议在 Linux 环境下使用 Neovim \n',
+      'WarningMsg',
+    },
+    { 'Press any key to exit', 'MoreMsg' },
+  }, true, {})
+end
