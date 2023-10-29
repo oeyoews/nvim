@@ -1,5 +1,5 @@
 -- check
--- require('core.bootstrap')
+require('core.bootstrap')
 
 -- modules
 require('core.disable')

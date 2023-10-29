@@ -8,7 +8,11 @@ if oeyoews.nvim_version < 8 then
 end
 
 -- if all plugin not installed, will trigger some plugin errors, like tex
--- vim.g.python3_host_prog = '/usr/bin/python3'
+vim.g.python3_host_prog = '/usr/bin/python3'
+-- https://github.com/lspcontainers/lspcontainers.nvim/pull/71/files
+if vim.loop.os_uname().sysname == "Windows_NT" then
+    vim.g.python3_host_prog='D:/Program Files/Python312/python3.exe'
+end
 
 local default_options = {
   -- set guifont=Fira\ Code\:h24

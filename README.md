@@ -7,6 +7,10 @@
 * dependencies: node, npm, git,(g)cc python-pynvim,fd,live-server(optional), python(Ultisnip), tree-sitter, live-grep
 * clipboard: to support system clipboard, please check :h clipboard on (neo)vim
 
+## Installation
+
+https://github.com/neovim/neovim/wiki/Installing-Neovim
+
 ## Neovim Related Snippets Links
 
 > ultisnips2vscode
