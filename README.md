@@ -18,7 +18,7 @@
 ## git proxy
 
 ```bash
-# v2raya
+# v2raya // windows
 [http]
     proxy = http://127.0.0.1:20172
 [https]
