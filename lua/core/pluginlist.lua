@@ -193,7 +193,7 @@ oeyoews.pluginlist = {
       require('modules.langs.cmp')
     end,
   },
-  'quangnguyen30192/cmp-nvim-ultisnips',
+  -- 'quangnguyen30192/cmp-nvim-ultisnips',
   'folke/neodev.nvim',
   'SirVer/ultisnips',
   'honza/vim-snippets',

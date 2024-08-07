@@ -215,9 +215,9 @@ oeyoews.autocmd('FileType', {
   end,
 })
 
-require('cmp_nvim_ultisnips').setup({
-  filetype_source = 'treesitter',
-})
+-- require('cmp_nvim_ultisnips').setup({
+--   filetype_source = 'treesitter',
+-- })
 
 -- vim.g.UltiSnipsJumpForwardTrigger = "<C-J>"
 -- vim.g.UltiSnipsExpandTrigger = "<C-e>" -- TODO

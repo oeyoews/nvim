@@ -11,9 +11,9 @@ M.gitsigns = function()
       delay = 100,
       ignore_whitespace = false,
     },
-    current_line_blame_formatter_opts = {
-      relative_time = true,
-    },
+    -- current_line_blame_formatter_opts = {
+    --   relative_time = true,
+    -- },
     max_file_length = 400,
     numhl = true,
   })
