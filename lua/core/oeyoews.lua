@@ -31,11 +31,11 @@ oeyoews.options = {
 }
 
 oeyoews.servers = {
-  'lua_ls',
-  'tsserver',
-  'eslint',
-  'jsonls',
-  'tailwindcss',
+  -- 'lua_ls',
+  'ts_ls',
+  -- 'eslint',
+  -- 'jsonls',
+  -- 'tailwindcss',
   -- "marksman", 'clangd', "volar", "cmake", 'pylsp', 'gopls', "vimls", "bashls", "yamlls", "texlab",
 }
 

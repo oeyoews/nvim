@@ -8,13 +8,13 @@ end
 
 local mason_exclude = {}
 
-if vim.fn.executable('clangd') == 1 then
-  mason_exclude[#mason_exclude + 1] = 'clangd'
-end
-
-if oeyoews.options.enable_clangd then
-  oeyoews.servers[#oeyoews.servers + 1] = 'clangd'
-end
+-- if vim.fn.executable('clangd') == 1 then
+--   mason_exclude[#mason_exclude + 1] = 'clangd'
+-- end
+--
+-- if oeyoews.options.enable_clangd then
+--   oeyoews.servers[#oeyoews.servers + 1] = 'clangd'
+-- end
 
 require('mason').setup({
   ui = {

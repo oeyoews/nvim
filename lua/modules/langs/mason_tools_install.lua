@@ -5,7 +5,7 @@ local check_mason = function(bin)
 end
 
 local tbl = {
-  'stylua', -- lua
+  -- 'stylua', -- lua
   'prettier',
 }
 
