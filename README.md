@@ -4,7 +4,16 @@
 
 ## NOTE
 
-- dependencies: node, npm, git,(g)cc python-pynvim(by npm or use pip3 install pynvim),fd,live-server(optional), python(Ultisnip), tree-sitter(by npm), live-grep
+- node
+- npm
+- git
+- gcc
+- python-pynvim (通过 npm 或使用 pip3 install pynvim)
+- fd
+- live-server (可选)
+- python (用于 Ultisnip)
+- tree-sitter (通过 npm)
+- live-grep
 - clipboard: to support system clipboard, please check :h clipboard on (neo)vim
 
 <!-- * 建议windows使用mysy2 安装gcc(by pacman)
