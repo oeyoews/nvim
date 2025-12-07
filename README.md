@@ -4,14 +4,11 @@
 
 ## NOTE
 
-- node
-- npm
-- git
+- python (用于 Ultisnip)
+- python-pynvim (通过 npm 或使用 pip3 install pynvim, pacman install pynvim<wsl>)
 - gcc
-- python-pynvim (通过 npm 或使用 pip3 install pynvim)
 - fd
 - live-server (可选)
-- python (用于 Ultisnip)
 - tree-sitter (通过 npm)
 - live-grep
 - clipboard: to support system clipboard, please check :h clipboard on (neo)vim

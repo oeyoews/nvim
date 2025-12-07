@@ -1,0 +1,4 @@
+# 所有文件使用LF
+* text=auto eol=lf
+# 二进制文件不转换（如图片）
+*.png binary
