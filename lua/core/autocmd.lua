@@ -10,7 +10,6 @@ oeyoews.autocmd('FileType', {
   group = oeyoews.mygroup,
   pattern = {
     'notify',
-    'null-ls-info',
     'lspinfo',
     'startuptime',
     'help',

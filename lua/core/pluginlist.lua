@@ -67,11 +67,6 @@ oeyoews.pluginlist = {
     end,
   },
   {
-    'nvimdev/lspsaga.nvim',
-    enabled = true,
-    event = 'BufRead',
-  },
-  {
     'nguyenvukhang/nvim-toggler',
     event = 'VeryLazy',
     config = function()
@@ -103,11 +98,6 @@ oeyoews.pluginlist = {
   {
     'thinca/vim-quickrun',
     event = 'VeryLazy',
-  },
-  {
-    'sukima/vim-tiddlywiki', -- note: this maybe can't load be web browser
-    lazy = true,
-    ft = 'tiddlywiki',
   },
   'nvim-lua/plenary.nvim',
   'MunifTanjim/nui.nvim',
@@ -167,20 +157,6 @@ oeyoews.pluginlist = {
     end,
   },
   {
-    'jose-elias-alvarez/null-ls.nvim',
-    config = function()
-      require('modules.langs.null-ls')
-    end,
-  },
-  {
-    'jayp0521/mason-null-ls.nvim',
-    config = function()
-      require('mason-null-ls').setup({
-        automatic_installation = true,
-      })
-    end,
-  },
-  {
     'hrsh7th/nvim-cmp',
     event = 'VeryLazy',
     dependencies = {
@@ -194,7 +170,6 @@ oeyoews.pluginlist = {
     end,
   },
   -- 'quangnguyen30192/cmp-nvim-ultisnips',
-  'folke/neodev.nvim',
   'SirVer/ultisnips',
   'honza/vim-snippets',
   {
@@ -238,22 +213,6 @@ oeyoews.pluginlist = {
     config = [[require("colorizer").setup()]],
   },
   {
-    'iamcco/markdown-preview.nvim',
-    config = function()
-      oeyoews.lazyload.mkdp()
-    end,
-    lazy = true,
-    ft = 'markdown',
-    cmd = 'MarkdownPreivew',
-    build = 'cd app && npm install', -- sometime you need execute this cmd manually
-  },
-  {
-    'lukas-reineke/lsp-format.nvim',
-    -- 之后的版本自动刷新在某些lsp
-    commit = 'ca0df5c8544e51517209ea7b86ecc522c98d4f0a',
-    pin = true,
-  },
-  {
     dir = builtinDir .. 'persistence',
     config = function()
       require('modules.tools.persistence')
@@ -283,18 +242,7 @@ oeyoews.pluginlist = {
     config = function()
       require('tailwindcss-colors').setup()
     end,
-  },
-  {
-    'Exafunction/codeium.vim',
-    pin = false,
-    enabled = false,
-    config = function()
-      -- Change '<C-g>' here to any keycode you like.
-      vim.keymap.set('i', '<C-y>', function()
-        return vim.fn['codeium#Accept']()
-      end, { expr = true, silent = true })
-    end,
-  },
+  }
 }
 
 -- autoload on loading this pluginlist variable

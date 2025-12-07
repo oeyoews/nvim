@@ -48,8 +48,7 @@ oeyoews.autocmd('FileType', {
   group = oeyoews.mygroup,
   pattern = {
     'mason',
-    'lspinfo',
-    'null-ls-info',
+    'lspinfo'
   },
   callback = function()
     check_npm()

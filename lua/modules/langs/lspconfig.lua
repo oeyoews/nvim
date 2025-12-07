@@ -1,27 +1,8 @@
--- IMPORTANT: make sure to setup neodev BEFORE lspconfig
-require('neodev').setup({
-  -- add any options here, or leave empty to use the default settings
-})
-
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-local on_attach = function(client, _)
-  require('lsp-format').on_attach(client)
-end
-
 local lsp_config = {
-  on_attach = on_attach,
   capabilities = capabilities,
 }
-
-local setup = function(server_name)
-  require('lspconfig')[server_name].setup(lsp_config)
-  require('modules.langs.lspsaga')
-end
-
-for _, lsp_server in pairs(oeyoews.servers) do
-  setup(lsp_server)
-end
 
 -- change lsp icons
 local border = {
