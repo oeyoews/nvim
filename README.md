@@ -5,7 +5,7 @@
 ## NOTE
 
 - python (用于 Ultisnip)
-- python-pynvim (通过 npm 或使用 pip3 install pynvim, pacman install pynvim<wsl>)
+- python-pynvim (通过 npm 或使用 pip3 install pynvim, pacman install python-pynvim<wsl>)
 - gcc
 - fd
 - live-server (可选)
